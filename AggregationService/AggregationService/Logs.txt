@@ -1,263 +1,559 @@
-63646911617818506110 - Request: SERVICE: ArenaService 
+63646959489397468311 - Request: SERVICE: ArenaService 
 GET: http://localhost:58349/api/arenas/page/1
 Accept: application/json
 
 
-63646911617818506110 - Response: Date: Tue, 21 Nov 2017 22:40:16 GMT
+63646959489397468311 - Response: Date: Wed, 22 Nov 2017 11:58:08 GMT
 Transfer-Encoding: chunked
 Server: Kestrel
-X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNc0JLQu9Cw0LTQuNC80LjRgFxEZXNrdG9wXExSMl9ORVdcQXJlbmFTZXJ2aWNlXEFyZW5hU2VydmljZVxhcGlcYXJlbmFzXHBhZ2VcMQ==?=
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFyZW5hU2VydmljZVxBcmVuYVNlcnZpY2VcYXBpXGFyZW5hc1xwYWdlXDE=?=
 X-Powered-By: ASP.NET
 
 Status: OK
-[{"id":2005,"arenaName":"Another Arena","cityID":3,"city":{"id":3,"cityName":"London"}},{"id":5,"arenaName":"Brixton Academy","cityID":3,"city":{"id":3,"cityName":"London"}},{"id":1,"arenaName":"Crocus City Hall","cityID":1,"city":{"id":1,"cityName":"Moscow"}},{"id":6,"arenaName":"Mercedes-Benz Arena","cityID":2,"city":{"id":2,"cityName":"Berlin"}},{"id":2008,"arenaName":"Natasha's Arena","cityID":1,"city":{"id":1,"cityName":"Moscow"}},{"id":2004,"arenaName":"New City Arena","cityID":1,"city":{"id":1,"cityName":"Moscow"}},{"id":2010,"arenaName":"New User Arena","cityID":3,"city":{"id":3,"cityName":"London"}},{"id":2,"arenaName":"Olimpiyskiy","cityID":1,"city":{"id":1,"cityName":"Moscow"}},{"id":7,"arenaName":"Olympiastadion Berlin","cityID":2,"city":{"id":2,"cityName":"Berlin"}},{"id":2007,"arenaName":"Unique New Arena","cityID":3,"city":{"id":3,"cityName":"London"}}]
+[{"id":8,"arenaName":"Brilliant Natasha Arena","cityID":2,"city":{"id":2,"cityName":"Berlin"}},{"id":5,"arenaName":"Brixton Academy","cityID":3,"city":{"id":3,"cityName":"London"}},{"id":1,"arenaName":"Crocus City Hall","cityID":1,"city":{"id":1,"cityName":"Moscow"}},{"id":6,"arenaName":"Mercedes-Benz Arena","cityID":2,"city":{"id":2,"cityName":"Berlin"}},{"id":10,"arenaName":"Natasha Arena","cityID":3,"city":{"id":3,"cityName":"London"}},{"id":2,"arenaName":"Olimpiyskiy","cityID":1,"city":{"id":1,"cityName":"Moscow"}},{"id":3,"arenaName":"Olimpiyskiy","cityID":1,"city":{"id":1,"cityName":"Moscow"}},{"id":7,"arenaName":"Olympiastadion Berlin","cityID":2,"city":{"id":2,"cityName":"Berlin"}},{"id":11,"arenaName":"Unique Arena","cityID":3,"city":{"id":3,"cityName":"London"}},{"id":9,"arenaName":"Vova Arena","cityID":1,"city":{"id":1,"cityName":"Moscow"}}]
 
 
 
-6364691161785079358 - Request: SERVICE: ArenaService 
+6364695948944119688 - Request: SERVICE: ArenaService 
 GET: http://localhost:58349/api/arenas/page/1
 Accept: application/json
 
 
-6364691161785079358 - Response: Date: Tue, 21 Nov 2017 22:40:16 GMT
+6364695948944119688 - Response: Date: Wed, 22 Nov 2017 11:58:09 GMT
 Transfer-Encoding: chunked
 Server: Kestrel
-X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNc0JLQu9Cw0LTQuNC80LjRgFxEZXNrdG9wXExSMl9ORVdcQXJlbmFTZXJ2aWNlXEFyZW5hU2VydmljZVxhcGlcYXJlbmFzXHBhZ2VcMQ==?=
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFyZW5hU2VydmljZVxBcmVuYVNlcnZpY2VcYXBpXGFyZW5hc1xjb3VudA==?=
 X-Powered-By: ASP.NET
 
 Status: OK
-[{"id":2005,"arenaName":"Another Arena","cityID":3,"city":{"id":3,"cityName":"London"}},{"id":5,"arenaName":"Brixton Academy","cityID":3,"city":{"id":3,"cityName":"London"}},{"id":1,"arenaName":"Crocus City Hall","cityID":1,"city":{"id":1,"cityName":"Moscow"}},{"id":6,"arenaName":"Mercedes-Benz Arena","cityID":2,"city":{"id":2,"cityName":"Berlin"}},{"id":2008,"arenaName":"Natasha's Arena","cityID":1,"city":{"id":1,"cityName":"Moscow"}},{"id":2004,"arenaName":"New City Arena","cityID":1,"city":{"id":1,"cityName":"Moscow"}},{"id":2010,"arenaName":"New User Arena","cityID":3,"city":{"id":3,"cityName":"London"}},{"id":2,"arenaName":"Olimpiyskiy","cityID":1,"city":{"id":1,"cityName":"Moscow"}},{"id":7,"arenaName":"Olympiastadion Berlin","cityID":2,"city":{"id":2,"cityName":"Berlin"}},{"id":2007,"arenaName":"Unique New Arena","cityID":3,"city":{"id":3,"cityName":"London"}}]
+12
 
 
 
-63646911630976842310 - Request: SERVICE: ArenaService 
+6364695950641478968 - Request: SERVICE: ArenaService 
 POST: http://localhost:58349/api/arenas
 Accept: application/json
-
 {
-  "ArenaName": "Brilliant Arena",
-  "CityID": 2
+  "ArenaName": "Great Arena",
+  "CityID": 3
 }
-63646911630976842310 - Response: Date: Tue, 21 Nov 2017 22:40:30 GMT
+
+6364695950641478968 - Response: Date: Wed, 22 Nov 2017 11:58:26 GMT
 Transfer-Encoding: chunked
-Location: http://localhost:58349/api/Arenas/3008
+Location: http://localhost:58349/api/Arenas/15
 Server: Kestrel
-X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNc0JLQu9Cw0LTQuNC80LjRgFxEZXNrdG9wXExSMl9ORVdcQXJlbmFTZXJ2aWNlXEFyZW5hU2VydmljZVxhcGlcYXJlbmFz?=
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFyZW5hU2VydmljZVxBcmVuYVNlcnZpY2VcYXBpXGFyZW5hcw==?=
 X-Powered-By: ASP.NET
 
 Status: Created
-{"id":3008,"arenaName":"Brilliant Arena","cityID":2,"city":null}
+{"id":15,"arenaName":"Great Arena","cityID":3,"city":null}
 
 
 
-6364691163110210428 - Request: SERVICE: ArenaService 
+6364695950665975238 - Request: SERVICE: ArenaService 
 GET: http://localhost:58349/api/arenas/page/1
 Accept: application/json
 
 
-6364691163110210428 - Response: Date: Tue, 21 Nov 2017 22:40:30 GMT
+6364695950665975238 - Response: Date: Wed, 22 Nov 2017 11:58:26 GMT
 Transfer-Encoding: chunked
 Server: Kestrel
-X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNc0JLQu9Cw0LTQuNC80LjRgFxEZXNrdG9wXExSMl9ORVdcQXJlbmFTZXJ2aWNlXEFyZW5hU2VydmljZVxhcGlcYXJlbmFzXHBhZ2VcMQ==?=
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFyZW5hU2VydmljZVxBcmVuYVNlcnZpY2VcYXBpXGFyZW5hc1xwYWdlXDE=?=
 X-Powered-By: ASP.NET
 
 Status: OK
-[{"id":2005,"arenaName":"Another Arena","cityID":3,"city":{"id":3,"cityName":"London"}},{"id":3008,"arenaName":"Brilliant Arena","cityID":2,"city":{"id":2,"cityName":"Berlin"}},{"id":5,"arenaName":"Brixton Academy","cityID":3,"city":{"id":3,"cityName":"London"}},{"id":1,"arenaName":"Crocus City Hall","cityID":1,"city":{"id":1,"cityName":"Moscow"}},{"id":6,"arenaName":"Mercedes-Benz Arena","cityID":2,"city":{"id":2,"cityName":"Berlin"}},{"id":2008,"arenaName":"Natasha's Arena","cityID":1,"city":{"id":1,"cityName":"Moscow"}},{"id":2004,"arenaName":"New City Arena","cityID":1,"city":{"id":1,"cityName":"Moscow"}},{"id":2010,"arenaName":"New User Arena","cityID":3,"city":{"id":3,"cityName":"London"}},{"id":2,"arenaName":"Olimpiyskiy","cityID":1,"city":{"id":1,"cityName":"Moscow"}},{"id":7,"arenaName":"Olympiastadion Berlin","cityID":2,"city":{"id":2,"cityName":"Berlin"}}]
+[{"id":8,"arenaName":"Brilliant Natasha Arena","cityID":2,"city":{"id":2,"cityName":"Berlin"}},{"id":5,"arenaName":"Brixton Academy","cityID":3,"city":{"id":3,"cityName":"London"}},{"id":1,"arenaName":"Crocus City Hall","cityID":1,"city":{"id":1,"cityName":"Moscow"}},{"id":15,"arenaName":"Great Arena","cityID":3,"city":{"id":3,"cityName":"London"}},{"id":6,"arenaName":"Mercedes-Benz Arena","cityID":2,"city":{"id":2,"cityName":"Berlin"}},{"id":10,"arenaName":"Natasha Arena","cityID":3,"city":{"id":3,"cityName":"London"}},{"id":2,"arenaName":"Olimpiyskiy","cityID":1,"city":{"id":1,"cityName":"Moscow"}},{"id":3,"arenaName":"Olimpiyskiy","cityID":1,"city":{"id":1,"cityName":"Moscow"}},{"id":7,"arenaName":"Olympiastadion Berlin","cityID":2,"city":{"id":2,"cityName":"Berlin"}},{"id":11,"arenaName":"Unique Arena","cityID":3,"city":{"id":3,"cityName":"London"}}]
 
 
 
-63646911631139619011 - Request: SERVICE: ArenaService 
+6364695950668493679 - Request: SERVICE: ArenaService 
 GET: http://localhost:58349/api/arenas/page/1
 Accept: application/json
 
 
-63646911631139619011 - Response: Date: Tue, 21 Nov 2017 22:40:30 GMT
+6364695950668493679 - Response: Date: Wed, 22 Nov 2017 11:58:26 GMT
 Transfer-Encoding: chunked
 Server: Kestrel
-X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNc0JLQu9Cw0LTQuNC80LjRgFxEZXNrdG9wXExSMl9ORVdcQXJlbmFTZXJ2aWNlXEFyZW5hU2VydmljZVxhcGlcYXJlbmFzXHBhZ2VcMQ==?=
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFyZW5hU2VydmljZVxBcmVuYVNlcnZpY2VcYXBpXGFyZW5hc1xjb3VudA==?=
 X-Powered-By: ASP.NET
 
 Status: OK
-[{"id":2005,"arenaName":"Another Arena","cityID":3,"city":{"id":3,"cityName":"London"}},{"id":3008,"arenaName":"Brilliant Arena","cityID":2,"city":{"id":2,"cityName":"Berlin"}},{"id":5,"arenaName":"Brixton Academy","cityID":3,"city":{"id":3,"cityName":"London"}},{"id":1,"arenaName":"Crocus City Hall","cityID":1,"city":{"id":1,"cityName":"Moscow"}},{"id":6,"arenaName":"Mercedes-Benz Arena","cityID":2,"city":{"id":2,"cityName":"Berlin"}},{"id":2008,"arenaName":"Natasha's Arena","cityID":1,"city":{"id":1,"cityName":"Moscow"}},{"id":2004,"arenaName":"New City Arena","cityID":1,"city":{"id":1,"cityName":"Moscow"}},{"id":2010,"arenaName":"New User Arena","cityID":3,"city":{"id":3,"cityName":"London"}},{"id":2,"arenaName":"Olimpiyskiy","cityID":1,"city":{"id":1,"cityName":"Moscow"}},{"id":7,"arenaName":"Olympiastadion Berlin","cityID":2,"city":{"id":2,"cityName":"Berlin"}}]
+13
 
 
 
-63646911632954098810 - Request: SERVICE: ArenaService 
-DELETE: http://localhost:58349/api/arenas/3008
+63646959512660187610 - Request: SERVICE: ArenaService 
+GET: http://localhost:58349/
 Accept: application/json
 
 
-63646911632954098810 - Response: Date: Tue, 21 Nov 2017 22:40:32 GMT
+63646959512660187610 - Response: Date: Wed, 22 Nov 2017 11:58:32 GMT
 Transfer-Encoding: chunked
 Server: Kestrel
-X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNc0JLQu9Cw0LTQuNC80LjRgFxEZXNrdG9wXExSMl9ORVdcQXJlbmFTZXJ2aWNlXEFyZW5hU2VydmljZVxhcGlcYXJlbmFzXDMwMDg=?=
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFyZW5hU2VydmljZVxBcmVuYVNlcnZpY2VcYXBpXGFyZW5hc1wxNQ==?=
 X-Powered-By: ASP.NET
 
 Status: OK
-{"id":3008,"arenaName":"Brilliant Arena","cityID":2,"city":null}
+{"id":15,"arenaName":"Great Arena","cityID":3,"city":null}
 
 
 
-6364691163303390698 - Request: SERVICE: ArenaService 
-GET: http://localhost:58349/api/arenas/page/3008
+63646959524192697310 - Request: SERVICE: ArenaService 
+PUT: http://localhost:58349/api/arenas/15
 Accept: application/json
+{
+  "ID": 15,
+  "ArenaName": "Great New Arena",
+  "CityID": 2
+}
 
-
-6364691163303390698 - Response: Date: Tue, 21 Nov 2017 22:40:32 GMT
+63646959524192697310 - Response: Date: Wed, 22 Nov 2017 11:58:44 GMT
 Transfer-Encoding: chunked
 Server: Kestrel
-X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNc0JLQu9Cw0LTQuNC80LjRgFxEZXNrdG9wXExSMl9ORVdcQXJlbmFTZXJ2aWNlXEFyZW5hU2VydmljZVxhcGlcYXJlbmFzXHBhZ2VcMzAwOA==?=
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFyZW5hU2VydmljZVxBcmVuYVNlcnZpY2VcYXBpXGFyZW5hc1wxNQ==?=
 X-Powered-By: ASP.NET
 
-Status: OK
-[]
+Status: Accepted
+{"id":15,"arenaName":"Great New Arena","cityID":2,"city":null}
 
 
 
-63646911633059533011 - Request: SERVICE: ArenaService 
-GET: http://localhost:58349/api/arenas/page/3008
-Accept: application/json
-
-
-63646911633059533011 - Response: Date: Tue, 21 Nov 2017 22:40:32 GMT
-Transfer-Encoding: chunked
-Server: Kestrel
-X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNc0JLQu9Cw0LTQuNC80LjRgFxEZXNrdG9wXExSMl9ORVdcQXJlbmFTZXJ2aWNlXEFyZW5hU2VydmljZVxhcGlcYXJlbmFzXHBhZ2VcMzAwOA==?=
-X-Powered-By: ASP.NET
-
-Status: OK
-[]
-
-
-
-63646911774386766810 - Request: SERVICE: ArenaService 
+6364695952440634039 - Request: SERVICE: ArenaService 
 GET: http://localhost:58349/api/arenas/page/1
 Accept: application/json
 
 
-63646911774386766810 - Response: Date: Tue, 21 Nov 2017 22:42:53 GMT
+6364695952440634039 - Response: Date: Wed, 22 Nov 2017 11:58:44 GMT
 Transfer-Encoding: chunked
 Server: Kestrel
-X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNc0JLQu9Cw0LTQuNC80LjRgFxEZXNrdG9wXExSMl9ORVdcQXJlbmFTZXJ2aWNlXEFyZW5hU2VydmljZVxhcGlcYXJlbmFzXHBhZ2VcMQ==?=
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFyZW5hU2VydmljZVxBcmVuYVNlcnZpY2VcYXBpXGFyZW5hc1xwYWdlXDE=?=
 X-Powered-By: ASP.NET
 
 Status: OK
-[{"id":2005,"arenaName":"Another Arena","cityID":3,"city":{"id":3,"cityName":"London"}},{"id":5,"arenaName":"Brixton Academy","cityID":3,"city":{"id":3,"cityName":"London"}},{"id":1,"arenaName":"Crocus City Hall","cityID":1,"city":{"id":1,"cityName":"Moscow"}},{"id":6,"arenaName":"Mercedes-Benz Arena","cityID":2,"city":{"id":2,"cityName":"Berlin"}},{"id":2008,"arenaName":"Natasha's Arena","cityID":1,"city":{"id":1,"cityName":"Moscow"}},{"id":2004,"arenaName":"New City Arena","cityID":1,"city":{"id":1,"cityName":"Moscow"}},{"id":2010,"arenaName":"New User Arena","cityID":3,"city":{"id":3,"cityName":"London"}},{"id":2,"arenaName":"Olimpiyskiy","cityID":1,"city":{"id":1,"cityName":"Moscow"}},{"id":7,"arenaName":"Olympiastadion Berlin","cityID":2,"city":{"id":2,"cityName":"Berlin"}},{"id":2007,"arenaName":"Unique New Arena","cityID":3,"city":{"id":3,"cityName":"London"}}]
+[{"id":8,"arenaName":"Brilliant Natasha Arena","cityID":2,"city":{"id":2,"cityName":"Berlin"}},{"id":5,"arenaName":"Brixton Academy","cityID":3,"city":{"id":3,"cityName":"London"}},{"id":1,"arenaName":"Crocus City Hall","cityID":1,"city":{"id":1,"cityName":"Moscow"}},{"id":15,"arenaName":"Great New Arena","cityID":2,"city":{"id":2,"cityName":"Berlin"}},{"id":6,"arenaName":"Mercedes-Benz Arena","cityID":2,"city":{"id":2,"cityName":"Berlin"}},{"id":10,"arenaName":"Natasha Arena","cityID":3,"city":{"id":3,"cityName":"London"}},{"id":2,"arenaName":"Olimpiyskiy","cityID":1,"city":{"id":1,"cityName":"Moscow"}},{"id":3,"arenaName":"Olimpiyskiy","cityID":1,"city":{"id":1,"cityName":"Moscow"}},{"id":7,"arenaName":"Olympiastadion Berlin","cityID":2,"city":{"id":2,"cityName":"Berlin"}},{"id":11,"arenaName":"Unique Arena","cityID":3,"city":{"id":3,"cityName":"London"}}]
 
 
 
-6364691177441082418 - Request: SERVICE: ArenaService 
+63646959524474370011 - Request: SERVICE: ArenaService 
 GET: http://localhost:58349/api/arenas/page/1
 Accept: application/json
 
 
-6364691177441082418 - Response: Date: Tue, 21 Nov 2017 22:42:53 GMT
+63646959524474370011 - Response: Date: Wed, 22 Nov 2017 11:58:44 GMT
 Transfer-Encoding: chunked
 Server: Kestrel
-X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNc0JLQu9Cw0LTQuNC80LjRgFxEZXNrdG9wXExSMl9ORVdcQXJlbmFTZXJ2aWNlXEFyZW5hU2VydmljZVxhcGlcYXJlbmFzXHBhZ2VcMQ==?=
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFyZW5hU2VydmljZVxBcmVuYVNlcnZpY2VcYXBpXGFyZW5hc1xjb3VudA==?=
 X-Powered-By: ASP.NET
 
 Status: OK
-[{"id":2005,"arenaName":"Another Arena","cityID":3,"city":{"id":3,"cityName":"London"}},{"id":5,"arenaName":"Brixton Academy","cityID":3,"city":{"id":3,"cityName":"London"}},{"id":1,"arenaName":"Crocus City Hall","cityID":1,"city":{"id":1,"cityName":"Moscow"}},{"id":6,"arenaName":"Mercedes-Benz Arena","cityID":2,"city":{"id":2,"cityName":"Berlin"}},{"id":2008,"arenaName":"Natasha's Arena","cityID":1,"city":{"id":1,"cityName":"Moscow"}},{"id":2004,"arenaName":"New City Arena","cityID":1,"city":{"id":1,"cityName":"Moscow"}},{"id":2010,"arenaName":"New User Arena","cityID":3,"city":{"id":3,"cityName":"London"}},{"id":2,"arenaName":"Olimpiyskiy","cityID":1,"city":{"id":1,"cityName":"Moscow"}},{"id":7,"arenaName":"Olympiastadion Berlin","cityID":2,"city":{"id":2,"cityName":"Berlin"}},{"id":2007,"arenaName":"Unique New Arena","cityID":3,"city":{"id":3,"cityName":"London"}}]
+13
 
 
 
-63646911784959271310 - Request: SERVICE: ArenaService 
+63646959528577420211 - Request: SERVICE: ArenaService 
+DELETE: http://localhost:58349/api/arenas/15
+Accept: application/json
+
+
+63646959528577420211 - Response: Date: Wed, 22 Nov 2017 11:58:48 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFyZW5hU2VydmljZVxBcmVuYVNlcnZpY2VcYXBpXGFyZW5hc1wxNQ==?=
+X-Powered-By: ASP.NET
+
+Status: OK
+{"id":15,"arenaName":"Great New Arena","cityID":2,"city":null}
+
+
+
+63646959528991701510 - Request: SERVICE: ArenaService 
+GET: http://localhost:58349/api/arenas/page/1
+Accept: application/json
+
+
+63646959528991701510 - Response: Date: Wed, 22 Nov 2017 11:58:48 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFyZW5hU2VydmljZVxBcmVuYVNlcnZpY2VcYXBpXGFyZW5hc1xwYWdlXDE=?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":8,"arenaName":"Brilliant Natasha Arena","cityID":2,"city":{"id":2,"cityName":"Berlin"}},{"id":5,"arenaName":"Brixton Academy","cityID":3,"city":{"id":3,"cityName":"London"}},{"id":1,"arenaName":"Crocus City Hall","cityID":1,"city":{"id":1,"cityName":"Moscow"}},{"id":6,"arenaName":"Mercedes-Benz Arena","cityID":2,"city":{"id":2,"cityName":"Berlin"}},{"id":10,"arenaName":"Natasha Arena","cityID":3,"city":{"id":3,"cityName":"London"}},{"id":2,"arenaName":"Olimpiyskiy","cityID":1,"city":{"id":1,"cityName":"Moscow"}},{"id":3,"arenaName":"Olimpiyskiy","cityID":1,"city":{"id":1,"cityName":"Moscow"}},{"id":7,"arenaName":"Olympiastadion Berlin","cityID":2,"city":{"id":2,"cityName":"Berlin"}},{"id":11,"arenaName":"Unique Arena","cityID":3,"city":{"id":3,"cityName":"London"}},{"id":9,"arenaName":"Vova Arena","cityID":1,"city":{"id":1,"cityName":"Moscow"}}]
+
+
+
+63646959529130100310 - Request: SERVICE: ArenaService 
+GET: http://localhost:58349/api/arenas/page/1
+Accept: application/json
+
+
+63646959529130100310 - Response: Date: Wed, 22 Nov 2017 11:58:48 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFyZW5hU2VydmljZVxBcmVuYVNlcnZpY2VcYXBpXGFyZW5hc1xjb3VudA==?=
+X-Powered-By: ASP.NET
+
+Status: OK
+12
+
+
+
+6364695964455242478 - Request: SERVICE: ArenaService 
+GET: http://localhost:58349/api/arenas/page/1
+Accept: application/json
+
+
+6364695964455242478 - Response: Date: Wed, 22 Nov 2017 12:00:43 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFyZW5hU2VydmljZVxBcmVuYVNlcnZpY2VcYXBpXGFyZW5hc1xwYWdlXDE=?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":8,"arenaName":"Brilliant Natasha Arena","cityID":2,"city":{"id":2,"cityName":"Berlin"}},{"id":5,"arenaName":"Brixton Academy","cityID":3,"city":{"id":3,"cityName":"London"}},{"id":1,"arenaName":"Crocus City Hall","cityID":1,"city":{"id":1,"cityName":"Moscow"}},{"id":6,"arenaName":"Mercedes-Benz Arena","cityID":2,"city":{"id":2,"cityName":"Berlin"}},{"id":10,"arenaName":"Natasha Arena","cityID":3,"city":{"id":3,"cityName":"London"}},{"id":2,"arenaName":"Olimpiyskiy","cityID":1,"city":{"id":1,"cityName":"Moscow"}},{"id":3,"arenaName":"Olimpiyskiy","cityID":1,"city":{"id":1,"cityName":"Moscow"}},{"id":7,"arenaName":"Olympiastadion Berlin","cityID":2,"city":{"id":2,"cityName":"Berlin"}},{"id":11,"arenaName":"Unique Arena","cityID":3,"city":{"id":3,"cityName":"London"}},{"id":9,"arenaName":"Vova Arena","cityID":1,"city":{"id":1,"cityName":"Moscow"}}]
+
+
+
+6364695964462119538 - Request: SERVICE: ArenaService 
+GET: http://localhost:58349/api/arenas/page/1
+Accept: application/json
+
+
+6364695964462119538 - Response: Date: Wed, 22 Nov 2017 12:00:44 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFyZW5hU2VydmljZVxBcmVuYVNlcnZpY2VcYXBpXGFyZW5hc1xjb3VudA==?=
+X-Powered-By: ASP.NET
+
+Status: OK
+12
+
+
+
+6364695967463965049 - Request: SERVICE: ArenaService 
 POST: http://localhost:58349/api/arenas
 Accept: application/json
-.{
-  "ArenaName": "Brilliant Arena",
-  "CityID": 2
+{
+  "ArenaName": "asdf",
+  "CityID": 5
 }
-63646911784959271310 - Response: Date: Tue, 21 Nov 2017 22:43:04 GMT
+
+6364695967463965049 - Response: Date: Wed, 22 Nov 2017 12:01:14 GMT
 Transfer-Encoding: chunked
-Location: http://localhost:58349/api/Arenas/3009
 Server: Kestrel
-X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNc0JLQu9Cw0LTQuNC80LjRgFxEZXNrdG9wXExSMl9ORVdcQXJlbmFTZXJ2aWNlXEFyZW5hU2VydmljZVxhcGlcYXJlbmFz?=
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFyZW5hU2VydmljZVxBcmVuYVNlcnZpY2VcYXBpXGFyZW5hcw==?=
 X-Powered-By: ASP.NET
 
-Status: Created
-{"id":3009,"arenaName":"Brilliant Arena","cityID":2,"city":null}
+Status: InternalServerError
+Internal Server Error
 
 
 
-6364691178508899069 - Request: SERVICE: ArenaService 
+6364695968935172479 - Request: SERVICE: ArenaService 
 GET: http://localhost:58349/api/arenas/page/1
 Accept: application/json
 
 
-6364691178508899069 - Response: Date: Tue, 21 Nov 2017 22:43:04 GMT
+6364695968935172479 - Response: Date: Wed, 22 Nov 2017 12:01:29 GMT
 Transfer-Encoding: chunked
 Server: Kestrel
-X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNc0JLQu9Cw0LTQuNC80LjRgFxEZXNrdG9wXExSMl9ORVdcQXJlbmFTZXJ2aWNlXEFyZW5hU2VydmljZVxhcGlcYXJlbmFzXHBhZ2VcMQ==?=
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFyZW5hU2VydmljZVxBcmVuYVNlcnZpY2VcYXBpXGFyZW5hc1xwYWdlXDE=?=
 X-Powered-By: ASP.NET
 
 Status: OK
-[{"id":2005,"arenaName":"Another Arena","cityID":3,"city":{"id":3,"cityName":"London"}},{"id":3009,"arenaName":"Brilliant Arena","cityID":2,"city":{"id":2,"cityName":"Berlin"}},{"id":5,"arenaName":"Brixton Academy","cityID":3,"city":{"id":3,"cityName":"London"}},{"id":1,"arenaName":"Crocus City Hall","cityID":1,"city":{"id":1,"cityName":"Moscow"}},{"id":6,"arenaName":"Mercedes-Benz Arena","cityID":2,"city":{"id":2,"cityName":"Berlin"}},{"id":2008,"arenaName":"Natasha's Arena","cityID":1,"city":{"id":1,"cityName":"Moscow"}},{"id":2004,"arenaName":"New City Arena","cityID":1,"city":{"id":1,"cityName":"Moscow"}},{"id":2010,"arenaName":"New User Arena","cityID":3,"city":{"id":3,"cityName":"London"}},{"id":2,"arenaName":"Olimpiyskiy","cityID":1,"city":{"id":1,"cityName":"Moscow"}},{"id":7,"arenaName":"Olympiastadion Berlin","cityID":2,"city":{"id":2,"cityName":"Berlin"}}]
+[{"id":8,"arenaName":"Brilliant Natasha Arena","cityID":2,"city":{"id":2,"cityName":"Berlin"}},{"id":5,"arenaName":"Brixton Academy","cityID":3,"city":{"id":3,"cityName":"London"}},{"id":1,"arenaName":"Crocus City Hall","cityID":1,"city":{"id":1,"cityName":"Moscow"}},{"id":6,"arenaName":"Mercedes-Benz Arena","cityID":2,"city":{"id":2,"cityName":"Berlin"}},{"id":10,"arenaName":"Natasha Arena","cityID":3,"city":{"id":3,"cityName":"London"}},{"id":2,"arenaName":"Olimpiyskiy","cityID":1,"city":{"id":1,"cityName":"Moscow"}},{"id":3,"arenaName":"Olimpiyskiy","cityID":1,"city":{"id":1,"cityName":"Moscow"}},{"id":7,"arenaName":"Olympiastadion Berlin","cityID":2,"city":{"id":2,"cityName":"Berlin"}},{"id":11,"arenaName":"Unique Arena","cityID":3,"city":{"id":3,"cityName":"London"}},{"id":9,"arenaName":"Vova Arena","cityID":1,"city":{"id":1,"cityName":"Moscow"}}]
 
 
 
-63646911785113998311 - Request: SERVICE: ArenaService 
+63646959689390368026 - Request: SERVICE: ArenaService 
 GET: http://localhost:58349/api/arenas/page/1
 Accept: application/json
 
 
-63646911785113998311 - Response: Date: Tue, 21 Nov 2017 22:43:04 GMT
+63646959689390368026 - Response: Date: Wed, 22 Nov 2017 12:01:29 GMT
 Transfer-Encoding: chunked
 Server: Kestrel
-X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNc0JLQu9Cw0LTQuNC80LjRgFxEZXNrdG9wXExSMl9ORVdcQXJlbmFTZXJ2aWNlXEFyZW5hU2VydmljZVxhcGlcYXJlbmFzXHBhZ2VcMQ==?=
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFyZW5hU2VydmljZVxBcmVuYVNlcnZpY2VcYXBpXGFyZW5hc1xjb3VudA==?=
 X-Powered-By: ASP.NET
 
 Status: OK
-[{"id":2005,"arenaName":"Another Arena","cityID":3,"city":{"id":3,"cityName":"London"}},{"id":3009,"arenaName":"Brilliant Arena","cityID":2,"city":{"id":2,"cityName":"Berlin"}},{"id":5,"arenaName":"Brixton Academy","cityID":3,"city":{"id":3,"cityName":"London"}},{"id":1,"arenaName":"Crocus City Hall","cityID":1,"city":{"id":1,"cityName":"Moscow"}},{"id":6,"arenaName":"Mercedes-Benz Arena","cityID":2,"city":{"id":2,"cityName":"Berlin"}},{"id":2008,"arenaName":"Natasha's Arena","cityID":1,"city":{"id":1,"cityName":"Moscow"}},{"id":2004,"arenaName":"New City Arena","cityID":1,"city":{"id":1,"cityName":"Moscow"}},{"id":2010,"arenaName":"New User Arena","cityID":3,"city":{"id":3,"cityName":"London"}},{"id":2,"arenaName":"Olimpiyskiy","cityID":1,"city":{"id":1,"cityName":"Moscow"}},{"id":7,"arenaName":"Olympiastadion Berlin","cityID":2,"city":{"id":2,"cityName":"Berlin"}}]
+12
 
 
 
-6364691178711244309 - Request: SERVICE: ArenaService 
-DELETE: http://localhost:58349/api/arenas/3009
+63646959692132669410 - Request: SERVICE: ArenaService 
+GET: http://localhost:58349/
 Accept: application/json
 
 
-6364691178711244309 - Response: Date: Tue, 21 Nov 2017 22:43:07 GMT
+63646959692132669410 - Response: Date: Wed, 22 Nov 2017 12:01:32 GMT
 Transfer-Encoding: chunked
 Server: Kestrel
-X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNc0JLQu9Cw0LTQuNC80LjRgFxEZXNrdG9wXExSMl9ORVdcQXJlbmFTZXJ2aWNlXEFyZW5hU2VydmljZVxhcGlcYXJlbmFzXDMwMDk=?=
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFyZW5hU2VydmljZVxBcmVuYVNlcnZpY2VcYXBpXGFyZW5hc1w4?=
 X-Powered-By: ASP.NET
 
 Status: OK
-{"id":3009,"arenaName":"Brilliant Arena","cityID":2,"city":null}
+{"id":8,"arenaName":"Brilliant Natasha Arena","cityID":2,"city":null}
 
 
 
-63646911787260026911 - Request: SERVICE: ArenaService 
-GET: http://localhost:58349/api/arenas/page/3009
+63646959695379507610 - Request: SERVICE: ArenaService 
+PUT: http://localhost:58349/api/arenas/8
+Accept: application/json
+{
+  "ID": 8,
+  "ArenaName": "Brilliant Natasha Arena",
+  "CityID": 28
+}
+
+63646959695379507610 - Response: Date: Wed, 22 Nov 2017 12:01:35 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFyZW5hU2VydmljZVxBcmVuYVNlcnZpY2VcYXBpXGFyZW5hc1w4?=
+X-Powered-By: ASP.NET
+
+Status: InternalServerError
+Internal Server Error
+
+
+
+63646960053107801811 - Request: SERVICE: ArenaService 
+GET: http://localhost:58349/api/arenas/page/1
 Accept: application/json
 
 
-63646911787260026911 - Response: Date: Tue, 21 Nov 2017 22:43:07 GMT
+63646960053107801811 - Response: Date: Wed, 22 Nov 2017 12:07:32 GMT
 Transfer-Encoding: chunked
 Server: Kestrel
-X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNc0JLQu9Cw0LTQuNC80LjRgFxEZXNrdG9wXExSMl9ORVdcQXJlbmFTZXJ2aWNlXEFyZW5hU2VydmljZVxhcGlcYXJlbmFzXHBhZ2VcMzAwOQ==?=
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFyZW5hU2VydmljZVxBcmVuYVNlcnZpY2VcYXBpXGFyZW5hc1xwYWdlXDE=?=
 X-Powered-By: ASP.NET
 
 Status: OK
-[]
+[{"id":8,"arenaName":"Brilliant Natasha Arena","cityID":2,"city":{"id":2,"cityName":"Berlin"}},{"id":5,"arenaName":"Brixton Academy","cityID":3,"city":{"id":3,"cityName":"London"}},{"id":1,"arenaName":"Crocus City Hall","cityID":1,"city":{"id":1,"cityName":"Moscow"}},{"id":6,"arenaName":"Mercedes-Benz Arena","cityID":2,"city":{"id":2,"cityName":"Berlin"}},{"id":10,"arenaName":"Natasha Arena","cityID":3,"city":{"id":3,"cityName":"London"}},{"id":2,"arenaName":"Olimpiyskiy","cityID":1,"city":{"id":1,"cityName":"Moscow"}},{"id":3,"arenaName":"Olimpiyskiy","cityID":1,"city":{"id":1,"cityName":"Moscow"}},{"id":7,"arenaName":"Olympiastadion Berlin","cityID":2,"city":{"id":2,"cityName":"Berlin"}},{"id":11,"arenaName":"Unique Arena","cityID":3,"city":{"id":3,"cityName":"London"}},{"id":9,"arenaName":"Vova Arena","cityID":1,"city":{"id":1,"cityName":"Moscow"}}]
 
 
 
-6364691178728612718 - Request: SERVICE: ArenaService 
-GET: http://localhost:58349/api/arenas/page/3009
+6364696005316284628 - Request: SERVICE: ArenaService 
+GET: http://localhost:58349/api/arenas/page/1
 Accept: application/json
 
 
-6364691178728612718 - Response: Date: Tue, 21 Nov 2017 22:43:07 GMT
+6364696005316284628 - Response: Date: Wed, 22 Nov 2017 12:07:32 GMT
 Transfer-Encoding: chunked
 Server: Kestrel
-X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNc0JLQu9Cw0LTQuNC80LjRgFxEZXNrdG9wXExSMl9ORVdcQXJlbmFTZXJ2aWNlXEFyZW5hU2VydmljZVxhcGlcYXJlbmFzXHBhZ2VcMzAwOQ==?=
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFyZW5hU2VydmljZVxBcmVuYVNlcnZpY2VcYXBpXGFyZW5hc1xjb3VudA==?=
 X-Powered-By: ASP.NET
 
 Status: OK
-[]
+12
+
+
+
+6364696022555211448 - Request: SERVICE: ArenaService 
+GET: http://localhost:58349/api/arenas/page/1
+Accept: application/json
+
+
+6364696022555211448 - Response: Date: Wed, 22 Nov 2017 12:10:24 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFyZW5hU2VydmljZVxBcmVuYVNlcnZpY2VcYXBpXGFyZW5hc1xwYWdlXDE=?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":8,"arenaName":"Brilliant Natasha Arena","cityID":2,"city":{"id":2,"cityName":"Berlin"}},{"id":5,"arenaName":"Brixton Academy","cityID":3,"city":{"id":3,"cityName":"London"}},{"id":1,"arenaName":"Crocus City Hall","cityID":1,"city":{"id":1,"cityName":"Moscow"}},{"id":6,"arenaName":"Mercedes-Benz Arena","cityID":2,"city":{"id":2,"cityName":"Berlin"}},{"id":10,"arenaName":"Natasha Arena","cityID":3,"city":{"id":3,"cityName":"London"}},{"id":2,"arenaName":"Olimpiyskiy","cityID":1,"city":{"id":1,"cityName":"Moscow"}},{"id":3,"arenaName":"Olimpiyskiy","cityID":1,"city":{"id":1,"cityName":"Moscow"}},{"id":7,"arenaName":"Olympiastadion Berlin","cityID":2,"city":{"id":2,"cityName":"Berlin"}},{"id":11,"arenaName":"Unique Arena","cityID":3,"city":{"id":3,"cityName":"London"}},{"id":9,"arenaName":"Vova Arena","cityID":1,"city":{"id":1,"cityName":"Moscow"}}]
+
+
+
+63646960225671561810 - Request: SERVICE: ArenaService 
+GET: http://localhost:58349/api/arenas/page/1
+Accept: application/json
+
+
+63646960225671561810 - Response: Date: Wed, 22 Nov 2017 12:10:24 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFyZW5hU2VydmljZVxBcmVuYVNlcnZpY2VcYXBpXGFyZW5hc1xjb3VudA==?=
+X-Powered-By: ASP.NET
+
+Status: OK
+12
+
+
+
+6364696066364735708 - Request: SERVICE: ArenaService 
+GET: http://localhost:58349/api/arenas/page/1
+Accept: application/json
+
+
+6364696066364735708 - Response: Date: Wed, 22 Nov 2017 12:17:42 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFyZW5hU2VydmljZVxBcmVuYVNlcnZpY2VcYXBpXGFyZW5hc1xwYWdlXDE=?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":8,"arenaName":"Brilliant Natasha Arena","cityID":2,"city":{"id":2,"cityName":"Berlin"}},{"id":5,"arenaName":"Brixton Academy","cityID":3,"city":{"id":3,"cityName":"London"}},{"id":1,"arenaName":"Crocus City Hall","cityID":1,"city":{"id":1,"cityName":"Moscow"}},{"id":6,"arenaName":"Mercedes-Benz Arena","cityID":2,"city":{"id":2,"cityName":"Berlin"}},{"id":10,"arenaName":"Natasha Arena","cityID":3,"city":{"id":3,"cityName":"London"}},{"id":2,"arenaName":"Olimpiyskiy","cityID":1,"city":{"id":1,"cityName":"Moscow"}},{"id":3,"arenaName":"Olimpiyskiy","cityID":1,"city":{"id":1,"cityName":"Moscow"}},{"id":7,"arenaName":"Olympiastadion Berlin","cityID":2,"city":{"id":2,"cityName":"Berlin"}},{"id":11,"arenaName":"Unique Arena","cityID":3,"city":{"id":3,"cityName":"London"}},{"id":9,"arenaName":"Vova Arena","cityID":1,"city":{"id":1,"cityName":"Moscow"}}]
+
+
+
+63646960663698038411 - Request: SERVICE: ArenaService 
+GET: http://localhost:58349/api/arenas/page/1
+Accept: application/json
+
+
+63646960663698038411 - Response: Date: Wed, 22 Nov 2017 12:17:43 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFyZW5hU2VydmljZVxBcmVuYVNlcnZpY2VcYXBpXGFyZW5hc1xjb3VudA==?=
+X-Powered-By: ASP.NET
+
+Status: OK
+12
+
+
+
+6364696068549086528 - Request: SERVICE: ArenaService 
+GET: http://localhost:58349/api/arenas/page/1
+Accept: application/json
+
+
+6364696068549086528 - Response: Date: Wed, 22 Nov 2017 12:18:05 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFyZW5hU2VydmljZVxBcmVuYVNlcnZpY2VcYXBpXGFyZW5hc1xwYWdlXDE=?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":8,"arenaName":"Brilliant Natasha Arena","cityID":2,"city":{"id":2,"cityName":"Berlin"}},{"id":5,"arenaName":"Brixton Academy","cityID":3,"city":{"id":3,"cityName":"London"}},{"id":1,"arenaName":"Crocus City Hall","cityID":1,"city":{"id":1,"cityName":"Moscow"}},{"id":6,"arenaName":"Mercedes-Benz Arena","cityID":2,"city":{"id":2,"cityName":"Berlin"}},{"id":10,"arenaName":"Natasha Arena","cityID":3,"city":{"id":3,"cityName":"London"}},{"id":2,"arenaName":"Olimpiyskiy","cityID":1,"city":{"id":1,"cityName":"Moscow"}},{"id":3,"arenaName":"Olimpiyskiy","cityID":1,"city":{"id":1,"cityName":"Moscow"}},{"id":7,"arenaName":"Olympiastadion Berlin","cityID":2,"city":{"id":2,"cityName":"Berlin"}},{"id":11,"arenaName":"Unique Arena","cityID":3,"city":{"id":3,"cityName":"London"}},{"id":9,"arenaName":"Vova Arena","cityID":1,"city":{"id":1,"cityName":"Moscow"}}]
+
+
+
+63646960685542603219 - Request: SERVICE: ArenaService 
+GET: http://localhost:58349/api/arenas/page/1
+Accept: application/json
+
+
+63646960685542603219 - Response: Date: Wed, 22 Nov 2017 12:18:05 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFyZW5hU2VydmljZVxBcmVuYVNlcnZpY2VcYXBpXGFyZW5hc1xjb3VudA==?=
+X-Powered-By: ASP.NET
+
+Status: OK
+12
+
+
+
+6364696083882267678 - Request: SERVICE: ArenaService 
+GET: http://localhost:58349/api/arenas/page/1
+Accept: application/json
+
+
+6364696083882267678 - Response: Date: Wed, 22 Nov 2017 12:20:38 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFyZW5hU2VydmljZVxBcmVuYVNlcnZpY2VcYXBpXGFyZW5hc1xwYWdlXDE=?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":8,"arenaName":"Brilliant Natasha Arena","cityID":2,"city":{"id":2,"cityName":"Berlin"}},{"id":5,"arenaName":"Brixton Academy","cityID":3,"city":{"id":3,"cityName":"London"}},{"id":1,"arenaName":"Crocus City Hall","cityID":1,"city":{"id":1,"cityName":"Moscow"}},{"id":6,"arenaName":"Mercedes-Benz Arena","cityID":2,"city":{"id":2,"cityName":"Berlin"}},{"id":10,"arenaName":"Natasha Arena","cityID":3,"city":{"id":3,"cityName":"London"}},{"id":2,"arenaName":"Olimpiyskiy","cityID":1,"city":{"id":1,"cityName":"Moscow"}},{"id":3,"arenaName":"Olimpiyskiy","cityID":1,"city":{"id":1,"cityName":"Moscow"}},{"id":7,"arenaName":"Olympiastadion Berlin","cityID":2,"city":{"id":2,"cityName":"Berlin"}},{"id":11,"arenaName":"Unique Arena","cityID":3,"city":{"id":3,"cityName":"London"}},{"id":9,"arenaName":"Vova Arena","cityID":1,"city":{"id":1,"cityName":"Moscow"}}]
+
+
+
+63646960838904539211 - Request: SERVICE: ArenaService 
+GET: http://localhost:58349/api/arenas/page/1
+Accept: application/json
+
+
+63646960838904539211 - Response: Date: Wed, 22 Nov 2017 12:20:38 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFyZW5hU2VydmljZVxBcmVuYVNlcnZpY2VcYXBpXGFyZW5hc1xjb3VudA==?=
+X-Powered-By: ASP.NET
+
+Status: OK
+12
+
+
+
+6364696090023149658 - Request: SERVICE: ArenaService 
+GET: http://localhost:58349/api/arenas/page/1
+Accept: application/json
+
+
+6364696090023149658 - Response: Date: Wed, 22 Nov 2017 12:21:39 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFyZW5hU2VydmljZVxBcmVuYVNlcnZpY2VcYXBpXGFyZW5hc1xwYWdlXDE=?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":8,"arenaName":"Brilliant Natasha Arena","cityID":2,"city":{"id":2,"cityName":"Berlin"}},{"id":5,"arenaName":"Brixton Academy","cityID":3,"city":{"id":3,"cityName":"London"}},{"id":1,"arenaName":"Crocus City Hall","cityID":1,"city":{"id":1,"cityName":"Moscow"}},{"id":6,"arenaName":"Mercedes-Benz Arena","cityID":2,"city":{"id":2,"cityName":"Berlin"}},{"id":10,"arenaName":"Natasha Arena","cityID":3,"city":{"id":3,"cityName":"London"}},{"id":2,"arenaName":"Olimpiyskiy","cityID":1,"city":{"id":1,"cityName":"Moscow"}},{"id":3,"arenaName":"Olimpiyskiy","cityID":1,"city":{"id":1,"cityName":"Moscow"}},{"id":7,"arenaName":"Olympiastadion Berlin","cityID":2,"city":{"id":2,"cityName":"Berlin"}},{"id":11,"arenaName":"Unique Arena","cityID":3,"city":{"id":3,"cityName":"London"}},{"id":9,"arenaName":"Vova Arena","cityID":1,"city":{"id":1,"cityName":"Moscow"}}]
+
+
+
+6364696090040924359 - Request: SERVICE: ArenaService 
+GET: http://localhost:58349/api/arenas/page/1
+Accept: application/json
+
+
+6364696090040924359 - Response: Date: Wed, 22 Nov 2017 12:21:39 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFyZW5hU2VydmljZVxBcmVuYVNlcnZpY2VcYXBpXGFyZW5hc1xjb3VudA==?=
+X-Powered-By: ASP.NET
+
+Status: OK
+12
+
+
+
+6364696100939568659 - Request: SERVICE: ArenaService 
+GET: http://localhost:58349/api/arenas/page/1
+Accept: application/json
+
+
+6364696100939568659 - Response: Date: Wed, 22 Nov 2017 12:23:28 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFyZW5hU2VydmljZVxBcmVuYVNlcnZpY2VcYXBpXGFyZW5hc1xwYWdlXDE=?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":8,"arenaName":"Brilliant Natasha Arena","cityID":2,"city":{"id":2,"cityName":"Berlin"}},{"id":5,"arenaName":"Brixton Academy","cityID":3,"city":{"id":3,"cityName":"London"}},{"id":1,"arenaName":"Crocus City Hall","cityID":1,"city":{"id":1,"cityName":"Moscow"}},{"id":6,"arenaName":"Mercedes-Benz Arena","cityID":2,"city":{"id":2,"cityName":"Berlin"}},{"id":10,"arenaName":"Natasha Arena","cityID":3,"city":{"id":3,"cityName":"London"}},{"id":2,"arenaName":"Olimpiyskiy","cityID":1,"city":{"id":1,"cityName":"Moscow"}},{"id":3,"arenaName":"Olimpiyskiy","cityID":1,"city":{"id":1,"cityName":"Moscow"}},{"id":7,"arenaName":"Olympiastadion Berlin","cityID":2,"city":{"id":2,"cityName":"Berlin"}},{"id":11,"arenaName":"Unique Arena","cityID":3,"city":{"id":3,"cityName":"London"}},{"id":9,"arenaName":"Vova Arena","cityID":1,"city":{"id":1,"cityName":"Moscow"}}]
+
+
+
+63646961009481589610 - Request: SERVICE: ArenaService 
+GET: http://localhost:58349/api/arenas/page/1
+Accept: application/json
+
+
+63646961009481589610 - Response: Date: Wed, 22 Nov 2017 12:23:28 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFyZW5hU2VydmljZVxBcmVuYVNlcnZpY2VcYXBpXGFyZW5hc1xjb3VudA==?=
+X-Powered-By: ASP.NET
+
+Status: OK
+12
+
+
+
+6364696101625704339 - Request: SERVICE: ArenaService 
+GET: http://localhost:58349/
+Accept: application/json
+
+
+6364696101625704339 - Response: Date: Wed, 22 Nov 2017 12:23:36 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFyZW5hU2VydmljZVxBcmVuYVNlcnZpY2VcYXBpXGFyZW5hc1w4?=
+X-Powered-By: ASP.NET
+
+Status: OK
+{"id":8,"arenaName":"Brilliant Natasha Arena","cityID":2,"city":null}
 
 
 

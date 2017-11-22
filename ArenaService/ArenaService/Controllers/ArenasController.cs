@@ -123,6 +123,7 @@ namespace ArenaService.Controllers
             try
             {
                 await _context.SaveChangesAsync();
+                return Accepted(arena);
             }
             catch (DbUpdateConcurrencyException)
             {
@@ -136,7 +137,7 @@ namespace ArenaService.Controllers
                 }
             }
 
-            return NoContent();
+            //return NoContent();
         }
 
 

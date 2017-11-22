@@ -75,17 +75,17 @@ namespace AggregationService.Controllers
                 HttpResponseMessage responseStringsCount = await client.GetAsync(requestStringCount);
 
                 /**/request = "SERVICE: ArenaService \r\nGET: " + URLArenaService + "/" + requestString + "\r\n" + client.DefaultRequestHeaders.ToString();
-                /**/responseString = response.Headers.ToString() + "\nStatus: " + response.StatusCode.ToString();
+                /**/responseString = responseStringsCount.Headers.ToString() + "\nStatus: " + responseStringsCount.StatusCode.ToString();
 
                 if (responseStringsCount.IsSuccessStatusCode)
                 {
-                    /**/responseMessage = await response.Content.ReadAsByteArrayAsync();
+                    /**/responseMessage = await responseStringsCount.Content.ReadAsByteArrayAsync();
                     var countStringsContent = await responseStringsCount.Content.ReadAsStringAsync();
                     count = JsonConvert.DeserializeObject<int>(countStringsContent);
                 }
                 else
                 {
-                    /**/responseMessage = Encoding.UTF8.GetBytes(response.ReasonPhrase);
+                    /**/responseMessage = Encoding.UTF8.GetBytes(responseStringsCount.ReasonPhrase);
                     return Error();
                 }
                 ArenaList resultQuery = new ArenaList() { arenas = result, countArenas = count };
@@ -127,6 +127,15 @@ namespace AggregationService.Controllers
 
             var response = await client.PostAsJsonAsync("api/arenas", values);
 
+            if ((int)response.StatusCode == 500)
+            {
+                string description = "There is no city with ID (" + arena.CityID + ")";
+                ResponseMessage message = new ResponseMessage();
+                message.description = description;
+                message.message = response;
+                return View("Error", message);
+            }
+
             /**/request = "SERVICE: ArenaService \r\nPOST: " + URLArenaService + "/" + requestString + "\r\n" + client.DefaultRequestHeaders.ToString();
             /**/string responseString = response.Headers.ToString() + "\nStatus: " + response.StatusCode.ToString();
 
@@ -139,8 +148,13 @@ namespace AggregationService.Controllers
             else
             {
                 /**/responseMessage = Encoding.UTF8.GetBytes(response.ReasonPhrase);
-                /**/await LogQuery(request, responseString, responseMessage);
-                return View("Error");
+                /**/await LogQuery(request, requestMessage, responseString, responseMessage);
+                string description = "Another error ";
+                ResponseMessage message = new ResponseMessage();
+                message.description = description;
+                message.message = response;
+                //return View(message);
+                return View("Error", message);
             } 
         }
 
@@ -171,7 +185,7 @@ namespace AggregationService.Controllers
                 {
                     /**/responseMessage = await response.Content.ReadAsByteArrayAsync();
                     /**/await LogQuery(request, responseString, responseMessage);
-                    return RedirectToAction(nameof(Index));
+                    return RedirectToAction(nameof(Index), new { id = 1 });
                 }
                 else
                 {
@@ -179,6 +193,113 @@ namespace AggregationService.Controllers
                     /**/await LogQuery(request, responseString, responseMessage);
                     return View("Error");
                 }
+            }
+        }
+
+
+        public async Task<IActionResult> Edite(int? id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+
+            //
+            // ПОЛУЧАЕМ СУЩНОСТЬ с ID
+            //
+            Arena arena;
+            using (var client = new HttpClient())
+            {
+                client.BaseAddress = new Uri(URLArenaService);
+                client.DefaultRequestHeaders.Accept.Clear();
+                client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+
+                string requestString = "api/arenas/" + id;
+                HttpResponseMessage response = await client.GetAsync(requestString);
+
+                /**/string request = "SERVICE: ArenaService \r\nGET: " + URLArenaService + "/" + "\r\n" + client.DefaultRequestHeaders.ToString();
+                /**/string responseString = response.Headers.ToString() + "\nStatus: " + response.StatusCode.ToString();
+                /**/byte[] responseMessage;
+
+                if (response.IsSuccessStatusCode)
+                {
+                    /**/ responseMessage = await response.Content.ReadAsByteArrayAsync();
+                    var arenaContent = await response.Content.ReadAsStringAsync();
+                    arena = JsonConvert.DeserializeObject<Arena>(arenaContent);
+                    if (arena == null)
+                    {
+                        /**/await LogQuery(request, responseString, responseMessage);
+                        return NotFound();
+                    }
+                    /**/await LogQuery(request, responseString, responseMessage);
+                    return View(arena);
+                }
+                else
+                {
+                    /**/responseMessage = Encoding.UTF8.GetBytes(response.ReasonPhrase);
+                    /**/await LogQuery(request, responseString, responseMessage);
+                    return Error();
+                }
+            }
+        }
+
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Edite([Bind("ID,ArenaName,CityID")] Arena arena)
+        {
+            if (ModelState.IsValid)
+            {
+                //СЕРИАЛИЗУЕМ arena и посылаем на ArenaService
+                var values = new JObject();
+                values.Add("ID", arena.ID);
+                values.Add("ArenaName", arena.ArenaName);
+                values.Add("CityID", arena.CityID);
+
+                /**/var corrId = string.Format("{0}{1}", DateTime.Now.Ticks, Thread.CurrentThread.ManagedThreadId);
+                /**/string request;
+                /**/string requestMessage = values.ToString();
+                /**/byte[] responseMessage;
+
+                HttpClient client = new HttpClient();
+                client.BaseAddress = new Uri(URLArenaService);
+                client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+
+                HttpContent content = new StringContent(values.ToString(), Encoding.UTF8, "application/json");
+
+                /**/string requestString = "api/arenas/" + arena.ID;
+
+                var response = await client.PutAsJsonAsync(requestString, values);
+
+                /**/request = "SERVICE: ArenaService \r\nPUT: " + URLArenaService + "/" + requestString + "\r\n" + client.DefaultRequestHeaders.ToString();
+                /**/string responseString = response.Headers.ToString() + "\nStatus: " + response.StatusCode.ToString();
+
+                if ((int)response.StatusCode == 500)
+                {
+                    string description = "There is no city with ID (" + arena.CityID + ")";
+                    ResponseMessage message = new ResponseMessage();
+                    message.description = description;
+                    message.message = response;
+                    return View("Error", message);
+                }
+
+                if (response.IsSuccessStatusCode)
+                {
+                    /**/responseMessage = await response.Content.ReadAsByteArrayAsync();
+                    /**/await LogQuery(request, requestMessage, responseString, responseMessage);
+                    return RedirectToAction(nameof(Index), new { id = 1 });
+                }
+                else
+                {
+                    /**/responseMessage = Encoding.UTF8.GetBytes(response.ReasonPhrase);
+                    /**/await LogQuery(request, requestMessage, responseString, responseMessage);
+                    return View(response);
+                }
+            }
+            else
+            {
+                return View();
             }
         }
 

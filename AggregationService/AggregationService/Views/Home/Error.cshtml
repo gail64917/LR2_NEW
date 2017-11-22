@@ -1,4 +1,5 @@
-﻿
+﻿@model AggregationService.Models.ModelsForView.ResponseMessage;
+
 @{
     ViewData["Title"] = "Error";
 }
@@ -6,3 +7,5 @@
 <h2>Error</h2>
 
 <h4>An Error was occured during the runtime</h4>
+<h4>@Html.DisplayFor(model => model.message.ReasonPhrase);</h4>
+<h4>@Html.DisplayFor(model => model.description);</h4>
