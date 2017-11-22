@@ -18,12 +18,15 @@ namespace ArenaService.Controllers
     {
         const int StringsPerPage = 10;
 
+
         private readonly ArenaContext _context;
+
 
         public ArenasController(ArenaContext context)
         {
             _context = context;
         }
+
 
         // GET: api/Arenas
         [HttpGet]
@@ -50,6 +53,7 @@ namespace ArenaService.Controllers
             return arenasList.ToList();
         }
 
+
         [HttpGet]
         public List<Arena> GetArenasAll()
         {
@@ -66,6 +70,7 @@ namespace ArenaService.Controllers
             return arenasList.ToList();
         }
 
+
         //[HttpGet]
         //public IEnumerable<Arena> GetArenasAll()
         //{
@@ -77,7 +82,6 @@ namespace ArenaService.Controllers
 
         //    return arenas;
         //}
-
 
 
         // GET: api/Arenas/5
@@ -98,6 +102,7 @@ namespace ArenaService.Controllers
 
             return Ok(arena);
         }
+
 
         // PUT: api/Arenas/5
         [HttpPut("{id}")]
@@ -134,6 +139,7 @@ namespace ArenaService.Controllers
             return NoContent();
         }
 
+
         // POST: api/Arenas
         [HttpPost]
         public async Task<IActionResult> PostArena([FromBody] Arena arena)
@@ -148,6 +154,7 @@ namespace ArenaService.Controllers
 
             return CreatedAtAction("GetArena", new { id = arena.ID }, arena);
         }
+
 
         // DELETE: api/Arenas/5
         [HttpDelete("{id}")]
@@ -174,6 +181,7 @@ namespace ArenaService.Controllers
         {
             return _context.Arenas.Any(e => e.ID == id);
         }
+
 
         // GET: api/Arenas
         [HttpGet]

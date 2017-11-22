@@ -13151,11 +13151,11 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "C:\\Users\\Владимир\\Desktop\\LR2\\ArenaService\\ArenaService\\ArenaService.csproj",
+      "projectUniqueName": "C:\\Users\\Владимир\\Desktop\\LR2_NEW\\ArenaService\\ArenaService\\ArenaService.csproj",
       "projectName": "ArenaService",
-      "projectPath": "C:\\Users\\Владимир\\Desktop\\LR2\\ArenaService\\ArenaService\\ArenaService.csproj",
+      "projectPath": "C:\\Users\\Владимир\\Desktop\\LR2_NEW\\ArenaService\\ArenaService\\ArenaService.csproj",
       "packagesPath": "C:\\Users\\Владимир\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Владимир\\Desktop\\LR2\\ArenaService\\ArenaService\\obj\\",
+      "outputPath": "C:\\Users\\Владимир\\Desktop\\LR2_NEW\\ArenaService\\ArenaService\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
