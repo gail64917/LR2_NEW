@@ -26,12 +26,12 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a asp-area="" asp-controller="Home" asp-action="Index" class="navbar-brand">AggregationService</a>
+                <a asp-area="" asp-controller="Default" asp-action="Index" asp-route-id="" class="navbar-brand">AggregationService</a>
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li><a asp-area="" asp-controller="Home" asp-action="Index">Arenas</a></li>
-                    @*<li><a asp-area="" asp-controller="Home" asp-action="AddArena">AddArena</a></li>*@
+                    <li><a asp-area="" asp-controller="Arena" asp-action="Index" asp-route-id="1">Arenas</a></li>
+                    <li><a asp-area="" asp-controller="Artist" asp-action="Index" asp-route-id="1">Artists</a></li>
                 </ul>
             </div>
         </div>

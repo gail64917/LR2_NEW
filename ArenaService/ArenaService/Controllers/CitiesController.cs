@@ -8,6 +8,7 @@ using Microsoft.EntityFrameworkCore;
 using ArenaService.Data;
 using ArenaService.Models;
 using System.Text;
+using ArenaService.Models.JsonBindings;
 
 namespace ArenaService.Controllers
 {
@@ -88,6 +89,7 @@ namespace ArenaService.Controllers
             return NoContent();
         }
 
+
         // POST: api/Cities
         [HttpPost]
         public async Task<IActionResult> PostCity([FromBody] City city)
@@ -102,6 +104,7 @@ namespace ArenaService.Controllers
 
             return CreatedAtAction("GetCity", new { id = city.ID }, city);
         }
+
 
         // DELETE: api/Cities/5
         [HttpDelete("{id}")]
@@ -127,6 +130,27 @@ namespace ArenaService.Controllers
         private bool CityExists(int id)
         {
             return _context.Cities.Any(e => e.ID == id);
+        }
+
+
+        // POST: api/Cities/Find
+        [Route("Find")]
+        [HttpPost]
+        public async Task<IActionResult> FindByName([FromBody] CityBinding cityBinding)
+        {
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
+
+            var city = await _context.Cities.SingleOrDefaultAsync(m => m.CityName == cityBinding.Name);
+
+            if (city == null)
+            {
+                return NotFound();
+            }
+
+            return Ok(city);
         }
     }
 }

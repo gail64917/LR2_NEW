@@ -8,7 +8,7 @@ using Microsoft.EntityFrameworkCore;
 using ArenaService.Data;
 using ArenaService.Models;
 using ReflectionIT.Mvc.Paging;
-
+using ArenaService.Models.JsonBindings;
 
 namespace ArenaService.Controllers
 {
@@ -28,7 +28,7 @@ namespace ArenaService.Controllers
         }
 
 
-        // GET: api/Arenas
+        // GET: api/Arenas/page/{id}
         [HttpGet]
         [Route("page/{page}")]
         public List<Arena> GetArenas([FromRoute] int page = 1)
@@ -181,6 +181,28 @@ namespace ArenaService.Controllers
         private bool ArenaExists(int id)
         {
             return _context.Arenas.Any(e => e.ID == id);
+        }
+
+        // POST: api/Arenas/Find
+        [Route("Find")]
+        [HttpPost]
+        public async Task<IActionResult> FindByName([FromBody] ArenaBinding arenaBinding)
+        {
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
+
+            var arena = await _context.Arenas.SingleOrDefaultAsync(m => m.ArenaName == arenaBinding.Name);
+
+            _context.Entry(arena).Navigation("City").Load();
+
+            if (arena == null)
+            {
+                return NotFound();
+            }
+
+            return Ok(arena);
         }
 
 

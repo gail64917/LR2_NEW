@@ -30,7 +30,6 @@ namespace AggregationService
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {
-            //GlobalConfiguration.Configuration.MessageHandlers.Add(new MessageLoggingHandler());
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
@@ -38,7 +37,7 @@ namespace AggregationService
             }
             else
             {
-                app.UseExceptionHandler("/Home/Error");
+                app.UseExceptionHandler("/Arena/Error");
             }
 
             app.UseStaticFiles();
@@ -46,8 +45,11 @@ namespace AggregationService
             app.UseMvc(routes =>
             {
                 routes.MapRoute(
-                    name: "default",
-                    template: "{controller=Home}/{action=Index}/{id?}");
+                    name: "Default",
+                    template: "{controller=Default}/{id=1}");
+                //routes.MapRoute(
+                //    name: "Action",
+                //    template: "{controller=Default}/{action=Index}/{id=1}");
             });
         }
     }

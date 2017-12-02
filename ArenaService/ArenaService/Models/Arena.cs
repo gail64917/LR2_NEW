@@ -9,6 +9,7 @@ namespace ArenaService.Models
     {
         public int ID { get; set; }
         public string ArenaName { get; set; }
+        public int Capacity { get; set; }
         public int CityID { get; set; }
 
         public virtual City City { get; set; }
