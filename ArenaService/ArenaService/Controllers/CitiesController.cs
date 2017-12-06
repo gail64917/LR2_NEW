@@ -73,6 +73,7 @@ namespace ArenaService.Controllers
             try
             {
                 await _context.SaveChangesAsync();
+                return Accepted(city);
             }
             catch (DbUpdateConcurrencyException)
             {

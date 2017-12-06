@@ -11,8 +11,8 @@ namespace ConcerteService.Models.Concerte
         public string BrandName { get; set; }
 
         public string ShowName { get; set; }
-        public uint TicketsNumber { get; set; }
-        public uint Price { get; set; }
+        public int TicketsNumber { get; set; }
+        public int Price { get; set; }
         public DateTime Date { get; set; }
 
         public string CityName { get; set; }

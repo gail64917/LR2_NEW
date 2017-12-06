@@ -9,8 +9,8 @@ namespace ConcerteService.Models.Concerte
     {
         public int ID { get; set; }
         public string ShowName { get; set; }
-        public uint TicketsNumber { get; set; }
-        public uint Price { get; set; }
+        public int TicketsNumber { get; set; }
+        public int Price { get; set; }
         public string CityName { get; set; }
         public string ArenaName { get; set; }
         public string ArtistName { get; set; }

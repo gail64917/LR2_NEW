@@ -8,6 +8,14 @@ using Microsoft.EntityFrameworkCore;
 using ConcerteService.Data;
 using ConcerteService.Models.Concerte;
 using ReflectionIT.Mvc.Paging;
+using ConcerteService.Models;
+using System.Threading;
+using System.Net.Http;
+using System.Net.Http.Headers;
+using Newtonsoft.Json;
+using System.Text;
+using static ConcerteService.Logger.Logger;
+using ConcerteService.Models.JsonBindings;
 
 namespace ConcerteService.Controllers
 {
@@ -67,7 +75,7 @@ namespace ConcerteService.Controllers
         // GET: api/Concertes/Valid
         [HttpGet]
         [Route("Valid")]
-        public List<Concerte> GetValidConcertes([FromRoute] int page = 1)
+        public async Task<IActionResult> GetValidConcertes()
         {
             var qry = _context.Concerts.OrderBy(p => p.ID);
             foreach (Concerte a in qry)
@@ -81,28 +89,235 @@ namespace ConcerteService.Controllers
             // 3) арена существует и из этого города
             // 4) артист корректный
 
-
-
-            // ДЛЯ КАЖДОЙ СУЩНОСТИ КОНЦЕРТА: 
-            // 1. подаем название арены в ArenaService в json: {"Name": "crocus city Hall"}.
-            // 2. Сравниваем город с городом арены
-            // 3. сравниваем кол-во билетов с вместительностью арены
-            // 4. подаем название артиста в http://localhost:61883/api/Artists/Find  { "Name": "Linkin Park" }.
-
-            foreach (Concerte a in qry)
+            //
+            //Вытаскиваем все Арены
+            //
+            List<Arena> QryArenas = new List<Arena>();
+            var corrId = string.Format("{0}{1}", DateTime.Now.Ticks, Thread.CurrentThread.ManagedThreadId);
+            string request;
+            byte[] responseMessage;
+            using (var client = new HttpClient())
             {
-                string ArenaName = a.ArenaName;
+                client.BaseAddress = new Uri(URLArenaService);
+                client.DefaultRequestHeaders.Accept.Clear();
+                client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+                string requestString = "api/arenas";
+                HttpResponseMessage response = await client.GetAsync(requestString);
+                request = "SERVICE: ArenaService \r\nGET: " + URLArenaService + "/" + requestString + "\r\n" + client.DefaultRequestHeaders.ToString();
+                string responseString = response.Headers.ToString() + "\nStatus: " + response.StatusCode.ToString();
+                if (response.IsSuccessStatusCode)
+                {
+                    responseMessage = await response.Content.ReadAsByteArrayAsync();
+                    var arenas = await response.Content.ReadAsStringAsync();
+                    QryArenas = JsonConvert.DeserializeObject<List<Arena>>(arenas);
+                }
+                else
+                {
+                    responseMessage = Encoding.UTF8.GetBytes(response.ReasonPhrase);
+                }
+                await LogQuery(request, responseString, responseMessage);
             }
 
+            //
+            //Вытаскиваем всех Артистов
+            //
+            List<Artist> QryArtists = new List<Artist>();
+            var corrId2 = string.Format("{0}{1}", DateTime.Now.Ticks, Thread.CurrentThread.ManagedThreadId);
+            string request2;
+            byte[] responseMessage2;
+            using (var client = new HttpClient())
+            {
+                client.BaseAddress = new Uri(URLArtistService);
+                client.DefaultRequestHeaders.Accept.Clear();
+                client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+                string requestString2 = "api/artists";
+                HttpResponseMessage response2 = await client.GetAsync(requestString2);
+                request2 = "SERVICE: ArenaService \r\nGET: " + URLArtistService + "/" + requestString2 + "\r\n" + client.DefaultRequestHeaders.ToString();
+                string responseString2 = response2.Headers.ToString() + "\nStatus: " + response2.StatusCode.ToString();
+                if (response2.IsSuccessStatusCode)
+                {
+                    responseMessage2 = await response2.Content.ReadAsByteArrayAsync();
+                    var artists = await response2.Content.ReadAsStringAsync();
+                    QryArtists = JsonConvert.DeserializeObject<List<Artist>>(artists);
+                }
+                else
+                {
+                    responseMessage2 = Encoding.UTF8.GetBytes(response2.ReasonPhrase);
+                }
+                await LogQuery(request2, responseString2, responseMessage2);
+            }
 
+            //
+            //Проверить на валидность все концерты
+            //
+            List<Concerte> ValidConcertes = new List<Concerte>();
+            foreach(Concerte c in qry)
+            {
+                //находим название Арены с таким же, как в концерте
+                Arena FindedArena;
+                foreach(Arena a in QryArenas)
+                {
+                    if (a.ArenaName == c.ArenaName)
+                    {
+                        FindedArena = a;
+                        if (a.Capacity >= c.TicketsNumber)
+                        {
+                            if (a.City.CityName == c.CityName)
+                            {
+                                Artist artist = QryArtists.Where(x => x.ArtistName == c.ArtistName).FirstOrDefault();
+                                if (artist != null)
+                                {
+                                    ValidConcertes.Add(c);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            return Ok(ValidConcertes);
+        }
 
-           
+        // GET: api/Concertes/all?Valid=1&page=1
+        [HttpGet]
+        [Route("All")]
+        public async Task<IActionResult> GetValidConcertesPages(bool? valid=true, int page=1)
+        {
+            if (valid == false)
+            {
+                foreach (Concerte a in _context.Concerts)
+                {
+                    _context.Entry(a).Navigation("Seller").Load();
+                }
+
+                PagingList<Concerte> concertesList;
+                if (page != 0)
+                {
+                    concertesList = PagingList.Create(_context.Concerts.ToList(), StringsPerPage, page);
+                }
+                else
+                {
+                    concertesList = PagingList.Create(_context.Concerts.ToList(), _context.Concerts.ToList().Count() + 1, 1);
+                }
+
+                return Ok(concertesList.ToList());
+            }
+            else
+            {
+                var qry = _context.Concerts.OrderBy(p => p.ID);
+                foreach (Concerte a in qry)
+                {
+                    _context.Entry(a).Navigation("Seller").Load();
+                }
+
+                //
+                //Вытаскиваем все Арены
+                //
+                List<Arena> QryArenas = new List<Arena>();
+                var corrId = string.Format("{0}{1}", DateTime.Now.Ticks, Thread.CurrentThread.ManagedThreadId);
+                string request;
+                byte[] responseMessage;
+                using (var client = new HttpClient())
+                {
+                    client.BaseAddress = new Uri(URLArenaService);
+                    client.DefaultRequestHeaders.Accept.Clear();
+                    client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+                    string requestString = "api/arenas";
+                    HttpResponseMessage response = await client.GetAsync(requestString);
+                    request = "SERVICE: ArenaService \r\nGET: " + URLArenaService + "/" + requestString + "\r\n" + client.DefaultRequestHeaders.ToString();
+                    string responseString = response.Headers.ToString() + "\nStatus: " + response.StatusCode.ToString();
+                    if (response.IsSuccessStatusCode)
+                    {
+                        responseMessage = await response.Content.ReadAsByteArrayAsync();
+                        var arenas = await response.Content.ReadAsStringAsync();
+                        QryArenas = JsonConvert.DeserializeObject<List<Arena>>(arenas);
+                    }
+                    else
+                    {
+                        responseMessage = Encoding.UTF8.GetBytes(response.ReasonPhrase);
+                    }
+                    await LogQuery(request, responseString, responseMessage);
+                }
+
+                //
+                //Вытаскиваем всех Артистов
+                //
+                List<Artist> QryArtists = new List<Artist>();
+                var corrId2 = string.Format("{0}{1}", DateTime.Now.Ticks, Thread.CurrentThread.ManagedThreadId);
+                string request2;
+                byte[] responseMessage2;
+                using (var client = new HttpClient())
+                {
+                    client.BaseAddress = new Uri(URLArtistService);
+                    client.DefaultRequestHeaders.Accept.Clear();
+                    client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+                    string requestString2 = "api/artists";
+                    HttpResponseMessage response2 = await client.GetAsync(requestString2);
+                    request2 = "SERVICE: ArenaService \r\nGET: " + URLArtistService + "/" + requestString2 + "\r\n" + client.DefaultRequestHeaders.ToString();
+                    string responseString2 = response2.Headers.ToString() + "\nStatus: " + response2.StatusCode.ToString();
+                    if (response2.IsSuccessStatusCode)
+                    {
+                        responseMessage2 = await response2.Content.ReadAsByteArrayAsync();
+                        var artists = await response2.Content.ReadAsStringAsync();
+                        QryArtists = JsonConvert.DeserializeObject<List<Artist>>(artists);
+                    }
+                    else
+                    {
+                        responseMessage2 = Encoding.UTF8.GetBytes(response2.ReasonPhrase);
+                    }
+                    await LogQuery(request2, responseString2, responseMessage2);
+                }
+
+                //
+                //Проверить на валидность все концерты
+                //
+                List<Concerte> ValidConcertes = new List<Concerte>();
+                foreach (Concerte c in qry)
+                {
+                    //находим название Арены с таким же, как в концерте
+                    Arena FindedArena;
+                    foreach (Arena a in QryArenas)
+                    {
+                        if (a.ArenaName == c.ArenaName)
+                        {
+                            FindedArena = a;
+                            if (a.Capacity >= c.TicketsNumber)
+                            {
+                                if (a.City.CityName == c.CityName)
+                                {
+                                    Artist artist = QryArtists.Where(x => x.ArtistName == c.ArtistName).FirstOrDefault();
+                                    if (artist != null)
+                                    {
+                                        ValidConcertes.Add(c);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                PagingList<Concerte> concertesList;
+                if (page != 0)
+                {
+                    concertesList = PagingList.Create(ValidConcertes, StringsPerPage, page);
+                }
+                else
+                {
+                    concertesList = PagingList.Create(ValidConcertes, ValidConcertes.Count() + 1, 1);
+                }
+
+                return Ok(concertesList.ToList());
+            }
         }
 
         // GET: api/Concertes/5
         [HttpGet("{id}")]
         public async Task<IActionResult> GetConcerte([FromRoute] int id)
         {
+            var qry = _context.Concerts.OrderBy(p => p.ID);
+            foreach (Concerte a in qry)
+            {
+                _context.Entry(a).Navigation("Seller").Load();
+            }
             if (!ModelState.IsValid)
             {
                 return BadRequest(ModelState);
@@ -175,8 +390,11 @@ namespace ConcerteService.Controllers
             {
                 return BadRequest(ModelState);
             }
-
+            
             var concerte = await _context.Concerts.SingleOrDefaultAsync(m => m.ID == id);
+
+            _context.Entry(concerte).Navigation("Seller").Load();
+
             if (concerte == null)
             {
                 return NotFound();
@@ -191,6 +409,152 @@ namespace ConcerteService.Controllers
         private bool ConcerteExists(int id)
         {
             return _context.Concerts.Any(e => e.ID == id);
+        }
+
+        // GET: api/Concertes
+        [HttpGet]
+        [Route("count")]
+        public async Task<IActionResult> GetCountArtists()
+        {
+            var qry = _context.Concerts.OrderBy(p => p.ID);
+            foreach (Concerte a in qry)
+            {
+                _context.Entry(a).Navigation("Seller").Load();
+            }
+
+            //Проверить, что: 
+            // 1) кол-во билетов меньше, чем вместительность арены
+            // 2) город существует и корректный
+            // 3) арена существует и из этого города
+            // 4) артист корректный
+
+            //
+            //Вытаскиваем все Арены
+            //
+            List<Arena> QryArenas = new List<Arena>();
+            var corrId = string.Format("{0}{1}", DateTime.Now.Ticks, Thread.CurrentThread.ManagedThreadId);
+            string request;
+            byte[] responseMessage;
+            using (var client = new HttpClient())
+            {
+                client.BaseAddress = new Uri(URLArenaService);
+                client.DefaultRequestHeaders.Accept.Clear();
+                client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+                string requestString = "api/arenas";
+                HttpResponseMessage response = await client.GetAsync(requestString);
+                request = "SERVICE: ArenaService \r\nGET: " + URLArenaService + "/" + requestString + "\r\n" + client.DefaultRequestHeaders.ToString();
+                string responseString = response.Headers.ToString() + "\nStatus: " + response.StatusCode.ToString();
+                if (response.IsSuccessStatusCode)
+                {
+                    responseMessage = await response.Content.ReadAsByteArrayAsync();
+                    var arenas = await response.Content.ReadAsStringAsync();
+                    QryArenas = JsonConvert.DeserializeObject<List<Arena>>(arenas);
+                }
+                else
+                {
+                    responseMessage = Encoding.UTF8.GetBytes(response.ReasonPhrase);
+                }
+                await LogQuery(request, responseString, responseMessage);
+            }
+
+            //
+            //Вытаскиваем всех Артистов
+            //
+            List<Artist> QryArtists = new List<Artist>();
+            var corrId2 = string.Format("{0}{1}", DateTime.Now.Ticks, Thread.CurrentThread.ManagedThreadId);
+            string request2;
+            byte[] responseMessage2;
+            using (var client = new HttpClient())
+            {
+                client.BaseAddress = new Uri(URLArtistService);
+                client.DefaultRequestHeaders.Accept.Clear();
+                client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+                string requestString2 = "api/artists";
+                HttpResponseMessage response2 = await client.GetAsync(requestString2);
+                request2 = "SERVICE: ArenaService \r\nGET: " + URLArtistService + "/" + requestString2 + "\r\n" + client.DefaultRequestHeaders.ToString();
+                string responseString2 = response2.Headers.ToString() + "\nStatus: " + response2.StatusCode.ToString();
+                if (response2.IsSuccessStatusCode)
+                {
+                    responseMessage2 = await response2.Content.ReadAsByteArrayAsync();
+                    var artists = await response2.Content.ReadAsStringAsync();
+                    QryArtists = JsonConvert.DeserializeObject<List<Artist>>(artists);
+                }
+                else
+                {
+                    responseMessage2 = Encoding.UTF8.GetBytes(response2.ReasonPhrase);
+                }
+                await LogQuery(request2, responseString2, responseMessage2);
+            }
+
+            //
+            //Проверить на валидность все концерты
+            //
+            List<Concerte> ValidConcertes = new List<Concerte>();
+            foreach (Concerte c in qry)
+            {
+                //находим название Арены с таким же, как в концерте
+                Arena FindedArena;
+                foreach (Arena a in QryArenas)
+                {
+                    if (a.ArenaName == c.ArenaName)
+                    {
+                        FindedArena = a;
+                        if (a.Capacity >= c.TicketsNumber)
+                        {
+                            if (a.City.CityName == c.CityName)
+                            {
+                                Artist artist = QryArtists.Where(x => x.ArtistName == c.ArtistName).FirstOrDefault();
+                                if (artist != null)
+                                {
+                                    ValidConcertes.Add(c);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            return Ok(ValidConcertes.Count());
+        }
+
+
+        // POST: api/Concerte/FindSeller
+        [Route("FindSeller")]
+        [HttpPost]
+        public async Task<IActionResult> FindByName([FromBody] SellerNameBinding name)
+        {
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
+
+            var seller = await _context.Sellers.SingleOrDefaultAsync(m => m.BrandName == name.Name);
+
+            if (seller == null)
+            {
+                return NotFound();
+            }
+
+            return Ok(seller);
+        }
+
+        // POST: api/Concertes/Find
+        [Route("Find")]
+        [HttpPost]
+        public async Task<IActionResult> FindConcerte([FromBody] ShowNameBinding name)
+        {
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
+
+            var show = await _context.Concerts.FirstOrDefaultAsync(m => m.ShowName == name.Name);
+
+            if (show == null)
+            {
+                return NotFound();
+            }
+
+            return Ok(show);
         }
     }
 }

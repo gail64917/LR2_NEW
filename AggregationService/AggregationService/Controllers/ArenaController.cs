@@ -36,10 +36,9 @@ namespace AggregationService.Controllers
             List<Arena> result = new List<Arena>();
             int count = 0;
 
-            /**/var corrId = string.Format("{0}{1}", DateTime.Now.Ticks, Thread.CurrentThread.ManagedThreadId);         
-            /**/string request;
-            //byte[] requestMessage;
-            /**/byte[] responseMessage;
+            var corrId = string.Format("{0}{1}", DateTime.Now.Ticks, Thread.CurrentThread.ManagedThreadId);         
+            string request;
+            byte[] responseMessage;
 
             using (var client = new HttpClient())
             {
@@ -47,25 +46,25 @@ namespace AggregationService.Controllers
                 client.DefaultRequestHeaders.Accept.Clear();
                 client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
 
-                /**/string requestString = "api/arenas/page/" + id;
+                string requestString = "api/arenas/page/" + id;
                 HttpResponseMessage response = await client.GetAsync(requestString);
                 
-                /**/request = "SERVICE: ArenaService \r\nGET: " + URLArenaService + "/" + requestString + "\r\n" + client.DefaultRequestHeaders.ToString();
-                /**/string responseString = response.Headers.ToString() + "\nStatus: " + response.StatusCode.ToString();
+                request = "SERVICE: ArenaService \r\nGET: " + URLArenaService + "/" + requestString + "\r\n" + client.DefaultRequestHeaders.ToString();
+                string responseString = response.Headers.ToString() + "\nStatus: " + response.StatusCode.ToString();
 
                 if (response.IsSuccessStatusCode)
                 {
-                    /**/responseMessage = await response.Content.ReadAsByteArrayAsync();
+                    responseMessage = await response.Content.ReadAsByteArrayAsync();
                     var arenas = await response.Content.ReadAsStringAsync();
                     result = JsonConvert.DeserializeObject<List<Arena>>(arenas);
                 }
                 else
                 {
-                    /**/responseMessage = Encoding.UTF8.GetBytes(response.ReasonPhrase);
+                    responseMessage = Encoding.UTF8.GetBytes(response.ReasonPhrase);
                     return Error();
                 }
 
-                /**/await LogQuery(request, responseString, responseMessage);
+                await LogQuery(request, responseString, responseMessage);
 
 
                 //
@@ -77,23 +76,23 @@ namespace AggregationService.Controllers
                 string requestStringCount = "api/arenas/count";
                 HttpResponseMessage responseStringsCount = await client.GetAsync(requestStringCount);
 
-                /**/request = "SERVICE: ArenaService \r\nGET: " + URLArenaService + "/" + requestString + "\r\n" + client.DefaultRequestHeaders.ToString();
-                /**/responseString = responseStringsCount.Headers.ToString() + "\nStatus: " + responseStringsCount.StatusCode.ToString();
+                request = "SERVICE: ArenaService \r\nGET: " + URLArenaService + "/" + requestString + "\r\n" + client.DefaultRequestHeaders.ToString();
+                responseString = responseStringsCount.Headers.ToString() + "\nStatus: " + responseStringsCount.StatusCode.ToString();
 
                 if (responseStringsCount.IsSuccessStatusCode)
                 {
-                    /**/responseMessage = await responseStringsCount.Content.ReadAsByteArrayAsync();
+                    responseMessage = await responseStringsCount.Content.ReadAsByteArrayAsync();
                     var countStringsContent = await responseStringsCount.Content.ReadAsStringAsync();
                     count = JsonConvert.DeserializeObject<int>(countStringsContent);
                 }
                 else
                 {
-                    /**/responseMessage = Encoding.UTF8.GetBytes(responseStringsCount.ReasonPhrase);
+                    responseMessage = Encoding.UTF8.GetBytes(responseStringsCount.ReasonPhrase);
                     return Error();
                 }
                 ArenaList resultQuery = new ArenaList() { arenas = result, countArenas = count };
 
-                /**/await LogQuery(request, responseString, responseMessage);
+                await LogQuery(request, responseString, responseMessage);
 
                 return View(resultQuery);
             }
@@ -105,7 +104,7 @@ namespace AggregationService.Controllers
         //    return RedirectToAction(nameof(Index), new { id = page });
         //}
 
-        [Obsolete]
+
         [Route("AddArena")]
         public IActionResult AddArena()
         {
@@ -124,11 +123,10 @@ namespace AggregationService.Controllers
             values.Add("CityID", arena.CityID);
             values.Add("Capacity", arena.Capacity);
 
-            /**/
             var corrId = string.Format("{0}{1}", DateTime.Now.Ticks, Thread.CurrentThread.ManagedThreadId);
-            /**/string request;
-            /**/string requestMessage = values.ToString();
-            /**/byte[] responseMessage;
+            string request;
+            string requestMessage = values.ToString();
+            byte[] responseMessage;
 
             HttpClient client = new HttpClient();
             client.BaseAddress = new Uri(URLArenaService);
@@ -136,7 +134,7 @@ namespace AggregationService.Controllers
 
             HttpContent content = new StringContent(values.ToString(), Encoding.UTF8, "application/json");
 
-            /**/string requestString = "api/arenas";
+            string requestString = "api/arenas";
 
             var response = await client.PostAsJsonAsync("api/arenas", values);
 
@@ -149,24 +147,23 @@ namespace AggregationService.Controllers
                 return View("Error", message);
             }
 
-            /**/request = "SERVICE: ArenaService \r\nPOST: " + URLArenaService + "/" + requestString + "\r\n" + client.DefaultRequestHeaders.ToString();
-            /**/string responseString = response.Headers.ToString() + "\nStatus: " + response.StatusCode.ToString();
+            request = "SERVICE: ArenaService \r\nPOST: " + URLArenaService + "/" + requestString + "\r\n" + client.DefaultRequestHeaders.ToString();
+            string responseString = response.Headers.ToString() + "\nStatus: " + response.StatusCode.ToString();
 
             if (response.IsSuccessStatusCode)
             {
-                /**/responseMessage = await response.Content.ReadAsByteArrayAsync();
-                /**/await LogQuery(request, requestMessage, responseString, responseMessage);
+                responseMessage = await response.Content.ReadAsByteArrayAsync();
+                await LogQuery(request, requestMessage, responseString, responseMessage);
                 return RedirectToAction(nameof(Index));
             }
             else
             {
-                /**/responseMessage = Encoding.UTF8.GetBytes(response.ReasonPhrase);
-                /**/await LogQuery(request, requestMessage, responseString, responseMessage);
+                responseMessage = Encoding.UTF8.GetBytes(response.ReasonPhrase);
+                await LogQuery(request, requestMessage, responseString, responseMessage);
                 string description = "Another error ";
                 ResponseMessage message = new ResponseMessage();
                 message.description = description;
                 message.message = response;
-                //return View(message);
                 return View("Error", message);
             } 
         }
@@ -181,30 +178,29 @@ namespace AggregationService.Controllers
                 client.DefaultRequestHeaders.Accept.Clear();
                 client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
 
-                /**/var corrId = string.Format("{0}{1}", DateTime.Now.Ticks, Thread.CurrentThread.ManagedThreadId);
-                /**/string request;
-                //byte[] requestMessage;
-                /**/byte[] responseMessage;
+                var corrId = string.Format("{0}{1}", DateTime.Now.Ticks, Thread.CurrentThread.ManagedThreadId);
+                string request;
+                byte[] responseMessage;
 
                 string route = "api/arenas/" + id;
 
-                /**/string requestString = route;
+                string requestString = route;
 
                 HttpResponseMessage response = await client.DeleteAsync(route);
 
-                /**/request = "SERVICE: ArenaService \r\nDELETE: " + URLArenaService + "/" + requestString + "\r\n" + client.DefaultRequestHeaders.ToString();
-                /**/string responseString = response.Headers.ToString() + "\nStatus: " + response.StatusCode.ToString();
+                request = "SERVICE: ArenaService \r\nDELETE: " + URLArenaService + "/" + requestString + "\r\n" + client.DefaultRequestHeaders.ToString();
+                string responseString = response.Headers.ToString() + "\nStatus: " + response.StatusCode.ToString();
 
                 if (response.IsSuccessStatusCode)
                 {
-                    /**/responseMessage = await response.Content.ReadAsByteArrayAsync();
-                    /**/await LogQuery(request, responseString, responseMessage);
+                    responseMessage = await response.Content.ReadAsByteArrayAsync();
+                    await LogQuery(request, responseString, responseMessage);
                     return RedirectToAction(nameof(Index), new { id = 1 });
                 }
                 else
                 {
-                    /**/responseMessage = Encoding.UTF8.GetBytes(response.ReasonPhrase);
-                    /**/await LogQuery(request, responseString, responseMessage);
+                    responseMessage = Encoding.UTF8.GetBytes(response.ReasonPhrase);
+                    await LogQuery(request, responseString, responseMessage);
                     return View("Error");
                 }
             }
@@ -229,31 +225,28 @@ namespace AggregationService.Controllers
                 client.BaseAddress = new Uri(URLArenaService);
                 client.DefaultRequestHeaders.Accept.Clear();
                 client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
-
                 string requestString = "api/arenas/" + id;
                 HttpResponseMessage response = await client.GetAsync(requestString);
-
-                /**/string request = "SERVICE: ArenaService \r\nGET: " + URLArenaService + "/" + "\r\n" + client.DefaultRequestHeaders.ToString();
-                /**/string responseString = response.Headers.ToString() + "\nStatus: " + response.StatusCode.ToString();
-                /**/byte[] responseMessage;
-
+                string request = "SERVICE: ArenaService \r\nGET: " + URLArenaService + "/" + "\r\n" + client.DefaultRequestHeaders.ToString();
+                string responseString = response.Headers.ToString() + "\nStatus: " + response.StatusCode.ToString();
+                byte[] responseMessage;
                 if (response.IsSuccessStatusCode)
                 {
-                    /**/ responseMessage = await response.Content.ReadAsByteArrayAsync();
+                    responseMessage = await response.Content.ReadAsByteArrayAsync();
                     var arenaContent = await response.Content.ReadAsStringAsync();
                     arena = JsonConvert.DeserializeObject<Arena>(arenaContent);
                     if (arena == null)
                     {
-                        /**/await LogQuery(request, responseString, responseMessage);
+                        await LogQuery(request, responseString, responseMessage);
                         return NotFound();
                     }
-                    /**/await LogQuery(request, responseString, responseMessage);
+                    await LogQuery(request, responseString, responseMessage);
                     return View(arena);
                 }
                 else
                 {
-                    /**/responseMessage = Encoding.UTF8.GetBytes(response.ReasonPhrase);
-                    /**/await LogQuery(request, responseString, responseMessage);
+                    responseMessage = Encoding.UTF8.GetBytes(response.ReasonPhrase);
+                    await LogQuery(request, responseString, responseMessage);
                     return Error();
                 }
             }
@@ -274,11 +267,10 @@ namespace AggregationService.Controllers
                 values.Add("CityID", arena.CityID);
                 values.Add("Capacity", arena.Capacity);
 
-                /**/
                 var corrId = string.Format("{0}{1}", DateTime.Now.Ticks, Thread.CurrentThread.ManagedThreadId);
-                /**/string request;
-                /**/string requestMessage = values.ToString();
-                /**/byte[] responseMessage;
+                string request;
+                string requestMessage = values.ToString();
+                byte[] responseMessage;
 
                 HttpClient client = new HttpClient();
                 client.BaseAddress = new Uri(URLArenaService);
@@ -286,12 +278,12 @@ namespace AggregationService.Controllers
 
                 HttpContent content = new StringContent(values.ToString(), Encoding.UTF8, "application/json");
 
-                /**/string requestString = "api/arenas/" + arena.ID;
+                string requestString = "api/arenas/" + arena.ID;
 
                 var response = await client.PutAsJsonAsync(requestString, values);
 
-                /**/request = "SERVICE: ArenaService \r\nPUT: " + URLArenaService + "/" + requestString + "\r\n" + client.DefaultRequestHeaders.ToString();
-                /**/string responseString = response.Headers.ToString() + "\nStatus: " + response.StatusCode.ToString();
+                request = "SERVICE: ArenaService \r\nPUT: " + URLArenaService + "/" + requestString + "\r\n" + client.DefaultRequestHeaders.ToString();
+                string responseString = response.Headers.ToString() + "\nStatus: " + response.StatusCode.ToString();
 
                 if ((int)response.StatusCode == 500)
                 {
@@ -304,14 +296,14 @@ namespace AggregationService.Controllers
 
                 if (response.IsSuccessStatusCode)
                 {
-                    /**/responseMessage = await response.Content.ReadAsByteArrayAsync();
-                    /**/await LogQuery(request, requestMessage, responseString, responseMessage);
+                    responseMessage = await response.Content.ReadAsByteArrayAsync();
+                    await LogQuery(request, requestMessage, responseString, responseMessage);
                     return RedirectToAction(nameof(Index), new { id = 1 });
                 }
                 else
                 {
-                    /**/responseMessage = Encoding.UTF8.GetBytes(response.ReasonPhrase);
-                    /**/await LogQuery(request, requestMessage, responseString, responseMessage);
+                    responseMessage = Encoding.UTF8.GetBytes(response.ReasonPhrase);
+                    await LogQuery(request, requestMessage, responseString, responseMessage);
                     return View(response);
                 }
             }
