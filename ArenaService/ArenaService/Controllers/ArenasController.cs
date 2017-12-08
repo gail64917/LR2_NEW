@@ -193,7 +193,7 @@ namespace ArenaService.Controllers
                 return BadRequest(ModelState);
             }
 
-            var arena = await _context.Arenas.SingleOrDefaultAsync(m => m.ArenaName == arenaBinding.Name);
+            var arena = await _context.Arenas.FirstOrDefaultAsync(m => m.ArenaName == arenaBinding.Name);
 
             _context.Entry(arena).Navigation("City").Load();
 

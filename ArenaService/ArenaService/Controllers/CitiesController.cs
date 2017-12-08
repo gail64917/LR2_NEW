@@ -144,7 +144,7 @@ namespace ArenaService.Controllers
                 return BadRequest(ModelState);
             }
 
-            var city = await _context.Cities.SingleOrDefaultAsync(m => m.CityName == cityBinding.Name);
+            var city = await _context.Cities.FirstOrDefaultAsync(m => m.CityName == cityBinding.Name);
 
             if (city == null)
             {

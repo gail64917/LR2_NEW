@@ -527,7 +527,7 @@ namespace ConcerteService.Controllers
                 return BadRequest(ModelState);
             }
 
-            var seller = await _context.Sellers.SingleOrDefaultAsync(m => m.BrandName == name.Name);
+            var seller = await _context.Sellers.FirstOrDefaultAsync(m => m.BrandName == name.Name);
 
             if (seller == null)
             {

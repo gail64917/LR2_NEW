@@ -2905,6 +2905,15 @@
           "lib/netstandard1.3/NuGet.Frameworks.dll": {}
         }
       },
+      "RabbitMQ.Client/3.6.0": {
+        "type": "package",
+        "compile": {
+          "lib/net45/RabbitMQ.Client.dll": {}
+        },
+        "runtime": {
+          "lib/net45/RabbitMQ.Client.dll": {}
+        }
+      },
       "Remotion.Linq/2.1.1": {
         "type": "package",
         "dependencies": {
@@ -2925,6 +2934,51 @@
         },
         "runtime": {
           "lib/netstandard1.0/Remotion.Linq.dll": {}
+        }
+      },
+      "RestBus.AspNet/0.6.2-rc2": {
+        "type": "package",
+        "compile": {
+          "lib/net452/RestBus.AspNet.dll": {}
+        },
+        "runtime": {
+          "lib/net452/RestBus.AspNet.dll": {}
+        }
+      },
+      "RestBus.Client/0.5.2": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "5.0.8"
+        },
+        "compile": {
+          "lib/portable-net45+dnxcore50+win/RestBus.Client.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+dnxcore50+win/RestBus.Client.dll": {}
+        }
+      },
+      "RestBus.Common/0.6.3": {
+        "type": "package",
+        "compile": {
+          "lib/portable-net45+dnxcore50+win/RestBus.Common.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+dnxcore50+win/RestBus.Common.dll": {}
+        }
+      },
+      "RestBus.RabbitMQ/0.6.9": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "5.0.8",
+          "RabbitMQ.Client": "3.6.0",
+          "RestBus.Client": "0.5.2",
+          "RestBus.Common": "0.6.3"
+        },
+        "compile": {
+          "lib/net45/RestBus.RabbitMQ.dll": {}
+        },
+        "runtime": {
+          "lib/net45/RestBus.RabbitMQ.dll": {}
         }
       },
       "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {
@@ -8119,6 +8173,20 @@
         "nuget.frameworks.nuspec"
       ]
     },
+    "RabbitMQ.Client/3.6.0": {
+      "sha512": "SERgu0RH68f4MkoefaiOHP8BqRfPCAIYMUSe07VT7PXTKWX+yykDAZfiV7J7pF+6rW7/XxYR1LjsCTJG8rod/g==",
+      "type": "package",
+      "path": "rabbitmq.client/3.6.0",
+      "files": [
+        "RabbitMQ.Client.nuspec~",
+        "lib/net45/RabbitMQ.Client.dll",
+        "lib/net45/RabbitMQ.Client.xml",
+        "lib/netcore45/RabbitMQ.Client.dll",
+        "lib/netcore45/RabbitMQ.Client.xml",
+        "rabbitmq.client.3.6.0.nupkg.sha512",
+        "rabbitmq.client.nuspec"
+      ]
+    },
     "Remotion.Linq/2.1.1": {
       "sha512": "IJn0BqkvwEDpP+2qjvci7n4/a9f7DhKESLWb2/uG4xQh3rTkGTBUz69bI4IivCoKkTFAqjXxYDZw2K/npohjsw==",
       "type": "package",
@@ -8136,6 +8204,52 @@
         "lib/portable-net45+win+wpa81+wp80/Remotion.Linq.xml",
         "remotion.linq.2.1.1.nupkg.sha512",
         "remotion.linq.nuspec"
+      ]
+    },
+    "RestBus.AspNet/0.6.2-rc2": {
+      "sha512": "hXQSq7w3+sq40tZH0cEUzqvypJZzUWE9mj3ASFxki9o1hT1QbLyPUKtvKRGBN95HxWVoPl/uApxAO4jA89ny9w==",
+      "type": "package",
+      "path": "restbus.aspnet/0.6.2-rc2",
+      "files": [
+        "lib/dotnet5.4/RestBus.AspNet.dll",
+        "lib/dotnet5.4/RestBus.AspNet.xml",
+        "lib/net452/RestBus.AspNet.dll",
+        "lib/net452/RestBus.AspNet.xml",
+        "restbus.aspnet.0.6.2-rc2.nupkg.sha512",
+        "restbus.aspnet.nuspec"
+      ]
+    },
+    "RestBus.Client/0.5.2": {
+      "sha512": "qQlYtK04vVnRkEqW17CkWwIgwzNgFsmta6JnQjA+rc142t75baLBjsOgfZ1dVF+3e9inm9i3idNxPOfFF8WYIQ==",
+      "type": "package",
+      "path": "restbus.client/0.5.2",
+      "files": [
+        "lib/portable-net45+dnxcore50+win/RestBus.Client.XML",
+        "lib/portable-net45+dnxcore50+win/RestBus.Client.dll",
+        "restbus.client.0.5.2.nupkg.sha512",
+        "restbus.client.nuspec"
+      ]
+    },
+    "RestBus.Common/0.6.3": {
+      "sha512": "7lifPF0MtFa4RsE/91/1VA7oZhsiWlHTjkkbljeI0iVExHrj9626Eo7/PP9wgUhej9OhcbpI3ItmwFN7C/Zxxw==",
+      "type": "package",
+      "path": "restbus.common/0.6.3",
+      "files": [
+        "lib/portable-net45+dnxcore50+win/RestBus.Common.XML",
+        "lib/portable-net45+dnxcore50+win/RestBus.Common.dll",
+        "restbus.common.0.6.3.nupkg.sha512",
+        "restbus.common.nuspec"
+      ]
+    },
+    "RestBus.RabbitMQ/0.6.9": {
+      "sha512": "UM/gw1503FoPRq1D30YEBbkWM6K9gs7gA5rYR4shD0No39nTMSFHhNurWQjo+SCPJUs2s2mLhk4blV7mYmKazg==",
+      "type": "package",
+      "path": "restbus.rabbitmq/0.6.9",
+      "files": [
+        "lib/net45/RestBus.RabbitMQ.XML",
+        "lib/net45/RestBus.RabbitMQ.dll",
+        "restbus.rabbitmq.0.6.9.nupkg.sha512",
+        "restbus.rabbitmq.nuspec"
       ]
     },
     "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {
@@ -13248,6 +13362,8 @@
       "Microsoft.NETCore.App >= 2.0.0",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 2.0.0",
       "Newtonsoft.Json >= 10.0.3",
+      "RestBus.AspNet >= 0.6.2-rc2",
+      "RestBus.RabbitMQ >= 0.6.9",
       "System.Data.Entity.Repository >= 2.0.0.1",
       "System.Net.Http.Formatting.Extension >= 5.2.3"
     ]
@@ -13300,9 +13416,17 @@
             "target": "Package",
             "version": "2.0.0.1"
           },
+          "RestBus.RabbitMQ": {
+            "target": "Package",
+            "version": "0.6.9"
+          },
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
             "target": "Package",
             "version": "2.0.0"
+          },
+          "RestBus.AspNet": {
+            "target": "Package",
+            "version": "0.6.2-rc2"
           },
           "Microsoft.NETCore.App": {
             "target": "Package",
@@ -13371,6 +13495,56 @@
       "warningLevel": 1,
       "message": "Пакет \"Microsoft.AspNet.WebApi.WebHost 5.2.3\" был восстановлен с помощью \".NETFramework,Version=v4.6.1\", а не целевой платформы проекта \".NETCoreApp,Version=v2.0\". Этот пакет может быть не полностью совместим с вашим проектом.",
       "libraryId": "Microsoft.AspNet.WebApi.WebHost",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v2.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Пакет \"RabbitMQ.Client 3.6.0\" был восстановлен с помощью \".NETFramework,Version=v4.6.1\", а не целевой платформы проекта \".NETCoreApp,Version=v2.0\". Этот пакет может быть не полностью совместим с вашим проектом.",
+      "libraryId": "RabbitMQ.Client",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v2.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Пакет \"RestBus.AspNet 0.6.2-rc2\" был восстановлен с помощью \".NETFramework,Version=v4.6.1\", а не целевой платформы проекта \".NETCoreApp,Version=v2.0\". Этот пакет может быть не полностью совместим с вашим проектом.",
+      "libraryId": "RestBus.AspNet",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v2.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Пакет \"RestBus.Client 0.5.2\" был восстановлен с помощью \".NETFramework,Version=v4.6.1\", а не целевой платформы проекта \".NETCoreApp,Version=v2.0\". Этот пакет может быть не полностью совместим с вашим проектом.",
+      "libraryId": "RestBus.Client",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v2.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Пакет \"RestBus.Common 0.6.3\" был восстановлен с помощью \".NETFramework,Version=v4.6.1\", а не целевой платформы проекта \".NETCoreApp,Version=v2.0\". Этот пакет может быть не полностью совместим с вашим проектом.",
+      "libraryId": "RestBus.Common",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v2.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Пакет \"RestBus.RabbitMQ 0.6.9\" был восстановлен с помощью \".NETFramework,Version=v4.6.1\", а не целевой платформы проекта \".NETCoreApp,Version=v2.0\". Этот пакет может быть не полностью совместим с вашим проектом.",
+      "libraryId": "RestBus.RabbitMQ",
       "targetGraphs": [
         ".NETCoreApp,Version=v2.0"
       ]

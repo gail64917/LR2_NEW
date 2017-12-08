@@ -106,9 +106,39 @@ namespace AggregationService.Controllers
 
 
         [Route("AddArena")]
-        public IActionResult AddArena()
+        public async Task<IActionResult> AddArena()
         {
-            return View();
+            ArenaFake arenaFake = new ArenaFake();
+
+            List<City> result = new List<City>();
+            var corrId = string.Format("{0}{1}", DateTime.Now.Ticks, Thread.CurrentThread.ManagedThreadId);
+            string request;
+            byte[] responseMessage;
+            using (var client = new HttpClient())
+            {
+                client.BaseAddress = new Uri(URLArenaService);
+                client.DefaultRequestHeaders.Accept.Clear();
+                client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+                string requestString = "api/cities";
+                HttpResponseMessage response = await client.GetAsync(requestString);
+                request = "SERVICE: ArenaService \r\nGET: " + URLArenaService + "/" + requestString + "\r\n" + client.DefaultRequestHeaders.ToString();
+                string responseString = response.Headers.ToString() + "\nStatus: " + response.StatusCode.ToString();
+                if (response.IsSuccessStatusCode)
+                {
+                    responseMessage = await response.Content.ReadAsByteArrayAsync();
+                    var json = await response.Content.ReadAsStringAsync();
+                    result = JsonConvert.DeserializeObject<List<City>>(json);
+                    arenaFake.cities = result;
+                }
+                else
+                {
+                    responseMessage = Encoding.UTF8.GetBytes(response.ReasonPhrase);
+                    return Error();
+                }
+                await LogQuery(request, responseString, responseMessage);
+                //Передаем список доступных городов с ID (для дальнейшей сверки)
+                return View(arenaFake);
+            }
         }
 
 
@@ -216,9 +246,40 @@ namespace AggregationService.Controllers
             }
 
 
-            //
-            // ПОЛУЧАЕМ СУЩНОСТЬ с ID
-            //
+            ArenaFake arenaFake = new ArenaFake();
+
+            List<City> result = new List<City>();
+            var corrId = string.Format("{0}{1}", DateTime.Now.Ticks, Thread.CurrentThread.ManagedThreadId);
+            string request;
+            byte[] responseMessage;
+            using (var client = new HttpClient())
+            {
+                client.BaseAddress = new Uri(URLArenaService);
+                client.DefaultRequestHeaders.Accept.Clear();
+                client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+                string requestString = "api/cities";
+                HttpResponseMessage response = await client.GetAsync(requestString);
+                request = "SERVICE: ArenaService \r\nGET: " + URLArenaService + "/" + requestString + "\r\n" + client.DefaultRequestHeaders.ToString();
+                string responseString = response.Headers.ToString() + "\nStatus: " + response.StatusCode.ToString();
+                if (response.IsSuccessStatusCode)
+                {
+                    responseMessage = await response.Content.ReadAsByteArrayAsync();
+                    var json = await response.Content.ReadAsStringAsync();
+                    result = JsonConvert.DeserializeObject<List<City>>(json);
+                    arenaFake.cities = result;
+                }
+                else
+                {
+                    responseMessage = Encoding.UTF8.GetBytes(response.ReasonPhrase);
+                    return Error();
+                }
+                await LogQuery(request, responseString, responseMessage);
+                //Передаем список доступных городов с ID (для дальнейшей сверки)
+            }
+
+                //
+                // ПОЛУЧАЕМ СУЩНОСТЬ с ID
+                //
             Arena arena;
             using (var client = new HttpClient())
             {
@@ -227,9 +288,8 @@ namespace AggregationService.Controllers
                 client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
                 string requestString = "api/arenas/" + id;
                 HttpResponseMessage response = await client.GetAsync(requestString);
-                string request = "SERVICE: ArenaService \r\nGET: " + URLArenaService + "/" + "\r\n" + client.DefaultRequestHeaders.ToString();
+                request = "SERVICE: ArenaService \r\nGET: " + URLArenaService + "/" + "\r\n" + client.DefaultRequestHeaders.ToString();
                 string responseString = response.Headers.ToString() + "\nStatus: " + response.StatusCode.ToString();
-                byte[] responseMessage;
                 if (response.IsSuccessStatusCode)
                 {
                     responseMessage = await response.Content.ReadAsByteArrayAsync();
@@ -241,7 +301,15 @@ namespace AggregationService.Controllers
                         return NotFound();
                     }
                     await LogQuery(request, responseString, responseMessage);
-                    return View(arena);
+
+
+                    arenaFake.ArenaName = arena.ArenaName;
+                    arenaFake.Capacity = arena.Capacity;
+                    arenaFake.City = arena.City;
+                    arenaFake.CityID = arena.CityID;
+                    arenaFake.ID = arena.ID;
+
+                    return View(arenaFake);
                 }
                 else
                 {

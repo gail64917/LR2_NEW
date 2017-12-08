@@ -82,7 +82,7 @@ namespace ConcerteService.Controllers
                 return BadRequest(ModelState);
             }
 
-            var artist = await _context.Artists.SingleOrDefaultAsync(m => m.ArtistName == name.Name);
+            var artist = await _context.Artists.FirstOrDefaultAsync(m => m.ArtistName == name.Name);
 
             if (artist == null)
             {

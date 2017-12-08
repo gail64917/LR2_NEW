@@ -1,4 +1,4 @@
-﻿@model AggregationService.Models.ArenaService.Arena
+﻿@model AggregationService.Models.ModelsForView.ArenaFake
 
 @{
     ViewData["Title"] = "Edite";
@@ -10,7 +10,7 @@
 <hr />
 <div class="row">
     <div class="col-md-4">
-        <form asp-action="Edite">
+        <form asp-action="Edite" onsubmit="handleSubmit(this); return false;">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
                 @*<label asp-for="ID" class="control-label" type="hidden"></label>*@
@@ -19,26 +19,39 @@
             </div>
             <div class="form-group">
                 <label asp-for="ArenaName" class="control-label"></label>
-                <input asp-for="ArenaName" class="form-control" />
+                <input asp-for="ArenaName" class="form-control anyfields" />
                 <span asp-validation-for="ArenaName" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="Capacity" class="control-label"></label>
-                <input asp-for="Capacity" class="form-control"/>
+                <input asp-for="Capacity" class="form-control anyfields"/>
                 <span asp-validation-for="Capacity" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="CityID" class="control-label"></label>
-                <input asp-for="CityID" class="form-control" />
+                <input asp-for="CityID" class="form-control fields" />
                 <span asp-validation-for="CityID" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <input type="submit" value="Save" class="btn btn-default" />
             </div>
         </form>
+        <br />
+        <br />
+        <button type="button" class="btn btn-info" onclick="show();">City-ID Info</button>
+        <br />
+        <br />
+        <br />
+        <ul id="list" class="list-group" style = "display: none;">
+            @foreach (AggregationService.Models.ArenaService.City c in Model.cities)
+            {
+                @Html.Raw("<li class='list-group-item list-group-item-info'>" + c.ID + "</li>" + c.CityName + "<br /><br />");
+            }
+        </ul>
     </div>
 </div>
-
+<br />
+<br />
 <div>
     <a asp-action="Index">Back to List</a>
 </div>
@@ -46,3 +59,51 @@
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
 }
+
+<script>
+    function handleSubmit(f) {
+        var toSubmit = true;
+        var allowedWords = getAllowedWords();
+        var fieldsToCheck = document.getElementsByClassName("fields");
+        for (var i = 0; i < fieldsToCheck.length; i++) {
+            fieldsToCheck[i].style.boxShadow = "";
+            if (!isAllowed(fieldsToCheck[i].value, words)) {
+                toSubmit = false;
+                fieldsToCheck[i].style.boxShadow = "0 0 10px red";
+            }
+        }
+        var anyFieldsToCheck = document.getElementsByClassName("anyfields");
+        for (var i = 0; i < anyFieldsToCheck.length; i++) {
+            anyFieldsToCheck[i].style.boxShadow = "";
+            if (anyFieldsToCheck[i].value.length < 1 && anyFieldsToCheck[i].value < 1) {
+                toSubmit = false;
+                anyFieldsToCheck[i].style.boxShadow = "0 0 10px red";
+            }
+        }
+        if (toSubmit) f.submit();
+    }
+
+    function getAllowedWords() {
+        words = document.getElementById('list').getElementsByTagName('li');
+        return words;
+    }
+
+    function isAllowed(word, arr) {
+        var allowed = false;
+        for (var j = 0; j < arr.length; j++) {
+            if (arr[j].innerHTML == word) {
+                allowed = true;
+            }
+        }
+        return allowed;
+    }
+
+    function show()
+    {
+        var list = document.getElementById("list");
+        if (list.style.display == "none")
+            list.style.display = "inline";
+        else
+            list.style.display = "none";
+    }
+</script>

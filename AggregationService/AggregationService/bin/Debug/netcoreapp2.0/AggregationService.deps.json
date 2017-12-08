@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.0",
-    "signature": "b3964980a8109c067b3da72b45dfec3c9b76a8b0"
+    "signature": "79dce277db2e28fce5e5a9ce086d296ab25fd13a"
   },
   "compilationOptions": {
     "defines": [
@@ -28,6 +28,7 @@
           "Microsoft.NETCore.App": "2.0.0",
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "2.0.0",
           "Newtonsoft.Json": "10.0.3",
+          "RestBus.RabbitMQ": "0.6.9",
           "System.Data.Entity.Repository": "2.0.0.1",
           "System.Net.Http.Formatting.Extension": "5.2.3"
         },
@@ -2525,6 +2526,14 @@
           "lib/netstandard1.3/NuGet.Frameworks.dll": {}
         }
       },
+      "RabbitMQ.Client/3.6.0": {
+        "runtime": {
+          "lib/net45/RabbitMQ.Client.dll": {}
+        },
+        "compile": {
+          "lib/net45/RabbitMQ.Client.dll": {}
+        }
+      },
       "Remotion.Linq/2.1.1": {
         "dependencies": {
           "System.Collections": "4.3.0",
@@ -2544,6 +2553,39 @@
         },
         "compile": {
           "lib/netstandard1.0/Remotion.Linq.dll": {}
+        }
+      },
+      "RestBus.Client/0.5.2": {
+        "dependencies": {
+          "Newtonsoft.Json": "10.0.3"
+        },
+        "runtime": {
+          "lib/portable-net45+dnxcore50+win/RestBus.Client.dll": {}
+        },
+        "compile": {
+          "lib/portable-net45+dnxcore50+win/RestBus.Client.dll": {}
+        }
+      },
+      "RestBus.Common/0.6.3": {
+        "runtime": {
+          "lib/portable-net45+dnxcore50+win/RestBus.Common.dll": {}
+        },
+        "compile": {
+          "lib/portable-net45+dnxcore50+win/RestBus.Common.dll": {}
+        }
+      },
+      "RestBus.RabbitMQ/0.6.9": {
+        "dependencies": {
+          "Newtonsoft.Json": "10.0.3",
+          "RabbitMQ.Client": "3.6.0",
+          "RestBus.Client": "0.5.2",
+          "RestBus.Common": "0.6.3"
+        },
+        "runtime": {
+          "lib/net45/RestBus.RabbitMQ.dll": {}
+        },
+        "compile": {
+          "lib/net45/RestBus.RabbitMQ.dll": {}
         }
       },
       "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {
@@ -5536,12 +5578,40 @@
       "path": "nuget.frameworks/4.0.0",
       "hashPath": "nuget.frameworks.4.0.0.nupkg.sha512"
     },
+    "RabbitMQ.Client/3.6.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-SERgu0RH68f4MkoefaiOHP8BqRfPCAIYMUSe07VT7PXTKWX+yykDAZfiV7J7pF+6rW7/XxYR1LjsCTJG8rod/g==",
+      "path": "rabbitmq.client/3.6.0",
+      "hashPath": "rabbitmq.client.3.6.0.nupkg.sha512"
+    },
     "Remotion.Linq/2.1.1": {
       "type": "package",
       "serviceable": true,
       "sha512": "sha512-IJn0BqkvwEDpP+2qjvci7n4/a9f7DhKESLWb2/uG4xQh3rTkGTBUz69bI4IivCoKkTFAqjXxYDZw2K/npohjsw==",
       "path": "remotion.linq/2.1.1",
       "hashPath": "remotion.linq.2.1.1.nupkg.sha512"
+    },
+    "RestBus.Client/0.5.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-qQlYtK04vVnRkEqW17CkWwIgwzNgFsmta6JnQjA+rc142t75baLBjsOgfZ1dVF+3e9inm9i3idNxPOfFF8WYIQ==",
+      "path": "restbus.client/0.5.2",
+      "hashPath": "restbus.client.0.5.2.nupkg.sha512"
+    },
+    "RestBus.Common/0.6.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-7lifPF0MtFa4RsE/91/1VA7oZhsiWlHTjkkbljeI0iVExHrj9626Eo7/PP9wgUhej9OhcbpI3ItmwFN7C/Zxxw==",
+      "path": "restbus.common/0.6.3",
+      "hashPath": "restbus.common.0.6.3.nupkg.sha512"
+    },
+    "RestBus.RabbitMQ/0.6.9": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-UM/gw1503FoPRq1D30YEBbkWM6K9gs7gA5rYR4shD0No39nTMSFHhNurWQjo+SCPJUs2s2mLhk4blV7mYmKazg==",
+      "path": "restbus.rabbitmq/0.6.9",
+      "hashPath": "restbus.rabbitmq.0.6.9.nupkg.sha512"
     },
     "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {
       "type": "package",
