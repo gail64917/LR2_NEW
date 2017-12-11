@@ -31,3 +31,5 @@ C:\Users\Natasha\Desktop\LR2\LR2_NEW\ArenaService\ArenaService\obj\Debug\netcore
 C:\Users\Natasha\Desktop\LR2\LR2_NEW\ArenaService\ArenaService\obj\Debug\netcoreapp2.0\ArenaService.AssemblyInfo.cs
 C:\Users\Natasha\Desktop\LR2\LR2_NEW\ArenaService\ArenaService\obj\Debug\netcoreapp2.0\ArenaService.dll
 C:\Users\Natasha\Desktop\LR2\LR2_NEW\ArenaService\ArenaService\obj\Debug\netcoreapp2.0\ArenaService.pdb
+C:\Users\Владимир\Desktop\LR2_NEW\ArenaService\ArenaService\bin\Debug\netcoreapp2.0\RabbitModels.dll
+C:\Users\Владимир\Desktop\LR2_NEW\ArenaService\ArenaService\bin\Debug\netcoreapp2.0\RabbitModels.pdb

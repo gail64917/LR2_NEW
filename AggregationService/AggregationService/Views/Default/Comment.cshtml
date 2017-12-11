@@ -1,0 +1,17 @@
+﻿@model AggregationService.Models.ModelsForView.StringView;
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2>Index</h2>
+<br />
+<h4>Processing:</h4>
+<br />
+<h4>
+    @foreach (string s in @Model.comment)
+    {
+        @s;
+        <br />
+    }
+</h4>

@@ -9,6 +9,10 @@ using ArenaService.Data;
 using ArenaService.Models;
 using System.Text;
 using ArenaService.Models.JsonBindings;
+using EasyNetQ;
+using System.Collections.Concurrent;
+using RabbitModels;
+using System.Threading;
 
 namespace ArenaService.Controllers
 {
@@ -23,15 +27,82 @@ namespace ArenaService.Controllers
             _context = context;
         }
 
+        // GET: api/Cities/Secret
+        [Route("Secret")]
+        [HttpGet]
+        public IEnumerable<City> GetCitiesSecret()
+        {
+            IEnumerable<City> cities = _context.Cities;
+
+            var Bus = RabbitHutch.CreateBus("host=localhost");
+            ConcurrentStack<RabbitArenaCity> arenacityCollection = new ConcurrentStack<RabbitArenaCity>();
+
+            Bus.Receive<RabbitArenaCity>("arenacity", msg =>
+            {
+                arenacityCollection.Push(msg);
+            });
+            Thread.Sleep(5000);
+
+            foreach (RabbitArenaCity a in arenacityCollection)
+            {
+                City c = new City() { CityName = a.CityName, CityPopulation = a.CityPopulation };
+                _context.Cities.Add(c);
+            }
+            _context.SaveChanges();
+
+            foreach (RabbitArenaCity a in arenacityCollection)
+            {
+                int c_id = 0;
+                foreach (City c in _context.Cities)
+                {
+                    if (a.CityName == c.CityName)
+                        c_id = c.ID;
+                }
+                
+                Arena ar = new Arena() { ArenaName = a.ArenaName, Capacity = a.ArenaCapacity, CityID = c_id};
+                _context.Arenas.Add(ar);
+            }
+            _context.SaveChanges();
+
+            return cities;
+        }
+
         // GET: api/Cities
         [HttpGet]
         public IEnumerable<City> GetCities()
         {
             IEnumerable<City> cities = _context.Cities;
-            //foreach (City c in cities)
+
+            //var Bus = RabbitHutch.CreateBus("host=localhost");
+            //ConcurrentStack<RabbitArenaCity> arenacityCollection = new ConcurrentStack<RabbitArenaCity>();
+
+            //Bus.Receive<RabbitArenaCity>("arenacity", msg =>
             //{
-            //    _context.Entry(c).Collection(city => city.Arenas).Load();
+            //    arenacityCollection.Push(msg);
+            //});
+            //Thread.Sleep(5000);
+
+            //foreach (RabbitArenaCity a in arenacityCollection)
+            //{
+            //    City c = new City() { CityName = a.CityName, CityPopulation = a.CityPopulation };
+            //    _context.Cities.Add(c);
             //}
+            //_context.SaveChanges();
+
+            //foreach (RabbitArenaCity a in arenacityCollection)
+            //{
+            //    int c_id = 0;
+            //    foreach (City c in _context.Cities)
+            //    {
+            //        if (a.CityName == c.CityName)
+            //            c_id = c.ID;
+            //    }
+
+            //    Arena ar = new Arena() { ArenaName = a.ArenaName, Capacity = a.ArenaCapacity, CityID = c_id };
+            //    _context.Arenas.Add(ar);
+            //}
+            //_context.SaveChanges();
+
             return cities;
         }
 

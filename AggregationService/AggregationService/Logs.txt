@@ -11578,3 +11578,3081 @@ Status: Created
 
 
 
+63648505299302548522 - Request: SERVICE: ConcerteService 
+GET: http://localhost:61438/api/Concertes/all?valid=true&page=1
+Accept: application/json
+
+
+63648505299302548522 - Response: Date: Sun, 10 Dec 2017 09:21:38 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNc0JLQu9Cw0LTQuNC80LjRgFxEZXNrdG9wXExSMl9ORVdcQ29uY2VydGVTZXJ2aWNlXENvbmNlcnRlU2VydmljZVxDb25jZXJ0ZVNlcnZpY2VcYXBpXENvbmNlcnRlc1xhbGw=?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":1,"showName":"BigSHow","ticketsNumber":1000,"price":2000,"cityName":"Moscow","arenaName":"Crocus City Hall","artistName":"Marilyn Manson","date":"2015-09-01T00:00:00","sellerID":1,"seller":{"id":1,"brandName":"Big Billet"}},{"id":2,"showName":"Hello, London","ticketsNumber":2000,"price":4000,"cityName":"London","arenaName":"Brixton Academy","artistName":"Marilyn Manson","date":"2015-10-01T00:00:00","sellerID":2,"seller":{"id":2,"brandName":"Afisha"}},{"id":3,"showName":"Hello, Berlin","ticketsNumber":3000,"price":6000,"cityName":"Berlin","arenaName":"Mercedes-Benz Arena","artistName":"Marilyn Manson","date":"2015-11-01T00:00:00","sellerID":2,"seller":{"id":2,"brandName":"Afisha"}},{"id":4,"showName":"BigSHow","ticketsNumber":1000,"price":9000,"cityName":"Moscow","arenaName":"Crocus City Hall","artistName":"Depeche mode","date":"2016-09-01T00:00:00","sellerID":1,"seller":{"id":1,"brandName":"Big Billet"}},{"id":5,"showName":"Hello, Hello","ticketsNumber":2000,"price":11000,"cityName":"London","arenaName":"Brixton Academy","artistName":"Depeche mode","date":"2016-10-01T00:00:00","sellerID":2,"seller":{"id":2,"brandName":"Afisha"}},{"id":6,"showName":"Hello, Berlin","ticketsNumber":3000,"price":1000,"cityName":"Berlin","arenaName":"Mercedes-Benz Arena","artistName":"Depeche mode","date":"2016-11-01T00:00:00","sellerID":2,"seller":{"id":2,"brandName":"Afisha"}},{"id":7,"showName":"BigGiG","ticketsNumber":3000,"price":22000,"cityName":"Moscow","arenaName":"Olimpiyskiy","artistName":"30 Seconds to Mars","date":"2016-02-01T00:00:00","sellerID":1,"seller":{"id":1,"brandName":"Big Billet"}},{"id":8,"showName":"Hello,Good Bye","ticketsNumber":5000,"price":3100,"cityName":"London","arenaName":"Brixton Academy","artistName":"30 Seconds to Mars","date":"2016-03-01T00:00:00","sellerID":2,"seller":{"id":2,"brandName":"Afisha"}},{"id":9,"showName":"Hello, WORLD","ticketsNumber":6000,"price":2400,"cityName":"Berlin","arenaName":"Mercedes-Benz Arena","artistName":"30 Seconds to Mars","date":"2016-04-01T00:00:00","sellerID":2,"seller":{"id":2,"brandName":"Afisha"}},{"id":10,"showName":"VovaSHow","ticketsNumber":1000,"price":2600,"cityName":"Moscow","arenaName":"Vova Arena","artistName":"Frank Sinatra","date":"2017-09-01T00:00:00","sellerID":3,"seller":{"id":3,"brandName":"Ozone"}}]
+
+
+
+63648505299577417722 - Request: SERVICE: ConcerteService 
+GET: http://localhost:61438/api/Concertes/all?valid=true&page=1
+Accept: application/json
+
+
+63648505299577417722 - Response: Date: Sun, 10 Dec 2017 09:21:39 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNc0JLQu9Cw0LTQuNC80LjRgFxEZXNrdG9wXExSMl9ORVdcQ29uY2VydGVTZXJ2aWNlXENvbmNlcnRlU2VydmljZVxDb25jZXJ0ZVNlcnZpY2VcYXBpXENvbmNlcnRlc1xjb3VudA==?=
+X-Powered-By: ASP.NET
+
+Status: OK
+11
+
+
+
+6364850529970095459 - Request: SERVICE: ArenaService 
+GET: http://localhost:58349/api/arenas
+Accept: application/json
+
+
+6364850529970095459 - Response: Date: Sun, 10 Dec 2017 09:21:39 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNc0JLQu9Cw0LTQuNC80LjRgFxEZXNrdG9wXExSMl9ORVdcQXJlbmFTZXJ2aWNlXEFyZW5hU2VydmljZVxhcGlcYXJlbmFz?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":11,"arenaName":"Big Arena","capacity":20000,"cityID":2,"city":{"id":2,"cityName":"Berlin","cityPopulation":3500000}},{"id":5,"arenaName":"Brixton Academy","capacity":10000,"cityID":3,"city":{"id":3,"cityName":"London","cityPopulation":9000000}},{"id":1,"arenaName":"Crocus City Hall","capacity":6000,"cityID":1,"city":{"id":1,"cityName":"Moscow","cityPopulation":12000000}},{"id":12,"arenaName":"Hell Fire Arena","capacity":10000,"cityID":3,"city":{"id":3,"cityName":"London","cityPopulation":9000000}},{"id":6,"arenaName":"Mercedes-Benz Arena","capacity":6000,"cityID":2,"city":{"id":2,"cityName":"Berlin","cityPopulation":3500000}},{"id":10,"arenaName":"Natasha Arena","capacity":3000,"cityID":1,"city":{"id":1,"cityName":"Moscow","cityPopulation":12000000}},{"id":2,"arenaName":"Olimpiyskiy","capacity":10000,"cityID":1,"city":{"id":1,"cityName":"Moscow","cityPopulation":12000000}},{"id":7,"arenaName":"Olympiastadion Berlin","capacity":9000,"cityID":2,"city":{"id":2,"cityName":"Berlin","cityPopulation":3500000}},{"id":8,"arenaName":"Rock am Ring","capacity":15000,"cityID":2,"city":{"id":2,"cityName":"Berlin","cityPopulation":3500000}},{"id":3,"arenaName":"Vegas City Hall","capacity":6000,"cityID":1,"city":{"id":1,"cityName":"Moscow","cityPopulation":12000000}},{"id":9,"arenaName":"Vova Arena","capacity":3000,"cityID":1,"city":{"id":1,"cityName":"Moscow","cityPopulation":12000000}},{"id":4,"arenaName":"Wembley Arena","capacity":4000,"cityID":3,"city":{"id":3,"cityName":"London","cityPopulation":9000000}}]
+
+
+
+6364850529978233899 - Request: SERVICE: ArenaService 
+GET: http://localhost:61883/api/artists
+Accept: application/json
+
+
+6364850529978233899 - Response: Date: Sun, 10 Dec 2017 09:21:39 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNc0JLQu9Cw0LTQuNC80LjRgFxEZXNrdG9wXExSMl9ORVdcQXJ0aXN0U2VydmljZVxDb25jZXJ0ZVNlcnZpY2VcYXBpXGFydGlzdHM=?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":1,"artistName":"Marilyn Manson","lastFmRating":10},{"id":2,"artistName":"30 Seconds to Mars","lastFmRating":7},{"id":3,"artistName":"Rammstein","lastFmRating":4},{"id":4,"artistName":"The Beatles","lastFmRating":1},{"id":5,"artistName":"Suicide Silence","lastFmRating":14},{"id":6,"artistName":"Depeche mode","lastFmRating":2},{"id":7,"artistName":"Bullet for my valentine","lastFmRating":15},{"id":8,"artistName":"Frank Sinatra","lastFmRating":3},{"id":9,"artistName":"Elvis Presley","lastFmRating":4},{"id":10,"artistName":"Combichrist","lastFmRating":8},{"id":11,"artistName":"Devil sold his soul","lastFmRating":9}]
+
+
+
+63648505354986938116 - Request: SERVICE: ConcerteService 
+GET: http://localhost:61438/api/Concertes/all?valid=true&page=1
+Accept: application/json
+
+
+63648505354986938116 - Response: Date: Sun, 10 Dec 2017 09:22:34 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNc0JLQu9Cw0LTQuNC80LjRgFxEZXNrdG9wXExSMl9ORVdcQ29uY2VydGVTZXJ2aWNlXENvbmNlcnRlU2VydmljZVxDb25jZXJ0ZVNlcnZpY2VcYXBpXENvbmNlcnRlc1xhbGw=?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":1,"showName":"BigSHow","ticketsNumber":1000,"price":2000,"cityName":"Moscow","arenaName":"Crocus City Hall","artistName":"Marilyn Manson","date":"2015-09-01T00:00:00","sellerID":1,"seller":{"id":1,"brandName":"Big Billet"}},{"id":2,"showName":"Hello, London","ticketsNumber":2000,"price":4000,"cityName":"London","arenaName":"Brixton Academy","artistName":"Marilyn Manson","date":"2015-10-01T00:00:00","sellerID":2,"seller":{"id":2,"brandName":"Afisha"}},{"id":3,"showName":"Hello, Berlin","ticketsNumber":3000,"price":6000,"cityName":"Berlin","arenaName":"Mercedes-Benz Arena","artistName":"Marilyn Manson","date":"2015-11-01T00:00:00","sellerID":2,"seller":{"id":2,"brandName":"Afisha"}},{"id":4,"showName":"BigSHow","ticketsNumber":1000,"price":9000,"cityName":"Moscow","arenaName":"Crocus City Hall","artistName":"Depeche mode","date":"2016-09-01T00:00:00","sellerID":1,"seller":{"id":1,"brandName":"Big Billet"}},{"id":5,"showName":"Hello, Hello","ticketsNumber":2000,"price":11000,"cityName":"London","arenaName":"Brixton Academy","artistName":"Depeche mode","date":"2016-10-01T00:00:00","sellerID":2,"seller":{"id":2,"brandName":"Afisha"}},{"id":6,"showName":"Hello, Berlin","ticketsNumber":3000,"price":1000,"cityName":"Berlin","arenaName":"Mercedes-Benz Arena","artistName":"Depeche mode","date":"2016-11-01T00:00:00","sellerID":2,"seller":{"id":2,"brandName":"Afisha"}},{"id":7,"showName":"BigGiG","ticketsNumber":3000,"price":22000,"cityName":"Moscow","arenaName":"Olimpiyskiy","artistName":"30 Seconds to Mars","date":"2016-02-01T00:00:00","sellerID":1,"seller":{"id":1,"brandName":"Big Billet"}},{"id":8,"showName":"Hello,Good Bye","ticketsNumber":5000,"price":3100,"cityName":"London","arenaName":"Brixton Academy","artistName":"30 Seconds to Mars","date":"2016-03-01T00:00:00","sellerID":2,"seller":{"id":2,"brandName":"Afisha"}},{"id":9,"showName":"Hello, WORLD","ticketsNumber":6000,"price":2400,"cityName":"Berlin","arenaName":"Mercedes-Benz Arena","artistName":"30 Seconds to Mars","date":"2016-04-01T00:00:00","sellerID":2,"seller":{"id":2,"brandName":"Afisha"}},{"id":10,"showName":"VovaSHow","ticketsNumber":1000,"price":2600,"cityName":"Moscow","arenaName":"Vova Arena","artistName":"Frank Sinatra","date":"2017-09-01T00:00:00","sellerID":3,"seller":{"id":3,"brandName":"Ozone"}}]
+
+
+
+6364850535503904649 - Request: SERVICE: ArenaService 
+GET: http://localhost:58349/api/arenas
+Accept: application/json
+
+
+6364850535503904649 - Response: Date: Sun, 10 Dec 2017 09:22:34 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNc0JLQu9Cw0LTQuNC80LjRgFxEZXNrdG9wXExSMl9ORVdcQXJlbmFTZXJ2aWNlXEFyZW5hU2VydmljZVxhcGlcYXJlbmFz?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":11,"arenaName":"Big Arena","capacity":20000,"cityID":2,"city":{"id":2,"cityName":"Berlin","cityPopulation":3500000}},{"id":5,"arenaName":"Brixton Academy","capacity":10000,"cityID":3,"city":{"id":3,"cityName":"London","cityPopulation":9000000}},{"id":1,"arenaName":"Crocus City Hall","capacity":6000,"cityID":1,"city":{"id":1,"cityName":"Moscow","cityPopulation":12000000}},{"id":12,"arenaName":"Hell Fire Arena","capacity":10000,"cityID":3,"city":{"id":3,"cityName":"London","cityPopulation":9000000}},{"id":6,"arenaName":"Mercedes-Benz Arena","capacity":6000,"cityID":2,"city":{"id":2,"cityName":"Berlin","cityPopulation":3500000}},{"id":10,"arenaName":"Natasha Arena","capacity":3000,"cityID":1,"city":{"id":1,"cityName":"Moscow","cityPopulation":12000000}},{"id":2,"arenaName":"Olimpiyskiy","capacity":10000,"cityID":1,"city":{"id":1,"cityName":"Moscow","cityPopulation":12000000}},{"id":7,"arenaName":"Olympiastadion Berlin","capacity":9000,"cityID":2,"city":{"id":2,"cityName":"Berlin","cityPopulation":3500000}},{"id":8,"arenaName":"Rock am Ring","capacity":15000,"cityID":2,"city":{"id":2,"cityName":"Berlin","cityPopulation":3500000}},{"id":3,"arenaName":"Vegas City Hall","capacity":6000,"cityID":1,"city":{"id":1,"cityName":"Moscow","cityPopulation":12000000}},{"id":9,"arenaName":"Vova Arena","capacity":3000,"cityID":1,"city":{"id":1,"cityName":"Moscow","cityPopulation":12000000}},{"id":4,"arenaName":"Wembley Arena","capacity":4000,"cityID":3,"city":{"id":3,"cityName":"London","cityPopulation":9000000}}]
+
+
+
+6364850535508858449 - Request: SERVICE: ArenaService 
+GET: http://localhost:61883/api/artists
+Accept: application/json
+
+
+6364850535508858449 - Response: Date: Sun, 10 Dec 2017 09:22:34 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNc0JLQu9Cw0LTQuNC80LjRgFxEZXNrdG9wXExSMl9ORVdcQXJ0aXN0U2VydmljZVxDb25jZXJ0ZVNlcnZpY2VcYXBpXGFydGlzdHM=?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":1,"artistName":"Marilyn Manson","lastFmRating":10},{"id":2,"artistName":"30 Seconds to Mars","lastFmRating":7},{"id":3,"artistName":"Rammstein","lastFmRating":4},{"id":4,"artistName":"The Beatles","lastFmRating":1},{"id":5,"artistName":"Suicide Silence","lastFmRating":14},{"id":6,"artistName":"Depeche mode","lastFmRating":2},{"id":7,"artistName":"Bullet for my valentine","lastFmRating":15},{"id":8,"artistName":"Frank Sinatra","lastFmRating":3},{"id":9,"artistName":"Elvis Presley","lastFmRating":4},{"id":10,"artistName":"Combichrist","lastFmRating":8},{"id":11,"artistName":"Devil sold his soul","lastFmRating":9}]
+
+
+
+6364850596698645148 - Request: SERVICE: ArenaService 
+POST: http://localhost:58349/api/cities
+Accept: application/json
+{
+  "CityName": null,
+  "CityPopulation": 0
+}
+
+6364850596698645148 - Response: Date: Sun, 10 Dec 2017 09:32:46 GMT
+Transfer-Encoding: chunked
+Location: http://localhost:58349/api/Cities/4
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNc0JLQu9Cw0LTQuNC80LjRgFxEZXNrdG9wXExSMl9ORVdcQXJlbmFTZXJ2aWNlXEFyZW5hU2VydmljZVxhcGlcY2l0aWVz?=
+X-Powered-By: ASP.NET
+
+Status: Created
+{"id":4,"cityName":null,"cityPopulation":0}
+
+
+
+63648505967379666110 - Request: SERVICE: ArenaService 
+POST: http://localhost:58349/api/arenas
+Accept: application/json
+{
+  "ArenaName": null,
+  "CityID": 4,
+  "Capacity": 0
+}
+
+63648505967379666110 - Response: Date: Sun, 10 Dec 2017 09:32:46 GMT
+Transfer-Encoding: chunked
+Location: http://localhost:58349/api/Arenas/13
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNc0JLQu9Cw0LTQuNC80LjRgFxEZXNrdG9wXExSMl9ORVdcQXJlbmFTZXJ2aWNlXEFyZW5hU2VydmljZVxhcGlcYXJlbmFz?=
+X-Powered-By: ASP.NET
+
+Status: Created
+{"id":13,"arenaName":null,"capacity":0,"cityID":4,"city":null}
+
+
+
+63648505970822515326 - Request: SERVICE: ConcerteService 
+POST: http://localhost:61438/api/Sellers
+Accept: application/json
+{
+  "brandName": null
+}
+
+63648505970822515326 - Response: Date: Sun, 10 Dec 2017 09:32:50 GMT
+Transfer-Encoding: chunked
+Location: http://localhost:61438/api/Sellers/4
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNc0JLQu9Cw0LTQuNC80LjRgFxEZXNrdG9wXExSMl9ORVdcQ29uY2VydGVTZXJ2aWNlXENvbmNlcnRlU2VydmljZVxDb25jZXJ0ZVNlcnZpY2VcYXBpXFNlbGxlcnM=?=
+X-Powered-By: ASP.NET
+
+Status: Created
+{"id":4,"brandName":null}
+
+
+
+63648505971061287421 - Request: SERVICE: ConcerteService 
+POST: http://localhost:61438/api/Concertes
+Accept: application/json
+{
+  "ShowName": null,
+  "TicketsNumber": 0,
+  "Price": 0,
+  "CityName": null,
+  "ArenaName": null,
+  "ArtistName": null,
+  "Date": "0001-01-01T00:00:00",
+  "SellerID": 4
+}
+
+63648505971061287421 - Response: Date: Sun, 10 Dec 2017 09:32:50 GMT
+Transfer-Encoding: chunked
+Location: http://localhost:61438/api/Concertes/16
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNc0JLQu9Cw0LTQuNC80LjRgFxEZXNrdG9wXExSMl9ORVdcQ29uY2VydGVTZXJ2aWNlXENvbmNlcnRlU2VydmljZVxDb25jZXJ0ZVNlcnZpY2VcYXBpXENvbmNlcnRlcw==?=
+X-Powered-By: ASP.NET
+
+Status: Created
+{"id":16,"showName":null,"ticketsNumber":0,"price":0,"cityName":null,"arenaName":null,"artistName":null,"date":"0001-01-01T00:00:00","sellerID":4,"seller":null}
+
+
+
+6364850632654735508 - Request: SERVICE: ArenaService 
+POST: http://localhost:58349/api/cities
+Accept: application/json
+{
+  "CityName": null,
+  "CityPopulation": 0
+}
+
+6364850632654735508 - Response: Date: Sun, 10 Dec 2017 09:38:46 GMT
+Transfer-Encoding: chunked
+Location: http://localhost:58349/api/Cities/5
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNc0JLQu9Cw0LTQuNC80LjRgFxEZXNrdG9wXExSMl9ORVdcQXJlbmFTZXJ2aWNlXEFyZW5hU2VydmljZVxhcGlcY2l0aWVz?=
+X-Powered-By: ASP.NET
+
+Status: Created
+{"id":5,"cityName":null,"cityPopulation":0}
+
+
+
+63648506326631676510 - Request: SERVICE: ArenaService 
+POST: http://localhost:58349/api/arenas
+Accept: application/json
+{
+  "ArenaName": null,
+  "CityID": 5,
+  "Capacity": 0
+}
+
+63648506326631676510 - Response: Date: Sun, 10 Dec 2017 09:38:46 GMT
+Transfer-Encoding: chunked
+Location: http://localhost:58349/api/Arenas/14
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNc0JLQu9Cw0LTQuNC80LjRgFxEZXNrdG9wXExSMl9ORVdcQXJlbmFTZXJ2aWNlXEFyZW5hU2VydmljZVxhcGlcYXJlbmFz?=
+X-Powered-By: ASP.NET
+
+Status: Created
+{"id":14,"arenaName":null,"capacity":0,"cityID":5,"city":null}
+
+
+
+6364850632682300318 - Request: SERVICE: ConcerteService 
+POST: http://localhost:61438/api/Sellers
+Accept: application/json
+{
+  "brandName": null
+}
+
+6364850632682300318 - Response: Date: Sun, 10 Dec 2017 09:38:46 GMT
+Transfer-Encoding: chunked
+Location: http://localhost:61438/api/Sellers/5
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNc0JLQu9Cw0LTQuNC80LjRgFxEZXNrdG9wXExSMl9ORVdcQ29uY2VydGVTZXJ2aWNlXENvbmNlcnRlU2VydmljZVxDb25jZXJ0ZVNlcnZpY2VcYXBpXFNlbGxlcnM=?=
+X-Powered-By: ASP.NET
+
+Status: Created
+{"id":5,"brandName":null}
+
+
+
+63648506326889079131 - Request: SERVICE: ConcerteService 
+POST: http://localhost:61438/api/Concertes
+Accept: application/json
+{
+  "ShowName": null,
+  "TicketsNumber": 0,
+  "Price": 0,
+  "CityName": null,
+  "ArenaName": null,
+  "ArtistName": null,
+  "Date": "0001-01-01T00:00:00",
+  "SellerID": 5
+}
+
+63648506326889079131 - Response: Date: Sun, 10 Dec 2017 09:38:46 GMT
+Transfer-Encoding: chunked
+Location: http://localhost:61438/api/Concertes/17
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNc0JLQu9Cw0LTQuNC80LjRgFxEZXNrdG9wXExSMl9ORVdcQ29uY2VydGVTZXJ2aWNlXENvbmNlcnRlU2VydmljZVxDb25jZXJ0ZVNlcnZpY2VcYXBpXENvbmNlcnRlcw==?=
+X-Powered-By: ASP.NET
+
+Status: Created
+{"id":17,"showName":null,"ticketsNumber":0,"price":0,"cityName":null,"arenaName":null,"artistName":null,"date":"0001-01-01T00:00:00","sellerID":5,"seller":null}
+
+
+
+6364850687402426828 - Request: SERVICE: ArenaService 
+POST: http://localhost:58349/api/cities
+Accept: application/json
+{
+  "CityName": "Moscow3333",
+  "CityPopulation": 12000000
+}
+
+6364850687402426828 - Response: Date: Sun, 10 Dec 2017 09:47:53 GMT
+Transfer-Encoding: chunked
+Location: http://localhost:58349/api/Cities/6
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNc0JLQu9Cw0LTQuNC80LjRgFxEZXNrdG9wXExSMl9ORVdcQXJlbmFTZXJ2aWNlXEFyZW5hU2VydmljZVxhcGlcY2l0aWVz?=
+X-Powered-By: ASP.NET
+
+Status: Created
+{"id":6,"cityName":"Moscow3333","cityPopulation":12000000}
+
+
+
+6364850687414815999 - Request: SERVICE: ArenaService 
+POST: http://localhost:58349/api/arenas
+Accept: application/json
+{
+  "ArenaName": "Crocus City Hall3333",
+  "CityID": 6,
+  "Capacity": 6000
+}
+
+6364850687414815999 - Response: Date: Sun, 10 Dec 2017 09:47:53 GMT
+Transfer-Encoding: chunked
+Location: http://localhost:58349/api/Arenas/15
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNc0JLQu9Cw0LTQuNC80LjRgFxEZXNrdG9wXExSMl9ORVdcQXJlbmFTZXJ2aWNlXEFyZW5hU2VydmljZVxhcGlcYXJlbmFz?=
+X-Powered-By: ASP.NET
+
+Status: Created
+{"id":15,"arenaName":"Crocus City Hall3333","capacity":6000,"cityID":6,"city":null}
+
+
+
+6364850687614706618 - Request: SERVICE: ConcerteService 
+POST: http://localhost:61438/api/Sellers
+Accept: application/json
+{
+  "brandName": "Big Billet3333"
+}
+
+6364850687614706618 - Response: Date: Sun, 10 Dec 2017 09:47:56 GMT
+Transfer-Encoding: chunked
+Location: http://localhost:61438/api/Sellers/6
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNc0JLQu9Cw0LTQuNC80LjRgFxEZXNrdG9wXExSMl9ORVdcQ29uY2VydGVTZXJ2aWNlXENvbmNlcnRlU2VydmljZVxDb25jZXJ0ZVNlcnZpY2VcYXBpXFNlbGxlcnM=?=
+X-Powered-By: ASP.NET
+
+Status: Created
+{"id":6,"brandName":"Big Billet3333"}
+
+
+
+6364850687632621378 - Request: SERVICE: ConcerteService 
+POST: http://localhost:61438/api/Concertes
+Accept: application/json
+{
+  "ShowName": "BigSHow3333",
+  "TicketsNumber": 1000,
+  "Price": 2000,
+  "CityName": "Moscow3333",
+  "ArenaName": "Crocus City Hall3333",
+  "ArtistName": "FILIP KIRKOROV GAY",
+  "Date": "2015-09-01T00:00:00",
+  "SellerID": 6
+}
+
+6364850687632621378 - Response: Date: Sun, 10 Dec 2017 09:47:56 GMT
+Transfer-Encoding: chunked
+Location: http://localhost:61438/api/Concertes/18
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNc0JLQu9Cw0LTQuNC80LjRgFxEZXNrdG9wXExSMl9ORVdcQ29uY2VydGVTZXJ2aWNlXENvbmNlcnRlU2VydmljZVxDb25jZXJ0ZVNlcnZpY2VcYXBpXENvbmNlcnRlcw==?=
+X-Powered-By: ASP.NET
+
+Status: Created
+{"id":18,"showName":"BigSHow3333","ticketsNumber":1000,"price":2000,"cityName":"Moscow3333","arenaName":"Crocus City Hall3333","artistName":"FILIP KIRKOROV GAY","date":"2015-09-01T00:00:00","sellerID":6,"seller":null}
+
+
+
+6364850691192674368 - Request: SERVICE: ArenaService 
+POST: http://localhost:58349/api/cities
+Accept: application/json
+{
+  "CityName": "Moscow3",
+  "CityPopulation": 12000000
+}
+
+6364850691192674368 - Response: Date: Sun, 10 Dec 2017 09:48:31 GMT
+Transfer-Encoding: chunked
+Location: http://localhost:58349/api/Cities/7
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNc0JLQu9Cw0LTQuNC80LjRgFxEZXNrdG9wXExSMl9ORVdcQXJlbmFTZXJ2aWNlXEFyZW5hU2VydmljZVxhcGlcY2l0aWVz?=
+X-Powered-By: ASP.NET
+
+Status: Created
+{"id":7,"cityName":"Moscow3","cityPopulation":12000000}
+
+
+
+63648506911997309221 - Request: SERVICE: ArenaService 
+POST: http://localhost:58349/api/arenas
+Accept: application/json
+{
+  "ArenaName": "Crocus City Hall3",
+  "CityID": 7,
+  "Capacity": 6000
+}
+
+63648506911997309221 - Response: Date: Sun, 10 Dec 2017 09:48:31 GMT
+Transfer-Encoding: chunked
+Location: http://localhost:58349/api/Arenas/16
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNc0JLQu9Cw0LTQuNC80LjRgFxEZXNrdG9wXExSMl9ORVdcQXJlbmFTZXJ2aWNlXEFyZW5hU2VydmljZVxhcGlcYXJlbmFz?=
+X-Powered-By: ASP.NET
+
+Status: Created
+{"id":16,"arenaName":"Crocus City Hall3","capacity":6000,"cityID":7,"city":null}
+
+
+
+6364850691213949009 - Request: SERVICE: ConcerteService 
+POST: http://localhost:61438/api/Sellers
+Accept: application/json
+{
+  "brandName": "Big Billet3"
+}
+
+6364850691213949009 - Response: Date: Sun, 10 Dec 2017 09:48:31 GMT
+Transfer-Encoding: chunked
+Location: http://localhost:61438/api/Sellers/7
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNc0JLQu9Cw0LTQuNC80LjRgFxEZXNrdG9wXExSMl9ORVdcQ29uY2VydGVTZXJ2aWNlXENvbmNlcnRlU2VydmljZVxDb25jZXJ0ZVNlcnZpY2VcYXBpXFNlbGxlcnM=?=
+X-Powered-By: ASP.NET
+
+Status: Created
+{"id":7,"brandName":"Big Billet3"}
+
+
+
+63648506912229205521 - Request: SERVICE: ConcerteService 
+POST: http://localhost:61438/api/Concertes
+Accept: application/json
+{
+  "ShowName": "BigSHow3",
+  "TicketsNumber": 1000,
+  "Price": 2000,
+  "CityName": "Moscow3",
+  "ArenaName": "Crocus City Hall3",
+  "ArtistName": "FILIP KIRKOROV",
+  "Date": "2015-09-01T00:00:00",
+  "SellerID": 7
+}
+
+63648506912229205521 - Response: Date: Sun, 10 Dec 2017 09:48:31 GMT
+Transfer-Encoding: chunked
+Location: http://localhost:61438/api/Concertes/19
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNc0JLQu9Cw0LTQuNC80LjRgFxEZXNrdG9wXExSMl9ORVdcQ29uY2VydGVTZXJ2aWNlXENvbmNlcnRlU2VydmljZVxDb25jZXJ0ZVNlcnZpY2VcYXBpXENvbmNlcnRlcw==?=
+X-Powered-By: ASP.NET
+
+Status: Created
+{"id":19,"showName":"BigSHow3","ticketsNumber":1000,"price":2000,"cityName":"Moscow3","arenaName":"Crocus City Hall3","artistName":"FILIP KIRKOROV","date":"2015-09-01T00:00:00","sellerID":7,"seller":null}
+
+
+
+6364850700081285318 - Request: SERVICE: ArenaService 
+POST: http://localhost:58349/api/cities
+Accept: application/json
+{
+  "CityName": "Moscow3",
+  "CityPopulation": 12000000
+}
+
+6364850700081285318 - Response: Date: Sun, 10 Dec 2017 09:50:00 GMT
+Transfer-Encoding: chunked
+Location: http://localhost:58349/api/Cities/8
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNc0JLQu9Cw0LTQuNC80LjRgFxEZXNrdG9wXExSMl9ORVdcQXJlbmFTZXJ2aWNlXEFyZW5hU2VydmljZVxhcGlcY2l0aWVz?=
+X-Powered-By: ASP.NET
+
+Status: Created
+{"id":8,"cityName":"Moscow3","cityPopulation":12000000}
+
+
+
+6364850700084803339 - Request: SERVICE: ArenaService 
+POST: http://localhost:58349/api/arenas
+Accept: application/json
+{
+  "ArenaName": "Crocus City Hall3",
+  "CityID": 8,
+  "Capacity": 6000
+}
+
+6364850700084803339 - Response: Date: Sun, 10 Dec 2017 09:50:00 GMT
+Transfer-Encoding: chunked
+Location: http://localhost:58349/api/Arenas/17
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNc0JLQu9Cw0LTQuNC80LjRgFxEZXNrdG9wXExSMl9ORVdcQXJlbmFTZXJ2aWNlXEFyZW5hU2VydmljZVxhcGlcYXJlbmFz?=
+X-Powered-By: ASP.NET
+
+Status: Created
+{"id":17,"arenaName":"Crocus City Hall3","capacity":6000,"cityID":8,"city":null}
+
+
+
+6364850700144450589 - Request: SERVICE: ConcerteService 
+POST: http://localhost:61438/api/Sellers
+Accept: application/json
+{
+  "brandName": "Big Billet3"
+}
+
+6364850700144450589 - Response: Date: Sun, 10 Dec 2017 09:50:00 GMT
+Transfer-Encoding: chunked
+Location: http://localhost:61438/api/Sellers/8
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNc0JLQu9Cw0LTQuNC80LjRgFxEZXNrdG9wXExSMl9ORVdcQ29uY2VydGVTZXJ2aWNlXENvbmNlcnRlU2VydmljZVxDb25jZXJ0ZVNlcnZpY2VcYXBpXFNlbGxlcnM=?=
+X-Powered-By: ASP.NET
+
+Status: Created
+{"id":8,"brandName":"Big Billet3"}
+
+
+
+63648507001542902834 - Request: SERVICE: ConcerteService 
+POST: http://localhost:61438/api/Concertes
+Accept: application/json
+{
+  "ShowName": "BigSHow3",
+  "TicketsNumber": 1000,
+  "Price": 2000,
+  "CityName": "Moscow3",
+  "ArenaName": "Crocus City Hall3",
+  "ArtistName": "FILIP KIRKOROV",
+  "Date": "2015-09-01T00:00:00",
+  "SellerID": 8
+}
+
+63648507001542902834 - Response: Date: Sun, 10 Dec 2017 09:50:00 GMT
+Transfer-Encoding: chunked
+Location: http://localhost:61438/api/Concertes/20
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNc0JLQu9Cw0LTQuNC80LjRgFxEZXNrdG9wXExSMl9ORVdcQ29uY2VydGVTZXJ2aWNlXENvbmNlcnRlU2VydmljZVxDb25jZXJ0ZVNlcnZpY2VcYXBpXENvbmNlcnRlcw==?=
+X-Powered-By: ASP.NET
+
+Status: Created
+{"id":20,"showName":"BigSHow3","ticketsNumber":1000,"price":2000,"cityName":"Moscow3","arenaName":"Crocus City Hall3","artistName":"FILIP KIRKOROV","date":"2015-09-01T00:00:00","sellerID":8,"seller":null}
+
+
+
+6364850701421485728 - Request: SERVICE: ArenaService 
+POST: http://localhost:58349/api/cities
+Accept: application/json
+{
+  "CityName": "Moscow3",
+  "CityPopulation": 12000000
+}
+
+6364850701421485728 - Response: Date: Sun, 10 Dec 2017 09:50:14 GMT
+Transfer-Encoding: chunked
+Location: http://localhost:58349/api/Cities/9
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNc0JLQu9Cw0LTQuNC80LjRgFxEZXNrdG9wXExSMl9ORVdcQXJlbmFTZXJ2aWNlXEFyZW5hU2VydmljZVxhcGlcY2l0aWVz?=
+X-Powered-By: ASP.NET
+
+Status: Created
+{"id":9,"cityName":"Moscow3","cityPopulation":12000000}
+
+
+
+6364850701424204279 - Request: SERVICE: ArenaService 
+POST: http://localhost:58349/api/arenas
+Accept: application/json
+{
+  "ArenaName": "Crocus City Hall3",
+  "CityID": 9,
+  "Capacity": 6000
+}
+
+6364850701424204279 - Response: Date: Sun, 10 Dec 2017 09:50:14 GMT
+Transfer-Encoding: chunked
+Location: http://localhost:58349/api/Arenas/18
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNc0JLQu9Cw0LTQuNC80LjRgFxEZXNrdG9wXExSMl9ORVdcQXJlbmFTZXJ2aWNlXEFyZW5hU2VydmljZVxhcGlcYXJlbmFz?=
+X-Powered-By: ASP.NET
+
+Status: Created
+{"id":18,"arenaName":"Crocus City Hall3","capacity":6000,"cityID":9,"city":null}
+
+
+
+6364850701433147028 - Request: SERVICE: ConcerteService 
+POST: http://localhost:61438/api/Sellers
+Accept: application/json
+{
+  "brandName": "Big Billet3"
+}
+
+6364850701433147028 - Response: Date: Sun, 10 Dec 2017 09:50:14 GMT
+Transfer-Encoding: chunked
+Location: http://localhost:61438/api/Sellers/9
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNc0JLQu9Cw0LTQuNC80LjRgFxEZXNrdG9wXExSMl9ORVdcQ29uY2VydGVTZXJ2aWNlXENvbmNlcnRlU2VydmljZVxDb25jZXJ0ZVNlcnZpY2VcYXBpXFNlbGxlcnM=?=
+X-Powered-By: ASP.NET
+
+Status: Created
+{"id":9,"brandName":"Big Billet3"}
+
+
+
+63648507014364606021 - Request: SERVICE: ConcerteService 
+POST: http://localhost:61438/api/Concertes
+Accept: application/json
+{
+  "ShowName": "BigSHow3",
+  "TicketsNumber": 1000,
+  "Price": 2000,
+  "CityName": "Moscow3",
+  "ArenaName": "Crocus City Hall3",
+  "ArtistName": "FILIP KIRKOROV GAY",
+  "Date": "2015-09-01T00:00:00",
+  "SellerID": 9
+}
+
+63648507014364606021 - Response: Date: Sun, 10 Dec 2017 09:50:14 GMT
+Transfer-Encoding: chunked
+Location: http://localhost:61438/api/Concertes/21
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNc0JLQu9Cw0LTQuNC80LjRgFxEZXNrdG9wXExSMl9ORVdcQ29uY2VydGVTZXJ2aWNlXENvbmNlcnRlU2VydmljZVxDb25jZXJ0ZVNlcnZpY2VcYXBpXENvbmNlcnRlcw==?=
+X-Powered-By: ASP.NET
+
+Status: Created
+{"id":21,"showName":"BigSHow3","ticketsNumber":1000,"price":2000,"cityName":"Moscow3","arenaName":"Crocus City Hall3","artistName":"FILIP KIRKOROV GAY","date":"2015-09-01T00:00:00","sellerID":9,"seller":null}
+
+
+
+63648507080187878846 - Request: SERVICE: ArenaService 
+GET: http://localhost:58349/api/arenas/page/1
+Accept: application/json
+
+
+63648507080187878846 - Response: Date: Sun, 10 Dec 2017 09:51:20 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNc0JLQu9Cw0LTQuNC80LjRgFxEZXNrdG9wXExSMl9ORVdcQXJlbmFTZXJ2aWNlXEFyZW5hU2VydmljZVxhcGlcYXJlbmFzXHBhZ2VcMQ==?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":13,"arenaName":null,"capacity":0,"cityID":4,"city":{"id":4,"cityName":null,"cityPopulation":0}},{"id":14,"arenaName":null,"capacity":0,"cityID":5,"city":{"id":5,"cityName":null,"cityPopulation":0}},{"id":11,"arenaName":"Big Arena","capacity":20000,"cityID":2,"city":{"id":2,"cityName":"Berlin","cityPopulation":3500000}},{"id":5,"arenaName":"Brixton Academy","capacity":10000,"cityID":3,"city":{"id":3,"cityName":"London","cityPopulation":9000000}},{"id":1,"arenaName":"Crocus City Hall","capacity":6000,"cityID":1,"city":{"id":1,"cityName":"Moscow","cityPopulation":12000000}},{"id":16,"arenaName":"Crocus City Hall3","capacity":6000,"cityID":7,"city":{"id":7,"cityName":"Moscow3","cityPopulation":12000000}},{"id":17,"arenaName":"Crocus City Hall3","capacity":6000,"cityID":8,"city":{"id":8,"cityName":"Moscow3","cityPopulation":12000000}},{"id":18,"arenaName":"Crocus City Hall3","capacity":6000,"cityID":9,"city":{"id":9,"cityName":"Moscow3","cityPopulation":12000000}},{"id":15,"arenaName":"Crocus City Hall3333","capacity":6000,"cityID":6,"city":{"id":6,"cityName":"Moscow3333","cityPopulation":12000000}},{"id":12,"arenaName":"Hell Fire Arena","capacity":10000,"cityID":3,"city":{"id":3,"cityName":"London","cityPopulation":9000000}}]
+
+
+
+63648507080488289536 - Request: SERVICE: ArenaService 
+GET: http://localhost:58349/api/arenas/page/1
+Accept: application/json
+
+
+63648507080488289536 - Response: Date: Sun, 10 Dec 2017 09:51:20 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNc0JLQu9Cw0LTQuNC80LjRgFxEZXNrdG9wXExSMl9ORVdcQXJlbmFTZXJ2aWNlXEFyZW5hU2VydmljZVxhcGlcYXJlbmFzXGNvdW50?=
+X-Powered-By: ASP.NET
+
+Status: OK
+18
+
+
+
+63648507090278088036 - Request: SERVICE: ArenaService 
+DELETE: http://localhost:58349/api/arenas/16
+Accept: application/json
+
+
+63648507090278088036 - Response: Date: Sun, 10 Dec 2017 09:51:30 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNc0JLQu9Cw0LTQuNC80LjRgFxEZXNrdG9wXExSMl9ORVdcQXJlbmFTZXJ2aWNlXEFyZW5hU2VydmljZVxhcGlcYXJlbmFzXDE2?=
+X-Powered-By: ASP.NET
+
+Status: OK
+{"id":16,"arenaName":"Crocus City Hall3","capacity":6000,"cityID":7,"city":null}
+
+
+
+6364850709042197778 - Request: SERVICE: ArenaService 
+GET: http://localhost:58349/api/arenas/page/1
+Accept: application/json
+
+
+6364850709042197778 - Response: Date: Sun, 10 Dec 2017 09:51:30 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNc0JLQu9Cw0LTQuNC80LjRgFxEZXNrdG9wXExSMl9ORVdcQXJlbmFTZXJ2aWNlXEFyZW5hU2VydmljZVxhcGlcYXJlbmFzXHBhZ2VcMQ==?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":13,"arenaName":null,"capacity":0,"cityID":4,"city":{"id":4,"cityName":null,"cityPopulation":0}},{"id":14,"arenaName":null,"capacity":0,"cityID":5,"city":{"id":5,"cityName":null,"cityPopulation":0}},{"id":11,"arenaName":"Big Arena","capacity":20000,"cityID":2,"city":{"id":2,"cityName":"Berlin","cityPopulation":3500000}},{"id":5,"arenaName":"Brixton Academy","capacity":10000,"cityID":3,"city":{"id":3,"cityName":"London","cityPopulation":9000000}},{"id":1,"arenaName":"Crocus City Hall","capacity":6000,"cityID":1,"city":{"id":1,"cityName":"Moscow","cityPopulation":12000000}},{"id":17,"arenaName":"Crocus City Hall3","capacity":6000,"cityID":8,"city":{"id":8,"cityName":"Moscow3","cityPopulation":12000000}},{"id":18,"arenaName":"Crocus City Hall3","capacity":6000,"cityID":9,"city":{"id":9,"cityName":"Moscow3","cityPopulation":12000000}},{"id":15,"arenaName":"Crocus City Hall3333","capacity":6000,"cityID":6,"city":{"id":6,"cityName":"Moscow3333","cityPopulation":12000000}},{"id":12,"arenaName":"Hell Fire Arena","capacity":10000,"cityID":3,"city":{"id":3,"cityName":"London","cityPopulation":9000000}},{"id":6,"arenaName":"Mercedes-Benz Arena","capacity":6000,"cityID":2,"city":{"id":2,"cityName":"Berlin","cityPopulation":3500000}}]
+
+
+
+63648507090462866436 - Request: SERVICE: ArenaService 
+GET: http://localhost:58349/api/arenas/page/1
+Accept: application/json
+
+
+63648507090462866436 - Response: Date: Sun, 10 Dec 2017 09:51:30 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNc0JLQu9Cw0LTQuNC80LjRgFxEZXNrdG9wXExSMl9ORVdcQXJlbmFTZXJ2aWNlXEFyZW5hU2VydmljZVxhcGlcYXJlbmFzXGNvdW50?=
+X-Powered-By: ASP.NET
+
+Status: OK
+17
+
+
+
+6364850709329922248 - Request: SERVICE: ArenaService 
+DELETE: http://localhost:58349/api/arenas/17
+Accept: application/json
+
+
+6364850709329922248 - Response: Date: Sun, 10 Dec 2017 09:51:33 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNc0JLQu9Cw0LTQuNC80LjRgFxEZXNrdG9wXExSMl9ORVdcQXJlbmFTZXJ2aWNlXEFyZW5hU2VydmljZVxhcGlcYXJlbmFzXDE3?=
+X-Powered-By: ASP.NET
+
+Status: OK
+{"id":17,"arenaName":"Crocus City Hall3","capacity":6000,"cityID":8,"city":null}
+
+
+
+63648507093429697821 - Request: SERVICE: ArenaService 
+GET: http://localhost:58349/api/arenas/page/1
+Accept: application/json
+
+
+63648507093429697821 - Response: Date: Sun, 10 Dec 2017 09:51:33 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNc0JLQu9Cw0LTQuNC80LjRgFxEZXNrdG9wXExSMl9ORVdcQXJlbmFTZXJ2aWNlXEFyZW5hU2VydmljZVxhcGlcYXJlbmFzXHBhZ2VcMQ==?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":13,"arenaName":null,"capacity":0,"cityID":4,"city":{"id":4,"cityName":null,"cityPopulation":0}},{"id":14,"arenaName":null,"capacity":0,"cityID":5,"city":{"id":5,"cityName":null,"cityPopulation":0}},{"id":11,"arenaName":"Big Arena","capacity":20000,"cityID":2,"city":{"id":2,"cityName":"Berlin","cityPopulation":3500000}},{"id":5,"arenaName":"Brixton Academy","capacity":10000,"cityID":3,"city":{"id":3,"cityName":"London","cityPopulation":9000000}},{"id":1,"arenaName":"Crocus City Hall","capacity":6000,"cityID":1,"city":{"id":1,"cityName":"Moscow","cityPopulation":12000000}},{"id":18,"arenaName":"Crocus City Hall3","capacity":6000,"cityID":9,"city":{"id":9,"cityName":"Moscow3","cityPopulation":12000000}},{"id":15,"arenaName":"Crocus City Hall3333","capacity":6000,"cityID":6,"city":{"id":6,"cityName":"Moscow3333","cityPopulation":12000000}},{"id":12,"arenaName":"Hell Fire Arena","capacity":10000,"cityID":3,"city":{"id":3,"cityName":"London","cityPopulation":9000000}},{"id":6,"arenaName":"Mercedes-Benz Arena","capacity":6000,"cityID":2,"city":{"id":2,"cityName":"Berlin","cityPopulation":3500000}},{"id":10,"arenaName":"Natasha Arena","capacity":3000,"cityID":1,"city":{"id":1,"cityName":"Moscow","cityPopulation":12000000}}]
+
+
+
+6364850709346261869 - Request: SERVICE: ArenaService 
+GET: http://localhost:58349/api/arenas/page/1
+Accept: application/json
+
+
+6364850709346261869 - Response: Date: Sun, 10 Dec 2017 09:51:33 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNc0JLQu9Cw0LTQuNC80LjRgFxEZXNrdG9wXExSMl9ORVdcQXJlbmFTZXJ2aWNlXEFyZW5hU2VydmljZVxhcGlcYXJlbmFzXGNvdW50?=
+X-Powered-By: ASP.NET
+
+Status: OK
+16
+
+
+
+63648507096091854137 - Request: SERVICE: ArenaService 
+DELETE: http://localhost:58349/api/arenas/18
+Accept: application/json
+
+
+63648507096091854137 - Response: Date: Sun, 10 Dec 2017 09:51:36 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNc0JLQu9Cw0LTQuNC80LjRgFxEZXNrdG9wXExSMl9ORVdcQXJlbmFTZXJ2aWNlXEFyZW5hU2VydmljZVxhcGlcYXJlbmFzXDE4?=
+X-Powered-By: ASP.NET
+
+Status: OK
+{"id":18,"arenaName":"Crocus City Hall3","capacity":6000,"cityID":9,"city":null}
+
+
+
+63648507096336458243 - Request: SERVICE: ArenaService 
+GET: http://localhost:58349/api/arenas/page/1
+Accept: application/json
+
+
+63648507096336458243 - Response: Date: Sun, 10 Dec 2017 09:51:36 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNc0JLQu9Cw0LTQuNC80LjRgFxEZXNrdG9wXExSMl9ORVdcQXJlbmFTZXJ2aWNlXEFyZW5hU2VydmljZVxhcGlcYXJlbmFzXHBhZ2VcMQ==?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":13,"arenaName":null,"capacity":0,"cityID":4,"city":{"id":4,"cityName":null,"cityPopulation":0}},{"id":14,"arenaName":null,"capacity":0,"cityID":5,"city":{"id":5,"cityName":null,"cityPopulation":0}},{"id":11,"arenaName":"Big Arena","capacity":20000,"cityID":2,"city":{"id":2,"cityName":"Berlin","cityPopulation":3500000}},{"id":5,"arenaName":"Brixton Academy","capacity":10000,"cityID":3,"city":{"id":3,"cityName":"London","cityPopulation":9000000}},{"id":1,"arenaName":"Crocus City Hall","capacity":6000,"cityID":1,"city":{"id":1,"cityName":"Moscow","cityPopulation":12000000}},{"id":15,"arenaName":"Crocus City Hall3333","capacity":6000,"cityID":6,"city":{"id":6,"cityName":"Moscow3333","cityPopulation":12000000}},{"id":12,"arenaName":"Hell Fire Arena","capacity":10000,"cityID":3,"city":{"id":3,"cityName":"London","cityPopulation":9000000}},{"id":6,"arenaName":"Mercedes-Benz Arena","capacity":6000,"cityID":2,"city":{"id":2,"cityName":"Berlin","cityPopulation":3500000}},{"id":10,"arenaName":"Natasha Arena","capacity":3000,"cityID":1,"city":{"id":1,"cityName":"Moscow","cityPopulation":12000000}},{"id":2,"arenaName":"Olimpiyskiy","capacity":10000,"cityID":1,"city":{"id":1,"cityName":"Moscow","cityPopulation":12000000}}]
+
+
+
+63648507096366189537 - Request: SERVICE: ArenaService 
+GET: http://localhost:58349/api/arenas/page/1
+Accept: application/json
+
+
+63648507096366189537 - Response: Date: Sun, 10 Dec 2017 09:51:36 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNc0JLQu9Cw0LTQuNC80LjRgFxEZXNrdG9wXExSMl9ORVdcQXJlbmFTZXJ2aWNlXEFyZW5hU2VydmljZVxhcGlcYXJlbmFzXGNvdW50?=
+X-Powered-By: ASP.NET
+
+Status: OK
+15
+
+
+
+6364850709803902008 - Request: SERVICE: ArenaService 
+DELETE: http://localhost:58349/api/arenas/15
+Accept: application/json
+
+
+6364850709803902008 - Response: Date: Sun, 10 Dec 2017 09:51:38 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNc0JLQu9Cw0LTQuNC80LjRgFxEZXNrdG9wXExSMl9ORVdcQXJlbmFTZXJ2aWNlXEFyZW5hU2VydmljZVxhcGlcYXJlbmFzXDE1?=
+X-Powered-By: ASP.NET
+
+Status: OK
+{"id":15,"arenaName":"Crocus City Hall3333","capacity":6000,"cityID":6,"city":null}
+
+
+
+63648507098197282543 - Request: SERVICE: ArenaService 
+GET: http://localhost:58349/api/arenas/page/1
+Accept: application/json
+
+
+63648507098197282543 - Response: Date: Sun, 10 Dec 2017 09:51:38 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNc0JLQu9Cw0LTQuNC80LjRgFxEZXNrdG9wXExSMl9ORVdcQXJlbmFTZXJ2aWNlXEFyZW5hU2VydmljZVxhcGlcYXJlbmFzXHBhZ2VcMQ==?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":13,"arenaName":null,"capacity":0,"cityID":4,"city":{"id":4,"cityName":null,"cityPopulation":0}},{"id":14,"arenaName":null,"capacity":0,"cityID":5,"city":{"id":5,"cityName":null,"cityPopulation":0}},{"id":11,"arenaName":"Big Arena","capacity":20000,"cityID":2,"city":{"id":2,"cityName":"Berlin","cityPopulation":3500000}},{"id":5,"arenaName":"Brixton Academy","capacity":10000,"cityID":3,"city":{"id":3,"cityName":"London","cityPopulation":9000000}},{"id":1,"arenaName":"Crocus City Hall","capacity":6000,"cityID":1,"city":{"id":1,"cityName":"Moscow","cityPopulation":12000000}},{"id":12,"arenaName":"Hell Fire Arena","capacity":10000,"cityID":3,"city":{"id":3,"cityName":"London","cityPopulation":9000000}},{"id":6,"arenaName":"Mercedes-Benz Arena","capacity":6000,"cityID":2,"city":{"id":2,"cityName":"Berlin","cityPopulation":3500000}},{"id":10,"arenaName":"Natasha Arena","capacity":3000,"cityID":1,"city":{"id":1,"cityName":"Moscow","cityPopulation":12000000}},{"id":2,"arenaName":"Olimpiyskiy","capacity":10000,"cityID":1,"city":{"id":1,"cityName":"Moscow","cityPopulation":12000000}},{"id":7,"arenaName":"Olympiastadion Berlin","capacity":9000,"cityID":2,"city":{"id":2,"cityName":"Berlin","cityPopulation":3500000}}]
+
+
+
+6364850709823385168 - Request: SERVICE: ArenaService 
+GET: http://localhost:58349/api/arenas/page/1
+Accept: application/json
+
+
+6364850709823385168 - Response: Date: Sun, 10 Dec 2017 09:51:38 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNc0JLQu9Cw0LTQuNC80LjRgFxEZXNrdG9wXExSMl9ORVdcQXJlbmFTZXJ2aWNlXEFyZW5hU2VydmljZVxhcGlcYXJlbmFzXGNvdW50?=
+X-Powered-By: ASP.NET
+
+Status: OK
+14
+
+
+
+63648507104812857837 - Request: SERVICE: ArenaService 
+GET: http://localhost:58349/api/arenas/page/2
+Accept: application/json
+
+
+63648507104812857837 - Response: Date: Sun, 10 Dec 2017 09:51:44 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNc0JLQu9Cw0LTQuNC80LjRgFxEZXNrdG9wXExSMl9ORVdcQXJlbmFTZXJ2aWNlXEFyZW5hU2VydmljZVxhcGlcYXJlbmFzXHBhZ2VcMg==?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":8,"arenaName":"Rock am Ring","capacity":15000,"cityID":2,"city":{"id":2,"cityName":"Berlin","cityPopulation":3500000}},{"id":3,"arenaName":"Vegas City Hall","capacity":6000,"cityID":1,"city":{"id":1,"cityName":"Moscow","cityPopulation":12000000}},{"id":9,"arenaName":"Vova Arena","capacity":3000,"cityID":1,"city":{"id":1,"cityName":"Moscow","cityPopulation":12000000}},{"id":4,"arenaName":"Wembley Arena","capacity":4000,"cityID":3,"city":{"id":3,"cityName":"London","cityPopulation":9000000}}]
+
+
+
+6364850710496123389 - Request: SERVICE: ArenaService 
+GET: http://localhost:58349/api/arenas/page/2
+Accept: application/json
+
+
+6364850710496123389 - Response: Date: Sun, 10 Dec 2017 09:51:44 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNc0JLQu9Cw0LTQuNC80LjRgFxEZXNrdG9wXExSMl9ORVdcQXJlbmFTZXJ2aWNlXEFyZW5hU2VydmljZVxhcGlcYXJlbmFzXGNvdW50?=
+X-Powered-By: ASP.NET
+
+Status: OK
+14
+
+
+
+6364850710765801698 - Request: SERVICE: ArenaService 
+GET: http://localhost:58349/api/arenas/page/1
+Accept: application/json
+
+
+6364850710765801698 - Response: Date: Sun, 10 Dec 2017 09:51:47 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNc0JLQu9Cw0LTQuNC80LjRgFxEZXNrdG9wXExSMl9ORVdcQXJlbmFTZXJ2aWNlXEFyZW5hU2VydmljZVxhcGlcYXJlbmFzXHBhZ2VcMQ==?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":13,"arenaName":null,"capacity":0,"cityID":4,"city":{"id":4,"cityName":null,"cityPopulation":0}},{"id":14,"arenaName":null,"capacity":0,"cityID":5,"city":{"id":5,"cityName":null,"cityPopulation":0}},{"id":11,"arenaName":"Big Arena","capacity":20000,"cityID":2,"city":{"id":2,"cityName":"Berlin","cityPopulation":3500000}},{"id":5,"arenaName":"Brixton Academy","capacity":10000,"cityID":3,"city":{"id":3,"cityName":"London","cityPopulation":9000000}},{"id":1,"arenaName":"Crocus City Hall","capacity":6000,"cityID":1,"city":{"id":1,"cityName":"Moscow","cityPopulation":12000000}},{"id":12,"arenaName":"Hell Fire Arena","capacity":10000,"cityID":3,"city":{"id":3,"cityName":"London","cityPopulation":9000000}},{"id":6,"arenaName":"Mercedes-Benz Arena","capacity":6000,"cityID":2,"city":{"id":2,"cityName":"Berlin","cityPopulation":3500000}},{"id":10,"arenaName":"Natasha Arena","capacity":3000,"cityID":1,"city":{"id":1,"cityName":"Moscow","cityPopulation":12000000}},{"id":2,"arenaName":"Olimpiyskiy","capacity":10000,"cityID":1,"city":{"id":1,"cityName":"Moscow","cityPopulation":12000000}},{"id":7,"arenaName":"Olympiastadion Berlin","capacity":9000,"cityID":2,"city":{"id":2,"cityName":"Berlin","cityPopulation":3500000}}]
+
+
+
+63648507107701065636 - Request: SERVICE: ArenaService 
+GET: http://localhost:58349/api/arenas/page/1
+Accept: application/json
+
+
+63648507107701065636 - Response: Date: Sun, 10 Dec 2017 09:51:47 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNc0JLQu9Cw0LTQuNC80LjRgFxEZXNrdG9wXExSMl9ORVdcQXJlbmFTZXJ2aWNlXEFyZW5hU2VydmljZVxhcGlcYXJlbmFzXGNvdW50?=
+X-Powered-By: ASP.NET
+
+Status: OK
+14
+
+
+
+6364850710979149669 - Request: SERVICE: ArenaService 
+GET: http://localhost:58349/api/arenas/page/1
+Accept: application/json
+
+
+6364850710979149669 - Response: Date: Sun, 10 Dec 2017 09:51:49 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNc0JLQu9Cw0LTQuNC80LjRgFxEZXNrdG9wXExSMl9ORVdcQXJlbmFTZXJ2aWNlXEFyZW5hU2VydmljZVxhcGlcYXJlbmFzXHBhZ2VcMQ==?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":13,"arenaName":null,"capacity":0,"cityID":4,"city":{"id":4,"cityName":null,"cityPopulation":0}},{"id":14,"arenaName":null,"capacity":0,"cityID":5,"city":{"id":5,"cityName":null,"cityPopulation":0}},{"id":11,"arenaName":"Big Arena","capacity":20000,"cityID":2,"city":{"id":2,"cityName":"Berlin","cityPopulation":3500000}},{"id":5,"arenaName":"Brixton Academy","capacity":10000,"cityID":3,"city":{"id":3,"cityName":"London","cityPopulation":9000000}},{"id":1,"arenaName":"Crocus City Hall","capacity":6000,"cityID":1,"city":{"id":1,"cityName":"Moscow","cityPopulation":12000000}},{"id":12,"arenaName":"Hell Fire Arena","capacity":10000,"cityID":3,"city":{"id":3,"cityName":"London","cityPopulation":9000000}},{"id":6,"arenaName":"Mercedes-Benz Arena","capacity":6000,"cityID":2,"city":{"id":2,"cityName":"Berlin","cityPopulation":3500000}},{"id":10,"arenaName":"Natasha Arena","capacity":3000,"cityID":1,"city":{"id":1,"cityName":"Moscow","cityPopulation":12000000}},{"id":2,"arenaName":"Olimpiyskiy","capacity":10000,"cityID":1,"city":{"id":1,"cityName":"Moscow","cityPopulation":12000000}},{"id":7,"arenaName":"Olympiastadion Berlin","capacity":9000,"cityID":2,"city":{"id":2,"cityName":"Berlin","cityPopulation":3500000}}]
+
+
+
+63648507109969286936 - Request: SERVICE: ArenaService 
+GET: http://localhost:58349/api/arenas/page/1
+Accept: application/json
+
+
+63648507109969286936 - Response: Date: Sun, 10 Dec 2017 09:51:49 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNc0JLQu9Cw0LTQuNC80LjRgFxEZXNrdG9wXExSMl9ORVdcQXJlbmFTZXJ2aWNlXEFyZW5hU2VydmljZVxhcGlcYXJlbmFzXGNvdW50?=
+X-Powered-By: ASP.NET
+
+Status: OK
+14
+
+
+
+6364850711715576019 - Request: SERVICE: ArtistService 
+GET: http://localhost:61883/api/artists/page/1
+Accept: application/json
+
+
+6364850711715576019 - Response: Date: Sun, 10 Dec 2017 09:51:57 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNc0JLQu9Cw0LTQuNC80LjRgFxEZXNrdG9wXExSMl9ORVdcQXJ0aXN0U2VydmljZVxDb25jZXJ0ZVNlcnZpY2VcYXBpXGFydGlzdHNccGFnZVwx?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":2,"artistName":"30 Seconds to Mars","lastFmRating":7},{"id":7,"artistName":"Bullet for my valentine","lastFmRating":15},{"id":10,"artistName":"Combichrist","lastFmRating":8},{"id":6,"artistName":"Depeche mode","lastFmRating":2},{"id":11,"artistName":"Devil sold his soul","lastFmRating":9},{"id":9,"artistName":"Elvis Presley","lastFmRating":4},{"id":8,"artistName":"Frank Sinatra","lastFmRating":3},{"id":1,"artistName":"Marilyn Manson","lastFmRating":10},{"id":3,"artistName":"Rammstein","lastFmRating":4},{"id":5,"artistName":"Suicide Silence","lastFmRating":14}]
+
+
+
+63648507117202595537 - Request: SERVICE: ArtistService 
+GET: http://localhost:61883/api/artists/page/1
+Accept: application/json
+
+
+63648507117202595537 - Response: Date: Sun, 10 Dec 2017 09:51:57 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNc0JLQu9Cw0LTQuNC80LjRgFxEZXNrdG9wXExSMl9ORVdcQXJ0aXN0U2VydmljZVxDb25jZXJ0ZVNlcnZpY2VcYXBpXGFydGlzdHNcY291bnQ=?=
+X-Powered-By: ASP.NET
+
+Status: OK
+11
+
+
+
+6364850711861859269 - Request: SERVICE: ArenaService 
+GET: http://localhost:58349/api/arenas/page/1
+Accept: application/json
+
+
+6364850711861859269 - Response: Date: Sun, 10 Dec 2017 09:51:58 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNc0JLQu9Cw0LTQuNC80LjRgFxEZXNrdG9wXExSMl9ORVdcQXJlbmFTZXJ2aWNlXEFyZW5hU2VydmljZVxhcGlcYXJlbmFzXHBhZ2VcMQ==?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":13,"arenaName":null,"capacity":0,"cityID":4,"city":{"id":4,"cityName":null,"cityPopulation":0}},{"id":14,"arenaName":null,"capacity":0,"cityID":5,"city":{"id":5,"cityName":null,"cityPopulation":0}},{"id":11,"arenaName":"Big Arena","capacity":20000,"cityID":2,"city":{"id":2,"cityName":"Berlin","cityPopulation":3500000}},{"id":5,"arenaName":"Brixton Academy","capacity":10000,"cityID":3,"city":{"id":3,"cityName":"London","cityPopulation":9000000}},{"id":1,"arenaName":"Crocus City Hall","capacity":6000,"cityID":1,"city":{"id":1,"cityName":"Moscow","cityPopulation":12000000}},{"id":12,"arenaName":"Hell Fire Arena","capacity":10000,"cityID":3,"city":{"id":3,"cityName":"London","cityPopulation":9000000}},{"id":6,"arenaName":"Mercedes-Benz Arena","capacity":6000,"cityID":2,"city":{"id":2,"cityName":"Berlin","cityPopulation":3500000}},{"id":10,"arenaName":"Natasha Arena","capacity":3000,"cityID":1,"city":{"id":1,"cityName":"Moscow","cityPopulation":12000000}},{"id":2,"arenaName":"Olimpiyskiy","capacity":10000,"cityID":1,"city":{"id":1,"cityName":"Moscow","cityPopulation":12000000}},{"id":7,"arenaName":"Olympiastadion Berlin","capacity":9000,"cityID":2,"city":{"id":2,"cityName":"Berlin","cityPopulation":3500000}}]
+
+
+
+63648507118702670837 - Request: SERVICE: ArenaService 
+GET: http://localhost:58349/api/arenas/page/1
+Accept: application/json
+
+
+63648507118702670837 - Response: Date: Sun, 10 Dec 2017 09:51:58 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNc0JLQu9Cw0LTQuNC80LjRgFxEZXNrdG9wXExSMl9ORVdcQXJlbmFTZXJ2aWNlXEFyZW5hU2VydmljZVxhcGlcYXJlbmFzXGNvdW50?=
+X-Powered-By: ASP.NET
+
+Status: OK
+14
+
+
+
+6364850712419860479 - Request: SERVICE: ArenaService 
+GET: http://localhost:58349/api/arenas/page/2
+Accept: application/json
+
+
+6364850712419860479 - Response: Date: Sun, 10 Dec 2017 09:52:04 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNc0JLQu9Cw0LTQuNC80LjRgFxEZXNrdG9wXExSMl9ORVdcQXJlbmFTZXJ2aWNlXEFyZW5hU2VydmljZVxhcGlcYXJlbmFzXHBhZ2VcMg==?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":8,"arenaName":"Rock am Ring","capacity":15000,"cityID":2,"city":{"id":2,"cityName":"Berlin","cityPopulation":3500000}},{"id":3,"arenaName":"Vegas City Hall","capacity":6000,"cityID":1,"city":{"id":1,"cityName":"Moscow","cityPopulation":12000000}},{"id":9,"arenaName":"Vova Arena","capacity":3000,"cityID":1,"city":{"id":1,"cityName":"Moscow","cityPopulation":12000000}},{"id":4,"arenaName":"Wembley Arena","capacity":4000,"cityID":3,"city":{"id":3,"cityName":"London","cityPopulation":9000000}}]
+
+
+
+63648507124260938643 - Request: SERVICE: ArenaService 
+GET: http://localhost:58349/api/arenas/page/2
+Accept: application/json
+
+
+63648507124260938643 - Response: Date: Sun, 10 Dec 2017 09:52:04 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNc0JLQu9Cw0LTQuNC80LjRgFxEZXNrdG9wXExSMl9ORVdcQXJlbmFTZXJ2aWNlXEFyZW5hU2VydmljZVxhcGlcYXJlbmFzXGNvdW50?=
+X-Powered-By: ASP.NET
+
+Status: OK
+14
+
+
+
+6364850712564637348 - Request: SERVICE: ArenaService 
+GET: http://localhost:58349/api/arenas/page/1
+Accept: application/json
+
+
+6364850712564637348 - Response: Date: Sun, 10 Dec 2017 09:52:05 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNc0JLQu9Cw0LTQuNC80LjRgFxEZXNrdG9wXExSMl9ORVdcQXJlbmFTZXJ2aWNlXEFyZW5hU2VydmljZVxhcGlcYXJlbmFzXHBhZ2VcMQ==?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":13,"arenaName":null,"capacity":0,"cityID":4,"city":{"id":4,"cityName":null,"cityPopulation":0}},{"id":14,"arenaName":null,"capacity":0,"cityID":5,"city":{"id":5,"cityName":null,"cityPopulation":0}},{"id":11,"arenaName":"Big Arena","capacity":20000,"cityID":2,"city":{"id":2,"cityName":"Berlin","cityPopulation":3500000}},{"id":5,"arenaName":"Brixton Academy","capacity":10000,"cityID":3,"city":{"id":3,"cityName":"London","cityPopulation":9000000}},{"id":1,"arenaName":"Crocus City Hall","capacity":6000,"cityID":1,"city":{"id":1,"cityName":"Moscow","cityPopulation":12000000}},{"id":12,"arenaName":"Hell Fire Arena","capacity":10000,"cityID":3,"city":{"id":3,"cityName":"London","cityPopulation":9000000}},{"id":6,"arenaName":"Mercedes-Benz Arena","capacity":6000,"cityID":2,"city":{"id":2,"cityName":"Berlin","cityPopulation":3500000}},{"id":10,"arenaName":"Natasha Arena","capacity":3000,"cityID":1,"city":{"id":1,"cityName":"Moscow","cityPopulation":12000000}},{"id":2,"arenaName":"Olimpiyskiy","capacity":10000,"cityID":1,"city":{"id":1,"cityName":"Moscow","cityPopulation":12000000}},{"id":7,"arenaName":"Olympiastadion Berlin","capacity":9000,"cityID":2,"city":{"id":2,"cityName":"Berlin","cityPopulation":3500000}}]
+
+
+
+63648507125672985336 - Request: SERVICE: ArenaService 
+GET: http://localhost:58349/api/arenas/page/1
+Accept: application/json
+
+
+63648507125672985336 - Response: Date: Sun, 10 Dec 2017 09:52:05 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNc0JLQu9Cw0LTQuNC80LjRgFxEZXNrdG9wXExSMl9ORVdcQXJlbmFTZXJ2aWNlXEFyZW5hU2VydmljZVxhcGlcYXJlbmFzXGNvdW50?=
+X-Powered-By: ASP.NET
+
+Status: OK
+14
+
+
+
+6364850723405195378 - Request: SERVICE: ArenaService 
+GET: http://localhost:58349/api/arenas/page/1
+Accept: application/json
+
+
+6364850723405195378 - Response: Date: Sun, 10 Dec 2017 09:53:54 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNc0JLQu9Cw0LTQuNC80LjRgFxEZXNrdG9wXExSMl9ORVdcQXJlbmFTZXJ2aWNlXEFyZW5hU2VydmljZVxhcGlcYXJlbmFzXHBhZ2VcMQ==?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":13,"arenaName":null,"capacity":0,"cityID":4,"city":{"id":4,"cityName":null,"cityPopulation":0}},{"id":14,"arenaName":null,"capacity":0,"cityID":5,"city":{"id":5,"cityName":null,"cityPopulation":0}},{"id":11,"arenaName":"Big Arena","capacity":20000,"cityID":2,"city":{"id":2,"cityName":"Berlin","cityPopulation":3500000}},{"id":5,"arenaName":"Brixton Academy","capacity":10000,"cityID":3,"city":{"id":3,"cityName":"London","cityPopulation":9000000}},{"id":1,"arenaName":"Crocus City Hall","capacity":6000,"cityID":1,"city":{"id":1,"cityName":"Moscow","cityPopulation":12000000}},{"id":12,"arenaName":"Hell Fire Arena","capacity":10000,"cityID":3,"city":{"id":3,"cityName":"London","cityPopulation":9000000}},{"id":6,"arenaName":"Mercedes-Benz Arena","capacity":6000,"cityID":2,"city":{"id":2,"cityName":"Berlin","cityPopulation":3500000}},{"id":10,"arenaName":"Natasha Arena","capacity":3000,"cityID":1,"city":{"id":1,"cityName":"Moscow","cityPopulation":12000000}},{"id":2,"arenaName":"Olimpiyskiy","capacity":10000,"cityID":1,"city":{"id":1,"cityName":"Moscow","cityPopulation":12000000}},{"id":7,"arenaName":"Olympiastadion Berlin","capacity":9000,"cityID":2,"city":{"id":2,"cityName":"Berlin","cityPopulation":3500000}}]
+
+
+
+63648507234075518337 - Request: SERVICE: ArenaService 
+GET: http://localhost:58349/api/arenas/page/1
+Accept: application/json
+
+
+63648507234075518337 - Response: Date: Sun, 10 Dec 2017 09:53:54 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNc0JLQu9Cw0LTQuNC80LjRgFxEZXNrdG9wXExSMl9ORVdcQXJlbmFTZXJ2aWNlXEFyZW5hU2VydmljZVxhcGlcYXJlbmFzXGNvdW50?=
+X-Powered-By: ASP.NET
+
+Status: OK
+14
+
+
+
+63648507380219107143 - Request: SERVICE: ArenaService 
+POST: http://localhost:58349/api/cities
+Accept: application/json
+{
+  "CityName": "Moscow3",
+  "CityPopulation": 12000000
+}
+
+63648507380219107143 - Response: Date: Sun, 10 Dec 2017 09:56:20 GMT
+Transfer-Encoding: chunked
+Location: http://localhost:58349/api/Cities/10
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNc0JLQu9Cw0LTQuNC80LjRgFxEZXNrdG9wXExSMl9ORVdcQXJlbmFTZXJ2aWNlXEFyZW5hU2VydmljZVxhcGlcY2l0aWVz?=
+X-Powered-By: ASP.NET
+
+Status: Created
+{"id":10,"cityName":"Moscow3","cityPopulation":12000000}
+
+
+
+6364850738029480908 - Request: SERVICE: ArenaService 
+POST: http://localhost:58349/api/arenas
+Accept: application/json
+{
+  "ArenaName": "Crocus City Hall3",
+  "CityID": 10,
+  "Capacity": 6000
+}
+
+6364850738029480908 - Response: Date: Sun, 10 Dec 2017 09:56:20 GMT
+Transfer-Encoding: chunked
+Location: http://localhost:58349/api/Arenas/19
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNc0JLQu9Cw0LTQuNC80LjRgFxEZXNrdG9wXExSMl9ORVdcQXJlbmFTZXJ2aWNlXEFyZW5hU2VydmljZVxhcGlcYXJlbmFz?=
+X-Powered-By: ASP.NET
+
+Status: Created
+{"id":19,"arenaName":"Crocus City Hall3","capacity":6000,"cityID":10,"city":null}
+
+
+
+6364850738093191399 - Request: SERVICE: ConcerteService 
+POST: http://localhost:61438/api/Sellers
+Accept: application/json
+{
+  "brandName": "Big Billet3"
+}
+
+6364850738093191399 - Response: Date: Sun, 10 Dec 2017 09:56:20 GMT
+Transfer-Encoding: chunked
+Location: http://localhost:61438/api/Sellers/10
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNc0JLQu9Cw0LTQuNC80LjRgFxEZXNrdG9wXExSMl9ORVdcQ29uY2VydGVTZXJ2aWNlXENvbmNlcnRlU2VydmljZVxDb25jZXJ0ZVNlcnZpY2VcYXBpXFNlbGxlcnM=?=
+X-Powered-By: ASP.NET
+
+Status: Created
+{"id":10,"brandName":"Big Billet3"}
+
+
+
+6364850738100573538 - Request: SERVICE: ConcerteService 
+POST: http://localhost:61438/api/Concertes
+Accept: application/json
+{
+  "ShowName": "BigSHow3",
+  "TicketsNumber": 1000,
+  "Price": 2000,
+  "CityName": "Moscow3",
+  "ArenaName": "Crocus City Hall3",
+  "ArtistName": "FILIP KIRKOROV GAY",
+  "Date": "2015-09-01T00:00:00",
+  "SellerID": 10
+}
+
+6364850738100573538 - Response: Date: Sun, 10 Dec 2017 09:56:20 GMT
+Transfer-Encoding: chunked
+Location: http://localhost:61438/api/Concertes/22
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNc0JLQu9Cw0LTQuNC80LjRgFxEZXNrdG9wXExSMl9ORVdcQ29uY2VydGVTZXJ2aWNlXENvbmNlcnRlU2VydmljZVxDb25jZXJ0ZVNlcnZpY2VcYXBpXENvbmNlcnRlcw==?=
+X-Powered-By: ASP.NET
+
+Status: Created
+{"id":22,"showName":"BigSHow3","ticketsNumber":1000,"price":2000,"cityName":"Moscow3","arenaName":"Crocus City Hall3","artistName":"FILIP KIRKOROV GAY","date":"2015-09-01T00:00:00","sellerID":10,"seller":null}
+
+
+
+6364850738700483398 - Request: SERVICE: ArenaService 
+POST: http://localhost:58349/api/cities
+Accept: application/json
+{
+  "CityName": "Moscow3",
+  "CityPopulation": 12000000
+}
+
+6364850738700483398 - Response: Date: Sun, 10 Dec 2017 09:56:26 GMT
+Transfer-Encoding: chunked
+Location: http://localhost:58349/api/Cities/11
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNc0JLQu9Cw0LTQuNC80LjRgFxEZXNrdG9wXExSMl9ORVdcQXJlbmFTZXJ2aWNlXEFyZW5hU2VydmljZVxhcGlcY2l0aWVz?=
+X-Powered-By: ASP.NET
+
+Status: Created
+{"id":11,"cityName":"Moscow3","cityPopulation":12000000}
+
+
+
+63648507387065491136 - Request: SERVICE: ArenaService 
+POST: http://localhost:58349/api/arenas
+Accept: application/json
+{
+  "ArenaName": "Crocus City Hall3",
+  "CityID": 11,
+  "Capacity": 6000
+}
+
+63648507387065491136 - Response: Date: Sun, 10 Dec 2017 09:56:26 GMT
+Transfer-Encoding: chunked
+Location: http://localhost:58349/api/Arenas/20
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNc0JLQu9Cw0LTQuNC80LjRgFxEZXNrdG9wXExSMl9ORVdcQXJlbmFTZXJ2aWNlXEFyZW5hU2VydmljZVxhcGlcYXJlbmFz?=
+X-Powered-By: ASP.NET
+
+Status: Created
+{"id":20,"arenaName":"Crocus City Hall3","capacity":6000,"cityID":11,"city":null}
+
+
+
+63648507387334218637 - Request: SERVICE: ConcerteService 
+POST: http://localhost:61438/api/Sellers
+Accept: application/json
+{
+  "brandName": "Big Billet3"
+}
+
+63648507387334218637 - Response: Date: Sun, 10 Dec 2017 09:56:26 GMT
+Transfer-Encoding: chunked
+Location: http://localhost:61438/api/Sellers/11
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNc0JLQu9Cw0LTQuNC80LjRgFxEZXNrdG9wXExSMl9ORVdcQ29uY2VydGVTZXJ2aWNlXENvbmNlcnRlU2VydmljZVxDb25jZXJ0ZVNlcnZpY2VcYXBpXFNlbGxlcnM=?=
+X-Powered-By: ASP.NET
+
+Status: Created
+{"id":11,"brandName":"Big Billet3"}
+
+
+
+6364850738740252969 - Request: SERVICE: ConcerteService 
+POST: http://localhost:61438/api/Concertes
+Accept: application/json
+{
+  "ShowName": "BigSHow3",
+  "TicketsNumber": 1000,
+  "Price": 2000,
+  "CityName": "Moscow3",
+  "ArenaName": "Crocus City Hall3",
+  "ArtistName": "FILIP KIRKOROV",
+  "Date": "2015-09-01T00:00:00",
+  "SellerID": 11
+}
+
+6364850738740252969 - Response: Date: Sun, 10 Dec 2017 09:56:26 GMT
+Transfer-Encoding: chunked
+Location: http://localhost:61438/api/Concertes/23
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNc0JLQu9Cw0LTQuNC80LjRgFxEZXNrdG9wXExSMl9ORVdcQ29uY2VydGVTZXJ2aWNlXENvbmNlcnRlU2VydmljZVxDb25jZXJ0ZVNlcnZpY2VcYXBpXENvbmNlcnRlcw==?=
+X-Powered-By: ASP.NET
+
+Status: Created
+{"id":23,"showName":"BigSHow3","ticketsNumber":1000,"price":2000,"cityName":"Moscow3","arenaName":"Crocus City Hall3","artistName":"FILIP KIRKOROV","date":"2015-09-01T00:00:00","sellerID":11,"seller":null}
+
+
+
+63648508313129596210 - Request: SERVICE: ArenaService 
+GET: http://localhost:58349/api/arenas/page/1
+Accept: application/json
+
+
+63648508313129596210 - Response: Date: Sun, 10 Dec 2017 10:11:52 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNc0JLQu9Cw0LTQuNC80LjRgFxEZXNrdG9wXExSMl9ORVdcQXJlbmFTZXJ2aWNlXEFyZW5hU2VydmljZVxhcGlcYXJlbmFzXHBhZ2VcMQ==?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":13,"arenaName":null,"capacity":0,"cityID":4,"city":{"id":4,"cityName":null,"cityPopulation":0}},{"id":14,"arenaName":null,"capacity":0,"cityID":5,"city":{"id":5,"cityName":null,"cityPopulation":0}},{"id":11,"arenaName":"Big Arena","capacity":20000,"cityID":2,"city":{"id":2,"cityName":"Berlin","cityPopulation":3500000}},{"id":5,"arenaName":"Brixton Academy","capacity":10000,"cityID":3,"city":{"id":3,"cityName":"London","cityPopulation":9000000}},{"id":1,"arenaName":"Crocus City Hall","capacity":6000,"cityID":1,"city":{"id":1,"cityName":"Moscow","cityPopulation":12000000}},{"id":19,"arenaName":"Crocus City Hall3","capacity":6000,"cityID":10,"city":{"id":10,"cityName":"Moscow3","cityPopulation":12000000}},{"id":20,"arenaName":"Crocus City Hall3","capacity":6000,"cityID":11,"city":{"id":11,"cityName":"Moscow3","cityPopulation":12000000}},{"id":12,"arenaName":"Hell Fire Arena","capacity":10000,"cityID":3,"city":{"id":3,"cityName":"London","cityPopulation":9000000}},{"id":6,"arenaName":"Mercedes-Benz Arena","capacity":6000,"cityID":2,"city":{"id":2,"cityName":"Berlin","cityPopulation":3500000}},{"id":10,"arenaName":"Natasha Arena","capacity":3000,"cityID":1,"city":{"id":1,"cityName":"Moscow","cityPopulation":12000000}}]
+
+
+
+6364850831333486669 - Request: SERVICE: ArenaService 
+GET: http://localhost:58349/api/arenas/page/1
+Accept: application/json
+
+
+6364850831333486669 - Response: Date: Sun, 10 Dec 2017 10:11:52 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNc0JLQu9Cw0LTQuNC80LjRgFxEZXNrdG9wXExSMl9ORVdcQXJlbmFTZXJ2aWNlXEFyZW5hU2VydmljZVxhcGlcYXJlbmFzXGNvdW50?=
+X-Powered-By: ASP.NET
+
+Status: OK
+16
+
+
+
+63648508361849530717 - Request: SERVICE: ArenaService 
+POST: http://localhost:58349/api/cities
+Accept: application/json
+{
+  "CityName": "Moscow3",
+  "CityPopulation": 12000000
+}
+
+63648508361849530717 - Response: Date: Sun, 10 Dec 2017 10:12:41 GMT
+Transfer-Encoding: chunked
+Location: http://localhost:58349/api/Cities/12
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNc0JLQu9Cw0LTQuNC80LjRgFxEZXNrdG9wXExSMl9ORVdcQXJlbmFTZXJ2aWNlXEFyZW5hU2VydmljZVxhcGlcY2l0aWVz?=
+X-Powered-By: ASP.NET
+
+Status: Created
+{"id":12,"cityName":"Moscow3","cityPopulation":12000000}
+
+
+
+63648508363804266420 - Request: SERVICE: ArenaService 
+POST: http://localhost:58349/api/arenas
+Accept: application/json
+{
+  "ArenaName": "Crocus City Hall3",
+  "CityID": 12,
+  "Capacity": 6000
+}
+
+63648508363804266420 - Response: Date: Sun, 10 Dec 2017 10:12:43 GMT
+Transfer-Encoding: chunked
+Location: http://localhost:58349/api/Arenas/21
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNc0JLQu9Cw0LTQuNC80LjRgFxEZXNrdG9wXExSMl9ORVdcQXJlbmFTZXJ2aWNlXEFyZW5hU2VydmljZVxhcGlcYXJlbmFz?=
+X-Powered-By: ASP.NET
+
+Status: Created
+{"id":21,"arenaName":"Crocus City Hall3","capacity":6000,"cityID":12,"city":null}
+
+
+
+63648508371304455820 - Request: SERVICE: ConcerteService 
+POST: http://localhost:61438/api/Sellers
+Accept: application/json
+{
+  "brandName": "Big Billet3"
+}
+
+63648508371304455820 - Response: Date: Sun, 10 Dec 2017 10:12:51 GMT
+Transfer-Encoding: chunked
+Location: http://localhost:61438/api/Sellers/12
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNc0JLQu9Cw0LTQuNC80LjRgFxEZXNrdG9wXExSMl9ORVdcQ29uY2VydGVTZXJ2aWNlXENvbmNlcnRlU2VydmljZVxDb25jZXJ0ZVNlcnZpY2VcYXBpXFNlbGxlcnM=?=
+X-Powered-By: ASP.NET
+
+Status: Created
+{"id":12,"brandName":"Big Billet3"}
+
+
+
+63648508372022918210 - Request: SERVICE: ConcerteService 
+POST: http://localhost:61438/api/Concertes
+Accept: application/json
+{
+  "ShowName": "BigSHow3",
+  "TicketsNumber": 1000,
+  "Price": 2000,
+  "CityName": "Moscow3",
+  "ArenaName": "Crocus City Hall3",
+  "ArtistName": "FILIP KIRKOROV",
+  "Date": "2015-09-01T00:00:00",
+  "SellerID": 12
+}
+
+63648508372022918210 - Response: Date: Sun, 10 Dec 2017 10:12:51 GMT
+Transfer-Encoding: chunked
+Location: http://localhost:61438/api/Concertes/24
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNc0JLQu9Cw0LTQuNC80LjRgFxEZXNrdG9wXExSMl9ORVdcQ29uY2VydGVTZXJ2aWNlXENvbmNlcnRlU2VydmljZVxDb25jZXJ0ZVNlcnZpY2VcYXBpXENvbmNlcnRlcw==?=
+X-Powered-By: ASP.NET
+
+Status: Created
+{"id":24,"showName":"BigSHow3","ticketsNumber":1000,"price":2000,"cityName":"Moscow3","arenaName":"Crocus City Hall3","artistName":"FILIP KIRKOROV","date":"2015-09-01T00:00:00","sellerID":12,"seller":null}
+
+
+
+63648508409335693910 - Request: SERVICE: ArenaService 
+POST: http://localhost:58349/api/cities
+Accept: application/json
+{
+  "CityName": "Moscow3",
+  "CityPopulation": 12000000
+}
+
+63648508409335693910 - Response: Date: Sun, 10 Dec 2017 10:13:29 GMT
+Transfer-Encoding: chunked
+Location: http://localhost:58349/api/Cities/13
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNc0JLQu9Cw0LTQuNC80LjRgFxEZXNrdG9wXExSMl9ORVdcQXJlbmFTZXJ2aWNlXEFyZW5hU2VydmljZVxhcGlcY2l0aWVz?=
+X-Powered-By: ASP.NET
+
+Status: Created
+{"id":13,"cityName":"Moscow3","cityPopulation":12000000}
+
+
+
+63648508410085987724 - Request: SERVICE: ArenaService 
+POST: http://localhost:58349/api/arenas
+Accept: application/json
+{
+  "ArenaName": "Crocus City Hall3",
+  "CityID": 13,
+  "Capacity": 6000
+}
+
+63648508410085987724 - Response: Date: Sun, 10 Dec 2017 10:13:29 GMT
+Transfer-Encoding: chunked
+Location: http://localhost:58349/api/Arenas/22
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNc0JLQu9Cw0LTQuNC80LjRgFxEZXNrdG9wXExSMl9ORVdcQXJlbmFTZXJ2aWNlXEFyZW5hU2VydmljZVxhcGlcYXJlbmFz?=
+X-Powered-By: ASP.NET
+
+Status: Created
+{"id":22,"arenaName":"Crocus City Hall3","capacity":6000,"cityID":13,"city":null}
+
+
+
+63648508414249650324 - Request: SERVICE: ConcerteService 
+POST: http://localhost:61438/api/Sellers
+Accept: application/json
+{
+  "brandName": "Big Billet3"
+}
+
+63648508414249650324 - Response: Date: Sun, 10 Dec 2017 10:13:34 GMT
+Transfer-Encoding: chunked
+Location: http://localhost:61438/api/Sellers/13
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNc0JLQu9Cw0LTQuNC80LjRgFxEZXNrdG9wXExSMl9ORVdcQ29uY2VydGVTZXJ2aWNlXENvbmNlcnRlU2VydmljZVxDb25jZXJ0ZVNlcnZpY2VcYXBpXFNlbGxlcnM=?=
+X-Powered-By: ASP.NET
+
+Status: Created
+{"id":13,"brandName":"Big Billet3"}
+
+
+
+63648508414768332324 - Request: SERVICE: ConcerteService 
+POST: http://localhost:61438/api/Concertes
+Accept: application/json
+{
+  "ShowName": "BigSHow3",
+  "TicketsNumber": 1000,
+  "Price": 2000,
+  "CityName": "Moscow3",
+  "ArenaName": "Crocus City Hall3",
+  "ArtistName": "FILIP KIRKOROV GAY2",
+  "Date": "2015-09-01T00:00:00",
+  "SellerID": 13
+}
+
+63648508414768332324 - Response: Date: Sun, 10 Dec 2017 10:13:34 GMT
+Transfer-Encoding: chunked
+Location: http://localhost:61438/api/Concertes/25
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNc0JLQu9Cw0LTQuNC80LjRgFxEZXNrdG9wXExSMl9ORVdcQ29uY2VydGVTZXJ2aWNlXENvbmNlcnRlU2VydmljZVxDb25jZXJ0ZVNlcnZpY2VcYXBpXENvbmNlcnRlcw==?=
+X-Powered-By: ASP.NET
+
+Status: Created
+{"id":25,"showName":"BigSHow3","ticketsNumber":1000,"price":2000,"cityName":"Moscow3","arenaName":"Crocus City Hall3","artistName":"FILIP KIRKOROV GAY2","date":"2015-09-01T00:00:00","sellerID":13,"seller":null}
+
+
+
+63648511170810532838 - Request: SERVICE: ArenaService 
+POST: http://localhost:58349/api/cities
+Accept: application/json
+{
+  "CityName": "Moscow3",
+  "CityPopulation": 12000000
+}
+
+63648511170810532838 - Response: Date: Sun, 10 Dec 2017 10:59:30 GMT
+Transfer-Encoding: chunked
+Location: http://localhost:58349/api/Cities/14
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNc0JLQu9Cw0LTQuNC80LjRgFxEZXNrdG9wXExSMl9ORVdcQXJlbmFTZXJ2aWNlXEFyZW5hU2VydmljZVxhcGlcY2l0aWVz?=
+X-Powered-By: ASP.NET
+
+Status: Created
+{"id":14,"cityName":"Moscow3","cityPopulation":12000000}
+
+
+
+63648511172983397210 - Request: SERVICE: ArenaService 
+POST: http://localhost:58349/api/arenas
+Accept: application/json
+{
+  "ArenaName": "Crocus City Hall3",
+  "CityID": 14,
+  "Capacity": 6000
+}
+
+63648511172983397210 - Response: Date: Sun, 10 Dec 2017 10:59:32 GMT
+Transfer-Encoding: chunked
+Location: http://localhost:58349/api/Arenas/23
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNc0JLQu9Cw0LTQuNC80LjRgFxEZXNrdG9wXExSMl9ORVdcQXJlbmFTZXJ2aWNlXEFyZW5hU2VydmljZVxhcGlcYXJlbmFz?=
+X-Powered-By: ASP.NET
+
+Status: Created
+{"id":23,"arenaName":"Crocus City Hall3","capacity":6000,"cityID":14,"city":null}
+
+
+
+63648511175422397410 - Request: SERVICE: ConcerteService 
+POST: http://localhost:61438/api/Sellers
+Accept: application/json
+{
+  "brandName": "Big Billet3"
+}
+
+63648511175422397410 - Response: Date: Sun, 10 Dec 2017 10:59:35 GMT
+Transfer-Encoding: chunked
+Location: http://localhost:61438/api/Sellers/14
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNc0JLQu9Cw0LTQuNC80LjRgFxEZXNrdG9wXExSMl9ORVdcQ29uY2VydGVTZXJ2aWNlXENvbmNlcnRlU2VydmljZVxDb25jZXJ0ZVNlcnZpY2VcYXBpXFNlbGxlcnM=?=
+X-Powered-By: ASP.NET
+
+Status: Created
+{"id":14,"brandName":"Big Billet3"}
+
+
+
+63648511176274586324 - Request: SERVICE: ConcerteService 
+POST: http://localhost:61438/api/Concertes
+Accept: application/json
+{
+  "ShowName": "BigSHow3",
+  "TicketsNumber": 1000,
+  "Price": 2000,
+  "CityName": "Moscow3",
+  "ArenaName": "Crocus City Hall3",
+  "ArtistName": "FILIP KIRKOROV GAY2111",
+  "Date": "2015-09-01T00:00:00",
+  "SellerID": 14
+}
+
+63648511176274586324 - Response: Date: Sun, 10 Dec 2017 10:59:35 GMT
+Transfer-Encoding: chunked
+Location: http://localhost:61438/api/Concertes/26
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNc0JLQu9Cw0LTQuNC80LjRgFxEZXNrdG9wXExSMl9ORVdcQ29uY2VydGVTZXJ2aWNlXENvbmNlcnRlU2VydmljZVxDb25jZXJ0ZVNlcnZpY2VcYXBpXENvbmNlcnRlcw==?=
+X-Powered-By: ASP.NET
+
+Status: Created
+{"id":26,"showName":"BigSHow3","ticketsNumber":1000,"price":2000,"cityName":"Moscow3","arenaName":"Crocus City Hall3","artistName":"FILIP KIRKOROV GAY2111","date":"2015-09-01T00:00:00","sellerID":14,"seller":null}
+
+
+
+63648511202629660810 - Request: SERVICE: ArenaService 
+POST: http://localhost:58349/api/cities
+Accept: application/json
+{
+  "CityName": "Moscow3",
+  "CityPopulation": 12000000
+}
+
+63648511202629660810 - Response: Date: Sun, 10 Dec 2017 11:00:02 GMT
+Transfer-Encoding: chunked
+Location: http://localhost:58349/api/Cities/15
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNc0JLQu9Cw0LTQuNC80LjRgFxEZXNrdG9wXExSMl9ORVdcQXJlbmFTZXJ2aWNlXEFyZW5hU2VydmljZVxhcGlcY2l0aWVz?=
+X-Powered-By: ASP.NET
+
+Status: Created
+{"id":15,"cityName":"Moscow3","cityPopulation":12000000}
+
+
+
+63648511203741043344 - Request: SERVICE: ArenaService 
+POST: http://localhost:58349/api/arenas
+Accept: application/json
+{
+  "ArenaName": "Crocus City Hall3",
+  "CityID": 15,
+  "Capacity": 6000
+}
+
+63648511203741043344 - Response: Date: Sun, 10 Dec 2017 11:00:02 GMT
+Transfer-Encoding: chunked
+Location: http://localhost:58349/api/Arenas/24
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNc0JLQu9Cw0LTQuNC80LjRgFxEZXNrdG9wXExSMl9ORVdcQXJlbmFTZXJ2aWNlXEFyZW5hU2VydmljZVxhcGlcYXJlbmFz?=
+X-Powered-By: ASP.NET
+
+Status: Created
+{"id":24,"arenaName":"Crocus City Hall3","capacity":6000,"cityID":15,"city":null}
+
+
+
+63648511205203890110 - Request: SERVICE: ConcerteService 
+POST: http://localhost:61438/api/Sellers
+Accept: application/json
+{
+  "brandName": "Big Billet3"
+}
+
+63648511205203890110 - Response: Date: Sun, 10 Dec 2017 11:00:05 GMT
+Transfer-Encoding: chunked
+Location: http://localhost:61438/api/Sellers/15
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNc0JLQu9Cw0LTQuNC80LjRgFxEZXNrdG9wXExSMl9ORVdcQ29uY2VydGVTZXJ2aWNlXENvbmNlcnRlU2VydmljZVxDb25jZXJ0ZVNlcnZpY2VcYXBpXFNlbGxlcnM=?=
+X-Powered-By: ASP.NET
+
+Status: Created
+{"id":15,"brandName":"Big Billet3"}
+
+
+
+63648511206152387117 - Request: SERVICE: ConcerteService 
+POST: http://localhost:61438/api/Concertes
+Accept: application/json
+{
+  "ShowName": "BigSHow3",
+  "TicketsNumber": 1000,
+  "Price": 2000,
+  "CityName": "Moscow3",
+  "ArenaName": "Crocus City Hall3",
+  "ArtistName": "FILIP KIRKOROV GAY2331",
+  "Date": "2015-09-01T00:00:00",
+  "SellerID": 15
+}
+
+63648511206152387117 - Response: Date: Sun, 10 Dec 2017 11:00:05 GMT
+Transfer-Encoding: chunked
+Location: http://localhost:61438/api/Concertes/27
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNc0JLQu9Cw0LTQuNC80LjRgFxEZXNrdG9wXExSMl9ORVdcQ29uY2VydGVTZXJ2aWNlXENvbmNlcnRlU2VydmljZVxDb25jZXJ0ZVNlcnZpY2VcYXBpXENvbmNlcnRlcw==?=
+X-Powered-By: ASP.NET
+
+Status: Created
+{"id":27,"showName":"BigSHow3","ticketsNumber":1000,"price":2000,"cityName":"Moscow3","arenaName":"Crocus City Hall3","artistName":"FILIP KIRKOROV GAY2331","date":"2015-09-01T00:00:00","sellerID":15,"seller":null}
+
+
+
+6364853516971082128 - Request: SERVICE: ArenaService 
+POST: http://localhost:58349/api/cities
+Accept: application/json
+{
+  "CityName": "Detroit",
+  "CityPopulation": 100000
+}
+
+6364853516971082128 - Response: Date: Sun, 10 Dec 2017 17:39:29 GMT
+Transfer-Encoding: chunked
+Location: http://localhost:58349/api/Cities/18
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNc0JLQu9Cw0LTQuNC80LjRgFxEZXNrdG9wXExSMl9ORVdcQXJlbmFTZXJ2aWNlXEFyZW5hU2VydmljZVxhcGlcY2l0aWVz?=
+X-Powered-By: ASP.NET
+
+Status: Created
+{"id":18,"cityName":"Detroit","cityPopulation":100000}
+
+
+
+6364853517004457978 - Request: SERVICE: ArenaService 
+POST: http://localhost:58349/api/arenas
+Accept: application/json
+{
+  "ArenaName": "Golden Cobra",
+  "CityID": 18,
+  "Capacity": 20000
+}
+
+6364853517004457978 - Response: Date: Sun, 10 Dec 2017 17:39:29 GMT
+Transfer-Encoding: chunked
+Location: http://localhost:58349/api/Arenas/27
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNc0JLQu9Cw0LTQuNC80LjRgFxEZXNrdG9wXExSMl9ORVdcQXJlbmFTZXJ2aWNlXEFyZW5hU2VydmljZVxhcGlcYXJlbmFz?=
+X-Powered-By: ASP.NET
+
+Status: Created
+{"id":27,"arenaName":"Golden Cobra","capacity":20000,"cityID":18,"city":null}
+
+
+
+63648535171357800817 - Request: SERVICE: ArtistService 
+POST: http://localhost:61883/api/artists
+Accept: application/json
+{
+  "ArtistName": "SERGEY LAZAREV",
+  "LastFmRating": 150
+}
+
+63648535171357800817 - Response: Date: Sun, 10 Dec 2017 17:39:31 GMT
+Transfer-Encoding: chunked
+Location: http://localhost:61883/api/Artists/1015
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNc0JLQu9Cw0LTQuNC80LjRgFxEZXNrdG9wXExSMl9ORVdcQXJ0aXN0U2VydmljZVxDb25jZXJ0ZVNlcnZpY2VcYXBpXGFydGlzdHM=?=
+X-Powered-By: ASP.NET
+
+Status: Created
+{"id":1015,"artistName":"SERGEY LAZAREV","lastFmRating":150}
+
+
+
+6364853517269389399 - Request: SERVICE: ConcerteService 
+POST: http://localhost:61438/api/Sellers
+Accept: application/json
+{
+  "brandName": "Gouken"
+}
+
+6364853517269389399 - Response: Date: Sun, 10 Dec 2017 17:39:32 GMT
+Transfer-Encoding: chunked
+Location: http://localhost:61438/api/Sellers/18
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNc0JLQu9Cw0LTQuNC80LjRgFxEZXNrdG9wXExSMl9ORVdcQ29uY2VydGVTZXJ2aWNlXENvbmNlcnRlU2VydmljZVxDb25jZXJ0ZVNlcnZpY2VcYXBpXFNlbGxlcnM=?=
+X-Powered-By: ASP.NET
+
+Status: Created
+{"id":18,"brandName":"Gouken"}
+
+
+
+6364853517295485978 - Request: SERVICE: ConcerteService 
+POST: http://localhost:61438/api/Concertes
+Accept: application/json
+{
+  "ShowName": "Vouken",
+  "TicketsNumber": 6000,
+  "Price": 1500,
+  "CityName": "Detroit",
+  "ArenaName": "Golden Cobra",
+  "ArtistName": "SERGEY LAZAREV",
+  "Date": "2017-01-01T00:01:00",
+  "SellerID": 18
+}
+
+6364853517295485978 - Response: Date: Sun, 10 Dec 2017 17:39:32 GMT
+Transfer-Encoding: chunked
+Location: http://localhost:61438/api/Concertes/30
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNc0JLQu9Cw0LTQuNC80LjRgFxEZXNrdG9wXExSMl9ORVdcQ29uY2VydGVTZXJ2aWNlXENvbmNlcnRlU2VydmljZVxDb25jZXJ0ZVNlcnZpY2VcYXBpXENvbmNlcnRlcw==?=
+X-Powered-By: ASP.NET
+
+Status: Created
+{"id":30,"showName":"Vouken","ticketsNumber":6000,"price":1500,"cityName":"Detroit","arenaName":"Golden Cobra","artistName":"SERGEY LAZAREV","date":"2017-01-01T00:01:00","sellerID":18,"seller":null}
+
+
+
+63648535181705377817 - Request: SERVICE: ConcerteService 
+GET: http://localhost:61438/api/Concertes/all?valid=true&page=1
+Accept: application/json
+
+
+63648535181705377817 - Response: Date: Sun, 10 Dec 2017 17:39:41 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNc0JLQu9Cw0LTQuNC80LjRgFxEZXNrdG9wXExSMl9ORVdcQ29uY2VydGVTZXJ2aWNlXENvbmNlcnRlU2VydmljZVxDb25jZXJ0ZVNlcnZpY2VcYXBpXENvbmNlcnRlc1xhbGw=?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":1,"showName":"BigSHow","ticketsNumber":1000,"price":2000,"cityName":"Moscow","arenaName":"Crocus City Hall","artistName":"Marilyn Manson","date":"2015-09-01T00:00:00","sellerID":1,"seller":{"id":1,"brandName":"Big Billet"}},{"id":2,"showName":"Hello, London","ticketsNumber":2000,"price":4000,"cityName":"London","arenaName":"Brixton Academy","artistName":"Marilyn Manson","date":"2015-10-01T00:00:00","sellerID":2,"seller":{"id":2,"brandName":"Afisha"}},{"id":3,"showName":"Hello, Berlin","ticketsNumber":3000,"price":6000,"cityName":"Berlin","arenaName":"Mercedes-Benz Arena","artistName":"Marilyn Manson","date":"2015-11-01T00:00:00","sellerID":2,"seller":{"id":2,"brandName":"Afisha"}},{"id":4,"showName":"BigSHow","ticketsNumber":1000,"price":9000,"cityName":"Moscow","arenaName":"Crocus City Hall","artistName":"Depeche mode","date":"2016-09-01T00:00:00","sellerID":1,"seller":{"id":1,"brandName":"Big Billet"}},{"id":5,"showName":"Hello, Hello","ticketsNumber":2000,"price":11000,"cityName":"London","arenaName":"Brixton Academy","artistName":"Depeche mode","date":"2016-10-01T00:00:00","sellerID":2,"seller":{"id":2,"brandName":"Afisha"}},{"id":6,"showName":"Hello, Berlin","ticketsNumber":3000,"price":1000,"cityName":"Berlin","arenaName":"Mercedes-Benz Arena","artistName":"Depeche mode","date":"2016-11-01T00:00:00","sellerID":2,"seller":{"id":2,"brandName":"Afisha"}},{"id":7,"showName":"BigGiG","ticketsNumber":3000,"price":22000,"cityName":"Moscow","arenaName":"Olimpiyskiy","artistName":"30 Seconds to Mars","date":"2016-02-01T00:00:00","sellerID":1,"seller":{"id":1,"brandName":"Big Billet"}},{"id":8,"showName":"Hello,Good Bye","ticketsNumber":5000,"price":3100,"cityName":"London","arenaName":"Brixton Academy","artistName":"30 Seconds to Mars","date":"2016-03-01T00:00:00","sellerID":2,"seller":{"id":2,"brandName":"Afisha"}},{"id":9,"showName":"Hello, WORLD","ticketsNumber":6000,"price":2400,"cityName":"Berlin","arenaName":"Mercedes-Benz Arena","artistName":"30 Seconds to Mars","date":"2016-04-01T00:00:00","sellerID":2,"seller":{"id":2,"brandName":"Afisha"}},{"id":10,"showName":"VovaSHow","ticketsNumber":1000,"price":2600,"cityName":"Moscow","arenaName":"Vova Arena","artistName":"Frank Sinatra","date":"2017-09-01T00:00:00","sellerID":3,"seller":{"id":3,"brandName":"Ozone"}}]
+
+
+
+6364853518728076578 - Request: SERVICE: ConcerteService 
+GET: http://localhost:61438/api/Concertes/all?valid=true&page=1
+Accept: application/json
+
+
+6364853518728076578 - Response: Date: Sun, 10 Dec 2017 17:39:47 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNc0JLQu9Cw0LTQuNC80LjRgFxEZXNrdG9wXExSMl9ORVdcQ29uY2VydGVTZXJ2aWNlXENvbmNlcnRlU2VydmljZVxDb25jZXJ0ZVNlcnZpY2VcYXBpXENvbmNlcnRlc1xjb3VudA==?=
+X-Powered-By: ASP.NET
+
+Status: OK
+14
+
+
+
+6364853518752672149 - Request: SERVICE: ArenaService 
+GET: http://localhost:58349/api/arenas
+Accept: application/json
+
+
+6364853518752672149 - Response: Date: Sun, 10 Dec 2017 17:39:47 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNc0JLQu9Cw0LTQuNC80LjRgFxEZXNrdG9wXExSMl9ORVdcQXJlbmFTZXJ2aWNlXEFyZW5hU2VydmljZVxhcGlcYXJlbmFz?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":11,"arenaName":"Big Arena","capacity":20000,"cityID":2,"city":{"id":2,"cityName":"Berlin","cityPopulation":3500000}},{"id":5,"arenaName":"Brixton Academy","capacity":10000,"cityID":3,"city":{"id":3,"cityName":"London","cityPopulation":9000000}},{"id":1,"arenaName":"Crocus City Hall","capacity":6000,"cityID":1,"city":{"id":1,"cityName":"Moscow","cityPopulation":12000000}},{"id":25,"arenaName":"Fish Face","capacity":6000,"cityID":16,"city":{"id":16,"cityName":"Atlantida","cityPopulation":120000}},{"id":27,"arenaName":"Golden Cobra","capacity":20000,"cityID":18,"city":{"id":18,"cityName":"Detroit","cityPopulation":100000}},{"id":12,"arenaName":"Hell Fire Arena","capacity":10000,"cityID":3,"city":{"id":3,"cityName":"London","cityPopulation":9000000}},{"id":6,"arenaName":"Mercedes-Benz Arena","capacity":6000,"cityID":2,"city":{"id":2,"cityName":"Berlin","cityPopulation":3500000}},{"id":10,"arenaName":"Natasha Arena","capacity":3000,"cityID":1,"city":{"id":1,"cityName":"Moscow","cityPopulation":12000000}},{"id":2,"arenaName":"Olimpiyskiy","capacity":10000,"cityID":1,"city":{"id":1,"cityName":"Moscow","cityPopulation":12000000}},{"id":7,"arenaName":"Olympiastadion Berlin","capacity":9000,"cityID":2,"city":{"id":2,"cityName":"Berlin","cityPopulation":3500000}},{"id":26,"arenaName":"Red Face","capacity":6000,"cityID":17,"city":{"id":17,"cityName":"Sierra de Leone","cityPopulation":1200000}},{"id":8,"arenaName":"Rock am Ring","capacity":15000,"cityID":2,"city":{"id":2,"cityName":"Berlin","cityPopulation":3500000}},{"id":3,"arenaName":"Vegas City Hall","capacity":6000,"cityID":1,"city":{"id":1,"cityName":"Moscow","cityPopulation":12000000}},{"id":9,"arenaName":"Vova Arena","capacity":3000,"cityID":1,"city":{"id":1,"cityName":"Moscow","cityPopulation":12000000}},{"id":4,"arenaName":"Wembley Arena","capacity":4000,"cityID":3,"city":{"id":3,"cityName":"London","cityPopulation":9000000}}]
+
+
+
+63648535192714150317 - Request: SERVICE: ArenaService 
+GET: http://localhost:61883/api/artists
+Accept: application/json
+
+
+63648535192714150317 - Response: Date: Sun, 10 Dec 2017 17:39:52 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNc0JLQu9Cw0LTQuNC80LjRgFxEZXNrdG9wXExSMl9ORVdcQXJ0aXN0U2VydmljZVxDb25jZXJ0ZVNlcnZpY2VcYXBpXGFydGlzdHM=?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":1,"artistName":"Marilyn Manson","lastFmRating":10},{"id":2,"artistName":"30 Seconds to Mars","lastFmRating":7},{"id":3,"artistName":"Rammstein","lastFmRating":4},{"id":4,"artistName":"The Beatles","lastFmRating":1},{"id":5,"artistName":"Suicide Silence","lastFmRating":14},{"id":6,"artistName":"Depeche mode","lastFmRating":2},{"id":7,"artistName":"Bullet for my valentine","lastFmRating":15},{"id":8,"artistName":"Frank Sinatra","lastFmRating":3},{"id":9,"artistName":"Elvis Presley","lastFmRating":4},{"id":10,"artistName":"Combichrist","lastFmRating":8},{"id":11,"artistName":"Devil sold his soul","lastFmRating":9},{"id":1013,"artistName":"FACE","lastFmRating":10},{"id":1014,"artistName":"FILIP KIRKOROV","lastFmRating":10},{"id":1015,"artistName":"SERGEY LAZAREV","lastFmRating":150}]
+
+
+
+6364853520980330388 - Request: SERVICE: ConcerteService 
+GET: http://localhost:61438/api/Concertes/all?valid=true&page=2
+Accept: application/json
+
+
+6364853520980330388 - Response: Date: Sun, 10 Dec 2017 17:40:09 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNc0JLQu9Cw0LTQuNC80LjRgFxEZXNrdG9wXExSMl9ORVdcQ29uY2VydGVTZXJ2aWNlXENvbmNlcnRlU2VydmljZVxDb25jZXJ0ZVNlcnZpY2VcYXBpXENvbmNlcnRlc1xhbGw=?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":11,"showName":"VovaSHow2","ticketsNumber":1000,"price":3500,"cityName":"Moscow","arenaName":"Vova Arena","artistName":"Frank Sinatra","date":"2017-10-01T00:00:00","sellerID":3,"seller":{"id":3,"brandName":"Ozone"}},{"id":28,"showName":"FAST F1","ticketsNumber":1000,"price":2000,"cityName":"Atlantida","arenaName":"Fish Face","artistName":"FACE","date":"2015-09-01T00:00:00","sellerID":16,"seller":{"id":16,"brandName":"Arena BOBO"}},{"id":29,"showName":"FAST F2","ticketsNumber":1000,"price":2000,"cityName":"Sierra de Leone","arenaName":"Red Face","artistName":"FILIP KIRKOROV","date":"2015-09-01T00:00:00","sellerID":17,"seller":{"id":17,"brandName":"Arena GOGO"}},{"id":30,"showName":"Vouken","ticketsNumber":6000,"price":1500,"cityName":"Detroit","arenaName":"Golden Cobra","artistName":"SERGEY LAZAREV","date":"2017-01-01T00:01:00","sellerID":18,"seller":{"id":18,"brandName":"Gouken"}}]
+
+
+
+63648535215139618617 - Request: SERVICE: ConcerteService 
+GET: http://localhost:61438/api/Concertes/all?valid=true&page=2
+Accept: application/json
+
+
+63648535215139618617 - Response: Date: Sun, 10 Dec 2017 17:40:15 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNc0JLQu9Cw0LTQuNC80LjRgFxEZXNrdG9wXExSMl9ORVdcQ29uY2VydGVTZXJ2aWNlXENvbmNlcnRlU2VydmljZVxDb25jZXJ0ZVNlcnZpY2VcYXBpXENvbmNlcnRlc1xjb3VudA==?=
+X-Powered-By: ASP.NET
+
+Status: OK
+14
+
+
+
+63648535215227703325 - Request: SERVICE: ArenaService 
+GET: http://localhost:58349/api/arenas
+Accept: application/json
+
+
+63648535215227703325 - Response: Date: Sun, 10 Dec 2017 17:40:15 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNc0JLQu9Cw0LTQuNC80LjRgFxEZXNrdG9wXExSMl9ORVdcQXJlbmFTZXJ2aWNlXEFyZW5hU2VydmljZVxhcGlcYXJlbmFz?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":11,"arenaName":"Big Arena","capacity":20000,"cityID":2,"city":{"id":2,"cityName":"Berlin","cityPopulation":3500000}},{"id":5,"arenaName":"Brixton Academy","capacity":10000,"cityID":3,"city":{"id":3,"cityName":"London","cityPopulation":9000000}},{"id":1,"arenaName":"Crocus City Hall","capacity":6000,"cityID":1,"city":{"id":1,"cityName":"Moscow","cityPopulation":12000000}},{"id":25,"arenaName":"Fish Face","capacity":6000,"cityID":16,"city":{"id":16,"cityName":"Atlantida","cityPopulation":120000}},{"id":27,"arenaName":"Golden Cobra","capacity":20000,"cityID":18,"city":{"id":18,"cityName":"Detroit","cityPopulation":100000}},{"id":12,"arenaName":"Hell Fire Arena","capacity":10000,"cityID":3,"city":{"id":3,"cityName":"London","cityPopulation":9000000}},{"id":6,"arenaName":"Mercedes-Benz Arena","capacity":6000,"cityID":2,"city":{"id":2,"cityName":"Berlin","cityPopulation":3500000}},{"id":10,"arenaName":"Natasha Arena","capacity":3000,"cityID":1,"city":{"id":1,"cityName":"Moscow","cityPopulation":12000000}},{"id":2,"arenaName":"Olimpiyskiy","capacity":10000,"cityID":1,"city":{"id":1,"cityName":"Moscow","cityPopulation":12000000}},{"id":7,"arenaName":"Olympiastadion Berlin","capacity":9000,"cityID":2,"city":{"id":2,"cityName":"Berlin","cityPopulation":3500000}},{"id":26,"arenaName":"Red Face","capacity":6000,"cityID":17,"city":{"id":17,"cityName":"Sierra de Leone","cityPopulation":1200000}},{"id":8,"arenaName":"Rock am Ring","capacity":15000,"cityID":2,"city":{"id":2,"cityName":"Berlin","cityPopulation":3500000}},{"id":3,"arenaName":"Vegas City Hall","capacity":6000,"cityID":1,"city":{"id":1,"cityName":"Moscow","cityPopulation":12000000}},{"id":9,"arenaName":"Vova Arena","capacity":3000,"cityID":1,"city":{"id":1,"cityName":"Moscow","cityPopulation":12000000}},{"id":4,"arenaName":"Wembley Arena","capacity":4000,"cityID":3,"city":{"id":3,"cityName":"London","cityPopulation":9000000}}]
+
+
+
+63648535220348473017 - Request: SERVICE: ArenaService 
+GET: http://localhost:61883/api/artists
+Accept: application/json
+
+
+63648535220348473017 - Response: Date: Sun, 10 Dec 2017 17:40:20 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNc0JLQu9Cw0LTQuNC80LjRgFxEZXNrdG9wXExSMl9ORVdcQXJ0aXN0U2VydmljZVxDb25jZXJ0ZVNlcnZpY2VcYXBpXGFydGlzdHM=?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":1,"artistName":"Marilyn Manson","lastFmRating":10},{"id":2,"artistName":"30 Seconds to Mars","lastFmRating":7},{"id":3,"artistName":"Rammstein","lastFmRating":4},{"id":4,"artistName":"The Beatles","lastFmRating":1},{"id":5,"artistName":"Suicide Silence","lastFmRating":14},{"id":6,"artistName":"Depeche mode","lastFmRating":2},{"id":7,"artistName":"Bullet for my valentine","lastFmRating":15},{"id":8,"artistName":"Frank Sinatra","lastFmRating":3},{"id":9,"artistName":"Elvis Presley","lastFmRating":4},{"id":10,"artistName":"Combichrist","lastFmRating":8},{"id":11,"artistName":"Devil sold his soul","lastFmRating":9},{"id":1013,"artistName":"FACE","lastFmRating":10},{"id":1014,"artistName":"FILIP KIRKOROV","lastFmRating":10},{"id":1015,"artistName":"SERGEY LAZAREV","lastFmRating":150}]
+
+
+
+63648535540782853231 - Request: SERVICE: ConcerteService 
+GET: http://localhost:61438/api/Concertes/all?valid=true&page=1
+Accept: application/json
+
+
+63648535540782853231 - Response: Date: Sun, 10 Dec 2017 17:45:40 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNc0JLQu9Cw0LTQuNC80LjRgFxEZXNrdG9wXExSMl9ORVdcQ29uY2VydGVTZXJ2aWNlXENvbmNlcnRlU2VydmljZVxDb25jZXJ0ZVNlcnZpY2VcYXBpXENvbmNlcnRlc1xhbGw=?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":1,"showName":"BigSHow","ticketsNumber":1000,"price":2000,"cityName":"Moscow","arenaName":"Crocus City Hall","artistName":"Marilyn Manson","date":"2015-09-01T00:00:00","sellerID":1,"seller":{"id":1,"brandName":"Big Billet"}},{"id":2,"showName":"Hello, London","ticketsNumber":2000,"price":4000,"cityName":"London","arenaName":"Brixton Academy","artistName":"Marilyn Manson","date":"2015-10-01T00:00:00","sellerID":2,"seller":{"id":2,"brandName":"Afisha"}},{"id":3,"showName":"Hello, Berlin","ticketsNumber":3000,"price":6000,"cityName":"Berlin","arenaName":"Mercedes-Benz Arena","artistName":"Marilyn Manson","date":"2015-11-01T00:00:00","sellerID":2,"seller":{"id":2,"brandName":"Afisha"}},{"id":4,"showName":"BigSHow","ticketsNumber":1000,"price":9000,"cityName":"Moscow","arenaName":"Crocus City Hall","artistName":"Depeche mode","date":"2016-09-01T00:00:00","sellerID":1,"seller":{"id":1,"brandName":"Big Billet"}},{"id":5,"showName":"Hello, Hello","ticketsNumber":2000,"price":11000,"cityName":"London","arenaName":"Brixton Academy","artistName":"Depeche mode","date":"2016-10-01T00:00:00","sellerID":2,"seller":{"id":2,"brandName":"Afisha"}},{"id":6,"showName":"Hello, Berlin","ticketsNumber":3000,"price":1000,"cityName":"Berlin","arenaName":"Mercedes-Benz Arena","artistName":"Depeche mode","date":"2016-11-01T00:00:00","sellerID":2,"seller":{"id":2,"brandName":"Afisha"}},{"id":7,"showName":"BigGiG","ticketsNumber":3000,"price":22000,"cityName":"Moscow","arenaName":"Olimpiyskiy","artistName":"30 Seconds to Mars","date":"2016-02-01T00:00:00","sellerID":1,"seller":{"id":1,"brandName":"Big Billet"}},{"id":8,"showName":"Hello,Good Bye","ticketsNumber":5000,"price":3100,"cityName":"London","arenaName":"Brixton Academy","artistName":"30 Seconds to Mars","date":"2016-03-01T00:00:00","sellerID":2,"seller":{"id":2,"brandName":"Afisha"}},{"id":9,"showName":"Hello, WORLD","ticketsNumber":6000,"price":2400,"cityName":"Berlin","arenaName":"Mercedes-Benz Arena","artistName":"30 Seconds to Mars","date":"2016-04-01T00:00:00","sellerID":2,"seller":{"id":2,"brandName":"Afisha"}},{"id":10,"showName":"VovaSHow","ticketsNumber":1000,"price":2600,"cityName":"Moscow","arenaName":"Vova Arena","artistName":"Frank Sinatra","date":"2017-09-01T00:00:00","sellerID":3,"seller":{"id":3,"brandName":"Ozone"}}]
+
+
+
+63648535545971091424 - Request: SERVICE: ConcerteService 
+GET: http://localhost:61438/api/Concertes/all?valid=true&page=1
+Accept: application/json
+
+
+63648535545971091424 - Response: Date: Sun, 10 Dec 2017 17:45:45 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNc0JLQu9Cw0LTQuNC80LjRgFxEZXNrdG9wXExSMl9ORVdcQ29uY2VydGVTZXJ2aWNlXENvbmNlcnRlU2VydmljZVxDb25jZXJ0ZVNlcnZpY2VcYXBpXENvbmNlcnRlc1xjb3VudA==?=
+X-Powered-By: ASP.NET
+
+Status: OK
+15
+
+
+
+63648535546095169217 - Request: SERVICE: ArenaService 
+GET: http://localhost:58349/api/arenas
+Accept: application/json
+
+
+63648535546095169217 - Response: Date: Sun, 10 Dec 2017 17:45:45 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNc0JLQu9Cw0LTQuNC80LjRgFxEZXNrdG9wXExSMl9ORVdcQXJlbmFTZXJ2aWNlXEFyZW5hU2VydmljZVxhcGlcYXJlbmFz?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":11,"arenaName":"Big Arena","capacity":20000,"cityID":2,"city":{"id":2,"cityName":"Berlin","cityPopulation":3500000}},{"id":5,"arenaName":"Brixton Academy","capacity":10000,"cityID":3,"city":{"id":3,"cityName":"London","cityPopulation":9000000}},{"id":1027,"arenaName":"Casco","capacity":10000,"cityID":1018,"city":{"id":1018,"cityName":"Rostov","cityPopulation":20000000}},{"id":1,"arenaName":"Crocus City Hall","capacity":6000,"cityID":1,"city":{"id":1,"cityName":"Moscow","cityPopulation":12000000}},{"id":25,"arenaName":"Fish Face","capacity":6000,"cityID":16,"city":{"id":16,"cityName":"Atlantida","cityPopulation":120000}},{"id":27,"arenaName":"Golden Cobra","capacity":20000,"cityID":18,"city":{"id":18,"cityName":"Detroit","cityPopulation":100000}},{"id":12,"arenaName":"Hell Fire Arena","capacity":10000,"cityID":3,"city":{"id":3,"cityName":"London","cityPopulation":9000000}},{"id":6,"arenaName":"Mercedes-Benz Arena","capacity":6000,"cityID":2,"city":{"id":2,"cityName":"Berlin","cityPopulation":3500000}},{"id":10,"arenaName":"Natasha Arena","capacity":3000,"cityID":1,"city":{"id":1,"cityName":"Moscow","cityPopulation":12000000}},{"id":2,"arenaName":"Olimpiyskiy","capacity":10000,"cityID":1,"city":{"id":1,"cityName":"Moscow","cityPopulation":12000000}},{"id":7,"arenaName":"Olympiastadion Berlin","capacity":9000,"cityID":2,"city":{"id":2,"cityName":"Berlin","cityPopulation":3500000}},{"id":26,"arenaName":"Red Face","capacity":6000,"cityID":17,"city":{"id":17,"cityName":"Sierra de Leone","cityPopulation":1200000}},{"id":8,"arenaName":"Rock am Ring","capacity":15000,"cityID":2,"city":{"id":2,"cityName":"Berlin","cityPopulation":3500000}},{"id":3,"arenaName":"Vegas City Hall","capacity":6000,"cityID":1,"city":{"id":1,"cityName":"Moscow","cityPopulation":12000000}},{"id":9,"arenaName":"Vova Arena","capacity":3000,"cityID":1,"city":{"id":1,"cityName":"Moscow","cityPopulation":12000000}},{"id":4,"arenaName":"Wembley Arena","capacity":4000,"cityID":3,"city":{"id":3,"cityName":"London","cityPopulation":9000000}}]
+
+
+
+63648535551329513424 - Request: SERVICE: ArenaService 
+GET: http://localhost:61883/api/artists
+Accept: application/json
+
+
+63648535551329513424 - Response: Date: Sun, 10 Dec 2017 17:45:51 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNc0JLQu9Cw0LTQuNC80LjRgFxEZXNrdG9wXExSMl9ORVdcQXJ0aXN0U2VydmljZVxDb25jZXJ0ZVNlcnZpY2VcYXBpXGFydGlzdHM=?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":1,"artistName":"Marilyn Manson","lastFmRating":10},{"id":2,"artistName":"30 Seconds to Mars","lastFmRating":7},{"id":3,"artistName":"Rammstein","lastFmRating":4},{"id":4,"artistName":"The Beatles","lastFmRating":1},{"id":5,"artistName":"Suicide Silence","lastFmRating":14},{"id":6,"artistName":"Depeche mode","lastFmRating":2},{"id":7,"artistName":"Bullet for my valentine","lastFmRating":15},{"id":8,"artistName":"Frank Sinatra","lastFmRating":3},{"id":9,"artistName":"Elvis Presley","lastFmRating":4},{"id":10,"artistName":"Combichrist","lastFmRating":8},{"id":11,"artistName":"Devil sold his soul","lastFmRating":9},{"id":1013,"artistName":"FACE","lastFmRating":10},{"id":1014,"artistName":"FILIP KIRKOROV","lastFmRating":10},{"id":1015,"artistName":"SERGEY LAZAREV","lastFmRating":150},{"id":2015,"artistName":"Meladze","lastFmRating":30}]
+
+
+
+63648535563409667230 - Request: SERVICE: ConcerteService 
+GET: http://localhost:61438/api/Concertes/all?valid=true&page=2
+Accept: application/json
+
+
+63648535563409667230 - Response: Date: Sun, 10 Dec 2017 17:46:03 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNc0JLQu9Cw0LTQuNC80LjRgFxEZXNrdG9wXExSMl9ORVdcQ29uY2VydGVTZXJ2aWNlXENvbmNlcnRlU2VydmljZVxDb25jZXJ0ZVNlcnZpY2VcYXBpXENvbmNlcnRlc1xhbGw=?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":11,"showName":"VovaSHow2","ticketsNumber":1000,"price":3500,"cityName":"Moscow","arenaName":"Vova Arena","artistName":"Frank Sinatra","date":"2017-10-01T00:00:00","sellerID":3,"seller":{"id":3,"brandName":"Ozone"}},{"id":28,"showName":"FAST F1","ticketsNumber":1000,"price":2000,"cityName":"Atlantida","arenaName":"Fish Face","artistName":"FACE","date":"2015-09-01T00:00:00","sellerID":16,"seller":{"id":16,"brandName":"Arena BOBO"}},{"id":29,"showName":"FAST F2","ticketsNumber":1000,"price":2000,"cityName":"Sierra de Leone","arenaName":"Red Face","artistName":"FILIP KIRKOROV","date":"2015-09-01T00:00:00","sellerID":17,"seller":{"id":17,"brandName":"Arena GOGO"}},{"id":30,"showName":"Vouken","ticketsNumber":6000,"price":1500,"cityName":"Detroit","arenaName":"Golden Cobra","artistName":"SERGEY LAZAREV","date":"2017-01-01T00:01:00","sellerID":18,"seller":{"id":18,"brandName":"Gouken"}},{"id":1030,"showName":"Hanuka","ticketsNumber":9000,"price":19000,"cityName":"Rostov","arenaName":"Casco","artistName":"Meladze","date":"2017-01-01T00:00:00","sellerID":1018,"seller":{"id":1018,"brandName":"Jew"}}]
+
+
+
+63648535568681256024 - Request: SERVICE: ConcerteService 
+GET: http://localhost:61438/api/Concertes/all?valid=true&page=2
+Accept: application/json
+
+
+63648535568681256024 - Response: Date: Sun, 10 Dec 2017 17:46:08 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNc0JLQu9Cw0LTQuNC80LjRgFxEZXNrdG9wXExSMl9ORVdcQ29uY2VydGVTZXJ2aWNlXENvbmNlcnRlU2VydmljZVxDb25jZXJ0ZVNlcnZpY2VcYXBpXENvbmNlcnRlc1xjb3VudA==?=
+X-Powered-By: ASP.NET
+
+Status: OK
+15
+
+
+
+63648535568782359030 - Request: SERVICE: ArenaService 
+GET: http://localhost:58349/api/arenas
+Accept: application/json
+
+
+63648535568782359030 - Response: Date: Sun, 10 Dec 2017 17:46:08 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNc0JLQu9Cw0LTQuNC80LjRgFxEZXNrdG9wXExSMl9ORVdcQXJlbmFTZXJ2aWNlXEFyZW5hU2VydmljZVxhcGlcYXJlbmFz?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":11,"arenaName":"Big Arena","capacity":20000,"cityID":2,"city":{"id":2,"cityName":"Berlin","cityPopulation":3500000}},{"id":5,"arenaName":"Brixton Academy","capacity":10000,"cityID":3,"city":{"id":3,"cityName":"London","cityPopulation":9000000}},{"id":1027,"arenaName":"Casco","capacity":10000,"cityID":1018,"city":{"id":1018,"cityName":"Rostov","cityPopulation":20000000}},{"id":1,"arenaName":"Crocus City Hall","capacity":6000,"cityID":1,"city":{"id":1,"cityName":"Moscow","cityPopulation":12000000}},{"id":25,"arenaName":"Fish Face","capacity":6000,"cityID":16,"city":{"id":16,"cityName":"Atlantida","cityPopulation":120000}},{"id":27,"arenaName":"Golden Cobra","capacity":20000,"cityID":18,"city":{"id":18,"cityName":"Detroit","cityPopulation":100000}},{"id":12,"arenaName":"Hell Fire Arena","capacity":10000,"cityID":3,"city":{"id":3,"cityName":"London","cityPopulation":9000000}},{"id":6,"arenaName":"Mercedes-Benz Arena","capacity":6000,"cityID":2,"city":{"id":2,"cityName":"Berlin","cityPopulation":3500000}},{"id":10,"arenaName":"Natasha Arena","capacity":3000,"cityID":1,"city":{"id":1,"cityName":"Moscow","cityPopulation":12000000}},{"id":2,"arenaName":"Olimpiyskiy","capacity":10000,"cityID":1,"city":{"id":1,"cityName":"Moscow","cityPopulation":12000000}},{"id":7,"arenaName":"Olympiastadion Berlin","capacity":9000,"cityID":2,"city":{"id":2,"cityName":"Berlin","cityPopulation":3500000}},{"id":26,"arenaName":"Red Face","capacity":6000,"cityID":17,"city":{"id":17,"cityName":"Sierra de Leone","cityPopulation":1200000}},{"id":8,"arenaName":"Rock am Ring","capacity":15000,"cityID":2,"city":{"id":2,"cityName":"Berlin","cityPopulation":3500000}},{"id":3,"arenaName":"Vegas City Hall","capacity":6000,"cityID":1,"city":{"id":1,"cityName":"Moscow","cityPopulation":12000000}},{"id":9,"arenaName":"Vova Arena","capacity":3000,"cityID":1,"city":{"id":1,"cityName":"Moscow","cityPopulation":12000000}},{"id":4,"arenaName":"Wembley Arena","capacity":4000,"cityID":3,"city":{"id":3,"cityName":"London","cityPopulation":9000000}}]
+
+
+
+63648535573846586524 - Request: SERVICE: ArenaService 
+GET: http://localhost:61883/api/artists
+Accept: application/json
+
+
+63648535573846586524 - Response: Date: Sun, 10 Dec 2017 17:46:13 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNc0JLQu9Cw0LTQuNC80LjRgFxEZXNrdG9wXExSMl9ORVdcQXJ0aXN0U2VydmljZVxDb25jZXJ0ZVNlcnZpY2VcYXBpXGFydGlzdHM=?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":1,"artistName":"Marilyn Manson","lastFmRating":10},{"id":2,"artistName":"30 Seconds to Mars","lastFmRating":7},{"id":3,"artistName":"Rammstein","lastFmRating":4},{"id":4,"artistName":"The Beatles","lastFmRating":1},{"id":5,"artistName":"Suicide Silence","lastFmRating":14},{"id":6,"artistName":"Depeche mode","lastFmRating":2},{"id":7,"artistName":"Bullet for my valentine","lastFmRating":15},{"id":8,"artistName":"Frank Sinatra","lastFmRating":3},{"id":9,"artistName":"Elvis Presley","lastFmRating":4},{"id":10,"artistName":"Combichrist","lastFmRating":8},{"id":11,"artistName":"Devil sold his soul","lastFmRating":9},{"id":1013,"artistName":"FACE","lastFmRating":10},{"id":1014,"artistName":"FILIP KIRKOROV","lastFmRating":10},{"id":1015,"artistName":"SERGEY LAZAREV","lastFmRating":150},{"id":2015,"artistName":"Meladze","lastFmRating":30}]
+
+
+
+6364855237970702669 - Request: SERVICE: ArenaService 
+POST: http://localhost:58349/api/cities
+Accept: application/json
+{
+  "CityName": "jopa",
+  "CityPopulation": 123
+}
+
+6364855237970702669 - Response: Date: Sun, 10 Dec 2017 22:26:08 GMT
+Transfer-Encoding: chunked
+Location: http://localhost:58349/api/Cities/1019
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNc0JLQu9Cw0LTQuNC80LjRgFxEZXNrdG9wXExSMl9ORVdcQXJlbmFTZXJ2aWNlXEFyZW5hU2VydmljZVxhcGlcY2l0aWVz?=
+X-Powered-By: ASP.NET
+
+Status: Created
+{"id":1019,"cityName":"jopa","cityPopulation":123}
+
+
+
+6364855237994265669 - Request: SERVICE: ArenaService 
+POST: http://localhost:58349/api/arenas
+Accept: application/json
+{
+  "ArenaName": "jopa",
+  "CityID": 1019,
+  "Capacity": 4444
+}
+
+6364855237994265669 - Response: Date: Sun, 10 Dec 2017 22:26:19 GMT
+Transfer-Encoding: chunked
+Location: http://localhost:58349/api/Arenas/1028
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNc0JLQu9Cw0LTQuNC80LjRgFxEZXNrdG9wXExSMl9ORVdcQXJlbmFTZXJ2aWNlXEFyZW5hU2VydmljZVxhcGlcYXJlbmFz?=
+X-Powered-By: ASP.NET
+
+Status: Created
+{"id":1028,"arenaName":"jopa","capacity":4444,"cityID":1019,"city":null}
+
+
+
+6364855238116566829 - Request: SERVICE: ArtistService 
+POST: http://localhost:61883/api/artists
+Accept: application/json
+{
+  "ArtistName": "jopa",
+  "LastFmRating": 555
+}
+
+6364855238116566829 - Response: Date: Sun, 10 Dec 2017 22:26:21 GMT
+Transfer-Encoding: chunked
+Location: http://localhost:61883/api/Artists/2016
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNc0JLQu9Cw0LTQuNC80LjRgFxEZXNrdG9wXExSMl9ORVdcQXJ0aXN0U2VydmljZVxDb25jZXJ0ZVNlcnZpY2VcYXBpXGFydGlzdHM=?=
+X-Powered-By: ASP.NET
+
+Status: Created
+{"id":2016,"artistName":"jopa","lastFmRating":555}
+
+
+
+63648552383802570017 - Request: SERVICE: ArenaService 
+DELETE: http://localhost:58349/api/arenas/1028
+
+
+63648552383802570017 - Response: Date: Sun, 10 Dec 2017 22:26:23 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNc0JLQu9Cw0LTQuNC80LjRgFxEZXNrdG9wXExSMl9ORVdcQXJlbmFTZXJ2aWNlXEFyZW5hU2VydmljZVxhcGlcYXJlbmFzXDEwMjg=?=
+X-Powered-By: ASP.NET
+
+Status: OK
+{"id":1028,"arenaName":"jopa","capacity":4444,"cityID":1019,"city":null}
+
+
+
+63648552383953229310 - Request: SERVICE: ArenaService 
+DELETE: http://localhost:58349/api/cities/1019
+
+
+63648552383953229310 - Response: Date: Sun, 10 Dec 2017 22:26:23 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNc0JLQu9Cw0LTQuNC80LjRgFxEZXNrdG9wXExSMl9ORVdcQXJlbmFTZXJ2aWNlXEFyZW5hU2VydmljZVxhcGlcY2l0aWVzXDEwMTk=?=
+X-Powered-By: ASP.NET
+
+Status: OK
+{"id":1019,"cityName":"jopa","cityPopulation":123}
+
+
+
+63648552384115841423 - Request: SERVICE: ArtistService 
+DELETE: http://localhost:61883/api/artists/2016
+
+
+63648552384115841423 - Response: Date: Sun, 10 Dec 2017 22:26:23 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNc0JLQu9Cw0LTQuNC80LjRgFxEZXNrdG9wXExSMl9ORVdcQXJ0aXN0U2VydmljZVxDb25jZXJ0ZVNlcnZpY2VcYXBpXGFydGlzdHNcMjAxNg==?=
+X-Powered-By: ASP.NET
+
+Status: OK
+{"id":2016,"artistName":"jopa","lastFmRating":555}
+
+
+
+6364855534279125948 - Request: SERVICE: ArenaService 
+POST: http://localhost:58349/api/cities
+Accept: application/json
+{
+  "CityName": "jopa",
+  "CityPopulation": 5000
+}
+
+6364855534279125948 - Response: Date: Sun, 10 Dec 2017 23:15:42 GMT
+Transfer-Encoding: chunked
+Location: http://localhost:58349/api/Cities/1021
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNc0JLQu9Cw0LTQuNC80LjRgFxEZXNrdG9wXExSMl9ORVdcQXJlbmFTZXJ2aWNlXEFyZW5hU2VydmljZVxhcGlcY2l0aWVz?=
+X-Powered-By: ASP.NET
+
+Status: Created
+{"id":1021,"cityName":"jopa","cityPopulation":5000}
+
+
+
+6364855534316750368 - Request: SERVICE: ArenaService 
+POST: http://localhost:58349/api/arenas
+Accept: application/json
+{
+  "ArenaName": "jopa",
+  "CityID": 1021,
+  "Capacity": 4000
+}
+
+6364855534316750368 - Response: Date: Sun, 10 Dec 2017 23:15:42 GMT
+Transfer-Encoding: chunked
+Location: http://localhost:58349/api/Arenas/1030
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNc0JLQu9Cw0LTQuNC80LjRgFxEZXNrdG9wXExSMl9ORVdcQXJlbmFTZXJ2aWNlXEFyZW5hU2VydmljZVxhcGlcYXJlbmFz?=
+X-Powered-By: ASP.NET
+
+Status: Created
+{"id":1030,"arenaName":"jopa","capacity":4000,"cityID":1021,"city":null}
+
+
+
+63648555343798487321 - Request: SERVICE: ArtistService 
+POST: http://localhost:61883/api/artists
+Accept: application/json
+{
+  "ArtistName": "jopa",
+  "LastFmRating": 300
+}
+
+63648555343798487321 - Response: Date: Sun, 10 Dec 2017 23:15:43 GMT
+Transfer-Encoding: chunked
+Location: http://localhost:61883/api/Artists/3017
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNc0JLQu9Cw0LTQuNC80LjRgFxEZXNrdG9wXExSMl9ORVdcQXJ0aXN0U2VydmljZVxDb25jZXJ0ZVNlcnZpY2VcYXBpXGFydGlzdHM=?=
+X-Powered-By: ASP.NET
+
+Status: Created
+{"id":3017,"artistName":"jopa","lastFmRating":300}
+
+
+
+6364855534740131809 - Request: SERVICE: ArenaService 
+DELETE: http://localhost:58349/api/arenas/1030
+
+
+6364855534740131809 - Response: Date: Sun, 10 Dec 2017 23:15:47 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNc0JLQu9Cw0LTQuNC80LjRgFxEZXNrdG9wXExSMl9ORVdcQXJlbmFTZXJ2aWNlXEFyZW5hU2VydmljZVxhcGlcYXJlbmFzXDEwMzA=?=
+X-Powered-By: ASP.NET
+
+Status: OK
+{"id":1030,"arenaName":"jopa","capacity":4000,"cityID":1021,"city":null}
+
+
+
+63648555348056106521 - Request: SERVICE: ArenaService 
+DELETE: http://localhost:58349/api/cities/1021
+
+
+63648555348056106521 - Response: Date: Sun, 10 Dec 2017 23:15:47 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNc0JLQu9Cw0LTQuNC80LjRgFxEZXNrdG9wXExSMl9ORVdcQXJlbmFTZXJ2aWNlXEFyZW5hU2VydmljZVxhcGlcY2l0aWVzXDEwMjE=?=
+X-Powered-By: ASP.NET
+
+Status: OK
+{"id":1021,"cityName":"jopa","cityPopulation":5000}
+
+
+
+6364855534823228979 - Request: SERVICE: ArtistService 
+DELETE: http://localhost:61883/api/artists/3017
+
+
+6364855534823228979 - Response: Date: Sun, 10 Dec 2017 23:15:47 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNc0JLQu9Cw0LTQuNC80LjRgFxEZXNrdG9wXExSMl9ORVdcQXJ0aXN0U2VydmljZVxDb25jZXJ0ZVNlcnZpY2VcYXBpXGFydGlzdHNcMzAxNw==?=
+X-Powered-By: ASP.NET
+
+Status: OK
+{"id":3017,"artistName":"jopa","lastFmRating":300}
+
+
+
+6364855583578143608 - Request: SERVICE: ArenaService 
+POST: http://localhost:58349/api/cities
+Accept: application/json
+{
+  "CityName": "jopa",
+  "CityPopulation": 4344
+}
+
+6364855583578143608 - Response: Date: Sun, 10 Dec 2017 23:23:55 GMT
+Transfer-Encoding: chunked
+Location: http://localhost:58349/api/Cities/1022
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNc0JLQu9Cw0LTQuNC80LjRgFxEZXNrdG9wXExSMl9ORVdcQXJlbmFTZXJ2aWNlXEFyZW5hU2VydmljZVxhcGlcY2l0aWVz?=
+X-Powered-By: ASP.NET
+
+Status: Created
+{"id":1022,"cityName":"jopa","cityPopulation":4344}
+
+
+
+6364855583599758868 - Request: SERVICE: ArenaService 
+POST: http://localhost:58349/api/arenas
+Accept: application/json
+{
+  "ArenaName": "jopa",
+  "CityID": 1022,
+  "Capacity": 500
+}
+
+6364855583599758868 - Response: Date: Sun, 10 Dec 2017 23:23:55 GMT
+Transfer-Encoding: chunked
+Location: http://localhost:58349/api/Arenas/1031
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNc0JLQu9Cw0LTQuNC80LjRgFxEZXNrdG9wXExSMl9ORVdcQXJlbmFTZXJ2aWNlXEFyZW5hU2VydmljZVxhcGlcYXJlbmFz?=
+X-Powered-By: ASP.NET
+
+Status: Created
+{"id":1031,"arenaName":"jopa","capacity":500,"cityID":1022,"city":null}
+
+
+
+6364855583718630598 - Request: SERVICE: ArtistService 
+POST: http://localhost:61883/api/artists
+Accept: application/json
+{
+  "ArtistName": "jopa",
+  "LastFmRating": 888
+}
+
+6364855583718630598 - Response: Date: Sun, 10 Dec 2017 23:23:57 GMT
+Transfer-Encoding: chunked
+Location: http://localhost:61883/api/Artists/3018
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNc0JLQu9Cw0LTQuNC80LjRgFxEZXNrdG9wXExSMl9ORVdcQXJ0aXN0U2VydmljZVxDb25jZXJ0ZVNlcnZpY2VcYXBpXGFydGlzdHM=?=
+X-Powered-By: ASP.NET
+
+Status: Created
+{"id":3018,"artistName":"jopa","lastFmRating":888}
+
+
+
+6364855583952829959 - Request: SERVICE: ArenaService 
+DELETE: http://localhost:58349/api/arenas/1031
+
+
+6364855583952829959 - Response: Date: Sun, 10 Dec 2017 23:23:59 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNc0JLQu9Cw0LTQuNC80LjRgFxEZXNrdG9wXExSMl9ORVdcQXJlbmFTZXJ2aWNlXEFyZW5hU2VydmljZVxhcGlcYXJlbmFzXDEwMzE=?=
+X-Powered-By: ASP.NET
+
+Status: OK
+{"id":1031,"arenaName":"jopa","capacity":500,"cityID":1022,"city":null}
+
+
+
+6364855583965575638 - Request: SERVICE: ArenaService 
+DELETE: http://localhost:58349/api/cities/1022
+
+
+6364855583965575638 - Response: Date: Sun, 10 Dec 2017 23:23:59 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNc0JLQu9Cw0LTQuNC80LjRgFxEZXNrdG9wXExSMl9ORVdcQXJlbmFTZXJ2aWNlXEFyZW5hU2VydmljZVxhcGlcY2l0aWVzXDEwMjI=?=
+X-Powered-By: ASP.NET
+
+Status: OK
+{"id":1022,"cityName":"jopa","cityPopulation":4344}
+
+
+
+6364855583970012798 - Request: SERVICE: ArtistService 
+DELETE: http://localhost:61883/api/artists/3018
+
+
+6364855583970012798 - Response: Date: Sun, 10 Dec 2017 23:23:59 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNc0JLQu9Cw0LTQuNC80LjRgFxEZXNrdG9wXExSMl9ORVdcQXJ0aXN0U2VydmljZVxDb25jZXJ0ZVNlcnZpY2VcYXBpXGFydGlzdHNcMzAxOA==?=
+X-Powered-By: ASP.NET
+
+Status: OK
+{"id":3018,"artistName":"jopa","lastFmRating":888}
+
+
+
+63648556092475683121 - Request: SERVICE: ArenaService 
+POST: http://localhost:58349/api/cities
+Accept: application/json
+{
+  "CityName": "jopa",
+  "CityPopulation": 555
+}
+
+63648556092475683121 - Response: Date: Sun, 10 Dec 2017 23:28:12 GMT
+Transfer-Encoding: chunked
+Location: http://localhost:58349/api/Cities/1023
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNc0JLQu9Cw0LTQuNC80LjRgFxEZXNrdG9wXExSMl9ORVdcQXJlbmFTZXJ2aWNlXEFyZW5hU2VydmljZVxhcGlcY2l0aWVz?=
+X-Powered-By: ASP.NET
+
+Status: Created
+{"id":1023,"cityName":"jopa","cityPopulation":555}
+
+
+
+63648556092788063817 - Request: SERVICE: ArenaService 
+POST: http://localhost:58349/api/arenas
+Accept: application/json
+{
+  "ArenaName": "jopa",
+  "CityID": 1023,
+  "Capacity": 500
+}
+
+63648556092788063817 - Response: Date: Sun, 10 Dec 2017 23:28:12 GMT
+Transfer-Encoding: chunked
+Location: http://localhost:58349/api/Arenas/1032
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNc0JLQu9Cw0LTQuNC80LjRgFxEZXNrdG9wXExSMl9ORVdcQXJlbmFTZXJ2aWNlXEFyZW5hU2VydmljZVxhcGlcYXJlbmFz?=
+X-Powered-By: ASP.NET
+
+Status: Created
+{"id":1032,"arenaName":"jopa","capacity":500,"cityID":1023,"city":null}
+
+
+
+6364855609287462539 - Request: SERVICE: ArtistService 
+POST: http://localhost:61883/api/artists
+Accept: application/json
+{
+  "ArtistName": "jopa",
+  "LastFmRating": 3333
+}
+
+6364855609287462539 - Response: Date: Sun, 10 Dec 2017 23:28:12 GMT
+Transfer-Encoding: chunked
+Location: http://localhost:61883/api/Artists/3019
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNc0JLQu9Cw0LTQuNC80LjRgFxEZXNrdG9wXExSMl9ORVdcQXJ0aXN0U2VydmljZVxDb25jZXJ0ZVNlcnZpY2VcYXBpXGFydGlzdHM=?=
+X-Powered-By: ASP.NET
+
+Status: Created
+{"id":3019,"artistName":"jopa","lastFmRating":3333}
+
+
+
+6364855609514134079 - Request: SERVICE: ArenaService 
+DELETE: http://localhost:58349/api/arenas/1032
+
+
+6364855609514134079 - Response: Date: Sun, 10 Dec 2017 23:28:15 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNc0JLQu9Cw0LTQuNC80LjRgFxEZXNrdG9wXExSMl9ORVdcQXJlbmFTZXJ2aWNlXEFyZW5hU2VydmljZVxhcGlcYXJlbmFzXDEwMzI=?=
+X-Powered-By: ASP.NET
+
+Status: OK
+{"id":1032,"arenaName":"jopa","capacity":500,"cityID":1023,"city":null}
+
+
+
+6364855609530760829 - Request: SERVICE: ArenaService 
+DELETE: http://localhost:58349/api/cities/1023
+
+
+6364855609530760829 - Response: Date: Sun, 10 Dec 2017 23:28:15 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNc0JLQu9Cw0LTQuNC80LjRgFxEZXNrdG9wXExSMl9ORVdcQXJlbmFTZXJ2aWNlXEFyZW5hU2VydmljZVxhcGlcY2l0aWVzXDEwMjM=?=
+X-Powered-By: ASP.NET
+
+Status: OK
+{"id":1023,"cityName":"jopa","cityPopulation":555}
+
+
+
+63648556095353747017 - Request: SERVICE: ArtistService 
+DELETE: http://localhost:61883/api/artists/3019
+
+
+63648556095353747017 - Response: Date: Sun, 10 Dec 2017 23:28:15 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNc0JLQu9Cw0LTQuNC80LjRgFxEZXNrdG9wXExSMl9ORVdcQXJ0aXN0U2VydmljZVxDb25jZXJ0ZVNlcnZpY2VcYXBpXGFydGlzdHNcMzAxOQ==?=
+X-Powered-By: ASP.NET
+
+Status: OK
+{"id":3019,"artistName":"jopa","lastFmRating":3333}
+
+
+
+63648556351014885726 - Request: SERVICE: ArenaService 
+POST: http://localhost:58349/api/cities
+Accept: application/json
+{
+  "CityName": "jopa",
+  "CityPopulation": 500
+}
+
+63648556351014885726 - Response: Date: Sun, 10 Dec 2017 23:32:30 GMT
+Transfer-Encoding: chunked
+Location: http://localhost:58349/api/Cities/1024
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNc0JLQu9Cw0LTQuNC80LjRgFxEZXNrdG9wXExSMl9ORVdcQXJlbmFTZXJ2aWNlXEFyZW5hU2VydmljZVxhcGlcY2l0aWVz?=
+X-Powered-By: ASP.NET
+
+Status: Created
+{"id":1024,"cityName":"jopa","cityPopulation":500}
+
+
+
+63648556351304754526 - Request: SERVICE: ArenaService 
+POST: http://localhost:58349/api/arenas
+Accept: application/json
+{
+  "ArenaName": "jopa",
+  "CityID": 1024,
+  "Capacity": 450
+}
+
+63648556351304754526 - Response: Date: Sun, 10 Dec 2017 23:32:30 GMT
+Transfer-Encoding: chunked
+Location: http://localhost:58349/api/Arenas/1033
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNc0JLQu9Cw0LTQuNC80LjRgFxEZXNrdG9wXExSMl9ORVdcQXJlbmFTZXJ2aWNlXEFyZW5hU2VydmljZVxhcGlcYXJlbmFz?=
+X-Powered-By: ASP.NET
+
+Status: Created
+{"id":1033,"arenaName":"jopa","capacity":450,"cityID":1024,"city":null}
+
+
+
+63648556351349254832 - Request: SERVICE: ArtistService 
+POST: http://localhost:61883/api/artists
+Accept: application/json
+{
+  "ArtistName": "jopa",
+  "LastFmRating": 444
+}
+
+63648556351349254832 - Response: Date: Sun, 10 Dec 2017 23:32:30 GMT
+Transfer-Encoding: chunked
+Location: http://localhost:61883/api/Artists/3020
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNc0JLQu9Cw0LTQuNC80LjRgFxEZXNrdG9wXExSMl9ORVdcQXJ0aXN0U2VydmljZVxDb25jZXJ0ZVNlcnZpY2VcYXBpXGFydGlzdHM=?=
+X-Powered-By: ASP.NET
+
+Status: Created
+{"id":3020,"artistName":"jopa","lastFmRating":444}
+
+
+
+6364855635359065569 - Request: SERVICE: ArenaService 
+DELETE: http://localhost:58349/api/arenas/1033
+
+
+6364855635359065569 - Response: Date: Sun, 10 Dec 2017 23:32:33 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNc0JLQu9Cw0LTQuNC80LjRgFxEZXNrdG9wXExSMl9ORVdcQXJlbmFTZXJ2aWNlXEFyZW5hU2VydmljZVxhcGlcYXJlbmFzXDEwMzM=?=
+X-Powered-By: ASP.NET
+
+Status: OK
+{"id":1033,"arenaName":"jopa","capacity":450,"cityID":1024,"city":null}
+
+
+
+6364855635361757439 - Request: SERVICE: ArenaService 
+DELETE: http://localhost:58349/api/cities/1024
+
+
+6364855635361757439 - Response: Date: Sun, 10 Dec 2017 23:32:33 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNc0JLQu9Cw0LTQuNC80LjRgFxEZXNrdG9wXExSMl9ORVdcQXJlbmFTZXJ2aWNlXEFyZW5hU2VydmljZVxhcGlcY2l0aWVzXDEwMjQ=?=
+X-Powered-By: ASP.NET
+
+Status: OK
+{"id":1024,"cityName":"jopa","cityPopulation":500}
+
+
+
+6364855635364812609 - Request: SERVICE: ArtistService 
+DELETE: http://localhost:61883/api/artists/3020
+
+
+6364855635364812609 - Response: Date: Sun, 10 Dec 2017 23:32:33 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNc0JLQu9Cw0LTQuNC80LjRgFxEZXNrdG9wXExSMl9ORVdcQXJ0aXN0U2VydmljZVxDb25jZXJ0ZVNlcnZpY2VcYXBpXGFydGlzdHNcMzAyMA==?=
+X-Powered-By: ASP.NET
+
+Status: OK
+{"id":3020,"artistName":"jopa","lastFmRating":444}
+
+
+
+6364855647403681078 - Request: SERVICE: ArenaService 
+POST: http://localhost:58349/api/cities
+Accept: application/json
+{
+  "CityName": "jo",
+  "CityPopulation": 0
+}
+
+6364855647403681078 - Response: Date: Sun, 10 Dec 2017 23:34:34 GMT
+Transfer-Encoding: chunked
+Location: http://localhost:58349/api/Cities/1025
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNc0JLQu9Cw0LTQuNC80LjRgFxEZXNrdG9wXExSMl9ORVdcQXJlbmFTZXJ2aWNlXEFyZW5hU2VydmljZVxhcGlcY2l0aWVz?=
+X-Powered-By: ASP.NET
+
+Status: Created
+{"id":1025,"cityName":"jo","cityPopulation":0}
+
+
+
+63648556474453798816 - Request: SERVICE: ArenaService 
+POST: http://localhost:58349/api/arenas
+Accept: application/json
+{
+  "ArenaName": null,
+  "CityID": 1025,
+  "Capacity": 0
+}
+
+63648556474453798816 - Response: Date: Sun, 10 Dec 2017 23:34:34 GMT
+Transfer-Encoding: chunked
+Location: http://localhost:58349/api/Arenas/1034
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNc0JLQu9Cw0LTQuNC80LjRgFxEZXNrdG9wXExSMl9ORVdcQXJlbmFTZXJ2aWNlXEFyZW5hU2VydmljZVxhcGlcYXJlbmFz?=
+X-Powered-By: ASP.NET
+
+Status: Created
+{"id":1034,"arenaName":null,"capacity":0,"cityID":1025,"city":null}
+
+
+
+63648556474539784511 - Request: SERVICE: ArtistService 
+POST: http://localhost:61883/api/artists
+Accept: application/json
+{
+  "ArtistName": null,
+  "LastFmRating": 0
+}
+
+63648556474539784511 - Response: Date: Sun, 10 Dec 2017 23:34:34 GMT
+Transfer-Encoding: chunked
+Location: http://localhost:61883/api/Artists/3021
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNc0JLQu9Cw0LTQuNC80LjRgFxEZXNrdG9wXExSMl9ORVdcQXJ0aXN0U2VydmljZVxDb25jZXJ0ZVNlcnZpY2VcYXBpXGFydGlzdHM=?=
+X-Powered-By: ASP.NET
+
+Status: Created
+{"id":3021,"artistName":null,"lastFmRating":0}
+
+
+
+6364855647681990798 - Request: SERVICE: ArenaService 
+DELETE: http://localhost:58349/api/arenas/1034
+
+
+6364855647681990798 - Response: Date: Sun, 10 Dec 2017 23:34:36 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNc0JLQu9Cw0LTQuNC80LjRgFxEZXNrdG9wXExSMl9ORVdcQXJlbmFTZXJ2aWNlXEFyZW5hU2VydmljZVxhcGlcYXJlbmFzXDEwMzQ=?=
+X-Powered-By: ASP.NET
+
+Status: OK
+{"id":1034,"arenaName":null,"capacity":0,"cityID":1025,"city":null}
+
+
+
+63648556476963251416 - Request: SERVICE: ArenaService 
+DELETE: http://localhost:58349/api/cities/1025
+
+
+63648556476963251416 - Response: Date: Sun, 10 Dec 2017 23:34:36 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNc0JLQu9Cw0LTQuNC80LjRgFxEZXNrdG9wXExSMl9ORVdcQXJlbmFTZXJ2aWNlXEFyZW5hU2VydmljZVxhcGlcY2l0aWVzXDEwMjU=?=
+X-Powered-By: ASP.NET
+
+Status: OK
+{"id":1025,"cityName":"jo","cityPopulation":0}
+
+
+
+6364855647703443558 - Request: SERVICE: ArtistService 
+DELETE: http://localhost:61883/api/artists/3021
+
+
+6364855647703443558 - Response: Date: Sun, 10 Dec 2017 23:34:36 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNc0JLQu9Cw0LTQuNC80LjRgFxEZXNrdG9wXExSMl9ORVdcQXJ0aXN0U2VydmljZVxDb25jZXJ0ZVNlcnZpY2VcYXBpXGFydGlzdHNcMzAyMQ==?=
+X-Powered-By: ASP.NET
+
+Status: OK
+{"id":3021,"artistName":null,"lastFmRating":0}
+
+
+
+6364855687084057419 - Request: SERVICE: ArenaService 
+POST: http://localhost:58349/api/cities
+Accept: application/json
+{
+  "CityName": "asd",
+  "CityPopulation": 1231
+}
+
+6364855687084057419 - Response: Date: Sun, 10 Dec 2017 23:41:10 GMT
+Transfer-Encoding: chunked
+Location: http://localhost:58349/api/Cities/1026
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNc0JLQu9Cw0LTQuNC80LjRgFxEZXNrdG9wXExSMl9ORVdcQXJlbmFTZXJ2aWNlXEFyZW5hU2VydmljZVxhcGlcY2l0aWVz?=
+X-Powered-By: ASP.NET
+
+Status: Created
+{"id":1026,"cityName":"asd","cityPopulation":1231}
+
+
+
+6364855687104676879 - Request: SERVICE: ArenaService 
+POST: http://localhost:58349/api/arenas
+Accept: application/json
+{
+  "ArenaName": "asd",
+  "CityID": 1026,
+  "Capacity": 125
+}
+
+6364855687104676879 - Response: Date: Sun, 10 Dec 2017 23:41:10 GMT
+Transfer-Encoding: chunked
+Location: http://localhost:58349/api/Arenas/1035
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNc0JLQu9Cw0LTQuNC80LjRgFxEZXNrdG9wXExSMl9ORVdcQXJlbmFTZXJ2aWNlXEFyZW5hU2VydmljZVxhcGlcYXJlbmFz?=
+X-Powered-By: ASP.NET
+
+Status: Created
+{"id":1035,"arenaName":"asd","capacity":125,"cityID":1026,"city":null}
+
+
+
+6364855687255971619 - Request: SERVICE: ArtistService 
+POST: http://localhost:61883/api/artists
+Accept: application/json
+{
+  "ArtistName": "asd",
+  "LastFmRating": 124
+}
+
+6364855687255971619 - Response: Date: Sun, 10 Dec 2017 23:41:12 GMT
+Transfer-Encoding: chunked
+Location: http://localhost:61883/api/Artists/3022
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNc0JLQu9Cw0LTQuNC80LjRgFxEZXNrdG9wXExSMl9ORVdcQXJ0aXN0U2VydmljZVxDb25jZXJ0ZVNlcnZpY2VcYXBpXGFydGlzdHM=?=
+X-Powered-By: ASP.NET
+
+Status: Created
+{"id":3022,"artistName":"asd","lastFmRating":124}
+
+
+
+6364855687469125948 - Request: SERVICE: ArenaService 
+DELETE: http://localhost:58349/api/arenas/1035
+
+
+6364855687469125948 - Response: Date: Sun, 10 Dec 2017 23:41:14 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNc0JLQu9Cw0LTQuNC80LjRgFxEZXNrdG9wXExSMl9ORVdcQXJlbmFTZXJ2aWNlXEFyZW5hU2VydmljZVxhcGlcYXJlbmFzXDEwMzU=?=
+X-Powered-By: ASP.NET
+
+Status: OK
+{"id":1035,"arenaName":"asd","capacity":125,"cityID":1026,"city":null}
+
+
+
+6364855687476026729 - Request: SERVICE: ArenaService 
+DELETE: http://localhost:58349/api/cities/1026
+
+
+6364855687476026729 - Response: Date: Sun, 10 Dec 2017 23:41:14 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNc0JLQu9Cw0LTQuNC80LjRgFxEZXNrdG9wXExSMl9ORVdcQXJlbmFTZXJ2aWNlXEFyZW5hU2VydmljZVxhcGlcY2l0aWVzXDEwMjY=?=
+X-Powered-By: ASP.NET
+
+Status: OK
+{"id":1026,"cityName":"asd","cityPopulation":1231}
+
+
+
+6364855687482719038 - Request: SERVICE: ArtistService 
+DELETE: http://localhost:61883/api/artists/3022
+
+
+6364855687482719038 - Response: Date: Sun, 10 Dec 2017 23:41:14 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNc0JLQu9Cw0LTQuNC80LjRgFxEZXNrdG9wXExSMl9ORVdcQXJ0aXN0U2VydmljZVxDb25jZXJ0ZVNlcnZpY2VcYXBpXGFydGlzdHNcMzAyMg==?=
+X-Powered-By: ASP.NET
+
+Status: OK
+{"id":3022,"artistName":"asd","lastFmRating":124}
+
+
+
+6364855722113414998 - Request: SERVICE: ArenaService 
+POST: http://localhost:58349/api/cities
+Accept: application/json
+{
+  "CityName": "asd",
+  "CityPopulation": 666
+}
+
+6364855722113414998 - Response: Date: Sun, 10 Dec 2017 23:47:01 GMT
+Transfer-Encoding: chunked
+Location: http://localhost:58349/api/Cities/1027
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNc0JLQu9Cw0LTQuNC80LjRgFxEZXNrdG9wXExSMl9ORVdcQXJlbmFTZXJ2aWNlXEFyZW5hU2VydmljZVxhcGlcY2l0aWVz?=
+X-Powered-By: ASP.NET
+
+Status: Created
+{"id":1027,"cityName":"asd","cityPopulation":666}
+
+
+
+63648557221315560311 - Request: SERVICE: ArenaService 
+POST: http://localhost:58349/api/arenas
+Accept: application/json
+{
+  "ArenaName": "asd",
+  "CityID": 1027,
+  "Capacity": 600
+}
+
+63648557221315560311 - Response: Date: Sun, 10 Dec 2017 23:47:01 GMT
+Transfer-Encoding: chunked
+Location: http://localhost:58349/api/Arenas/1036
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNc0JLQu9Cw0LTQuNC80LjRgFxEZXNrdG9wXExSMl9ORVdcQXJlbmFTZXJ2aWNlXEFyZW5hU2VydmljZVxhcGlcYXJlbmFz?=
+X-Powered-By: ASP.NET
+
+Status: Created
+{"id":1036,"arenaName":"asd","capacity":600,"cityID":1027,"city":null}
+
+
+
+63648557221617277111 - Request: SERVICE: ArtistService 
+POST: http://localhost:61883/api/artists
+Accept: application/json
+{
+  "ArtistName": "asd",
+  "LastFmRating": 223
+}
+
+63648557221617277111 - Response: Date: Sun, 10 Dec 2017 23:47:01 GMT
+Transfer-Encoding: chunked
+Location: http://localhost:61883/api/Artists/3023
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNc0JLQu9Cw0LTQuNC80LjRgFxEZXNrdG9wXExSMl9ORVdcQXJ0aXN0U2VydmljZVxDb25jZXJ0ZVNlcnZpY2VcYXBpXGFydGlzdHM=?=
+X-Powered-By: ASP.NET
+
+Status: Created
+{"id":3023,"artistName":"asd","lastFmRating":223}
+
+
+
+63648557223816957511 - Request: SERVICE: ArenaService 
+DELETE: http://localhost:58349/api/arenas/1036
+
+
+63648557223816957511 - Response: Date: Sun, 10 Dec 2017 23:47:03 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNc0JLQu9Cw0LTQuNC80LjRgFxEZXNrdG9wXExSMl9ORVdcQXJlbmFTZXJ2aWNlXEFyZW5hU2VydmljZVxhcGlcYXJlbmFzXDEwMzY=?=
+X-Powered-By: ASP.NET
+
+Status: OK
+{"id":1036,"arenaName":"asd","capacity":600,"cityID":1027,"city":null}
+
+
+
+6364855722385842608 - Request: SERVICE: ArenaService 
+DELETE: http://localhost:58349/api/cities/1027
+
+
+6364855722385842608 - Response: Date: Sun, 10 Dec 2017 23:47:03 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNc0JLQu9Cw0LTQuNC80LjRgFxEZXNrdG9wXExSMl9ORVdcQXJlbmFTZXJ2aWNlXEFyZW5hU2VydmljZVxhcGlcY2l0aWVzXDEwMjc=?=
+X-Powered-By: ASP.NET
+
+Status: OK
+{"id":1027,"cityName":"asd","cityPopulation":666}
+
+
+
+63648557223889407610 - Request: SERVICE: ArtistService 
+DELETE: http://localhost:61883/api/artists/3023
+
+
+63648557223889407610 - Response: Date: Sun, 10 Dec 2017 23:47:03 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNc0JLQu9Cw0LTQuNC80LjRgFxEZXNrdG9wXExSMl9ORVdcQXJ0aXN0U2VydmljZVxDb25jZXJ0ZVNlcnZpY2VcYXBpXGFydGlzdHNcMzAyMw==?=
+X-Powered-By: ASP.NET
+
+Status: OK
+{"id":3023,"artistName":"asd","lastFmRating":223}
+
+
+
+6364855738749660228 - Request: SERVICE: ArenaService 
+POST: http://localhost:58349/api/cities
+Accept: application/json
+{
+  "CityName": "asd",
+  "CityPopulation": 1555
+}
+
+6364855738749660228 - Response: Date: Sun, 10 Dec 2017 23:49:47 GMT
+Transfer-Encoding: chunked
+Location: http://localhost:58349/api/Cities/1028
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNc0JLQu9Cw0LTQuNC80LjRgFxEZXNrdG9wXExSMl9ORVdcQXJlbmFTZXJ2aWNlXEFyZW5hU2VydmljZVxhcGlcY2l0aWVz?=
+X-Powered-By: ASP.NET
+
+Status: Created
+{"id":1028,"cityName":"asd","cityPopulation":1555}
+
+
+
+6364855738764346479 - Request: SERVICE: ArenaService 
+POST: http://localhost:58349/api/arenas
+Accept: application/json
+{
+  "ArenaName": "asd",
+  "CityID": 1028,
+  "Capacity": 1000
+}
+
+6364855738764346479 - Response: Date: Sun, 10 Dec 2017 23:49:47 GMT
+Transfer-Encoding: chunked
+Location: http://localhost:58349/api/Arenas/1037
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNc0JLQu9Cw0LTQuNC80LjRgFxEZXNrdG9wXExSMl9ORVdcQXJlbmFTZXJ2aWNlXEFyZW5hU2VydmljZVxhcGlcYXJlbmFz?=
+X-Powered-By: ASP.NET
+
+Status: Created
+{"id":1037,"arenaName":"asd","capacity":1000,"cityID":1028,"city":null}
+
+
+
+6364855738769897119 - Request: SERVICE: ArtistService 
+POST: http://localhost:61883/api/artists
+Accept: application/json
+{
+  "ArtistName": "asd",
+  "LastFmRating": 12312
+}
+
+6364855738769897119 - Response: Date: Sun, 10 Dec 2017 23:49:47 GMT
+Transfer-Encoding: chunked
+Location: http://localhost:61883/api/Artists/3024
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNc0JLQu9Cw0LTQuNC80LjRgFxEZXNrdG9wXExSMl9ORVdcQXJ0aXN0U2VydmljZVxDb25jZXJ0ZVNlcnZpY2VcYXBpXGFydGlzdHM=?=
+X-Powered-By: ASP.NET
+
+Status: Created
+{"id":3024,"artistName":"asd","lastFmRating":12312}
+
+
+
+63648557389847419010 - Request: SERVICE: ArenaService 
+DELETE: http://localhost:58349/api/arenas/1037
+
+
+63648557389847419010 - Response: Date: Sun, 10 Dec 2017 23:49:49 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNc0JLQu9Cw0LTQuNC80LjRgFxEZXNrdG9wXExSMl9ORVdcQXJlbmFTZXJ2aWNlXEFyZW5hU2VydmljZVxhcGlcYXJlbmFzXDEwMzc=?=
+X-Powered-By: ASP.NET
+
+Status: OK
+{"id":1037,"arenaName":"asd","capacity":1000,"cityID":1028,"city":null}
+
+
+
+6364855738987900618 - Request: SERVICE: ArenaService 
+DELETE: http://localhost:58349/api/cities/1028
+
+
+6364855738987900618 - Response: Date: Sun, 10 Dec 2017 23:49:49 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNc0JLQu9Cw0LTQuNC80LjRgFxEZXNrdG9wXExSMl9ORVdcQXJlbmFTZXJ2aWNlXEFyZW5hU2VydmljZVxhcGlcY2l0aWVzXDEwMjg=?=
+X-Powered-By: ASP.NET
+
+Status: OK
+{"id":1028,"cityName":"asd","cityPopulation":1555}
+
+
+
+63648557389931159122 - Request: SERVICE: ArtistService 
+DELETE: http://localhost:61883/api/artists/3024
+
+
+63648557389931159122 - Response: Date: Sun, 10 Dec 2017 23:49:49 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNc0JLQu9Cw0LTQuNC80LjRgFxEZXNrdG9wXExSMl9ORVdcQXJ0aXN0U2VydmljZVxDb25jZXJ0ZVNlcnZpY2VcYXBpXGFydGlzdHNcMzAyNA==?=
+X-Powered-By: ASP.NET
+
+Status: OK
+{"id":3024,"artistName":"asd","lastFmRating":12312}
+
+
+
+6364855798023892378 - Request: SERVICE: ArenaService 
+POST: http://localhost:58349/api/cities
+Accept: application/json
+{
+  "CityName": "asd",
+  "CityPopulation": 125
+}
+
+6364855798023892378 - Response: Date: Sun, 10 Dec 2017 23:59:40 GMT
+Transfer-Encoding: chunked
+Location: http://localhost:58349/api/Cities/1029
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNc0JLQu9Cw0LTQuNC80LjRgFxEZXNrdG9wXExSMl9ORVdcQXJlbmFTZXJ2aWNlXEFyZW5hU2VydmljZVxhcGlcY2l0aWVz?=
+X-Powered-By: ASP.NET
+
+Status: Created
+{"id":1029,"cityName":"asd","cityPopulation":125}
+
+
+
+63648557980624078910 - Request: SERVICE: ArenaService 
+POST: http://localhost:58349/api/arenas
+Accept: application/json
+{
+  "ArenaName": "asd",
+  "CityID": 1029,
+  "Capacity": 124
+}
+
+63648557980624078910 - Response: Date: Sun, 10 Dec 2017 23:59:40 GMT
+Transfer-Encoding: chunked
+Location: http://localhost:58349/api/Arenas/1038
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNc0JLQu9Cw0LTQuNC80LjRgFxEZXNrdG9wXExSMl9ORVdcQXJlbmFTZXJ2aWNlXEFyZW5hU2VydmljZVxhcGlcYXJlbmFz?=
+X-Powered-By: ASP.NET
+
+Status: Created
+{"id":1038,"arenaName":"asd","capacity":124,"cityID":1029,"city":null}
+
+
+
+63648557981552243816 - Request: SERVICE: ArtistService 
+POST: http://localhost:61883/api/artists
+Accept: application/json
+{
+  "ArtistName": "asd",
+  "LastFmRating": 123
+}
+
+63648557981552243816 - Response: Date: Sun, 10 Dec 2017 23:59:41 GMT
+Transfer-Encoding: chunked
+Location: http://localhost:61883/api/Artists/3025
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNc0JLQu9Cw0LTQuNC80LjRgFxEZXNrdG9wXExSMl9ORVdcQXJ0aXN0U2VydmljZVxDb25jZXJ0ZVNlcnZpY2VcYXBpXGFydGlzdHM=?=
+X-Powered-By: ASP.NET
+
+Status: Created
+{"id":3025,"artistName":"asd","lastFmRating":123}
+
+
+
+6364855798371314198 - Request: SERVICE: ArenaService 
+DELETE: http://localhost:58349/api/arenas/1038
+
+
+6364855798371314198 - Response: Date: Sun, 10 Dec 2017 23:59:43 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNc0JLQu9Cw0LTQuNC80LjRgFxEZXNrdG9wXExSMl9ORVdcQXJlbmFTZXJ2aWNlXEFyZW5hU2VydmljZVxhcGlcYXJlbmFzXDEwMzg=?=
+X-Powered-By: ASP.NET
+
+Status: OK
+{"id":1038,"arenaName":"asd","capacity":124,"cityID":1029,"city":null}
+
+
+
+6364855798375323338 - Request: SERVICE: ArenaService 
+DELETE: http://localhost:58349/api/cities/1029
+
+
+6364855798375323338 - Response: Date: Sun, 10 Dec 2017 23:59:43 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNc0JLQu9Cw0LTQuNC80LjRgFxEZXNrdG9wXExSMl9ORVdcQXJlbmFTZXJ2aWNlXEFyZW5hU2VydmljZVxhcGlcY2l0aWVzXDEwMjk=?=
+X-Powered-By: ASP.NET
+
+Status: OK
+{"id":1029,"cityName":"asd","cityPopulation":125}
+
+
+
+63648557983792305610 - Request: SERVICE: ArtistService 
+DELETE: http://localhost:61883/api/artists/3025
+
+
+63648557983792305610 - Response: Date: Sun, 10 Dec 2017 23:59:43 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNc0JLQu9Cw0LTQuNC80LjRgFxEZXNrdG9wXExSMl9ORVdcQXJ0aXN0U2VydmljZVxDb25jZXJ0ZVNlcnZpY2VcYXBpXGFydGlzdHNcMzAyNQ==?=
+X-Powered-By: ASP.NET
+
+Status: OK
+{"id":3025,"artistName":"asd","lastFmRating":123}
+
+
+

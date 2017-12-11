@@ -2,6 +2,46 @@
   "version": 3,
   "targets": {
     ".NETCoreApp,Version=v2.0": {
+      "EasyNetQ/2.2.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Logging.TraceSource": "1.0.2",
+          "NETStandard.Library": "1.6.1",
+          "Newtonsoft.Json": "10.0.2",
+          "RabbitMQ.Client": "5.0.1",
+          "System.Diagnostics.Debug": "4.3.0",
+          "System.Diagnostics.Tools": "4.3.0",
+          "System.Dynamic.Runtime": "4.3.0",
+          "System.Globalization": "4.3.0",
+          "System.IO": "4.3.0",
+          "System.IO.Compression": "4.3.0",
+          "System.IO.FileSystem": "4.3.0",
+          "System.IO.FileSystem.Primitives": "4.3.0",
+          "System.Linq.Expressions": "4.3.0",
+          "System.ObjectModel": "4.3.0",
+          "System.Reflection": "4.3.0",
+          "System.Reflection.Emit": "4.3.0",
+          "System.Reflection.Emit.ILGeneration": "4.3.0",
+          "System.Reflection.Emit.Lightweight": "4.3.0",
+          "System.Reflection.Extensions": "4.3.0",
+          "System.Reflection.Primitives": "4.3.0",
+          "System.Reflection.TypeExtensions": "4.3.0",
+          "System.Resources.ResourceManager": "4.3.0",
+          "System.Runtime.Extensions": "4.3.0",
+          "System.Runtime.Handles": "4.3.0",
+          "System.Runtime.InteropServices": "4.3.0",
+          "System.Text.Encoding": "4.3.0",
+          "System.Text.Encoding.Extensions": "4.3.0",
+          "System.Threading.Tasks": "4.3.0",
+          "System.Threading.Timer": "4.3.0"
+        },
+        "compile": {
+          "lib/netstandard1.5/EasyNetQ.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.5/EasyNetQ.dll": {}
+        }
+      },
       "EntityFramework/5.0.0": {
         "type": "package",
         "compile": {
@@ -2905,13 +2945,33 @@
           "lib/netstandard1.3/NuGet.Frameworks.dll": {}
         }
       },
-      "RabbitMQ.Client/3.6.0": {
+      "RabbitMQ.Client/5.0.1": {
         "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.1",
+          "System.Collections.Concurrent": "4.3.0",
+          "System.Console": "4.3.0",
+          "System.Diagnostics.Debug": "4.3.0",
+          "System.Diagnostics.Tracing": "4.3.0",
+          "System.IO": "4.3.0",
+          "System.Linq": "4.3.0",
+          "System.Net.NameResolution": "4.3.0",
+          "System.Net.Security": "4.3.0",
+          "System.Net.Sockets": "4.3.0",
+          "System.Reflection.Extensions": "4.3.0",
+          "System.Reflection.TypeExtensions": "4.3.0",
+          "System.Runtime": "4.3.0",
+          "System.Runtime.Extensions": "4.3.0",
+          "System.Text.RegularExpressions": "4.3.0",
+          "System.Threading": "4.3.0",
+          "System.Threading.Thread": "4.3.0",
+          "System.Threading.Timer": "4.3.0"
+        },
         "compile": {
-          "lib/net45/RabbitMQ.Client.dll": {}
+          "lib/netstandard1.5/RabbitMQ.Client.dll": {}
         },
         "runtime": {
-          "lib/net45/RabbitMQ.Client.dll": {}
+          "lib/netstandard1.5/RabbitMQ.Client.dll": {}
         }
       },
       "Remotion.Linq/2.1.1": {
@@ -5130,10 +5190,31 @@
         "runtime": {
           "lib/netstandard1.3/Microsoft.WindowsAzure.Storage.dll": {}
         }
+      },
+      "RabbitModels/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.0",
+        "compile": {
+          "bin/placeholder/RabbitModels.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/RabbitModels.dll": {}
+        }
       }
     }
   },
   "libraries": {
+    "EasyNetQ/2.2.0": {
+      "sha512": "3rQHnJsbKjxPz+9VL5cu1kyaLY3RZHmA8m4FcFD2cqcqjwjG80vnKD7bOBULFnarXoIITSCupsFIv6pp9AzXFA==",
+      "type": "package",
+      "path": "easynetq/2.2.0",
+      "files": [
+        "easynetq.2.2.0.nupkg.sha512",
+        "easynetq.nuspec",
+        "lib/net451/EasyNetQ.dll",
+        "lib/netstandard1.5/EasyNetQ.dll"
+      ]
+    },
     "EntityFramework/5.0.0": {
       "sha512": "WYfgJWKg/RjwU8pzZkImD9DsV+J1nqDcIGp1S0/bdnElKBmAaUC2nmq/QQAcco32KyQQWnLgJNiDzIOz2xWFbQ==",
       "type": "package",
@@ -6596,7 +6677,7 @@
       ]
     },
     "Microsoft.EntityFrameworkCore.SqlServer/2.0.0": {
-      "sha512": "ivsMGJ4yIZZBzBbqdeceo1ZE5bRqbI/ULfp8rqZB7bDkbGLINtTTrh2xY/oC8NRVrOCDqrMXQ03kQNvvdEB1CA==",
+      "sha512": "mr+S07kAKXsdu9207w1ek4O1/0+y5925kMYy7gCqu15QpvfVXOLdAR0b9RQfBxmtAJPrYx6/KtfvAg70jm5zUA==",
       "type": "package",
       "path": "microsoft.entityframeworkcore.sqlserver/2.0.0",
       "files": [
@@ -8173,17 +8254,16 @@
         "nuget.frameworks.nuspec"
       ]
     },
-    "RabbitMQ.Client/3.6.0": {
-      "sha512": "SERgu0RH68f4MkoefaiOHP8BqRfPCAIYMUSe07VT7PXTKWX+yykDAZfiV7J7pF+6rW7/XxYR1LjsCTJG8rod/g==",
+    "RabbitMQ.Client/5.0.1": {
+      "sha512": "89eFEAr5mV5GG2H3d4WFZEuhKmCR+EUjcphZ4+QLEkHPdo7B9kRH6X5WS0c6bHAY/B48uR0GuubnMTp5jGGmrA==",
       "type": "package",
-      "path": "rabbitmq.client/3.6.0",
+      "path": "rabbitmq.client/5.0.1",
       "files": [
-        "RabbitMQ.Client.nuspec~",
-        "lib/net45/RabbitMQ.Client.dll",
-        "lib/net45/RabbitMQ.Client.xml",
-        "lib/netcore45/RabbitMQ.Client.dll",
-        "lib/netcore45/RabbitMQ.Client.xml",
-        "rabbitmq.client.3.6.0.nupkg.sha512",
+        "lib/net451/RabbitMQ.Client.dll",
+        "lib/net451/RabbitMQ.Client.xml",
+        "lib/netstandard1.5/RabbitMQ.Client.dll",
+        "lib/netstandard1.5/RabbitMQ.Client.xml",
+        "rabbitmq.client.5.0.1.nupkg.sha512",
         "rabbitmq.client.nuspec"
       ]
     },
@@ -13353,15 +13433,22 @@
         "windowsazure.storage.8.1.4.nupkg.sha512",
         "windowsazure.storage.nuspec"
       ]
+    },
+    "RabbitModels/1.0.0": {
+      "type": "project",
+      "path": "../../RabbitModels/RabbitModels.csproj",
+      "msbuildProject": "../../RabbitModels/RabbitModels.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.0": [
+      "EasyNetQ >= 2.2.0",
       "Microsoft.AspNet.WebApi.WebHost >= 5.2.3",
       "Microsoft.AspNetCore.All >= 2.0.0",
       "Microsoft.NETCore.App >= 2.0.0",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 2.0.0",
       "Newtonsoft.Json >= 10.0.3",
+      "RabbitModels >= 1.0.0",
       "RestBus.AspNet >= 0.6.2-rc2",
       "RestBus.RabbitMQ >= 0.6.9",
       "System.Data.Entity.Repository >= 2.0.0.1",
@@ -13369,7 +13456,7 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Natasha\\.nuget\\packages\\": {},
+    "C:\\Users\\Владимир\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
@@ -13378,17 +13465,17 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "C:\\Users\\Natasha\\Desktop\\LR2\\LR2_NEW\\AggregationService\\AggregationService\\AggregationService.csproj",
+      "projectUniqueName": "C:\\Users\\Владимир\\Desktop\\LR2_NEW\\AggregationService\\AggregationService\\AggregationService.csproj",
       "projectName": "AggregationService",
-      "projectPath": "C:\\Users\\Natasha\\Desktop\\LR2\\LR2_NEW\\AggregationService\\AggregationService\\AggregationService.csproj",
-      "packagesPath": "C:\\Users\\Natasha\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Natasha\\Desktop\\LR2\\LR2_NEW\\AggregationService\\AggregationService\\obj\\",
+      "projectPath": "C:\\Users\\Владимир\\Desktop\\LR2_NEW\\AggregationService\\AggregationService\\AggregationService.csproj",
+      "packagesPath": "C:\\Users\\Владимир\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Владимир\\Desktop\\LR2_NEW\\AggregationService\\AggregationService\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Natasha\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Владимир\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -13400,7 +13487,11 @@
       },
       "frameworks": {
         "netcoreapp2.0": {
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\Владимир\\Desktop\\LR2_NEW\\RabbitModels\\RabbitModels.csproj": {
+              "projectPath": "C:\\Users\\Владимир\\Desktop\\LR2_NEW\\RabbitModels\\RabbitModels.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -13412,6 +13503,10 @@
     "frameworks": {
       "netcoreapp2.0": {
         "dependencies": {
+          "EasyNetQ": {
+            "target": "Package",
+            "version": "2.2.0"
+          },
           "System.Data.Entity.Repository": {
             "target": "Package",
             "version": "2.0.0.1"
@@ -13463,7 +13558,7 @@
       "code": "NU1701",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Пакет \"EntityFramework 5.0.0\" был восстановлен с помощью \".NETFramework,Version=v4.6.1\", а не целевой платформы проекта \".NETCoreApp,Version=v2.0\". Этот пакет может быть не полностью совместим с вашим проектом.",
+      "message": "Package 'EntityFramework 5.0.0' was restored using '.NETFramework,Version=v4.6.1' instead of the project target framework '.NETCoreApp,Version=v2.0'. This package may not be fully compatible with your project.",
       "libraryId": "EntityFramework",
       "targetGraphs": [
         ".NETCoreApp,Version=v2.0"
@@ -13473,7 +13568,7 @@
       "code": "NU1701",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Пакет \"Microsoft.AspNet.WebApi.Client 5.2.3\" был восстановлен с помощью \".NETFramework,Version=v4.6.1\", а не целевой платформы проекта \".NETCoreApp,Version=v2.0\". Этот пакет может быть не полностью совместим с вашим проектом.",
+      "message": "Package 'Microsoft.AspNet.WebApi.Client 5.2.3' was restored using '.NETFramework,Version=v4.6.1' instead of the project target framework '.NETCoreApp,Version=v2.0'. This package may not be fully compatible with your project.",
       "libraryId": "Microsoft.AspNet.WebApi.Client",
       "targetGraphs": [
         ".NETCoreApp,Version=v2.0"
@@ -13483,7 +13578,7 @@
       "code": "NU1701",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Пакет \"Microsoft.AspNet.WebApi.Core 5.2.3\" был восстановлен с помощью \".NETFramework,Version=v4.6.1\", а не целевой платформы проекта \".NETCoreApp,Version=v2.0\". Этот пакет может быть не полностью совместим с вашим проектом.",
+      "message": "Package 'Microsoft.AspNet.WebApi.Core 5.2.3' was restored using '.NETFramework,Version=v4.6.1' instead of the project target framework '.NETCoreApp,Version=v2.0'. This package may not be fully compatible with your project.",
       "libraryId": "Microsoft.AspNet.WebApi.Core",
       "targetGraphs": [
         ".NETCoreApp,Version=v2.0"
@@ -13493,7 +13588,7 @@
       "code": "NU1701",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Пакет \"Microsoft.AspNet.WebApi.WebHost 5.2.3\" был восстановлен с помощью \".NETFramework,Version=v4.6.1\", а не целевой платформы проекта \".NETCoreApp,Version=v2.0\". Этот пакет может быть не полностью совместим с вашим проектом.",
+      "message": "Package 'Microsoft.AspNet.WebApi.WebHost 5.2.3' was restored using '.NETFramework,Version=v4.6.1' instead of the project target framework '.NETCoreApp,Version=v2.0'. This package may not be fully compatible with your project.",
       "libraryId": "Microsoft.AspNet.WebApi.WebHost",
       "targetGraphs": [
         ".NETCoreApp,Version=v2.0"
@@ -13503,17 +13598,7 @@
       "code": "NU1701",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Пакет \"RabbitMQ.Client 3.6.0\" был восстановлен с помощью \".NETFramework,Version=v4.6.1\", а не целевой платформы проекта \".NETCoreApp,Version=v2.0\". Этот пакет может быть не полностью совместим с вашим проектом.",
-      "libraryId": "RabbitMQ.Client",
-      "targetGraphs": [
-        ".NETCoreApp,Version=v2.0"
-      ]
-    },
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Пакет \"RestBus.AspNet 0.6.2-rc2\" был восстановлен с помощью \".NETFramework,Version=v4.6.1\", а не целевой платформы проекта \".NETCoreApp,Version=v2.0\". Этот пакет может быть не полностью совместим с вашим проектом.",
+      "message": "Package 'RestBus.AspNet 0.6.2-rc2' was restored using '.NETFramework,Version=v4.6.1' instead of the project target framework '.NETCoreApp,Version=v2.0'. This package may not be fully compatible with your project.",
       "libraryId": "RestBus.AspNet",
       "targetGraphs": [
         ".NETCoreApp,Version=v2.0"
@@ -13523,7 +13608,7 @@
       "code": "NU1701",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Пакет \"RestBus.Client 0.5.2\" был восстановлен с помощью \".NETFramework,Version=v4.6.1\", а не целевой платформы проекта \".NETCoreApp,Version=v2.0\". Этот пакет может быть не полностью совместим с вашим проектом.",
+      "message": "Package 'RestBus.Client 0.5.2' was restored using '.NETFramework,Version=v4.6.1' instead of the project target framework '.NETCoreApp,Version=v2.0'. This package may not be fully compatible with your project.",
       "libraryId": "RestBus.Client",
       "targetGraphs": [
         ".NETCoreApp,Version=v2.0"
@@ -13533,7 +13618,7 @@
       "code": "NU1701",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Пакет \"RestBus.Common 0.6.3\" был восстановлен с помощью \".NETFramework,Version=v4.6.1\", а не целевой платформы проекта \".NETCoreApp,Version=v2.0\". Этот пакет может быть не полностью совместим с вашим проектом.",
+      "message": "Package 'RestBus.Common 0.6.3' was restored using '.NETFramework,Version=v4.6.1' instead of the project target framework '.NETCoreApp,Version=v2.0'. This package may not be fully compatible with your project.",
       "libraryId": "RestBus.Common",
       "targetGraphs": [
         ".NETCoreApp,Version=v2.0"
@@ -13543,7 +13628,7 @@
       "code": "NU1701",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Пакет \"RestBus.RabbitMQ 0.6.9\" был восстановлен с помощью \".NETFramework,Version=v4.6.1\", а не целевой платформы проекта \".NETCoreApp,Version=v2.0\". Этот пакет может быть не полностью совместим с вашим проектом.",
+      "message": "Package 'RestBus.RabbitMQ 0.6.9' was restored using '.NETFramework,Version=v4.6.1' instead of the project target framework '.NETCoreApp,Version=v2.0'. This package may not be fully compatible with your project.",
       "libraryId": "RestBus.RabbitMQ",
       "targetGraphs": [
         ".NETCoreApp,Version=v2.0"
@@ -13553,7 +13638,7 @@
       "code": "NU1701",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Пакет \"System.Data.Entity.Repository 2.0.0.1\" был восстановлен с помощью \".NETFramework,Version=v4.6.1\", а не целевой платформы проекта \".NETCoreApp,Version=v2.0\". Этот пакет может быть не полностью совместим с вашим проектом.",
+      "message": "Package 'System.Data.Entity.Repository 2.0.0.1' was restored using '.NETFramework,Version=v4.6.1' instead of the project target framework '.NETCoreApp,Version=v2.0'. This package may not be fully compatible with your project.",
       "libraryId": "System.Data.Entity.Repository",
       "targetGraphs": [
         ".NETCoreApp,Version=v2.0"
@@ -13563,7 +13648,7 @@
       "code": "NU1701",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Пакет \"System.Net.Http.Formatting.Extension 5.2.3\" был восстановлен с помощью \".NETFramework,Version=v4.6.1\", а не целевой платформы проекта \".NETCoreApp,Version=v2.0\". Этот пакет может быть не полностью совместим с вашим проектом.",
+      "message": "Package 'System.Net.Http.Formatting.Extension 5.2.3' was restored using '.NETFramework,Version=v4.6.1' instead of the project target framework '.NETCoreApp,Version=v2.0'. This package may not be fully compatible with your project.",
       "libraryId": "System.Net.Http.Formatting.Extension",
       "targetGraphs": [
         ".NETCoreApp,Version=v2.0"

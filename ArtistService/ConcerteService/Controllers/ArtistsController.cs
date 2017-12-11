@@ -9,6 +9,10 @@ using ConcerteService.Data;
 using ConcerteService.Models;
 using ReflectionIT.Mvc.Paging;
 using ArtistService.Models.JsonBindings;
+using EasyNetQ;
+using RabbitModels;
+using System.Collections.Concurrent;
+using System.Threading;
 
 namespace ConcerteService.Controllers
 {
@@ -29,8 +33,48 @@ namespace ConcerteService.Controllers
         [HttpGet]
         public IEnumerable<Artist> GetArtists()
         {
+            //var Bus = RabbitHutch.CreateBus("host=localhost");
+            //ConcurrentStack<Artist> artistsCollection = new ConcurrentStack<Artist>();
+
+            //Bus.Receive<RabbitArtist>("artist", msg =>
+            //{
+            //    Artist artist = new Artist() { ArtistName = msg.ArtistName, LastFmRating = msg.LastFmRating };
+            //    artistsCollection.Push(artist);
+            //});
+            //Thread.Sleep(5000);
+
+            //foreach (Artist a in artistsCollection)
+            //{
+            //    _context.Add(a);
+            //}
+            //_context.SaveChanges();
             return _context.Artists;
         }
+
+
+        // GET: api/Artists/Secret
+        [Route("Secret")]
+        [HttpGet]
+        public IEnumerable<Artist> GetArtistsSecret()
+        {
+            var Bus = RabbitHutch.CreateBus("host=localhost");
+            ConcurrentStack<Artist> artistsCollection = new ConcurrentStack<Artist>();
+
+            Bus.Receive<RabbitArtist>("artist", msg =>
+            {
+                Artist artist = new Artist() { ArtistName = msg.ArtistName, LastFmRating = msg.LastFmRating };
+                artistsCollection.Push(artist);
+            });
+            Thread.Sleep(5000);
+
+            foreach (Artist a in artistsCollection)
+            {
+                _context.Add(a);
+            }
+            _context.SaveChanges();
+            return _context.Artists;
+        }
+
 
         // GET: api/Artists/page/{id}
         [HttpGet]

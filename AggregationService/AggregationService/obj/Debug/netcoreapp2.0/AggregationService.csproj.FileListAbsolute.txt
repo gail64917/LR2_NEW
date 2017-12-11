@@ -31,3 +31,5 @@ C:\Users\Natasha\Desktop\LR2\LR2_NEW\AggregationService\AggregationService\obj\D
 C:\Users\Natasha\Desktop\LR2\LR2_NEW\AggregationService\AggregationService\obj\Debug\netcoreapp2.0\AggregationService.AssemblyInfo.cs
 C:\Users\Natasha\Desktop\LR2\LR2_NEW\AggregationService\AggregationService\obj\Debug\netcoreapp2.0\AggregationService.dll
 C:\Users\Natasha\Desktop\LR2\LR2_NEW\AggregationService\AggregationService\obj\Debug\netcoreapp2.0\AggregationService.pdb
+C:\Users\Владимир\Desktop\LR2_NEW\AggregationService\AggregationService\bin\Debug\netcoreapp2.0\RabbitModels.dll
+C:\Users\Владимир\Desktop\LR2_NEW\AggregationService\AggregationService\bin\Debug\netcoreapp2.0\RabbitModels.pdb
