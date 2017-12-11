@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.0",
-    "signature": "79dce277db2e28fce5e5a9ce086d296ab25fd13a"
+    "signature": "3bd6e620b61b9f8f6442330a85a6afff709cc4ae"
   },
   "compilationOptions": {
     "defines": [
@@ -28,6 +28,7 @@
           "Microsoft.NETCore.App": "2.0.0",
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "2.0.0",
           "Newtonsoft.Json": "10.0.3",
+          "RestBus.AspNet": "0.6.2-rc2",
           "RestBus.RabbitMQ": "0.6.9",
           "System.Data.Entity.Repository": "2.0.0.1",
           "System.Net.Http.Formatting.Extension": "5.2.3"
@@ -2553,6 +2554,14 @@
         },
         "compile": {
           "lib/netstandard1.0/Remotion.Linq.dll": {}
+        }
+      },
+      "RestBus.AspNet/0.6.2-rc2": {
+        "runtime": {
+          "lib/net452/RestBus.AspNet.dll": {}
+        },
+        "compile": {
+          "lib/net452/RestBus.AspNet.dll": {}
         }
       },
       "RestBus.Client/0.5.2": {
@@ -5591,6 +5600,13 @@
       "sha512": "sha512-IJn0BqkvwEDpP+2qjvci7n4/a9f7DhKESLWb2/uG4xQh3rTkGTBUz69bI4IivCoKkTFAqjXxYDZw2K/npohjsw==",
       "path": "remotion.linq/2.1.1",
       "hashPath": "remotion.linq.2.1.1.nupkg.sha512"
+    },
+    "RestBus.AspNet/0.6.2-rc2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-hXQSq7w3+sq40tZH0cEUzqvypJZzUWE9mj3ASFxki9o1hT1QbLyPUKtvKRGBN95HxWVoPl/uApxAO4jA89ny9w==",
+      "path": "restbus.aspnet/0.6.2-rc2",
+      "hashPath": "restbus.aspnet.0.6.2-rc2.nupkg.sha512"
     },
     "RestBus.Client/0.5.2": {
       "type": "package",
