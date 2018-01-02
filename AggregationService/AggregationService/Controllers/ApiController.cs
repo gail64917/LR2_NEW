@@ -15,6 +15,8 @@ using AggregationService.Models.ArenaService;
 using AggregationService.Models.ArtistService;
 using AggregationService.Models.ModelsForView;
 using Newtonsoft.Json.Linq;
+using RabbitModels;
+using EasyNetQ;
 
 namespace AggregationService.Controllers
 {
@@ -1108,6 +1110,298 @@ namespace AggregationService.Controllers
                 return BadRequest(description);
             }
             return Ok(concerteInfoFull);
+        }
+
+        [Route("AddConcerteDelayed")]
+        [HttpPost]
+        //[ValidateAntiForgeryToken]
+        //public async Task<IActionResult> AddConcerteDelayed([Bind("BrandName, ShowName, TicketsNumber, Price, Date, CityName, CityPopulation, ArenaName, ArenaCapacity, ArtistName, LastFmRating")] ConcerteInfoFull concerteInfoFull)
+        public async Task<IActionResult> AddConcerteDelayed([FromBody] ConcerteInfoFull concerteInfoFull)
+        {
+            //Пихаем все везде
+            Arena arena;
+            Artist artist;
+            Seller seller;
+            City city;
+            Concerte concerte;
+
+            var values = new JObject();
+            string request;
+            string requestMessage;
+            byte[] responseMessage;
+            System.String corrId;
+            HttpClient client;
+            HttpContent content;
+            string requestString;
+            HttpResponseMessage response;
+            string responseString;
+
+            string MethodResult = "";
+
+            //
+            //Пихаем город, возвращается объект - у него берем ID и запихиваем в арену
+            //
+            try
+            {
+
+                values.Add("CityName", concerteInfoFull.CityName);
+                values.Add("CityPopulation", concerteInfoFull.CityPopulation);
+                corrId = string.Format("{0}{1}", DateTime.Now.Ticks, Thread.CurrentThread.ManagedThreadId);
+
+                requestMessage = values.ToString();
+
+                client = new HttpClient();
+                client.BaseAddress = new Uri(URLArenaService);
+                client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+                content = new StringContent(values.ToString(), Encoding.UTF8, "application/json");
+                requestString = "api/cities";
+                response = await client.PostAsJsonAsync("api/cities", values);
+                if ((int)response.StatusCode == 500)
+                {
+                    string description = "CANNOT ADD CITY (" + concerteInfoFull.CityName + ")";
+                    ResponseMessage message = new ResponseMessage();
+                    message.description = description;
+                    message.message = response;
+                    return BadRequest(description);
+                }
+                request = "SERVICE: ArenaService \r\nPOST: " + URLArenaService + "/" + requestString + "\r\n" + client.DefaultRequestHeaders.ToString();
+                responseString = response.Headers.ToString() + "\nStatus: " + response.StatusCode.ToString();
+                if (response.IsSuccessStatusCode)
+                {
+                    responseMessage = await response.Content.ReadAsByteArrayAsync();
+                    await LogQuery(request, requestMessage, responseString, responseMessage);
+                    var cityContent = await response.Content.ReadAsStringAsync();
+                    city = JsonConvert.DeserializeObject<City>(cityContent);
+                }
+                else
+                {
+                    responseMessage = Encoding.UTF8.GetBytes(response.ReasonPhrase);
+                    await LogQuery(request, requestMessage, responseString, responseMessage);
+                    string description = "Cannot Add City";
+                    ResponseMessage message = new ResponseMessage();
+                    message.description = description;
+                    message.message = response;
+                    return BadRequest(description);
+                }
+
+                //
+                //
+                //В арену
+                //
+                //
+                //СЕРИАЛИЗУЕМ arena и посылаем на ArenaService
+                values = new JObject();
+                values.Add("ArenaName", concerteInfoFull.ArenaName);
+                values.Add("CityID", city.ID);
+                values.Add("Capacity", concerteInfoFull.ArenaCapacity);
+                corrId = string.Format("{0}{1}", DateTime.Now.Ticks, Thread.CurrentThread.ManagedThreadId);
+                requestMessage = values.ToString();
+                client = new HttpClient();
+                client.BaseAddress = new Uri(URLArenaService);
+                client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+                content = new StringContent(values.ToString(), Encoding.UTF8, "application/json");
+                requestString = "api/arenas";
+                response = await client.PostAsJsonAsync("api/arenas", values);
+                if ((int)response.StatusCode == 500)
+                {
+                    string description = "CANNOT ADD ARENA (" + concerteInfoFull.ArenaName + ")";
+                    ResponseMessage message = new ResponseMessage();
+                    message.description = description;
+                    message.message = response;
+                    return BadRequest(description);
+                }
+                request = "SERVICE: ArenaService \r\nPOST: " + URLArenaService + "/" + requestString + "\r\n" + client.DefaultRequestHeaders.ToString();
+                responseString = response.Headers.ToString() + "\nStatus: " + response.StatusCode.ToString();
+                if (response.IsSuccessStatusCode)
+                {
+                    responseMessage = await response.Content.ReadAsByteArrayAsync();
+                    await LogQuery(request, requestMessage, responseString, responseMessage);
+                    var arenaContent = await response.Content.ReadAsStringAsync();
+                    arena = JsonConvert.DeserializeObject<Arena>(arenaContent);
+                }
+                else
+                {
+                    responseMessage = Encoding.UTF8.GetBytes(response.ReasonPhrase);
+                    await LogQuery(request, requestMessage, responseString, responseMessage);
+                    string description = "Cannot Add Arena";
+                    ResponseMessage message = new ResponseMessage();
+                    message.description = description;
+                    message.message = response;
+                    return BadRequest(description);
+                }
+            }
+            catch
+            {
+                RabbitArenaCity rabbitArenaCity = new RabbitArenaCity() { ArenaCapacity = concerteInfoFull.ArenaCapacity, ArenaName = concerteInfoFull.ArenaName, CityName = concerteInfoFull.CityName, CityPopulation = concerteInfoFull.CityPopulation };
+                var bus = RabbitHutch.CreateBus("host=localhost");
+                bus.Send("arenacity", rabbitArenaCity);
+
+                MethodResult += "Arena Service does not respond. We will save all later\r\n";
+            }
+
+
+            //
+            //
+            //В артиста
+            //
+            //
+            try
+            {
+                values = new JObject();
+                values.Add("ArtistName", concerteInfoFull.ArtistName);
+                values.Add("LastFmRating", concerteInfoFull.LastFmRating);
+                corrId = string.Format("{0}{1}", DateTime.Now.Ticks, Thread.CurrentThread.ManagedThreadId);
+                requestMessage = values.ToString();
+                client = new HttpClient();
+                client.BaseAddress = new Uri(URLArtistService);
+                client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+                content = new StringContent(values.ToString(), Encoding.UTF8, "application/json");
+                requestString = "api/artists";
+                response = await client.PostAsJsonAsync("api/artists", values);
+                if ((int)response.StatusCode == 500)
+                {
+                    string description = "CANNOT ADD ARTIST. WILL TRY IT LATER(" + concerteInfoFull.ArtistName + ")";
+                    ResponseMessage message = new ResponseMessage();
+                    message.description = description;
+                    message.message = response;
+                    //return View("Error", message);
+                }
+                request = "SERVICE: ArtistService \r\nPOST: " + URLArtistService + "/" + requestString + "\r\n" + client.DefaultRequestHeaders.ToString();
+                responseString = response.Headers.ToString() + "\nStatus: " + response.StatusCode.ToString();
+                if (response.IsSuccessStatusCode)
+                {
+                    responseMessage = await response.Content.ReadAsByteArrayAsync();
+                    await LogQuery(request, requestMessage, responseString, responseMessage);
+                    var artistContent = await response.Content.ReadAsStringAsync();
+                    artist = JsonConvert.DeserializeObject<Artist>(artistContent);
+                }
+                else
+                {
+                    responseMessage = Encoding.UTF8.GetBytes(response.ReasonPhrase);
+                    await LogQuery(request, requestMessage, responseString, responseMessage);
+                    string description = "Cannot Add Artist";
+                    ResponseMessage message = new ResponseMessage();
+                    message.description = description;
+                    message.message = response;
+                    return View("Error", message);
+                }
+            }
+            catch
+            {
+                RabbitArtist rabbitArtist = new RabbitArtist() { ArtistName = concerteInfoFull.ArtistName, LastFmRating = concerteInfoFull.LastFmRating };
+                var bus = RabbitHutch.CreateBus("host=localhost");
+                bus.Send("artist", rabbitArtist);
+
+                MethodResult += "Artist Service does not respond. We will save all later\r\n";
+            }
+
+            //
+            //
+            //В Seller'a
+            //
+            //
+            try
+            {
+
+                values = new JObject();
+                values.Add("brandName", concerteInfoFull.BrandName);
+                corrId = string.Format("{0}{1}", DateTime.Now.Ticks, Thread.CurrentThread.ManagedThreadId);
+                requestMessage = values.ToString();
+                client = new HttpClient();
+                client.BaseAddress = new Uri(URLConcerteService);
+                client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+                content = new StringContent(values.ToString(), Encoding.UTF8, "application/json");
+                requestString = "api/Sellers";
+                response = await client.PostAsJsonAsync("api/Sellers", values);
+                if ((int)response.StatusCode == 500)
+                {
+                    string description = "CANNOT ADD Seller (" + concerteInfoFull.BrandName + ")";
+                    ResponseMessage message = new ResponseMessage();
+                    message.description = description;
+                    message.message = response;
+                    return View("Error", message);
+                }
+                request = "SERVICE: ConcerteService \r\nPOST: " + URLConcerteService + "/" + requestString + "\r\n" + client.DefaultRequestHeaders.ToString();
+                responseString = response.Headers.ToString() + "\nStatus: " + response.StatusCode.ToString();
+                if (response.IsSuccessStatusCode)
+                {
+                    responseMessage = await response.Content.ReadAsByteArrayAsync();
+                    await LogQuery(request, requestMessage, responseString, responseMessage);
+                    var sellerContent = await response.Content.ReadAsStringAsync();
+                    seller = JsonConvert.DeserializeObject<Seller>(sellerContent);
+                }
+                else
+                {
+                    responseMessage = Encoding.UTF8.GetBytes(response.ReasonPhrase);
+                    await LogQuery(request, requestMessage, responseString, responseMessage);
+                    string description = "Cannot Add Seller";
+                    ResponseMessage message = new ResponseMessage();
+                    message.description = description;
+                    message.message = response;
+                    return View("Error", message);
+                }
+
+
+                //
+                //
+                //В Concert
+                //
+                //
+                values = new JObject();
+                values.Add("ShowName", concerteInfoFull.ShowName);
+                values.Add("TicketsNumber", concerteInfoFull.TicketsNumber);
+                values.Add("Price", concerteInfoFull.Price);
+                values.Add("CityName", concerteInfoFull.CityName);
+                values.Add("ArenaName", concerteInfoFull.ArenaName);
+                values.Add("ArtistName", concerteInfoFull.ArtistName);
+                values.Add("Date", concerteInfoFull.Date);
+                values.Add("SellerID", seller.ID);
+                corrId = string.Format("{0}{1}", DateTime.Now.Ticks, Thread.CurrentThread.ManagedThreadId);
+                requestMessage = values.ToString();
+                client = new HttpClient();
+                client.BaseAddress = new Uri(URLConcerteService);
+                client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+                content = new StringContent(values.ToString(), Encoding.UTF8, "application/json");
+                requestString = "api/Concertes";
+                response = await client.PostAsJsonAsync("api/Concertes", values);
+                if ((int)response.StatusCode == 500)
+                {
+                    string description = "CANNOT ADD Concerte (" + concerteInfoFull.BrandName + ")";
+                    ResponseMessage message = new ResponseMessage();
+                    message.description = description;
+                    message.message = response;
+                    return View("Error", message);
+                }
+                request = "SERVICE: ConcerteService \r\nPOST: " + URLConcerteService + "/" + requestString + "\r\n" + client.DefaultRequestHeaders.ToString();
+                responseString = response.Headers.ToString() + "\nStatus: " + response.StatusCode.ToString();
+                if (response.IsSuccessStatusCode)
+                {
+                    responseMessage = await response.Content.ReadAsByteArrayAsync();
+                    await LogQuery(request, requestMessage, responseString, responseMessage);
+                    var concerteContent = await response.Content.ReadAsStringAsync();
+                    concerte = JsonConvert.DeserializeObject<Concerte>(concerteContent);
+                }
+                else
+                {
+                    responseMessage = Encoding.UTF8.GetBytes(response.ReasonPhrase);
+                    await LogQuery(request, requestMessage, responseString, responseMessage);
+                    string description = "Cannot Add Concerte";
+                    ResponseMessage message = new ResponseMessage();
+                    message.description = description;
+                    message.message = response;
+                    return View("Error", message);
+                }
+            }
+            catch
+            {
+                RabbitConcerteSeller concerteseller = new RabbitConcerteSeller() { ArenaName = concerteInfoFull.ArenaName, ArtistName = concerteInfoFull.ArtistName, BrandName = concerteInfoFull.BrandName, CityName = concerteInfoFull.CityName, Date = concerteInfoFull.Date, Price = concerteInfoFull.Price, ShowName = concerteInfoFull.ShowName, TicketsNumber = concerteInfoFull.TicketsNumber };
+                var bus = RabbitHutch.CreateBus("host=localhost");
+                bus.Send("concerteseller", concerteseller);
+
+                MethodResult += "Concerte Service does not respond. We will save all later\r\n";
+            }
+            //return RedirectToAction(nameof(Index), new { id = 1 };
+            return Ok(MethodResult);
         }
     }
 }

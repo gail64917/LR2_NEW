@@ -1,4 +1,4 @@
-﻿@model AggregationService.Models.ConcerteService.ConcerteInfoFull
+﻿@model AggregationService.Models.ModelsForView.ConcerteInfoFullFake
 
 @{
     ViewData["Title"] = "AddConcerteValid";
@@ -10,56 +10,226 @@
 <hr />
 <div class="row">
     <div class="col-md-4">
-        <form asp-action="AddConcerteValid">
+        <form asp-action="AddConcerteValid" onsubmit="handleSubmit(this);return false;">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
                 <label asp-for="BrandName" class="control-label"></label>
-                <input asp-for="BrandName" class="form-control" />
+                <input asp-for="BrandName" class="form-control anyfields seller" />
                 <span asp-validation-for="BrandName" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="ShowName" class="control-label"></label>
-                <input asp-for="ShowName" class="form-control" />
+                <input asp-for="ShowName" class="form-control anyfields" />
                 <span asp-validation-for="ShowName" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="TicketsNumber" class="control-label"></label>
-                <input asp-for="TicketsNumber" class="form-control" />
+                <input asp-for="TicketsNumber" class="form-control anyfields" />
                 <span asp-validation-for="TicketsNumber" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="Price" class="control-label"></label>
-                <input asp-for="Price" class="form-control" />
+                <input asp-for="Price" class="form-control anyfields" />
                 <span asp-validation-for="Price" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="Date" class="control-label"></label>
-                <input asp-for="Date" class="form-control" />
+                <input asp-for="Date" class="form-control anyfields" />
                 <span asp-validation-for="Date" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="CityName" class="control-label"></label>
-                <input asp-for="CityName" class="form-control" />
+                <input asp-for="CityName" class="form-control anyfields city" />
                 <span asp-validation-for="CityName" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="ArenaName" class="control-label"></label>
-                <input asp-for="ArenaName" class="form-control" />
+                <input asp-for="ArenaName" class="form-control anyfields arena" />
                 <span asp-validation-for="ArenaName" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="ArtistName" class="control-label"></label>
-                <input asp-for="ArtistName" class="form-control" />
+                <input asp-for="ArtistName" class="form-control anyfields artist" />
                 <span asp-validation-for="ArtistName" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <input type="submit" value="Create" class="btn btn-default" />
             </div>
         </form>
+
+        <br />
+        <br />
+        <button type="button" class="btn btn-info" onclick="show();">City-ID Info</button>
+        <br />
+        <ul id="list" class="list-group" style="display: none;">
+            @foreach (AggregationService.Models.ArenaService.City c in Model.cities)
+            {
+                @Html.Raw("<li class='list-group-item list-group-item-info'>" + c.CityName + "</li>");
+            }
+        </ul>
+
+        <br />
+        <br />
+        <button type="button" class="btn btn-info" onclick="show2();">BrandName Info</button>
+        <br />
+        <ul id="list2" class="list-group" style="display: none;">
+            @foreach (AggregationService.Models.ConcerteService.Seller c in Model.brandNames)
+            {
+                @Html.Raw("<li class='list-group-item list-group-item-info'>" + c.BrandName + "</li>");
+            }
+        </ul>
+
+        <br />
+        <br />
+        <button type="button" class="btn btn-info" onclick="show3();">Arenas Info</button>
+        <br />
+        <ul id="list3" class="list-group" style="display: none;">
+            @foreach (AggregationService.Models.ArenaService.Arena c in Model.arenas)
+            {
+                @Html.Raw("<li class='list-group-item list-group-item-info'>" + c.ArenaName + "</li>");
+            }
+        </ul>
+
+        <br />
+        <br />
+        <button type="button" class="btn btn-info" onclick="show4();">Artists Info</button>
+        <br />
+        <ul id="list4" class="list-group" style="display: none;">
+            @foreach (AggregationService.Models.ArtistService.Artist c in Model.artists)
+            {
+                @Html.Raw("<li class='list-group-item list-group-item-info'>" + c.ArtistName + "</li>");
+            }
+        </ul>
+        <br />
     </div>
 </div>
 
 <div>
     <a asp-action="Index">Back to List</a>
 </div>
+
+
+<script>
+    function handleSubmit(f) {
+        var toSubmit = true;
+
+        var anyFieldsToCheck = document.getElementsByClassName("anyfields");
+        for (var i = 0; i < anyFieldsToCheck.length; i++) {
+            anyFieldsToCheck[i].style.boxShadow = "";
+            if (anyFieldsToCheck[i].value.length < 1 && anyFieldsToCheck[i].value < 1) {
+                toSubmit = false;
+                anyFieldsToCheck[i].style.boxShadow = "0 0 10px red";
+            }
+        }
+        var cities = getAllowedCities();
+        var sellers = getAllowedSellers();
+        var arenas = getAllowedArenas();
+        var artists = getAllowedArtists();
+        
+
+        var fieldsToCheck = document.getElementsByClassName("city");
+        for (var i = 0; i < fieldsToCheck.length; i++) {
+            fieldsToCheck[i].style.boxShadow = "";
+            if (!isAllowed(fieldsToCheck[i].value, cities)) {
+                toSubmit = false;
+                fieldsToCheck[i].style.boxShadow = "0 0 10px red";
+            }
+        }
+        
+        var fieldsToCheck = document.getElementsByClassName("seller");
+        for (var i = 0; i < fieldsToCheck.length; i++) {
+            fieldsToCheck[i].style.boxShadow = "";
+            if (!isAllowed(fieldsToCheck[i].value, sellers)) {
+                toSubmit = false;
+                fieldsToCheck[i].style.boxShadow = "0 0 10px red";
+            }
+        }
+
+
+        var fieldsToCheck = document.getElementsByClassName("arena");
+        for (var i = 0; i < fieldsToCheck.length; i++) {
+            fieldsToCheck[i].style.boxShadow = "";
+            if (!isAllowed(fieldsToCheck[i].value, arenas)) {
+                toSubmit = false;
+                fieldsToCheck[i].style.boxShadow = "0 0 10px red";
+            }
+        }
+
+
+        var fieldsToCheck = document.getElementsByClassName("artist");
+        for (var i = 0; i < fieldsToCheck.length; i++) {
+            fieldsToCheck[i].style.boxShadow = "";
+            if (!isAllowed(fieldsToCheck[i].value, artists)) {
+                toSubmit = false;
+                fieldsToCheck[i].style.boxShadow = "0 0 10px red";
+            }
+        }
+
+        if (toSubmit) f.submit();
+    }
+
+
+
+    function getAllowedCities() {
+        cities = document.getElementById('list').getElementsByTagName('li');
+        return cities;
+    }
+
+    function getAllowedSellers() {
+        sellers = document.getElementById('list2').getElementsByTagName('li');
+        return sellers;
+    }
+
+    function getAllowedArenas() {
+        arenas = document.getElementById('list3').getElementsByTagName('li');
+        return arenas;
+    }
+
+    function getAllowedArtists() {
+        artists = document.getElementById('list4').getElementsByTagName('li');
+        return artists;
+    }
+
+    function isAllowed(word, arr) {
+        var allowed = false;
+        for (var j = 0; j < arr.length; j++) {
+            if (arr[j].innerHTML == word) {
+                allowed = true;
+            }
+        }
+        return allowed;
+    }
+
+    function show() {
+        var list = document.getElementById("list");
+        if (list.style.display == "none")
+            list.style.display = "inline";
+        else
+            list.style.display = "none";
+    }
+
+    function show2() {
+        var list = document.getElementById("list2");
+        if (list.style.display == "none")
+            list.style.display = "inline";
+        else
+            list.style.display = "none";
+    }
+
+    function show3() {
+        var list = document.getElementById("list3");
+        if (list.style.display == "none")
+            list.style.display = "inline";
+        else
+            list.style.display = "none";
+    }
+
+    function show4() {
+        var list = document.getElementById("list4");
+        if (list.style.display == "none")
+            list.style.display = "inline";
+        else
+            list.style.display = "none";
+    }
+</script>
 

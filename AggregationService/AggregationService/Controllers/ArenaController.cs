@@ -145,7 +145,7 @@ namespace AggregationService.Controllers
         [Route("AddArena")]
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> AddArena([Bind("ArenaName,Capacity,CityID")] Arena arena)
+        public async Task<IActionResult> AddArena([Bind("Login,Password")] Arena arena)
         {
             //СЕРИАЛИЗУЕМ arena и посылаем на ArenaService
             var values = new JObject();

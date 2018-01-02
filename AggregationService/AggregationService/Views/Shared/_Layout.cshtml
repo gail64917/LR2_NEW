@@ -28,14 +28,42 @@
                 </button>
                 <a asp-area="" asp-controller="Default" asp-action="Index" asp-route-id="" class="navbar-brand">AggregationService</a>
             </div>
-            <div class="navbar-collapse collapse">
+            <div id="navbar" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Services<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a asp-area="" asp-controller="Arena" asp-action="Index" asp-route-id="1">Arenas</a></li>
+                            <li><a asp-area="" asp-controller="Artist" asp-action="Index" asp-route-id="1">Artists</a></li>
+                            <li><a asp-area="" asp-controller="Concerte" asp-action="Index" asp-route-id="1">Concerts</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Actions<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a asp-area="" asp-controller="Concerte" asp-action="AddConcerteDelayed" asp-route-id="1">Delayed Creation</a></li>
+                            <li><a asp-area="" asp-controller="Concerte" asp-action="AddConcerteRollBack" asp-route-id="1">Creation with Rollback</a></li>
+                            <li><a asp-area="" asp-controller="Concerte" asp-action="GetWithDegradation" asp-route-id="1">Get With Degradation</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a asp-area="" asp-controller="Default" asp-action="Registration" asp-route-id="1">Registration</a></li>
+                    <li><a asp-area="" asp-controller="Default" asp-action="Authorisation" asp-route-id="1">Authorisation</a></li>   
+                </ul>
+            </div><!--/.nav-collapse -->
+        </div><!--/.container-fluid -->
+
+                @*<ul class="nav navbar-nav">
                     <li><a asp-area="" asp-controller="Arena" asp-action="Index" asp-route-id="1">Arenas</a></li>
                     <li><a asp-area="" asp-controller="Artist" asp-action="Index" asp-route-id="1">Artists</a></li>
                     <li><a asp-area="" asp-controller="Concerte" asp-action="Index" asp-route-id="1">Concerts</a></li>
-                </ul>
-            </div>
-        </div>
+                    <li><a asp-area="" asp-controller="Concerte" asp-action="AddConcerteDelayed" asp-route-id="1">Delayed Creation</a></li>
+                    <li><a asp-area="" asp-controller="Concerte" asp-action="AddConcerteRollBack" asp-route-id="1">Creation with Rollback</a></li>
+                    <li><a asp-area="" asp-controller="Concerte" asp-action="GetWithDegradation" asp-route-id="1">Get With Degradation</a></li>
+                </ul>*@
     </nav>
     <div class="container body-content">
         @RenderBody()
