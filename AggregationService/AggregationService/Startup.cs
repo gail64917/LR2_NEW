@@ -13,10 +13,12 @@ using RestBus.RabbitMQ;
 using RestBus.RabbitMQ.Subscription;
 using RestBus.AspNet;
 using RestBus.AspNet.Server;
+using Owin;
+
 
 namespace AggregationService
 {
-    public class Startup
+    public partial class Startup
     {
         public Startup(IConfiguration configuration)
         {
@@ -28,13 +30,13 @@ namespace AggregationService
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddDataProtection();
             services.AddMvc();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {
-
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
@@ -53,6 +55,24 @@ namespace AggregationService
                     name: "Default",
                     template: "{controller=Default}/{id=1}");
             });
+
+
+            //есть: app ~ IApplicationBuilder
+            //нужно: app ~ IAppBuilder
+
+
+            //ConfigureAuth((IAppBuilder)app);
+            app.UseAppBuilder(x =>
+            {
+                x.SetDataProtectionProvider(app);
+                ConfigureAuth(x);
+                
+            });
+
+
+
+
+
 
             //var amqpUrl = "amqp://localhost:5672"; //AMQP URI for RabbitMQ server
             //var serviceName = "Aggregation"; //Uniquely identifies this service

@@ -35,3 +35,4 @@ C:\Users\Владимир\Desktop\LR2_NEW\AggregationService\AggregationService\
 C:\Users\Владимир\Desktop\LR2_NEW\AggregationService\AggregationService\bin\Debug\netcoreapp2.0\RabbitModels.pdb
 C:\Users\Natasha\Desktop\LR2\LR2_NEW\AggregationService\AggregationService\bin\Debug\netcoreapp2.0\RabbitModels.dll
 C:\Users\Natasha\Desktop\LR2\LR2_NEW\AggregationService\AggregationService\bin\Debug\netcoreapp2.0\RabbitModels.pdb
+C:\Users\Natasha\Desktop\LR2\LR2_NEW\AggregationService\AggregationService\obj\Debug\netcoreapp2.0\UserSecretsAssemblyInfo.cs

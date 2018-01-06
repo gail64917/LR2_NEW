@@ -18990,3 +18990,77 @@ Status: OK
 
 
 
+6365053879177509378 - Request: SERVICE: AuthorisationService 
+POST: http://localhost:59917/api/Users/Find
+Accept: application/json
+{
+  "Login": "sad",
+  "Password": "sad"
+}
+
+6365053879177509378 - Response: Date: Tue, 02 Jan 2018 22:13:11 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXGFwaVxVc2Vyc1xGaW5k?=
+X-Powered-By: ASP.NET
+
+Status: OK
+{"id":1005,"login":"sad","password":"16cfe4f2e1519c415b9b11024c0cba52"}
+
+
+
+63650538819162761322 - Request: SERVICE: AuthorisationService 
+POST: http://localhost:59917/api/Users/Find
+Accept: application/json
+{
+  "Login": "bai",
+  "Password": "bia"
+}
+
+63650538819162761322 - Response: Date: Tue, 02 Jan 2018 22:13:39 GMT
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXGFwaVxVc2Vyc1xGaW5k?=
+X-Powered-By: ASP.NET
+
+Status: NoContent
+
+
+
+
+6365053916668891519 - Request: SERVICE: AuthorisationService 
+POST: http://localhost:59917/api/Users/Find
+Accept: application/json
+{
+  "Login": "asd",
+  "Password": "dsaad"
+}
+
+6365053916668891519 - Response: Date: Tue, 02 Jan 2018 22:19:26 GMT
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXGFwaVxVc2Vyc1xGaW5k?=
+X-Powered-By: ASP.NET
+
+Status: NoContent
+
+
+
+
+6365053956075818803 - Request: SERVICE: AuthorisationService 
+POST: http://localhost:59917/api/Users/Find
+Accept: application/json
+{
+  "Login": "sad",
+  "Password": "sad"
+}
+
+6365053956075818803 - Response: Date: Tue, 02 Jan 2018 22:26:00 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXGFwaVxVc2Vyc1xGaW5k?=
+X-Powered-By: ASP.NET
+
+Status: OK
+{"id":1005,"login":"sad","password":"16cfe4f2e1519c415b9b11024c0cba52"}
+
+
+
