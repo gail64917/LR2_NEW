@@ -11,14 +11,9 @@
 
   <ItemGroup>
     <PackageReference Include="EasyNetQ" Version="2.2.0" />
-    <PackageReference Include="Microsoft.AspNet.Identity.Owin" Version="2.2.1" />
-    <PackageReference Include="Microsoft.AspNet.WebApi.Owin" Version="5.2.3" />
     <PackageReference Include="Microsoft.AspNet.WebApi.WebHost" Version="5.2.3" />
     <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.0" />
-    <PackageReference Include="Microsoft.Owin.Host.SystemWeb" Version="3.1.0" />
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.0.0" />
-    <PackageReference Include="Nancy" Version="1.4.4" />
-    <PackageReference Include="Nancy.Owin" Version="1.4.1" />
     <PackageReference Include="Newtonsoft.Json" Version="10.0.3" />
     <PackageReference Include="RestBus.AspNet" Version="0.6.2-rc2" />
     <PackageReference Include="RestBus.RabbitMQ" Version="0.6.9" />

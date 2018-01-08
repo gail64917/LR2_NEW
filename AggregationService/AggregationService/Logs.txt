@@ -19064,3 +19064,281 @@ Status: OK
 
 
 
+6365087923531622438 - Request: SERVICE: AuthorisationService 
+POST: http://localhost:59917/api/Users/Find
+Accept: application/json
+{
+  "Login": "sad",
+  "Password": "sad"
+}
+
+6365087923531622438 - Response: Date: Sat, 06 Jan 2018 20:47:15 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXGFwaVxVc2Vyc1xGaW5k?=
+X-Powered-By: ASP.NET
+
+Status: OK
+{"id":1005,"login":"sad","password":"16cfe4f2e1519c415b9b11024c0cba52"}
+
+
+
+6365087927139553979 - Request: SERVICE: ConcerteService 
+GET: http://localhost:61438/api/Concertes/all?valid=true&page=1
+Accept: application/json
+
+
+6365087927139553979 - Response: Date: Sat, 06 Jan 2018 20:47:50 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXENvbmNlcnRlU2VydmljZVxDb25jZXJ0ZVNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxDb25jZXJ0ZXNcYWxs?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":1,"showName":"Big Show","ticketsNumber":1000,"price":2000,"cityName":"Moscow","arenaName":"Crocus City Hall","artistName":"Marilyn Manson","date":"2015-09-01T00:00:00","sellerID":1,"seller":{"id":1,"brandName":"Big Billet"}},{"id":2,"showName":"Hello, London","ticketsNumber":2000,"price":4000,"cityName":"London","arenaName":"Brixton Academy","artistName":"Marilyn Manson","date":"2015-10-01T00:00:00","sellerID":2,"seller":{"id":2,"brandName":"Afisha"}},{"id":3,"showName":"Hello, Berlin","ticketsNumber":3000,"price":6000,"cityName":"Berlin","arenaName":"Mercedes-Benz Arena","artistName":"Marilyn Manson","date":"2015-11-01T00:00:00","sellerID":2,"seller":{"id":2,"brandName":"Afisha"}},{"id":4,"showName":"BigSHow","ticketsNumber":1000,"price":9000,"cityName":"Moscow","arenaName":"Crocus City Hall","artistName":"Depeche mode","date":"2016-09-01T00:00:00","sellerID":1,"seller":{"id":1,"brandName":"Big Billet"}},{"id":5,"showName":"Hello, Hello","ticketsNumber":2000,"price":11000,"cityName":"London","arenaName":"Brixton Academy","artistName":"Depeche mode","date":"2016-10-01T00:00:00","sellerID":2,"seller":{"id":2,"brandName":"Afisha"}},{"id":6,"showName":"Hello, Berlin","ticketsNumber":3000,"price":1000,"cityName":"Berlin","arenaName":"Mercedes-Benz Arena","artistName":"Depeche mode","date":"2016-11-01T00:00:00","sellerID":2,"seller":{"id":2,"brandName":"Afisha"}},{"id":7,"showName":"BigGiG","ticketsNumber":3000,"price":22000,"cityName":"Moscow","arenaName":"Olimpiyskiy","artistName":"30 Seconds to Mars","date":"2016-02-01T00:00:00","sellerID":1,"seller":{"id":1,"brandName":"Big Billet"}},{"id":8,"showName":"Hello,Good Bye","ticketsNumber":5000,"price":3100,"cityName":"London","arenaName":"Brixton Academy","artistName":"30 Seconds to Mars","date":"2016-03-01T00:00:00","sellerID":2,"seller":{"id":2,"brandName":"Afisha"}},{"id":9,"showName":"Hello, WORLD","ticketsNumber":6000,"price":2400,"cityName":"Berlin","arenaName":"Mercedes-Benz Arena","artistName":"30 Seconds to Mars","date":"2016-04-01T00:00:00","sellerID":2,"seller":{"id":2,"brandName":"Afisha"}},{"id":10,"showName":"VovaSHow","ticketsNumber":1000,"price":2600,"cityName":"Moscow","arenaName":"Vova Arena","artistName":"Frank Sinatra","date":"2017-09-01T00:00:00","sellerID":3,"seller":{"id":3,"brandName":"Ozone"}}]
+
+
+
+6365087927153883489 - Request: SERVICE: ArenaService 
+GET: http://localhost:58349/api/arenas
+Accept: application/json
+
+
+6365087927153883489 - Response: Date: Sat, 06 Jan 2018 20:47:50 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFyZW5hU2VydmljZVxBcmVuYVNlcnZpY2VcYXBpXGFyZW5hcw==?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":1044,"arenaName":null,"capacity":0,"cityID":1017,"city":{"id":1017,"cityName":null,"cityPopulation":0}},{"id":11,"arenaName":"Big Arena","capacity":20000,"cityID":2,"city":{"id":2,"cityName":"Berlin","cityPopulation":3500000}},{"id":20,"arenaName":"Big Ring","capacity":20000,"cityID":5,"city":{"id":5,"cityName":"Washington","cityPopulation":9500000}},{"id":5,"arenaName":"Brixton Academy","capacity":10000,"cityID":3,"city":{"id":3,"cityName":"London","cityPopulation":9000000}},{"id":1,"arenaName":"Crocus City Hall","capacity":8000,"cityID":1,"city":{"id":1,"cityName":"Moscow","cityPopulation":13000000}},{"id":41,"arenaName":"Csdfsdfsdfl","capacity":8000,"cityID":14,"city":{"id":14,"cityName":"asdasdasd","cityPopulation":13000000}},{"id":40,"arenaName":"Great Theatre","capacity":3000,"cityID":13,"city":{"id":13,"cityName":"San Marino","cityPopulation":100000}},{"id":12,"arenaName":"Hell Fire Arena","capacity":10000,"cityID":3,"city":{"id":3,"cityName":"London","cityPopulation":9000000}},{"id":21,"arenaName":"Main Hall","capacity":12000,"cityID":6,"city":{"id":6,"cityName":"Saint Petersburg","cityPopulation":1550000}},{"id":6,"arenaName":"Mercedes-Benz Arena","capacity":6000,"cityID":2,"city":{"id":2,"cityName":"Berlin","cityPopulation":3500000}},{"id":10,"arenaName":"Natasha Arena","capacity":3000,"cityID":1,"city":{"id":1,"cityName":"Moscow","cityPopulation":13000000}},{"id":2,"arenaName":"Olimpiyskiy","capacity":10000,"cityID":1,"city":{"id":1,"cityName":"Moscow","cityPopulation":13000000}},{"id":7,"arenaName":"Olympiastadion Berlin","capacity":9000,"cityID":2,"city":{"id":2,"cityName":"Berlin","cityPopulation":3500000}},{"id":1042,"arenaName":"qqqqqqq","capacity":2000,"cityID":1015,"city":{"id":1015,"cityName":"qqqqq","cityPopulation":123123123}},{"id":8,"arenaName":"Rock am Ring","capacity":15000,"cityID":2,"city":{"id":2,"cityName":"Berlin","cityPopulation":3500000}},{"id":3,"arenaName":"Vegas City Hall","capacity":6000,"cityID":1,"city":{"id":1,"cityName":"Moscow","cityPopulation":13000000}},{"id":17,"arenaName":"Vladimir Arena","capacity":7000,"cityID":2,"city":{"id":2,"cityName":"Berlin","cityPopulation":3500000}},{"id":9,"arenaName":"Vova Arena","capacity":3000,"cityID":1,"city":{"id":1,"cityName":"Moscow","cityPopulation":13000000}},{"id":4,"arenaName":"Wembley Arena","capacity":4000,"cityID":3,"city":{"id":3,"cityName":"London","cityPopulation":9000000}},{"id":42,"arenaName":"zzzzzz","capacity":8000,"cityID":15,"city":{"id":15,"cityName":"zzzzzz","cityPopulation":13000000}}]
+
+
+
+6365087927158270329 - Request: SERVICE: ArenaService 
+GET: http://localhost:61883/api/artists
+Accept: application/json
+
+
+6365087927158270329 - Response: Date: Sat, 06 Jan 2018 20:47:50 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3Rz?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":1,"artistName":"Marilyn Manson","lastFmRating":8},{"id":2,"artistName":"30 Seconds to Mars","lastFmRating":7},{"id":3,"artistName":"Rammstein","lastFmRating":4},{"id":4,"artistName":"The Beatles","lastFmRating":1},{"id":5,"artistName":"Suicide Silence","lastFmRating":14},{"id":6,"artistName":"Depeche mode","lastFmRating":2},{"id":7,"artistName":"Bullet for my valentine","lastFmRating":15},{"id":8,"artistName":"Frank Sinatra","lastFmRating":3},{"id":9,"artistName":"Elvis Presley","lastFmRating":4},{"id":10,"artistName":"Combichrist","lastFmRating":8},{"id":11,"artistName":"Devil sold his soul","lastFmRating":9},{"id":12,"artistName":"Shakira","lastFmRating":11},{"id":14,"artistName":"Linkin Park","lastFmRating":5},{"id":16,"artistName":"Queen","lastFmRating":1},{"id":17,"artistName":"John Lenon and Team","lastFmRating":6},{"id":18,"artistName":"Arctic Monkeys","lastFmRating":22},{"id":21,"artistName":"Lucano Pavorotti","lastFmRating":10},{"id":22,"artistName":"adsfasdfasdfn","lastFmRating":8},{"id":23,"artistName":"zzzzz","lastFmRating":8},{"id":1023,"artistName":"qqqqqqqq","lastFmRating":1123123},{"id":2023,"artistName":null,"lastFmRating":0}]
+
+
+
+6365087966039392458 - Request: SERVICE: AuthorisationService 
+POST: http://localhost:59917/api/Users/Find
+Accept: application/json
+{
+  "Login": "sad",
+  "Password": "sad"
+}
+
+6365087966039392458 - Response: Date: Sat, 06 Jan 2018 20:54:20 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXGFwaVxVc2Vyc1xGaW5k?=
+X-Powered-By: ASP.NET
+
+Status: OK
+{"id":1005,"login":"sad","password":"16cfe4f2e1519c415b9b11024c0cba52"}
+
+
+
+6365087968725488769 - Request: SERVICE: ConcerteService 
+GET: http://localhost:61438/api/Concertes/all?valid=true&page=1
+Accept: application/json
+
+
+6365087968725488769 - Response: Date: Sat, 06 Jan 2018 20:54:46 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXENvbmNlcnRlU2VydmljZVxDb25jZXJ0ZVNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxDb25jZXJ0ZXNcYWxs?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":1,"showName":"Big Show","ticketsNumber":1000,"price":2000,"cityName":"Moscow","arenaName":"Crocus City Hall","artistName":"Marilyn Manson","date":"2015-09-01T00:00:00","sellerID":1,"seller":{"id":1,"brandName":"Big Billet"}},{"id":2,"showName":"Hello, London","ticketsNumber":2000,"price":4000,"cityName":"London","arenaName":"Brixton Academy","artistName":"Marilyn Manson","date":"2015-10-01T00:00:00","sellerID":2,"seller":{"id":2,"brandName":"Afisha"}},{"id":3,"showName":"Hello, Berlin","ticketsNumber":3000,"price":6000,"cityName":"Berlin","arenaName":"Mercedes-Benz Arena","artistName":"Marilyn Manson","date":"2015-11-01T00:00:00","sellerID":2,"seller":{"id":2,"brandName":"Afisha"}},{"id":4,"showName":"BigSHow","ticketsNumber":1000,"price":9000,"cityName":"Moscow","arenaName":"Crocus City Hall","artistName":"Depeche mode","date":"2016-09-01T00:00:00","sellerID":1,"seller":{"id":1,"brandName":"Big Billet"}},{"id":5,"showName":"Hello, Hello","ticketsNumber":2000,"price":11000,"cityName":"London","arenaName":"Brixton Academy","artistName":"Depeche mode","date":"2016-10-01T00:00:00","sellerID":2,"seller":{"id":2,"brandName":"Afisha"}},{"id":6,"showName":"Hello, Berlin","ticketsNumber":3000,"price":1000,"cityName":"Berlin","arenaName":"Mercedes-Benz Arena","artistName":"Depeche mode","date":"2016-11-01T00:00:00","sellerID":2,"seller":{"id":2,"brandName":"Afisha"}},{"id":7,"showName":"BigGiG","ticketsNumber":3000,"price":22000,"cityName":"Moscow","arenaName":"Olimpiyskiy","artistName":"30 Seconds to Mars","date":"2016-02-01T00:00:00","sellerID":1,"seller":{"id":1,"brandName":"Big Billet"}},{"id":8,"showName":"Hello,Good Bye","ticketsNumber":5000,"price":3100,"cityName":"London","arenaName":"Brixton Academy","artistName":"30 Seconds to Mars","date":"2016-03-01T00:00:00","sellerID":2,"seller":{"id":2,"brandName":"Afisha"}},{"id":9,"showName":"Hello, WORLD","ticketsNumber":6000,"price":2400,"cityName":"Berlin","arenaName":"Mercedes-Benz Arena","artistName":"30 Seconds to Mars","date":"2016-04-01T00:00:00","sellerID":2,"seller":{"id":2,"brandName":"Afisha"}},{"id":10,"showName":"VovaSHow","ticketsNumber":1000,"price":2600,"cityName":"Moscow","arenaName":"Vova Arena","artistName":"Frank Sinatra","date":"2017-09-01T00:00:00","sellerID":3,"seller":{"id":3,"brandName":"Ozone"}}]
+
+
+
+63650879687484996619 - Request: SERVICE: ArenaService 
+GET: http://localhost:58349/api/arenas
+Accept: application/json
+
+
+63650879687484996619 - Response: Date: Sat, 06 Jan 2018 20:54:46 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFyZW5hU2VydmljZVxBcmVuYVNlcnZpY2VcYXBpXGFyZW5hcw==?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":1044,"arenaName":null,"capacity":0,"cityID":1017,"city":{"id":1017,"cityName":null,"cityPopulation":0}},{"id":11,"arenaName":"Big Arena","capacity":20000,"cityID":2,"city":{"id":2,"cityName":"Berlin","cityPopulation":3500000}},{"id":20,"arenaName":"Big Ring","capacity":20000,"cityID":5,"city":{"id":5,"cityName":"Washington","cityPopulation":9500000}},{"id":5,"arenaName":"Brixton Academy","capacity":10000,"cityID":3,"city":{"id":3,"cityName":"London","cityPopulation":9000000}},{"id":1,"arenaName":"Crocus City Hall","capacity":8000,"cityID":1,"city":{"id":1,"cityName":"Moscow","cityPopulation":13000000}},{"id":41,"arenaName":"Csdfsdfsdfl","capacity":8000,"cityID":14,"city":{"id":14,"cityName":"asdasdasd","cityPopulation":13000000}},{"id":40,"arenaName":"Great Theatre","capacity":3000,"cityID":13,"city":{"id":13,"cityName":"San Marino","cityPopulation":100000}},{"id":12,"arenaName":"Hell Fire Arena","capacity":10000,"cityID":3,"city":{"id":3,"cityName":"London","cityPopulation":9000000}},{"id":21,"arenaName":"Main Hall","capacity":12000,"cityID":6,"city":{"id":6,"cityName":"Saint Petersburg","cityPopulation":1550000}},{"id":6,"arenaName":"Mercedes-Benz Arena","capacity":6000,"cityID":2,"city":{"id":2,"cityName":"Berlin","cityPopulation":3500000}},{"id":10,"arenaName":"Natasha Arena","capacity":3000,"cityID":1,"city":{"id":1,"cityName":"Moscow","cityPopulation":13000000}},{"id":2,"arenaName":"Olimpiyskiy","capacity":10000,"cityID":1,"city":{"id":1,"cityName":"Moscow","cityPopulation":13000000}},{"id":7,"arenaName":"Olympiastadion Berlin","capacity":9000,"cityID":2,"city":{"id":2,"cityName":"Berlin","cityPopulation":3500000}},{"id":1042,"arenaName":"qqqqqqq","capacity":2000,"cityID":1015,"city":{"id":1015,"cityName":"qqqqq","cityPopulation":123123123}},{"id":8,"arenaName":"Rock am Ring","capacity":15000,"cityID":2,"city":{"id":2,"cityName":"Berlin","cityPopulation":3500000}},{"id":3,"arenaName":"Vegas City Hall","capacity":6000,"cityID":1,"city":{"id":1,"cityName":"Moscow","cityPopulation":13000000}},{"id":17,"arenaName":"Vladimir Arena","capacity":7000,"cityID":2,"city":{"id":2,"cityName":"Berlin","cityPopulation":3500000}},{"id":9,"arenaName":"Vova Arena","capacity":3000,"cityID":1,"city":{"id":1,"cityName":"Moscow","cityPopulation":13000000}},{"id":4,"arenaName":"Wembley Arena","capacity":4000,"cityID":3,"city":{"id":3,"cityName":"London","cityPopulation":9000000}},{"id":42,"arenaName":"zzzzzz","capacity":8000,"cityID":15,"city":{"id":15,"cityName":"zzzzzz","cityPopulation":13000000}}]
+
+
+
+6365087968760589958 - Request: SERVICE: ArenaService 
+GET: http://localhost:61883/api/artists
+Accept: application/json
+
+
+6365087968760589958 - Response: Date: Sat, 06 Jan 2018 20:54:46 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3Rz?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":1,"artistName":"Marilyn Manson","lastFmRating":8},{"id":2,"artistName":"30 Seconds to Mars","lastFmRating":7},{"id":3,"artistName":"Rammstein","lastFmRating":4},{"id":4,"artistName":"The Beatles","lastFmRating":1},{"id":5,"artistName":"Suicide Silence","lastFmRating":14},{"id":6,"artistName":"Depeche mode","lastFmRating":2},{"id":7,"artistName":"Bullet for my valentine","lastFmRating":15},{"id":8,"artistName":"Frank Sinatra","lastFmRating":3},{"id":9,"artistName":"Elvis Presley","lastFmRating":4},{"id":10,"artistName":"Combichrist","lastFmRating":8},{"id":11,"artistName":"Devil sold his soul","lastFmRating":9},{"id":12,"artistName":"Shakira","lastFmRating":11},{"id":14,"artistName":"Linkin Park","lastFmRating":5},{"id":16,"artistName":"Queen","lastFmRating":1},{"id":17,"artistName":"John Lenon and Team","lastFmRating":6},{"id":18,"artistName":"Arctic Monkeys","lastFmRating":22},{"id":21,"artistName":"Lucano Pavorotti","lastFmRating":10},{"id":22,"artistName":"adsfasdfasdfn","lastFmRating":8},{"id":23,"artistName":"zzzzz","lastFmRating":8},{"id":1023,"artistName":"qqqqqqqq","lastFmRating":1123123},{"id":2023,"artistName":null,"lastFmRating":0}]
+
+
+
+6365087975322890278 - Request: SERVICE: ConcerteService 
+GET: http://localhost:61438/api/Concertes/all?valid=true&page=1
+Accept: application/json
+
+
+6365087975322890278 - Response: Date: Sat, 06 Jan 2018 20:55:53 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXENvbmNlcnRlU2VydmljZVxDb25jZXJ0ZVNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxDb25jZXJ0ZXNcYWxs?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":1,"showName":"Big Show","ticketsNumber":1000,"price":2000,"cityName":"Moscow","arenaName":"Crocus City Hall","artistName":"Marilyn Manson","date":"2015-09-01T00:00:00","sellerID":1,"seller":{"id":1,"brandName":"Big Billet"}},{"id":2,"showName":"Hello, London","ticketsNumber":2000,"price":4000,"cityName":"London","arenaName":"Brixton Academy","artistName":"Marilyn Manson","date":"2015-10-01T00:00:00","sellerID":2,"seller":{"id":2,"brandName":"Afisha"}},{"id":3,"showName":"Hello, Berlin","ticketsNumber":3000,"price":6000,"cityName":"Berlin","arenaName":"Mercedes-Benz Arena","artistName":"Marilyn Manson","date":"2015-11-01T00:00:00","sellerID":2,"seller":{"id":2,"brandName":"Afisha"}},{"id":4,"showName":"BigSHow","ticketsNumber":1000,"price":9000,"cityName":"Moscow","arenaName":"Crocus City Hall","artistName":"Depeche mode","date":"2016-09-01T00:00:00","sellerID":1,"seller":{"id":1,"brandName":"Big Billet"}},{"id":5,"showName":"Hello, Hello","ticketsNumber":2000,"price":11000,"cityName":"London","arenaName":"Brixton Academy","artistName":"Depeche mode","date":"2016-10-01T00:00:00","sellerID":2,"seller":{"id":2,"brandName":"Afisha"}},{"id":6,"showName":"Hello, Berlin","ticketsNumber":3000,"price":1000,"cityName":"Berlin","arenaName":"Mercedes-Benz Arena","artistName":"Depeche mode","date":"2016-11-01T00:00:00","sellerID":2,"seller":{"id":2,"brandName":"Afisha"}},{"id":7,"showName":"BigGiG","ticketsNumber":3000,"price":22000,"cityName":"Moscow","arenaName":"Olimpiyskiy","artistName":"30 Seconds to Mars","date":"2016-02-01T00:00:00","sellerID":1,"seller":{"id":1,"brandName":"Big Billet"}},{"id":8,"showName":"Hello,Good Bye","ticketsNumber":5000,"price":3100,"cityName":"London","arenaName":"Brixton Academy","artistName":"30 Seconds to Mars","date":"2016-03-01T00:00:00","sellerID":2,"seller":{"id":2,"brandName":"Afisha"}},{"id":9,"showName":"Hello, WORLD","ticketsNumber":6000,"price":2400,"cityName":"Berlin","arenaName":"Mercedes-Benz Arena","artistName":"30 Seconds to Mars","date":"2016-04-01T00:00:00","sellerID":2,"seller":{"id":2,"brandName":"Afisha"}},{"id":10,"showName":"VovaSHow","ticketsNumber":1000,"price":2600,"cityName":"Moscow","arenaName":"Vova Arena","artistName":"Frank Sinatra","date":"2017-09-01T00:00:00","sellerID":3,"seller":{"id":3,"brandName":"Ozone"}}]
+
+
+
+6365087975387651789 - Request: SERVICE: ArenaService 
+GET: http://localhost:58349/api/arenas
+Accept: application/json
+
+
+6365087975387651789 - Response: Date: Sat, 06 Jan 2018 20:55:53 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFyZW5hU2VydmljZVxBcmVuYVNlcnZpY2VcYXBpXGFyZW5hcw==?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":1044,"arenaName":null,"capacity":0,"cityID":1017,"city":{"id":1017,"cityName":null,"cityPopulation":0}},{"id":11,"arenaName":"Big Arena","capacity":20000,"cityID":2,"city":{"id":2,"cityName":"Berlin","cityPopulation":3500000}},{"id":20,"arenaName":"Big Ring","capacity":20000,"cityID":5,"city":{"id":5,"cityName":"Washington","cityPopulation":9500000}},{"id":5,"arenaName":"Brixton Academy","capacity":10000,"cityID":3,"city":{"id":3,"cityName":"London","cityPopulation":9000000}},{"id":1,"arenaName":"Crocus City Hall","capacity":8000,"cityID":1,"city":{"id":1,"cityName":"Moscow","cityPopulation":13000000}},{"id":41,"arenaName":"Csdfsdfsdfl","capacity":8000,"cityID":14,"city":{"id":14,"cityName":"asdasdasd","cityPopulation":13000000}},{"id":40,"arenaName":"Great Theatre","capacity":3000,"cityID":13,"city":{"id":13,"cityName":"San Marino","cityPopulation":100000}},{"id":12,"arenaName":"Hell Fire Arena","capacity":10000,"cityID":3,"city":{"id":3,"cityName":"London","cityPopulation":9000000}},{"id":21,"arenaName":"Main Hall","capacity":12000,"cityID":6,"city":{"id":6,"cityName":"Saint Petersburg","cityPopulation":1550000}},{"id":6,"arenaName":"Mercedes-Benz Arena","capacity":6000,"cityID":2,"city":{"id":2,"cityName":"Berlin","cityPopulation":3500000}},{"id":10,"arenaName":"Natasha Arena","capacity":3000,"cityID":1,"city":{"id":1,"cityName":"Moscow","cityPopulation":13000000}},{"id":2,"arenaName":"Olimpiyskiy","capacity":10000,"cityID":1,"city":{"id":1,"cityName":"Moscow","cityPopulation":13000000}},{"id":7,"arenaName":"Olympiastadion Berlin","capacity":9000,"cityID":2,"city":{"id":2,"cityName":"Berlin","cityPopulation":3500000}},{"id":1042,"arenaName":"qqqqqqq","capacity":2000,"cityID":1015,"city":{"id":1015,"cityName":"qqqqq","cityPopulation":123123123}},{"id":8,"arenaName":"Rock am Ring","capacity":15000,"cityID":2,"city":{"id":2,"cityName":"Berlin","cityPopulation":3500000}},{"id":3,"arenaName":"Vegas City Hall","capacity":6000,"cityID":1,"city":{"id":1,"cityName":"Moscow","cityPopulation":13000000}},{"id":17,"arenaName":"Vladimir Arena","capacity":7000,"cityID":2,"city":{"id":2,"cityName":"Berlin","cityPopulation":3500000}},{"id":9,"arenaName":"Vova Arena","capacity":3000,"cityID":1,"city":{"id":1,"cityName":"Moscow","cityPopulation":13000000}},{"id":4,"arenaName":"Wembley Arena","capacity":4000,"cityID":3,"city":{"id":3,"cityName":"London","cityPopulation":9000000}},{"id":42,"arenaName":"zzzzzz","capacity":8000,"cityID":15,"city":{"id":15,"cityName":"zzzzzz","cityPopulation":13000000}}]
+
+
+
+63650879753991247218 - Request: SERVICE: ArenaService 
+GET: http://localhost:61883/api/artists
+Accept: application/json
+
+
+63650879753991247218 - Response: Date: Sat, 06 Jan 2018 20:55:53 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3Rz?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":1,"artistName":"Marilyn Manson","lastFmRating":8},{"id":2,"artistName":"30 Seconds to Mars","lastFmRating":7},{"id":3,"artistName":"Rammstein","lastFmRating":4},{"id":4,"artistName":"The Beatles","lastFmRating":1},{"id":5,"artistName":"Suicide Silence","lastFmRating":14},{"id":6,"artistName":"Depeche mode","lastFmRating":2},{"id":7,"artistName":"Bullet for my valentine","lastFmRating":15},{"id":8,"artistName":"Frank Sinatra","lastFmRating":3},{"id":9,"artistName":"Elvis Presley","lastFmRating":4},{"id":10,"artistName":"Combichrist","lastFmRating":8},{"id":11,"artistName":"Devil sold his soul","lastFmRating":9},{"id":12,"artistName":"Shakira","lastFmRating":11},{"id":14,"artistName":"Linkin Park","lastFmRating":5},{"id":16,"artistName":"Queen","lastFmRating":1},{"id":17,"artistName":"John Lenon and Team","lastFmRating":6},{"id":18,"artistName":"Arctic Monkeys","lastFmRating":22},{"id":21,"artistName":"Lucano Pavorotti","lastFmRating":10},{"id":22,"artistName":"adsfasdfasdfn","lastFmRating":8},{"id":23,"artistName":"zzzzz","lastFmRating":8},{"id":1023,"artistName":"qqqqqqqq","lastFmRating":1123123},{"id":2023,"artistName":null,"lastFmRating":0}]
+
+
+
+6365087986432639389 - Request: SERVICE: ConcerteService 
+GET: http://localhost:61438/api/Concertes/all?valid=true&page=1
+Accept: application/json
+
+
+6365087986432639389 - Response: Date: Sat, 06 Jan 2018 20:57:44 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXENvbmNlcnRlU2VydmljZVxDb25jZXJ0ZVNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxDb25jZXJ0ZXNcYWxs?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":1,"showName":"Big Show","ticketsNumber":1000,"price":2000,"cityName":"Moscow","arenaName":"Crocus City Hall","artistName":"Marilyn Manson","date":"2015-09-01T00:00:00","sellerID":1,"seller":{"id":1,"brandName":"Big Billet"}},{"id":2,"showName":"Hello, London","ticketsNumber":2000,"price":4000,"cityName":"London","arenaName":"Brixton Academy","artistName":"Marilyn Manson","date":"2015-10-01T00:00:00","sellerID":2,"seller":{"id":2,"brandName":"Afisha"}},{"id":3,"showName":"Hello, Berlin","ticketsNumber":3000,"price":6000,"cityName":"Berlin","arenaName":"Mercedes-Benz Arena","artistName":"Marilyn Manson","date":"2015-11-01T00:00:00","sellerID":2,"seller":{"id":2,"brandName":"Afisha"}},{"id":4,"showName":"BigSHow","ticketsNumber":1000,"price":9000,"cityName":"Moscow","arenaName":"Crocus City Hall","artistName":"Depeche mode","date":"2016-09-01T00:00:00","sellerID":1,"seller":{"id":1,"brandName":"Big Billet"}},{"id":5,"showName":"Hello, Hello","ticketsNumber":2000,"price":11000,"cityName":"London","arenaName":"Brixton Academy","artistName":"Depeche mode","date":"2016-10-01T00:00:00","sellerID":2,"seller":{"id":2,"brandName":"Afisha"}},{"id":6,"showName":"Hello, Berlin","ticketsNumber":3000,"price":1000,"cityName":"Berlin","arenaName":"Mercedes-Benz Arena","artistName":"Depeche mode","date":"2016-11-01T00:00:00","sellerID":2,"seller":{"id":2,"brandName":"Afisha"}},{"id":7,"showName":"BigGiG","ticketsNumber":3000,"price":22000,"cityName":"Moscow","arenaName":"Olimpiyskiy","artistName":"30 Seconds to Mars","date":"2016-02-01T00:00:00","sellerID":1,"seller":{"id":1,"brandName":"Big Billet"}},{"id":8,"showName":"Hello,Good Bye","ticketsNumber":5000,"price":3100,"cityName":"London","arenaName":"Brixton Academy","artistName":"30 Seconds to Mars","date":"2016-03-01T00:00:00","sellerID":2,"seller":{"id":2,"brandName":"Afisha"}},{"id":9,"showName":"Hello, WORLD","ticketsNumber":6000,"price":2400,"cityName":"Berlin","arenaName":"Mercedes-Benz Arena","artistName":"30 Seconds to Mars","date":"2016-04-01T00:00:00","sellerID":2,"seller":{"id":2,"brandName":"Afisha"}},{"id":10,"showName":"VovaSHow","ticketsNumber":1000,"price":2600,"cityName":"Moscow","arenaName":"Vova Arena","artistName":"Frank Sinatra","date":"2017-09-01T00:00:00","sellerID":3,"seller":{"id":3,"brandName":"Ozone"}}]
+
+
+
+63650879865026302827 - Request: SERVICE: ArenaService 
+GET: http://localhost:58349/api/arenas
+Accept: application/json
+
+
+63650879865026302827 - Response: Date: Sat, 06 Jan 2018 20:57:44 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFyZW5hU2VydmljZVxBcmVuYVNlcnZpY2VcYXBpXGFyZW5hcw==?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":1044,"arenaName":null,"capacity":0,"cityID":1017,"city":{"id":1017,"cityName":null,"cityPopulation":0}},{"id":11,"arenaName":"Big Arena","capacity":20000,"cityID":2,"city":{"id":2,"cityName":"Berlin","cityPopulation":3500000}},{"id":20,"arenaName":"Big Ring","capacity":20000,"cityID":5,"city":{"id":5,"cityName":"Washington","cityPopulation":9500000}},{"id":5,"arenaName":"Brixton Academy","capacity":10000,"cityID":3,"city":{"id":3,"cityName":"London","cityPopulation":9000000}},{"id":1,"arenaName":"Crocus City Hall","capacity":8000,"cityID":1,"city":{"id":1,"cityName":"Moscow","cityPopulation":13000000}},{"id":41,"arenaName":"Csdfsdfsdfl","capacity":8000,"cityID":14,"city":{"id":14,"cityName":"asdasdasd","cityPopulation":13000000}},{"id":40,"arenaName":"Great Theatre","capacity":3000,"cityID":13,"city":{"id":13,"cityName":"San Marino","cityPopulation":100000}},{"id":12,"arenaName":"Hell Fire Arena","capacity":10000,"cityID":3,"city":{"id":3,"cityName":"London","cityPopulation":9000000}},{"id":21,"arenaName":"Main Hall","capacity":12000,"cityID":6,"city":{"id":6,"cityName":"Saint Petersburg","cityPopulation":1550000}},{"id":6,"arenaName":"Mercedes-Benz Arena","capacity":6000,"cityID":2,"city":{"id":2,"cityName":"Berlin","cityPopulation":3500000}},{"id":10,"arenaName":"Natasha Arena","capacity":3000,"cityID":1,"city":{"id":1,"cityName":"Moscow","cityPopulation":13000000}},{"id":2,"arenaName":"Olimpiyskiy","capacity":10000,"cityID":1,"city":{"id":1,"cityName":"Moscow","cityPopulation":13000000}},{"id":7,"arenaName":"Olympiastadion Berlin","capacity":9000,"cityID":2,"city":{"id":2,"cityName":"Berlin","cityPopulation":3500000}},{"id":1042,"arenaName":"qqqqqqq","capacity":2000,"cityID":1015,"city":{"id":1015,"cityName":"qqqqq","cityPopulation":123123123}},{"id":8,"arenaName":"Rock am Ring","capacity":15000,"cityID":2,"city":{"id":2,"cityName":"Berlin","cityPopulation":3500000}},{"id":3,"arenaName":"Vegas City Hall","capacity":6000,"cityID":1,"city":{"id":1,"cityName":"Moscow","cityPopulation":13000000}},{"id":17,"arenaName":"Vladimir Arena","capacity":7000,"cityID":2,"city":{"id":2,"cityName":"Berlin","cityPopulation":3500000}},{"id":9,"arenaName":"Vova Arena","capacity":3000,"cityID":1,"city":{"id":1,"cityName":"Moscow","cityPopulation":13000000}},{"id":4,"arenaName":"Wembley Arena","capacity":4000,"cityID":3,"city":{"id":3,"cityName":"London","cityPopulation":9000000}},{"id":42,"arenaName":"zzzzzz","capacity":8000,"cityID":15,"city":{"id":15,"cityName":"zzzzzz","cityPopulation":13000000}}]
+
+
+
+63650879865119643128 - Request: SERVICE: ArenaService 
+GET: http://localhost:61883/api/artists
+Accept: application/json
+
+
+63650879865119643128 - Response: Date: Sat, 06 Jan 2018 20:57:45 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3Rz?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":1,"artistName":"Marilyn Manson","lastFmRating":8},{"id":2,"artistName":"30 Seconds to Mars","lastFmRating":7},{"id":3,"artistName":"Rammstein","lastFmRating":4},{"id":4,"artistName":"The Beatles","lastFmRating":1},{"id":5,"artistName":"Suicide Silence","lastFmRating":14},{"id":6,"artistName":"Depeche mode","lastFmRating":2},{"id":7,"artistName":"Bullet for my valentine","lastFmRating":15},{"id":8,"artistName":"Frank Sinatra","lastFmRating":3},{"id":9,"artistName":"Elvis Presley","lastFmRating":4},{"id":10,"artistName":"Combichrist","lastFmRating":8},{"id":11,"artistName":"Devil sold his soul","lastFmRating":9},{"id":12,"artistName":"Shakira","lastFmRating":11},{"id":14,"artistName":"Linkin Park","lastFmRating":5},{"id":16,"artistName":"Queen","lastFmRating":1},{"id":17,"artistName":"John Lenon and Team","lastFmRating":6},{"id":18,"artistName":"Arctic Monkeys","lastFmRating":22},{"id":21,"artistName":"Lucano Pavorotti","lastFmRating":10},{"id":22,"artistName":"adsfasdfasdfn","lastFmRating":8},{"id":23,"artistName":"zzzzz","lastFmRating":8},{"id":1023,"artistName":"qqqqqqqq","lastFmRating":1123123},{"id":2023,"artistName":null,"lastFmRating":0}]
+
+
+
+63650879912241669335 - Request: SERVICE: ConcerteService 
+GET: http://localhost:61438/api/Concertes/all?valid=true&page=1
+Accept: application/json
+
+
+63650879912241669335 - Response: Date: Sat, 06 Jan 2018 20:58:32 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXENvbmNlcnRlU2VydmljZVxDb25jZXJ0ZVNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxDb25jZXJ0ZXNcYWxs?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":1,"showName":"Big Show","ticketsNumber":1000,"price":2000,"cityName":"Moscow","arenaName":"Crocus City Hall","artistName":"Marilyn Manson","date":"2015-09-01T00:00:00","sellerID":1,"seller":{"id":1,"brandName":"Big Billet"}},{"id":2,"showName":"Hello, London","ticketsNumber":2000,"price":4000,"cityName":"London","arenaName":"Brixton Academy","artistName":"Marilyn Manson","date":"2015-10-01T00:00:00","sellerID":2,"seller":{"id":2,"brandName":"Afisha"}},{"id":3,"showName":"Hello, Berlin","ticketsNumber":3000,"price":6000,"cityName":"Berlin","arenaName":"Mercedes-Benz Arena","artistName":"Marilyn Manson","date":"2015-11-01T00:00:00","sellerID":2,"seller":{"id":2,"brandName":"Afisha"}},{"id":4,"showName":"BigSHow","ticketsNumber":1000,"price":9000,"cityName":"Moscow","arenaName":"Crocus City Hall","artistName":"Depeche mode","date":"2016-09-01T00:00:00","sellerID":1,"seller":{"id":1,"brandName":"Big Billet"}},{"id":5,"showName":"Hello, Hello","ticketsNumber":2000,"price":11000,"cityName":"London","arenaName":"Brixton Academy","artistName":"Depeche mode","date":"2016-10-01T00:00:00","sellerID":2,"seller":{"id":2,"brandName":"Afisha"}},{"id":6,"showName":"Hello, Berlin","ticketsNumber":3000,"price":1000,"cityName":"Berlin","arenaName":"Mercedes-Benz Arena","artistName":"Depeche mode","date":"2016-11-01T00:00:00","sellerID":2,"seller":{"id":2,"brandName":"Afisha"}},{"id":7,"showName":"BigGiG","ticketsNumber":3000,"price":22000,"cityName":"Moscow","arenaName":"Olimpiyskiy","artistName":"30 Seconds to Mars","date":"2016-02-01T00:00:00","sellerID":1,"seller":{"id":1,"brandName":"Big Billet"}},{"id":8,"showName":"Hello,Good Bye","ticketsNumber":5000,"price":3100,"cityName":"London","arenaName":"Brixton Academy","artistName":"30 Seconds to Mars","date":"2016-03-01T00:00:00","sellerID":2,"seller":{"id":2,"brandName":"Afisha"}},{"id":9,"showName":"Hello, WORLD","ticketsNumber":6000,"price":2400,"cityName":"Berlin","arenaName":"Mercedes-Benz Arena","artistName":"30 Seconds to Mars","date":"2016-04-01T00:00:00","sellerID":2,"seller":{"id":2,"brandName":"Afisha"}},{"id":10,"showName":"VovaSHow","ticketsNumber":1000,"price":2600,"cityName":"Moscow","arenaName":"Vova Arena","artistName":"Frank Sinatra","date":"2017-09-01T00:00:00","sellerID":3,"seller":{"id":3,"brandName":"Ozone"}}]
+
+
+
+6365087991285959258 - Request: SERVICE: ArenaService 
+GET: http://localhost:58349/api/arenas
+Accept: application/json
+
+
+6365087991285959258 - Response: Date: Sat, 06 Jan 2018 20:58:32 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFyZW5hU2VydmljZVxBcmVuYVNlcnZpY2VcYXBpXGFyZW5hcw==?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":1044,"arenaName":null,"capacity":0,"cityID":1017,"city":{"id":1017,"cityName":null,"cityPopulation":0}},{"id":11,"arenaName":"Big Arena","capacity":20000,"cityID":2,"city":{"id":2,"cityName":"Berlin","cityPopulation":3500000}},{"id":20,"arenaName":"Big Ring","capacity":20000,"cityID":5,"city":{"id":5,"cityName":"Washington","cityPopulation":9500000}},{"id":5,"arenaName":"Brixton Academy","capacity":10000,"cityID":3,"city":{"id":3,"cityName":"London","cityPopulation":9000000}},{"id":1,"arenaName":"Crocus City Hall","capacity":8000,"cityID":1,"city":{"id":1,"cityName":"Moscow","cityPopulation":13000000}},{"id":41,"arenaName":"Csdfsdfsdfl","capacity":8000,"cityID":14,"city":{"id":14,"cityName":"asdasdasd","cityPopulation":13000000}},{"id":40,"arenaName":"Great Theatre","capacity":3000,"cityID":13,"city":{"id":13,"cityName":"San Marino","cityPopulation":100000}},{"id":12,"arenaName":"Hell Fire Arena","capacity":10000,"cityID":3,"city":{"id":3,"cityName":"London","cityPopulation":9000000}},{"id":21,"arenaName":"Main Hall","capacity":12000,"cityID":6,"city":{"id":6,"cityName":"Saint Petersburg","cityPopulation":1550000}},{"id":6,"arenaName":"Mercedes-Benz Arena","capacity":6000,"cityID":2,"city":{"id":2,"cityName":"Berlin","cityPopulation":3500000}},{"id":10,"arenaName":"Natasha Arena","capacity":3000,"cityID":1,"city":{"id":1,"cityName":"Moscow","cityPopulation":13000000}},{"id":2,"arenaName":"Olimpiyskiy","capacity":10000,"cityID":1,"city":{"id":1,"cityName":"Moscow","cityPopulation":13000000}},{"id":7,"arenaName":"Olympiastadion Berlin","capacity":9000,"cityID":2,"city":{"id":2,"cityName":"Berlin","cityPopulation":3500000}},{"id":1042,"arenaName":"qqqqqqq","capacity":2000,"cityID":1015,"city":{"id":1015,"cityName":"qqqqq","cityPopulation":123123123}},{"id":8,"arenaName":"Rock am Ring","capacity":15000,"cityID":2,"city":{"id":2,"cityName":"Berlin","cityPopulation":3500000}},{"id":3,"arenaName":"Vegas City Hall","capacity":6000,"cityID":1,"city":{"id":1,"cityName":"Moscow","cityPopulation":13000000}},{"id":17,"arenaName":"Vladimir Arena","capacity":7000,"cityID":2,"city":{"id":2,"cityName":"Berlin","cityPopulation":3500000}},{"id":9,"arenaName":"Vova Arena","capacity":3000,"cityID":1,"city":{"id":1,"cityName":"Moscow","cityPopulation":13000000}},{"id":4,"arenaName":"Wembley Arena","capacity":4000,"cityID":3,"city":{"id":3,"cityName":"London","cityPopulation":9000000}},{"id":42,"arenaName":"zzzzzz","capacity":8000,"cityID":15,"city":{"id":15,"cityName":"zzzzzz","cityPopulation":13000000}}]
+
+
+
+63650879912960673635 - Request: SERVICE: ArenaService 
+GET: http://localhost:61883/api/artists
+Accept: application/json
+
+
+63650879912960673635 - Response: Date: Sat, 06 Jan 2018 20:58:32 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3Rz?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":1,"artistName":"Marilyn Manson","lastFmRating":8},{"id":2,"artistName":"30 Seconds to Mars","lastFmRating":7},{"id":3,"artistName":"Rammstein","lastFmRating":4},{"id":4,"artistName":"The Beatles","lastFmRating":1},{"id":5,"artistName":"Suicide Silence","lastFmRating":14},{"id":6,"artistName":"Depeche mode","lastFmRating":2},{"id":7,"artistName":"Bullet for my valentine","lastFmRating":15},{"id":8,"artistName":"Frank Sinatra","lastFmRating":3},{"id":9,"artistName":"Elvis Presley","lastFmRating":4},{"id":10,"artistName":"Combichrist","lastFmRating":8},{"id":11,"artistName":"Devil sold his soul","lastFmRating":9},{"id":12,"artistName":"Shakira","lastFmRating":11},{"id":14,"artistName":"Linkin Park","lastFmRating":5},{"id":16,"artistName":"Queen","lastFmRating":1},{"id":17,"artistName":"John Lenon and Team","lastFmRating":6},{"id":18,"artistName":"Arctic Monkeys","lastFmRating":22},{"id":21,"artistName":"Lucano Pavorotti","lastFmRating":10},{"id":22,"artistName":"adsfasdfasdfn","lastFmRating":8},{"id":23,"artistName":"zzzzz","lastFmRating":8},{"id":1023,"artistName":"qqqqqqqq","lastFmRating":1123123},{"id":2023,"artistName":null,"lastFmRating":0}]
+
+
+

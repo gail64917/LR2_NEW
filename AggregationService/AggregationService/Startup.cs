@@ -13,8 +13,8 @@ using RestBus.RabbitMQ;
 using RestBus.RabbitMQ.Subscription;
 using RestBus.AspNet;
 using RestBus.AspNet.Server;
-using Owin;
-
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.IdentityModel.Tokens;
 
 namespace AggregationService
 {
@@ -30,7 +30,48 @@ namespace AggregationService
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddDataProtection();
+            services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+                    .AddJwtBearer(options => {
+                        options.TokenValidationParameters =
+                             new TokenValidationParameters
+                             {
+                                 ValidateIssuer = true,
+                                 ValidateAudience = true,
+                                 ValidateLifetime = true,
+                                 ValidateIssuerSigningKey = true,
+
+                                 ValidIssuer = "Test.Security.Bearer",
+                                 ValidAudience = "Test.Security.Bearer",
+                                 IssuerSigningKey =
+                                 Provider.JWT.JwtSecurityKey.Create("Test-secret-key-1234")
+                             };
+
+                        options.Events = new JwtBearerEvents
+                        {
+                            OnAuthenticationFailed = context =>
+                            {
+                                Console.WriteLine("OnAuthenticationFailed: " + context.Exception.Message);
+                                return Task.CompletedTask;
+                            },
+                            OnTokenValidated = context =>
+                            {
+                                Console.WriteLine("OnTokenValidated: " + context.SecurityToken);
+                                return Task.CompletedTask;
+                            }
+                        };
+
+                    });
+
+            services.AddAuthorization(options =>
+            {
+                options.AddPolicy("User",
+                    policy => policy.RequireClaim("User"));
+                //options.AddPolicy("Hr",
+                //    policy => policy.RequireClaim("EmployeeNumber"));
+                //options.AddPolicy("Founder",
+                //    policy => policy.RequireClaim("EmployeeNumber", "1", "2", "3", "4", "5"));
+            });
+
             services.AddMvc();
         }
 
@@ -48,6 +89,8 @@ namespace AggregationService
             }
 
             app.UseStaticFiles();
+            app.UseAuthentication();
+            //app.UseMvcWithDefaultRoute();
 
             app.UseMvc(routes =>
             {
@@ -55,25 +98,7 @@ namespace AggregationService
                     name: "Default",
                     template: "{controller=Default}/{id=1}");
             });
-
-
-            //есть: app ~ IApplicationBuilder
-            //нужно: app ~ IAppBuilder
-
-
-            //ConfigureAuth((IAppBuilder)app);
-            app.UseAppBuilder(x =>
-            {
-                x.SetDataProtectionProvider(app);
-                ConfigureAuth(x);
-                
-            });
-
-
-
-
-
-
+            
             //var amqpUrl = "amqp://localhost:5672"; //AMQP URI for RabbitMQ server
             //var serviceName = "Aggregation"; //Uniquely identifies this service
 

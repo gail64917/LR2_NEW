@@ -17,11 +17,13 @@ using AggregationService.Models.ModelsForView;
 using Newtonsoft.Json.Linq;
 using RabbitModels;
 using EasyNetQ;
+using Microsoft.AspNetCore.Authorization;
 
 namespace AggregationService.Controllers
 {
     [Produces("application/json")]
     [Route("Api")]
+    [Authorize(Policy = "User")]
     public class ApiController : Controller
     {
         private const string URLArtistService = "http://localhost:61883";
