@@ -30,6 +30,12 @@ namespace AggregationService.Controllers
         private const string URLArenaService = "http://localhost:58349";
         private const string URLConcerteService = "http://localhost:61438";
 
+        [Route("test")]
+        public int test()
+        {
+            return 1;
+        }
+
         // GET: api/3
         [HttpGet("{id?}")]
         public async Task<IActionResult> Index([FromRoute] int id = 1)

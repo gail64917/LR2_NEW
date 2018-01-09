@@ -91,7 +91,7 @@ namespace AuthorisationService.Controllers
             {
                 return BadRequest(ModelState);
             }
-            User RealUser = new User { Login = user.Login, Password = Hasher.GetHashString(user.Password) };
+            User RealUser = new User { Login = user.Login, Password = Hasher.GetHashString(user.Password), Role = "User" };
 
             _context.Users.Add(RealUser);
             await _context.SaveChangesAsync();
@@ -118,7 +118,6 @@ namespace AuthorisationService.Controllers
                     RealUser.ID = u.ID;
                     return Ok(RealUser);
                 }
-                    
             }
             return NoContent();
         }

@@ -15,7 +15,7 @@ namespace AggregationService.Provider.JWT
         private string issuer = "";
         private string audience = "";
         private Dictionary<string, string> claims = new Dictionary<string, string>();
-        private int expiryInMinutes = 1;
+        private int expiryInMinutes = 182;
 
         public JwtTokenBuilder AddSecurityKey(SecurityKey securityKey)
         {
@@ -97,6 +97,11 @@ namespace AggregationService.Provider.JWT
 
             if (string.IsNullOrEmpty(this.audience))
                 throw new ArgumentNullException("Audience");
+        }
+
+        internal object AddSubject(object login)
+        {
+            throw new NotImplementedException();
         }
 
         #endregion

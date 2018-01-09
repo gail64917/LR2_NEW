@@ -13,9 +13,11 @@ using System.Text;
 using static AggregationService.Logger.Logger;
 using AggregationService.Models.ModelsForView;
 using Newtonsoft.Json.Linq;
+using Microsoft.AspNetCore.Authorization;
 
 namespace AggregationService.Controllers
 {
+    [Authorize]
     [Route("Artist")]
     public class ArtistController : Controller
     {

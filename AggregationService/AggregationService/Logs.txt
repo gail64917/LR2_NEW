@@ -19342,3 +19342,2136 @@ Status: OK
 
 
 
+6365105695961039528 - Request: SERVICE: AuthorisationService 
+POST: http://localhost:59917/api/Users/Find
+Accept: application/json
+{
+  "Login": "sad",
+  "Password": "sad"
+}
+
+6365105695961039528 - Response: Date: Mon, 08 Jan 2018 22:09:19 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXGFwaVxVc2Vyc1xGaW5k?=
+X-Powered-By: ASP.NET
+
+Status: OK
+{"id":1005,"login":"sad","password":"16cfe4f2e1519c415b9b11024c0cba52"}
+
+
+
+6365105709352986818 - Request: SERVICE: AuthorisationService 
+POST: http://localhost:59917/api/Users/Find
+Accept: application/json
+{
+  "Login": "sad",
+  "Password": "sad"
+}
+
+6365105709352986818 - Response: Date: Mon, 08 Jan 2018 22:11:33 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXGFwaVxVc2Vyc1xGaW5k?=
+X-Powered-By: ASP.NET
+
+Status: OK
+{"id":1005,"login":"sad","password":"16cfe4f2e1519c415b9b11024c0cba52"}
+
+
+
+6365105717660345978 - Request: SERVICE: AuthorisationService 
+POST: http://localhost:59917/api/Users/Find
+Accept: application/json
+{
+  "Login": "sad",
+  "Password": "sad"
+}
+
+6365105717660345978 - Response: Date: Mon, 08 Jan 2018 22:12:56 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXGFwaVxVc2Vyc1xGaW5k?=
+X-Powered-By: ASP.NET
+
+Status: OK
+{"id":1005,"login":"sad","password":"16cfe4f2e1519c415b9b11024c0cba52"}
+
+
+
+63651057280181538310 - Request: SERVICE: AuthorisationService 
+POST: http://localhost:59917/api/Users/Find
+Accept: application/json
+{
+  "Login": "sad",
+  "Password": "sad"
+}
+
+63651057280181538310 - Response: Date: Mon, 08 Jan 2018 22:14:40 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXGFwaVxVc2Vyc1xGaW5k?=
+X-Powered-By: ASP.NET
+
+Status: OK
+{"id":1005,"login":"sad","password":"16cfe4f2e1519c415b9b11024c0cba52"}
+
+
+
+6365105740103361868 - Request: SERVICE: AuthorisationService 
+POST: http://localhost:59917/api/Users/Find
+Accept: application/json
+{
+  "Login": "sad",
+  "Password": "sad"
+}
+
+6365105740103361868 - Response: Date: Mon, 08 Jan 2018 22:16:40 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXGFwaVxVc2Vyc1xGaW5k?=
+X-Powered-By: ASP.NET
+
+Status: OK
+{"id":1005,"login":"sad","password":"16cfe4f2e1519c415b9b11024c0cba52"}
+
+
+
+6365105782454288908 - Request: SERVICE: AuthorisationService 
+POST: http://localhost:59917/api/Users/Find
+Accept: application/json
+{
+  "Login": "sad",
+  "Password": "sad"
+}
+
+6365105782454288908 - Response: Date: Mon, 08 Jan 2018 22:23:44 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXGFwaVxVc2Vyc1xGaW5k?=
+X-Powered-By: ASP.NET
+
+Status: OK
+{"id":1005,"login":"sad","password":"16cfe4f2e1519c415b9b11024c0cba52"}
+
+
+
+6365106215331034518 - Request: SERVICE: AuthorisationService 
+POST: http://localhost:59917/api/Users/Find
+Accept: application/json
+{
+  "Login": "sad",
+  "Password": "sad"
+}
+
+6365106215331034518 - Response: Date: Mon, 08 Jan 2018 23:35:53 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXGFwaVxVc2Vyc1xGaW5k?=
+X-Powered-By: ASP.NET
+
+Status: OK
+{"id":1005,"login":"sad","password":"16cfe4f2e1519c415b9b11024c0cba52"}
+
+
+
+6365106279024494268 - Request: SERVICE: AuthorisationService 
+POST: http://localhost:59917/api/Users/Find
+Accept: application/json
+{
+  "Login": "sad",
+  "Password": "sad"
+}
+
+6365106279024494268 - Response: Date: Mon, 08 Jan 2018 23:46:30 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXGFwaVxVc2Vyc1xGaW5k?=
+X-Powered-By: ASP.NET
+
+Status: OK
+{"id":1005,"login":"sad","password":"16cfe4f2e1519c415b9b11024c0cba52"}
+
+
+
+6365106286935055458 - Request: SERVICE: AuthorisationService 
+POST: http://localhost:59917/api/Users/Find
+Accept: application/json
+{
+  "Login": "sad",
+  "Password": "sad"
+}
+
+6365106286935055458 - Response: Date: Mon, 08 Jan 2018 23:47:49 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXGFwaVxVc2Vyc1xGaW5k?=
+X-Powered-By: ASP.NET
+
+Status: OK
+{"id":1005,"login":"sad","password":"16cfe4f2e1519c415b9b11024c0cba52"}
+
+
+
+6365106293617463048 - Request: SERVICE: AuthorisationService 
+POST: http://localhost:59917/api/Users/Find
+Accept: application/json
+{
+  "Login": "sad",
+  "Password": "sad"
+}
+
+6365106293617463048 - Response: Date: Mon, 08 Jan 2018 23:48:56 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXGFwaVxVc2Vyc1xGaW5k?=
+X-Powered-By: ASP.NET
+
+Status: OK
+{"id":1005,"login":"sad","password":"16cfe4f2e1519c415b9b11024c0cba52"}
+
+
+
+6365106304868028988 - Request: SERVICE: AuthorisationService 
+POST: http://localhost:59917/api/Users/Find
+Accept: application/json
+{
+  "Login": "sad",
+  "Password": "sad"
+}
+
+6365106304868028988 - Response: Date: Mon, 08 Jan 2018 23:50:48 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXGFwaVxVc2Vyc1xGaW5k?=
+X-Powered-By: ASP.NET
+
+Status: OK
+{"id":1005,"login":"sad","password":"16cfe4f2e1519c415b9b11024c0cba52"}
+
+
+
+6365109863045159409 - Request: SERVICE: AuthorisationService 
+POST: http://localhost:59917/api/Users/Find
+Accept: application/json
+{
+  "Login": "sad",
+  "Password": "sad"
+}
+
+6365109863045159409 - Response: Date: Tue, 09 Jan 2018 09:43:50 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXGFwaVxVc2Vyc1xGaW5k?=
+X-Powered-By: ASP.NET
+
+Status: OK
+{"id":1005,"login":"sad","password":"16cfe4f2e1519c415b9b11024c0cba52"}
+
+
+
+6365109895033941578 - Request: SERVICE: AuthorisationService 
+POST: http://localhost:59917/api/Users/Find
+Accept: application/json
+{
+  "Login": "sad",
+  "Password": "sad"
+}
+
+6365109895033941578 - Response: Date: Tue, 09 Jan 2018 09:49:10 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXGFwaVxVc2Vyc1xGaW5k?=
+X-Powered-By: ASP.NET
+
+Status: OK
+{"id":1005,"login":"sad","password":"16cfe4f2e1519c415b9b11024c0cba52"}
+
+
+
+6365109912960811893 - Request: SERVICE: AuthorisationService 
+POST: http://localhost:59917/api/Users/Find
+Accept: application/json
+{
+  "Login": "sad",
+  "Password": "sad"
+}
+
+6365109912960811893 - Response: Date: Tue, 09 Jan 2018 09:52:09 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXGFwaVxVc2Vyc1xGaW5k?=
+X-Powered-By: ASP.NET
+
+Status: OK
+{"id":1005,"login":"sad","password":"16cfe4f2e1519c415b9b11024c0cba52"}
+
+
+
+63651099671367327810 - Request: SERVICE: AuthorisationService 
+POST: http://localhost:59917/api/Users/Find
+Accept: application/json
+{
+  "Login": "sad",
+  "Password": "sad"
+}
+
+63651099671367327810 - Response: Date: Tue, 09 Jan 2018 10:01:11 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXGFwaVxVc2Vyc1xGaW5k?=
+X-Powered-By: ASP.NET
+
+Status: OK
+{"id":1005,"login":"sad","password":"16cfe4f2e1519c415b9b11024c0cba52"}
+
+
+
+6365109975180790528 - Request: SERVICE: AuthorisationService 
+POST: http://localhost:59917/api/Users/Find
+Accept: application/json
+{
+  "Login": "sad",
+  "Password": "sad"
+}
+
+6365109975180790528 - Response: Date: Tue, 09 Jan 2018 10:02:31 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXGFwaVxVc2Vyc1xGaW5k?=
+X-Powered-By: ASP.NET
+
+Status: OK
+{"id":1005,"login":"sad","password":"16cfe4f2e1519c415b9b11024c0cba52"}
+
+
+
+6365109990930065398 - Request: SERVICE: AuthorisationService 
+POST: http://localhost:59917/api/Users/Find
+Accept: application/json
+{
+  "Login": "sad",
+  "Password": "sad"
+}
+
+6365109990930065398 - Response: Date: Tue, 09 Jan 2018 10:05:09 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXGFwaVxVc2Vyc1xGaW5k?=
+X-Powered-By: ASP.NET
+
+Status: OK
+{"id":1005,"login":"sad","password":"16cfe4f2e1519c415b9b11024c0cba52"}
+
+
+
+6365110005778030899 - Request: SERVICE: AuthorisationService 
+POST: http://localhost:59917/api/Users/Find
+Accept: application/json
+{
+  "Login": "sad",
+  "Password": "sad"
+}
+
+6365110005778030899 - Response: Date: Tue, 09 Jan 2018 10:07:37 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXGFwaVxVc2Vyc1xGaW5k?=
+X-Powered-By: ASP.NET
+
+Status: OK
+{"id":1005,"login":"sad","password":"16cfe4f2e1519c415b9b11024c0cba52"}
+
+
+
+6365110050956599689 - Request: SERVICE: AuthorisationService 
+POST: http://localhost:59917/api/Users/Find
+Accept: application/json
+{
+  "Login": "sad",
+  "Password": "sad"
+}
+
+6365110050956599689 - Response: Date: Tue, 09 Jan 2018 10:15:09 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXGFwaVxVc2Vyc1xGaW5k?=
+X-Powered-By: ASP.NET
+
+Status: OK
+{"id":1005,"login":"sad","password":"16cfe4f2e1519c415b9b11024c0cba52"}
+
+
+
+6365110051568471549 - Request: SERVICE: ArtistService 
+GET: http://localhost:61883/api/artists/page/1
+Accept: application/json
+
+
+6365110051568471549 - Response: Date: Tue, 09 Jan 2018 10:15:15 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3RzXHBhZ2VcMQ==?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":2023,"artistName":null,"lastFmRating":0},{"id":2,"artistName":"30 Seconds to Mars","lastFmRating":7},{"id":22,"artistName":"adsfasdfasdfn","lastFmRating":8},{"id":18,"artistName":"Arctic Monkeys","lastFmRating":22},{"id":7,"artistName":"Bullet for my valentine","lastFmRating":15},{"id":10,"artistName":"Combichrist","lastFmRating":8},{"id":6,"artistName":"Depeche mode","lastFmRating":2},{"id":11,"artistName":"Devil sold his soul","lastFmRating":9},{"id":9,"artistName":"Elvis Presley","lastFmRating":4},{"id":8,"artistName":"Frank Sinatra","lastFmRating":3}]
+
+
+
+63651100516523944111 - Request: SERVICE: ArtistService 
+GET: http://localhost:61883/api/artists/page/1
+Accept: application/json
+
+
+63651100516523944111 - Response: Date: Tue, 09 Jan 2018 10:15:15 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3RzXGNvdW50?=
+X-Powered-By: ASP.NET
+
+Status: OK
+21
+
+
+
+6365110051802161339 - Request: SERVICE: ArtistService 
+GET: http://localhost:61883/api/artists/page/1
+Accept: application/json
+
+
+6365110051802161339 - Response: Date: Tue, 09 Jan 2018 10:15:17 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3RzXHBhZ2VcMQ==?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":2023,"artistName":null,"lastFmRating":0},{"id":2,"artistName":"30 Seconds to Mars","lastFmRating":7},{"id":22,"artistName":"adsfasdfasdfn","lastFmRating":8},{"id":18,"artistName":"Arctic Monkeys","lastFmRating":22},{"id":7,"artistName":"Bullet for my valentine","lastFmRating":15},{"id":10,"artistName":"Combichrist","lastFmRating":8},{"id":6,"artistName":"Depeche mode","lastFmRating":2},{"id":11,"artistName":"Devil sold his soul","lastFmRating":9},{"id":9,"artistName":"Elvis Presley","lastFmRating":4},{"id":8,"artistName":"Frank Sinatra","lastFmRating":3}]
+
+
+
+63651100518045433420 - Request: SERVICE: ArtistService 
+GET: http://localhost:61883/api/artists/page/1
+Accept: application/json
+
+
+63651100518045433420 - Response: Date: Tue, 09 Jan 2018 10:15:17 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3RzXGNvdW50?=
+X-Powered-By: ASP.NET
+
+Status: OK
+21
+
+
+
+63651100518249500211 - Request: SERVICE: ArtistService 
+GET: http://localhost:61883/api/artists/page/1
+Accept: application/json
+
+
+63651100518249500211 - Response: Date: Tue, 09 Jan 2018 10:15:17 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3RzXHBhZ2VcMQ==?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":2023,"artistName":null,"lastFmRating":0},{"id":2,"artistName":"30 Seconds to Mars","lastFmRating":7},{"id":22,"artistName":"adsfasdfasdfn","lastFmRating":8},{"id":18,"artistName":"Arctic Monkeys","lastFmRating":22},{"id":7,"artistName":"Bullet for my valentine","lastFmRating":15},{"id":10,"artistName":"Combichrist","lastFmRating":8},{"id":6,"artistName":"Depeche mode","lastFmRating":2},{"id":11,"artistName":"Devil sold his soul","lastFmRating":9},{"id":9,"artistName":"Elvis Presley","lastFmRating":4},{"id":8,"artistName":"Frank Sinatra","lastFmRating":3}]
+
+
+
+63651100518302357720 - Request: SERVICE: ArtistService 
+GET: http://localhost:61883/api/artists/page/1
+Accept: application/json
+
+
+63651100518302357720 - Response: Date: Tue, 09 Jan 2018 10:15:17 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3RzXGNvdW50?=
+X-Powered-By: ASP.NET
+
+Status: OK
+21
+
+
+
+63651100518623599411 - Request: SERVICE: ArtistService 
+GET: http://localhost:61883/api/artists/page/1
+Accept: application/json
+
+
+63651100518623599411 - Response: Date: Tue, 09 Jan 2018 10:15:17 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3RzXHBhZ2VcMQ==?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":2023,"artistName":null,"lastFmRating":0},{"id":2,"artistName":"30 Seconds to Mars","lastFmRating":7},{"id":22,"artistName":"adsfasdfasdfn","lastFmRating":8},{"id":18,"artistName":"Arctic Monkeys","lastFmRating":22},{"id":7,"artistName":"Bullet for my valentine","lastFmRating":15},{"id":10,"artistName":"Combichrist","lastFmRating":8},{"id":6,"artistName":"Depeche mode","lastFmRating":2},{"id":11,"artistName":"Devil sold his soul","lastFmRating":9},{"id":9,"artistName":"Elvis Presley","lastFmRating":4},{"id":8,"artistName":"Frank Sinatra","lastFmRating":3}]
+
+
+
+63651100518839739420 - Request: SERVICE: ArtistService 
+GET: http://localhost:61883/api/artists/page/1
+Accept: application/json
+
+
+63651100518839739420 - Response: Date: Tue, 09 Jan 2018 10:15:17 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3RzXGNvdW50?=
+X-Powered-By: ASP.NET
+
+Status: OK
+21
+
+
+
+63651100519205277811 - Request: SERVICE: ArtistService 
+GET: http://localhost:61883/api/artists/page/1
+Accept: application/json
+
+
+63651100519205277811 - Response: Date: Tue, 09 Jan 2018 10:15:19 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3RzXHBhZ2VcMQ==?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":2023,"artistName":null,"lastFmRating":0},{"id":2,"artistName":"30 Seconds to Mars","lastFmRating":7},{"id":22,"artistName":"adsfasdfasdfn","lastFmRating":8},{"id":18,"artistName":"Arctic Monkeys","lastFmRating":22},{"id":7,"artistName":"Bullet for my valentine","lastFmRating":15},{"id":10,"artistName":"Combichrist","lastFmRating":8},{"id":6,"artistName":"Depeche mode","lastFmRating":2},{"id":11,"artistName":"Devil sold his soul","lastFmRating":9},{"id":9,"artistName":"Elvis Presley","lastFmRating":4},{"id":8,"artistName":"Frank Sinatra","lastFmRating":3}]
+
+
+
+63651100519240317920 - Request: SERVICE: ArtistService 
+GET: http://localhost:61883/api/artists/page/1
+Accept: application/json
+
+
+63651100519240317920 - Response: Date: Tue, 09 Jan 2018 10:15:19 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3RzXGNvdW50?=
+X-Powered-By: ASP.NET
+
+Status: OK
+21
+
+
+
+6365110052299217018 - Request: SERVICE: ArtistService 
+GET: http://localhost:61883/api/artists/page/1
+Accept: application/json
+
+
+6365110052299217018 - Response: Date: Tue, 09 Jan 2018 10:15:22 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3RzXHBhZ2VcMQ==?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":2023,"artistName":null,"lastFmRating":0},{"id":2,"artistName":"30 Seconds to Mars","lastFmRating":7},{"id":22,"artistName":"adsfasdfasdfn","lastFmRating":8},{"id":18,"artistName":"Arctic Monkeys","lastFmRating":22},{"id":7,"artistName":"Bullet for my valentine","lastFmRating":15},{"id":10,"artistName":"Combichrist","lastFmRating":8},{"id":6,"artistName":"Depeche mode","lastFmRating":2},{"id":11,"artistName":"Devil sold his soul","lastFmRating":9},{"id":9,"artistName":"Elvis Presley","lastFmRating":4},{"id":8,"artistName":"Frank Sinatra","lastFmRating":3}]
+
+
+
+63651100523803449325 - Request: SERVICE: ArtistService 
+GET: http://localhost:61883/api/artists/page/1
+Accept: application/json
+
+
+63651100523803449325 - Response: Date: Tue, 09 Jan 2018 10:15:22 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3RzXGNvdW50?=
+X-Powered-By: ASP.NET
+
+Status: OK
+21
+
+
+
+63651100701750153810 - Request: SERVICE: AuthorisationService 
+POST: http://localhost:59917/api/Users/Find
+Accept: application/json
+{
+  "Login": "sad",
+  "Password": "sad"
+}
+
+63651100701750153810 - Response: Date: Tue, 09 Jan 2018 10:18:21 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXGFwaVxVc2Vyc1xGaW5k?=
+X-Powered-By: ASP.NET
+
+Status: OK
+{"id":1005,"login":"sad","password":"16cfe4f2e1519c415b9b11024c0cba52"}
+
+
+
+63651100705188113611 - Request: SERVICE: ArtistService 
+GET: http://localhost:61883/api/artists/page/1
+Accept: application/json
+
+
+63651100705188113611 - Response: Date: Tue, 09 Jan 2018 10:18:25 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3RzXHBhZ2VcMQ==?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":2023,"artistName":null,"lastFmRating":0},{"id":2,"artistName":"30 Seconds to Mars","lastFmRating":7},{"id":22,"artistName":"adsfasdfasdfn","lastFmRating":8},{"id":18,"artistName":"Arctic Monkeys","lastFmRating":22},{"id":7,"artistName":"Bullet for my valentine","lastFmRating":15},{"id":10,"artistName":"Combichrist","lastFmRating":8},{"id":6,"artistName":"Depeche mode","lastFmRating":2},{"id":11,"artistName":"Devil sold his soul","lastFmRating":9},{"id":9,"artistName":"Elvis Presley","lastFmRating":4},{"id":8,"artistName":"Frank Sinatra","lastFmRating":3}]
+
+
+
+63651100706473914720 - Request: SERVICE: ArtistService 
+GET: http://localhost:61883/api/artists/page/1
+Accept: application/json
+
+
+63651100706473914720 - Response: Date: Tue, 09 Jan 2018 10:18:25 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3RzXGNvdW50?=
+X-Powered-By: ASP.NET
+
+Status: OK
+21
+
+
+
+6365110072169478778 - Request: SERVICE: ArtistService 
+GET: http://localhost:61883/api/artists/page/1
+Accept: application/json
+
+
+6365110072169478778 - Response: Date: Tue, 09 Jan 2018 10:18:41 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3RzXHBhZ2VcMQ==?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":2023,"artistName":null,"lastFmRating":0},{"id":2,"artistName":"30 Seconds to Mars","lastFmRating":7},{"id":22,"artistName":"adsfasdfasdfn","lastFmRating":8},{"id":18,"artistName":"Arctic Monkeys","lastFmRating":22},{"id":7,"artistName":"Bullet for my valentine","lastFmRating":15},{"id":10,"artistName":"Combichrist","lastFmRating":8},{"id":6,"artistName":"Depeche mode","lastFmRating":2},{"id":11,"artistName":"Devil sold his soul","lastFmRating":9},{"id":9,"artistName":"Elvis Presley","lastFmRating":4},{"id":8,"artistName":"Frank Sinatra","lastFmRating":3}]
+
+
+
+63651100722455414020 - Request: SERVICE: ArtistService 
+GET: http://localhost:61883/api/artists/page/1
+Accept: application/json
+
+
+63651100722455414020 - Response: Date: Tue, 09 Jan 2018 10:18:41 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3RzXGNvdW50?=
+X-Powered-By: ASP.NET
+
+Status: OK
+21
+
+
+
+63651100724335726810 - Request: SERVICE: ArtistService 
+GET: http://localhost:61883/api/artists/page/1
+Accept: application/json
+
+
+63651100724335726810 - Response: Date: Tue, 09 Jan 2018 10:18:43 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3RzXHBhZ2VcMQ==?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":2023,"artistName":null,"lastFmRating":0},{"id":2,"artistName":"30 Seconds to Mars","lastFmRating":7},{"id":22,"artistName":"adsfasdfasdfn","lastFmRating":8},{"id":18,"artistName":"Arctic Monkeys","lastFmRating":22},{"id":7,"artistName":"Bullet for my valentine","lastFmRating":15},{"id":10,"artistName":"Combichrist","lastFmRating":8},{"id":6,"artistName":"Depeche mode","lastFmRating":2},{"id":11,"artistName":"Devil sold his soul","lastFmRating":9},{"id":9,"artistName":"Elvis Presley","lastFmRating":4},{"id":8,"artistName":"Frank Sinatra","lastFmRating":3}]
+
+
+
+6365110072495345369 - Request: SERVICE: ArtistService 
+GET: http://localhost:61883/api/artists/page/1
+Accept: application/json
+
+
+6365110072495345369 - Response: Date: Tue, 09 Jan 2018 10:18:44 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3RzXGNvdW50?=
+X-Powered-By: ASP.NET
+
+Status: OK
+21
+
+
+
+63651100725686661720 - Request: SERVICE: ArtistService 
+GET: http://localhost:61883/api/artists/page/1
+Accept: application/json
+
+
+63651100725686661720 - Response: Date: Tue, 09 Jan 2018 10:18:44 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3RzXHBhZ2VcMQ==?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":2023,"artistName":null,"lastFmRating":0},{"id":2,"artistName":"30 Seconds to Mars","lastFmRating":7},{"id":22,"artistName":"adsfasdfasdfn","lastFmRating":8},{"id":18,"artistName":"Arctic Monkeys","lastFmRating":22},{"id":7,"artistName":"Bullet for my valentine","lastFmRating":15},{"id":10,"artistName":"Combichrist","lastFmRating":8},{"id":6,"artistName":"Depeche mode","lastFmRating":2},{"id":11,"artistName":"Devil sold his soul","lastFmRating":9},{"id":9,"artistName":"Elvis Presley","lastFmRating":4},{"id":8,"artistName":"Frank Sinatra","lastFmRating":3}]
+
+
+
+63651100725734184011 - Request: SERVICE: ArtistService 
+GET: http://localhost:61883/api/artists/page/1
+Accept: application/json
+
+
+63651100725734184011 - Response: Date: Tue, 09 Jan 2018 10:18:44 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3RzXGNvdW50?=
+X-Powered-By: ASP.NET
+
+Status: OK
+21
+
+
+
+63651100726977854111 - Request: SERVICE: ArtistService 
+GET: http://localhost:61883/api/artists/page/1
+Accept: application/json
+
+
+63651100726977854111 - Response: Date: Tue, 09 Jan 2018 10:18:46 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3RzXHBhZ2VcMQ==?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":2023,"artistName":null,"lastFmRating":0},{"id":2,"artistName":"30 Seconds to Mars","lastFmRating":7},{"id":22,"artistName":"adsfasdfasdfn","lastFmRating":8},{"id":18,"artistName":"Arctic Monkeys","lastFmRating":22},{"id":7,"artistName":"Bullet for my valentine","lastFmRating":15},{"id":10,"artistName":"Combichrist","lastFmRating":8},{"id":6,"artistName":"Depeche mode","lastFmRating":2},{"id":11,"artistName":"Devil sold his soul","lastFmRating":9},{"id":9,"artistName":"Elvis Presley","lastFmRating":4},{"id":8,"artistName":"Frank Sinatra","lastFmRating":3}]
+
+
+
+63651100727019584420 - Request: SERVICE: ArtistService 
+GET: http://localhost:61883/api/artists/page/1
+Accept: application/json
+
+
+63651100727019584420 - Response: Date: Tue, 09 Jan 2018 10:18:46 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3RzXGNvdW50?=
+X-Powered-By: ASP.NET
+
+Status: OK
+21
+
+
+
+63651100727223944510 - Request: SERVICE: ArtistService 
+GET: http://localhost:61883/api/artists/page/1
+Accept: application/json
+
+
+63651100727223944510 - Response: Date: Tue, 09 Jan 2018 10:18:46 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3RzXHBhZ2VcMQ==?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":2023,"artistName":null,"lastFmRating":0},{"id":2,"artistName":"30 Seconds to Mars","lastFmRating":7},{"id":22,"artistName":"adsfasdfasdfn","lastFmRating":8},{"id":18,"artistName":"Arctic Monkeys","lastFmRating":22},{"id":7,"artistName":"Bullet for my valentine","lastFmRating":15},{"id":10,"artistName":"Combichrist","lastFmRating":8},{"id":6,"artistName":"Depeche mode","lastFmRating":2},{"id":11,"artistName":"Devil sold his soul","lastFmRating":9},{"id":9,"artistName":"Elvis Presley","lastFmRating":4},{"id":8,"artistName":"Frank Sinatra","lastFmRating":3}]
+
+
+
+6365110072805357358 - Request: SERVICE: ArtistService 
+GET: http://localhost:61883/api/artists/page/1
+Accept: application/json
+
+
+6365110072805357358 - Response: Date: Tue, 09 Jan 2018 10:18:47 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3RzXGNvdW50?=
+X-Powered-By: ASP.NET
+
+Status: OK
+21
+
+
+
+6365110073054217859 - Request: SERVICE: ArtistService 
+GET: http://localhost:61883/api/artists/page/1
+Accept: application/json
+
+
+6365110073054217859 - Response: Date: Tue, 09 Jan 2018 10:18:50 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3RzXHBhZ2VcMQ==?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":2023,"artistName":null,"lastFmRating":0},{"id":2,"artistName":"30 Seconds to Mars","lastFmRating":7},{"id":22,"artistName":"adsfasdfasdfn","lastFmRating":8},{"id":18,"artistName":"Arctic Monkeys","lastFmRating":22},{"id":7,"artistName":"Bullet for my valentine","lastFmRating":15},{"id":10,"artistName":"Combichrist","lastFmRating":8},{"id":6,"artistName":"Depeche mode","lastFmRating":2},{"id":11,"artistName":"Devil sold his soul","lastFmRating":9},{"id":9,"artistName":"Elvis Presley","lastFmRating":4},{"id":8,"artistName":"Frank Sinatra","lastFmRating":3}]
+
+
+
+63651100730605420011 - Request: SERVICE: ArtistService 
+GET: http://localhost:61883/api/artists/page/1
+Accept: application/json
+
+
+63651100730605420011 - Response: Date: Tue, 09 Jan 2018 10:18:50 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3RzXGNvdW50?=
+X-Powered-By: ASP.NET
+
+Status: OK
+21
+
+
+
+6365110073113761348 - Request: SERVICE: ArtistService 
+GET: http://localhost:61883/api/artists/page/1
+Accept: application/json
+
+
+6365110073113761348 - Response: Date: Tue, 09 Jan 2018 10:18:50 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3RzXHBhZ2VcMQ==?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":2023,"artistName":null,"lastFmRating":0},{"id":2,"artistName":"30 Seconds to Mars","lastFmRating":7},{"id":22,"artistName":"adsfasdfasdfn","lastFmRating":8},{"id":18,"artistName":"Arctic Monkeys","lastFmRating":22},{"id":7,"artistName":"Bullet for my valentine","lastFmRating":15},{"id":10,"artistName":"Combichrist","lastFmRating":8},{"id":6,"artistName":"Depeche mode","lastFmRating":2},{"id":11,"artistName":"Devil sold his soul","lastFmRating":9},{"id":9,"artistName":"Elvis Presley","lastFmRating":4},{"id":8,"artistName":"Frank Sinatra","lastFmRating":3}]
+
+
+
+63651100731623530311 - Request: SERVICE: ArtistService 
+GET: http://localhost:61883/api/artists/page/1
+Accept: application/json
+
+
+63651100731623530311 - Response: Date: Tue, 09 Jan 2018 10:18:50 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3RzXGNvdW50?=
+X-Powered-By: ASP.NET
+
+Status: OK
+21
+
+
+
+6365110073240695729 - Request: SERVICE: ArtistService 
+GET: http://localhost:61883/api/artists/page/1
+Accept: application/json
+
+
+6365110073240695729 - Response: Date: Tue, 09 Jan 2018 10:18:51 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3RzXHBhZ2VcMQ==?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":2023,"artistName":null,"lastFmRating":0},{"id":2,"artistName":"30 Seconds to Mars","lastFmRating":7},{"id":22,"artistName":"adsfasdfasdfn","lastFmRating":8},{"id":18,"artistName":"Arctic Monkeys","lastFmRating":22},{"id":7,"artistName":"Bullet for my valentine","lastFmRating":15},{"id":10,"artistName":"Combichrist","lastFmRating":8},{"id":6,"artistName":"Depeche mode","lastFmRating":2},{"id":11,"artistName":"Devil sold his soul","lastFmRating":9},{"id":9,"artistName":"Elvis Presley","lastFmRating":4},{"id":8,"artistName":"Frank Sinatra","lastFmRating":3}]
+
+
+
+63651100732483837811 - Request: SERVICE: ArtistService 
+GET: http://localhost:61883/api/artists/page/1
+Accept: application/json
+
+
+63651100732483837811 - Response: Date: Tue, 09 Jan 2018 10:18:51 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3RzXGNvdW50?=
+X-Powered-By: ASP.NET
+
+Status: OK
+21
+
+
+
+6365110073276090139 - Request: SERVICE: ArtistService 
+GET: http://localhost:61883/api/artists/page/1
+Accept: application/json
+
+
+6365110073276090139 - Response: Date: Tue, 09 Jan 2018 10:18:51 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3RzXHBhZ2VcMQ==?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":2023,"artistName":null,"lastFmRating":0},{"id":2,"artistName":"30 Seconds to Mars","lastFmRating":7},{"id":22,"artistName":"adsfasdfasdfn","lastFmRating":8},{"id":18,"artistName":"Arctic Monkeys","lastFmRating":22},{"id":7,"artistName":"Bullet for my valentine","lastFmRating":15},{"id":10,"artistName":"Combichrist","lastFmRating":8},{"id":6,"artistName":"Depeche mode","lastFmRating":2},{"id":11,"artistName":"Devil sold his soul","lastFmRating":9},{"id":9,"artistName":"Elvis Presley","lastFmRating":4},{"id":8,"artistName":"Frank Sinatra","lastFmRating":3}]
+
+
+
+6365110073284227049 - Request: SERVICE: ArtistService 
+GET: http://localhost:61883/api/artists/page/1
+Accept: application/json
+
+
+6365110073284227049 - Response: Date: Tue, 09 Jan 2018 10:18:51 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3RzXGNvdW50?=
+X-Powered-By: ASP.NET
+
+Status: OK
+21
+
+
+
+63651100733089575711 - Request: SERVICE: ArtistService 
+GET: http://localhost:61883/api/artists/page/1
+Accept: application/json
+
+
+63651100733089575711 - Response: Date: Tue, 09 Jan 2018 10:18:52 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3RzXHBhZ2VcMQ==?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":2023,"artistName":null,"lastFmRating":0},{"id":2,"artistName":"30 Seconds to Mars","lastFmRating":7},{"id":22,"artistName":"adsfasdfasdfn","lastFmRating":8},{"id":18,"artistName":"Arctic Monkeys","lastFmRating":22},{"id":7,"artistName":"Bullet for my valentine","lastFmRating":15},{"id":10,"artistName":"Combichrist","lastFmRating":8},{"id":6,"artistName":"Depeche mode","lastFmRating":2},{"id":11,"artistName":"Devil sold his soul","lastFmRating":9},{"id":9,"artistName":"Elvis Presley","lastFmRating":4},{"id":8,"artistName":"Frank Sinatra","lastFmRating":3}]
+
+
+
+6365110073312885159 - Request: SERVICE: ArtistService 
+GET: http://localhost:61883/api/artists/page/1
+Accept: application/json
+
+
+6365110073312885159 - Response: Date: Tue, 09 Jan 2018 10:18:52 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3RzXGNvdW50?=
+X-Powered-By: ASP.NET
+
+Status: OK
+21
+
+
+
+63651100738618412010 - Request: SERVICE: ArtistService 
+GET: http://localhost:61883/api/artists/page/1
+Accept: application/json
+
+
+63651100738618412010 - Response: Date: Tue, 09 Jan 2018 10:18:58 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3RzXHBhZ2VcMQ==?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":2023,"artistName":null,"lastFmRating":0},{"id":2,"artistName":"30 Seconds to Mars","lastFmRating":7},{"id":22,"artistName":"adsfasdfasdfn","lastFmRating":8},{"id":18,"artistName":"Arctic Monkeys","lastFmRating":22},{"id":7,"artistName":"Bullet for my valentine","lastFmRating":15},{"id":10,"artistName":"Combichrist","lastFmRating":8},{"id":6,"artistName":"Depeche mode","lastFmRating":2},{"id":11,"artistName":"Devil sold his soul","lastFmRating":9},{"id":9,"artistName":"Elvis Presley","lastFmRating":4},{"id":8,"artistName":"Frank Sinatra","lastFmRating":3}]
+
+
+
+6365110073881798518 - Request: SERVICE: ArtistService 
+GET: http://localhost:61883/api/artists/page/1
+Accept: application/json
+
+
+6365110073881798518 - Response: Date: Tue, 09 Jan 2018 10:18:58 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3RzXGNvdW50?=
+X-Powered-By: ASP.NET
+
+Status: OK
+21
+
+
+
+63651100739489600011 - Request: SERVICE: ArtistService 
+GET: http://localhost:61883/api/artists/page/1
+Accept: application/json
+
+
+63651100739489600011 - Response: Date: Tue, 09 Jan 2018 10:18:58 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3RzXHBhZ2VcMQ==?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":2023,"artistName":null,"lastFmRating":0},{"id":2,"artistName":"30 Seconds to Mars","lastFmRating":7},{"id":22,"artistName":"adsfasdfasdfn","lastFmRating":8},{"id":18,"artistName":"Arctic Monkeys","lastFmRating":22},{"id":7,"artistName":"Bullet for my valentine","lastFmRating":15},{"id":10,"artistName":"Combichrist","lastFmRating":8},{"id":6,"artistName":"Depeche mode","lastFmRating":2},{"id":11,"artistName":"Devil sold his soul","lastFmRating":9},{"id":9,"artistName":"Elvis Presley","lastFmRating":4},{"id":8,"artistName":"Frank Sinatra","lastFmRating":3}]
+
+
+
+63651100739538892710 - Request: SERVICE: ArtistService 
+GET: http://localhost:61883/api/artists/page/1
+Accept: application/json
+
+
+63651100739538892710 - Response: Date: Tue, 09 Jan 2018 10:18:58 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3RzXGNvdW50?=
+X-Powered-By: ASP.NET
+
+Status: OK
+21
+
+
+
+6365110073977441399 - Request: SERVICE: ArtistService 
+GET: http://localhost:61883/api/artists/page/1
+Accept: application/json
+
+
+6365110073977441399 - Response: Date: Tue, 09 Jan 2018 10:18:59 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3RzXHBhZ2VcMQ==?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":2023,"artistName":null,"lastFmRating":0},{"id":2,"artistName":"30 Seconds to Mars","lastFmRating":7},{"id":22,"artistName":"adsfasdfasdfn","lastFmRating":8},{"id":18,"artistName":"Arctic Monkeys","lastFmRating":22},{"id":7,"artistName":"Bullet for my valentine","lastFmRating":15},{"id":10,"artistName":"Combichrist","lastFmRating":8},{"id":6,"artistName":"Depeche mode","lastFmRating":2},{"id":11,"artistName":"Devil sold his soul","lastFmRating":9},{"id":9,"artistName":"Elvis Presley","lastFmRating":4},{"id":8,"artistName":"Frank Sinatra","lastFmRating":3}]
+
+
+
+6365110073990080048 - Request: SERVICE: ArtistService 
+GET: http://localhost:61883/api/artists/page/1
+Accept: application/json
+
+
+6365110073990080048 - Response: Date: Tue, 09 Jan 2018 10:18:59 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3RzXGNvdW50?=
+X-Powered-By: ASP.NET
+
+Status: OK
+21
+
+
+
+63651100740196034811 - Request: SERVICE: ArtistService 
+GET: http://localhost:61883/api/artists/page/1
+Accept: application/json
+
+
+63651100740196034811 - Response: Date: Tue, 09 Jan 2018 10:18:59 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3RzXHBhZ2VcMQ==?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":2023,"artistName":null,"lastFmRating":0},{"id":2,"artistName":"30 Seconds to Mars","lastFmRating":7},{"id":22,"artistName":"adsfasdfasdfn","lastFmRating":8},{"id":18,"artistName":"Arctic Monkeys","lastFmRating":22},{"id":7,"artistName":"Bullet for my valentine","lastFmRating":15},{"id":10,"artistName":"Combichrist","lastFmRating":8},{"id":6,"artistName":"Depeche mode","lastFmRating":2},{"id":11,"artistName":"Devil sold his soul","lastFmRating":9},{"id":9,"artistName":"Elvis Presley","lastFmRating":4},{"id":8,"artistName":"Frank Sinatra","lastFmRating":3}]
+
+
+
+6365110074025254349 - Request: SERVICE: ArtistService 
+GET: http://localhost:61883/api/artists/page/1
+Accept: application/json
+
+
+6365110074025254349 - Response: Date: Tue, 09 Jan 2018 10:18:59 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3RzXGNvdW50?=
+X-Powered-By: ASP.NET
+
+Status: OK
+21
+
+
+
+63651100740691946610 - Request: SERVICE: ArtistService 
+GET: http://localhost:61883/api/artists/page/1
+Accept: application/json
+
+
+63651100740691946610 - Response: Date: Tue, 09 Jan 2018 10:19:00 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3RzXHBhZ2VcMQ==?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":2023,"artistName":null,"lastFmRating":0},{"id":2,"artistName":"30 Seconds to Mars","lastFmRating":7},{"id":22,"artistName":"adsfasdfasdfn","lastFmRating":8},{"id":18,"artistName":"Arctic Monkeys","lastFmRating":22},{"id":7,"artistName":"Bullet for my valentine","lastFmRating":15},{"id":10,"artistName":"Combichrist","lastFmRating":8},{"id":6,"artistName":"Depeche mode","lastFmRating":2},{"id":11,"artistName":"Devil sold his soul","lastFmRating":9},{"id":9,"artistName":"Elvis Presley","lastFmRating":4},{"id":8,"artistName":"Frank Sinatra","lastFmRating":3}]
+
+
+
+63651100740767665020 - Request: SERVICE: ArtistService 
+GET: http://localhost:61883/api/artists/page/1
+Accept: application/json
+
+
+63651100740767665020 - Response: Date: Tue, 09 Jan 2018 10:19:00 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3RzXGNvdW50?=
+X-Powered-By: ASP.NET
+
+Status: OK
+21
+
+
+
+6365110076637838139 - Request: SERVICE: ArtistService 
+GET: http://localhost:61883/api/artists/page/1
+Accept: application/json
+
+
+6365110076637838139 - Response: Date: Tue, 09 Jan 2018 10:19:26 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3RzXHBhZ2VcMQ==?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":2023,"artistName":null,"lastFmRating":0},{"id":2,"artistName":"30 Seconds to Mars","lastFmRating":7},{"id":22,"artistName":"adsfasdfasdfn","lastFmRating":8},{"id":18,"artistName":"Arctic Monkeys","lastFmRating":22},{"id":7,"artistName":"Bullet for my valentine","lastFmRating":15},{"id":10,"artistName":"Combichrist","lastFmRating":8},{"id":6,"artistName":"Depeche mode","lastFmRating":2},{"id":11,"artistName":"Devil sold his soul","lastFmRating":9},{"id":9,"artistName":"Elvis Presley","lastFmRating":4},{"id":8,"artistName":"Frank Sinatra","lastFmRating":3}]
+
+
+
+63651100766415916511 - Request: SERVICE: ArtistService 
+GET: http://localhost:61883/api/artists/page/1
+Accept: application/json
+
+
+63651100766415916511 - Response: Date: Tue, 09 Jan 2018 10:19:26 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3RzXGNvdW50?=
+X-Powered-By: ASP.NET
+
+Status: OK
+21
+
+
+
+63651100855588753737 - Request: SERVICE: ArtistService 
+GET: http://localhost:61883/api/artists/page/1
+Accept: application/json
+
+
+63651100855588753737 - Response: Date: Tue, 09 Jan 2018 10:20:55 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3RzXHBhZ2VcMQ==?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":2023,"artistName":null,"lastFmRating":0},{"id":2,"artistName":"30 Seconds to Mars","lastFmRating":7},{"id":22,"artistName":"adsfasdfasdfn","lastFmRating":8},{"id":18,"artistName":"Arctic Monkeys","lastFmRating":22},{"id":7,"artistName":"Bullet for my valentine","lastFmRating":15},{"id":10,"artistName":"Combichrist","lastFmRating":8},{"id":6,"artistName":"Depeche mode","lastFmRating":2},{"id":11,"artistName":"Devil sold his soul","lastFmRating":9},{"id":9,"artistName":"Elvis Presley","lastFmRating":4},{"id":8,"artistName":"Frank Sinatra","lastFmRating":3}]
+
+
+
+63651100855889268339 - Request: SERVICE: ArtistService 
+GET: http://localhost:61883/api/artists/page/1
+Accept: application/json
+
+
+63651100855889268339 - Response: Date: Tue, 09 Jan 2018 10:20:55 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3RzXGNvdW50?=
+X-Powered-By: ASP.NET
+
+Status: OK
+21
+
+
+
+63651101079990827436 - Request: SERVICE: ArtistService 
+GET: http://localhost:61883/api/artists/page/1
+Accept: application/json
+
+
+63651101079990827436 - Response: Date: Tue, 09 Jan 2018 10:24:39 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3RzXHBhZ2VcMQ==?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":2023,"artistName":null,"lastFmRating":0},{"id":2,"artistName":"30 Seconds to Mars","lastFmRating":7},{"id":22,"artistName":"adsfasdfasdfn","lastFmRating":8},{"id":18,"artistName":"Arctic Monkeys","lastFmRating":22},{"id":7,"artistName":"Bullet for my valentine","lastFmRating":15},{"id":10,"artistName":"Combichrist","lastFmRating":8},{"id":6,"artistName":"Depeche mode","lastFmRating":2},{"id":11,"artistName":"Devil sold his soul","lastFmRating":9},{"id":9,"artistName":"Elvis Presley","lastFmRating":4},{"id":8,"artistName":"Frank Sinatra","lastFmRating":3}]
+
+
+
+63651101080264309335 - Request: SERVICE: ArtistService 
+GET: http://localhost:61883/api/artists/page/1
+Accept: application/json
+
+
+63651101080264309335 - Response: Date: Tue, 09 Jan 2018 10:24:39 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3RzXGNvdW50?=
+X-Powered-By: ASP.NET
+
+Status: OK
+21
+
+
+
+63651101082721184142 - Request: SERVICE: ArtistService 
+GET: http://localhost:61883/api/artists/page/1
+Accept: application/json
+
+
+63651101082721184142 - Response: Date: Tue, 09 Jan 2018 10:24:42 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3RzXHBhZ2VcMQ==?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":2023,"artistName":null,"lastFmRating":0},{"id":2,"artistName":"30 Seconds to Mars","lastFmRating":7},{"id":22,"artistName":"adsfasdfasdfn","lastFmRating":8},{"id":18,"artistName":"Arctic Monkeys","lastFmRating":22},{"id":7,"artistName":"Bullet for my valentine","lastFmRating":15},{"id":10,"artistName":"Combichrist","lastFmRating":8},{"id":6,"artistName":"Depeche mode","lastFmRating":2},{"id":11,"artistName":"Devil sold his soul","lastFmRating":9},{"id":9,"artistName":"Elvis Presley","lastFmRating":4},{"id":8,"artistName":"Frank Sinatra","lastFmRating":3}]
+
+
+
+63651101083185173943 - Request: SERVICE: ArtistService 
+GET: http://localhost:61883/api/artists/page/1
+Accept: application/json
+
+
+63651101083185173943 - Response: Date: Tue, 09 Jan 2018 10:24:42 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3RzXGNvdW50?=
+X-Powered-By: ASP.NET
+
+Status: OK
+21
+
+
+
+63651101083440715936 - Request: SERVICE: ArtistService 
+GET: http://localhost:61883/api/artists/page/1
+Accept: application/json
+
+
+63651101083440715936 - Response: Date: Tue, 09 Jan 2018 10:24:42 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3RzXHBhZ2VcMQ==?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":2023,"artistName":null,"lastFmRating":0},{"id":2,"artistName":"30 Seconds to Mars","lastFmRating":7},{"id":22,"artistName":"adsfasdfasdfn","lastFmRating":8},{"id":18,"artistName":"Arctic Monkeys","lastFmRating":22},{"id":7,"artistName":"Bullet for my valentine","lastFmRating":15},{"id":10,"artistName":"Combichrist","lastFmRating":8},{"id":6,"artistName":"Depeche mode","lastFmRating":2},{"id":11,"artistName":"Devil sold his soul","lastFmRating":9},{"id":9,"artistName":"Elvis Presley","lastFmRating":4},{"id":8,"artistName":"Frank Sinatra","lastFmRating":3}]
+
+
+
+63651101083533586935 - Request: SERVICE: ArtistService 
+GET: http://localhost:61883/api/artists/page/1
+Accept: application/json
+
+
+63651101083533586935 - Response: Date: Tue, 09 Jan 2018 10:24:42 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3RzXGNvdW50?=
+X-Powered-By: ASP.NET
+
+Status: OK
+21
+
+
+
+63651101083692066536 - Request: SERVICE: ArtistService 
+GET: http://localhost:61883/api/artists/page/1
+Accept: application/json
+
+
+63651101083692066536 - Response: Date: Tue, 09 Jan 2018 10:24:43 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3RzXHBhZ2VcMQ==?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":2023,"artistName":null,"lastFmRating":0},{"id":2,"artistName":"30 Seconds to Mars","lastFmRating":7},{"id":22,"artistName":"adsfasdfasdfn","lastFmRating":8},{"id":18,"artistName":"Arctic Monkeys","lastFmRating":22},{"id":7,"artistName":"Bullet for my valentine","lastFmRating":15},{"id":10,"artistName":"Combichrist","lastFmRating":8},{"id":6,"artistName":"Depeche mode","lastFmRating":2},{"id":11,"artistName":"Devil sold his soul","lastFmRating":9},{"id":9,"artistName":"Elvis Presley","lastFmRating":4},{"id":8,"artistName":"Frank Sinatra","lastFmRating":3}]
+
+
+
+63651101083734868444 - Request: SERVICE: ArtistService 
+GET: http://localhost:61883/api/artists/page/1
+Accept: application/json
+
+
+63651101083734868444 - Response: Date: Tue, 09 Jan 2018 10:24:43 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3RzXGNvdW50?=
+X-Powered-By: ASP.NET
+
+Status: OK
+21
+
+
+
+63651101083870107836 - Request: SERVICE: ArtistService 
+GET: http://localhost:61883/api/artists/page/1
+Accept: application/json
+
+
+63651101083870107836 - Response: Date: Tue, 09 Jan 2018 10:24:43 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3RzXHBhZ2VcMQ==?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":2023,"artistName":null,"lastFmRating":0},{"id":2,"artistName":"30 Seconds to Mars","lastFmRating":7},{"id":22,"artistName":"adsfasdfasdfn","lastFmRating":8},{"id":18,"artistName":"Arctic Monkeys","lastFmRating":22},{"id":7,"artistName":"Bullet for my valentine","lastFmRating":15},{"id":10,"artistName":"Combichrist","lastFmRating":8},{"id":6,"artistName":"Depeche mode","lastFmRating":2},{"id":11,"artistName":"Devil sold his soul","lastFmRating":9},{"id":9,"artistName":"Elvis Presley","lastFmRating":4},{"id":8,"artistName":"Frank Sinatra","lastFmRating":3}]
+
+
+
+63651101083913084135 - Request: SERVICE: ArtistService 
+GET: http://localhost:61883/api/artists/page/1
+Accept: application/json
+
+
+63651101083913084135 - Response: Date: Tue, 09 Jan 2018 10:24:43 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3RzXGNvdW50?=
+X-Powered-By: ASP.NET
+
+Status: OK
+21
+
+
+
+63651101084807012735 - Request: SERVICE: ArtistService 
+GET: http://localhost:61883/api/artists/page/1
+Accept: application/json
+
+
+63651101084807012735 - Response: Date: Tue, 09 Jan 2018 10:24:44 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3RzXHBhZ2VcMQ==?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":2023,"artistName":null,"lastFmRating":0},{"id":2,"artistName":"30 Seconds to Mars","lastFmRating":7},{"id":22,"artistName":"adsfasdfasdfn","lastFmRating":8},{"id":18,"artistName":"Arctic Monkeys","lastFmRating":22},{"id":7,"artistName":"Bullet for my valentine","lastFmRating":15},{"id":10,"artistName":"Combichrist","lastFmRating":8},{"id":6,"artistName":"Depeche mode","lastFmRating":2},{"id":11,"artistName":"Devil sold his soul","lastFmRating":9},{"id":9,"artistName":"Elvis Presley","lastFmRating":4},{"id":8,"artistName":"Frank Sinatra","lastFmRating":3}]
+
+
+
+63651101084881281743 - Request: SERVICE: ArtistService 
+GET: http://localhost:61883/api/artists/page/1
+Accept: application/json
+
+
+63651101084881281743 - Response: Date: Tue, 09 Jan 2018 10:24:44 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3RzXGNvdW50?=
+X-Powered-By: ASP.NET
+
+Status: OK
+21
+
+
+
+63651101085291988142 - Request: SERVICE: ArtistService 
+GET: http://localhost:61883/api/artists/page/1
+Accept: application/json
+
+
+63651101085291988142 - Response: Date: Tue, 09 Jan 2018 10:24:44 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3RzXHBhZ2VcMQ==?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":2023,"artistName":null,"lastFmRating":0},{"id":2,"artistName":"30 Seconds to Mars","lastFmRating":7},{"id":22,"artistName":"adsfasdfasdfn","lastFmRating":8},{"id":18,"artistName":"Arctic Monkeys","lastFmRating":22},{"id":7,"artistName":"Bullet for my valentine","lastFmRating":15},{"id":10,"artistName":"Combichrist","lastFmRating":8},{"id":6,"artistName":"Depeche mode","lastFmRating":2},{"id":11,"artistName":"Devil sold his soul","lastFmRating":9},{"id":9,"artistName":"Elvis Presley","lastFmRating":4},{"id":8,"artistName":"Frank Sinatra","lastFmRating":3}]
+
+
+
+63651101085396981943 - Request: SERVICE: ArtistService 
+GET: http://localhost:61883/api/artists/page/1
+Accept: application/json
+
+
+63651101085396981943 - Response: Date: Tue, 09 Jan 2018 10:24:44 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3RzXGNvdW50?=
+X-Powered-By: ASP.NET
+
+Status: OK
+21
+
+
+
+63651101085824518035 - Request: SERVICE: ArtistService 
+GET: http://localhost:61883/api/artists/page/1
+Accept: application/json
+
+
+63651101085824518035 - Response: Date: Tue, 09 Jan 2018 10:24:45 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3RzXHBhZ2VcMQ==?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":2023,"artistName":null,"lastFmRating":0},{"id":2,"artistName":"30 Seconds to Mars","lastFmRating":7},{"id":22,"artistName":"adsfasdfasdfn","lastFmRating":8},{"id":18,"artistName":"Arctic Monkeys","lastFmRating":22},{"id":7,"artistName":"Bullet for my valentine","lastFmRating":15},{"id":10,"artistName":"Combichrist","lastFmRating":8},{"id":6,"artistName":"Depeche mode","lastFmRating":2},{"id":11,"artistName":"Devil sold his soul","lastFmRating":9},{"id":9,"artistName":"Elvis Presley","lastFmRating":4},{"id":8,"artistName":"Frank Sinatra","lastFmRating":3}]
+
+
+
+63651101085921787842 - Request: SERVICE: ArtistService 
+GET: http://localhost:61883/api/artists/page/1
+Accept: application/json
+
+
+63651101085921787842 - Response: Date: Tue, 09 Jan 2018 10:24:45 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3RzXGNvdW50?=
+X-Powered-By: ASP.NET
+
+Status: OK
+21
+
+
+
+63651101086362470243 - Request: SERVICE: ArtistService 
+GET: http://localhost:61883/api/artists/page/1
+Accept: application/json
+
+
+63651101086362470243 - Response: Date: Tue, 09 Jan 2018 10:24:45 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3RzXHBhZ2VcMQ==?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":2023,"artistName":null,"lastFmRating":0},{"id":2,"artistName":"30 Seconds to Mars","lastFmRating":7},{"id":22,"artistName":"adsfasdfasdfn","lastFmRating":8},{"id":18,"artistName":"Arctic Monkeys","lastFmRating":22},{"id":7,"artistName":"Bullet for my valentine","lastFmRating":15},{"id":10,"artistName":"Combichrist","lastFmRating":8},{"id":6,"artistName":"Depeche mode","lastFmRating":2},{"id":11,"artistName":"Devil sold his soul","lastFmRating":9},{"id":9,"artistName":"Elvis Presley","lastFmRating":4},{"id":8,"artistName":"Frank Sinatra","lastFmRating":3}]
+
+
+
+63651101086603107043 - Request: SERVICE: ArtistService 
+GET: http://localhost:61883/api/artists/page/1
+Accept: application/json
+
+
+63651101086603107043 - Response: Date: Tue, 09 Jan 2018 10:24:45 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3RzXGNvdW50?=
+X-Powered-By: ASP.NET
+
+Status: OK
+21
+
+
+
+63651101090827248143 - Request: SERVICE: ArtistService 
+GET: http://localhost:61883/api/artists/page/1
+Accept: application/json
+
+
+63651101090827248143 - Response: Date: Tue, 09 Jan 2018 10:24:50 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3RzXHBhZ2VcMQ==?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":2023,"artistName":null,"lastFmRating":0},{"id":2,"artistName":"30 Seconds to Mars","lastFmRating":7},{"id":22,"artistName":"adsfasdfasdfn","lastFmRating":8},{"id":18,"artistName":"Arctic Monkeys","lastFmRating":22},{"id":7,"artistName":"Bullet for my valentine","lastFmRating":15},{"id":10,"artistName":"Combichrist","lastFmRating":8},{"id":6,"artistName":"Depeche mode","lastFmRating":2},{"id":11,"artistName":"Devil sold his soul","lastFmRating":9},{"id":9,"artistName":"Elvis Presley","lastFmRating":4},{"id":8,"artistName":"Frank Sinatra","lastFmRating":3}]
+
+
+
+63651101091060668542 - Request: SERVICE: ArtistService 
+GET: http://localhost:61883/api/artists/page/1
+Accept: application/json
+
+
+63651101091060668542 - Response: Date: Tue, 09 Jan 2018 10:24:50 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3RzXGNvdW50?=
+X-Powered-By: ASP.NET
+
+Status: OK
+21
+
+
+
+6365110159794890868 - Request: SERVICE: AuthorisationService 
+POST: http://localhost:59917/api/Users/Find
+Accept: application/json
+{
+  "Login": "sad",
+  "Password": "sad"
+}
+
+6365110159794890868 - Response: Date: Tue, 09 Jan 2018 10:33:17 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXGFwaVxVc2Vyc1xGaW5k?=
+X-Powered-By: ASP.NET
+
+Status: OK
+{"id":1005,"login":"sad","password":"16cfe4f2e1519c415b9b11024c0cba52"}
+
+
+
+6365110160260015999 - Request: SERVICE: ArtistService 
+GET: http://localhost:61883/api/artists/page/1
+Accept: application/json
+
+
+6365110160260015999 - Response: Date: Tue, 09 Jan 2018 10:33:22 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3RzXHBhZ2VcMQ==?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":2023,"artistName":null,"lastFmRating":0},{"id":2,"artistName":"30 Seconds to Mars","lastFmRating":7},{"id":22,"artistName":"adsfasdfasdfn","lastFmRating":8},{"id":18,"artistName":"Arctic Monkeys","lastFmRating":22},{"id":7,"artistName":"Bullet for my valentine","lastFmRating":15},{"id":10,"artistName":"Combichrist","lastFmRating":8},{"id":6,"artistName":"Depeche mode","lastFmRating":2},{"id":11,"artistName":"Devil sold his soul","lastFmRating":9},{"id":9,"artistName":"Elvis Presley","lastFmRating":4},{"id":8,"artistName":"Frank Sinatra","lastFmRating":3}]
+
+
+
+63651101602856651610 - Request: SERVICE: ArtistService 
+GET: http://localhost:61883/api/artists/page/1
+Accept: application/json
+
+
+63651101602856651610 - Response: Date: Tue, 09 Jan 2018 10:33:22 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3RzXGNvdW50?=
+X-Powered-By: ASP.NET
+
+Status: OK
+21
+
+
+
+63651104476781731031 - Request: SERVICE: ArtistService 
+GET: http://localhost:61883/api/artists/page/1
+Accept: application/json
+
+
+63651104476781731031 - Response: Date: Tue, 09 Jan 2018 11:21:16 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3RzXHBhZ2VcMQ==?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":2023,"artistName":null,"lastFmRating":0},{"id":2,"artistName":"30 Seconds to Mars","lastFmRating":7},{"id":22,"artistName":"adsfasdfasdfn","lastFmRating":8},{"id":18,"artistName":"Arctic Monkeys","lastFmRating":22},{"id":7,"artistName":"Bullet for my valentine","lastFmRating":15},{"id":10,"artistName":"Combichrist","lastFmRating":8},{"id":6,"artistName":"Depeche mode","lastFmRating":2},{"id":11,"artistName":"Devil sold his soul","lastFmRating":9},{"id":9,"artistName":"Elvis Presley","lastFmRating":4},{"id":8,"artistName":"Frank Sinatra","lastFmRating":3}]
+
+
+
+6365110447706090848 - Request: SERVICE: ArtistService 
+GET: http://localhost:61883/api/artists/page/1
+Accept: application/json
+
+
+6365110447706090848 - Response: Date: Tue, 09 Jan 2018 11:21:16 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3RzXGNvdW50?=
+X-Powered-By: ASP.NET
+
+Status: OK
+21
+
+
+
+63651104495610175431 - Request: SERVICE: ArtistService 
+GET: http://localhost:61883/api/artists/page/1
+Accept: application/json
+
+
+63651104495610175431 - Response: Date: Tue, 09 Jan 2018 11:21:35 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3RzXHBhZ2VcMQ==?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":2023,"artistName":null,"lastFmRating":0},{"id":2,"artistName":"30 Seconds to Mars","lastFmRating":7},{"id":22,"artistName":"adsfasdfasdfn","lastFmRating":8},{"id":18,"artistName":"Arctic Monkeys","lastFmRating":22},{"id":7,"artistName":"Bullet for my valentine","lastFmRating":15},{"id":10,"artistName":"Combichrist","lastFmRating":8},{"id":6,"artistName":"Depeche mode","lastFmRating":2},{"id":11,"artistName":"Devil sold his soul","lastFmRating":9},{"id":9,"artistName":"Elvis Presley","lastFmRating":4},{"id":8,"artistName":"Frank Sinatra","lastFmRating":3}]
+
+
+
+6365110449588066458 - Request: SERVICE: ArtistService 
+GET: http://localhost:61883/api/artists/page/1
+Accept: application/json
+
+
+6365110449588066458 - Response: Date: Tue, 09 Jan 2018 11:21:35 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3RzXGNvdW50?=
+X-Powered-By: ASP.NET
+
+Status: OK
+21
+
+
+
+6365110454142212158 - Request: SERVICE: AuthorisationService 
+POST: http://localhost:59917/api/Users/Find
+Accept: application/json
+{
+  "Login": "sad",
+  "Password": "sad"
+}
+
+6365110454142212158 - Response: Date: Tue, 09 Jan 2018 11:22:21 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXGFwaVxVc2Vyc1xGaW5k?=
+X-Powered-By: ASP.NET
+
+Status: OK
+{"id":1005,"login":"sad","password":"16cfe4f2e1519c415b9b11024c0cba52"}
+
+
+
+6365110454913559688 - Request: SERVICE: ArtistService 
+GET: http://localhost:61883/api/artists/page/1
+Accept: application/json
+
+
+6365110454913559688 - Response: Date: Tue, 09 Jan 2018 11:22:29 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3RzXHBhZ2VcMQ==?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":2023,"artistName":null,"lastFmRating":0},{"id":2,"artistName":"30 Seconds to Mars","lastFmRating":7},{"id":22,"artistName":"adsfasdfasdfn","lastFmRating":8},{"id":18,"artistName":"Arctic Monkeys","lastFmRating":22},{"id":7,"artistName":"Bullet for my valentine","lastFmRating":15},{"id":10,"artistName":"Combichrist","lastFmRating":8},{"id":6,"artistName":"Depeche mode","lastFmRating":2},{"id":11,"artistName":"Devil sold his soul","lastFmRating":9},{"id":9,"artistName":"Elvis Presley","lastFmRating":4},{"id":8,"artistName":"Frank Sinatra","lastFmRating":3}]
+
+
+
+63651104549791413010 - Request: SERVICE: ArtistService 
+GET: http://localhost:61883/api/artists/page/1
+Accept: application/json
+
+
+63651104549791413010 - Response: Date: Tue, 09 Jan 2018 11:22:29 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3RzXGNvdW50?=
+X-Powered-By: ASP.NET
+
+Status: OK
+21
+
+
+
+63651104574046869110 - Request: SERVICE: ArtistService 
+GET: http://localhost:61883/api/artists/page/1
+Accept: application/json
+
+
+63651104574046869110 - Response: Date: Tue, 09 Jan 2018 11:22:54 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3RzXHBhZ2VcMQ==?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":2023,"artistName":null,"lastFmRating":0},{"id":2,"artistName":"30 Seconds to Mars","lastFmRating":7},{"id":22,"artistName":"adsfasdfasdfn","lastFmRating":8},{"id":18,"artistName":"Arctic Monkeys","lastFmRating":22},{"id":7,"artistName":"Bullet for my valentine","lastFmRating":15},{"id":10,"artistName":"Combichrist","lastFmRating":8},{"id":6,"artistName":"Depeche mode","lastFmRating":2},{"id":11,"artistName":"Devil sold his soul","lastFmRating":9},{"id":9,"artistName":"Elvis Presley","lastFmRating":4},{"id":8,"artistName":"Frank Sinatra","lastFmRating":3}]
+
+
+
+63651104574848930241 - Request: SERVICE: ArtistService 
+GET: http://localhost:61883/api/artists/page/1
+Accept: application/json
+
+
+63651104574848930241 - Response: Date: Tue, 09 Jan 2018 11:22:54 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3RzXGNvdW50?=
+X-Powered-By: ASP.NET
+
+Status: OK
+21
+
+
+
+63651104625949561942 - Request: SERVICE: ArtistService 
+GET: http://localhost:61883/api/artists/page/1
+Accept: application/json
+
+
+63651104625949561942 - Response: Date: Tue, 09 Jan 2018 11:23:45 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3RzXHBhZ2VcMQ==?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":2023,"artistName":null,"lastFmRating":0},{"id":2,"artistName":"30 Seconds to Mars","lastFmRating":7},{"id":22,"artistName":"adsfasdfasdfn","lastFmRating":8},{"id":18,"artistName":"Arctic Monkeys","lastFmRating":22},{"id":7,"artistName":"Bullet for my valentine","lastFmRating":15},{"id":10,"artistName":"Combichrist","lastFmRating":8},{"id":6,"artistName":"Depeche mode","lastFmRating":2},{"id":11,"artistName":"Devil sold his soul","lastFmRating":9},{"id":9,"artistName":"Elvis Presley","lastFmRating":4},{"id":8,"artistName":"Frank Sinatra","lastFmRating":3}]
+
+
+
+63651104626237365352 - Request: SERVICE: ArtistService 
+GET: http://localhost:61883/api/artists/page/1
+Accept: application/json
+
+
+63651104626237365352 - Response: Date: Tue, 09 Jan 2018 11:23:45 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3RzXGNvdW50?=
+X-Powered-By: ASP.NET
+
+Status: OK
+21
+
+
+
+63651104633549862852 - Request: SERVICE: ArtistService 
+GET: http://localhost:61883/api/artists/page/1
+Accept: application/json
+
+
+63651104633549862852 - Response: Date: Tue, 09 Jan 2018 11:23:53 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3RzXHBhZ2VcMQ==?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":2023,"artistName":null,"lastFmRating":0},{"id":2,"artistName":"30 Seconds to Mars","lastFmRating":7},{"id":22,"artistName":"adsfasdfasdfn","lastFmRating":8},{"id":18,"artistName":"Arctic Monkeys","lastFmRating":22},{"id":7,"artistName":"Bullet for my valentine","lastFmRating":15},{"id":10,"artistName":"Combichrist","lastFmRating":8},{"id":6,"artistName":"Depeche mode","lastFmRating":2},{"id":11,"artistName":"Devil sold his soul","lastFmRating":9},{"id":9,"artistName":"Elvis Presley","lastFmRating":4},{"id":8,"artistName":"Frank Sinatra","lastFmRating":3}]
+
+
+
+63651104633760496954 - Request: SERVICE: ArtistService 
+GET: http://localhost:61883/api/artists/page/1
+Accept: application/json
+
+
+63651104633760496954 - Response: Date: Tue, 09 Jan 2018 11:23:53 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3RzXGNvdW50?=
+X-Powered-By: ASP.NET
+
+Status: OK
+21
+
+
+
+63651104964105062742 - Request: SERVICE: ArtistService 
+GET: http://localhost:61883/api/artists/page/1
+Accept: application/json
+
+
+63651104964105062742 - Response: Date: Tue, 09 Jan 2018 11:29:24 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3RzXHBhZ2VcMQ==?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":2023,"artistName":null,"lastFmRating":0},{"id":2,"artistName":"30 Seconds to Mars","lastFmRating":7},{"id":22,"artistName":"adsfasdfasdfn","lastFmRating":8},{"id":18,"artistName":"Arctic Monkeys","lastFmRating":22},{"id":7,"artistName":"Bullet for my valentine","lastFmRating":15},{"id":10,"artistName":"Combichrist","lastFmRating":8},{"id":6,"artistName":"Depeche mode","lastFmRating":2},{"id":11,"artistName":"Devil sold his soul","lastFmRating":9},{"id":9,"artistName":"Elvis Presley","lastFmRating":4},{"id":8,"artistName":"Frank Sinatra","lastFmRating":3}]
+
+
+
+63651104964535667242 - Request: SERVICE: ArtistService 
+GET: http://localhost:61883/api/artists/page/1
+Accept: application/json
+
+
+63651104964535667242 - Response: Date: Tue, 09 Jan 2018 11:29:24 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3RzXGNvdW50?=
+X-Powered-By: ASP.NET
+
+Status: OK
+21
+
+
+
+63651105122354759141 - Request: SERVICE: ArtistService 
+GET: http://localhost:61883/api/artists/page/1
+Accept: application/json
+
+
+63651105122354759141 - Response: Date: Tue, 09 Jan 2018 11:32:02 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3RzXHBhZ2VcMQ==?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":2023,"artistName":null,"lastFmRating":0},{"id":2,"artistName":"30 Seconds to Mars","lastFmRating":7},{"id":22,"artistName":"adsfasdfasdfn","lastFmRating":8},{"id":18,"artistName":"Arctic Monkeys","lastFmRating":22},{"id":7,"artistName":"Bullet for my valentine","lastFmRating":15},{"id":10,"artistName":"Combichrist","lastFmRating":8},{"id":6,"artistName":"Depeche mode","lastFmRating":2},{"id":11,"artistName":"Devil sold his soul","lastFmRating":9},{"id":9,"artistName":"Elvis Presley","lastFmRating":4},{"id":8,"artistName":"Frank Sinatra","lastFmRating":3}]
+
+
+
+63651105122452359241 - Request: SERVICE: ArtistService 
+GET: http://localhost:61883/api/artists/page/1
+Accept: application/json
+
+
+63651105122452359241 - Response: Date: Tue, 09 Jan 2018 11:32:02 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3RzXGNvdW50?=
+X-Powered-By: ASP.NET
+
+Status: OK
+21
+
+
+
+63651105298464936042 - Request: SERVICE: ArtistService 
+GET: http://localhost:61883/api/artists/page/1
+Accept: application/json
+
+
+63651105298464936042 - Response: Date: Tue, 09 Jan 2018 11:34:58 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3RzXHBhZ2VcMQ==?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":2023,"artistName":null,"lastFmRating":0},{"id":2,"artistName":"30 Seconds to Mars","lastFmRating":7},{"id":22,"artistName":"adsfasdfasdfn","lastFmRating":8},{"id":18,"artistName":"Arctic Monkeys","lastFmRating":22},{"id":7,"artistName":"Bullet for my valentine","lastFmRating":15},{"id":10,"artistName":"Combichrist","lastFmRating":8},{"id":6,"artistName":"Depeche mode","lastFmRating":2},{"id":11,"artistName":"Devil sold his soul","lastFmRating":9},{"id":9,"artistName":"Elvis Presley","lastFmRating":4},{"id":8,"artistName":"Frank Sinatra","lastFmRating":3}]
+
+
+
+63651105298637324376 - Request: SERVICE: ArtistService 
+GET: http://localhost:61883/api/artists/page/1
+Accept: application/json
+
+
+63651105298637324376 - Response: Date: Tue, 09 Jan 2018 11:34:58 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3RzXGNvdW50?=
+X-Powered-By: ASP.NET
+
+Status: OK
+21
+
+
+
+6365110668872431188 - Request: SERVICE: AuthorisationService 
+POST: http://localhost:59917/api/Users/Find
+Accept: application/json
+{
+  "Login": "sad",
+  "Password": "sad"
+}
+
+6365110668872431188 - Response: Date: Tue, 09 Jan 2018 11:58:08 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXGFwaVxVc2Vyc1xGaW5k?=
+X-Powered-By: ASP.NET
+
+Status: OK
+{"id":1002,"login":"sad","password":"16cfe4f2e1519c415b9b11024c0cba52","role":null,"lastToken":null}
+
+
+
+6365110669373595279 - Request: SERVICE: ArtistService 
+GET: http://localhost:61883/api/artists/page/1
+Accept: application/json
+
+
+6365110669373595279 - Response: Date: Tue, 09 Jan 2018 11:58:13 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3RzXHBhZ2VcMQ==?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":2023,"artistName":null,"lastFmRating":0},{"id":2,"artistName":"30 Seconds to Mars","lastFmRating":7},{"id":22,"artistName":"adsfasdfasdfn","lastFmRating":8},{"id":18,"artistName":"Arctic Monkeys","lastFmRating":22},{"id":7,"artistName":"Bullet for my valentine","lastFmRating":15},{"id":10,"artistName":"Combichrist","lastFmRating":8},{"id":6,"artistName":"Depeche mode","lastFmRating":2},{"id":11,"artistName":"Devil sold his soul","lastFmRating":9},{"id":9,"artistName":"Elvis Presley","lastFmRating":4},{"id":8,"artistName":"Frank Sinatra","lastFmRating":3}]
+
+
+
+6365110669377778993 - Request: SERVICE: ArtistService 
+GET: http://localhost:61883/api/artists/page/1
+Accept: application/json
+
+
+6365110669377778993 - Response: Date: Tue, 09 Jan 2018 11:58:13 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3RzXGNvdW50?=
+X-Powered-By: ASP.NET
+
+Status: OK
+21
+
+
+
+6365110670857420089 - Request: SERVICE: ArtistService 
+GET: http://localhost:61883/api/artists/page/1
+Accept: application/json
+
+
+6365110670857420089 - Response: Date: Tue, 09 Jan 2018 11:58:28 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3RzXHBhZ2VcMQ==?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":2023,"artistName":null,"lastFmRating":0},{"id":2,"artistName":"30 Seconds to Mars","lastFmRating":7},{"id":22,"artistName":"adsfasdfasdfn","lastFmRating":8},{"id":18,"artistName":"Arctic Monkeys","lastFmRating":22},{"id":7,"artistName":"Bullet for my valentine","lastFmRating":15},{"id":10,"artistName":"Combichrist","lastFmRating":8},{"id":6,"artistName":"Depeche mode","lastFmRating":2},{"id":11,"artistName":"Devil sold his soul","lastFmRating":9},{"id":9,"artistName":"Elvis Presley","lastFmRating":4},{"id":8,"artistName":"Frank Sinatra","lastFmRating":3}]
+
+
+
+6365110670861845553 - Request: SERVICE: ArtistService 
+GET: http://localhost:61883/api/artists/page/1
+Accept: application/json
+
+
+6365110670861845553 - Response: Date: Tue, 09 Jan 2018 11:58:28 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3RzXGNvdW50?=
+X-Powered-By: ASP.NET
+
+Status: OK
+21
+
+
+
+6365110674814403548 - Request: SERVICE: ArtistService 
+GET: http://localhost:61883/api/artists/page/1
+Accept: application/json
+
+
+6365110674814403548 - Response: Date: Tue, 09 Jan 2018 11:59:08 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3RzXHBhZ2VcMQ==?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":2023,"artistName":null,"lastFmRating":0},{"id":2,"artistName":"30 Seconds to Mars","lastFmRating":7},{"id":22,"artistName":"adsfasdfasdfn","lastFmRating":8},{"id":18,"artistName":"Arctic Monkeys","lastFmRating":22},{"id":7,"artistName":"Bullet for my valentine","lastFmRating":15},{"id":10,"artistName":"Combichrist","lastFmRating":8},{"id":6,"artistName":"Depeche mode","lastFmRating":2},{"id":11,"artistName":"Devil sold his soul","lastFmRating":9},{"id":9,"artistName":"Elvis Presley","lastFmRating":4},{"id":8,"artistName":"Frank Sinatra","lastFmRating":3}]
+
+
+
+6365110674821683579 - Request: SERVICE: ArtistService 
+GET: http://localhost:61883/api/artists/page/1
+Accept: application/json
+
+
+6365110674821683579 - Response: Date: Tue, 09 Jan 2018 11:59:08 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3RzXGNvdW50?=
+X-Powered-By: ASP.NET
+
+Status: OK
+21
+
+
+
+6365110677966697478 - Request: SERVICE: ArtistService 
+GET: http://localhost:61883/api/artists/page/1
+Accept: application/json
+
+
+6365110677966697478 - Response: Date: Tue, 09 Jan 2018 11:59:39 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3RzXHBhZ2VcMQ==?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":2023,"artistName":null,"lastFmRating":0},{"id":2,"artistName":"30 Seconds to Mars","lastFmRating":7},{"id":22,"artistName":"adsfasdfasdfn","lastFmRating":8},{"id":18,"artistName":"Arctic Monkeys","lastFmRating":22},{"id":7,"artistName":"Bullet for my valentine","lastFmRating":15},{"id":10,"artistName":"Combichrist","lastFmRating":8},{"id":6,"artistName":"Depeche mode","lastFmRating":2},{"id":11,"artistName":"Devil sold his soul","lastFmRating":9},{"id":9,"artistName":"Elvis Presley","lastFmRating":4},{"id":8,"artistName":"Frank Sinatra","lastFmRating":3}]
+
+
+
+63651106779708285150 - Request: SERVICE: ArtistService 
+GET: http://localhost:61883/api/artists/page/1
+Accept: application/json
+
+
+63651106779708285150 - Response: Date: Tue, 09 Jan 2018 11:59:39 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3RzXGNvdW50?=
+X-Powered-By: ASP.NET
+
+Status: OK
+21
+
+
+
+6365110680688445989 - Request: SERVICE: ArtistService 
+GET: http://localhost:61883/api/artists/page/1
+Accept: application/json
+
+
+6365110680688445989 - Response: Date: Tue, 09 Jan 2018 12:00:06 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3RzXHBhZ2VcMQ==?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":2023,"artistName":null,"lastFmRating":0},{"id":2,"artistName":"30 Seconds to Mars","lastFmRating":7},{"id":22,"artistName":"adsfasdfasdfn","lastFmRating":8},{"id":18,"artistName":"Arctic Monkeys","lastFmRating":22},{"id":7,"artistName":"Bullet for my valentine","lastFmRating":15},{"id":10,"artistName":"Combichrist","lastFmRating":8},{"id":6,"artistName":"Depeche mode","lastFmRating":2},{"id":11,"artistName":"Devil sold his soul","lastFmRating":9},{"id":9,"artistName":"Elvis Presley","lastFmRating":4},{"id":8,"artistName":"Frank Sinatra","lastFmRating":3}]
+
+
+
+6365110680698581699 - Request: SERVICE: ArtistService 
+GET: http://localhost:61883/api/artists/page/1
+Accept: application/json
+
+
+6365110680698581699 - Response: Date: Tue, 09 Jan 2018 12:00:06 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3RzXGNvdW50?=
+X-Powered-By: ASP.NET
+
+Status: OK
+21
+
+
+
+6365110688725426688 - Request: SERVICE: ArtistService 
+GET: http://localhost:61883/api/artists/page/1
+Accept: application/json
+
+
+6365110688725426688 - Response: Date: Tue, 09 Jan 2018 12:01:27 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3RzXHBhZ2VcMQ==?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":2023,"artistName":null,"lastFmRating":0},{"id":2,"artistName":"30 Seconds to Mars","lastFmRating":7},{"id":22,"artistName":"adsfasdfasdfn","lastFmRating":8},{"id":18,"artistName":"Arctic Monkeys","lastFmRating":22},{"id":7,"artistName":"Bullet for my valentine","lastFmRating":15},{"id":10,"artistName":"Combichrist","lastFmRating":8},{"id":6,"artistName":"Depeche mode","lastFmRating":2},{"id":11,"artistName":"Devil sold his soul","lastFmRating":9},{"id":9,"artistName":"Elvis Presley","lastFmRating":4},{"id":8,"artistName":"Frank Sinatra","lastFmRating":3}]
+
+
+
+6365110688733615298 - Request: SERVICE: ArtistService 
+GET: http://localhost:61883/api/artists/page/1
+Accept: application/json
+
+
+6365110688733615298 - Response: Date: Tue, 09 Jan 2018 12:01:27 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3RzXGNvdW50?=
+X-Powered-By: ASP.NET
+
+Status: OK
+21
+
+
+
+6365110691116752808 - Request: SERVICE: ArtistService 
+GET: http://localhost:61883/api/artists/page/1
+Accept: application/json
+
+
+6365110691116752808 - Response: Date: Tue, 09 Jan 2018 12:01:51 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3RzXHBhZ2VcMQ==?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":2023,"artistName":null,"lastFmRating":0},{"id":2,"artistName":"30 Seconds to Mars","lastFmRating":7},{"id":22,"artistName":"adsfasdfasdfn","lastFmRating":8},{"id":18,"artistName":"Arctic Monkeys","lastFmRating":22},{"id":7,"artistName":"Bullet for my valentine","lastFmRating":15},{"id":10,"artistName":"Combichrist","lastFmRating":8},{"id":6,"artistName":"Depeche mode","lastFmRating":2},{"id":11,"artistName":"Devil sold his soul","lastFmRating":9},{"id":9,"artistName":"Elvis Presley","lastFmRating":4},{"id":8,"artistName":"Frank Sinatra","lastFmRating":3}]
+
+
+
+6365110691125836019 - Request: SERVICE: ArtistService 
+GET: http://localhost:61883/api/artists/page/1
+Accept: application/json
+
+
+6365110691125836019 - Response: Date: Tue, 09 Jan 2018 12:01:51 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3RzXGNvdW50?=
+X-Powered-By: ASP.NET
+
+Status: OK
+21
+
+
+
+6365110694380289298 - Request: SERVICE: ArtistService 
+GET: http://localhost:61883/api/artists/page/1
+Accept: application/json
+
+
+6365110694380289298 - Response: Date: Tue, 09 Jan 2018 12:02:23 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3RzXHBhZ2VcMQ==?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":2023,"artistName":null,"lastFmRating":0},{"id":2,"artistName":"30 Seconds to Mars","lastFmRating":7},{"id":22,"artistName":"adsfasdfasdfn","lastFmRating":8},{"id":18,"artistName":"Arctic Monkeys","lastFmRating":22},{"id":7,"artistName":"Bullet for my valentine","lastFmRating":15},{"id":10,"artistName":"Combichrist","lastFmRating":8},{"id":6,"artistName":"Depeche mode","lastFmRating":2},{"id":11,"artistName":"Devil sold his soul","lastFmRating":9},{"id":9,"artistName":"Elvis Presley","lastFmRating":4},{"id":8,"artistName":"Frank Sinatra","lastFmRating":3}]
+
+
+
+63651106943868177023 - Request: SERVICE: ArtistService 
+GET: http://localhost:61883/api/artists/page/1
+Accept: application/json
+
+
+63651106943868177023 - Response: Date: Tue, 09 Jan 2018 12:02:23 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3RzXGNvdW50?=
+X-Powered-By: ASP.NET
+
+Status: OK
+21
+
+
+
+6365110714581341278 - Request: SERVICE: ArtistService 
+GET: http://localhost:61883/api/artists/page/1
+Accept: application/json
+
+
+6365110714581341278 - Response: Date: Tue, 09 Jan 2018 12:05:45 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3RzXHBhZ2VcMQ==?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":2,"artistName":"30 Seconds to Mars","lastFmRating":7},{"id":22,"artistName":"adsfasdfasdfn","lastFmRating":8},{"id":18,"artistName":"Arctic Monkeys","lastFmRating":22},{"id":7,"artistName":"Bullet for my valentine","lastFmRating":15},{"id":10,"artistName":"Combichrist","lastFmRating":8},{"id":6,"artistName":"Depeche mode","lastFmRating":2},{"id":11,"artistName":"Devil sold his soul","lastFmRating":9},{"id":9,"artistName":"Elvis Presley","lastFmRating":4},{"id":8,"artistName":"Frank Sinatra","lastFmRating":3},{"id":17,"artistName":"John Lenon and Team","lastFmRating":6}]
+
+
+
+6365110714587192048 - Request: SERVICE: ArtistService 
+GET: http://localhost:61883/api/artists/page/1
+Accept: application/json
+
+
+6365110714587192048 - Response: Date: Tue, 09 Jan 2018 12:05:45 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3RzXGNvdW50?=
+X-Powered-By: ASP.NET
+
+Status: OK
+20
+
+
+

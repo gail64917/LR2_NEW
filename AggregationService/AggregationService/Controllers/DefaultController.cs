@@ -13,6 +13,8 @@ using System.Text;
 using static AggregationService.Logger.Logger;
 using Newtonsoft.Json;
 using Microsoft.AspNetCore.Authorization;
+using AggregationService.Provider.JWT;
+using Microsoft.AspNetCore.Http;
 
 namespace AggregationService.Controllers
 {
@@ -149,6 +151,20 @@ namespace AggregationService.Controllers
                     return View("Error", message);
                 }
                 await LogQuery(request, requestMessage, responseString, responseMessage);
+                var userJson = await response.Content.ReadAsStringAsync();
+                var userTruly = JsonConvert.DeserializeObject<User>(userJson);
+                var token = new JwtTokenBuilder()
+                                .AddSecurityKey(JwtSecurityKey.Create("Test-secret-key-1234"))
+                                .AddSubject(userTruly.Login)
+                                .AddIssuer("Test.Security.Bearer")
+                                .AddAudience("Test.Security.Bearer")
+                                .AddClaim("User", userTruly.ID.ToString())
+                                .AddExpiry(182)
+                                .Build();
+
+                //return Ok(token.Value);
+                HttpContext.Session.SetString("Token", token.Value);
+                HttpContext.Session.SetString("Login", userTruly.Login);
                 return RedirectToAction(nameof(Index));
             }
             

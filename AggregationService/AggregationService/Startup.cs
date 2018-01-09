@@ -31,6 +31,7 @@ namespace AggregationService
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+                    //.AddCookie()
                     .AddJwtBearer(options => {
                         options.TokenValidationParameters =
                              new TokenValidationParameters
@@ -71,8 +72,10 @@ namespace AggregationService
                 //options.AddPolicy("Founder",
                 //    policy => policy.RequireClaim("EmployeeNumber", "1", "2", "3", "4", "5"));
             });
-
+            
             services.AddMvc();
+            services.AddDistributedMemoryCache();
+            services.AddSession();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -92,6 +95,7 @@ namespace AggregationService
             app.UseAuthentication();
             //app.UseMvcWithDefaultRoute();
 
+            app.UseSession();
             app.UseMvc(routes =>
             {
                 routes.MapRoute(
