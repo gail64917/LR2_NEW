@@ -21475,3 +21475,868 @@ Status: OK
 
 
 
+6365111321284862499 - Request: SERVICE: AuthorisationService 
+POST: http://localhost:59917/api/Users/Find
+Accept: application/json
+{
+  "Login": "sad",
+  "Password": "sad"
+}
+
+6365111321284862499 - Response: Date: Tue, 09 Jan 2018 13:46:52 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXGFwaVxVc2Vyc1xGaW5k?=
+X-Powered-By: ASP.NET
+
+Status: OK
+{"id":1002,"login":"sad","password":"16cfe4f2e1519c415b9b11024c0cba52","role":null,"lastToken":null}
+
+
+
+63651113222181657716 - Request: SERVICE: ArtistService 
+GET: http://localhost:61883/api/artists/page/1
+Accept: application/json
+
+
+63651113222181657716 - Response: Date: Tue, 09 Jan 2018 13:47:02 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3RzXHBhZ2VcMQ==?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":2,"artistName":"30 Seconds to Mars","lastFmRating":7},{"id":22,"artistName":"adsfasdfasdfn","lastFmRating":8},{"id":18,"artistName":"Arctic Monkeys","lastFmRating":22},{"id":7,"artistName":"Bullet for my valentine","lastFmRating":15},{"id":10,"artistName":"Combichrist","lastFmRating":8},{"id":6,"artistName":"Depeche mode","lastFmRating":2},{"id":11,"artistName":"Devil sold his soul","lastFmRating":9},{"id":9,"artistName":"Elvis Presley","lastFmRating":4},{"id":8,"artistName":"Frank Sinatra","lastFmRating":3},{"id":17,"artistName":"John Lenon and Team","lastFmRating":6}]
+
+
+
+63651113222321635710 - Request: SERVICE: ArtistService 
+GET: http://localhost:61883/api/artists/page/1
+Accept: application/json
+
+
+63651113222321635710 - Response: Date: Tue, 09 Jan 2018 13:47:02 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3RzXGNvdW50?=
+X-Powered-By: ASP.NET
+
+Status: OK
+20
+
+
+
+63651113269897575811 - Request: SERVICE: AuthorisationService 
+POST: http://localhost:59917/api/Users/Find
+Accept: application/json
+{
+  "Login": "sad",
+  "Password": "sad"
+}
+
+63651113269897575811 - Response: Date: Tue, 09 Jan 2018 13:47:49 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXGFwaVxVc2Vyc1xGaW5k?=
+X-Powered-By: ASP.NET
+
+Status: OK
+{"id":1002,"login":"sad","password":"16cfe4f2e1519c415b9b11024c0cba52","role":null,"lastToken":null}
+
+
+
+6365111343371224078 - Request: SERVICE: AuthorisationService 
+POST: http://localhost:59917/api/Users/Find
+Accept: application/json
+{
+  "Login": "sad",
+  "Password": "sad"
+}
+
+6365111343371224078 - Response: Date: Tue, 09 Jan 2018 13:50:33 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXGFwaVxVc2Vyc1xGaW5k?=
+X-Powered-By: ASP.NET
+
+Status: OK
+{"id":1002,"login":"sad","password":"16cfe4f2e1519c415b9b11024c0cba52","role":null,"lastToken":null}
+
+
+
+63651113569422837529 - Request: SERVICE: AuthorisationService 
+POST: http://localhost:59917/api/Users/Find
+Accept: application/json
+{
+  "Login": "sad",
+  "Password": "sad"
+}
+
+63651113569422837529 - Response: Date: Tue, 09 Jan 2018 13:52:49 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXGFwaVxVc2Vyc1xGaW5k?=
+X-Powered-By: ASP.NET
+
+Status: OK
+{"id":1002,"login":"sad","password":"16cfe4f2e1519c415b9b11024c0cba52","role":null,"lastToken":null}
+
+
+
+63651113582485575130 - Request: SERVICE: AuthorisationService 
+POST: http://localhost:59917/api/Users/Find
+Accept: application/json
+{
+  "Login": "sad",
+  "Password": "sad"
+}
+
+63651113582485575130 - Response: Date: Tue, 09 Jan 2018 13:53:02 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXGFwaVxVc2Vyc1xGaW5k?=
+X-Powered-By: ASP.NET
+
+Status: OK
+{"id":1002,"login":"sad","password":"16cfe4f2e1519c415b9b11024c0cba52","role":null,"lastToken":null}
+
+
+
+6365111359002575669 - Request: SERVICE: AuthorisationService 
+POST: http://localhost:59917/api/Users/Find
+Accept: application/json
+{
+  "Login": "sad",
+  "Password": "sad"
+}
+
+6365111359002575669 - Response: Date: Tue, 09 Jan 2018 13:53:10 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXGFwaVxVc2Vyc1xGaW5k?=
+X-Powered-By: ASP.NET
+
+Status: OK
+{"id":1002,"login":"sad","password":"16cfe4f2e1519c415b9b11024c0cba52","role":null,"lastToken":null}
+
+
+
+63651113823055414410 - Request: SERVICE: ArtistService 
+GET: http://localhost:61883/api/artists/page/1
+Accept: application/json
+
+
+63651113823055414410 - Response: Date: Tue, 09 Jan 2018 13:57:03 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3RzXHBhZ2VcMQ==?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":2,"artistName":"30 Seconds to Mars","lastFmRating":7},{"id":22,"artistName":"adsfasdfasdfn","lastFmRating":8},{"id":18,"artistName":"Arctic Monkeys","lastFmRating":22},{"id":7,"artistName":"Bullet for my valentine","lastFmRating":15},{"id":10,"artistName":"Combichrist","lastFmRating":8},{"id":6,"artistName":"Depeche mode","lastFmRating":2},{"id":11,"artistName":"Devil sold his soul","lastFmRating":9},{"id":9,"artistName":"Elvis Presley","lastFmRating":4},{"id":8,"artistName":"Frank Sinatra","lastFmRating":3},{"id":17,"artistName":"John Lenon and Team","lastFmRating":6}]
+
+
+
+6365111382308819109 - Request: SERVICE: ArtistService 
+GET: http://localhost:61883/api/artists/page/1
+Accept: application/json
+
+
+6365111382308819109 - Response: Date: Tue, 09 Jan 2018 13:57:03 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3RzXGNvdW50?=
+X-Powered-By: ASP.NET
+
+Status: OK
+20
+
+
+
+6365111385105632329 - Request: SERVICE: AuthorisationService 
+POST: http://localhost:59917/api/Users/Find
+Accept: application/json
+{
+  "Login": "admin",
+  "Password": "admin"
+}
+
+6365111385105632329 - Response: Date: Tue, 09 Jan 2018 13:57:31 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXGFwaVxVc2Vyc1xGaW5k?=
+X-Powered-By: ASP.NET
+
+Status: OK
+{"id":1003,"login":"admin","password":"19a2854144b63a8f7617a6f225019b12","role":null,"lastToken":null}
+
+
+
+63651145539997613010 - Request: SERVICE: AuthorisationService 
+POST: http://localhost:59917/api/Users/Find
+Accept: application/json
+{
+  "Login": "admin",
+  "Password": "admin"
+}
+
+63651145539997613010 - Response: Date: Tue, 09 Jan 2018 22:45:39 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXGFwaVxVc2Vyc1xGaW5k?=
+X-Powered-By: ASP.NET
+
+Status: OK
+{"id":1003,"login":"admin","password":"19a2854144b63a8f7617a6f225019b12","role":null,"lastToken":null}
+
+
+
+6365114627155212259 - Request: SERVICE: AuthorisationService 
+POST: http://localhost:59917/api/Users/Find
+Accept: application/json
+{
+  "Login": "admin",
+  "Password": "admin"
+}
+
+6365114627155212259 - Response: Date: Tue, 09 Jan 2018 22:57:51 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXGFwaVxVc2Vyc1xGaW5k?=
+X-Powered-By: ASP.NET
+
+Status: OK
+{"id":1003,"login":"admin","password":"19a2854144b63a8f7617a6f225019b12","role":null,"lastToken":null}
+
+
+
+63651146367328281318 - Request: SERVICE: AuthorisationService 
+POST: http://localhost:59917/api/Users/Find
+Accept: application/json
+{
+  "Login": "admin",
+  "Password": "admin"
+}
+
+63651146367328281318 - Response: Date: Tue, 09 Jan 2018 22:59:27 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXGFwaVxVc2Vyc1xGaW5k?=
+X-Powered-By: ASP.NET
+
+Status: OK
+{"id":1003,"login":"admin","password":"19a2854144b63a8f7617a6f225019b12","role":null,"lastToken":null}
+
+
+
+63651146382613886518 - Request: SERVICE: AuthorisationService 
+POST: http://localhost:59917/api/Users/Find
+Accept: application/json
+{
+  "Login": "sad",
+  "Password": "sad"
+}
+
+63651146382613886518 - Response: Date: Tue, 09 Jan 2018 22:59:42 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXGFwaVxVc2Vyc1xGaW5k?=
+X-Powered-By: ASP.NET
+
+Status: OK
+{"id":1002,"login":"sad","password":"16cfe4f2e1519c415b9b11024c0cba52","role":null,"lastToken":null}
+
+
+
+6365114644478528449 - Request: SERVICE: AuthorisationService 
+POST: http://localhost:59917/api/Users/Find
+Accept: application/json
+{
+  "Login": "sad",
+  "Password": "sad"
+}
+
+6365114644478528449 - Response: Date: Tue, 09 Jan 2018 23:00:33 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXGFwaVxVc2Vyc1xGaW5k?=
+X-Powered-By: ASP.NET
+
+Status: OK
+{"id":1002,"login":"sad","password":"16cfe4f2e1519c415b9b11024c0cba52","role":null,"lastToken":null}
+
+
+
+6365114665210401949 - Request: SERVICE: AuthorisationService 
+POST: http://localhost:59917/api/Users/Find
+Accept: application/json
+{
+  "Login": "sad",
+  "Password": "sad"
+}
+
+6365114665210401949 - Response: Date: Tue, 09 Jan 2018 23:04:12 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXGFwaVxVc2Vyc1xGaW5k?=
+X-Powered-By: ASP.NET
+
+Status: OK
+{"id":1002,"login":"sad","password":"16cfe4f2e1519c415b9b11024c0cba52","role":"User","lastToken":null}
+
+
+
+63651146682643121222 - Request: SERVICE: AuthorisationService 
+POST: http://localhost:59917/api/Users/Find
+Accept: application/json
+{
+  "Login": "sad",
+  "Password": "sad"
+}
+
+63651146682643121222 - Response: Date: Tue, 09 Jan 2018 23:04:33 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXGFwaVxVc2Vyc1xGaW5k?=
+X-Powered-By: ASP.NET
+
+Status: OK
+{"id":1002,"login":"sad","password":"16cfe4f2e1519c415b9b11024c0cba52","role":"User","lastToken":null}
+
+
+
+63651146723830034122 - Request: SERVICE: AuthorisationService 
+POST: http://localhost:59917/api/Users/Find
+Accept: application/json
+{
+  "Login": "sad",
+  "Password": "sad"
+}
+
+63651146723830034122 - Response: Date: Tue, 09 Jan 2018 23:05:23 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXGFwaVxVc2Vyc1xGaW5k?=
+X-Powered-By: ASP.NET
+
+Status: OK
+{"id":1002,"login":"sad","password":"16cfe4f2e1519c415b9b11024c0cba52","role":"User","lastToken":null}
+
+
+
+6365114723330658069 - Request: SERVICE: AuthorisationService 
+POST: http://localhost:59917/api/Users/Find
+Accept: application/json
+{
+  "Login": "sad",
+  "Password": "sad"
+}
+
+6365114723330658069 - Response: Date: Tue, 09 Jan 2018 23:13:53 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXGFwaVxVc2Vyc1xGaW5k?=
+X-Powered-By: ASP.NET
+
+Status: OK
+{"id":1002,"login":"sad","password":"16cfe4f2e1519c415b9b11024c0cba52","role":"User","lastToken":null}
+
+
+
+63651147269772468923 - Request: SERVICE: AuthorisationService 
+POST: http://localhost:59917/api/Users/Find
+Accept: application/json
+{
+  "Login": "sad",
+  "Password": "sad"
+}
+
+63651147269772468923 - Response: Date: Tue, 09 Jan 2018 23:14:29 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXGFwaVxVc2Vyc1xGaW5k?=
+X-Powered-By: ASP.NET
+
+Status: OK
+{"id":1002,"login":"sad","password":"16cfe4f2e1519c415b9b11024c0cba52","role":"User","lastToken":null}
+
+
+
+6365114727763648529 - Request: SERVICE: AuthorisationService 
+POST: http://localhost:59917/api/Users/Find
+Accept: application/json
+{
+  "Login": "sad",
+  "Password": "sad"
+}
+
+6365114727763648529 - Response: Date: Tue, 09 Jan 2018 23:14:37 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXGFwaVxVc2Vyc1xGaW5k?=
+X-Powered-By: ASP.NET
+
+Status: OK
+{"id":1002,"login":"sad","password":"16cfe4f2e1519c415b9b11024c0cba52","role":"User","lastToken":null}
+
+
+
+6365114738280456478 - Request: SERVICE: AuthorisationService 
+POST: http://localhost:59917/api/Users/Find
+Accept: application/json
+{
+  "Login": "sad",
+  "Password": "sad"
+}
+
+6365114738280456478 - Response: Date: Tue, 09 Jan 2018 23:16:22 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXGFwaVxVc2Vyc1xGaW5k?=
+X-Powered-By: ASP.NET
+
+Status: OK
+{"id":1002,"login":"sad","password":"16cfe4f2e1519c415b9b11024c0cba52","role":"User","lastToken":null}
+
+
+
+63651147462334900522 - Request: SERVICE: AuthorisationService 
+POST: http://localhost:59917/api/Users/Find
+Accept: application/json
+{
+  "Login": "sad",
+  "Password": "sad"
+}
+
+63651147462334900522 - Response: Date: Tue, 09 Jan 2018 23:17:42 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXGFwaVxVc2Vyc1xGaW5k?=
+X-Powered-By: ASP.NET
+
+Status: OK
+{"id":1002,"login":"sad","password":"16cfe4f2e1519c415b9b11024c0cba52","role":"User","lastToken":null}
+
+
+
+6365114763128128308 - Request: SERVICE: AuthorisationService 
+POST: http://localhost:59917/api/Users/Find
+Accept: application/json
+{
+  "Login": "sad",
+  "Password": "sad"
+}
+
+6365114763128128308 - Response: Date: Tue, 09 Jan 2018 23:20:31 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXGFwaVxVc2Vyc1xGaW5k?=
+X-Powered-By: ASP.NET
+
+Status: OK
+{"id":1002,"login":"sad","password":"16cfe4f2e1519c415b9b11024c0cba52","role":"User","lastToken":null}
+
+
+
+6365114765810122489 - Request: SERVICE: AuthorisationService 
+POST: http://localhost:59917/api/Users/Find
+Accept: application/json
+{
+  "Login": "sad",
+  "Password": "sad"
+}
+
+6365114765810122489 - Response: Date: Tue, 09 Jan 2018 23:20:58 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXGFwaVxVc2Vyc1xGaW5k?=
+X-Powered-By: ASP.NET
+
+Status: OK
+{"id":1002,"login":"sad","password":"16cfe4f2e1519c415b9b11024c0cba52","role":"User","lastToken":null}
+
+
+
+6365114773923384569 - Request: SERVICE: AuthorisationService 
+POST: http://localhost:59917/api/Users/Find
+Accept: application/json
+{
+  "Login": "sad",
+  "Password": "sad"
+}
+
+6365114773923384569 - Response: Date: Tue, 09 Jan 2018 23:22:19 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXGFwaVxVc2Vyc1xGaW5k?=
+X-Powered-By: ASP.NET
+
+Status: OK
+{"id":1002,"login":"sad","password":"16cfe4f2e1519c415b9b11024c0cba52","role":"User","lastToken":null}
+
+
+
+6365114778080358138 - Request: SERVICE: AuthorisationService 
+POST: http://localhost:59917/api/Users/Find
+Accept: application/json
+{
+  "Login": "sad",
+  "Password": "sad"
+}
+
+6365114778080358138 - Response: Date: Tue, 09 Jan 2018 23:23:00 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXGFwaVxVc2Vyc1xGaW5k?=
+X-Powered-By: ASP.NET
+
+Status: OK
+{"id":1002,"login":"sad","password":"16cfe4f2e1519c415b9b11024c0cba52","role":"User","lastToken":null}
+
+
+
+63651148462204080522 - Request: SERVICE: AuthorisationService 
+POST: http://localhost:59917/api/Users/Find
+Accept: application/json
+{
+  "Login": "sad",
+  "Password": "sad"
+}
+
+63651148462204080522 - Response: Date: Tue, 09 Jan 2018 23:34:22 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXGFwaVxVc2Vyc1xGaW5k?=
+X-Powered-By: ASP.NET
+
+Status: OK
+{"id":1002,"login":"sad","password":"16cfe4f2e1519c415b9b11024c0cba52","role":"User","lastToken":null}
+
+
+
+6365114847277408029 - Request: SERVICE: AuthorisationService 
+POST: http://localhost:59917/api/Users/Find
+Accept: application/json
+{
+  "Login": "sad",
+  "Password": "sad"
+}
+
+6365114847277408029 - Response: Date: Tue, 09 Jan 2018 23:34:32 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXGFwaVxVc2Vyc1xGaW5k?=
+X-Powered-By: ASP.NET
+
+Status: OK
+{"id":1002,"login":"sad","password":"16cfe4f2e1519c415b9b11024c0cba52","role":"User","lastToken":null}
+
+
+
+63651148520531391222 - Request: SERVICE: AuthorisationService 
+POST: http://localhost:59917/api/Users/Find
+Accept: application/json
+{
+  "Login": "sad",
+  "Password": "sad"
+}
+
+63651148520531391222 - Response: Date: Tue, 09 Jan 2018 23:35:20 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXGFwaVxVc2Vyc1xGaW5k?=
+X-Powered-By: ASP.NET
+
+Status: OK
+{"id":1002,"login":"sad","password":"16cfe4f2e1519c415b9b11024c0cba52","role":"User","lastToken":null}
+
+
+
+63651148638090392010 - Request: SERVICE: AuthorisationService 
+POST: http://localhost:59917/api/Users/Find
+Accept: application/json
+{
+  "Login": "admin",
+  "Password": "admin"
+}
+
+63651148638090392010 - Response: Date: Tue, 09 Jan 2018 23:37:18 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXGFwaVxVc2Vyc1xGaW5k?=
+X-Powered-By: ASP.NET
+
+Status: OK
+{"id":1003,"login":"admin","password":"19a2854144b63a8f7617a6f225019b12","role":"Admin","lastToken":null}
+
+
+
+63651148642858553610 - Request: SERVICE: AuthorisationService 
+PUT: http://localhost:59917/api/users/1003
+Accept: application/json
+{
+  "id": 1003,
+  "login": "admin",
+  "password": "19a2854144b63a8f7617a6f225019b12",
+  "role": "Admin",
+  "lasttoken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbiIsImp0aSI6ImZkMmM0YjBlLWQyODMtNDFhNC04NDI2LTlkNTQyMWM2ODVhZCIsIkFkbWluIjoiMTAwMyIsImV4cCI6MTUxNTU0MTA5OCwiaXNzIjoiVGVzdC5TZWN1cml0eS5CZWFyZXIiLCJhdWQiOiJUZXN0LlNlY3VyaXR5LkJlYXJlciJ9.SglBr6IAkW5_0M5okfvfE0680TNJDV-kSCloULLWfkM"
+}
+
+63651148642858553610 - Response: Date: Tue, 09 Jan 2018 23:37:18 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXGFwaVx1c2Vyc1wxMDAz?=
+X-Powered-By: ASP.NET
+
+Status: Accepted
+{"id":1003,"login":"admin","password":"19a2854144b63a8f7617a6f225019b12","role":"Admin","lastToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbiIsImp0aSI6ImZkMmM0YjBlLWQyODMtNDFhNC04NDI2LTlkNTQyMWM2ODVhZCIsIkFkbWluIjoiMTAwMyIsImV4cCI6MTUxNTU0MTA5OCwiaXNzIjoiVGVzdC5TZWN1cml0eS5CZWFyZXIiLCJhdWQiOiJUZXN0LlNlY3VyaXR5LkJlYXJlciJ9.SglBr6IAkW5_0M5okfvfE0680TNJDV-kSCloULLWfkM"}
+
+
+
+63651148648818667511 - Request: SERVICE: AuthorisationService 
+POST: http://localhost:59917/api/Users/Find
+Accept: application/json
+{
+  "Login": "admin",
+  "Password": "admin"
+}
+
+63651148648818667511 - Response: Date: Tue, 09 Jan 2018 23:37:28 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXGFwaVxVc2Vyc1xGaW5k?=
+X-Powered-By: ASP.NET
+
+Status: OK
+{"id":1003,"login":"admin","password":"19a2854144b63a8f7617a6f225019b12","role":"Admin","lastToken":null}
+
+
+
+6365114864890626719 - Request: SERVICE: AuthorisationService 
+PUT: http://localhost:59917/api/users/1003
+Accept: application/json
+{
+  "id": 1003,
+  "login": "admin",
+  "password": "19a2854144b63a8f7617a6f225019b12",
+  "role": "Admin",
+  "lasttoken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbiIsImp0aSI6IjllZjI1ZTg0LTNhYzYtNGVhOS1iNTE1LWEzYTFjNzc1NjUxZiIsIkFkbWluIjoiMTAwMyIsImV4cCI6MTUxNTU0MTEwOCwiaXNzIjoiVGVzdC5TZWN1cml0eS5CZWFyZXIiLCJhdWQiOiJUZXN0LlNlY3VyaXR5LkJlYXJlciJ9.VTuf_5NmucfaSP4PxXT856TxHCv0AlR_ARUdVbCErQ8"
+}
+
+6365114864890626719 - Response: Date: Tue, 09 Jan 2018 23:37:28 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXGFwaVx1c2Vyc1wxMDAz?=
+X-Powered-By: ASP.NET
+
+Status: Accepted
+{"id":1003,"login":"admin","password":"19a2854144b63a8f7617a6f225019b12","role":"Admin","lastToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbiIsImp0aSI6IjllZjI1ZTg0LTNhYzYtNGVhOS1iNTE1LWEzYTFjNzc1NjUxZiIsIkFkbWluIjoiMTAwMyIsImV4cCI6MTUxNTU0MTEwOCwiaXNzIjoiVGVzdC5TZWN1cml0eS5CZWFyZXIiLCJhdWQiOiJUZXN0LlNlY3VyaXR5LkJlYXJlciJ9.VTuf_5NmucfaSP4PxXT856TxHCv0AlR_ARUdVbCErQ8"}
+
+
+
+63651148663821811911 - Request: SERVICE: AuthorisationService 
+POST: http://localhost:59917/api/Users/Find
+Accept: application/json
+{
+  "Login": "sad",
+  "Password": "sad"
+}
+
+63651148663821811911 - Response: Date: Tue, 09 Jan 2018 23:37:43 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXGFwaVxVc2Vyc1xGaW5k?=
+X-Powered-By: ASP.NET
+
+Status: OK
+{"id":1002,"login":"sad","password":"16cfe4f2e1519c415b9b11024c0cba52","role":"User","lastToken":null}
+
+
+
+6365114866391621829 - Request: SERVICE: AuthorisationService 
+PUT: http://localhost:59917/api/users/1002
+Accept: application/json
+{
+  "id": 1002,
+  "login": "sad",
+  "password": "16cfe4f2e1519c415b9b11024c0cba52",
+  "role": "User",
+  "lasttoken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJzYWQiLCJqdGkiOiJiODc5NTk0Ny1kNTU0LTQ4NmUtYTE0OC0wMWI2ODc4NGNhMTgiLCJVc2VyIjoiMTAwMiIsImV4cCI6MTUxNTU0MTEyMywiaXNzIjoiVGVzdC5TZWN1cml0eS5CZWFyZXIiLCJhdWQiOiJUZXN0LlNlY3VyaXR5LkJlYXJlciJ9.6FsAWUc2bqO8cjV7eYJBmKYUKlAHmtSe1tSUUPm3wtA"
+}
+
+6365114866391621829 - Response: Date: Tue, 09 Jan 2018 23:37:43 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXGFwaVx1c2Vyc1wxMDAy?=
+X-Powered-By: ASP.NET
+
+Status: Accepted
+{"id":1002,"login":"sad","password":"16cfe4f2e1519c415b9b11024c0cba52","role":"User","lastToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJzYWQiLCJqdGkiOiJiODc5NTk0Ny1kNTU0LTQ4NmUtYTE0OC0wMWI2ODc4NGNhMTgiLCJVc2VyIjoiMTAwMiIsImV4cCI6MTUxNTU0MTEyMywiaXNzIjoiVGVzdC5TZWN1cml0eS5CZWFyZXIiLCJhdWQiOiJUZXN0LlNlY3VyaXR5LkJlYXJlciJ9.6FsAWUc2bqO8cjV7eYJBmKYUKlAHmtSe1tSUUPm3wtA"}
+
+
+
+63651148676691291910 - Request: SERVICE: AuthorisationService 
+POST: http://localhost:59917/api/Users/Find
+Accept: application/json
+{
+  "Login": "sad",
+  "Password": "sad"
+}
+
+63651148676691291910 - Response: Date: Tue, 09 Jan 2018 23:37:56 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXGFwaVxVc2Vyc1xGaW5k?=
+X-Powered-By: ASP.NET
+
+Status: OK
+{"id":1002,"login":"sad","password":"16cfe4f2e1519c415b9b11024c0cba52","role":"User","lastToken":null}
+
+
+
+63651148676748097222 - Request: SERVICE: AuthorisationService 
+PUT: http://localhost:59917/api/users/1002
+Accept: application/json
+{
+  "id": 1002,
+  "login": "sad",
+  "password": "16cfe4f2e1519c415b9b11024c0cba52",
+  "role": "User",
+  "lasttoken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJzYWQiLCJqdGkiOiJkOWFlNjg4YS1hMWIzLTRlMzktYmM5OC05NmVmNmUyMmIyYzAiLCJVc2VyIjoiMTAwMiIsImV4cCI6MTUxNTU0MTEzNiwiaXNzIjoiVGVzdC5TZWN1cml0eS5CZWFyZXIiLCJhdWQiOiJUZXN0LlNlY3VyaXR5LkJlYXJlciJ9.LT2jhlPk9qCRxudwXxQD2NyIKIBLWkaVl62i_8QM8bs"
+}
+
+63651148676748097222 - Response: Date: Tue, 09 Jan 2018 23:37:56 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXGFwaVx1c2Vyc1wxMDAy?=
+X-Powered-By: ASP.NET
+
+Status: Accepted
+{"id":1002,"login":"sad","password":"16cfe4f2e1519c415b9b11024c0cba52","role":"User","lastToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJzYWQiLCJqdGkiOiJkOWFlNjg4YS1hMWIzLTRlMzktYmM5OC05NmVmNmUyMmIyYzAiLCJVc2VyIjoiMTAwMiIsImV4cCI6MTUxNTU0MTEzNiwiaXNzIjoiVGVzdC5TZWN1cml0eS5CZWFyZXIiLCJhdWQiOiJUZXN0LlNlY3VyaXR5LkJlYXJlciJ9.LT2jhlPk9qCRxudwXxQD2NyIKIBLWkaVl62i_8QM8bs"}
+
+
+
+63651148688725216211 - Request: SERVICE: AuthorisationService 
+POST: http://localhost:59917/api/Users/Find
+Accept: application/json
+{
+  "Login": "sad",
+  "Password": "sad"
+}
+
+63651148688725216211 - Response: Date: Tue, 09 Jan 2018 23:38:08 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXGFwaVxVc2Vyc1xGaW5k?=
+X-Powered-By: ASP.NET
+
+Status: OK
+{"id":1002,"login":"sad","password":"16cfe4f2e1519c415b9b11024c0cba52","role":"User","lastToken":null}
+
+
+
+63651148688801153411 - Request: SERVICE: AuthorisationService 
+PUT: http://localhost:59917/api/users/1002
+Accept: application/json
+{
+  "id": 1002,
+  "login": "sad",
+  "password": "16cfe4f2e1519c415b9b11024c0cba52",
+  "role": "User",
+  "lasttoken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJzYWQiLCJqdGkiOiJkZjIwNjRjOC02ZjdkLTQzOWMtOTZkYi00ZDAzYzM0MWY3ZWIiLCJVc2VyIjoiMTAwMiIsImV4cCI6MTUxNTU0MTE0OCwiaXNzIjoiVGVzdC5TZWN1cml0eS5CZWFyZXIiLCJhdWQiOiJUZXN0LlNlY3VyaXR5LkJlYXJlciJ9.4TvkDk77yXwlBD4F1gkP7sXPhqYyRBYIz-8KbCPOnAw"
+}
+
+63651148688801153411 - Response: Date: Tue, 09 Jan 2018 23:38:08 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXGFwaVx1c2Vyc1wxMDAy?=
+X-Powered-By: ASP.NET
+
+Status: Accepted
+{"id":1002,"login":"sad","password":"16cfe4f2e1519c415b9b11024c0cba52","role":"User","lastToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJzYWQiLCJqdGkiOiJkZjIwNjRjOC02ZjdkLTQzOWMtOTZkYi00ZDAzYzM0MWY3ZWIiLCJVc2VyIjoiMTAwMiIsImV4cCI6MTUxNTU0MTE0OCwiaXNzIjoiVGVzdC5TZWN1cml0eS5CZWFyZXIiLCJhdWQiOiJUZXN0LlNlY3VyaXR5LkJlYXJlciJ9.4TvkDk77yXwlBD4F1gkP7sXPhqYyRBYIz-8KbCPOnAw"}
+
+
+
+63651148707906239110 - Request: SERVICE: AuthorisationService 
+POST: http://localhost:59917/api/Users/Find
+Accept: application/json
+{
+  "Login": "sad",
+  "Password": "sad"
+}
+
+63651148707906239110 - Response: Date: Tue, 09 Jan 2018 23:38:27 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXGFwaVxVc2Vyc1xGaW5k?=
+X-Powered-By: ASP.NET
+
+Status: OK
+{"id":1002,"login":"sad","password":"16cfe4f2e1519c415b9b11024c0cba52","role":"User","lastToken":null}
+
+
+
+63651148788477739711 - Request: SERVICE: ArtistService 
+GET: http://localhost:61883/api/artists/page/1
+Accept: application/json
+
+
+63651148788477739711 - Response: Date: Tue, 09 Jan 2018 23:39:48 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3RzXHBhZ2VcMQ==?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":2,"artistName":"30 Seconds to Mars","lastFmRating":7},{"id":22,"artistName":"adsfasdfasdfn","lastFmRating":8},{"id":18,"artistName":"Arctic Monkeys","lastFmRating":22},{"id":7,"artistName":"Bullet for my valentine","lastFmRating":15},{"id":10,"artistName":"Combichrist","lastFmRating":8},{"id":6,"artistName":"Depeche mode","lastFmRating":2},{"id":11,"artistName":"Devil sold his soul","lastFmRating":9},{"id":9,"artistName":"Elvis Presley","lastFmRating":4},{"id":8,"artistName":"Frank Sinatra","lastFmRating":3},{"id":17,"artistName":"John Lenon and Team","lastFmRating":6}]
+
+
+
+63651148788931998110 - Request: SERVICE: ArtistService 
+GET: http://localhost:61883/api/artists/page/1
+Accept: application/json
+
+
+63651148788931998110 - Response: Date: Tue, 09 Jan 2018 23:39:48 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3RzXGNvdW50?=
+X-Powered-By: ASP.NET
+
+Status: OK
+20
+
+
+
+63651148804302286110 - Request: SERVICE: ArtistService 
+GET: http://localhost:61883/api/artists/page/1
+Accept: application/json
+
+
+63651148804302286110 - Response: Date: Tue, 09 Jan 2018 23:40:04 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3RzXHBhZ2VcMQ==?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":2,"artistName":"30 Seconds to Mars","lastFmRating":7},{"id":22,"artistName":"adsfasdfasdfn","lastFmRating":8},{"id":18,"artistName":"Arctic Monkeys","lastFmRating":22},{"id":7,"artistName":"Bullet for my valentine","lastFmRating":15},{"id":10,"artistName":"Combichrist","lastFmRating":8},{"id":6,"artistName":"Depeche mode","lastFmRating":2},{"id":11,"artistName":"Devil sold his soul","lastFmRating":9},{"id":9,"artistName":"Elvis Presley","lastFmRating":4},{"id":8,"artistName":"Frank Sinatra","lastFmRating":3},{"id":17,"artistName":"John Lenon and Team","lastFmRating":6}]
+
+
+
+63651148804370319132 - Request: SERVICE: ArtistService 
+GET: http://localhost:61883/api/artists/page/1
+Accept: application/json
+
+
+63651148804370319132 - Response: Date: Tue, 09 Jan 2018 23:40:04 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3RzXGNvdW50?=
+X-Powered-By: ASP.NET
+
+Status: OK
+20
+
+
+

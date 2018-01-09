@@ -61,14 +61,14 @@
                     if (token != null)
                     {
                         tokenStringJS = System.Text.Encoding.Default.GetString(token);
-                        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+                        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
                         <script>
                             var tkn = "@tokenStringJS";
-                            //_____________________________________________________________________________
+                            //_________________________________________________________________
                             $(document).ready(function () {
                                 $('#submitButton').click(function () {
                                     $.ajax({
-                                        url: "http://localhost:11529/Artist/1",
+                                        url: "https://localhost:44336/Artist/1",
                                         type: 'GET',
                                         contentType: 'application/json',
                                         headers: {

@@ -67,6 +67,8 @@ namespace AggregationService
             {
                 options.AddPolicy("User",
                     policy => policy.RequireClaim("User"));
+                options.AddPolicy("Admin",
+                    policy => policy.RequireClaim("Admin"));
                 //options.AddPolicy("Hr",
                 //    policy => policy.RequireClaim("EmployeeNumber"));
                 //options.AddPolicy("Founder",

@@ -61,12 +61,14 @@ namespace AuthorisationService.Controllers
             {
                 return BadRequest();
             }
-
-            _context.Entry(user).State = EntityState.Modified;
-
+            var usrDB = _context.Users.Where(s => s.ID == user.ID && s.Login == user.Login).FirstOrDefault<User>();
+            usrDB.LastToken = user.LastToken;
+            _context.Entry(usrDB).State = EntityState.Modified;
+            
             try
             {
                 await _context.SaveChangesAsync();
+                return Accepted(usrDB);
             }
             catch (DbUpdateConcurrencyException)
             {
@@ -80,7 +82,7 @@ namespace AuthorisationService.Controllers
                 }
             }
 
-            return NoContent();
+            //return NoContent();
         }
 
         // POST: api/Users
@@ -116,6 +118,7 @@ namespace AuthorisationService.Controllers
                 if (u.Login == RealUser.Login && u.Password == RealUser.Password)
                 {
                     RealUser.ID = u.ID;
+                    RealUser.Role = u.Role;
                     return Ok(RealUser);
                 }
             }

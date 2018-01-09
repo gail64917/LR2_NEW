@@ -54,6 +54,7 @@ namespace AggregationService.Controllers
             var values = new JObject();
             values.Add("Login", user.Login);
             values.Add("Password", user.Password);
+            values.Add("Role", "User");
 
             var corrId = string.Format("{0}{1}", DateTime.Now.Ticks, Thread.CurrentThread.ManagedThreadId);
             string request;
@@ -158,7 +159,7 @@ namespace AggregationService.Controllers
                                 .AddSubject(userTruly.Login)
                                 .AddIssuer("Test.Security.Bearer")
                                 .AddAudience("Test.Security.Bearer")
-                                .AddClaim("User", userTruly.ID.ToString())
+                                .AddClaim(userTruly.Role, userTruly.ID.ToString())
                                 .AddExpiry(182)
                                 .Build();
 

@@ -2,6 +2,41 @@
     ViewData["Title"] = "Artists";
 }
 
+@{
+    var token = new Byte[500];
+    Context.Session.TryGetValue("Token", out token);
+    var login = new Byte[500];
+    Context.Session.TryGetValue("Login", out login);
+    string tokenStringJS = "test";
+    if (token != null)
+    {
+        tokenStringJS = System.Text.Encoding.Default.GetString(token);
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script>
+            function refer(urlOut) {
+                var tkn = "@tokenStringJS";
+                //_________________________________________________________________
+                $(document).ready(function () {
+                    $('#submitButton').click(function () {
+                        $.ajax({
+                            url: urlOut,
+                            type: 'GET',
+                            contentType: 'application/json',
+                            headers: {
+                                "Authorization": "Bearer " + tkn
+                            },
+                            async: false,
+                            success: function (html) {
+                                $(window.document.body).html(html);
+                            }
+                        });
+                    });
+                });
+            };
+        </script>
+    }
+}
+
 <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="6000">
     <ol class="carousel-indicators">
         <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -107,10 +142,10 @@
                     @Html.DisplayFor(modelItem => item.LastFmRating)
                 </td>
                 <td>
-                    
+
                     <a asp-action="Edite" asp-route-id="@item.ID">Edit</a> |
                     @*<a asp-action="Details" asp-route-id="@item.ID">Details</a> |*@
-                    
+
                     @*<form method="delete">
 
                     </form>*@
