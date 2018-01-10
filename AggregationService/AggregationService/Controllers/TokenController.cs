@@ -22,7 +22,7 @@ namespace AggregationService.Controllers
     [AllowAnonymous]
     public class TokenController : Controller
     {
-        private const string URLAuthorisation = "http://localhost:59917";
+        private const string URLAuthorisation = "https://localhost:44387";
 
         [HttpPost]
         public async Task<IActionResult> Create([FromBody]User user)

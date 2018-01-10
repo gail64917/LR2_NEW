@@ -26,9 +26,9 @@ namespace AggregationService.Controllers
     [Authorize(Policy = "User")]
     public class ApiController : Controller
     {
-        private const string URLArtistService = "http://localhost:61883";
-        private const string URLArenaService = "http://localhost:58349";
-        private const string URLConcerteService = "http://localhost:61438";
+        private const string URLArtistService = "https://localhost:44361";
+        private const string URLArenaService = "https://localhost:44325";
+        private const string URLConcerteService = "https://localhost:44381";
 
         [Route("test")]
         public int test()

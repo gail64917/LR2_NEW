@@ -21,7 +21,7 @@ namespace AggregationService.Controllers
     [Route("Artist")]
     public class ArtistController : Controller
     {
-        private const string URLArtistService = "http://localhost:61883";
+        private const string URLArtistService = "https://localhost:44361";
 
 
         // GET: Artist

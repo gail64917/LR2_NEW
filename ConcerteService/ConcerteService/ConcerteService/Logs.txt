@@ -9214,3 +9214,99 @@ Status: OK
 
 
 
+6365117939232661888 - Request: SERVICE: ArenaService 
+GET: http://localhost:58349/api/arenas
+Accept: application/json
+
+
+6365117939232661888 - Response: Date: Wed, 10 Jan 2018 08:09:51 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFyZW5hU2VydmljZVxBcmVuYVNlcnZpY2VcYXBpXGFyZW5hcw==?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":1044,"arenaName":null,"capacity":0,"cityID":1017,"city":{"id":1017,"cityName":null,"cityPopulation":0}},{"id":11,"arenaName":"Big Arena","capacity":20000,"cityID":2,"city":{"id":2,"cityName":"Berlin","cityPopulation":3500000}},{"id":20,"arenaName":"Big Ring","capacity":20000,"cityID":5,"city":{"id":5,"cityName":"Washington","cityPopulation":9500000}},{"id":5,"arenaName":"Brixton Academy","capacity":10000,"cityID":3,"city":{"id":3,"cityName":"London","cityPopulation":9000000}},{"id":1,"arenaName":"Crocus City Hall","capacity":8000,"cityID":1,"city":{"id":1,"cityName":"Moscow","cityPopulation":13000000}},{"id":41,"arenaName":"Csdfsdfsdfl","capacity":8000,"cityID":14,"city":{"id":14,"cityName":"asdasdasd","cityPopulation":13000000}},{"id":40,"arenaName":"Great Theatre","capacity":3000,"cityID":13,"city":{"id":13,"cityName":"San Marino","cityPopulation":100000}},{"id":12,"arenaName":"Hell Fire Arena","capacity":10000,"cityID":3,"city":{"id":3,"cityName":"London","cityPopulation":9000000}},{"id":21,"arenaName":"Main Hall","capacity":12000,"cityID":6,"city":{"id":6,"cityName":"Saint Petersburg","cityPopulation":1550000}},{"id":6,"arenaName":"Mercedes-Benz Arena","capacity":6000,"cityID":2,"city":{"id":2,"cityName":"Berlin","cityPopulation":3500000}},{"id":10,"arenaName":"Natasha Arena","capacity":3000,"cityID":1,"city":{"id":1,"cityName":"Moscow","cityPopulation":13000000}},{"id":2,"arenaName":"Olimpiyskiy","capacity":10000,"cityID":1,"city":{"id":1,"cityName":"Moscow","cityPopulation":13000000}},{"id":7,"arenaName":"Olympiastadion Berlin","capacity":9000,"cityID":2,"city":{"id":2,"cityName":"Berlin","cityPopulation":3500000}},{"id":1042,"arenaName":"qqqqqqq","capacity":2000,"cityID":1015,"city":{"id":1015,"cityName":"qqqqq","cityPopulation":123123123}},{"id":8,"arenaName":"Rock am Ring","capacity":15000,"cityID":2,"city":{"id":2,"cityName":"Berlin","cityPopulation":3500000}},{"id":3,"arenaName":"Vegas City Hall","capacity":6000,"cityID":1,"city":{"id":1,"cityName":"Moscow","cityPopulation":13000000}},{"id":17,"arenaName":"Vladimir Arena","capacity":7000,"cityID":2,"city":{"id":2,"cityName":"Berlin","cityPopulation":3500000}},{"id":9,"arenaName":"Vova Arena","capacity":3000,"cityID":1,"city":{"id":1,"cityName":"Moscow","cityPopulation":13000000}},{"id":4,"arenaName":"Wembley Arena","capacity":4000,"cityID":3,"city":{"id":3,"cityName":"London","cityPopulation":9000000}},{"id":42,"arenaName":"zzzzzz","capacity":8000,"cityID":15,"city":{"id":15,"cityName":"zzzzzz","cityPopulation":13000000}}]
+
+
+
+6365117939425478288 - Request: SERVICE: ArenaService 
+GET: http://localhost:61883/api/artists
+Accept: application/json
+
+
+6365117939425478288 - Response: Date: Wed, 10 Jan 2018 08:09:54 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3Rz?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":1,"artistName":"Marilyn Manson","lastFmRating":8},{"id":2,"artistName":"30 Seconds to Mars","lastFmRating":7},{"id":3,"artistName":"Rammstein","lastFmRating":4},{"id":4,"artistName":"The Beatles","lastFmRating":1},{"id":5,"artistName":"Suicide Silence","lastFmRating":14},{"id":6,"artistName":"Depeche mode","lastFmRating":2},{"id":7,"artistName":"Bullet for my valentine","lastFmRating":15},{"id":8,"artistName":"Frank Sinatra","lastFmRating":3},{"id":9,"artistName":"Elvis Presley","lastFmRating":4},{"id":10,"artistName":"Combichrist","lastFmRating":8},{"id":11,"artistName":"Devil sold his soul","lastFmRating":9},{"id":12,"artistName":"Shakira","lastFmRating":11},{"id":14,"artistName":"Linkin Park","lastFmRating":5},{"id":16,"artistName":"Queen","lastFmRating":1},{"id":17,"artistName":"John Lenon and Team","lastFmRating":6},{"id":18,"artistName":"Arctic Monkeys","lastFmRating":22},{"id":21,"artistName":"Lucano Pavorotti","lastFmRating":10},{"id":22,"artistName":"adsfasdfasdfn","lastFmRating":8},{"id":23,"artistName":"zzzzz","lastFmRating":8},{"id":1023,"artistName":"qqqqqqqq","lastFmRating":1123123}]
+
+
+
+63651179718412347116 - Request: SERVICE: ArenaService 
+GET: http://localhost:58349/api/arenas
+Accept: application/json
+
+
+63651179718412347116 - Response: Date: Wed, 10 Jan 2018 08:15:18 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFyZW5hU2VydmljZVxBcmVuYVNlcnZpY2VcYXBpXGFyZW5hcw==?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":11,"arenaName":"Big Arena","capacity":20000,"cityID":2,"city":{"id":2,"cityName":"Berlin","cityPopulation":3500000}},{"id":20,"arenaName":"Big Ring","capacity":20000,"cityID":5,"city":{"id":5,"cityName":"Washington","cityPopulation":9500000}},{"id":5,"arenaName":"Brixton Academy","capacity":10000,"cityID":3,"city":{"id":3,"cityName":"London","cityPopulation":9000000}},{"id":1,"arenaName":"Crocus City Hall","capacity":8000,"cityID":1,"city":{"id":1,"cityName":"Moscow","cityPopulation":13000000}},{"id":41,"arenaName":"Csdfsdfsdfl","capacity":8000,"cityID":14,"city":{"id":14,"cityName":"asdasdasd","cityPopulation":13000000}},{"id":40,"arenaName":"Great Theatre","capacity":3000,"cityID":13,"city":{"id":13,"cityName":"San Marino","cityPopulation":100000}},{"id":12,"arenaName":"Hell Fire Arena","capacity":10000,"cityID":3,"city":{"id":3,"cityName":"London","cityPopulation":9000000}},{"id":21,"arenaName":"Main Hall","capacity":12000,"cityID":6,"city":{"id":6,"cityName":"Saint Petersburg","cityPopulation":1550000}},{"id":6,"arenaName":"Mercedes-Benz Arena","capacity":6000,"cityID":2,"city":{"id":2,"cityName":"Berlin","cityPopulation":3500000}},{"id":10,"arenaName":"Natasha Arena","capacity":3000,"cityID":1,"city":{"id":1,"cityName":"Moscow","cityPopulation":13000000}},{"id":2,"arenaName":"Olimpiyskiy","capacity":10000,"cityID":1,"city":{"id":1,"cityName":"Moscow","cityPopulation":13000000}},{"id":7,"arenaName":"Olympiastadion Berlin","capacity":9000,"cityID":2,"city":{"id":2,"cityName":"Berlin","cityPopulation":3500000}},{"id":1042,"arenaName":"qqqqqqq","capacity":2000,"cityID":1015,"city":{"id":1015,"cityName":"qqqqq","cityPopulation":123123123}},{"id":8,"arenaName":"Rock am Ring","capacity":15000,"cityID":2,"city":{"id":2,"cityName":"Berlin","cityPopulation":3500000}},{"id":3,"arenaName":"Vegas City Hall","capacity":6000,"cityID":1,"city":{"id":1,"cityName":"Moscow","cityPopulation":13000000}},{"id":17,"arenaName":"Vladimir Arena","capacity":7000,"cityID":2,"city":{"id":2,"cityName":"Berlin","cityPopulation":3500000}},{"id":9,"arenaName":"Vova Arena","capacity":3000,"cityID":1,"city":{"id":1,"cityName":"Moscow","cityPopulation":13000000}},{"id":4,"arenaName":"Wembley Arena","capacity":4000,"cityID":3,"city":{"id":3,"cityName":"London","cityPopulation":9000000}},{"id":42,"arenaName":"zzzzzz","capacity":8000,"cityID":15,"city":{"id":15,"cityName":"zzzzzz","cityPopulation":13000000}}]
+
+
+
+6365117971877369138 - Request: SERVICE: ArenaService 
+GET: http://localhost:61883/api/artists
+Accept: application/json
+
+
+6365117971877369138 - Response: Date: Wed, 10 Jan 2018 08:15:18 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3Rz?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":1,"artistName":"Marilyn Manson","lastFmRating":8},{"id":2,"artistName":"30 Seconds to Mars","lastFmRating":7},{"id":3,"artistName":"Rammstein","lastFmRating":4},{"id":4,"artistName":"The Beatles","lastFmRating":1},{"id":5,"artistName":"Suicide Silence","lastFmRating":14},{"id":6,"artistName":"Depeche mode","lastFmRating":2},{"id":7,"artistName":"Bullet for my valentine","lastFmRating":15},{"id":8,"artistName":"Frank Sinatra","lastFmRating":3},{"id":9,"artistName":"Elvis Presley","lastFmRating":4},{"id":10,"artistName":"Combichrist","lastFmRating":8},{"id":11,"artistName":"Devil sold his soul","lastFmRating":9},{"id":12,"artistName":"Shakira","lastFmRating":11},{"id":14,"artistName":"Linkin Park","lastFmRating":5},{"id":16,"artistName":"Queen","lastFmRating":1},{"id":17,"artistName":"John Lenon and Team","lastFmRating":6},{"id":18,"artistName":"Arctic Monkeys","lastFmRating":22},{"id":21,"artistName":"Lucano Pavorotti","lastFmRating":10},{"id":22,"artistName":"adsfasdfasdfn","lastFmRating":8},{"id":23,"artistName":"zzzzz","lastFmRating":8},{"id":1023,"artistName":"qqqqqqqq","lastFmRating":1123123}]
+
+
+
+6365117972141998058 - Request: SERVICE: ArenaService 
+GET: http://localhost:58349/api/arenas
+Accept: application/json
+
+
+6365117972141998058 - Response: Date: Wed, 10 Jan 2018 08:15:21 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFyZW5hU2VydmljZVxBcmVuYVNlcnZpY2VcYXBpXGFyZW5hcw==?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":11,"arenaName":"Big Arena","capacity":20000,"cityID":2,"city":{"id":2,"cityName":"Berlin","cityPopulation":3500000}},{"id":20,"arenaName":"Big Ring","capacity":20000,"cityID":5,"city":{"id":5,"cityName":"Washington","cityPopulation":9500000}},{"id":5,"arenaName":"Brixton Academy","capacity":10000,"cityID":3,"city":{"id":3,"cityName":"London","cityPopulation":9000000}},{"id":1,"arenaName":"Crocus City Hall","capacity":8000,"cityID":1,"city":{"id":1,"cityName":"Moscow","cityPopulation":13000000}},{"id":41,"arenaName":"Csdfsdfsdfl","capacity":8000,"cityID":14,"city":{"id":14,"cityName":"asdasdasd","cityPopulation":13000000}},{"id":40,"arenaName":"Great Theatre","capacity":3000,"cityID":13,"city":{"id":13,"cityName":"San Marino","cityPopulation":100000}},{"id":12,"arenaName":"Hell Fire Arena","capacity":10000,"cityID":3,"city":{"id":3,"cityName":"London","cityPopulation":9000000}},{"id":21,"arenaName":"Main Hall","capacity":12000,"cityID":6,"city":{"id":6,"cityName":"Saint Petersburg","cityPopulation":1550000}},{"id":6,"arenaName":"Mercedes-Benz Arena","capacity":6000,"cityID":2,"city":{"id":2,"cityName":"Berlin","cityPopulation":3500000}},{"id":10,"arenaName":"Natasha Arena","capacity":3000,"cityID":1,"city":{"id":1,"cityName":"Moscow","cityPopulation":13000000}},{"id":2,"arenaName":"Olimpiyskiy","capacity":10000,"cityID":1,"city":{"id":1,"cityName":"Moscow","cityPopulation":13000000}},{"id":7,"arenaName":"Olympiastadion Berlin","capacity":9000,"cityID":2,"city":{"id":2,"cityName":"Berlin","cityPopulation":3500000}},{"id":1042,"arenaName":"qqqqqqq","capacity":2000,"cityID":1015,"city":{"id":1015,"cityName":"qqqqq","cityPopulation":123123123}},{"id":8,"arenaName":"Rock am Ring","capacity":15000,"cityID":2,"city":{"id":2,"cityName":"Berlin","cityPopulation":3500000}},{"id":3,"arenaName":"Vegas City Hall","capacity":6000,"cityID":1,"city":{"id":1,"cityName":"Moscow","cityPopulation":13000000}},{"id":17,"arenaName":"Vladimir Arena","capacity":7000,"cityID":2,"city":{"id":2,"cityName":"Berlin","cityPopulation":3500000}},{"id":9,"arenaName":"Vova Arena","capacity":3000,"cityID":1,"city":{"id":1,"cityName":"Moscow","cityPopulation":13000000}},{"id":4,"arenaName":"Wembley Arena","capacity":4000,"cityID":3,"city":{"id":3,"cityName":"London","cityPopulation":9000000}},{"id":42,"arenaName":"zzzzzz","capacity":8000,"cityID":15,"city":{"id":15,"cityName":"zzzzzz","cityPopulation":13000000}}]
+
+
+
+6365117972146134138 - Request: SERVICE: ArenaService 
+GET: http://localhost:61883/api/artists
+Accept: application/json
+
+
+6365117972146134138 - Response: Date: Wed, 10 Jan 2018 08:15:21 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3Rz?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":1,"artistName":"Marilyn Manson","lastFmRating":8},{"id":2,"artistName":"30 Seconds to Mars","lastFmRating":7},{"id":3,"artistName":"Rammstein","lastFmRating":4},{"id":4,"artistName":"The Beatles","lastFmRating":1},{"id":5,"artistName":"Suicide Silence","lastFmRating":14},{"id":6,"artistName":"Depeche mode","lastFmRating":2},{"id":7,"artistName":"Bullet for my valentine","lastFmRating":15},{"id":8,"artistName":"Frank Sinatra","lastFmRating":3},{"id":9,"artistName":"Elvis Presley","lastFmRating":4},{"id":10,"artistName":"Combichrist","lastFmRating":8},{"id":11,"artistName":"Devil sold his soul","lastFmRating":9},{"id":12,"artistName":"Shakira","lastFmRating":11},{"id":14,"artistName":"Linkin Park","lastFmRating":5},{"id":16,"artistName":"Queen","lastFmRating":1},{"id":17,"artistName":"John Lenon and Team","lastFmRating":6},{"id":18,"artistName":"Arctic Monkeys","lastFmRating":22},{"id":21,"artistName":"Lucano Pavorotti","lastFmRating":10},{"id":22,"artistName":"adsfasdfasdfn","lastFmRating":8},{"id":23,"artistName":"zzzzz","lastFmRating":8},{"id":1023,"artistName":"qqqqqqqq","lastFmRating":1123123}]
+
+
+

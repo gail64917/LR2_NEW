@@ -25,11 +25,12 @@ namespace AggregationService.Controllers
     [Route("Concerte")]
     public class ConcerteController : Controller
     {
-        private const string URLArtistService = "http://localhost:61883";
+        private const string URLArtistService = "https://localhost:44361";
         private const string URLArenaService = "http://localhost:58349";
         private const string URLConcerteService = "http://localhost:61438";
 
         // GET: Concerte
+        [Route("index")]
         [HttpGet("{id?}")]
         public async Task<IActionResult> Index([FromRoute] int id = 1)
         {
@@ -158,8 +159,8 @@ namespace AggregationService.Controllers
         }
 
         // GET: Concerte/Degradation
-        [HttpGet("{id?}")]
         [Route("Degradation")]
+        [HttpGet("{id?}")]
         public async Task<IActionResult> GetWithDegradation([FromRoute] int id = 1)
         {
             List<Concerte> result = new List<Concerte>();

@@ -20,7 +20,7 @@ namespace AggregationService.Controllers
 {
     public class DefaultController : Controller
     {
-        private const string URLAuthorisationService = "http://localhost:59917";
+        private const string URLAuthorisationService = "https://localhost:44387";
         
         [HttpGet("{id?}")]
         public IActionResult Index(int? i)
@@ -33,6 +33,14 @@ namespace AggregationService.Controllers
         {
             StringView sv = new StringView() { comment = comment.Split("\r\n").ToList() };
             return View(sv);
+        }
+
+        [Route("LogOut")]
+        public IActionResult LogOut()
+        {
+            HttpContext.Session.SetString("Token", "");
+            HttpContext.Session.SetString("Login", "");
+            return RedirectToAction(nameof(Index));
         }
 
         //public IActionResult Index()
