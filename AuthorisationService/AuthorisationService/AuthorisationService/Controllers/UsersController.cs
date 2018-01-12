@@ -125,6 +125,31 @@ namespace AuthorisationService.Controllers
             return NoContent();
         }
 
+        // POST: api/Users/FindByLogin
+        [Route("FindByLogin")]
+        [HttpPost]
+        public IActionResult CheckUserWeak([FromBody] UserViewModel user)
+        {
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
+            User RealUser = new User { Login = user.Login, LastToken = user.LastToken };
+
+            //CHECK is REALUSER IN DATABASE
+            foreach (User u in _context.Users)
+            {
+                if (u.Login == RealUser.Login && u.LastToken == RealUser.LastToken )
+                {
+                    RealUser.ID = u.ID;
+                    RealUser.Role = u.Role;
+                    RealUser.Password = u.Password;
+                    return Ok(RealUser);
+                }
+            }
+            return NoContent();
+        }
+
         // DELETE: api/Users/5
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteUser([FromRoute] int id)

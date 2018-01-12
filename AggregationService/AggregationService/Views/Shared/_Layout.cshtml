@@ -4,7 +4,9 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - AggregationService</title>
-
+    <style>
+        .pointer { cursor: pointer }
+    </style>
     <environment include="Development">
         <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
         <link rel="stylesheet" href="~/css/site.css" />
@@ -35,7 +37,7 @@
                         <ul class="dropdown-menu">
                             <li><a asp-area="" asp-controller="Arena" asp-action="Index" asp-route-id="1">Arenas</a></li>
                             @*<li><form><input id="submitButton" type="button" value="Artist" /></form></li>*@
-                            <li><a id="submitButton">Artists</a></li>
+                            <li><a id="submitButton" class="pointer">Artists</a></li>
                             @*<li><a asp-area="" asp-controller="Artist" asp-action="Index" asp-route-id="1">Artists</a></li>*@
                             <li><a asp-area="" asp-controller="Concerte" asp-action="Index" asp-route-id="1">Concerts</a></li>
                         </ul>
@@ -58,7 +60,19 @@
                     Context.Session.TryGetValue("Login", out login);
                     string tokenString = "";
                     string tokenStringJS = "test";
-                    if (token != null)
+                    if (login == null || (login != null && System.Text.Encoding.Default.GetString(login) == ""))
+                    {
+                        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+                        <script>
+                            $(document).ready(function () {
+                                $('#submitButton').click(function () {
+                                    alert("you must be authorized!");
+                                });
+                            });
+                        </script>
+
+                    }
+                    if (token != null && System.Text.Encoding.Default.GetString(token) != "")
                     {
                         tokenStringJS = System.Text.Encoding.Default.GetString(token);
                         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>

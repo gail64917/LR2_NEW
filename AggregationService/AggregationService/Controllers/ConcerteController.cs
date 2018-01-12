@@ -20,14 +20,18 @@ using RestBus.RabbitMQ;
 using RabbitModels;
 using EasyNetQ;
 
+using static RabbitModels.StatisticSender;
+
 namespace AggregationService.Controllers
 {
     [Route("Concerte")]
     public class ConcerteController : Controller
     {
         private const string URLArtistService = "https://localhost:44361";
-        private const string URLArenaService = "http://localhost:58349";
-        private const string URLConcerteService = "http://localhost:61438";
+        private const string URLArenaService = "https://localhost:44325";
+        private const string URLConcerteService = "https://localhost:44381";
+        //private const string URLArenaService = "http://localhost:58349";
+        //private const string URLConcerteService = "http://localhost:61438";
 
         // GET: Concerte
         [Route("index")]
@@ -58,6 +62,7 @@ namespace AggregationService.Controllers
                 else
                 {
                     responseMessage = Encoding.UTF8.GetBytes(response.ReasonPhrase);
+                    SendStatistic("Concertes", DateTime.Now, "Index", Request.HttpContext.Connection.RemoteIpAddress.ToString(), false);
                     return Error();
                 }
                 await LogQuery(request, responseString, responseMessage);
@@ -82,6 +87,7 @@ namespace AggregationService.Controllers
                 else
                 {
                     responseMessage = Encoding.UTF8.GetBytes(responseStringsCount.ReasonPhrase);
+                    SendStatistic("Concertes", DateTime.Now, "Index", Request.HttpContext.Connection.RemoteIpAddress.ToString(), false);
                     return Error();
                 }
                 await LogQuery(request, responseString, responseMessage);
@@ -110,6 +116,7 @@ namespace AggregationService.Controllers
                 else
                 {
                     responseMessage = Encoding.UTF8.GetBytes(response.ReasonPhrase);
+                    SendStatistic("Concertes", DateTime.Now, "Index", Request.HttpContext.Connection.RemoteIpAddress.ToString(), false);
                     return Error();
                 }
                 await LogQuery(request, responseString, responseMessage);
@@ -140,6 +147,7 @@ namespace AggregationService.Controllers
                 else
                 {
                     responseMessage2 = Encoding.UTF8.GetBytes(response2.ReasonPhrase);
+                    SendStatistic("Concertes", DateTime.Now, "Index", Request.HttpContext.Connection.RemoteIpAddress.ToString(), false);
                     return Error();
                 }
                 await LogQuery(request2, responseString2, responseMessage2);
@@ -155,6 +163,7 @@ namespace AggregationService.Controllers
                 FinalResult.Add(concerteInfoFull);
             }
             ConcerteList resultQuery = new ConcerteList() { concertesInfoFull = FinalResult, countConcertes = count };
+            SendStatistic("Concertes", DateTime.Now, "Index", Request.HttpContext.Connection.RemoteIpAddress.ToString(), true);
             return View(resultQuery);
         }
 

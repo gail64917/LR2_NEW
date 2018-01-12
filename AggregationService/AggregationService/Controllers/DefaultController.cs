@@ -16,6 +16,8 @@ using Microsoft.AspNetCore.Authorization;
 using AggregationService.Provider.JWT;
 using Microsoft.AspNetCore.Http;
 
+using static RabbitModels.StatisticSender;
+
 namespace AggregationService.Controllers
 {
     public class DefaultController : Controller
@@ -25,6 +27,7 @@ namespace AggregationService.Controllers
         [HttpGet("{id?}")]
         public IActionResult Index(int? i)
         {
+            SendStatistic("Default", DateTime.Now, "Index", Request.HttpContext.Connection.RemoteIpAddress.ToString(), true);
             return View();
         }
 
@@ -160,6 +163,8 @@ namespace AggregationService.Controllers
                     return View("Error", message);
                 }
                 await LogQuery(request, requestMessage, responseString, responseMessage);
+
+                //take token
                 var userJson = await response.Content.ReadAsStringAsync();
                 var userTruly = JsonConvert.DeserializeObject<User>(userJson);
                 var token = new JwtTokenBuilder()
@@ -168,7 +173,7 @@ namespace AggregationService.Controllers
                                 .AddIssuer("Test.Security.Bearer")
                                 .AddAudience("Test.Security.Bearer")
                                 .AddClaim(userTruly.Role, userTruly.ID.ToString())
-                                .AddExpiry(182)
+                                .AddExpiry(200)
                                 .Build();
 
                 //return Ok(token.Value);
@@ -207,6 +212,68 @@ namespace AggregationService.Controllers
             HttpContent content = new StringContent(values.ToString(), Encoding.UTF8, "application/json");
 
             string requestString = "api/Users/Find";
+
+            var response = await client.PostAsJsonAsync(requestString, values);
+
+            if ((int)response.StatusCode == 500)
+            {
+                string description = "Cannot find user";
+                ResponseMessage message = new ResponseMessage();
+                message.description = description;
+                message.message = response;
+                return null;
+            }
+
+            request = "SERVICE: AuthorisationService \r\nPOST: " + URLAuthorisationService + "/" + requestString + "\r\n" + client.DefaultRequestHeaders.ToString();
+            string responseString = response.Headers.ToString() + "\nStatus: " + response.StatusCode.ToString();
+
+            if (response.IsSuccessStatusCode)
+            {
+                responseMessage = await response.Content.ReadAsByteArrayAsync();
+                if ((int)response.StatusCode == 204)
+                {
+                    string description = "There is no user like this";
+                    ResponseMessage message = new ResponseMessage();
+                    message.description = description;
+                    message.message = response;
+                    return null;
+                }
+                await LogQuery(request, requestMessage, responseString, responseMessage);
+                var userJson = await response.Content.ReadAsStringAsync();
+                var result = JsonConvert.DeserializeObject<User>(userJson);
+                return result;
+            }
+
+            else
+            {
+                responseMessage = Encoding.UTF8.GetBytes(response.ReasonPhrase);
+                await LogQuery(request, requestMessage, responseString, responseMessage);
+                string description = "Another error ";
+                ResponseMessage message = new ResponseMessage();
+                message.description = description;
+                message.message = response;
+                return null;
+            }
+        }
+
+        public static async Task<User> privateWeakCheck(User user)
+        {
+            var values = new JObject();
+            values.Add("Login", user.Login);
+            values.Add("LastToken", user.LastToken);
+
+            var corrId = string.Format("{0}{1}", DateTime.Now.Ticks, Thread.CurrentThread.ManagedThreadId);
+            string request;
+            string requestMessage = values.ToString();
+            byte[] responseMessage;
+
+            HttpClient client = new HttpClient();
+            client.BaseAddress = new Uri(URLAuthorisationService);
+            client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+
+            HttpContent content = new StringContent(values.ToString(), Encoding.UTF8, "application/json");
+
+            string requestString = "api/Users/FindByLogin";
 
             var response = await client.PostAsJsonAsync(requestString, values);
 

@@ -24,6 +24,96 @@ namespace AggregationService.Controllers
     {
         private const string URLAuthorisation = "https://localhost:44387";
 
+        [Authorize]
+        [HttpGet]
+        public async Task<IActionResult> Refresh()
+        {
+            string login = HttpContext.Session.GetString("Login");
+            string lastToken = HttpContext.Session.GetString("Token");
+            if (login != null && login != "")
+            {
+                User user = new Models.AuthorisationService.User() { Login = login , LastToken = lastToken };
+                var userTruly = DefaultController.privateWeakCheck(user).Result;
+                if (userTruly == null)
+                    return Unauthorized();
+                else
+                {
+                    var token = new JwtTokenBuilder()
+                                .AddSecurityKey(JwtSecurityKey.Create("Test-secret-key-1234"))
+                                .AddSubject(userTruly.Login)
+                                .AddIssuer("Test.Security.Bearer")
+                                .AddAudience("Test.Security.Bearer")
+                                .AddClaim(userTruly.Role, userTruly.ID.ToString())
+                                .AddExpiry(200)
+                                .Build();
+                    HttpContext.Session.SetString("Token", token.Value);
+                    HttpContext.Session.SetString("Login", user.Login);
+
+                    //пихаем новый токен пользователю в бд
+                    var values = new JObject();
+                    values.Add("id", userTruly.ID);
+                    values.Add("login", userTruly.Login);
+                    values.Add("password", userTruly.Password);
+                    values.Add("role", userTruly.Role);
+                    values.Add("lasttoken", token.Value);
+
+                    /**/
+                    var corrId = string.Format("{0}{1}", DateTime.Now.Ticks, Thread.CurrentThread.ManagedThreadId);
+                    /**/
+                    string request;
+                    /**/
+                    string requestMessage = values.ToString();
+                    /**/
+                    byte[] responseMessage;
+
+                    HttpClient client = new HttpClient();
+                    client.BaseAddress = new Uri(URLAuthorisation);
+                    client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+
+                    HttpContent content = new StringContent(values.ToString(), Encoding.UTF8, "application/json");
+
+                    /**/
+                    string requestString = "api/users/" + userTruly.ID;
+
+                    var response = await client.PutAsJsonAsync(requestString, values);
+
+                    /**/
+                    request = "SERVICE: AuthorisationService \r\nPUT: " + URLAuthorisation + "/" + requestString + "\r\n" + client.DefaultRequestHeaders.ToString();
+                    /**/
+                    string responseString = response.Headers.ToString() + "\nStatus: " + response.StatusCode.ToString();
+
+                    if ((int)response.StatusCode == 500)
+                    {
+                        string description = "There is no user with ID (" + user.ID + ")";
+                        ResponseMessage message = new ResponseMessage();
+                        message.description = description;
+                        message.message = response;
+                    }
+
+                    if (response.IsSuccessStatusCode)
+                    {
+                        /**/
+                        responseMessage = await response.Content.ReadAsByteArrayAsync();
+                        /**/
+                        await LogQuery(request, requestMessage, responseString, responseMessage);
+                    }
+                    else
+                    {
+                        /**/
+                        responseMessage = Encoding.UTF8.GetBytes(response.ReasonPhrase);
+                        /**/
+                        await LogQuery(request, requestMessage, responseString, responseMessage);
+                    }
+
+                    return Ok(token.Value);
+                }
+            }
+            else
+            {
+                return Unauthorized();
+            }
+        }
+
         [HttpPost]
         public async Task<IActionResult> Create([FromBody]User user)
         {
@@ -38,8 +128,10 @@ namespace AggregationService.Controllers
                                 .AddIssuer("Test.Security.Bearer")
                                 .AddAudience("Test.Security.Bearer")
                                 .AddClaim(userTruly.Role, userTruly.ID.ToString())
-                                .AddExpiry(1)
+                                .AddExpiry(200)
                                 .Build();
+                HttpContext.Session.SetString("Token", token.Value);
+                HttpContext.Session.SetString("Login", user.Login);
 
                 //пихаем новый токен пользователю в бд
                 var values = new JObject();

@@ -1,0 +1,13 @@
+C:\Users\Natasha\Desktop\LR2\LR2_NEW\StatisticService\StatisticService\bin\Debug\netcoreapp2.0\StatisticService.deps.json
+C:\Users\Natasha\Desktop\LR2\LR2_NEW\StatisticService\StatisticService\bin\Debug\netcoreapp2.0\StatisticService.runtimeconfig.json
+C:\Users\Natasha\Desktop\LR2\LR2_NEW\StatisticService\StatisticService\bin\Debug\netcoreapp2.0\StatisticService.runtimeconfig.dev.json
+C:\Users\Natasha\Desktop\LR2\LR2_NEW\StatisticService\StatisticService\bin\Debug\netcoreapp2.0\StatisticService.dll
+C:\Users\Natasha\Desktop\LR2\LR2_NEW\StatisticService\StatisticService\bin\Debug\netcoreapp2.0\RabbitModels.dll
+C:\Users\Natasha\Desktop\LR2\LR2_NEW\StatisticService\StatisticService\bin\Debug\netcoreapp2.0\RabbitModels.pdb
+C:\Users\Natasha\Desktop\LR2\LR2_NEW\StatisticService\StatisticService\obj\Debug\netcoreapp2.0\StatisticService.csprojResolveAssemblyReference.cache
+C:\Users\Natasha\Desktop\LR2\LR2_NEW\StatisticService\StatisticService\obj\Debug\netcoreapp2.0\StatisticService.csproj.CoreCompileInputs.cache
+C:\Users\Natasha\Desktop\LR2\LR2_NEW\StatisticService\StatisticService\obj\Debug\netcoreapp2.0\StatisticService.AssemblyInfoInputs.cache
+C:\Users\Natasha\Desktop\LR2\LR2_NEW\StatisticService\StatisticService\obj\Debug\netcoreapp2.0\StatisticService.AssemblyInfo.cs
+C:\Users\Natasha\Desktop\LR2\LR2_NEW\StatisticService\StatisticService\bin\Debug\netcoreapp2.0\StatisticService.pdb
+C:\Users\Natasha\Desktop\LR2\LR2_NEW\StatisticService\StatisticService\obj\Debug\netcoreapp2.0\StatisticService.dll
+C:\Users\Natasha\Desktop\LR2\LR2_NEW\StatisticService\StatisticService\obj\Debug\netcoreapp2.0\StatisticService.pdb

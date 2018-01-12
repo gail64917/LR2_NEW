@@ -5,18 +5,18 @@
         var allowedWords = getAllowedWords();
         var anyFieldsToCheck = document.getElementsByClassName("anyfields");
         for (var i = 0; i < anyFieldsToCheck.length; i++) {
-        anyFieldsToCheck[i].style.boxShadow = "";
-    if (anyFieldsToCheck[i].value.length < 1 && anyFieldsToCheck[i].value < 1) {
-        toSubmit = false;
-    anyFieldsToCheck[i].style.boxShadow = "0 0 10px red";
+            anyFieldsToCheck[i].style.boxShadow = "";
+            if (anyFieldsToCheck[i].value.length < 1 && anyFieldsToCheck[i].value < 1) {
+                toSubmit = false;
+                anyFieldsToCheck[i].style.boxShadow = "0 0 10px red";
             }
         }
         var fieldsToCheck = document.getElementsByClassName("fields");
         for (var i = 0; i < fieldsToCheck.length; i++) {
-        fieldsToCheck[i].style.boxShadow = "";
-    if (!isAllowed(fieldsToCheck[i].value, words)) {
-        toSubmit = false;
-    fieldsToCheck[i].style.boxShadow = "0 0 10px red";
+            fieldsToCheck[i].style.boxShadow = "";
+            if (!isAllowed(fieldsToCheck[i].value, words)) {
+                toSubmit = false;
+                fieldsToCheck[i].style.boxShadow = "0 0 10px red";
             }
         }
         if (toSubmit) f.submit();
@@ -31,8 +31,8 @@
         var allowed = false;
         for (var j = 0; j < arr.length; j++) {
             if (arr[j].innerHTML == word) {
-        allowed = true;
-    }
+                allowed = true;
+            }
         }
         return allowed;
     }

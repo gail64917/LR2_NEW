@@ -22867,3 +22867,3424 @@ Status: OK
 
 
 
+6365119000632117948 - Request: SERVICE: AuthorisationService 
+POST: https://localhost:44387/api/Users/Find
+Accept: application/json
+{
+  "Login": "sad",
+  "Password": "sad"
+}
+
+6365119000632117948 - Response: Date: Wed, 10 Jan 2018 11:06:46 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXGFwaVxVc2Vyc1xGaW5k?=
+X-Powered-By: ASP.NET
+
+Status: OK
+{"id":1002,"login":"sad","password":"16cfe4f2e1519c415b9b11024c0cba52","role":"User","lastToken":null}
+
+
+
+63651190010318576710 - Request: SERVICE: ArtistService 
+GET: https://localhost:44361/api/artists/page/1
+Accept: application/json
+
+
+63651190010318576710 - Response: Date: Wed, 10 Jan 2018 11:06:50 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3RzXHBhZ2VcMQ==?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":2,"artistName":"30 Seconds to Mars","lastFmRating":7},{"id":22,"artistName":"adsfasdfasdfn","lastFmRating":8},{"id":18,"artistName":"Arctic Monkeys","lastFmRating":22},{"id":7,"artistName":"Bullet for my valentine","lastFmRating":15},{"id":10,"artistName":"Combichrist","lastFmRating":8},{"id":6,"artistName":"Depeche mode","lastFmRating":2},{"id":11,"artistName":"Devil sold his soul","lastFmRating":9},{"id":9,"artistName":"Elvis Presley","lastFmRating":4},{"id":8,"artistName":"Frank Sinatra","lastFmRating":3},{"id":17,"artistName":"John Lenon and Team","lastFmRating":6}]
+
+
+
+63651190010516258516 - Request: SERVICE: ArtistService 
+GET: https://localhost:44361/api/artists/page/1
+Accept: application/json
+
+
+63651190010516258516 - Response: Date: Wed, 10 Jan 2018 11:06:50 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3RzXGNvdW50?=
+X-Powered-By: ASP.NET
+
+Status: OK
+20
+
+
+
+6365119003013486339 - Request: SERVICE: ArenaService 
+GET: http://localhost:58349/api/arenas/page/1
+Accept: application/json
+
+
+6365119003013486339 - Response: Date: Wed, 10 Jan 2018 11:07:10 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFyZW5hU2VydmljZVxBcmVuYVNlcnZpY2VcYXBpXGFyZW5hc1xwYWdlXDE=?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":11,"arenaName":"Big Arena","capacity":20000,"cityID":2,"city":{"id":2,"cityName":"Berlin","cityPopulation":3500000}},{"id":20,"arenaName":"Big Ring","capacity":20000,"cityID":5,"city":{"id":5,"cityName":"Washington","cityPopulation":9500000}},{"id":5,"arenaName":"Brixton Academy","capacity":10000,"cityID":3,"city":{"id":3,"cityName":"London","cityPopulation":9000000}},{"id":1,"arenaName":"Crocus City Hall","capacity":8000,"cityID":1,"city":{"id":1,"cityName":"Moscow","cityPopulation":13000000}},{"id":41,"arenaName":"Csdfsdfsdfl","capacity":8000,"cityID":14,"city":{"id":14,"cityName":"asdasdasd","cityPopulation":13000000}},{"id":40,"arenaName":"Great Theatre","capacity":3000,"cityID":13,"city":{"id":13,"cityName":"San Marino","cityPopulation":100000}},{"id":12,"arenaName":"Hell Fire Arena","capacity":10000,"cityID":3,"city":{"id":3,"cityName":"London","cityPopulation":9000000}},{"id":21,"arenaName":"Main Hall","capacity":12000,"cityID":6,"city":{"id":6,"cityName":"Saint Petersburg","cityPopulation":1550000}},{"id":6,"arenaName":"Mercedes-Benz Arena","capacity":6000,"cityID":2,"city":{"id":2,"cityName":"Berlin","cityPopulation":3500000}},{"id":10,"arenaName":"Natasha Arena","capacity":3000,"cityID":1,"city":{"id":1,"cityName":"Moscow","cityPopulation":13000000}}]
+
+
+
+6365119003036149579 - Request: SERVICE: ArenaService 
+GET: http://localhost:58349/api/arenas/page/1
+Accept: application/json
+
+
+6365119003036149579 - Response: Date: Wed, 10 Jan 2018 11:07:10 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFyZW5hU2VydmljZVxBcmVuYVNlcnZpY2VcYXBpXGFyZW5hc1xjb3VudA==?=
+X-Powered-By: ASP.NET
+
+Status: OK
+19
+
+
+
+6365119003586680819 - Request: SERVICE: ConcerteService 
+GET: https://localhost:44381/api/Concertes/all?valid=true&page=1
+Accept: application/json
+
+
+6365119003586680819 - Response: Date: Wed, 10 Jan 2018 11:07:15 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXENvbmNlcnRlU2VydmljZVxDb25jZXJ0ZVNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxDb25jZXJ0ZXNcYWxs?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":1,"showName":"Big Show","ticketsNumber":1000,"price":2000,"cityName":"Moscow","arenaName":"Crocus City Hall","artistName":"Marilyn Manson","date":"2015-09-01T00:00:00","sellerID":1,"seller":{"id":1,"brandName":"Big Billet"}},{"id":2,"showName":"Hello, London","ticketsNumber":2000,"price":4000,"cityName":"London","arenaName":"Brixton Academy","artistName":"Marilyn Manson","date":"2015-10-01T00:00:00","sellerID":2,"seller":{"id":2,"brandName":"Afisha"}},{"id":3,"showName":"Hello, Berlin","ticketsNumber":3000,"price":6000,"cityName":"Berlin","arenaName":"Mercedes-Benz Arena","artistName":"Marilyn Manson","date":"2015-11-01T00:00:00","sellerID":2,"seller":{"id":2,"brandName":"Afisha"}},{"id":4,"showName":"BigSHow","ticketsNumber":1000,"price":9000,"cityName":"Moscow","arenaName":"Crocus City Hall","artistName":"Depeche mode","date":"2016-09-01T00:00:00","sellerID":1,"seller":{"id":1,"brandName":"Big Billet"}},{"id":5,"showName":"Hello, Hello","ticketsNumber":2000,"price":11000,"cityName":"London","arenaName":"Brixton Academy","artistName":"Depeche mode","date":"2016-10-01T00:00:00","sellerID":2,"seller":{"id":2,"brandName":"Afisha"}},{"id":6,"showName":"Hello, Berlin","ticketsNumber":3000,"price":1000,"cityName":"Berlin","arenaName":"Mercedes-Benz Arena","artistName":"Depeche mode","date":"2016-11-01T00:00:00","sellerID":2,"seller":{"id":2,"brandName":"Afisha"}},{"id":7,"showName":"BigGiG","ticketsNumber":3000,"price":22000,"cityName":"Moscow","arenaName":"Olimpiyskiy","artistName":"30 Seconds to Mars","date":"2016-02-01T00:00:00","sellerID":1,"seller":{"id":1,"brandName":"Big Billet"}},{"id":8,"showName":"Hello,Good Bye","ticketsNumber":5000,"price":3100,"cityName":"London","arenaName":"Brixton Academy","artistName":"30 Seconds to Mars","date":"2016-03-01T00:00:00","sellerID":2,"seller":{"id":2,"brandName":"Afisha"}},{"id":9,"showName":"Hello, WORLD","ticketsNumber":6000,"price":2400,"cityName":"Berlin","arenaName":"Mercedes-Benz Arena","artistName":"30 Seconds to Mars","date":"2016-04-01T00:00:00","sellerID":2,"seller":{"id":2,"brandName":"Afisha"}},{"id":10,"showName":"VovaSHow","ticketsNumber":1000,"price":2600,"cityName":"Moscow","arenaName":"Vova Arena","artistName":"Frank Sinatra","date":"2017-09-01T00:00:00","sellerID":3,"seller":{"id":3,"brandName":"Ozone"}}]
+
+
+
+6365119003625437798 - Request: SERVICE: ConcerteService 
+GET: https://localhost:44381/api/Concertes/all?valid=true&page=1
+Accept: application/json
+
+
+6365119003625437798 - Response: Date: Wed, 10 Jan 2018 11:07:16 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXENvbmNlcnRlU2VydmljZVxDb25jZXJ0ZVNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxDb25jZXJ0ZXNcY291bnQ=?=
+X-Powered-By: ASP.NET
+
+Status: OK
+19
+
+
+
+63651190036456361610 - Request: SERVICE: ArenaService 
+GET: https://localhost:44325/api/arenas
+Accept: application/json
+
+
+63651190036456361610 - Response: Date: Wed, 10 Jan 2018 11:07:16 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFyZW5hU2VydmljZVxBcmVuYVNlcnZpY2VcYXBpXGFyZW5hcw==?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":11,"arenaName":"Big Arena","capacity":20000,"cityID":2,"city":{"id":2,"cityName":"Berlin","cityPopulation":3500000}},{"id":20,"arenaName":"Big Ring","capacity":20000,"cityID":5,"city":{"id":5,"cityName":"Washington","cityPopulation":9500000}},{"id":5,"arenaName":"Brixton Academy","capacity":10000,"cityID":3,"city":{"id":3,"cityName":"London","cityPopulation":9000000}},{"id":1,"arenaName":"Crocus City Hall","capacity":8000,"cityID":1,"city":{"id":1,"cityName":"Moscow","cityPopulation":13000000}},{"id":41,"arenaName":"Csdfsdfsdfl","capacity":8000,"cityID":14,"city":{"id":14,"cityName":"asdasdasd","cityPopulation":13000000}},{"id":40,"arenaName":"Great Theatre","capacity":3000,"cityID":13,"city":{"id":13,"cityName":"San Marino","cityPopulation":100000}},{"id":12,"arenaName":"Hell Fire Arena","capacity":10000,"cityID":3,"city":{"id":3,"cityName":"London","cityPopulation":9000000}},{"id":21,"arenaName":"Main Hall","capacity":12000,"cityID":6,"city":{"id":6,"cityName":"Saint Petersburg","cityPopulation":1550000}},{"id":6,"arenaName":"Mercedes-Benz Arena","capacity":6000,"cityID":2,"city":{"id":2,"cityName":"Berlin","cityPopulation":3500000}},{"id":10,"arenaName":"Natasha Arena","capacity":3000,"cityID":1,"city":{"id":1,"cityName":"Moscow","cityPopulation":13000000}},{"id":2,"arenaName":"Olimpiyskiy","capacity":10000,"cityID":1,"city":{"id":1,"cityName":"Moscow","cityPopulation":13000000}},{"id":7,"arenaName":"Olympiastadion Berlin","capacity":9000,"cityID":2,"city":{"id":2,"cityName":"Berlin","cityPopulation":3500000}},{"id":1042,"arenaName":"qqqqqqq","capacity":2000,"cityID":1015,"city":{"id":1015,"cityName":"qqqqq","cityPopulation":123123123}},{"id":8,"arenaName":"Rock am Ring","capacity":15000,"cityID":2,"city":{"id":2,"cityName":"Berlin","cityPopulation":3500000}},{"id":3,"arenaName":"Vegas City Hall","capacity":6000,"cityID":1,"city":{"id":1,"cityName":"Moscow","cityPopulation":13000000}},{"id":17,"arenaName":"Vladimir Arena","capacity":7000,"cityID":2,"city":{"id":2,"cityName":"Berlin","cityPopulation":3500000}},{"id":9,"arenaName":"Vova Arena","capacity":3000,"cityID":1,"city":{"id":1,"cityName":"Moscow","cityPopulation":13000000}},{"id":4,"arenaName":"Wembley Arena","capacity":4000,"cityID":3,"city":{"id":3,"cityName":"London","cityPopulation":9000000}},{"id":42,"arenaName":"zzzzzz","capacity":8000,"cityID":15,"city":{"id":15,"cityName":"zzzzzz","cityPopulation":13000000}}]
+
+
+
+63651190036652744916 - Request: SERVICE: ArenaService 
+GET: https://localhost:44361/api/artists
+Accept: application/json
+
+
+63651190036652744916 - Response: Date: Wed, 10 Jan 2018 11:07:16 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3Rz?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":1,"artistName":"Marilyn Manson","lastFmRating":8},{"id":2,"artistName":"30 Seconds to Mars","lastFmRating":7},{"id":3,"artistName":"Rammstein","lastFmRating":4},{"id":4,"artistName":"The Beatles","lastFmRating":1},{"id":5,"artistName":"Suicide Silence","lastFmRating":14},{"id":6,"artistName":"Depeche mode","lastFmRating":2},{"id":7,"artistName":"Bullet for my valentine","lastFmRating":15},{"id":8,"artistName":"Frank Sinatra","lastFmRating":3},{"id":9,"artistName":"Elvis Presley","lastFmRating":4},{"id":10,"artistName":"Combichrist","lastFmRating":8},{"id":11,"artistName":"Devil sold his soul","lastFmRating":9},{"id":12,"artistName":"Shakira","lastFmRating":11},{"id":14,"artistName":"Linkin Park","lastFmRating":5},{"id":16,"artistName":"Queen","lastFmRating":1},{"id":17,"artistName":"John Lenon and Team","lastFmRating":6},{"id":18,"artistName":"Arctic Monkeys","lastFmRating":22},{"id":21,"artistName":"Lucano Pavorotti","lastFmRating":10},{"id":22,"artistName":"adsfasdfasdfn","lastFmRating":8},{"id":23,"artistName":"zzzzz","lastFmRating":8},{"id":1023,"artistName":"qqqqqqqq","lastFmRating":1123123}]
+
+
+
+63651190126462296226 - Request: SERVICE: ArenaService 
+POST: https://localhost:44325/api/cities
+Accept: application/json
+{
+  "CityName": "Chezh",
+  "CityPopulation": 2000
+}
+
+63651190126462296226 - Response: Date: Wed, 10 Jan 2018 11:08:46 GMT
+Transfer-Encoding: chunked
+Location: https://localhost:44325/api/Cities/2015
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFyZW5hU2VydmljZVxBcmVuYVNlcnZpY2VcYXBpXGNpdGllcw==?=
+X-Powered-By: ASP.NET
+
+Status: Created
+{"id":2015,"cityName":"Chezh","cityPopulation":2000}
+
+
+
+6365119012671988958 - Request: SERVICE: ArenaService 
+POST: https://localhost:44325/api/arenas
+Accept: application/json
+{
+  "ArenaName": "Row Ring",
+  "CityID": 2015,
+  "Capacity": 1500
+}
+
+6365119012671988958 - Response: Date: Wed, 10 Jan 2018 11:08:46 GMT
+Transfer-Encoding: chunked
+Location: https://localhost:44325/api/Arenas/2043
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFyZW5hU2VydmljZVxBcmVuYVNlcnZpY2VcYXBpXGFyZW5hcw==?=
+X-Powered-By: ASP.NET
+
+Status: Created
+{"id":2043,"arenaName":"Row Ring","capacity":1500,"cityID":2015,"city":null}
+
+
+
+6365119012751810189 - Request: SERVICE: ArtistService 
+POST: https://localhost:44361/api/artists
+Accept: application/json
+{
+  "ArtistName": "Kirvokov",
+  "LastFmRating": 1000
+}
+
+6365119012751810189 - Response: Date: Wed, 10 Jan 2018 11:08:47 GMT
+Transfer-Encoding: chunked
+Location: https://localhost:44361/api/Artists/2024
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3Rz?=
+X-Powered-By: ASP.NET
+
+Status: Created
+{"id":2024,"artistName":"Kirvokov","lastFmRating":1000}
+
+
+
+6365119562188826428 - Request: SERVICE: ConcerteService 
+GET: https://localhost:44381/api/Concertes/all?valid=true&page=1
+Accept: application/json
+
+
+6365119562188826428 - Response: Date: Wed, 10 Jan 2018 12:40:20 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXENvbmNlcnRlU2VydmljZVxDb25jZXJ0ZVNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxDb25jZXJ0ZXNcYWxs?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":1,"showName":"Big Show","ticketsNumber":1000,"price":2000,"cityName":"Moscow","arenaName":"Crocus City Hall","artistName":"Marilyn Manson","date":"2015-09-01T00:00:00","sellerID":1,"seller":{"id":1,"brandName":"Big Billet"}},{"id":2,"showName":"Hello, London","ticketsNumber":2000,"price":4000,"cityName":"London","arenaName":"Brixton Academy","artistName":"Marilyn Manson","date":"2015-10-01T00:00:00","sellerID":2,"seller":{"id":2,"brandName":"Afisha"}},{"id":3,"showName":"Hello, Berlin","ticketsNumber":3000,"price":6000,"cityName":"Berlin","arenaName":"Mercedes-Benz Arena","artistName":"Marilyn Manson","date":"2015-11-01T00:00:00","sellerID":2,"seller":{"id":2,"brandName":"Afisha"}},{"id":4,"showName":"BigSHow","ticketsNumber":1000,"price":9000,"cityName":"Moscow","arenaName":"Crocus City Hall","artistName":"Depeche mode","date":"2016-09-01T00:00:00","sellerID":1,"seller":{"id":1,"brandName":"Big Billet"}},{"id":5,"showName":"Hello, Hello","ticketsNumber":2000,"price":11000,"cityName":"London","arenaName":"Brixton Academy","artistName":"Depeche mode","date":"2016-10-01T00:00:00","sellerID":2,"seller":{"id":2,"brandName":"Afisha"}},{"id":6,"showName":"Hello, Berlin","ticketsNumber":3000,"price":1000,"cityName":"Berlin","arenaName":"Mercedes-Benz Arena","artistName":"Depeche mode","date":"2016-11-01T00:00:00","sellerID":2,"seller":{"id":2,"brandName":"Afisha"}},{"id":7,"showName":"BigGiG","ticketsNumber":3000,"price":22000,"cityName":"Moscow","arenaName":"Olimpiyskiy","artistName":"30 Seconds to Mars","date":"2016-02-01T00:00:00","sellerID":1,"seller":{"id":1,"brandName":"Big Billet"}},{"id":8,"showName":"Hello,Good Bye","ticketsNumber":5000,"price":3100,"cityName":"London","arenaName":"Brixton Academy","artistName":"30 Seconds to Mars","date":"2016-03-01T00:00:00","sellerID":2,"seller":{"id":2,"brandName":"Afisha"}},{"id":9,"showName":"Hello, WORLD","ticketsNumber":6000,"price":2400,"cityName":"Berlin","arenaName":"Mercedes-Benz Arena","artistName":"30 Seconds to Mars","date":"2016-04-01T00:00:00","sellerID":2,"seller":{"id":2,"brandName":"Afisha"}},{"id":10,"showName":"VovaSHow","ticketsNumber":1000,"price":2600,"cityName":"Moscow","arenaName":"Vova Arena","artistName":"Frank Sinatra","date":"2017-09-01T00:00:00","sellerID":3,"seller":{"id":3,"brandName":"Ozone"}}]
+
+
+
+63651195622104569516 - Request: SERVICE: ConcerteService 
+GET: https://localhost:44381/api/Concertes/all?valid=true&page=1
+Accept: application/json
+
+
+63651195622104569516 - Response: Date: Wed, 10 Jan 2018 12:40:22 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXENvbmNlcnRlU2VydmljZVxDb25jZXJ0ZVNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxDb25jZXJ0ZXNcY291bnQ=?=
+X-Powered-By: ASP.NET
+
+Status: OK
+20
+
+
+
+6365119562224724039 - Request: SERVICE: ArenaService 
+GET: https://localhost:44325/api/arenas
+Accept: application/json
+
+
+6365119562224724039 - Response: Date: Wed, 10 Jan 2018 12:40:22 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFyZW5hU2VydmljZVxBcmVuYVNlcnZpY2VcYXBpXGFyZW5hcw==?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":11,"arenaName":"Big Arena","capacity":20000,"cityID":2,"city":{"id":2,"cityName":"Berlin","cityPopulation":3500000}},{"id":20,"arenaName":"Big Ring","capacity":20000,"cityID":5,"city":{"id":5,"cityName":"Washington","cityPopulation":9500000}},{"id":5,"arenaName":"Brixton Academy","capacity":10000,"cityID":3,"city":{"id":3,"cityName":"London","cityPopulation":9000000}},{"id":1,"arenaName":"Crocus City Hall","capacity":8000,"cityID":1,"city":{"id":1,"cityName":"Moscow","cityPopulation":13000000}},{"id":41,"arenaName":"Csdfsdfsdfl","capacity":8000,"cityID":14,"city":{"id":14,"cityName":"asdasdasd","cityPopulation":13000000}},{"id":40,"arenaName":"Great Theatre","capacity":3000,"cityID":13,"city":{"id":13,"cityName":"San Marino","cityPopulation":100000}},{"id":12,"arenaName":"Hell Fire Arena","capacity":10000,"cityID":3,"city":{"id":3,"cityName":"London","cityPopulation":9000000}},{"id":21,"arenaName":"Main Hall","capacity":12000,"cityID":6,"city":{"id":6,"cityName":"Saint Petersburg","cityPopulation":1550000}},{"id":6,"arenaName":"Mercedes-Benz Arena","capacity":6000,"cityID":2,"city":{"id":2,"cityName":"Berlin","cityPopulation":3500000}},{"id":10,"arenaName":"Natasha Arena","capacity":3000,"cityID":1,"city":{"id":1,"cityName":"Moscow","cityPopulation":13000000}},{"id":2,"arenaName":"Olimpiyskiy","capacity":10000,"cityID":1,"city":{"id":1,"cityName":"Moscow","cityPopulation":13000000}},{"id":7,"arenaName":"Olympiastadion Berlin","capacity":9000,"cityID":2,"city":{"id":2,"cityName":"Berlin","cityPopulation":3500000}},{"id":1042,"arenaName":"qqqqqqq","capacity":2000,"cityID":1015,"city":{"id":1015,"cityName":"qqqqq","cityPopulation":123123123}},{"id":8,"arenaName":"Rock am Ring","capacity":15000,"cityID":2,"city":{"id":2,"cityName":"Berlin","cityPopulation":3500000}},{"id":2043,"arenaName":"Row Ring","capacity":1500,"cityID":2015,"city":{"id":2015,"cityName":"Chezh","cityPopulation":2000}},{"id":3,"arenaName":"Vegas City Hall","capacity":6000,"cityID":1,"city":{"id":1,"cityName":"Moscow","cityPopulation":13000000}},{"id":17,"arenaName":"Vladimir Arena","capacity":7000,"cityID":2,"city":{"id":2,"cityName":"Berlin","cityPopulation":3500000}},{"id":9,"arenaName":"Vova Arena","capacity":3000,"cityID":1,"city":{"id":1,"cityName":"Moscow","cityPopulation":13000000}},{"id":4,"arenaName":"Wembley Arena","capacity":4000,"cityID":3,"city":{"id":3,"cityName":"London","cityPopulation":9000000}},{"id":42,"arenaName":"zzzzzz","capacity":8000,"cityID":15,"city":{"id":15,"cityName":"zzzzzz","cityPopulation":13000000}}]
+
+
+
+6365119562231888829 - Request: SERVICE: ArenaService 
+GET: https://localhost:44361/api/artists
+Accept: application/json
+
+
+6365119562231888829 - Response: Date: Wed, 10 Jan 2018 12:40:22 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3Rz?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":1,"artistName":"Marilyn Manson","lastFmRating":8},{"id":2,"artistName":"30 Seconds to Mars","lastFmRating":7},{"id":3,"artistName":"Rammstein","lastFmRating":4},{"id":4,"artistName":"The Beatles","lastFmRating":1},{"id":5,"artistName":"Suicide Silence","lastFmRating":14},{"id":6,"artistName":"Depeche mode","lastFmRating":2},{"id":7,"artistName":"Bullet for my valentine","lastFmRating":15},{"id":8,"artistName":"Frank Sinatra","lastFmRating":3},{"id":9,"artistName":"Elvis Presley","lastFmRating":4},{"id":10,"artistName":"Combichrist","lastFmRating":8},{"id":11,"artistName":"Devil sold his soul","lastFmRating":9},{"id":12,"artistName":"Shakira","lastFmRating":11},{"id":14,"artistName":"Linkin Park","lastFmRating":5},{"id":16,"artistName":"Queen","lastFmRating":1},{"id":17,"artistName":"John Lenon and Team","lastFmRating":6},{"id":18,"artistName":"Arctic Monkeys","lastFmRating":22},{"id":21,"artistName":"Lucano Pavorotti","lastFmRating":10},{"id":22,"artistName":"adsfasdfasdfn","lastFmRating":8},{"id":23,"artistName":"zzzzz","lastFmRating":8},{"id":1023,"artistName":"qqqqqqqq","lastFmRating":1123123},{"id":2024,"artistName":"Kirvokov","lastFmRating":1000}]
+
+
+
+63651195860809345910 - Request: SERVICE: ConcerteService 
+GET: https://localhost:44381/api/Concertes/all?valid=true&page=1
+Accept: application/json
+
+
+63651195860809345910 - Response: Date: Wed, 10 Jan 2018 12:44:20 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXENvbmNlcnRlU2VydmljZVxDb25jZXJ0ZVNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxDb25jZXJ0ZXNcYWxs?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":1,"showName":"Big Show","ticketsNumber":1000,"price":2000,"cityName":"Moscow","arenaName":"Crocus City Hall","artistName":"Marilyn Manson","date":"2015-09-01T00:00:00","sellerID":1,"seller":{"id":1,"brandName":"Big Billet"}},{"id":2,"showName":"Hello, London","ticketsNumber":2000,"price":4000,"cityName":"London","arenaName":"Brixton Academy","artistName":"Marilyn Manson","date":"2015-10-01T00:00:00","sellerID":2,"seller":{"id":2,"brandName":"Afisha"}},{"id":3,"showName":"Hello, Berlin","ticketsNumber":3000,"price":6000,"cityName":"Berlin","arenaName":"Mercedes-Benz Arena","artistName":"Marilyn Manson","date":"2015-11-01T00:00:00","sellerID":2,"seller":{"id":2,"brandName":"Afisha"}},{"id":4,"showName":"BigSHow","ticketsNumber":1000,"price":9000,"cityName":"Moscow","arenaName":"Crocus City Hall","artistName":"Depeche mode","date":"2016-09-01T00:00:00","sellerID":1,"seller":{"id":1,"brandName":"Big Billet"}},{"id":5,"showName":"Hello, Hello","ticketsNumber":2000,"price":11000,"cityName":"London","arenaName":"Brixton Academy","artistName":"Depeche mode","date":"2016-10-01T00:00:00","sellerID":2,"seller":{"id":2,"brandName":"Afisha"}},{"id":6,"showName":"Hello, Berlin","ticketsNumber":3000,"price":1000,"cityName":"Berlin","arenaName":"Mercedes-Benz Arena","artistName":"Depeche mode","date":"2016-11-01T00:00:00","sellerID":2,"seller":{"id":2,"brandName":"Afisha"}},{"id":7,"showName":"BigGiG","ticketsNumber":3000,"price":22000,"cityName":"Moscow","arenaName":"Olimpiyskiy","artistName":"30 Seconds to Mars","date":"2016-02-01T00:00:00","sellerID":1,"seller":{"id":1,"brandName":"Big Billet"}},{"id":8,"showName":"Hello,Good Bye","ticketsNumber":5000,"price":3100,"cityName":"London","arenaName":"Brixton Academy","artistName":"30 Seconds to Mars","date":"2016-03-01T00:00:00","sellerID":2,"seller":{"id":2,"brandName":"Afisha"}},{"id":9,"showName":"Hello, WORLD","ticketsNumber":6000,"price":2400,"cityName":"Berlin","arenaName":"Mercedes-Benz Arena","artistName":"30 Seconds to Mars","date":"2016-04-01T00:00:00","sellerID":2,"seller":{"id":2,"brandName":"Afisha"}},{"id":10,"showName":"VovaSHow","ticketsNumber":1000,"price":2600,"cityName":"Moscow","arenaName":"Vova Arena","artistName":"Frank Sinatra","date":"2017-09-01T00:00:00","sellerID":3,"seller":{"id":3,"brandName":"Ozone"}}]
+
+
+
+6365119586139041359 - Request: SERVICE: ConcerteService 
+GET: https://localhost:44381/api/Concertes/all?valid=true&page=1
+Accept: application/json
+
+
+6365119586139041359 - Response: Date: Wed, 10 Jan 2018 12:44:20 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXENvbmNlcnRlU2VydmljZVxDb25jZXJ0ZVNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxDb25jZXJ0ZXNcY291bnQ=?=
+X-Powered-By: ASP.NET
+
+Status: OK
+20
+
+
+
+6365119586152498399 - Request: SERVICE: ArenaService 
+GET: https://localhost:44325/api/arenas
+Accept: application/json
+
+
+6365119586152498399 - Response: Date: Wed, 10 Jan 2018 12:44:20 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFyZW5hU2VydmljZVxBcmVuYVNlcnZpY2VcYXBpXGFyZW5hcw==?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":11,"arenaName":"Big Arena","capacity":20000,"cityID":2,"city":{"id":2,"cityName":"Berlin","cityPopulation":3500000}},{"id":20,"arenaName":"Big Ring","capacity":20000,"cityID":5,"city":{"id":5,"cityName":"Washington","cityPopulation":9500000}},{"id":5,"arenaName":"Brixton Academy","capacity":10000,"cityID":3,"city":{"id":3,"cityName":"London","cityPopulation":9000000}},{"id":1,"arenaName":"Crocus City Hall","capacity":8000,"cityID":1,"city":{"id":1,"cityName":"Moscow","cityPopulation":13000000}},{"id":41,"arenaName":"Csdfsdfsdfl","capacity":8000,"cityID":14,"city":{"id":14,"cityName":"asdasdasd","cityPopulation":13000000}},{"id":40,"arenaName":"Great Theatre","capacity":3000,"cityID":13,"city":{"id":13,"cityName":"San Marino","cityPopulation":100000}},{"id":12,"arenaName":"Hell Fire Arena","capacity":10000,"cityID":3,"city":{"id":3,"cityName":"London","cityPopulation":9000000}},{"id":21,"arenaName":"Main Hall","capacity":12000,"cityID":6,"city":{"id":6,"cityName":"Saint Petersburg","cityPopulation":1550000}},{"id":6,"arenaName":"Mercedes-Benz Arena","capacity":6000,"cityID":2,"city":{"id":2,"cityName":"Berlin","cityPopulation":3500000}},{"id":10,"arenaName":"Natasha Arena","capacity":3000,"cityID":1,"city":{"id":1,"cityName":"Moscow","cityPopulation":13000000}},{"id":2,"arenaName":"Olimpiyskiy","capacity":10000,"cityID":1,"city":{"id":1,"cityName":"Moscow","cityPopulation":13000000}},{"id":7,"arenaName":"Olympiastadion Berlin","capacity":9000,"cityID":2,"city":{"id":2,"cityName":"Berlin","cityPopulation":3500000}},{"id":1042,"arenaName":"qqqqqqq","capacity":2000,"cityID":1015,"city":{"id":1015,"cityName":"qqqqq","cityPopulation":123123123}},{"id":8,"arenaName":"Rock am Ring","capacity":15000,"cityID":2,"city":{"id":2,"cityName":"Berlin","cityPopulation":3500000}},{"id":2043,"arenaName":"Row Ring","capacity":1500,"cityID":2015,"city":{"id":2015,"cityName":"Chezh","cityPopulation":2000}},{"id":3,"arenaName":"Vegas City Hall","capacity":6000,"cityID":1,"city":{"id":1,"cityName":"Moscow","cityPopulation":13000000}},{"id":17,"arenaName":"Vladimir Arena","capacity":7000,"cityID":2,"city":{"id":2,"cityName":"Berlin","cityPopulation":3500000}},{"id":9,"arenaName":"Vova Arena","capacity":3000,"cityID":1,"city":{"id":1,"cityName":"Moscow","cityPopulation":13000000}},{"id":4,"arenaName":"Wembley Arena","capacity":4000,"cityID":3,"city":{"id":3,"cityName":"London","cityPopulation":9000000}},{"id":42,"arenaName":"zzzzzz","capacity":8000,"cityID":15,"city":{"id":15,"cityName":"zzzzzz","cityPopulation":13000000}}]
+
+
+
+6365119586157617699 - Request: SERVICE: ArenaService 
+GET: https://localhost:44361/api/artists
+Accept: application/json
+
+
+6365119586157617699 - Response: Date: Wed, 10 Jan 2018 12:44:20 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3Rz?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":1,"artistName":"Marilyn Manson","lastFmRating":8},{"id":2,"artistName":"30 Seconds to Mars","lastFmRating":7},{"id":3,"artistName":"Rammstein","lastFmRating":4},{"id":4,"artistName":"The Beatles","lastFmRating":1},{"id":5,"artistName":"Suicide Silence","lastFmRating":14},{"id":6,"artistName":"Depeche mode","lastFmRating":2},{"id":7,"artistName":"Bullet for my valentine","lastFmRating":15},{"id":8,"artistName":"Frank Sinatra","lastFmRating":3},{"id":9,"artistName":"Elvis Presley","lastFmRating":4},{"id":10,"artistName":"Combichrist","lastFmRating":8},{"id":11,"artistName":"Devil sold his soul","lastFmRating":9},{"id":12,"artistName":"Shakira","lastFmRating":11},{"id":14,"artistName":"Linkin Park","lastFmRating":5},{"id":16,"artistName":"Queen","lastFmRating":1},{"id":17,"artistName":"John Lenon and Team","lastFmRating":6},{"id":18,"artistName":"Arctic Monkeys","lastFmRating":22},{"id":21,"artistName":"Lucano Pavorotti","lastFmRating":10},{"id":22,"artistName":"adsfasdfasdfn","lastFmRating":8},{"id":23,"artistName":"zzzzz","lastFmRating":8},{"id":1023,"artistName":"qqqqqqqq","lastFmRating":1123123},{"id":2024,"artistName":"Kirvokov","lastFmRating":1000}]
+
+
+
+6365119593534377729 - Request: SERVICE: ConcerteService 
+GET: https://localhost:44381/api/Concertes/all?valid=true&page=1
+Accept: application/json
+
+
+6365119593534377729 - Response: Date: Wed, 10 Jan 2018 12:45:35 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXENvbmNlcnRlU2VydmljZVxDb25jZXJ0ZVNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxDb25jZXJ0ZXNcYWxs?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":1,"showName":"Big Show","ticketsNumber":1000,"price":2000,"cityName":"Moscow","arenaName":"Crocus City Hall","artistName":"Marilyn Manson","date":"2015-09-01T00:00:00","sellerID":1,"seller":{"id":1,"brandName":"Big Billet"}},{"id":2,"showName":"Hello, London","ticketsNumber":2000,"price":4000,"cityName":"London","arenaName":"Brixton Academy","artistName":"Marilyn Manson","date":"2015-10-01T00:00:00","sellerID":2,"seller":{"id":2,"brandName":"Afisha"}},{"id":3,"showName":"Hello, Berlin","ticketsNumber":3000,"price":6000,"cityName":"Berlin","arenaName":"Mercedes-Benz Arena","artistName":"Marilyn Manson","date":"2015-11-01T00:00:00","sellerID":2,"seller":{"id":2,"brandName":"Afisha"}},{"id":4,"showName":"BigSHow","ticketsNumber":1000,"price":9000,"cityName":"Moscow","arenaName":"Crocus City Hall","artistName":"Depeche mode","date":"2016-09-01T00:00:00","sellerID":1,"seller":{"id":1,"brandName":"Big Billet"}},{"id":5,"showName":"Hello, Hello","ticketsNumber":2000,"price":11000,"cityName":"London","arenaName":"Brixton Academy","artistName":"Depeche mode","date":"2016-10-01T00:00:00","sellerID":2,"seller":{"id":2,"brandName":"Afisha"}},{"id":6,"showName":"Hello, Berlin","ticketsNumber":3000,"price":1000,"cityName":"Berlin","arenaName":"Mercedes-Benz Arena","artistName":"Depeche mode","date":"2016-11-01T00:00:00","sellerID":2,"seller":{"id":2,"brandName":"Afisha"}},{"id":7,"showName":"BigGiG","ticketsNumber":3000,"price":22000,"cityName":"Moscow","arenaName":"Olimpiyskiy","artistName":"30 Seconds to Mars","date":"2016-02-01T00:00:00","sellerID":1,"seller":{"id":1,"brandName":"Big Billet"}},{"id":8,"showName":"Hello,Good Bye","ticketsNumber":5000,"price":3100,"cityName":"London","arenaName":"Brixton Academy","artistName":"30 Seconds to Mars","date":"2016-03-01T00:00:00","sellerID":2,"seller":{"id":2,"brandName":"Afisha"}},{"id":9,"showName":"Hello, WORLD","ticketsNumber":6000,"price":2400,"cityName":"Berlin","arenaName":"Mercedes-Benz Arena","artistName":"30 Seconds to Mars","date":"2016-04-01T00:00:00","sellerID":2,"seller":{"id":2,"brandName":"Afisha"}},{"id":10,"showName":"VovaSHow","ticketsNumber":1000,"price":2600,"cityName":"Moscow","arenaName":"Vova Arena","artistName":"Frank Sinatra","date":"2017-09-01T00:00:00","sellerID":3,"seller":{"id":3,"brandName":"Ozone"}}]
+
+
+
+6365119593583826099 - Request: SERVICE: ConcerteService 
+GET: https://localhost:44381/api/Concertes/all?valid=true&page=1
+Accept: application/json
+
+
+6365119593583826099 - Response: Date: Wed, 10 Jan 2018 12:45:35 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXENvbmNlcnRlU2VydmljZVxDb25jZXJ0ZVNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxDb25jZXJ0ZXNcY291bnQ=?=
+X-Powered-By: ASP.NET
+
+Status: OK
+20
+
+
+
+63651195935946308710 - Request: SERVICE: ArenaService 
+GET: https://localhost:44325/api/arenas
+Accept: application/json
+
+
+63651195935946308710 - Response: Date: Wed, 10 Jan 2018 12:45:35 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFyZW5hU2VydmljZVxBcmVuYVNlcnZpY2VcYXBpXGFyZW5hcw==?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":11,"arenaName":"Big Arena","capacity":20000,"cityID":2,"city":{"id":2,"cityName":"Berlin","cityPopulation":3500000}},{"id":20,"arenaName":"Big Ring","capacity":20000,"cityID":5,"city":{"id":5,"cityName":"Washington","cityPopulation":9500000}},{"id":5,"arenaName":"Brixton Academy","capacity":10000,"cityID":3,"city":{"id":3,"cityName":"London","cityPopulation":9000000}},{"id":1,"arenaName":"Crocus City Hall","capacity":8000,"cityID":1,"city":{"id":1,"cityName":"Moscow","cityPopulation":13000000}},{"id":41,"arenaName":"Csdfsdfsdfl","capacity":8000,"cityID":14,"city":{"id":14,"cityName":"asdasdasd","cityPopulation":13000000}},{"id":40,"arenaName":"Great Theatre","capacity":3000,"cityID":13,"city":{"id":13,"cityName":"San Marino","cityPopulation":100000}},{"id":12,"arenaName":"Hell Fire Arena","capacity":10000,"cityID":3,"city":{"id":3,"cityName":"London","cityPopulation":9000000}},{"id":21,"arenaName":"Main Hall","capacity":12000,"cityID":6,"city":{"id":6,"cityName":"Saint Petersburg","cityPopulation":1550000}},{"id":6,"arenaName":"Mercedes-Benz Arena","capacity":6000,"cityID":2,"city":{"id":2,"cityName":"Berlin","cityPopulation":3500000}},{"id":10,"arenaName":"Natasha Arena","capacity":3000,"cityID":1,"city":{"id":1,"cityName":"Moscow","cityPopulation":13000000}},{"id":2,"arenaName":"Olimpiyskiy","capacity":10000,"cityID":1,"city":{"id":1,"cityName":"Moscow","cityPopulation":13000000}},{"id":7,"arenaName":"Olympiastadion Berlin","capacity":9000,"cityID":2,"city":{"id":2,"cityName":"Berlin","cityPopulation":3500000}},{"id":1042,"arenaName":"qqqqqqq","capacity":2000,"cityID":1015,"city":{"id":1015,"cityName":"qqqqq","cityPopulation":123123123}},{"id":8,"arenaName":"Rock am Ring","capacity":15000,"cityID":2,"city":{"id":2,"cityName":"Berlin","cityPopulation":3500000}},{"id":2043,"arenaName":"Row Ring","capacity":1500,"cityID":2015,"city":{"id":2015,"cityName":"Chezh","cityPopulation":2000}},{"id":3,"arenaName":"Vegas City Hall","capacity":6000,"cityID":1,"city":{"id":1,"cityName":"Moscow","cityPopulation":13000000}},{"id":17,"arenaName":"Vladimir Arena","capacity":7000,"cityID":2,"city":{"id":2,"cityName":"Berlin","cityPopulation":3500000}},{"id":9,"arenaName":"Vova Arena","capacity":3000,"cityID":1,"city":{"id":1,"cityName":"Moscow","cityPopulation":13000000}},{"id":4,"arenaName":"Wembley Arena","capacity":4000,"cityID":3,"city":{"id":3,"cityName":"London","cityPopulation":9000000}},{"id":42,"arenaName":"zzzzzz","capacity":8000,"cityID":15,"city":{"id":15,"cityName":"zzzzzz","cityPopulation":13000000}}]
+
+
+
+63651195936012886830 - Request: SERVICE: ArenaService 
+GET: https://localhost:44361/api/artists
+Accept: application/json
+
+
+63651195936012886830 - Response: Date: Wed, 10 Jan 2018 12:45:35 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3Rz?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":1,"artistName":"Marilyn Manson","lastFmRating":8},{"id":2,"artistName":"30 Seconds to Mars","lastFmRating":7},{"id":3,"artistName":"Rammstein","lastFmRating":4},{"id":4,"artistName":"The Beatles","lastFmRating":1},{"id":5,"artistName":"Suicide Silence","lastFmRating":14},{"id":6,"artistName":"Depeche mode","lastFmRating":2},{"id":7,"artistName":"Bullet for my valentine","lastFmRating":15},{"id":8,"artistName":"Frank Sinatra","lastFmRating":3},{"id":9,"artistName":"Elvis Presley","lastFmRating":4},{"id":10,"artistName":"Combichrist","lastFmRating":8},{"id":11,"artistName":"Devil sold his soul","lastFmRating":9},{"id":12,"artistName":"Shakira","lastFmRating":11},{"id":14,"artistName":"Linkin Park","lastFmRating":5},{"id":16,"artistName":"Queen","lastFmRating":1},{"id":17,"artistName":"John Lenon and Team","lastFmRating":6},{"id":18,"artistName":"Arctic Monkeys","lastFmRating":22},{"id":21,"artistName":"Lucano Pavorotti","lastFmRating":10},{"id":22,"artistName":"adsfasdfasdfn","lastFmRating":8},{"id":23,"artistName":"zzzzz","lastFmRating":8},{"id":1023,"artistName":"qqqqqqqq","lastFmRating":1123123},{"id":2024,"artistName":"Kirvokov","lastFmRating":1000}]
+
+
+
+6365119601833310539 - Request: SERVICE: ConcerteService 
+GET: https://localhost:44381/api/Concertes/all?valid=true&page=1
+Accept: application/json
+
+
+6365119601833310539 - Response: Date: Wed, 10 Jan 2018 12:46:58 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXENvbmNlcnRlU2VydmljZVxDb25jZXJ0ZVNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxDb25jZXJ0ZXNcYWxs?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":1,"showName":"Big Show","ticketsNumber":1000,"price":2000,"cityName":"Moscow","arenaName":"Crocus City Hall","artistName":"Marilyn Manson","date":"2015-09-01T00:00:00","sellerID":1,"seller":{"id":1,"brandName":"Big Billet"}},{"id":2,"showName":"Hello, London","ticketsNumber":2000,"price":4000,"cityName":"London","arenaName":"Brixton Academy","artistName":"Marilyn Manson","date":"2015-10-01T00:00:00","sellerID":2,"seller":{"id":2,"brandName":"Afisha"}},{"id":3,"showName":"Hello, Berlin","ticketsNumber":3000,"price":6000,"cityName":"Berlin","arenaName":"Mercedes-Benz Arena","artistName":"Marilyn Manson","date":"2015-11-01T00:00:00","sellerID":2,"seller":{"id":2,"brandName":"Afisha"}},{"id":4,"showName":"BigSHow","ticketsNumber":1000,"price":9000,"cityName":"Moscow","arenaName":"Crocus City Hall","artistName":"Depeche mode","date":"2016-09-01T00:00:00","sellerID":1,"seller":{"id":1,"brandName":"Big Billet"}},{"id":5,"showName":"Hello, Hello","ticketsNumber":2000,"price":11000,"cityName":"London","arenaName":"Brixton Academy","artistName":"Depeche mode","date":"2016-10-01T00:00:00","sellerID":2,"seller":{"id":2,"brandName":"Afisha"}},{"id":6,"showName":"Hello, Berlin","ticketsNumber":3000,"price":1000,"cityName":"Berlin","arenaName":"Mercedes-Benz Arena","artistName":"Depeche mode","date":"2016-11-01T00:00:00","sellerID":2,"seller":{"id":2,"brandName":"Afisha"}},{"id":7,"showName":"BigGiG","ticketsNumber":3000,"price":22000,"cityName":"Moscow","arenaName":"Olimpiyskiy","artistName":"30 Seconds to Mars","date":"2016-02-01T00:00:00","sellerID":1,"seller":{"id":1,"brandName":"Big Billet"}},{"id":8,"showName":"Hello,Good Bye","ticketsNumber":5000,"price":3100,"cityName":"London","arenaName":"Brixton Academy","artistName":"30 Seconds to Mars","date":"2016-03-01T00:00:00","sellerID":2,"seller":{"id":2,"brandName":"Afisha"}},{"id":9,"showName":"Hello, WORLD","ticketsNumber":6000,"price":2400,"cityName":"Berlin","arenaName":"Mercedes-Benz Arena","artistName":"30 Seconds to Mars","date":"2016-04-01T00:00:00","sellerID":2,"seller":{"id":2,"brandName":"Afisha"}},{"id":10,"showName":"VovaSHow","ticketsNumber":1000,"price":2600,"cityName":"Moscow","arenaName":"Vova Arena","artistName":"Frank Sinatra","date":"2017-09-01T00:00:00","sellerID":3,"seller":{"id":3,"brandName":"Ozone"}}]
+
+
+
+6365119601893371559 - Request: SERVICE: ConcerteService 
+GET: https://localhost:44381/api/Concertes/all?valid=true&page=1
+Accept: application/json
+
+
+6365119601893371559 - Response: Date: Wed, 10 Jan 2018 12:46:58 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXENvbmNlcnRlU2VydmljZVxDb25jZXJ0ZVNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxDb25jZXJ0ZXNcY291bnQ=?=
+X-Powered-By: ASP.NET
+
+Status: OK
+20
+
+
+
+6365119601905555859 - Request: SERVICE: ArenaService 
+GET: https://localhost:44325/api/arenas
+Accept: application/json
+
+
+6365119601905555859 - Response: Date: Wed, 10 Jan 2018 12:46:58 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFyZW5hU2VydmljZVxBcmVuYVNlcnZpY2VcYXBpXGFyZW5hcw==?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":11,"arenaName":"Big Arena","capacity":20000,"cityID":2,"city":{"id":2,"cityName":"Berlin","cityPopulation":3500000}},{"id":20,"arenaName":"Big Ring","capacity":20000,"cityID":5,"city":{"id":5,"cityName":"Washington","cityPopulation":9500000}},{"id":5,"arenaName":"Brixton Academy","capacity":10000,"cityID":3,"city":{"id":3,"cityName":"London","cityPopulation":9000000}},{"id":1,"arenaName":"Crocus City Hall","capacity":8000,"cityID":1,"city":{"id":1,"cityName":"Moscow","cityPopulation":13000000}},{"id":41,"arenaName":"Csdfsdfsdfl","capacity":8000,"cityID":14,"city":{"id":14,"cityName":"asdasdasd","cityPopulation":13000000}},{"id":40,"arenaName":"Great Theatre","capacity":3000,"cityID":13,"city":{"id":13,"cityName":"San Marino","cityPopulation":100000}},{"id":12,"arenaName":"Hell Fire Arena","capacity":10000,"cityID":3,"city":{"id":3,"cityName":"London","cityPopulation":9000000}},{"id":21,"arenaName":"Main Hall","capacity":12000,"cityID":6,"city":{"id":6,"cityName":"Saint Petersburg","cityPopulation":1550000}},{"id":6,"arenaName":"Mercedes-Benz Arena","capacity":6000,"cityID":2,"city":{"id":2,"cityName":"Berlin","cityPopulation":3500000}},{"id":10,"arenaName":"Natasha Arena","capacity":3000,"cityID":1,"city":{"id":1,"cityName":"Moscow","cityPopulation":13000000}},{"id":2,"arenaName":"Olimpiyskiy","capacity":10000,"cityID":1,"city":{"id":1,"cityName":"Moscow","cityPopulation":13000000}},{"id":7,"arenaName":"Olympiastadion Berlin","capacity":9000,"cityID":2,"city":{"id":2,"cityName":"Berlin","cityPopulation":3500000}},{"id":1042,"arenaName":"qqqqqqq","capacity":2000,"cityID":1015,"city":{"id":1015,"cityName":"qqqqq","cityPopulation":123123123}},{"id":8,"arenaName":"Rock am Ring","capacity":15000,"cityID":2,"city":{"id":2,"cityName":"Berlin","cityPopulation":3500000}},{"id":2043,"arenaName":"Row Ring","capacity":1500,"cityID":2015,"city":{"id":2015,"cityName":"Chezh","cityPopulation":2000}},{"id":3,"arenaName":"Vegas City Hall","capacity":6000,"cityID":1,"city":{"id":1,"cityName":"Moscow","cityPopulation":13000000}},{"id":17,"arenaName":"Vladimir Arena","capacity":7000,"cityID":2,"city":{"id":2,"cityName":"Berlin","cityPopulation":3500000}},{"id":9,"arenaName":"Vova Arena","capacity":3000,"cityID":1,"city":{"id":1,"cityName":"Moscow","cityPopulation":13000000}},{"id":4,"arenaName":"Wembley Arena","capacity":4000,"cityID":3,"city":{"id":3,"cityName":"London","cityPopulation":9000000}},{"id":42,"arenaName":"zzzzzz","capacity":8000,"cityID":15,"city":{"id":15,"cityName":"zzzzzz","cityPopulation":13000000}}]
+
+
+
+63651196019115603910 - Request: SERVICE: ArenaService 
+GET: https://localhost:44361/api/artists
+Accept: application/json
+
+
+63651196019115603910 - Response: Date: Wed, 10 Jan 2018 12:46:58 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3Rz?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":1,"artistName":"Marilyn Manson","lastFmRating":8},{"id":2,"artistName":"30 Seconds to Mars","lastFmRating":7},{"id":3,"artistName":"Rammstein","lastFmRating":4},{"id":4,"artistName":"The Beatles","lastFmRating":1},{"id":5,"artistName":"Suicide Silence","lastFmRating":14},{"id":6,"artistName":"Depeche mode","lastFmRating":2},{"id":7,"artistName":"Bullet for my valentine","lastFmRating":15},{"id":8,"artistName":"Frank Sinatra","lastFmRating":3},{"id":9,"artistName":"Elvis Presley","lastFmRating":4},{"id":10,"artistName":"Combichrist","lastFmRating":8},{"id":11,"artistName":"Devil sold his soul","lastFmRating":9},{"id":12,"artistName":"Shakira","lastFmRating":11},{"id":14,"artistName":"Linkin Park","lastFmRating":5},{"id":16,"artistName":"Queen","lastFmRating":1},{"id":17,"artistName":"John Lenon and Team","lastFmRating":6},{"id":18,"artistName":"Arctic Monkeys","lastFmRating":22},{"id":21,"artistName":"Lucano Pavorotti","lastFmRating":10},{"id":22,"artistName":"adsfasdfasdfn","lastFmRating":8},{"id":23,"artistName":"zzzzz","lastFmRating":8},{"id":1023,"artistName":"qqqqqqqq","lastFmRating":1123123},{"id":2024,"artistName":"Kirvokov","lastFmRating":1000}]
+
+
+
+63651196111623750538 - Request: SERVICE: ConcerteService 
+GET: https://localhost:44381/api/Concertes/all?valid=true&page=1
+Accept: application/json
+
+
+63651196111623750538 - Response: Date: Wed, 10 Jan 2018 12:48:31 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXENvbmNlcnRlU2VydmljZVxDb25jZXJ0ZVNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxDb25jZXJ0ZXNcYWxs?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":1,"showName":"Big Show","ticketsNumber":1000,"price":2000,"cityName":"Moscow","arenaName":"Crocus City Hall","artistName":"Marilyn Manson","date":"2015-09-01T00:00:00","sellerID":1,"seller":{"id":1,"brandName":"Big Billet"}},{"id":2,"showName":"Hello, London","ticketsNumber":2000,"price":4000,"cityName":"London","arenaName":"Brixton Academy","artistName":"Marilyn Manson","date":"2015-10-01T00:00:00","sellerID":2,"seller":{"id":2,"brandName":"Afisha"}},{"id":3,"showName":"Hello, Berlin","ticketsNumber":3000,"price":6000,"cityName":"Berlin","arenaName":"Mercedes-Benz Arena","artistName":"Marilyn Manson","date":"2015-11-01T00:00:00","sellerID":2,"seller":{"id":2,"brandName":"Afisha"}},{"id":4,"showName":"BigSHow","ticketsNumber":1000,"price":9000,"cityName":"Moscow","arenaName":"Crocus City Hall","artistName":"Depeche mode","date":"2016-09-01T00:00:00","sellerID":1,"seller":{"id":1,"brandName":"Big Billet"}},{"id":5,"showName":"Hello, Hello","ticketsNumber":2000,"price":11000,"cityName":"London","arenaName":"Brixton Academy","artistName":"Depeche mode","date":"2016-10-01T00:00:00","sellerID":2,"seller":{"id":2,"brandName":"Afisha"}},{"id":6,"showName":"Hello, Berlin","ticketsNumber":3000,"price":1000,"cityName":"Berlin","arenaName":"Mercedes-Benz Arena","artistName":"Depeche mode","date":"2016-11-01T00:00:00","sellerID":2,"seller":{"id":2,"brandName":"Afisha"}},{"id":7,"showName":"BigGiG","ticketsNumber":3000,"price":22000,"cityName":"Moscow","arenaName":"Olimpiyskiy","artistName":"30 Seconds to Mars","date":"2016-02-01T00:00:00","sellerID":1,"seller":{"id":1,"brandName":"Big Billet"}},{"id":8,"showName":"Hello,Good Bye","ticketsNumber":5000,"price":3100,"cityName":"London","arenaName":"Brixton Academy","artistName":"30 Seconds to Mars","date":"2016-03-01T00:00:00","sellerID":2,"seller":{"id":2,"brandName":"Afisha"}},{"id":9,"showName":"Hello, WORLD","ticketsNumber":6000,"price":2400,"cityName":"Berlin","arenaName":"Mercedes-Benz Arena","artistName":"30 Seconds to Mars","date":"2016-04-01T00:00:00","sellerID":2,"seller":{"id":2,"brandName":"Afisha"}},{"id":10,"showName":"VovaSHow","ticketsNumber":1000,"price":2600,"cityName":"Moscow","arenaName":"Vova Arena","artistName":"Frank Sinatra","date":"2017-09-01T00:00:00","sellerID":3,"seller":{"id":3,"brandName":"Ozone"}}]
+
+
+
+63651196111957274410 - Request: SERVICE: ConcerteService 
+GET: https://localhost:44381/api/Concertes/all?valid=true&page=1
+Accept: application/json
+
+
+63651196111957274410 - Response: Date: Wed, 10 Jan 2018 12:48:31 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXENvbmNlcnRlU2VydmljZVxDb25jZXJ0ZVNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxDb25jZXJ0ZXNcY291bnQ=?=
+X-Powered-By: ASP.NET
+
+Status: OK
+20
+
+
+
+6365119611209268369 - Request: SERVICE: ArenaService 
+GET: https://localhost:44325/api/arenas
+Accept: application/json
+
+
+6365119611209268369 - Response: Date: Wed, 10 Jan 2018 12:48:31 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFyZW5hU2VydmljZVxBcmVuYVNlcnZpY2VcYXBpXGFyZW5hcw==?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":11,"arenaName":"Big Arena","capacity":20000,"cityID":2,"city":{"id":2,"cityName":"Berlin","cityPopulation":3500000}},{"id":20,"arenaName":"Big Ring","capacity":20000,"cityID":5,"city":{"id":5,"cityName":"Washington","cityPopulation":9500000}},{"id":5,"arenaName":"Brixton Academy","capacity":10000,"cityID":3,"city":{"id":3,"cityName":"London","cityPopulation":9000000}},{"id":1,"arenaName":"Crocus City Hall","capacity":8000,"cityID":1,"city":{"id":1,"cityName":"Moscow","cityPopulation":13000000}},{"id":41,"arenaName":"Csdfsdfsdfl","capacity":8000,"cityID":14,"city":{"id":14,"cityName":"asdasdasd","cityPopulation":13000000}},{"id":40,"arenaName":"Great Theatre","capacity":3000,"cityID":13,"city":{"id":13,"cityName":"San Marino","cityPopulation":100000}},{"id":12,"arenaName":"Hell Fire Arena","capacity":10000,"cityID":3,"city":{"id":3,"cityName":"London","cityPopulation":9000000}},{"id":21,"arenaName":"Main Hall","capacity":12000,"cityID":6,"city":{"id":6,"cityName":"Saint Petersburg","cityPopulation":1550000}},{"id":6,"arenaName":"Mercedes-Benz Arena","capacity":6000,"cityID":2,"city":{"id":2,"cityName":"Berlin","cityPopulation":3500000}},{"id":10,"arenaName":"Natasha Arena","capacity":3000,"cityID":1,"city":{"id":1,"cityName":"Moscow","cityPopulation":13000000}},{"id":2,"arenaName":"Olimpiyskiy","capacity":10000,"cityID":1,"city":{"id":1,"cityName":"Moscow","cityPopulation":13000000}},{"id":7,"arenaName":"Olympiastadion Berlin","capacity":9000,"cityID":2,"city":{"id":2,"cityName":"Berlin","cityPopulation":3500000}},{"id":1042,"arenaName":"qqqqqqq","capacity":2000,"cityID":1015,"city":{"id":1015,"cityName":"qqqqq","cityPopulation":123123123}},{"id":8,"arenaName":"Rock am Ring","capacity":15000,"cityID":2,"city":{"id":2,"cityName":"Berlin","cityPopulation":3500000}},{"id":2043,"arenaName":"Row Ring","capacity":1500,"cityID":2015,"city":{"id":2015,"cityName":"Chezh","cityPopulation":2000}},{"id":3,"arenaName":"Vegas City Hall","capacity":6000,"cityID":1,"city":{"id":1,"cityName":"Moscow","cityPopulation":13000000}},{"id":17,"arenaName":"Vladimir Arena","capacity":7000,"cityID":2,"city":{"id":2,"cityName":"Berlin","cityPopulation":3500000}},{"id":9,"arenaName":"Vova Arena","capacity":3000,"cityID":1,"city":{"id":1,"cityName":"Moscow","cityPopulation":13000000}},{"id":4,"arenaName":"Wembley Arena","capacity":4000,"cityID":3,"city":{"id":3,"cityName":"London","cityPopulation":9000000}},{"id":42,"arenaName":"zzzzzz","capacity":8000,"cityID":15,"city":{"id":15,"cityName":"zzzzzz","cityPopulation":13000000}}]
+
+
+
+63651196112137730938 - Request: SERVICE: ArenaService 
+GET: https://localhost:44361/api/artists
+Accept: application/json
+
+
+63651196112137730938 - Response: Date: Wed, 10 Jan 2018 12:48:32 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3Rz?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":1,"artistName":"Marilyn Manson","lastFmRating":8},{"id":2,"artistName":"30 Seconds to Mars","lastFmRating":7},{"id":3,"artistName":"Rammstein","lastFmRating":4},{"id":4,"artistName":"The Beatles","lastFmRating":1},{"id":5,"artistName":"Suicide Silence","lastFmRating":14},{"id":6,"artistName":"Depeche mode","lastFmRating":2},{"id":7,"artistName":"Bullet for my valentine","lastFmRating":15},{"id":8,"artistName":"Frank Sinatra","lastFmRating":3},{"id":9,"artistName":"Elvis Presley","lastFmRating":4},{"id":10,"artistName":"Combichrist","lastFmRating":8},{"id":11,"artistName":"Devil sold his soul","lastFmRating":9},{"id":12,"artistName":"Shakira","lastFmRating":11},{"id":14,"artistName":"Linkin Park","lastFmRating":5},{"id":16,"artistName":"Queen","lastFmRating":1},{"id":17,"artistName":"John Lenon and Team","lastFmRating":6},{"id":18,"artistName":"Arctic Monkeys","lastFmRating":22},{"id":21,"artistName":"Lucano Pavorotti","lastFmRating":10},{"id":22,"artistName":"adsfasdfasdfn","lastFmRating":8},{"id":23,"artistName":"zzzzz","lastFmRating":8},{"id":1023,"artistName":"qqqqqqqq","lastFmRating":1123123},{"id":2024,"artistName":"Kirvokov","lastFmRating":1000}]
+
+
+
+63651196162460381510 - Request: SERVICE: ConcerteService 
+GET: https://localhost:44381/api/Concertes/all?valid=true&page=1
+Accept: application/json
+
+
+63651196162460381510 - Response: Date: Wed, 10 Jan 2018 12:49:22 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXENvbmNlcnRlU2VydmljZVxDb25jZXJ0ZVNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxDb25jZXJ0ZXNcYWxs?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":1,"showName":"Big Show","ticketsNumber":1000,"price":2000,"cityName":"Moscow","arenaName":"Crocus City Hall","artistName":"Marilyn Manson","date":"2015-09-01T00:00:00","sellerID":1,"seller":{"id":1,"brandName":"Big Billet"}},{"id":2,"showName":"Hello, London","ticketsNumber":2000,"price":4000,"cityName":"London","arenaName":"Brixton Academy","artistName":"Marilyn Manson","date":"2015-10-01T00:00:00","sellerID":2,"seller":{"id":2,"brandName":"Afisha"}},{"id":3,"showName":"Hello, Berlin","ticketsNumber":3000,"price":6000,"cityName":"Berlin","arenaName":"Mercedes-Benz Arena","artistName":"Marilyn Manson","date":"2015-11-01T00:00:00","sellerID":2,"seller":{"id":2,"brandName":"Afisha"}},{"id":4,"showName":"BigSHow","ticketsNumber":1000,"price":9000,"cityName":"Moscow","arenaName":"Crocus City Hall","artistName":"Depeche mode","date":"2016-09-01T00:00:00","sellerID":1,"seller":{"id":1,"brandName":"Big Billet"}},{"id":5,"showName":"Hello, Hello","ticketsNumber":2000,"price":11000,"cityName":"London","arenaName":"Brixton Academy","artistName":"Depeche mode","date":"2016-10-01T00:00:00","sellerID":2,"seller":{"id":2,"brandName":"Afisha"}},{"id":6,"showName":"Hello, Berlin","ticketsNumber":3000,"price":1000,"cityName":"Berlin","arenaName":"Mercedes-Benz Arena","artistName":"Depeche mode","date":"2016-11-01T00:00:00","sellerID":2,"seller":{"id":2,"brandName":"Afisha"}},{"id":7,"showName":"BigGiG","ticketsNumber":3000,"price":22000,"cityName":"Moscow","arenaName":"Olimpiyskiy","artistName":"30 Seconds to Mars","date":"2016-02-01T00:00:00","sellerID":1,"seller":{"id":1,"brandName":"Big Billet"}},{"id":8,"showName":"Hello,Good Bye","ticketsNumber":5000,"price":3100,"cityName":"London","arenaName":"Brixton Academy","artistName":"30 Seconds to Mars","date":"2016-03-01T00:00:00","sellerID":2,"seller":{"id":2,"brandName":"Afisha"}},{"id":9,"showName":"Hello, WORLD","ticketsNumber":6000,"price":2400,"cityName":"Berlin","arenaName":"Mercedes-Benz Arena","artistName":"30 Seconds to Mars","date":"2016-04-01T00:00:00","sellerID":2,"seller":{"id":2,"brandName":"Afisha"}},{"id":10,"showName":"VovaSHow","ticketsNumber":1000,"price":2600,"cityName":"Moscow","arenaName":"Vova Arena","artistName":"Frank Sinatra","date":"2017-09-01T00:00:00","sellerID":3,"seller":{"id":3,"brandName":"Ozone"}}]
+
+
+
+63651196162921567533 - Request: SERVICE: ConcerteService 
+GET: https://localhost:44381/api/Concertes/all?valid=true&page=1
+Accept: application/json
+
+
+63651196162921567533 - Response: Date: Wed, 10 Jan 2018 12:49:22 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXENvbmNlcnRlU2VydmljZVxDb25jZXJ0ZVNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxDb25jZXJ0ZXNcY291bnQ=?=
+X-Powered-By: ASP.NET
+
+Status: OK
+20
+
+
+
+6365119616302721869 - Request: SERVICE: ArenaService 
+GET: https://localhost:44325/api/arenas
+Accept: application/json
+
+
+6365119616302721869 - Response: Date: Wed, 10 Jan 2018 12:49:22 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFyZW5hU2VydmljZVxBcmVuYVNlcnZpY2VcYXBpXGFyZW5hcw==?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":11,"arenaName":"Big Arena","capacity":20000,"cityID":2,"city":{"id":2,"cityName":"Berlin","cityPopulation":3500000}},{"id":20,"arenaName":"Big Ring","capacity":20000,"cityID":5,"city":{"id":5,"cityName":"Washington","cityPopulation":9500000}},{"id":5,"arenaName":"Brixton Academy","capacity":10000,"cityID":3,"city":{"id":3,"cityName":"London","cityPopulation":9000000}},{"id":1,"arenaName":"Crocus City Hall","capacity":8000,"cityID":1,"city":{"id":1,"cityName":"Moscow","cityPopulation":13000000}},{"id":41,"arenaName":"Csdfsdfsdfl","capacity":8000,"cityID":14,"city":{"id":14,"cityName":"asdasdasd","cityPopulation":13000000}},{"id":40,"arenaName":"Great Theatre","capacity":3000,"cityID":13,"city":{"id":13,"cityName":"San Marino","cityPopulation":100000}},{"id":12,"arenaName":"Hell Fire Arena","capacity":10000,"cityID":3,"city":{"id":3,"cityName":"London","cityPopulation":9000000}},{"id":21,"arenaName":"Main Hall","capacity":12000,"cityID":6,"city":{"id":6,"cityName":"Saint Petersburg","cityPopulation":1550000}},{"id":6,"arenaName":"Mercedes-Benz Arena","capacity":6000,"cityID":2,"city":{"id":2,"cityName":"Berlin","cityPopulation":3500000}},{"id":10,"arenaName":"Natasha Arena","capacity":3000,"cityID":1,"city":{"id":1,"cityName":"Moscow","cityPopulation":13000000}},{"id":2,"arenaName":"Olimpiyskiy","capacity":10000,"cityID":1,"city":{"id":1,"cityName":"Moscow","cityPopulation":13000000}},{"id":7,"arenaName":"Olympiastadion Berlin","capacity":9000,"cityID":2,"city":{"id":2,"cityName":"Berlin","cityPopulation":3500000}},{"id":1042,"arenaName":"qqqqqqq","capacity":2000,"cityID":1015,"city":{"id":1015,"cityName":"qqqqq","cityPopulation":123123123}},{"id":8,"arenaName":"Rock am Ring","capacity":15000,"cityID":2,"city":{"id":2,"cityName":"Berlin","cityPopulation":3500000}},{"id":2043,"arenaName":"Row Ring","capacity":1500,"cityID":2015,"city":{"id":2015,"cityName":"Chezh","cityPopulation":2000}},{"id":3,"arenaName":"Vegas City Hall","capacity":6000,"cityID":1,"city":{"id":1,"cityName":"Moscow","cityPopulation":13000000}},{"id":17,"arenaName":"Vladimir Arena","capacity":7000,"cityID":2,"city":{"id":2,"cityName":"Berlin","cityPopulation":3500000}},{"id":9,"arenaName":"Vova Arena","capacity":3000,"cityID":1,"city":{"id":1,"cityName":"Moscow","cityPopulation":13000000}},{"id":4,"arenaName":"Wembley Arena","capacity":4000,"cityID":3,"city":{"id":3,"cityName":"London","cityPopulation":9000000}},{"id":42,"arenaName":"zzzzzz","capacity":8000,"cityID":15,"city":{"id":15,"cityName":"zzzzzz","cityPopulation":13000000}}]
+
+
+
+6365119616307331989 - Request: SERVICE: ArenaService 
+GET: https://localhost:44361/api/artists
+Accept: application/json
+
+
+6365119616307331989 - Response: Date: Wed, 10 Jan 2018 12:49:22 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3Rz?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":1,"artistName":"Marilyn Manson","lastFmRating":8},{"id":2,"artistName":"30 Seconds to Mars","lastFmRating":7},{"id":3,"artistName":"Rammstein","lastFmRating":4},{"id":4,"artistName":"The Beatles","lastFmRating":1},{"id":5,"artistName":"Suicide Silence","lastFmRating":14},{"id":6,"artistName":"Depeche mode","lastFmRating":2},{"id":7,"artistName":"Bullet for my valentine","lastFmRating":15},{"id":8,"artistName":"Frank Sinatra","lastFmRating":3},{"id":9,"artistName":"Elvis Presley","lastFmRating":4},{"id":10,"artistName":"Combichrist","lastFmRating":8},{"id":11,"artistName":"Devil sold his soul","lastFmRating":9},{"id":12,"artistName":"Shakira","lastFmRating":11},{"id":14,"artistName":"Linkin Park","lastFmRating":5},{"id":16,"artistName":"Queen","lastFmRating":1},{"id":17,"artistName":"John Lenon and Team","lastFmRating":6},{"id":18,"artistName":"Arctic Monkeys","lastFmRating":22},{"id":21,"artistName":"Lucano Pavorotti","lastFmRating":10},{"id":22,"artistName":"adsfasdfasdfn","lastFmRating":8},{"id":23,"artistName":"zzzzz","lastFmRating":8},{"id":1023,"artistName":"qqqqqqqq","lastFmRating":1123123},{"id":2024,"artistName":"Kirvokov","lastFmRating":1000}]
+
+
+
+63651196390073384759 - Request: SERVICE: ConcerteService 
+GET: https://localhost:44381/api/Concertes/all?valid=true&page=1
+Accept: application/json
+
+
+63651196390073384759 - Response: Date: Wed, 10 Jan 2018 12:53:09 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXENvbmNlcnRlU2VydmljZVxDb25jZXJ0ZVNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxDb25jZXJ0ZXNcYWxs?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":1,"showName":"Big Show","ticketsNumber":1000,"price":2000,"cityName":"Moscow","arenaName":"Crocus City Hall","artistName":"Marilyn Manson","date":"2015-09-01T00:00:00","sellerID":1,"seller":{"id":1,"brandName":"Big Billet"}},{"id":2,"showName":"Hello, London","ticketsNumber":2000,"price":4000,"cityName":"London","arenaName":"Brixton Academy","artistName":"Marilyn Manson","date":"2015-10-01T00:00:00","sellerID":2,"seller":{"id":2,"brandName":"Afisha"}},{"id":3,"showName":"Hello, Berlin","ticketsNumber":3000,"price":6000,"cityName":"Berlin","arenaName":"Mercedes-Benz Arena","artistName":"Marilyn Manson","date":"2015-11-01T00:00:00","sellerID":2,"seller":{"id":2,"brandName":"Afisha"}},{"id":4,"showName":"BigSHow","ticketsNumber":1000,"price":9000,"cityName":"Moscow","arenaName":"Crocus City Hall","artistName":"Depeche mode","date":"2016-09-01T00:00:00","sellerID":1,"seller":{"id":1,"brandName":"Big Billet"}},{"id":5,"showName":"Hello, Hello","ticketsNumber":2000,"price":11000,"cityName":"London","arenaName":"Brixton Academy","artistName":"Depeche mode","date":"2016-10-01T00:00:00","sellerID":2,"seller":{"id":2,"brandName":"Afisha"}},{"id":6,"showName":"Hello, Berlin","ticketsNumber":3000,"price":1000,"cityName":"Berlin","arenaName":"Mercedes-Benz Arena","artistName":"Depeche mode","date":"2016-11-01T00:00:00","sellerID":2,"seller":{"id":2,"brandName":"Afisha"}},{"id":7,"showName":"BigGiG","ticketsNumber":3000,"price":22000,"cityName":"Moscow","arenaName":"Olimpiyskiy","artistName":"30 Seconds to Mars","date":"2016-02-01T00:00:00","sellerID":1,"seller":{"id":1,"brandName":"Big Billet"}},{"id":8,"showName":"Hello,Good Bye","ticketsNumber":5000,"price":3100,"cityName":"London","arenaName":"Brixton Academy","artistName":"30 Seconds to Mars","date":"2016-03-01T00:00:00","sellerID":2,"seller":{"id":2,"brandName":"Afisha"}},{"id":9,"showName":"Hello, WORLD","ticketsNumber":6000,"price":2400,"cityName":"Berlin","arenaName":"Mercedes-Benz Arena","artistName":"30 Seconds to Mars","date":"2016-04-01T00:00:00","sellerID":2,"seller":{"id":2,"brandName":"Afisha"}},{"id":10,"showName":"VovaSHow","ticketsNumber":1000,"price":2600,"cityName":"Moscow","arenaName":"Vova Arena","artistName":"Frank Sinatra","date":"2017-09-01T00:00:00","sellerID":3,"seller":{"id":3,"brandName":"Ozone"}}]
+
+
+
+63651196390601652738 - Request: SERVICE: ConcerteService 
+GET: https://localhost:44381/api/Concertes/all?valid=true&page=1
+Accept: application/json
+
+
+63651196390601652738 - Response: Date: Wed, 10 Jan 2018 12:53:10 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXENvbmNlcnRlU2VydmljZVxDb25jZXJ0ZVNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxDb25jZXJ0ZXNcY291bnQ=?=
+X-Powered-By: ASP.NET
+
+Status: OK
+20
+
+
+
+6365119639079781229 - Request: SERVICE: ArenaService 
+GET: https://localhost:44325/api/arenas
+Accept: application/json
+
+
+6365119639079781229 - Response: Date: Wed, 10 Jan 2018 12:53:10 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFyZW5hU2VydmljZVxBcmVuYVNlcnZpY2VcYXBpXGFyZW5hcw==?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":11,"arenaName":"Big Arena","capacity":20000,"cityID":2,"city":{"id":2,"cityName":"Berlin","cityPopulation":3500000}},{"id":20,"arenaName":"Big Ring","capacity":20000,"cityID":5,"city":{"id":5,"cityName":"Washington","cityPopulation":9500000}},{"id":5,"arenaName":"Brixton Academy","capacity":10000,"cityID":3,"city":{"id":3,"cityName":"London","cityPopulation":9000000}},{"id":1,"arenaName":"Crocus City Hall","capacity":8000,"cityID":1,"city":{"id":1,"cityName":"Moscow","cityPopulation":13000000}},{"id":41,"arenaName":"Csdfsdfsdfl","capacity":8000,"cityID":14,"city":{"id":14,"cityName":"asdasdasd","cityPopulation":13000000}},{"id":40,"arenaName":"Great Theatre","capacity":3000,"cityID":13,"city":{"id":13,"cityName":"San Marino","cityPopulation":100000}},{"id":12,"arenaName":"Hell Fire Arena","capacity":10000,"cityID":3,"city":{"id":3,"cityName":"London","cityPopulation":9000000}},{"id":21,"arenaName":"Main Hall","capacity":12000,"cityID":6,"city":{"id":6,"cityName":"Saint Petersburg","cityPopulation":1550000}},{"id":6,"arenaName":"Mercedes-Benz Arena","capacity":6000,"cityID":2,"city":{"id":2,"cityName":"Berlin","cityPopulation":3500000}},{"id":10,"arenaName":"Natasha Arena","capacity":3000,"cityID":1,"city":{"id":1,"cityName":"Moscow","cityPopulation":13000000}},{"id":2,"arenaName":"Olimpiyskiy","capacity":10000,"cityID":1,"city":{"id":1,"cityName":"Moscow","cityPopulation":13000000}},{"id":7,"arenaName":"Olympiastadion Berlin","capacity":9000,"cityID":2,"city":{"id":2,"cityName":"Berlin","cityPopulation":3500000}},{"id":1042,"arenaName":"qqqqqqq","capacity":2000,"cityID":1015,"city":{"id":1015,"cityName":"qqqqq","cityPopulation":123123123}},{"id":8,"arenaName":"Rock am Ring","capacity":15000,"cityID":2,"city":{"id":2,"cityName":"Berlin","cityPopulation":3500000}},{"id":2043,"arenaName":"Row Ring","capacity":1500,"cityID":2015,"city":{"id":2015,"cityName":"Chezh","cityPopulation":2000}},{"id":3,"arenaName":"Vegas City Hall","capacity":6000,"cityID":1,"city":{"id":1,"cityName":"Moscow","cityPopulation":13000000}},{"id":17,"arenaName":"Vladimir Arena","capacity":7000,"cityID":2,"city":{"id":2,"cityName":"Berlin","cityPopulation":3500000}},{"id":9,"arenaName":"Vova Arena","capacity":3000,"cityID":1,"city":{"id":1,"cityName":"Moscow","cityPopulation":13000000}},{"id":4,"arenaName":"Wembley Arena","capacity":4000,"cityID":3,"city":{"id":3,"cityName":"London","cityPopulation":9000000}},{"id":42,"arenaName":"zzzzzz","capacity":8000,"cityID":15,"city":{"id":15,"cityName":"zzzzzz","cityPopulation":13000000}}]
+
+
+
+63651196390907857610 - Request: SERVICE: ArenaService 
+GET: https://localhost:44361/api/artists
+Accept: application/json
+
+
+63651196390907857610 - Response: Date: Wed, 10 Jan 2018 12:53:10 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3Rz?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":1,"artistName":"Marilyn Manson","lastFmRating":8},{"id":2,"artistName":"30 Seconds to Mars","lastFmRating":7},{"id":3,"artistName":"Rammstein","lastFmRating":4},{"id":4,"artistName":"The Beatles","lastFmRating":1},{"id":5,"artistName":"Suicide Silence","lastFmRating":14},{"id":6,"artistName":"Depeche mode","lastFmRating":2},{"id":7,"artistName":"Bullet for my valentine","lastFmRating":15},{"id":8,"artistName":"Frank Sinatra","lastFmRating":3},{"id":9,"artistName":"Elvis Presley","lastFmRating":4},{"id":10,"artistName":"Combichrist","lastFmRating":8},{"id":11,"artistName":"Devil sold his soul","lastFmRating":9},{"id":12,"artistName":"Shakira","lastFmRating":11},{"id":14,"artistName":"Linkin Park","lastFmRating":5},{"id":16,"artistName":"Queen","lastFmRating":1},{"id":17,"artistName":"John Lenon and Team","lastFmRating":6},{"id":18,"artistName":"Arctic Monkeys","lastFmRating":22},{"id":21,"artistName":"Lucano Pavorotti","lastFmRating":10},{"id":22,"artistName":"adsfasdfasdfn","lastFmRating":8},{"id":23,"artistName":"zzzzz","lastFmRating":8},{"id":1023,"artistName":"qqqqqqqq","lastFmRating":1123123},{"id":2024,"artistName":"Kirvokov","lastFmRating":1000}]
+
+
+
+6365128951316900918 - Request: SERVICE: AuthorisationService 
+POST: https://localhost:44387/api/Users/Find
+Accept: application/json
+{
+  "Login": "sad",
+  "Password": "sad"
+}
+
+6365128951316900918 - Response: Date: Thu, 11 Jan 2018 14:45:13 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXGFwaVxVc2Vyc1xGaW5k?=
+X-Powered-By: ASP.NET
+
+Status: OK
+{"id":1002,"login":"sad","password":"16cfe4f2e1519c415b9b11024c0cba52","role":"User","lastToken":null}
+
+
+
+6365128951683350568 - Request: SERVICE: ArtistService 
+GET: https://localhost:44361/api/artists/page/1
+Accept: application/json
+
+
+6365128951683350568 - Response: Date: Thu, 11 Jan 2018 14:45:16 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3RzXHBhZ2VcMQ==?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":2,"artistName":"30 Seconds to Mars","lastFmRating":7},{"id":22,"artistName":"adsfasdfasdfn","lastFmRating":8},{"id":18,"artistName":"Arctic Monkeys","lastFmRating":22},{"id":7,"artistName":"Bullet for my valentine","lastFmRating":15},{"id":10,"artistName":"Combichrist","lastFmRating":8},{"id":6,"artistName":"Depeche mode","lastFmRating":2},{"id":11,"artistName":"Devil sold his soul","lastFmRating":9},{"id":9,"artistName":"Elvis Presley","lastFmRating":4},{"id":8,"artistName":"Frank Sinatra","lastFmRating":3},{"id":17,"artistName":"John Lenon and Team","lastFmRating":6}]
+
+
+
+6365128951725266929 - Request: SERVICE: ArtistService 
+GET: https://localhost:44361/api/artists/page/1
+Accept: application/json
+
+
+6365128951725266929 - Response: Date: Thu, 11 Jan 2018 14:45:16 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3RzXGNvdW50?=
+X-Powered-By: ASP.NET
+
+Status: OK
+21
+
+
+
+6365128955103304188 - Request: SERVICE: ArtistService 
+GET: https://localhost:44361/api/artists/page/1
+Accept: application/json
+
+
+6365128955103304188 - Response: Date: Thu, 11 Jan 2018 14:45:51 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3RzXHBhZ2VcMQ==?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":2,"artistName":"30 Seconds to Mars","lastFmRating":7},{"id":22,"artistName":"adsfasdfasdfn","lastFmRating":8},{"id":18,"artistName":"Arctic Monkeys","lastFmRating":22},{"id":7,"artistName":"Bullet for my valentine","lastFmRating":15},{"id":10,"artistName":"Combichrist","lastFmRating":8},{"id":6,"artistName":"Depeche mode","lastFmRating":2},{"id":11,"artistName":"Devil sold his soul","lastFmRating":9},{"id":9,"artistName":"Elvis Presley","lastFmRating":4},{"id":8,"artistName":"Frank Sinatra","lastFmRating":3},{"id":17,"artistName":"John Lenon and Team","lastFmRating":6}]
+
+
+
+63651289551137892327 - Request: SERVICE: ArtistService 
+GET: https://localhost:44361/api/artists/page/1
+Accept: application/json
+
+
+63651289551137892327 - Response: Date: Thu, 11 Jan 2018 14:45:51 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3RzXGNvdW50?=
+X-Powered-By: ASP.NET
+
+Status: OK
+21
+
+
+
+63651289572868400728 - Request: SERVICE: ArtistService 
+GET: https://localhost:44361/api/artists/page/1
+Accept: application/json
+
+
+63651289572868400728 - Response: Date: Thu, 11 Jan 2018 14:46:12 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3RzXHBhZ2VcMQ==?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":2,"artistName":"30 Seconds to Mars","lastFmRating":7},{"id":22,"artistName":"adsfasdfasdfn","lastFmRating":8},{"id":18,"artistName":"Arctic Monkeys","lastFmRating":22},{"id":7,"artistName":"Bullet for my valentine","lastFmRating":15},{"id":10,"artistName":"Combichrist","lastFmRating":8},{"id":6,"artistName":"Depeche mode","lastFmRating":2},{"id":11,"artistName":"Devil sold his soul","lastFmRating":9},{"id":9,"artistName":"Elvis Presley","lastFmRating":4},{"id":8,"artistName":"Frank Sinatra","lastFmRating":3},{"id":17,"artistName":"John Lenon and Team","lastFmRating":6}]
+
+
+
+63651289573002128518 - Request: SERVICE: ArtistService 
+GET: https://localhost:44361/api/artists/page/1
+Accept: application/json
+
+
+63651289573002128518 - Response: Date: Thu, 11 Jan 2018 14:46:12 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3RzXGNvdW50?=
+X-Powered-By: ASP.NET
+
+Status: OK
+21
+
+
+
+6365128958822761239 - Request: SERVICE: ArtistService 
+GET: https://localhost:44361/api/artists/page/1
+Accept: application/json
+
+
+6365128958822761239 - Response: Date: Thu, 11 Jan 2018 14:46:28 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3RzXHBhZ2VcMQ==?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":2,"artistName":"30 Seconds to Mars","lastFmRating":7},{"id":22,"artistName":"adsfasdfasdfn","lastFmRating":8},{"id":18,"artistName":"Arctic Monkeys","lastFmRating":22},{"id":7,"artistName":"Bullet for my valentine","lastFmRating":15},{"id":10,"artistName":"Combichrist","lastFmRating":8},{"id":6,"artistName":"Depeche mode","lastFmRating":2},{"id":11,"artistName":"Devil sold his soul","lastFmRating":9},{"id":9,"artistName":"Elvis Presley","lastFmRating":4},{"id":8,"artistName":"Frank Sinatra","lastFmRating":3},{"id":17,"artistName":"John Lenon and Team","lastFmRating":6}]
+
+
+
+63651289588372043318 - Request: SERVICE: ArtistService 
+GET: https://localhost:44361/api/artists/page/1
+Accept: application/json
+
+
+63651289588372043318 - Response: Date: Thu, 11 Jan 2018 14:46:28 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3RzXGNvdW50?=
+X-Powered-By: ASP.NET
+
+Status: OK
+21
+
+
+
+63651289640168828511 - Request: SERVICE: AuthorisationService 
+POST: https://localhost:44387/api/Users/Find
+Accept: application/json
+{
+  "Login": "sad",
+  "Password": "sad"
+}
+
+63651289640168828511 - Response: Date: Thu, 11 Jan 2018 14:47:20 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXGFwaVxVc2Vyc1xGaW5k?=
+X-Powered-By: ASP.NET
+
+Status: OK
+{"id":1002,"login":"sad","password":"16cfe4f2e1519c415b9b11024c0cba52","role":"User","lastToken":null}
+
+
+
+63651289642616032616 - Request: SERVICE: ArtistService 
+GET: https://localhost:44361/api/artists/page/1
+Accept: application/json
+
+
+63651289642616032616 - Response: Date: Thu, 11 Jan 2018 14:47:22 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3RzXHBhZ2VcMQ==?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":2,"artistName":"30 Seconds to Mars","lastFmRating":7},{"id":22,"artistName":"adsfasdfasdfn","lastFmRating":8},{"id":18,"artistName":"Arctic Monkeys","lastFmRating":22},{"id":7,"artistName":"Bullet for my valentine","lastFmRating":15},{"id":10,"artistName":"Combichrist","lastFmRating":8},{"id":6,"artistName":"Depeche mode","lastFmRating":2},{"id":11,"artistName":"Devil sold his soul","lastFmRating":9},{"id":9,"artistName":"Elvis Presley","lastFmRating":4},{"id":8,"artistName":"Frank Sinatra","lastFmRating":3},{"id":17,"artistName":"John Lenon and Team","lastFmRating":6}]
+
+
+
+63651289643197658211 - Request: SERVICE: ArtistService 
+GET: https://localhost:44361/api/artists/page/1
+Accept: application/json
+
+
+63651289643197658211 - Response: Date: Thu, 11 Jan 2018 14:47:22 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3RzXGNvdW50?=
+X-Powered-By: ASP.NET
+
+Status: OK
+21
+
+
+
+6365129067892217498 - Request: SERVICE: AuthorisationService 
+POST: https://localhost:44387/api/Users/Find
+Accept: application/json
+{
+  "Login": "sad",
+  "Password": "sad"
+}
+
+6365129067892217498 - Response: Date: Thu, 11 Jan 2018 15:04:38 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXGFwaVxVc2Vyc1xGaW5k?=
+X-Powered-By: ASP.NET
+
+Status: OK
+{"id":1002,"login":"sad","password":"16cfe4f2e1519c415b9b11024c0cba52","role":"User","lastToken":null}
+
+
+
+6365129068668192128 - Request: SERVICE: ArtistService 
+GET: https://localhost:44361/api/artists/page/1
+Accept: application/json
+
+
+6365129068668192128 - Response: Date: Thu, 11 Jan 2018 15:04:46 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3RzXHBhZ2VcMQ==?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":2,"artistName":"30 Seconds to Mars","lastFmRating":7},{"id":22,"artistName":"adsfasdfasdfn","lastFmRating":8},{"id":18,"artistName":"Arctic Monkeys","lastFmRating":22},{"id":7,"artistName":"Bullet for my valentine","lastFmRating":15},{"id":10,"artistName":"Combichrist","lastFmRating":8},{"id":6,"artistName":"Depeche mode","lastFmRating":2},{"id":11,"artistName":"Devil sold his soul","lastFmRating":9},{"id":9,"artistName":"Elvis Presley","lastFmRating":4},{"id":8,"artistName":"Frank Sinatra","lastFmRating":3},{"id":17,"artistName":"John Lenon and Team","lastFmRating":6}]
+
+
+
+63651290686736659822 - Request: SERVICE: ArtistService 
+GET: https://localhost:44361/api/artists/page/1
+Accept: application/json
+
+
+63651290686736659822 - Response: Date: Thu, 11 Jan 2018 15:04:46 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3RzXGNvdW50?=
+X-Powered-By: ASP.NET
+
+Status: OK
+21
+
+
+
+63651290773130671911 - Request: SERVICE: AuthorisationService 
+POST: https://localhost:44387/api/Users/Find
+Accept: application/json
+{
+  "Login": "sad",
+  "Password": "sad"
+}
+
+63651290773130671911 - Response: Date: Thu, 11 Jan 2018 15:06:13 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXGFwaVxVc2Vyc1xGaW5k?=
+X-Powered-By: ASP.NET
+
+Status: OK
+{"id":1002,"login":"sad","password":"16cfe4f2e1519c415b9b11024c0cba52","role":"User","lastToken":null}
+
+
+
+6365129077848359189 - Request: SERVICE: ArtistService 
+GET: https://localhost:44361/api/artists/page/1
+Accept: application/json
+
+
+6365129077848359189 - Response: Date: Thu, 11 Jan 2018 15:06:18 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3RzXHBhZ2VcMQ==?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":2,"artistName":"30 Seconds to Mars","lastFmRating":7},{"id":22,"artistName":"adsfasdfasdfn","lastFmRating":8},{"id":18,"artistName":"Arctic Monkeys","lastFmRating":22},{"id":7,"artistName":"Bullet for my valentine","lastFmRating":15},{"id":10,"artistName":"Combichrist","lastFmRating":8},{"id":6,"artistName":"Depeche mode","lastFmRating":2},{"id":11,"artistName":"Devil sold his soul","lastFmRating":9},{"id":9,"artistName":"Elvis Presley","lastFmRating":4},{"id":8,"artistName":"Frank Sinatra","lastFmRating":3},{"id":17,"artistName":"John Lenon and Team","lastFmRating":6}]
+
+
+
+63651290778546025420 - Request: SERVICE: ArtistService 
+GET: https://localhost:44361/api/artists/page/1
+Accept: application/json
+
+
+63651290778546025420 - Response: Date: Thu, 11 Jan 2018 15:06:18 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3RzXGNvdW50?=
+X-Powered-By: ASP.NET
+
+Status: OK
+21
+
+
+
+63651290907424034111 - Request: SERVICE: AuthorisationService 
+POST: https://localhost:44387/api/Users/Find
+Accept: application/json
+{
+  "Login": "sad",
+  "Password": "sad"
+}
+
+63651290907424034111 - Response: Date: Thu, 11 Jan 2018 15:08:27 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXGFwaVxVc2Vyc1xGaW5k?=
+X-Powered-By: ASP.NET
+
+Status: OK
+{"id":1002,"login":"sad","password":"16cfe4f2e1519c415b9b11024c0cba52","role":"User","lastToken":null}
+
+
+
+63651290910608778410 - Request: SERVICE: ArtistService 
+GET: https://localhost:44361/api/artists/page/1
+Accept: application/json
+
+
+63651290910608778410 - Response: Date: Thu, 11 Jan 2018 15:08:30 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3RzXHBhZ2VcMQ==?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":2,"artistName":"30 Seconds to Mars","lastFmRating":7},{"id":22,"artistName":"adsfasdfasdfn","lastFmRating":8},{"id":18,"artistName":"Arctic Monkeys","lastFmRating":22},{"id":7,"artistName":"Bullet for my valentine","lastFmRating":15},{"id":10,"artistName":"Combichrist","lastFmRating":8},{"id":6,"artistName":"Depeche mode","lastFmRating":2},{"id":11,"artistName":"Devil sold his soul","lastFmRating":9},{"id":9,"artistName":"Elvis Presley","lastFmRating":4},{"id":8,"artistName":"Frank Sinatra","lastFmRating":3},{"id":17,"artistName":"John Lenon and Team","lastFmRating":6}]
+
+
+
+6365129091070135179 - Request: SERVICE: ArtistService 
+GET: https://localhost:44361/api/artists/page/1
+Accept: application/json
+
+
+6365129091070135179 - Response: Date: Thu, 11 Jan 2018 15:08:30 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3RzXGNvdW50?=
+X-Powered-By: ASP.NET
+
+Status: OK
+21
+
+
+
+63651291121294410710 - Request: SERVICE: AuthorisationService 
+POST: https://localhost:44387/api/Users/Find
+Accept: application/json
+{
+  "Login": "sad",
+  "Password": "sad"
+}
+
+63651291121294410710 - Response: Date: Thu, 11 Jan 2018 15:12:01 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXGFwaVxVc2Vyc1xGaW5k?=
+X-Powered-By: ASP.NET
+
+Status: OK
+{"id":1002,"login":"sad","password":"16cfe4f2e1519c415b9b11024c0cba52","role":"User","lastToken":null}
+
+
+
+6365129112448856418 - Request: SERVICE: ArtistService 
+GET: https://localhost:44361/api/artists/page/1
+Accept: application/json
+
+
+6365129112448856418 - Response: Date: Thu, 11 Jan 2018 15:12:04 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3RzXHBhZ2VcMQ==?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":2,"artistName":"30 Seconds to Mars","lastFmRating":7},{"id":22,"artistName":"adsfasdfasdfn","lastFmRating":8},{"id":18,"artistName":"Arctic Monkeys","lastFmRating":22},{"id":7,"artistName":"Bullet for my valentine","lastFmRating":15},{"id":10,"artistName":"Combichrist","lastFmRating":8},{"id":6,"artistName":"Depeche mode","lastFmRating":2},{"id":11,"artistName":"Devil sold his soul","lastFmRating":9},{"id":9,"artistName":"Elvis Presley","lastFmRating":4},{"id":8,"artistName":"Frank Sinatra","lastFmRating":3},{"id":17,"artistName":"John Lenon and Team","lastFmRating":6}]
+
+
+
+63651291124629563816 - Request: SERVICE: ArtistService 
+GET: https://localhost:44361/api/artists/page/1
+Accept: application/json
+
+
+63651291124629563816 - Response: Date: Thu, 11 Jan 2018 15:12:04 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3RzXGNvdW50?=
+X-Powered-By: ASP.NET
+
+Status: OK
+21
+
+
+
+6365129113156882528 - Request: SERVICE: ArtistService 
+GET: https://localhost:44361/api/artists/page/1
+Accept: application/json
+
+
+6365129113156882528 - Response: Date: Thu, 11 Jan 2018 15:12:11 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3RzXHBhZ2VcMQ==?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":2,"artistName":"30 Seconds to Mars","lastFmRating":7},{"id":22,"artistName":"adsfasdfasdfn","lastFmRating":8},{"id":18,"artistName":"Arctic Monkeys","lastFmRating":22},{"id":7,"artistName":"Bullet for my valentine","lastFmRating":15},{"id":10,"artistName":"Combichrist","lastFmRating":8},{"id":6,"artistName":"Depeche mode","lastFmRating":2},{"id":11,"artistName":"Devil sold his soul","lastFmRating":9},{"id":9,"artistName":"Elvis Presley","lastFmRating":4},{"id":8,"artistName":"Frank Sinatra","lastFmRating":3},{"id":17,"artistName":"John Lenon and Team","lastFmRating":6}]
+
+
+
+63651291131678560320 - Request: SERVICE: ArtistService 
+GET: https://localhost:44361/api/artists/page/1
+Accept: application/json
+
+
+63651291131678560320 - Response: Date: Thu, 11 Jan 2018 15:12:11 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3RzXGNvdW50?=
+X-Powered-By: ASP.NET
+
+Status: OK
+21
+
+
+
+63651291192844669210 - Request: SERVICE: AuthorisationService 
+POST: https://localhost:44387/api/Users/Find
+Accept: application/json
+{
+  "Login": "sad",
+  "Password": "sad"
+}
+
+63651291192844669210 - Response: Date: Thu, 11 Jan 2018 15:13:12 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXGFwaVxVc2Vyc1xGaW5k?=
+X-Powered-By: ASP.NET
+
+Status: OK
+{"id":1002,"login":"sad","password":"16cfe4f2e1519c415b9b11024c0cba52","role":"User","lastToken":null}
+
+
+
+63651291195134667211 - Request: SERVICE: ArtistService 
+GET: https://localhost:44361/api/artists/page/1
+Accept: application/json
+
+
+63651291195134667211 - Response: Date: Thu, 11 Jan 2018 15:13:15 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3RzXHBhZ2VcMQ==?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":2,"artistName":"30 Seconds to Mars","lastFmRating":7},{"id":22,"artistName":"adsfasdfasdfn","lastFmRating":8},{"id":18,"artistName":"Arctic Monkeys","lastFmRating":22},{"id":7,"artistName":"Bullet for my valentine","lastFmRating":15},{"id":10,"artistName":"Combichrist","lastFmRating":8},{"id":6,"artistName":"Depeche mode","lastFmRating":2},{"id":11,"artistName":"Devil sold his soul","lastFmRating":9},{"id":9,"artistName":"Elvis Presley","lastFmRating":4},{"id":8,"artistName":"Frank Sinatra","lastFmRating":3},{"id":17,"artistName":"John Lenon and Team","lastFmRating":6}]
+
+
+
+63651291195202743411 - Request: SERVICE: ArtistService 
+GET: https://localhost:44361/api/artists/page/1
+Accept: application/json
+
+
+63651291195202743411 - Response: Date: Thu, 11 Jan 2018 15:13:15 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3RzXGNvdW50?=
+X-Powered-By: ASP.NET
+
+Status: OK
+21
+
+
+
+6365129129673122988 - Request: SERVICE: AuthorisationService 
+POST: https://localhost:44387/api/Users/Find
+Accept: application/json
+{
+  "Login": "sad",
+  "Password": "sad"
+}
+
+6365129129673122988 - Response: Date: Thu, 11 Jan 2018 15:14:56 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXGFwaVxVc2Vyc1xGaW5k?=
+X-Powered-By: ASP.NET
+
+Status: OK
+{"id":1002,"login":"sad","password":"16cfe4f2e1519c415b9b11024c0cba52","role":"User","lastToken":null}
+
+
+
+6365129129945966448 - Request: SERVICE: ArtistService 
+GET: https://localhost:44361/api/artists/page/1
+Accept: application/json
+
+
+6365129129945966448 - Response: Date: Thu, 11 Jan 2018 15:14:59 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3RzXHBhZ2VcMQ==?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":2,"artistName":"30 Seconds to Mars","lastFmRating":7},{"id":22,"artistName":"adsfasdfasdfn","lastFmRating":8},{"id":18,"artistName":"Arctic Monkeys","lastFmRating":22},{"id":7,"artistName":"Bullet for my valentine","lastFmRating":15},{"id":10,"artistName":"Combichrist","lastFmRating":8},{"id":6,"artistName":"Depeche mode","lastFmRating":2},{"id":11,"artistName":"Devil sold his soul","lastFmRating":9},{"id":9,"artistName":"Elvis Presley","lastFmRating":4},{"id":8,"artistName":"Frank Sinatra","lastFmRating":3},{"id":17,"artistName":"John Lenon and Team","lastFmRating":6}]
+
+
+
+63651291299497931111 - Request: SERVICE: ArtistService 
+GET: https://localhost:44361/api/artists/page/1
+Accept: application/json
+
+
+63651291299497931111 - Response: Date: Thu, 11 Jan 2018 15:14:59 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3RzXGNvdW50?=
+X-Powered-By: ASP.NET
+
+Status: OK
+21
+
+
+
+63651291410444270710 - Request: SERVICE: AuthorisationService 
+POST: https://localhost:44387/api/Users/Find
+Accept: application/json
+{
+  "Login": "sad",
+  "Password": "sad"
+}
+
+63651291410444270710 - Response: Date: Thu, 11 Jan 2018 15:16:50 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXGFwaVxVc2Vyc1xGaW5k?=
+X-Powered-By: ASP.NET
+
+Status: OK
+{"id":1002,"login":"sad","password":"16cfe4f2e1519c415b9b11024c0cba52","role":"User","lastToken":null}
+
+
+
+6365129141337924149 - Request: SERVICE: ArtistService 
+GET: https://localhost:44361/api/artists/page/1
+Accept: application/json
+
+
+6365129141337924149 - Response: Date: Thu, 11 Jan 2018 15:16:53 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3RzXHBhZ2VcMQ==?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":2,"artistName":"30 Seconds to Mars","lastFmRating":7},{"id":22,"artistName":"adsfasdfasdfn","lastFmRating":8},{"id":18,"artistName":"Arctic Monkeys","lastFmRating":22},{"id":7,"artistName":"Bullet for my valentine","lastFmRating":15},{"id":10,"artistName":"Combichrist","lastFmRating":8},{"id":6,"artistName":"Depeche mode","lastFmRating":2},{"id":11,"artistName":"Devil sold his soul","lastFmRating":9},{"id":9,"artistName":"Elvis Presley","lastFmRating":4},{"id":8,"artistName":"Frank Sinatra","lastFmRating":3},{"id":17,"artistName":"John Lenon and Team","lastFmRating":6}]
+
+
+
+6365129141340441369 - Request: SERVICE: ArtistService 
+GET: https://localhost:44361/api/artists/page/1
+Accept: application/json
+
+
+6365129141340441369 - Response: Date: Thu, 11 Jan 2018 15:16:53 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3RzXGNvdW50?=
+X-Powered-By: ASP.NET
+
+Status: OK
+21
+
+
+
+63651291525464610110 - Request: SERVICE: AuthorisationService 
+POST: https://localhost:44387/api/Users/Find
+Accept: application/json
+{
+  "Login": "sad",
+  "Password": "sad"
+}
+
+63651291525464610110 - Response: Date: Thu, 11 Jan 2018 15:18:45 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXGFwaVxVc2Vyc1xGaW5k?=
+X-Powered-By: ASP.NET
+
+Status: OK
+{"id":1002,"login":"sad","password":"16cfe4f2e1519c415b9b11024c0cba52","role":"User","lastToken":null}
+
+
+
+63651291527976493110 - Request: SERVICE: ArtistService 
+GET: https://localhost:44361/api/artists/page/1
+Accept: application/json
+
+
+63651291527976493110 - Response: Date: Thu, 11 Jan 2018 15:18:47 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3RzXHBhZ2VcMQ==?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":2,"artistName":"30 Seconds to Mars","lastFmRating":7},{"id":22,"artistName":"adsfasdfasdfn","lastFmRating":8},{"id":18,"artistName":"Arctic Monkeys","lastFmRating":22},{"id":7,"artistName":"Bullet for my valentine","lastFmRating":15},{"id":10,"artistName":"Combichrist","lastFmRating":8},{"id":6,"artistName":"Depeche mode","lastFmRating":2},{"id":11,"artistName":"Devil sold his soul","lastFmRating":9},{"id":9,"artistName":"Elvis Presley","lastFmRating":4},{"id":8,"artistName":"Frank Sinatra","lastFmRating":3},{"id":17,"artistName":"John Lenon and Team","lastFmRating":6}]
+
+
+
+63651291528038485710 - Request: SERVICE: ArtistService 
+GET: https://localhost:44361/api/artists/page/1
+Accept: application/json
+
+
+63651291528038485710 - Response: Date: Thu, 11 Jan 2018 15:18:47 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3RzXGNvdW50?=
+X-Powered-By: ASP.NET
+
+Status: OK
+21
+
+
+
+63651291608517955110 - Request: SERVICE: AuthorisationService 
+POST: https://localhost:44387/api/Users/Find
+Accept: application/json
+{
+  "Login": "sad",
+  "Password": "sad"
+}
+
+63651291608517955110 - Response: Date: Thu, 11 Jan 2018 15:20:08 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXGFwaVxVc2Vyc1xGaW5k?=
+X-Powered-By: ASP.NET
+
+Status: OK
+{"id":1002,"login":"sad","password":"16cfe4f2e1519c415b9b11024c0cba52","role":"User","lastToken":null}
+
+
+
+6365129161099105359 - Request: SERVICE: ArtistService 
+GET: https://localhost:44361/api/artists/page/1
+Accept: application/json
+
+
+6365129161099105359 - Response: Date: Thu, 11 Jan 2018 15:20:10 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3RzXHBhZ2VcMQ==?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":2,"artistName":"30 Seconds to Mars","lastFmRating":7},{"id":22,"artistName":"adsfasdfasdfn","lastFmRating":8},{"id":18,"artistName":"Arctic Monkeys","lastFmRating":22},{"id":7,"artistName":"Bullet for my valentine","lastFmRating":15},{"id":10,"artistName":"Combichrist","lastFmRating":8},{"id":6,"artistName":"Depeche mode","lastFmRating":2},{"id":11,"artistName":"Devil sold his soul","lastFmRating":9},{"id":9,"artistName":"Elvis Presley","lastFmRating":4},{"id":8,"artistName":"Frank Sinatra","lastFmRating":3},{"id":17,"artistName":"John Lenon and Team","lastFmRating":6}]
+
+
+
+63651291611073632816 - Request: SERVICE: ArtistService 
+GET: https://localhost:44361/api/artists/page/1
+Accept: application/json
+
+
+63651291611073632816 - Response: Date: Thu, 11 Jan 2018 15:20:10 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3RzXGNvdW50?=
+X-Powered-By: ASP.NET
+
+Status: OK
+21
+
+
+
+63651291722726172610 - Request: SERVICE: AuthorisationService 
+POST: https://localhost:44387/api/Users/Find
+Accept: application/json
+{
+  "Login": "sad",
+  "Password": "sad"
+}
+
+63651291722726172610 - Response: Date: Thu, 11 Jan 2018 15:22:02 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXGFwaVxVc2Vyc1xGaW5k?=
+X-Powered-By: ASP.NET
+
+Status: OK
+{"id":1002,"login":"sad","password":"16cfe4f2e1519c415b9b11024c0cba52","role":"User","lastToken":null}
+
+
+
+6365129172703269189 - Request: SERVICE: ArtistService 
+GET: https://localhost:44361/api/artists/page/1
+Accept: application/json
+
+
+6365129172703269189 - Response: Date: Thu, 11 Jan 2018 15:22:07 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3RzXHBhZ2VcMQ==?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":2,"artistName":"30 Seconds to Mars","lastFmRating":7},{"id":22,"artistName":"adsfasdfasdfn","lastFmRating":8},{"id":18,"artistName":"Arctic Monkeys","lastFmRating":22},{"id":7,"artistName":"Bullet for my valentine","lastFmRating":15},{"id":10,"artistName":"Combichrist","lastFmRating":8},{"id":6,"artistName":"Depeche mode","lastFmRating":2},{"id":11,"artistName":"Devil sold his soul","lastFmRating":9},{"id":9,"artistName":"Elvis Presley","lastFmRating":4},{"id":8,"artistName":"Frank Sinatra","lastFmRating":3},{"id":17,"artistName":"John Lenon and Team","lastFmRating":6}]
+
+
+
+63651291727075574011 - Request: SERVICE: ArtistService 
+GET: https://localhost:44361/api/artists/page/1
+Accept: application/json
+
+
+63651291727075574011 - Response: Date: Thu, 11 Jan 2018 15:22:07 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3RzXGNvdW50?=
+X-Powered-By: ASP.NET
+
+Status: OK
+21
+
+
+
+6365129173007810318 - Request: SERVICE: ArtistService 
+GET: https://localhost:44361/api/artists/page/3
+Accept: application/json
+
+
+6365129173007810318 - Response: Date: Thu, 11 Jan 2018 15:22:10 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3RzXHBhZ2VcMw==?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":23,"artistName":"zzzzz","lastFmRating":8}]
+
+
+
+63651291730116061016 - Request: SERVICE: ArtistService 
+GET: https://localhost:44361/api/artists/page/3
+Accept: application/json
+
+
+63651291730116061016 - Response: Date: Thu, 11 Jan 2018 15:22:10 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3RzXGNvdW50?=
+X-Powered-By: ASP.NET
+
+Status: OK
+21
+
+
+
+6365129173188301348 - Request: SERVICE: ArtistService 
+GET: https://localhost:44361/api/artists/page/2
+Accept: application/json
+
+
+6365129173188301348 - Response: Date: Thu, 11 Jan 2018 15:22:11 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3RzXHBhZ2VcMg==?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":2024,"artistName":"Kirvokov","lastFmRating":1000},{"id":14,"artistName":"Linkin Park","lastFmRating":5},{"id":21,"artistName":"Lucano Pavorotti","lastFmRating":10},{"id":1,"artistName":"Marilyn Manson","lastFmRating":8},{"id":1023,"artistName":"qqqqqqqq","lastFmRating":1123123},{"id":16,"artistName":"Queen","lastFmRating":1},{"id":3,"artistName":"Rammstein","lastFmRating":4},{"id":12,"artistName":"Shakira","lastFmRating":11},{"id":5,"artistName":"Suicide Silence","lastFmRating":14},{"id":4,"artistName":"The Beatles","lastFmRating":1}]
+
+
+
+6365129173190267579 - Request: SERVICE: ArtistService 
+GET: https://localhost:44361/api/artists/page/2
+Accept: application/json
+
+
+6365129173190267579 - Response: Date: Thu, 11 Jan 2018 15:22:11 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3RzXGNvdW50?=
+X-Powered-By: ASP.NET
+
+Status: OK
+21
+
+
+
+6365129173323157049 - Request: SERVICE: ArtistService 
+GET: https://localhost:44361/api/artists/page/1
+Accept: application/json
+
+
+6365129173323157049 - Response: Date: Thu, 11 Jan 2018 15:22:13 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3RzXHBhZ2VcMQ==?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":2,"artistName":"30 Seconds to Mars","lastFmRating":7},{"id":22,"artistName":"adsfasdfasdfn","lastFmRating":8},{"id":18,"artistName":"Arctic Monkeys","lastFmRating":22},{"id":7,"artistName":"Bullet for my valentine","lastFmRating":15},{"id":10,"artistName":"Combichrist","lastFmRating":8},{"id":6,"artistName":"Depeche mode","lastFmRating":2},{"id":11,"artistName":"Devil sold his soul","lastFmRating":9},{"id":9,"artistName":"Elvis Presley","lastFmRating":4},{"id":8,"artistName":"Frank Sinatra","lastFmRating":3},{"id":17,"artistName":"John Lenon and Team","lastFmRating":6}]
+
+
+
+63651291733256130916 - Request: SERVICE: ArtistService 
+GET: https://localhost:44361/api/artists/page/1
+Accept: application/json
+
+
+63651291733256130916 - Response: Date: Thu, 11 Jan 2018 15:22:13 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3RzXGNvdW50?=
+X-Powered-By: ASP.NET
+
+Status: OK
+21
+
+
+
+6365129173499722298 - Request: SERVICE: ArtistService 
+GET: https://localhost:44361/api/artists/page/2
+Accept: application/json
+
+
+6365129173499722298 - Response: Date: Thu, 11 Jan 2018 15:22:14 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3RzXHBhZ2VcMg==?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":2024,"artistName":"Kirvokov","lastFmRating":1000},{"id":14,"artistName":"Linkin Park","lastFmRating":5},{"id":21,"artistName":"Lucano Pavorotti","lastFmRating":10},{"id":1,"artistName":"Marilyn Manson","lastFmRating":8},{"id":1023,"artistName":"qqqqqqqq","lastFmRating":1123123},{"id":16,"artistName":"Queen","lastFmRating":1},{"id":3,"artistName":"Rammstein","lastFmRating":4},{"id":12,"artistName":"Shakira","lastFmRating":11},{"id":5,"artistName":"Suicide Silence","lastFmRating":14},{"id":4,"artistName":"The Beatles","lastFmRating":1}]
+
+
+
+6365129173510159399 - Request: SERVICE: ArtistService 
+GET: https://localhost:44361/api/artists/page/2
+Accept: application/json
+
+
+6365129173510159399 - Response: Date: Thu, 11 Jan 2018 15:22:14 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3RzXGNvdW50?=
+X-Powered-By: ASP.NET
+
+Status: OK
+21
+
+
+
+6365131744608285168 - Request: SERVICE: AuthorisationService 
+POST: https://localhost:44387/api/Users/Find
+Accept: application/json
+{
+  "Login": "sad",
+  "Password": "sad"
+}
+
+6365131744608285168 - Response: Date: Thu, 11 Jan 2018 22:30:46 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXGFwaVxVc2Vyc1xGaW5k?=
+X-Powered-By: ASP.NET
+
+Status: OK
+{"id":1002,"login":"sad","password":"16cfe4f2e1519c415b9b11024c0cba52","role":"User","lastToken":null}
+
+
+
+63651317450099747510 - Request: SERVICE: ArtistService 
+GET: https://localhost:44361/api/artists/page/1
+Accept: application/json
+
+
+63651317450099747510 - Response: Date: Thu, 11 Jan 2018 22:30:50 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3RzXHBhZ2VcMQ==?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":2,"artistName":"30 Seconds to Mars","lastFmRating":7},{"id":22,"artistName":"adsfasdfasdfn","lastFmRating":8},{"id":18,"artistName":"Arctic Monkeys","lastFmRating":22},{"id":7,"artistName":"Bullet for my valentine","lastFmRating":15},{"id":10,"artistName":"Combichrist","lastFmRating":8},{"id":6,"artistName":"Depeche mode","lastFmRating":2},{"id":11,"artistName":"Devil sold his soul","lastFmRating":9},{"id":9,"artistName":"Elvis Presley","lastFmRating":4},{"id":8,"artistName":"Frank Sinatra","lastFmRating":3},{"id":17,"artistName":"John Lenon and Team","lastFmRating":6}]
+
+
+
+63651317450142823811 - Request: SERVICE: ArtistService 
+GET: https://localhost:44361/api/artists/page/1
+Accept: application/json
+
+
+63651317450142823811 - Response: Date: Thu, 11 Jan 2018 22:30:50 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3RzXGNvdW50?=
+X-Powered-By: ASP.NET
+
+Status: OK
+21
+
+
+
+63651317454954847211 - Request: SERVICE: ArtistService 
+GET: https://localhost:44361/api/artists/page/3
+Accept: application/json
+
+
+63651317454954847211 - Response: Date: Thu, 11 Jan 2018 22:30:54 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3RzXHBhZ2VcMw==?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":23,"artistName":"zzzzz","lastFmRating":8}]
+
+
+
+63651317455168601016 - Request: SERVICE: ArtistService 
+GET: https://localhost:44361/api/artists/page/3
+Accept: application/json
+
+
+63651317455168601016 - Response: Date: Thu, 11 Jan 2018 22:30:54 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3RzXGNvdW50?=
+X-Powered-By: ASP.NET
+
+Status: OK
+21
+
+
+
+63651317458788839211 - Request: SERVICE: ArtistService 
+GET: https://localhost:44361/api/artists/page/1
+Accept: application/json
+
+
+63651317458788839211 - Response: Date: Thu, 11 Jan 2018 22:30:58 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3RzXHBhZ2VcMQ==?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":2,"artistName":"30 Seconds to Mars","lastFmRating":7},{"id":22,"artistName":"adsfasdfasdfn","lastFmRating":8},{"id":18,"artistName":"Arctic Monkeys","lastFmRating":22},{"id":7,"artistName":"Bullet for my valentine","lastFmRating":15},{"id":10,"artistName":"Combichrist","lastFmRating":8},{"id":6,"artistName":"Depeche mode","lastFmRating":2},{"id":11,"artistName":"Devil sold his soul","lastFmRating":9},{"id":9,"artistName":"Elvis Presley","lastFmRating":4},{"id":8,"artistName":"Frank Sinatra","lastFmRating":3},{"id":17,"artistName":"John Lenon and Team","lastFmRating":6}]
+
+
+
+63651317458832103316 - Request: SERVICE: ArtistService 
+GET: https://localhost:44361/api/artists/page/1
+Accept: application/json
+
+
+63651317458832103316 - Response: Date: Thu, 11 Jan 2018 22:30:58 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3RzXGNvdW50?=
+X-Powered-By: ASP.NET
+
+Status: OK
+21
+
+
+
+6365132127496745288 - Request: SERVICE: AuthorisationService 
+POST: https://localhost:44387/api/Users/Find
+Accept: application/json
+{
+  "Login": "sad",
+  "Password": "sad"
+}
+
+6365132127496745288 - Response: Date: Thu, 11 Jan 2018 23:34:34 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXGFwaVxVc2Vyc1xGaW5k?=
+X-Powered-By: ASP.NET
+
+Status: OK
+{"id":1002,"login":"sad","password":"16cfe4f2e1519c415b9b11024c0cba52","role":"User","lastToken":null}
+
+
+
+6365132127779752178 - Request: SERVICE: ArtistService 
+GET: https://localhost:44361/api/artists/page/1
+Accept: application/json
+
+
+6365132127779752178 - Response: Date: Thu, 11 Jan 2018 23:34:37 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3RzXHBhZ2VcMQ==?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":2,"artistName":"30 Seconds to Mars","lastFmRating":7},{"id":22,"artistName":"adsfasdfasdfn","lastFmRating":8},{"id":18,"artistName":"Arctic Monkeys","lastFmRating":22},{"id":7,"artistName":"Bullet for my valentine","lastFmRating":15},{"id":10,"artistName":"Combichrist","lastFmRating":8},{"id":6,"artistName":"Depeche mode","lastFmRating":2},{"id":11,"artistName":"Devil sold his soul","lastFmRating":9},{"id":9,"artistName":"Elvis Presley","lastFmRating":4},{"id":8,"artistName":"Frank Sinatra","lastFmRating":3},{"id":17,"artistName":"John Lenon and Team","lastFmRating":6}]
+
+
+
+63651321277839841111 - Request: SERVICE: ArtistService 
+GET: https://localhost:44361/api/artists/page/1
+Accept: application/json
+
+
+63651321277839841111 - Response: Date: Thu, 11 Jan 2018 23:34:37 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3RzXGNvdW50?=
+X-Powered-By: ASP.NET
+
+Status: OK
+21
+
+
+
+6365132128140285608 - Request: SERVICE: ArtistService 
+GET: https://localhost:44361/api/artists/page/3
+Accept: application/json
+
+
+6365132128140285608 - Response: Date: Thu, 11 Jan 2018 23:34:41 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3RzXHBhZ2VcMw==?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":23,"artistName":"zzzzz","lastFmRating":8}]
+
+
+
+63651321281478053716 - Request: SERVICE: ArtistService 
+GET: https://localhost:44361/api/artists/page/3
+Accept: application/json
+
+
+63651321281478053716 - Response: Date: Thu, 11 Jan 2018 23:34:41 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3RzXGNvdW50?=
+X-Powered-By: ASP.NET
+
+Status: OK
+21
+
+
+
+63651321296650360110 - Request: SERVICE: AuthorisationService 
+POST: https://localhost:44387/api/Users/Find
+Accept: application/json
+{
+  "Login": "admin",
+  "Password": "admin"
+}
+
+63651321296650360110 - Response: Date: Thu, 11 Jan 2018 23:34:56 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXGFwaVxVc2Vyc1xGaW5k?=
+X-Powered-By: ASP.NET
+
+Status: OK
+{"id":1003,"login":"admin","password":"19a2854144b63a8f7617a6f225019b12","role":"Admin","lastToken":null}
+
+
+
+63651321298649850110 - Request: SERVICE: ArtistService 
+GET: https://localhost:44361/api/artists/page/1
+Accept: application/json
+
+
+63651321298649850110 - Response: Date: Thu, 11 Jan 2018 23:34:58 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3RzXHBhZ2VcMQ==?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":2,"artistName":"30 Seconds to Mars","lastFmRating":7},{"id":22,"artistName":"adsfasdfasdfn","lastFmRating":8},{"id":18,"artistName":"Arctic Monkeys","lastFmRating":22},{"id":7,"artistName":"Bullet for my valentine","lastFmRating":15},{"id":10,"artistName":"Combichrist","lastFmRating":8},{"id":6,"artistName":"Depeche mode","lastFmRating":2},{"id":11,"artistName":"Devil sold his soul","lastFmRating":9},{"id":9,"artistName":"Elvis Presley","lastFmRating":4},{"id":8,"artistName":"Frank Sinatra","lastFmRating":3},{"id":17,"artistName":"John Lenon and Team","lastFmRating":6}]
+
+
+
+63651321298697372820 - Request: SERVICE: ArtistService 
+GET: https://localhost:44361/api/artists/page/1
+Accept: application/json
+
+
+63651321298697372820 - Response: Date: Thu, 11 Jan 2018 23:34:58 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3RzXGNvdW50?=
+X-Powered-By: ASP.NET
+
+Status: OK
+21
+
+
+
+63651321343557975710 - Request: SERVICE: AuthorisationService 
+POST: https://localhost:44387/api/Users/Find
+Accept: application/json
+{
+  "Login": "sad",
+  "Password": "sad"
+}
+
+63651321343557975710 - Response: Date: Thu, 11 Jan 2018 23:35:43 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXGFwaVxVc2Vyc1xGaW5k?=
+X-Powered-By: ASP.NET
+
+Status: OK
+{"id":1002,"login":"sad","password":"16cfe4f2e1519c415b9b11024c0cba52","role":"User","lastToken":null}
+
+
+
+6365132134588590648 - Request: SERVICE: ArtistService 
+GET: https://localhost:44361/api/artists/page/1
+Accept: application/json
+
+
+6365132134588590648 - Response: Date: Thu, 11 Jan 2018 23:35:45 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3RzXHBhZ2VcMQ==?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":2,"artistName":"30 Seconds to Mars","lastFmRating":7},{"id":22,"artistName":"adsfasdfasdfn","lastFmRating":8},{"id":18,"artistName":"Arctic Monkeys","lastFmRating":22},{"id":7,"artistName":"Bullet for my valentine","lastFmRating":15},{"id":10,"artistName":"Combichrist","lastFmRating":8},{"id":6,"artistName":"Depeche mode","lastFmRating":2},{"id":11,"artistName":"Devil sold his soul","lastFmRating":9},{"id":9,"artistName":"Elvis Presley","lastFmRating":4},{"id":8,"artistName":"Frank Sinatra","lastFmRating":3},{"id":17,"artistName":"John Lenon and Team","lastFmRating":6}]
+
+
+
+63651321345938511111 - Request: SERVICE: ArtistService 
+GET: https://localhost:44361/api/artists/page/1
+Accept: application/json
+
+
+63651321345938511111 - Response: Date: Thu, 11 Jan 2018 23:35:45 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3RzXGNvdW50?=
+X-Powered-By: ASP.NET
+
+Status: OK
+21
+
+
+
+6365132136294364339 - Request: SERVICE: ArtistService 
+GET: https://localhost:44361/api/artists/page/1
+Accept: application/json
+
+
+6365132136294364339 - Response: Date: Thu, 11 Jan 2018 23:36:02 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3RzXHBhZ2VcMQ==?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":2,"artistName":"30 Seconds to Mars","lastFmRating":7},{"id":22,"artistName":"adsfasdfasdfn","lastFmRating":8},{"id":18,"artistName":"Arctic Monkeys","lastFmRating":22},{"id":7,"artistName":"Bullet for my valentine","lastFmRating":15},{"id":10,"artistName":"Combichrist","lastFmRating":8},{"id":6,"artistName":"Depeche mode","lastFmRating":2},{"id":11,"artistName":"Devil sold his soul","lastFmRating":9},{"id":9,"artistName":"Elvis Presley","lastFmRating":4},{"id":8,"artistName":"Frank Sinatra","lastFmRating":3},{"id":17,"artistName":"John Lenon and Team","lastFmRating":6}]
+
+
+
+63651321363011086511 - Request: SERVICE: ArtistService 
+GET: https://localhost:44361/api/artists/page/1
+Accept: application/json
+
+
+63651321363011086511 - Response: Date: Thu, 11 Jan 2018 23:36:02 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3RzXGNvdW50?=
+X-Powered-By: ASP.NET
+
+Status: OK
+21
+
+
+
+6365132181168742918 - Request: SERVICE: AuthorisationService 
+POST: https://localhost:44387/api/Users/Find
+Accept: application/json
+{
+  "Login": "sad",
+  "Password": "sad"
+}
+
+6365132181168742918 - Response: Date: Thu, 11 Jan 2018 23:43:31 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXGFwaVxVc2Vyc1xGaW5k?=
+X-Powered-By: ASP.NET
+
+Status: OK
+{"id":1002,"login":"sad","password":"16cfe4f2e1519c415b9b11024c0cba52","role":"User","lastToken":null}
+
+
+
+63651321815317143110 - Request: SERVICE: ArtistService 
+GET: https://localhost:44361/api/artists/page/1
+Accept: application/json
+
+
+63651321815317143110 - Response: Date: Thu, 11 Jan 2018 23:43:35 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3RzXHBhZ2VcMQ==?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":2,"artistName":"30 Seconds to Mars","lastFmRating":7},{"id":22,"artistName":"adsfasdfasdfn","lastFmRating":8},{"id":18,"artistName":"Arctic Monkeys","lastFmRating":22},{"id":7,"artistName":"Bullet for my valentine","lastFmRating":15},{"id":10,"artistName":"Combichrist","lastFmRating":8},{"id":6,"artistName":"Depeche mode","lastFmRating":2},{"id":11,"artistName":"Devil sold his soul","lastFmRating":9},{"id":9,"artistName":"Elvis Presley","lastFmRating":4},{"id":8,"artistName":"Frank Sinatra","lastFmRating":3},{"id":17,"artistName":"John Lenon and Team","lastFmRating":6}]
+
+
+
+63651321815360538810 - Request: SERVICE: ArtistService 
+GET: https://localhost:44361/api/artists/page/1
+Accept: application/json
+
+
+63651321815360538810 - Response: Date: Thu, 11 Jan 2018 23:43:35 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3RzXGNvdW50?=
+X-Powered-By: ASP.NET
+
+Status: OK
+21
+
+
+
+6365132186908328598 - Request: SERVICE: AuthorisationService 
+POST: https://localhost:44387/api/Users/Find
+Accept: application/json
+{
+  "Login": "sad",
+  "Password": "sad"
+}
+
+6365132186908328598 - Response: Date: Thu, 11 Jan 2018 23:44:29 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXGFwaVxVc2Vyc1xGaW5k?=
+X-Powered-By: ASP.NET
+
+Status: OK
+{"id":1002,"login":"sad","password":"16cfe4f2e1519c415b9b11024c0cba52","role":"User","lastToken":null}
+
+
+
+63651321871592854011 - Request: SERVICE: ArtistService 
+GET: https://localhost:44361/api/artists/page/1
+Accept: application/json
+
+
+63651321871592854011 - Response: Date: Thu, 11 Jan 2018 23:44:31 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3RzXHBhZ2VcMQ==?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":2,"artistName":"30 Seconds to Mars","lastFmRating":7},{"id":22,"artistName":"adsfasdfasdfn","lastFmRating":8},{"id":18,"artistName":"Arctic Monkeys","lastFmRating":22},{"id":7,"artistName":"Bullet for my valentine","lastFmRating":15},{"id":10,"artistName":"Combichrist","lastFmRating":8},{"id":6,"artistName":"Depeche mode","lastFmRating":2},{"id":11,"artistName":"Devil sold his soul","lastFmRating":9},{"id":9,"artistName":"Elvis Presley","lastFmRating":4},{"id":8,"artistName":"Frank Sinatra","lastFmRating":3},{"id":17,"artistName":"John Lenon and Team","lastFmRating":6}]
+
+
+
+63651321871674122816 - Request: SERVICE: ArtistService 
+GET: https://localhost:44361/api/artists/page/1
+Accept: application/json
+
+
+63651321871674122816 - Response: Date: Thu, 11 Jan 2018 23:44:31 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3RzXGNvdW50?=
+X-Powered-By: ASP.NET
+
+Status: OK
+21
+
+
+
+63651321875614511816 - Request: SERVICE: ArtistService 
+GET: https://localhost:44361/
+Accept: application/json
+
+
+63651321875614511816 - Response: Date: Thu, 11 Jan 2018 23:44:35 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxBcnRpc3RzXDI=?=
+X-Powered-By: ASP.NET
+
+Status: OK
+{"id":2,"artistName":"30 Seconds to Mars","lastFmRating":7}
+
+
+
+6365132463593504298 - Request: SERVICE: AuthorisationService 
+POST: https://localhost:44387/api/Users/Find
+Accept: application/json
+{
+  "Login": "sad",
+  "Password": "sad"
+}
+
+6365132463593504298 - Response: Date: Fri, 12 Jan 2018 00:30:35 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXGFwaVxVc2Vyc1xGaW5k?=
+X-Powered-By: ASP.NET
+
+Status: OK
+{"id":1002,"login":"sad","password":"16cfe4f2e1519c415b9b11024c0cba52","role":"User","lastToken":null}
+
+
+
+6365132463821847548 - Request: SERVICE: ArtistService 
+GET: https://localhost:44361/api/artists/page/1
+Accept: application/json
+
+
+6365132463821847548 - Response: Date: Fri, 12 Jan 2018 00:30:38 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3RzXHBhZ2VcMQ==?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":2,"artistName":"30 Seconds to Mars","lastFmRating":7},{"id":22,"artistName":"adsfasdfasdfn","lastFmRating":8},{"id":18,"artistName":"Arctic Monkeys","lastFmRating":22},{"id":7,"artistName":"Bullet for my valentine","lastFmRating":15},{"id":10,"artistName":"Combichrist","lastFmRating":8},{"id":6,"artistName":"Depeche mode","lastFmRating":2},{"id":11,"artistName":"Devil sold his soul","lastFmRating":9},{"id":9,"artistName":"Elvis Presley","lastFmRating":4},{"id":8,"artistName":"Frank Sinatra","lastFmRating":3},{"id":17,"artistName":"John Lenon and Team","lastFmRating":6}]
+
+
+
+6365132463843727478 - Request: SERVICE: ArtistService 
+GET: https://localhost:44361/api/artists/page/1
+Accept: application/json
+
+
+6365132463843727478 - Response: Date: Fri, 12 Jan 2018 00:30:38 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3RzXGNvdW50?=
+X-Powered-By: ASP.NET
+
+Status: OK
+21
+
+
+
+63651324695790017527 - Request: SERVICE: ArtistService 
+GET: https://localhost:44361/api/artists/page/1
+Accept: application/json
+
+
+63651324695790017527 - Response: Date: Fri, 12 Jan 2018 00:31:35 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3RzXHBhZ2VcMQ==?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":2,"artistName":"30 Seconds to Mars","lastFmRating":7},{"id":22,"artistName":"adsfasdfasdfn","lastFmRating":8},{"id":18,"artistName":"Arctic Monkeys","lastFmRating":22},{"id":7,"artistName":"Bullet for my valentine","lastFmRating":15},{"id":10,"artistName":"Combichrist","lastFmRating":8},{"id":6,"artistName":"Depeche mode","lastFmRating":2},{"id":11,"artistName":"Devil sold his soul","lastFmRating":9},{"id":9,"artistName":"Elvis Presley","lastFmRating":4},{"id":8,"artistName":"Frank Sinatra","lastFmRating":3},{"id":17,"artistName":"John Lenon and Team","lastFmRating":6}]
+
+
+
+63651324695881490710 - Request: SERVICE: ArtistService 
+GET: https://localhost:44361/api/artists/page/1
+Accept: application/json
+
+
+63651324695881490710 - Response: Date: Fri, 12 Jan 2018 00:31:35 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3RzXGNvdW50?=
+X-Powered-By: ASP.NET
+
+Status: OK
+21
+
+
+
+63651324769265708410 - Request: SERVICE: AuthorisationService 
+POST: https://localhost:44387/api/Users/Find
+Accept: application/json
+{
+  "Login": "sad",
+  "Password": "sad"
+}
+
+63651324769265708410 - Response: Date: Fri, 12 Jan 2018 00:32:49 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXGFwaVxVc2Vyc1xGaW5k?=
+X-Powered-By: ASP.NET
+
+Status: OK
+{"id":1002,"login":"sad","password":"16cfe4f2e1519c415b9b11024c0cba52","role":"User","lastToken":null}
+
+
+
+6365132477189903648 - Request: SERVICE: ArtistService 
+GET: https://localhost:44361/api/artists/page/1
+Accept: application/json
+
+
+6365132477189903648 - Response: Date: Fri, 12 Jan 2018 00:32:51 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3RzXHBhZ2VcMQ==?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":2,"artistName":"30 Seconds to Mars","lastFmRating":7},{"id":22,"artistName":"adsfasdfasdfn","lastFmRating":8},{"id":18,"artistName":"Arctic Monkeys","lastFmRating":22},{"id":7,"artistName":"Bullet for my valentine","lastFmRating":15},{"id":10,"artistName":"Combichrist","lastFmRating":8},{"id":6,"artistName":"Depeche mode","lastFmRating":2},{"id":11,"artistName":"Devil sold his soul","lastFmRating":9},{"id":9,"artistName":"Elvis Presley","lastFmRating":4},{"id":8,"artistName":"Frank Sinatra","lastFmRating":3},{"id":17,"artistName":"John Lenon and Team","lastFmRating":6}]
+
+
+
+63651324772027841010 - Request: SERVICE: ArtistService 
+GET: https://localhost:44361/api/artists/page/1
+Accept: application/json
+
+
+63651324772027841010 - Response: Date: Fri, 12 Jan 2018 00:32:51 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3RzXGNvdW50?=
+X-Powered-By: ASP.NET
+
+Status: OK
+21
+
+
+
+6365132501558661378 - Request: SERVICE: ArtistService 
+GET: https://localhost:44361/api/artists/page/1
+Accept: application/json
+
+
+6365132501558661378 - Response: Date: Fri, 12 Jan 2018 00:36:55 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3RzXHBhZ2VcMQ==?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":2,"artistName":"30 Seconds to Mars","lastFmRating":7},{"id":22,"artistName":"adsfasdfasdfn","lastFmRating":8},{"id":18,"artistName":"Arctic Monkeys","lastFmRating":22},{"id":7,"artistName":"Bullet for my valentine","lastFmRating":15},{"id":10,"artistName":"Combichrist","lastFmRating":8},{"id":6,"artistName":"Depeche mode","lastFmRating":2},{"id":11,"artistName":"Devil sold his soul","lastFmRating":9},{"id":9,"artistName":"Elvis Presley","lastFmRating":4},{"id":8,"artistName":"Frank Sinatra","lastFmRating":3},{"id":17,"artistName":"John Lenon and Team","lastFmRating":6}]
+
+
+
+63651325015681339518 - Request: SERVICE: ArtistService 
+GET: https://localhost:44361/api/artists/page/1
+Accept: application/json
+
+
+63651325015681339518 - Response: Date: Fri, 12 Jan 2018 00:36:55 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3RzXGNvdW50?=
+X-Powered-By: ASP.NET
+
+Status: OK
+21
+
+
+
+6365132503123232018 - Request: SERVICE: ArtistService 
+GET: https://localhost:44361/api/artists/page/1
+Accept: application/json
+
+
+6365132503123232018 - Response: Date: Fri, 12 Jan 2018 00:37:11 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3RzXHBhZ2VcMQ==?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":2,"artistName":"30 Seconds to Mars","lastFmRating":7},{"id":22,"artistName":"adsfasdfasdfn","lastFmRating":8},{"id":18,"artistName":"Arctic Monkeys","lastFmRating":22},{"id":7,"artistName":"Bullet for my valentine","lastFmRating":15},{"id":10,"artistName":"Combichrist","lastFmRating":8},{"id":6,"artistName":"Depeche mode","lastFmRating":2},{"id":11,"artistName":"Devil sold his soul","lastFmRating":9},{"id":9,"artistName":"Elvis Presley","lastFmRating":4},{"id":8,"artistName":"Frank Sinatra","lastFmRating":3},{"id":17,"artistName":"John Lenon and Team","lastFmRating":6}]
+
+
+
+6365132503127433318 - Request: SERVICE: ArtistService 
+GET: https://localhost:44361/api/artists/page/1
+Accept: application/json
+
+
+6365132503127433318 - Response: Date: Fri, 12 Jan 2018 00:37:11 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3RzXGNvdW50?=
+X-Powered-By: ASP.NET
+
+Status: OK
+21
+
+
+
+6365132505555384408 - Request: SERVICE: ArtistService 
+GET: https://localhost:44361/api/artists/page/1
+Accept: application/json
+
+
+6365132505555384408 - Response: Date: Fri, 12 Jan 2018 00:37:35 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3RzXHBhZ2VcMQ==?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":2,"artistName":"30 Seconds to Mars","lastFmRating":7},{"id":22,"artistName":"adsfasdfasdfn","lastFmRating":8},{"id":18,"artistName":"Arctic Monkeys","lastFmRating":22},{"id":7,"artistName":"Bullet for my valentine","lastFmRating":15},{"id":10,"artistName":"Combichrist","lastFmRating":8},{"id":6,"artistName":"Depeche mode","lastFmRating":2},{"id":11,"artistName":"Devil sold his soul","lastFmRating":9},{"id":9,"artistName":"Elvis Presley","lastFmRating":4},{"id":8,"artistName":"Frank Sinatra","lastFmRating":3},{"id":17,"artistName":"John Lenon and Team","lastFmRating":6}]
+
+
+
+6365132505558853728 - Request: SERVICE: ArtistService 
+GET: https://localhost:44361/api/artists/page/1
+Accept: application/json
+
+
+6365132505558853728 - Response: Date: Fri, 12 Jan 2018 00:37:35 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3RzXGNvdW50?=
+X-Powered-By: ASP.NET
+
+Status: OK
+21
+
+
+
+63651325119112832347 - Request: SERVICE: ArtistService 
+GET: https://localhost:44361/api/artists/page/1
+Accept: application/json
+
+
+63651325119112832347 - Response: Date: Fri, 12 Jan 2018 00:38:39 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3RzXHBhZ2VcMQ==?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":2,"artistName":"30 Seconds to Mars","lastFmRating":7},{"id":22,"artistName":"adsfasdfasdfn","lastFmRating":8},{"id":18,"artistName":"Arctic Monkeys","lastFmRating":22},{"id":7,"artistName":"Bullet for my valentine","lastFmRating":15},{"id":10,"artistName":"Combichrist","lastFmRating":8},{"id":6,"artistName":"Depeche mode","lastFmRating":2},{"id":11,"artistName":"Devil sold his soul","lastFmRating":9},{"id":9,"artistName":"Elvis Presley","lastFmRating":4},{"id":8,"artistName":"Frank Sinatra","lastFmRating":3},{"id":17,"artistName":"John Lenon and Team","lastFmRating":6}]
+
+
+
+63651325119144231647 - Request: SERVICE: ArtistService 
+GET: https://localhost:44361/api/artists/page/1
+Accept: application/json
+
+
+63651325119144231647 - Response: Date: Fri, 12 Jan 2018 00:38:39 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3RzXGNvdW50?=
+X-Powered-By: ASP.NET
+
+Status: OK
+21
+
+
+
+63651325198063034210 - Request: SERVICE: ArtistService 
+GET: https://localhost:44361/api/artists/page/1
+Accept: application/json
+
+
+63651325198063034210 - Response: Date: Fri, 12 Jan 2018 00:39:58 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3RzXHBhZ2VcMQ==?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":2,"artistName":"30 Seconds to Mars","lastFmRating":7},{"id":22,"artistName":"adsfasdfasdfn","lastFmRating":8},{"id":18,"artistName":"Arctic Monkeys","lastFmRating":22},{"id":7,"artistName":"Bullet for my valentine","lastFmRating":15},{"id":10,"artistName":"Combichrist","lastFmRating":8},{"id":6,"artistName":"Depeche mode","lastFmRating":2},{"id":11,"artistName":"Devil sold his soul","lastFmRating":9},{"id":9,"artistName":"Elvis Presley","lastFmRating":4},{"id":8,"artistName":"Frank Sinatra","lastFmRating":3},{"id":17,"artistName":"John Lenon and Team","lastFmRating":6}]
+
+
+
+63651325198098500853 - Request: SERVICE: ArtistService 
+GET: https://localhost:44361/api/artists/page/1
+Accept: application/json
+
+
+63651325198098500853 - Response: Date: Fri, 12 Jan 2018 00:39:58 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3RzXGNvdW50?=
+X-Powered-By: ASP.NET
+
+Status: OK
+21
+
+
+
+63651325310557480752 - Request: SERVICE: ArtistService 
+GET: https://localhost:44361/api/artists/page/1
+Accept: application/json
+
+
+63651325310557480752 - Response: Date: Fri, 12 Jan 2018 00:41:50 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3RzXHBhZ2VcMQ==?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":2,"artistName":"30 Seconds to Mars","lastFmRating":7},{"id":22,"artistName":"adsfasdfasdfn","lastFmRating":8},{"id":18,"artistName":"Arctic Monkeys","lastFmRating":22},{"id":7,"artistName":"Bullet for my valentine","lastFmRating":15},{"id":10,"artistName":"Combichrist","lastFmRating":8},{"id":6,"artistName":"Depeche mode","lastFmRating":2},{"id":11,"artistName":"Devil sold his soul","lastFmRating":9},{"id":9,"artistName":"Elvis Presley","lastFmRating":4},{"id":8,"artistName":"Frank Sinatra","lastFmRating":3},{"id":17,"artistName":"John Lenon and Team","lastFmRating":6}]
+
+
+
+63651325310642682852 - Request: SERVICE: ArtistService 
+GET: https://localhost:44361/api/artists/page/1
+Accept: application/json
+
+
+63651325310642682852 - Response: Date: Fri, 12 Jan 2018 00:41:50 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3RzXGNvdW50?=
+X-Powered-By: ASP.NET
+
+Status: OK
+21
+
+
+
+63651325317789297152 - Request: SERVICE: ArtistService 
+POST: https://localhost:44361/api/Artists
+Accept: application/json
+{
+  "ArtistName": "VOVA VOVINOV",
+  "LastFmRating": 123
+}
+
+63651325317789297152 - Response: Date: Fri, 12 Jan 2018 00:41:57 GMT
+Transfer-Encoding: chunked
+Location: https://localhost:44361/api/Artists/3024
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxBcnRpc3Rz?=
+X-Powered-By: ASP.NET
+
+Status: Created
+{"id":3024,"artistName":"VOVA VOVINOV","lastFmRating":123}
+
+
+
+63651325317985080152 - Request: SERVICE: ArtistService 
+GET: https://localhost:44361/api/artists/page/1
+Accept: application/json
+
+
+63651325317985080152 - Response: Date: Fri, 12 Jan 2018 00:41:57 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3RzXHBhZ2VcMQ==?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":2,"artistName":"30 Seconds to Mars","lastFmRating":7},{"id":22,"artistName":"adsfasdfasdfn","lastFmRating":8},{"id":18,"artistName":"Arctic Monkeys","lastFmRating":22},{"id":7,"artistName":"Bullet for my valentine","lastFmRating":15},{"id":10,"artistName":"Combichrist","lastFmRating":8},{"id":6,"artistName":"Depeche mode","lastFmRating":2},{"id":11,"artistName":"Devil sold his soul","lastFmRating":9},{"id":9,"artistName":"Elvis Presley","lastFmRating":4},{"id":8,"artistName":"Frank Sinatra","lastFmRating":3},{"id":17,"artistName":"John Lenon and Team","lastFmRating":6}]
+
+
+
+63651325318025464553 - Request: SERVICE: ArtistService 
+GET: https://localhost:44361/api/artists/page/1
+Accept: application/json
+
+
+63651325318025464553 - Response: Date: Fri, 12 Jan 2018 00:41:57 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3RzXGNvdW50?=
+X-Powered-By: ASP.NET
+
+Status: OK
+22
+
+
+
+63651325327173170152 - Request: SERVICE: ArtistService 
+GET: https://localhost:44361/api/artists/page/2
+Accept: application/json
+
+
+63651325327173170152 - Response: Date: Fri, 12 Jan 2018 00:42:07 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3RzXHBhZ2VcMg==?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":2024,"artistName":"Kirvokov","lastFmRating":1000},{"id":14,"artistName":"Linkin Park","lastFmRating":5},{"id":21,"artistName":"Lucano Pavorotti","lastFmRating":10},{"id":1,"artistName":"Marilyn Manson","lastFmRating":8},{"id":1023,"artistName":"qqqqqqqq","lastFmRating":1123123},{"id":16,"artistName":"Queen","lastFmRating":1},{"id":3,"artistName":"Rammstein","lastFmRating":4},{"id":12,"artistName":"Shakira","lastFmRating":11},{"id":5,"artistName":"Suicide Silence","lastFmRating":14},{"id":4,"artistName":"The Beatles","lastFmRating":1}]
+
+
+
+63651325327230744761 - Request: SERVICE: ArtistService 
+GET: https://localhost:44361/api/artists/page/2
+Accept: application/json
+
+
+63651325327230744761 - Response: Date: Fri, 12 Jan 2018 00:42:07 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3RzXGNvdW50?=
+X-Powered-By: ASP.NET
+
+Status: OK
+22
+
+
+
+63651325330303364452 - Request: SERVICE: ArtistService 
+GET: https://localhost:44361/api/artists/page/3
+Accept: application/json
+
+
+63651325330303364452 - Response: Date: Fri, 12 Jan 2018 00:42:10 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3RzXHBhZ2VcMw==?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":3024,"artistName":"VOVA VOVINOV","lastFmRating":123},{"id":23,"artistName":"zzzzz","lastFmRating":8}]
+
+
+
+63651325330475800452 - Request: SERVICE: ArtistService 
+GET: https://localhost:44361/api/artists/page/3
+Accept: application/json
+
+
+63651325330475800452 - Response: Date: Fri, 12 Jan 2018 00:42:10 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3RzXGNvdW50?=
+X-Powered-By: ASP.NET
+
+Status: OK
+22
+
+
+
+63651325333803710653 - Request: SERVICE: ArtistService 
+DELETE: https://localhost:44361/api/artists/3024
+Accept: application/json
+
+
+63651325333803710653 - Response: Date: Fri, 12 Jan 2018 00:42:13 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3RzXDMwMjQ=?=
+X-Powered-By: ASP.NET
+
+Status: OK
+{"id":3024,"artistName":"VOVA VOVINOV","lastFmRating":123}
+
+
+
+63651325334042759263 - Request: SERVICE: ArtistService 
+GET: https://localhost:44361/api/artists/page/1
+Accept: application/json
+
+
+63651325334042759263 - Response: Date: Fri, 12 Jan 2018 00:42:13 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3RzXHBhZ2VcMQ==?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":2,"artistName":"30 Seconds to Mars","lastFmRating":7},{"id":22,"artistName":"adsfasdfasdfn","lastFmRating":8},{"id":18,"artistName":"Arctic Monkeys","lastFmRating":22},{"id":7,"artistName":"Bullet for my valentine","lastFmRating":15},{"id":10,"artistName":"Combichrist","lastFmRating":8},{"id":6,"artistName":"Depeche mode","lastFmRating":2},{"id":11,"artistName":"Devil sold his soul","lastFmRating":9},{"id":9,"artistName":"Elvis Presley","lastFmRating":4},{"id":8,"artistName":"Frank Sinatra","lastFmRating":3},{"id":17,"artistName":"John Lenon and Team","lastFmRating":6}]
+
+
+
+63651325334074931253 - Request: SERVICE: ArtistService 
+GET: https://localhost:44361/api/artists/page/1
+Accept: application/json
+
+
+63651325334074931253 - Response: Date: Fri, 12 Jan 2018 00:42:13 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3RzXGNvdW50?=
+X-Powered-By: ASP.NET
+
+Status: OK
+21
+
+
+
+63651325337727219652 - Request: SERVICE: ArtistService 
+GET: https://localhost:44361/api/artists/page/3
+Accept: application/json
+
+
+63651325337727219652 - Response: Date: Fri, 12 Jan 2018 00:42:17 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3RzXHBhZ2VcMw==?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":23,"artistName":"zzzzz","lastFmRating":8}]
+
+
+
+63651325337764944263 - Request: SERVICE: ArtistService 
+GET: https://localhost:44361/api/artists/page/3
+Accept: application/json
+
+
+63651325337764944263 - Response: Date: Fri, 12 Jan 2018 00:42:17 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3RzXGNvdW50?=
+X-Powered-By: ASP.NET
+
+Status: OK
+21
+
+
+
+6365132571901753028 - Request: SERVICE: AuthorisationService 
+POST: https://localhost:44387/api/Users/Find
+Accept: application/json
+{
+  "Login": "sad",
+  "Password": "sad"
+}
+
+6365132571901753028 - Response: Date: Fri, 12 Jan 2018 00:48:38 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXGFwaVxVc2Vyc1xGaW5k?=
+X-Powered-By: ASP.NET
+
+Status: OK
+{"id":1002,"login":"sad","password":"16cfe4f2e1519c415b9b11024c0cba52","role":"User","lastToken":null}
+
+
+
+6365132572209112178 - Request: SERVICE: ArtistService 
+GET: https://localhost:44361/api/artists/page/1
+Accept: application/json
+
+
+6365132572209112178 - Response: Date: Fri, 12 Jan 2018 00:48:42 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3RzXHBhZ2VcMQ==?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":2,"artistName":"30 Seconds to Mars","lastFmRating":7},{"id":22,"artistName":"adsfasdfasdfn","lastFmRating":8},{"id":18,"artistName":"Arctic Monkeys","lastFmRating":22},{"id":7,"artistName":"Bullet for my valentine","lastFmRating":15},{"id":10,"artistName":"Combichrist","lastFmRating":8},{"id":6,"artistName":"Depeche mode","lastFmRating":2},{"id":11,"artistName":"Devil sold his soul","lastFmRating":9},{"id":9,"artistName":"Elvis Presley","lastFmRating":4},{"id":8,"artistName":"Frank Sinatra","lastFmRating":3},{"id":17,"artistName":"John Lenon and Team","lastFmRating":6}]
+
+
+
+63651325722126150710 - Request: SERVICE: ArtistService 
+GET: https://localhost:44361/api/artists/page/1
+Accept: application/json
+
+
+63651325722126150710 - Response: Date: Fri, 12 Jan 2018 00:48:42 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3RzXGNvdW50?=
+X-Powered-By: ASP.NET
+
+Status: OK
+21
+
+
+
+6365132572934237538 - Request: SERVICE: ArtistService 
+GET: https://localhost:44361/
+Accept: application/json
+
+
+6365132572934237538 - Response: Date: Fri, 12 Jan 2018 00:48:49 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxBcnRpc3RzXDIy?=
+X-Powered-By: ASP.NET
+
+Status: OK
+{"id":22,"artistName":"adsfasdfasdfn","lastFmRating":8}
+
+
+
+6365132583630511078 - Request: SERVICE: ArtistService 
+GET: https://localhost:44361/api/artists/page/1
+Accept: application/json
+
+
+6365132583630511078 - Response: Date: Fri, 12 Jan 2018 00:50:36 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3RzXHBhZ2VcMQ==?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":2,"artistName":"30 Seconds to Mars","lastFmRating":7},{"id":22,"artistName":"adsfasdfasdfn","lastFmRating":8},{"id":18,"artistName":"Arctic Monkeys","lastFmRating":22},{"id":7,"artistName":"Bullet for my valentine","lastFmRating":15},{"id":10,"artistName":"Combichrist","lastFmRating":8},{"id":6,"artistName":"Depeche mode","lastFmRating":2},{"id":11,"artistName":"Devil sold his soul","lastFmRating":9},{"id":9,"artistName":"Elvis Presley","lastFmRating":4},{"id":8,"artistName":"Frank Sinatra","lastFmRating":3},{"id":17,"artistName":"John Lenon and Team","lastFmRating":6}]
+
+
+
+63651325836351517522 - Request: SERVICE: ArtistService 
+GET: https://localhost:44361/api/artists/page/1
+Accept: application/json
+
+
+63651325836351517522 - Response: Date: Fri, 12 Jan 2018 00:50:36 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3RzXGNvdW50?=
+X-Powered-By: ASP.NET
+
+Status: OK
+21
+
+
+
+63651325839867021222 - Request: SERVICE: ArtistService 
+GET: https://localhost:44361/
+Accept: application/json
+
+
+63651325839867021222 - Response: Date: Fri, 12 Jan 2018 00:50:39 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxBcnRpc3RzXDIy?=
+X-Powered-By: ASP.NET
+
+Status: OK
+{"id":22,"artistName":"adsfasdfasdfn","lastFmRating":8}
+
+
+
+63651326043152344522 - Request: SERVICE: ArtistService 
+GET: https://localhost:44361/api/artists/page/1
+Accept: application/json
+
+
+63651326043152344522 - Response: Date: Fri, 12 Jan 2018 00:54:03 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3RzXHBhZ2VcMQ==?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":2,"artistName":"30 Seconds to Mars","lastFmRating":7},{"id":22,"artistName":"adsfasdfasdfn","lastFmRating":8},{"id":18,"artistName":"Arctic Monkeys","lastFmRating":22},{"id":7,"artistName":"Bullet for my valentine","lastFmRating":15},{"id":10,"artistName":"Combichrist","lastFmRating":8},{"id":6,"artistName":"Depeche mode","lastFmRating":2},{"id":11,"artistName":"Devil sold his soul","lastFmRating":9},{"id":9,"artistName":"Elvis Presley","lastFmRating":4},{"id":8,"artistName":"Frank Sinatra","lastFmRating":3},{"id":17,"artistName":"John Lenon and Team","lastFmRating":6}]
+
+
+
+6365132604321256119 - Request: SERVICE: ArtistService 
+GET: https://localhost:44361/api/artists/page/1
+Accept: application/json
+
+
+6365132604321256119 - Response: Date: Fri, 12 Jan 2018 00:54:03 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3RzXGNvdW50?=
+X-Powered-By: ASP.NET
+
+Status: OK
+21
+
+
+
+63651326047058002622 - Request: SERVICE: ArtistService 
+GET: https://localhost:44361/
+Accept: application/json
+
+
+63651326047058002622 - Response: Date: Fri, 12 Jan 2018 00:54:07 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxBcnRpc3RzXDIy?=
+X-Powered-By: ASP.NET
+
+Status: OK
+{"id":22,"artistName":"adsfasdfasdfn","lastFmRating":8}
+
+
+
+63651326086456742522 - Request: SERVICE: ArtistService 
+GET: https://localhost:44361/api/artists/page/1
+Accept: application/json
+
+
+63651326086456742522 - Response: Date: Fri, 12 Jan 2018 00:54:46 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3RzXHBhZ2VcMQ==?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":2,"artistName":"30 Seconds to Mars","lastFmRating":7},{"id":22,"artistName":"adsfasdfasdfn","lastFmRating":8},{"id":18,"artistName":"Arctic Monkeys","lastFmRating":22},{"id":7,"artistName":"Bullet for my valentine","lastFmRating":15},{"id":10,"artistName":"Combichrist","lastFmRating":8},{"id":6,"artistName":"Depeche mode","lastFmRating":2},{"id":11,"artistName":"Devil sold his soul","lastFmRating":9},{"id":9,"artistName":"Elvis Presley","lastFmRating":4},{"id":8,"artistName":"Frank Sinatra","lastFmRating":3},{"id":17,"artistName":"John Lenon and Team","lastFmRating":6}]
+
+
+
+63651326086502672130 - Request: SERVICE: ArtistService 
+GET: https://localhost:44361/api/artists/page/1
+Accept: application/json
+
+
+63651326086502672130 - Response: Date: Fri, 12 Jan 2018 00:54:46 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3RzXGNvdW50?=
+X-Powered-By: ASP.NET
+
+Status: OK
+21
+
+
+
+63651326090340776929 - Request: SERVICE: ArtistService 
+GET: https://localhost:44361/
+Accept: application/json
+
+
+63651326090340776929 - Response: Date: Fri, 12 Jan 2018 00:54:50 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxBcnRpc3RzXDI=?=
+X-Powered-By: ASP.NET
+
+Status: OK
+{"id":2,"artistName":"30 Seconds to Mars","lastFmRating":7}
+
+
+
+63651326114600753222 - Request: SERVICE: ArtistService 
+GET: https://localhost:44361/api/artists/page/1
+Accept: application/json
+
+
+63651326114600753222 - Response: Date: Fri, 12 Jan 2018 00:55:14 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3RzXHBhZ2VcMQ==?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":2,"artistName":"30 Seconds to Mars","lastFmRating":7},{"id":22,"artistName":"adsfasdfasdfn","lastFmRating":8},{"id":18,"artistName":"Arctic Monkeys","lastFmRating":22},{"id":7,"artistName":"Bullet for my valentine","lastFmRating":15},{"id":10,"artistName":"Combichrist","lastFmRating":8},{"id":6,"artistName":"Depeche mode","lastFmRating":2},{"id":11,"artistName":"Devil sold his soul","lastFmRating":9},{"id":9,"artistName":"Elvis Presley","lastFmRating":4},{"id":8,"artistName":"Frank Sinatra","lastFmRating":3},{"id":17,"artistName":"John Lenon and Team","lastFmRating":6}]
+
+
+
+63651326114700415029 - Request: SERVICE: ArtistService 
+GET: https://localhost:44361/api/artists/page/1
+Accept: application/json
+
+
+63651326114700415029 - Response: Date: Fri, 12 Jan 2018 00:55:14 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3RzXGNvdW50?=
+X-Powered-By: ASP.NET
+
+Status: OK
+21
+
+
+
+63651326154345978322 - Request: SERVICE: ArtistService 
+GET: https://localhost:44361/
+Accept: application/json
+
+
+63651326154345978322 - Response: Date: Fri, 12 Jan 2018 00:55:54 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxBcnRpc3RzXDI=?=
+X-Powered-By: ASP.NET
+
+Status: OK
+{"id":2,"artistName":"30 Seconds to Mars","lastFmRating":7}
+
+
+
+63651326161641888222 - Request: SERVICE: ArtistService 
+GET: https://localhost:44361/api/artists/page/1
+Accept: application/json
+
+
+63651326161641888222 - Response: Date: Fri, 12 Jan 2018 00:56:01 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3RzXHBhZ2VcMQ==?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":2,"artistName":"30 Seconds to Mars","lastFmRating":7},{"id":22,"artistName":"adsfasdfasdfn","lastFmRating":8},{"id":18,"artistName":"Arctic Monkeys","lastFmRating":22},{"id":7,"artistName":"Bullet for my valentine","lastFmRating":15},{"id":10,"artistName":"Combichrist","lastFmRating":8},{"id":6,"artistName":"Depeche mode","lastFmRating":2},{"id":11,"artistName":"Devil sold his soul","lastFmRating":9},{"id":9,"artistName":"Elvis Presley","lastFmRating":4},{"id":8,"artistName":"Frank Sinatra","lastFmRating":3},{"id":17,"artistName":"John Lenon and Team","lastFmRating":6}]
+
+
+
+63651326161702869940 - Request: SERVICE: ArtistService 
+GET: https://localhost:44361/api/artists/page/1
+Accept: application/json
+
+
+63651326161702869940 - Response: Date: Fri, 12 Jan 2018 00:56:01 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3RzXGNvdW50?=
+X-Powered-By: ASP.NET
+
+Status: OK
+21
+
+
+
+6365132616702893879 - Request: SERVICE: ArtistService 
+GET: https://localhost:44361/
+Accept: application/json
+
+
+6365132616702893879 - Response: Date: Fri, 12 Jan 2018 00:56:07 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxBcnRpc3RzXDIy?=
+X-Powered-By: ASP.NET
+
+Status: OK
+{"id":22,"artistName":"adsfasdfasdfn","lastFmRating":8}
+
+
+
+6365132617868888049 - Request: SERVICE: ArtistService 
+PUT: https://localhost:44361/api/artists/22
+Accept: application/json
+{
+  "ID": 22,
+  "ArtistName": "adsfasdfasdfn1111",
+  "LastFmRating": 8
+}
+
+6365132617868888049 - Response: Date: Fri, 12 Jan 2018 00:56:18 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxBcnRpc3RzXDIy?=
+X-Powered-By: ASP.NET
+
+Status: Accepted
+{"id":22,"artistName":"adsfasdfasdfn1111","lastFmRating":8}
+
+
+
+63651326179031470522 - Request: SERVICE: ArtistService 
+GET: https://localhost:44361/api/artists/page/1
+Accept: application/json
+
+
+63651326179031470522 - Response: Date: Fri, 12 Jan 2018 00:56:18 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3RzXHBhZ2VcMQ==?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":2,"artistName":"30 Seconds to Mars","lastFmRating":7},{"id":22,"artistName":"adsfasdfasdfn1111","lastFmRating":8},{"id":18,"artistName":"Arctic Monkeys","lastFmRating":22},{"id":7,"artistName":"Bullet for my valentine","lastFmRating":15},{"id":10,"artistName":"Combichrist","lastFmRating":8},{"id":6,"artistName":"Depeche mode","lastFmRating":2},{"id":11,"artistName":"Devil sold his soul","lastFmRating":9},{"id":9,"artistName":"Elvis Presley","lastFmRating":4},{"id":8,"artistName":"Frank Sinatra","lastFmRating":3},{"id":17,"artistName":"John Lenon and Team","lastFmRating":6}]
+
+
+
+63651326179057338840 - Request: SERVICE: ArtistService 
+GET: https://localhost:44361/api/artists/page/1
+Accept: application/json
+
+
+63651326179057338840 - Response: Date: Fri, 12 Jan 2018 00:56:18 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3RzXGNvdW50?=
+X-Powered-By: ASP.NET
+
+Status: OK
+21
+
+
+
+6365132888879390968 - Request: SERVICE: AuthorisationService 
+POST: https://localhost:44387/api/Users/Find
+Accept: application/json
+{
+  "Login": "sad",
+  "Password": "sad"
+}
+
+6365132888879390968 - Response: Date: Fri, 12 Jan 2018 01:41:28 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXGFwaVxVc2Vyc1xGaW5k?=
+X-Powered-By: ASP.NET
+
+Status: OK
+{"id":1002,"login":"sad","password":"16cfe4f2e1519c415b9b11024c0cba52","role":"User","lastToken":null}
+
+
+
+63651328922362854023 - Request: SERVICE: AuthorisationService 
+PUT: https://localhost:44387/api/users/1002
+Accept: application/json
+{
+  "id": 1002,
+  "login": "sad",
+  "password": "16cfe4f2e1519c415b9b11024c0cba52",
+  "role": "User",
+  "lasttoken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJzYWQiLCJqdGkiOiI0MGEzN2FkMS01ODllLTQxNTQtODRkNi1jY2M0MmQyNjQyNDIiLCJVc2VyIjoiMTAwMiIsImV4cCI6MTUxNTczMzI4OCwiaXNzIjoiVGVzdC5TZWN1cml0eS5CZWFyZXIiLCJhdWQiOiJUZXN0LlNlY3VyaXR5LkJlYXJlciJ9.kVT0o6_Utoj4bb7rk3TZKcKgaXsQYb-6WkxOe1TbysQ"
+}
+
+63651328922362854023 - Response: Date: Fri, 12 Jan 2018 01:42:02 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXGFwaVx1c2Vyc1wxMDAy?=
+X-Powered-By: ASP.NET
+
+Status: Accepted
+{"id":1002,"login":"sad","password":"16cfe4f2e1519c415b9b11024c0cba52","role":"User","lastToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJzYWQiLCJqdGkiOiI0MGEzN2FkMS01ODllLTQxNTQtODRkNi1jY2M0MmQyNjQyNDIiLCJVc2VyIjoiMTAwMiIsImV4cCI6MTUxNTczMzI4OCwiaXNzIjoiVGVzdC5TZWN1cml0eS5CZWFyZXIiLCJhdWQiOiJUZXN0LlNlY3VyaXR5LkJlYXJlciJ9.kVT0o6_Utoj4bb7rk3TZKcKgaXsQYb-6WkxOe1TbysQ"}
+
+
+
+6365132893694275213 - Request: SERVICE: AuthorisationService 
+POST: https://localhost:44387/api/Users/FindByLogin
+Accept: application/json
+{
+  "Login": "sad"
+}
+
+6365132893694275213 - Response: Date: Fri, 12 Jan 2018 01:42:16 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXGFwaVxVc2Vyc1xGaW5kQnlMb2dpbg==?=
+X-Powered-By: ASP.NET
+
+Status: OK
+{"id":1002,"login":"sad","password":"16cfe4f2e1519c415b9b11024c0cba52","role":"User","lastToken":null}
+
+
+
+63651328952432683523 - Request: SERVICE: AuthorisationService 
+PUT: https://localhost:44387/api/users/1002
+Accept: application/json
+{
+  "id": 1002,
+  "login": "sad",
+  "password": "16cfe4f2e1519c415b9b11024c0cba52",
+  "role": "User",
+  "lasttoken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJzYWQiLCJqdGkiOiJiZGJjNjVhNi04OWU5LTQxNWItYTQxYi05MWIwMGY0MTQzMGYiLCJVc2VyIjoiMTAwMiIsImV4cCI6MTUxNTczMzMzNiwiaXNzIjoiVGVzdC5TZWN1cml0eS5CZWFyZXIiLCJhdWQiOiJUZXN0LlNlY3VyaXR5LkJlYXJlciJ9.54MfTFap7V7YPewfuSc-uA1nsefqrVZPSz5693YJEyc"
+}
+
+63651328952432683523 - Response: Date: Fri, 12 Jan 2018 01:42:32 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXGFwaVx1c2Vyc1wxMDAy?=
+X-Powered-By: ASP.NET
+
+Status: Accepted
+{"id":1002,"login":"sad","password":"16cfe4f2e1519c415b9b11024c0cba52","role":"User","lastToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJzYWQiLCJqdGkiOiJiZGJjNjVhNi04OWU5LTQxNWItYTQxYi05MWIwMGY0MTQzMGYiLCJVc2VyIjoiMTAwMiIsImV4cCI6MTUxNTczMzMzNiwiaXNzIjoiVGVzdC5TZWN1cml0eS5CZWFyZXIiLCJhdWQiOiJUZXN0LlNlY3VyaXR5LkJlYXJlciJ9.54MfTFap7V7YPewfuSc-uA1nsefqrVZPSz5693YJEyc"}
+
+
+
+6365132899595370543 - Request: SERVICE: AuthorisationService 
+POST: https://localhost:44387/api/Users/Find
+Accept: application/json
+{
+  "Login": "sad",
+  "Password": "sad"
+}
+
+6365132899595370543 - Response: Date: Fri, 12 Jan 2018 01:43:15 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXGFwaVxVc2Vyc1xGaW5k?=
+X-Powered-By: ASP.NET
+
+Status: OK
+{"id":1002,"login":"sad","password":"16cfe4f2e1519c415b9b11024c0cba52","role":"User","lastToken":null}
+
+
+
+63651328999860044223 - Request: SERVICE: ArtistService 
+GET: https://localhost:44361/api/artists/page/1
+Accept: application/json
+
+
+63651328999860044223 - Response: Date: Fri, 12 Jan 2018 01:43:19 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3RzXHBhZ2VcMQ==?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":2,"artistName":"30 Seconds to Mars","lastFmRating":7},{"id":22,"artistName":"adsfasdfasdfn1111","lastFmRating":8},{"id":18,"artistName":"Arctic Monkeys","lastFmRating":22},{"id":7,"artistName":"Bullet for my valentine","lastFmRating":15},{"id":10,"artistName":"Combichrist","lastFmRating":8},{"id":6,"artistName":"Depeche mode","lastFmRating":2},{"id":11,"artistName":"Devil sold his soul","lastFmRating":9},{"id":9,"artistName":"Elvis Presley","lastFmRating":4},{"id":8,"artistName":"Frank Sinatra","lastFmRating":3},{"id":17,"artistName":"John Lenon and Team","lastFmRating":6}]
+
+
+
+63651329000002563828 - Request: SERVICE: ArtistService 
+GET: https://localhost:44361/api/artists/page/1
+Accept: application/json
+
+
+63651329000002563828 - Response: Date: Fri, 12 Jan 2018 01:43:19 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3RzXGNvdW50?=
+X-Powered-By: ASP.NET
+
+Status: OK
+21
+
+
+
+63651329007500433227 - Request: SERVICE: ArtistService 
+GET: https://localhost:44361/api/artists/page/3
+Accept: application/json
+
+
+63651329007500433227 - Response: Date: Fri, 12 Jan 2018 01:43:27 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3RzXHBhZ2VcMw==?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":23,"artistName":"zzzzz","lastFmRating":8}]
+
+
+
+63651329007556326823 - Request: SERVICE: ArtistService 
+GET: https://localhost:44361/api/artists/page/3
+Accept: application/json
+
+
+63651329007556326823 - Response: Date: Fri, 12 Jan 2018 01:43:27 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3RzXGNvdW50?=
+X-Powered-By: ASP.NET
+
+Status: OK
+21
+
+
+
+63651329011103739426 - Request: SERVICE: ArtistService 
+GET: https://localhost:44361/api/artists/page/2
+Accept: application/json
+
+
+63651329011103739426 - Response: Date: Fri, 12 Jan 2018 01:43:31 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3RzXHBhZ2VcMg==?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":2024,"artistName":"Kirvokov","lastFmRating":1000},{"id":14,"artistName":"Linkin Park","lastFmRating":5},{"id":21,"artistName":"Lucano Pavorotti","lastFmRating":10},{"id":1,"artistName":"Marilyn Manson","lastFmRating":8},{"id":1023,"artistName":"qqqqqqqq","lastFmRating":1123123},{"id":16,"artistName":"Queen","lastFmRating":1},{"id":3,"artistName":"Rammstein","lastFmRating":4},{"id":12,"artistName":"Shakira","lastFmRating":11},{"id":5,"artistName":"Suicide Silence","lastFmRating":14},{"id":4,"artistName":"The Beatles","lastFmRating":1}]
+
+
+
+63651329011165064528 - Request: SERVICE: ArtistService 
+GET: https://localhost:44361/api/artists/page/2
+Accept: application/json
+
+
+63651329011165064528 - Response: Date: Fri, 12 Jan 2018 01:43:31 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3RzXGNvdW50?=
+X-Powered-By: ASP.NET
+
+Status: OK
+21
+
+
+
+63651351854364849610 - Request: SERVICE: AuthorisationService 
+POST: https://localhost:44387/api/Users/Find
+Accept: application/json
+{
+  "Login": "sad",
+  "Password": "sad"
+}
+
+63651351854364849610 - Response: Date: Fri, 12 Jan 2018 08:04:14 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXGFwaVxVc2Vyc1xGaW5k?=
+X-Powered-By: ASP.NET
+
+Status: OK
+{"id":1002,"login":"sad","password":"16cfe4f2e1519c415b9b11024c0cba52","role":"User","lastToken":null}
+
+
+
+63651351855177413211 - Request: SERVICE: AuthorisationService 
+PUT: https://localhost:44387/api/users/1002
+Accept: application/json
+{
+  "id": 1002,
+  "login": "sad",
+  "password": "16cfe4f2e1519c415b9b11024c0cba52",
+  "role": "User",
+  "lasttoken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJzYWQiLCJqdGkiOiI2ZjE1YmEzNy1lNjAxLTQ2NGQtYjQyMS02OWM1MTVhMWNlOWQiLCJVc2VyIjoiMTAwMiIsImV4cCI6MTUxNTc1NjI1NCwiaXNzIjoiVGVzdC5TZWN1cml0eS5CZWFyZXIiLCJhdWQiOiJUZXN0LlNlY3VyaXR5LkJlYXJlciJ9.C5P4GBq2z2Xh3pXGPeuNm3vWXc8TyrWcDiehvqBP1Ds"
+}
+
+63651351855177413211 - Response: Date: Fri, 12 Jan 2018 08:04:14 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXGFwaVx1c2Vyc1wxMDAy?=
+X-Powered-By: ASP.NET
+
+Status: Accepted
+{"id":1002,"login":"sad","password":"16cfe4f2e1519c415b9b11024c0cba52","role":"User","lastToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJzYWQiLCJqdGkiOiI2ZjE1YmEzNy1lNjAxLTQ2NGQtYjQyMS02OWM1MTVhMWNlOWQiLCJVc2VyIjoiMTAwMiIsImV4cCI6MTUxNTc1NjI1NCwiaXNzIjoiVGVzdC5TZWN1cml0eS5CZWFyZXIiLCJhdWQiOiJUZXN0LlNlY3VyaXR5LkJlYXJlciJ9.C5P4GBq2z2Xh3pXGPeuNm3vWXc8TyrWcDiehvqBP1Ds"}
+
+
+
+63651352369021380119 - Request: SERVICE: AuthorisationService 
+POST: https://localhost:44387/api/Users/Find
+Accept: application/json
+{
+  "Login": "sad",
+  "Password": "sad"
+}
+
+63651352369021380119 - Response: Date: Fri, 12 Jan 2018 08:12:48 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXGFwaVxVc2Vyc1xGaW5k?=
+X-Powered-By: ASP.NET
+
+Status: OK
+{"id":1002,"login":"sad","password":"16cfe4f2e1519c415b9b11024c0cba52","role":"User","lastToken":null}
+
+
+
+6365135236951718453 - Request: SERVICE: AuthorisationService 
+PUT: https://localhost:44387/api/users/1002
+Accept: application/json
+{
+  "id": 1002,
+  "login": "sad",
+  "password": "16cfe4f2e1519c415b9b11024c0cba52",
+  "role": "User",
+  "lasttoken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJzYWQiLCJqdGkiOiJlNTdmZWMxYS0yOGRmLTQ1NmItYjNmYy02NmEyYjk4Yjg4ZTEiLCJVc2VyIjoiMTAwMiIsImV4cCI6MTUxNTc1Njc2OSwiaXNzIjoiVGVzdC5TZWN1cml0eS5CZWFyZXIiLCJhdWQiOiJUZXN0LlNlY3VyaXR5LkJlYXJlciJ9.g7WUoYNKilraKQsfrlQjby8CElVTW4rW-a5o5PeuB8A"
+}
+
+6365135236951718453 - Response: Date: Fri, 12 Jan 2018 08:12:48 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXGFwaVx1c2Vyc1wxMDAy?=
+X-Powered-By: ASP.NET
+
+Status: Accepted
+{"id":1002,"login":"sad","password":"16cfe4f2e1519c415b9b11024c0cba52","role":"User","lastToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJzYWQiLCJqdGkiOiJlNTdmZWMxYS0yOGRmLTQ1NmItYjNmYy02NmEyYjk4Yjg4ZTEiLCJVc2VyIjoiMTAwMiIsImV4cCI6MTUxNTc1Njc2OSwiaXNzIjoiVGVzdC5TZWN1cml0eS5CZWFyZXIiLCJhdWQiOiJUZXN0LlNlY3VyaXR5LkJlYXJlciJ9.g7WUoYNKilraKQsfrlQjby8CElVTW4rW-a5o5PeuB8A"}
+
+
+
+63651352436220291219 - Request: SERVICE: AuthorisationService 
+POST: https://localhost:44387/api/Users/FindByLogin
+Accept: application/json
+{
+  "Login": "sad",
+  "LastToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJzYWQiLCJqdGkiOiJlNTdmZWMxYS0yOGRmLTQ1NmItYjNmYy02NmEyYjk4Yjg4ZTEiLCJVc2VyIjoiMTAwMiIsImV4cCI6MTUxNTc1Njc2OSwiaXNzIjoiVGVzdC5TZWN1cml0eS5CZWFyZXIiLCJhdWQiOiJUZXN0LlNlY3VyaXR5LkJlYXJlciJ9.g7WUoYNKilraKQsfrlQjby8CElVTW4rW-a5o5PeuB8A"
+}
+
+63651352436220291219 - Response: Date: Fri, 12 Jan 2018 08:13:45 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXGFwaVxVc2Vyc1xGaW5kQnlMb2dpbg==?=
+X-Powered-By: ASP.NET
+
+Status: OK
+{"id":1002,"login":"sad","password":"16cfe4f2e1519c415b9b11024c0cba52","role":"User","lastToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJzYWQiLCJqdGkiOiJlNTdmZWMxYS0yOGRmLTQ1NmItYjNmYy02NmEyYjk4Yjg4ZTEiLCJVc2VyIjoiMTAwMiIsImV4cCI6MTUxNTc1Njc2OSwiaXNzIjoiVGVzdC5TZWN1cml0eS5CZWFyZXIiLCJhdWQiOiJUZXN0LlNlY3VyaXR5LkJlYXJlciJ9.g7WUoYNKilraKQsfrlQjby8CElVTW4rW-a5o5PeuB8A"}
+
+
+
+6365135261806244889 - Request: SERVICE: AuthorisationService 
+PUT: https://localhost:44387/api/users/1002
+Accept: application/json
+{
+  "id": 1002,
+  "login": "sad",
+  "password": "16cfe4f2e1519c415b9b11024c0cba52",
+  "role": "User",
+  "lasttoken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJzYWQiLCJqdGkiOiI0OTU5YzFjNS03NmEwLTQ5ZmQtYjdiNi00ZjQyZDYxOTFiMWQiLCJVc2VyIjoiMTAwMiIsImV4cCI6MTUxNTc1NzAxNywiaXNzIjoiVGVzdC5TZWN1cml0eS5CZWFyZXIiLCJhdWQiOiJUZXN0LlNlY3VyaXR5LkJlYXJlciJ9.4BCAhFCAR42OVQwQ3YV_jUvddY2X6-lI5y-4uOBdJ3w"
+}
+
+6365135261806244889 - Response: Date: Fri, 12 Jan 2018 08:16:58 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXGFwaVx1c2Vyc1wxMDAy?=
+X-Powered-By: ASP.NET
+
+Status: Accepted
+{"id":1002,"login":"sad","password":"16cfe4f2e1519c415b9b11024c0cba52","role":"User","lastToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJzYWQiLCJqdGkiOiI0OTU5YzFjNS03NmEwLTQ5ZmQtYjdiNi00ZjQyZDYxOTFiMWQiLCJVc2VyIjoiMTAwMiIsImV4cCI6MTUxNTc1NzAxNywiaXNzIjoiVGVzdC5TZWN1cml0eS5CZWFyZXIiLCJhdWQiOiJUZXN0LlNlY3VyaXR5LkJlYXJlciJ9.4BCAhFCAR42OVQwQ3YV_jUvddY2X6-lI5y-4uOBdJ3w"}
+
+
+
+6365135270885222953 - Request: SERVICE: AuthorisationService 
+POST: https://localhost:44387/api/Users/Find
+Accept: application/json
+{
+  "Login": "sad",
+  "Password": "sad"
+}
+
+6365135270885222953 - Response: Date: Fri, 12 Jan 2018 08:18:28 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXGFwaVxVc2Vyc1xGaW5k?=
+X-Powered-By: ASP.NET
+
+Status: OK
+{"id":1002,"login":"sad","password":"16cfe4f2e1519c415b9b11024c0cba52","role":"User","lastToken":null}
+
+
+
+63651352709021975319 - Request: SERVICE: AuthorisationService 
+PUT: https://localhost:44387/api/users/1002
+Accept: application/json
+{
+  "id": 1002,
+  "login": "sad",
+  "password": "16cfe4f2e1519c415b9b11024c0cba52",
+  "role": "User",
+  "lasttoken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJzYWQiLCJqdGkiOiIzYzY4NzEwNS02NDI4LTRmYzgtYjY3Mi00OWNlYTk0MWI1Y2YiLCJVc2VyIjoiMTAwMiIsImV4cCI6MTUxNTc1NzEwOCwiaXNzIjoiVGVzdC5TZWN1cml0eS5CZWFyZXIiLCJhdWQiOiJUZXN0LlNlY3VyaXR5LkJlYXJlciJ9.JloZKC4mPq9xLxAL1b4xhlavTG-5fap8oqAstLZxtJ4"
+}
+
+63651352709021975319 - Response: Date: Fri, 12 Jan 2018 08:18:28 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXGFwaVx1c2Vyc1wxMDAy?=
+X-Powered-By: ASP.NET
+
+Status: Accepted
+{"id":1002,"login":"sad","password":"16cfe4f2e1519c415b9b11024c0cba52","role":"User","lastToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJzYWQiLCJqdGkiOiIzYzY4NzEwNS02NDI4LTRmYzgtYjY3Mi00OWNlYTk0MWI1Y2YiLCJVc2VyIjoiMTAwMiIsImV4cCI6MTUxNTc1NzEwOCwiaXNzIjoiVGVzdC5TZWN1cml0eS5CZWFyZXIiLCJhdWQiOiJUZXN0LlNlY3VyaXR5LkJlYXJlciJ9.JloZKC4mPq9xLxAL1b4xhlavTG-5fap8oqAstLZxtJ4"}
+
+
+
+63651352726463179832 - Request: SERVICE: AuthorisationService 
+POST: https://localhost:44387/api/Users/FindByLogin
+Accept: application/json
+{
+  "Login": "sad",
+  "LastToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJzYWQiLCJqdGkiOiIzYzY4NzEwNS02NDI4LTRmYzgtYjY3Mi00OWNlYTk0MWI1Y2YiLCJVc2VyIjoiMTAwMiIsImV4cCI6MTUxNTc1NzEwOCwiaXNzIjoiVGVzdC5TZWN1cml0eS5CZWFyZXIiLCJhdWQiOiJUZXN0LlNlY3VyaXR5LkJlYXJlciJ9.JloZKC4mPq9xLxAL1b4xhlavTG-5fap8oqAstLZxtJ4"
+}
+
+63651352726463179832 - Response: Date: Fri, 12 Jan 2018 08:18:46 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXGFwaVxVc2Vyc1xGaW5kQnlMb2dpbg==?=
+X-Powered-By: ASP.NET
+
+Status: OK
+{"id":1002,"login":"sad","password":"16cfe4f2e1519c415b9b11024c0cba52","role":"User","lastToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJzYWQiLCJqdGkiOiIzYzY4NzEwNS02NDI4LTRmYzgtYjY3Mi00OWNlYTk0MWI1Y2YiLCJVc2VyIjoiMTAwMiIsImV4cCI6MTUxNTc1NzEwOCwiaXNzIjoiVGVzdC5TZWN1cml0eS5CZWFyZXIiLCJhdWQiOiJUZXN0LlNlY3VyaXR5LkJlYXJlciJ9.JloZKC4mPq9xLxAL1b4xhlavTG-5fap8oqAstLZxtJ4"}
+
+
+
+6365135285376451749 - Request: SERVICE: AuthorisationService 
+PUT: https://localhost:44387/api/users/1002
+Accept: application/json
+{
+  "id": 1002,
+  "login": "sad",
+  "password": "16cfe4f2e1519c415b9b11024c0cba52",
+  "role": "User",
+  "lasttoken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJzYWQiLCJqdGkiOiIxMWZkZDBkNy01MDIxLTRiNjktODQxZC03MWVjM2FjNzJlMzMiLCJVc2VyIjoiMTAwMiIsImV4cCI6MTUxNTc1NzEyNiwiaXNzIjoiVGVzdC5TZWN1cml0eS5CZWFyZXIiLCJhdWQiOiJUZXN0LlNlY3VyaXR5LkJlYXJlciJ9.zZP_PcYjELuZKxqdpIme_7vjBInU5lNwcOo2mSZmpR8"
+}
+
+6365135285376451749 - Response: Date: Fri, 12 Jan 2018 08:19:34 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXGFwaVx1c2Vyc1wxMDAy?=
+X-Powered-By: ASP.NET
+
+Status: Accepted
+{"id":1002,"login":"sad","password":"16cfe4f2e1519c415b9b11024c0cba52","role":"User","lastToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJzYWQiLCJqdGkiOiIxMWZkZDBkNy01MDIxLTRiNjktODQxZC03MWVjM2FjNzJlMzMiLCJVc2VyIjoiMTAwMiIsImV4cCI6MTUxNTc1NzEyNiwiaXNzIjoiVGVzdC5TZWN1cml0eS5CZWFyZXIiLCJhdWQiOiJUZXN0LlNlY3VyaXR5LkJlYXJlciJ9.zZP_PcYjELuZKxqdpIme_7vjBInU5lNwcOo2mSZmpR8"}
+
+
+
+63651353126662084911 - Request: SERVICE: AuthorisationService 
+POST: https://localhost:44387/api/Users/Find
+Accept: application/json
+{
+  "Login": "sad",
+  "Password": "sad"
+}
+
+63651353126662084911 - Response: Date: Fri, 12 Jan 2018 08:25:26 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXGFwaVxVc2Vyc1xGaW5k?=
+X-Powered-By: ASP.NET
+
+Status: OK
+{"id":1002,"login":"sad","password":"16cfe4f2e1519c415b9b11024c0cba52","role":"User","lastToken":null}
+
+
+
+63651353128421376818 - Request: SERVICE: AuthorisationService 
+PUT: https://localhost:44387/api/users/1002
+Accept: application/json
+{
+  "id": 1002,
+  "login": "sad",
+  "password": "16cfe4f2e1519c415b9b11024c0cba52",
+  "role": "User",
+  "lasttoken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJzYWQiLCJqdGkiOiIwZjMyNDZjOS01YmEyLTQxZmMtODE0Ni1hOTQwYzhiZDFlZWYiLCJVc2VyIjoiMTAwMiIsImV4cCI6MTUxNTc1NzUyNiwiaXNzIjoiVGVzdC5TZWN1cml0eS5CZWFyZXIiLCJhdWQiOiJUZXN0LlNlY3VyaXR5LkJlYXJlciJ9.yoI4DdejKeOHEx5Gart0clOIvXpTZYMREX0kA4Vrabc"
+}
+
+63651353128421376818 - Response: Date: Fri, 12 Jan 2018 08:25:28 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXGFwaVx1c2Vyc1wxMDAy?=
+X-Powered-By: ASP.NET
+
+Status: Accepted
+{"id":1002,"login":"sad","password":"16cfe4f2e1519c415b9b11024c0cba52","role":"User","lastToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJzYWQiLCJqdGkiOiIwZjMyNDZjOS01YmEyLTQxZmMtODE0Ni1hOTQwYzhiZDFlZWYiLCJVc2VyIjoiMTAwMiIsImV4cCI6MTUxNTc1NzUyNiwiaXNzIjoiVGVzdC5TZWN1cml0eS5CZWFyZXIiLCJhdWQiOiJUZXN0LlNlY3VyaXR5LkJlYXJlciJ9.yoI4DdejKeOHEx5Gart0clOIvXpTZYMREX0kA4Vrabc"}
+
+
+
+6365135320313659313 - Request: SERVICE: AuthorisationService 
+POST: https://localhost:44387/api/Users/FindByLogin
+Accept: application/json
+{
+  "Login": "sad",
+  "LastToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJzYWQiLCJqdGkiOiIwZjMyNDZjOS01YmEyLTQxZmMtODE0Ni1hOTQwYzhiZDFlZWYiLCJVc2VyIjoiMTAwMiIsImV4cCI6MTUxNTc1NzUyNiwiaXNzIjoiVGVzdC5TZWN1cml0eS5CZWFyZXIiLCJhdWQiOiJUZXN0LlNlY3VyaXR5LkJlYXJlciJ9.yoI4DdejKeOHEx5Gart0clOIvXpTZYMREX0kA4Vrabc"
+}
+
+6365135320313659313 - Response: Date: Fri, 12 Jan 2018 08:26:43 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXGFwaVxVc2Vyc1xGaW5kQnlMb2dpbg==?=
+X-Powered-By: ASP.NET
+
+Status: OK
+{"id":1002,"login":"sad","password":"16cfe4f2e1519c415b9b11024c0cba52","role":"User","lastToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJzYWQiLCJqdGkiOiIwZjMyNDZjOS01YmEyLTQxZmMtODE0Ni1hOTQwYzhiZDFlZWYiLCJVc2VyIjoiMTAwMiIsImV4cCI6MTUxNTc1NzUyNiwiaXNzIjoiVGVzdC5TZWN1cml0eS5CZWFyZXIiLCJhdWQiOiJUZXN0LlNlY3VyaXR5LkJlYXJlciJ9.yoI4DdejKeOHEx5Gart0clOIvXpTZYMREX0kA4Vrabc"}
+
+
+
+63651353207350711824 - Request: SERVICE: AuthorisationService 
+PUT: https://localhost:44387/api/users/1002
+Accept: application/json
+{
+  "id": 1002,
+  "login": "sad",
+  "password": "16cfe4f2e1519c415b9b11024c0cba52",
+  "role": "User",
+  "lasttoken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJzYWQiLCJqdGkiOiI4M2FhNDAwYy1mM2UyLTRjMDgtOTNjZS00ODQ0YmMxN2UwYTIiLCJVc2VyIjoiMTAwMiIsImV4cCI6MTUxNTc1NzYwMywiaXNzIjoiVGVzdC5TZWN1cml0eS5CZWFyZXIiLCJhdWQiOiJUZXN0LlNlY3VyaXR5LkJlYXJlciJ9.jbNdNL0kj7fJxOqNaV1ZCePpsWPtC2Pn8yUzO4fCL2o"
+}
+
+63651353207350711824 - Response: Date: Fri, 12 Jan 2018 08:26:47 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXGFwaVx1c2Vyc1wxMDAy?=
+X-Powered-By: ASP.NET
+
+Status: Accepted
+{"id":1002,"login":"sad","password":"16cfe4f2e1519c415b9b11024c0cba52","role":"User","lastToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJzYWQiLCJqdGkiOiI4M2FhNDAwYy1mM2UyLTRjMDgtOTNjZS00ODQ0YmMxN2UwYTIiLCJVc2VyIjoiMTAwMiIsImV4cCI6MTUxNTc1NzYwMywiaXNzIjoiVGVzdC5TZWN1cml0eS5CZWFyZXIiLCJhdWQiOiJUZXN0LlNlY3VyaXR5LkJlYXJlciJ9.jbNdNL0kj7fJxOqNaV1ZCePpsWPtC2Pn8yUzO4fCL2o"}
+
+
+
+6365135334715155029 - Request: SERVICE: AuthorisationService 
+POST: https://localhost:44387/api/Users/Find
+Accept: application/json
+{
+  "Login": "sad",
+  "Password": "sad"
+}
+
+6365135334715155029 - Response: Date: Fri, 12 Jan 2018 08:29:07 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXGFwaVxVc2Vyc1xGaW5k?=
+X-Powered-By: ASP.NET
+
+Status: OK
+{"id":1002,"login":"sad","password":"16cfe4f2e1519c415b9b11024c0cba52","role":"User","lastToken":null}
+
+
+
+63651353355280852118 - Request: SERVICE: ArtistService 
+GET: https://localhost:44361/api/artists/page/1
+Accept: application/json
+
+
+63651353355280852118 - Response: Date: Fri, 12 Jan 2018 08:29:15 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3RzXHBhZ2VcMQ==?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":2,"artistName":"30 Seconds to Mars","lastFmRating":7},{"id":22,"artistName":"adsfasdfasdfn1111","lastFmRating":8},{"id":18,"artistName":"Arctic Monkeys","lastFmRating":22},{"id":7,"artistName":"Bullet for my valentine","lastFmRating":15},{"id":10,"artistName":"Combichrist","lastFmRating":8},{"id":6,"artistName":"Depeche mode","lastFmRating":2},{"id":11,"artistName":"Devil sold his soul","lastFmRating":9},{"id":9,"artistName":"Elvis Presley","lastFmRating":4},{"id":8,"artistName":"Frank Sinatra","lastFmRating":3},{"id":17,"artistName":"John Lenon and Team","lastFmRating":6}]
+
+
+
+63651353355375899828 - Request: SERVICE: ArtistService 
+GET: https://localhost:44361/api/artists/page/1
+Accept: application/json
+
+
+63651353355375899828 - Response: Date: Fri, 12 Jan 2018 08:29:15 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3RzXGNvdW50?=
+X-Powered-By: ASP.NET
+
+Status: OK
+21
+
+
+
+63651353361096405310 - Request: SERVICE: ArtistService 
+GET: https://localhost:44361/api/artists/page/3
+Accept: application/json
+
+
+63651353361096405310 - Response: Date: Fri, 12 Jan 2018 08:29:21 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3RzXHBhZ2VcMw==?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":23,"artistName":"zzzzz","lastFmRating":8}]
+
+
+
+63651353361166806228 - Request: SERVICE: ArtistService 
+GET: https://localhost:44361/api/artists/page/3
+Accept: application/json
+
+
+63651353361166806228 - Response: Date: Fri, 12 Jan 2018 08:29:21 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTmF0YXNoYVxEZXNrdG9wXExSMlxMUjJfTkVXXEFydGlzdFNlcnZpY2VcQ29uY2VydGVTZXJ2aWNlXGFwaVxhcnRpc3RzXGNvdW50?=
+X-Powered-By: ASP.NET
+
+Status: OK
+21
+
+
+

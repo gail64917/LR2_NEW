@@ -15,7 +15,7 @@ namespace AggregationService.Provider.JWT
         private string issuer = "";
         private string audience = "";
         private Dictionary<string, string> claims = new Dictionary<string, string>();
-        private int expiryInMinutes = 182;
+        private int expiryInMinutes = 200;
 
         public JwtTokenBuilder AddSecurityKey(SecurityKey securityKey)
         {

@@ -2,41 +2,6 @@
     ViewData["Title"] = "Artists";
 }
 
-@{
-    var token = new Byte[500];
-    Context.Session.TryGetValue("Token", out token);
-    var login = new Byte[500];
-    Context.Session.TryGetValue("Login", out login);
-    string tokenStringJS = "test";
-    if (token != null)
-    {
-        tokenStringJS = System.Text.Encoding.Default.GetString(token);
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-        <script>
-            function refer(urlOut) {
-                var tkn = "@tokenStringJS";
-                //_________________________________________________________________
-                $(document).ready(function () {
-                    $('#submitButton').click(function () {
-                        $.ajax({
-                            url: urlOut,
-                            type: 'GET',
-                            contentType: 'application/json',
-                            headers: {
-                                "Authorization": "Bearer " + tkn
-                            },
-                            async: false,
-                            success: function (html) {
-                                $(window.document.body).html(html);
-                            }
-                        });
-                    });
-                });
-            };
-        </script>
-    }
-}
-
 <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="6000">
     <ol class="carousel-indicators">
         <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -106,14 +71,98 @@
 <h2>Исполнители</h2>
 
 <p>
-    <a asp-area="" asp-controller="Artist" asp-action="AddArtist">Добавить нового артиста</a>
+    <a id="submitButtonAdd" class="pointer">Добавить нового артиста</a>
 </p>
+@{
+    var token = new Byte[500];
+    Context.Session.TryGetValue("Token", out token);
+    var login = new Byte[500];
+    Context.Session.TryGetValue("Login", out login);
+    string tokenStringJS = "test";
+    if (login == null || (login != null && System.Text.Encoding.Default.GetString(login) == ""))
+    {
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function () {
+                $('#submitButtonAdd').click(function () {
+                    alert("you must be authorized!");
+                });
+            });
+        </script>
+
+    }
+    if (token != null && System.Text.Encoding.Default.GetString(token) != "")
+    {
+        tokenStringJS = System.Text.Encoding.Default.GetString(token);
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script>
+                var tkn = "@tokenStringJS";
+                //_________________________________________________________________
+                $(document).ready(function () {
+                    $('#submitButtonAdd').click(function () {
+                        $.ajax({
+                            url: "https://localhost:44336/Artist/AddArtist",
+                            type: 'GET',
+                            contentType: 'application/json',
+                            headers: {
+                                "Authorization": "Bearer " + tkn
+                            },
+                            async: false,
+                            success: function (html) {
+                                $(window.document.body).html(html);
+                            }
+                        });
+                    });
+                });
+        </script>
+    }
+}
 
 <form>
     @for (int i = 1; i < @Model.countArtists / 10 + 2; i++)
     {
         string text = i.ToString();
-        @Html.ActionLink(text, "Index", "Artist", new { id = i }, null);
+        //@Html.ActionLink(text, "Index", "Artist", new { id = i }, new { id = "submitButton" + i });
+        string targetid = "submitButton" + i;
+        string targeturi = "https://localhost:44336/Artist/" + i;
+        <a id="@targetid" class="pointer">@i</a>
+        if (login == null || (login != null && System.Text.Encoding.Default.GetString(login) == ""))
+        {
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+            <script>
+                $(document).ready(function () {
+                    $('#@targetid').click(function () {
+                        alert("you must be authorized!");
+                    });
+                });
+            </script>
+
+        }
+        if (token!= null && System.Text.Encoding.Default.GetString(token) != "")
+        {
+            tokenStringJS = System.Text.Encoding.Default.GetString(token);
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+            <script>
+                var tkn = "@tokenStringJS";
+                //_________________________________________________________________
+                $(document).ready(function () {
+                    $('#@targetid').click(function () {
+                        $.ajax({
+                            url: "@targeturi",
+                            type: 'GET',
+                            contentType: 'application/json',
+                            headers: {
+                                "Authorization": "Bearer " + tkn
+                            },
+                            async: false,
+                            success: function (html) {
+                                $(window.document.body).html(html);
+                            }
+                        });
+                    });
+                });
+            </script>
+        }
         Write("  ");
     }
 </form>
@@ -143,13 +192,98 @@
                 </td>
                 <td>
 
-                    <a asp-action="Edite" asp-route-id="@item.ID">Edit</a> |
-                    @*<a asp-action="Details" asp-route-id="@item.ID">Details</a> |*@
+                    @*<a asp-action="Edite" asp-route-id="@item.ID">Edit</a> |*@
+                    @{
+                        string text = item.ID.ToString();
 
-                    @*<form method="delete">
+                        string targetid = "submitButtonEdit" + item.ID;
+                        string targeturi = "https://localhost:44336/Artist/Edite/" + item.ID;
+                    }
+                    <a id="@targetid" class="pointer">Edit</a> 
+                    @if (login == null || (login != null && System.Text.Encoding.Default.GetString(login) == ""))
+                    {
+                    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+                    <script>
+                        $(document).ready(function () {
+                            $('#@targetid').click(function () {
+                                alert("you must be authorized!");
+                            });
+                        });
+                    </script>
 
-                    </form>*@
-                    <a asp-action="Delete" asp-route-id="@item.ID" data->Delete</a>
+                    }
+                    @if (token!= null && System.Text.Encoding.Default.GetString(token) != "")
+                    {
+                    tokenStringJS = System.Text.Encoding.Default.GetString(token);
+                    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+                        <script>
+                            var tkn = "@tokenStringJS";
+                            //_________________________________________________________________
+                            $(document).ready(function () {
+                                $('#@targetid').click(function () {
+                                    $.ajax({
+                                        url: "@targeturi",
+                                        type: 'GET',
+                                        contentType: 'application/json',
+                                        headers: {
+                                            "Authorization": "Bearer " + tkn
+                                        },
+                                        async: false,
+                                        success: function (html) {
+                                            $(window.document.body).html(html);
+                                        }
+                                    });
+                                });
+                            });
+                        </script>
+                    }
+
+
+                    @*<a asp-action="Edite" asp-route-id="@item.ID">Edit</a> |*@
+                    @{
+                        string text1 = item.ID.ToString();
+
+                        string targetid1 = "submitButtonDelete" + item.ID;
+                        string targeturi1 = "https://localhost:44336/Artist/Delete/" + item.ID;
+                    }
+                    <a id="@targetid1" class="pointer">Delete</a> 
+                    @if (login == null || (login != null && System.Text.Encoding.Default.GetString(login) == ""))
+                    {
+                        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+                        <script>
+                        $(document).ready(function () {
+                            $('#@targetid1').click(function () {
+                                alert("you must be authorized!");
+                            });
+                        });
+                        </script>
+
+                    }
+                    @if (token != null && System.Text.Encoding.Default.GetString(token) != "")
+                    {
+                        tokenStringJS = System.Text.Encoding.Default.GetString(token);
+                        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+                        <script>
+                            var tkn = "@tokenStringJS";
+                            //_________________________________________________________________
+                            $(document).ready(function () {
+                                $('#@targetid1').click(function () {
+                                    $.ajax({
+                                        url: "@targeturi1",
+                                        type: 'GET',
+                                        contentType: 'application/json',
+                                        headers: {
+                                            "Authorization": "Bearer " + tkn
+                                        },
+                                        async: false,
+                                        success: function (html) {
+                                            $(window.document.body).html(html);
+                                        }
+                                    });
+                                });
+                            });
+                        </script>
+                    }
                 </td>
             </tr>
         }
