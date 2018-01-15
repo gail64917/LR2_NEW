@@ -13,6 +13,7 @@ using Microsoft.EntityFrameworkCore;
 using EasyNetQ;
 using RabbitModels;
 using StatisticService.Controllers;
+using StatisticService.Schedule;
 
 namespace StatisticService
 {
@@ -31,6 +32,7 @@ namespace StatisticService
             services.AddDbContext<StatContext>(options =>
                 options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
             services.AddMvc();
+            FluentScheduler.JobManager.Initialize(new MyRegistry());
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

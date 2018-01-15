@@ -12,6 +12,7 @@ using Microsoft.Extensions.DependencyInjection;
 using EasyNetQ;
 using StatisticService.Controllers;
 using RabbitModels;
+using FluentScheduler;
 
 namespace StatisticService
 {
@@ -36,7 +37,7 @@ namespace StatisticService
                 }
             }
             var bus = RabbitHutch.CreateBus("host=localhost");
-            bus.Subscribe<RabbitStatistic>("statistic", msg => StatisticsController.DbPush(msg));
+            bus.Subscribe<RabbitStatistic>("statisticNew", msg => StatisticsController.DbPush(msg));
             host.Run();
         }
 

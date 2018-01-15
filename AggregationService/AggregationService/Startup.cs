@@ -15,6 +15,9 @@ using RestBus.AspNet;
 using RestBus.AspNet.Server;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
+using Microsoft.EntityFrameworkCore;
+using AggregationService.Data;
+using AggregationService.Schedule;
 
 namespace AggregationService
 {
@@ -30,8 +33,10 @@ namespace AggregationService
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddDbContext<StatisticContext>(options =>
+                options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+
             services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
-                    //.AddCookie()
                     .AddJwtBearer(options => {
                         options.TokenValidationParameters =
                              new TokenValidationParameters
@@ -69,15 +74,13 @@ namespace AggregationService
                     policy => policy.RequireClaim("User"));
                 options.AddPolicy("Admin",
                     policy => policy.RequireClaim("Admin"));
-                //options.AddPolicy("Hr",
-                //    policy => policy.RequireClaim("EmployeeNumber"));
-                //options.AddPolicy("Founder",
-                //    policy => policy.RequireClaim("EmployeeNumber", "1", "2", "3", "4", "5"));
             });
             
             services.AddMvc();
             services.AddDistributedMemoryCache();
             services.AddSession();
+
+            FluentScheduler.JobManager.Initialize(new MyRegistryAgg());
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

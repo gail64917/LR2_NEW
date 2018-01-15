@@ -38,6 +38,8 @@ namespace AggregationService.Controllers
         [HttpGet("{id?}")]
         public async Task<IActionResult> Index([FromRoute] int id = 1)
         {
+            string userString = HttpContext.Session.GetString("Login");
+            userString = userString != null ? userString : "";
             List<Concerte> result = new List<Concerte>();
             List<ConcerteInfoFull> FinalResult = new List<ConcerteInfoFull>();
             int count = 0;
@@ -62,7 +64,7 @@ namespace AggregationService.Controllers
                 else
                 {
                     responseMessage = Encoding.UTF8.GetBytes(response.ReasonPhrase);
-                    SendStatistic("Concertes", DateTime.Now, "Index", Request.HttpContext.Connection.RemoteIpAddress.ToString(), false);
+                    //SendStatistic("Concertes", DateTime.Now, "Index", Request.HttpContext.Connection.RemoteIpAddress.ToString(), false);
                     return Error();
                 }
                 await LogQuery(request, responseString, responseMessage);
@@ -87,7 +89,7 @@ namespace AggregationService.Controllers
                 else
                 {
                     responseMessage = Encoding.UTF8.GetBytes(responseStringsCount.ReasonPhrase);
-                    SendStatistic("Concertes", DateTime.Now, "Index", Request.HttpContext.Connection.RemoteIpAddress.ToString(), false);
+                    //SendStatistic("Concertes", DateTime.Now, "Index", Request.HttpContext.Connection.RemoteIpAddress.ToString(), false);
                     return Error();
                 }
                 await LogQuery(request, responseString, responseMessage);
@@ -116,7 +118,7 @@ namespace AggregationService.Controllers
                 else
                 {
                     responseMessage = Encoding.UTF8.GetBytes(response.ReasonPhrase);
-                    SendStatistic("Concertes", DateTime.Now, "Index", Request.HttpContext.Connection.RemoteIpAddress.ToString(), false);
+                    //SendStatistic("Concertes", DateTime.Now, "Index", Request.HttpContext.Connection.RemoteIpAddress.ToString(), false);
                     return Error();
                 }
                 await LogQuery(request, responseString, responseMessage);
@@ -147,7 +149,7 @@ namespace AggregationService.Controllers
                 else
                 {
                     responseMessage2 = Encoding.UTF8.GetBytes(response2.ReasonPhrase);
-                    SendStatistic("Concertes", DateTime.Now, "Index", Request.HttpContext.Connection.RemoteIpAddress.ToString(), false);
+                    //SendStatistic("Concertes", DateTime.Now, "Index", Request.HttpContext.Connection.RemoteIpAddress.ToString(), false);
                     return Error();
                 }
                 await LogQuery(request2, responseString2, responseMessage2);
@@ -163,7 +165,7 @@ namespace AggregationService.Controllers
                 FinalResult.Add(concerteInfoFull);
             }
             ConcerteList resultQuery = new ConcerteList() { concertesInfoFull = FinalResult, countConcertes = count };
-            SendStatistic("Concertes", DateTime.Now, "Index", Request.HttpContext.Connection.RemoteIpAddress.ToString(), true);
+            //SendStatistic("Concertes", DateTime.Now, "Index", Request.HttpContext.Connection.RemoteIpAddress.ToString(), true);
             return View(resultQuery);
         }
 
@@ -172,6 +174,8 @@ namespace AggregationService.Controllers
         [HttpGet("{id?}")]
         public async Task<IActionResult> GetWithDegradation([FromRoute] int id = 1)
         {
+            string userString = HttpContext.Session.GetString("Login");
+            userString = userString != null ? userString : "";
             List<Concerte> result = new List<Concerte>();
             List<ConcerteInfoFull> FinalResult = new List<ConcerteInfoFull>();
             int count = 0;
@@ -353,12 +357,16 @@ namespace AggregationService.Controllers
         [Route("Error")]
         public IActionResult Error()
         {
+            string userString = HttpContext.Session.GetString("Login");
+            userString = userString != null ? userString : "";
             return View("Error");
         }
 
         [HttpGet("Delete/{id?}")]
         public async Task<IActionResult> Delete(int id)
         {
+            string userString = HttpContext.Session.GetString("Login");
+            userString = userString != null ? userString : "";
             using (var client = new HttpClient())
             {
                 client.BaseAddress = new Uri(URLConcerteService);
@@ -390,6 +398,8 @@ namespace AggregationService.Controllers
         [HttpGet("Edite/{id?}")]
         public async Task<IActionResult> Edite(int? id)
         {
+            string userString = HttpContext.Session.GetString("Login");
+            userString = userString != null ? userString : "";
             if (id == null)
             {
                 return NotFound();
@@ -441,6 +451,8 @@ namespace AggregationService.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edite([Bind("ID,ShowName,TicketsNumber,Price,CityName,ArenaName,ArtistName,Date,BrandName")] ConcerteInfoFull concerteInfoFull)
         {
+            string userString = HttpContext.Session.GetString("Login");
+            userString = userString != null ? userString : "";
             if (ModelState.IsValid)
             {
                 //Проверяем, валиден ли арена и артист (запрашиваем соответствующие сущности и проверяем)
@@ -682,6 +694,8 @@ namespace AggregationService.Controllers
         [HttpGet("EditeAll/{id?}")]
         public async Task<IActionResult> EditeAll(int? id)
         {
+            string userString = HttpContext.Session.GetString("Login");
+            userString = userString != null ? userString : "";
             if (id == null)
             {
                 return NotFound();
@@ -881,6 +895,8 @@ namespace AggregationService.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> EditeAll([Bind("ID,ShowName,TicketsNumber,Price,Date,SellerID,BrandName,CityID,CityName,CityPopulation,ArenaID,ArenaName,ArenaCapacity,ArtistID,ArtistName,LastFmRating")] ConcerteInfoFullWithId concerteInfoFullWithId)
         {
+            string userString = HttpContext.Session.GetString("Login");
+            userString = userString != null ? userString : "";
             if (ModelState.IsValid)
             {
                 //СЕРИАЛИЗУЕМ Seller и посылаем на ConcerteService
@@ -1098,6 +1114,8 @@ namespace AggregationService.Controllers
         [Route("AddConcerteValid")]
         public async Task<IActionResult> AddConcerteValid()
         {
+            string userString = HttpContext.Session.GetString("Login");
+            userString = userString != null ? userString : "";
             ConcerteInfoFullFake concerteFake = new ConcerteInfoFullFake();
 
             List<City> result = new List<City>();
@@ -1216,18 +1234,24 @@ namespace AggregationService.Controllers
         [Route("AddConcerteToAll")]
         public IActionResult AddConcerteToAll()
         {
+            string userString = HttpContext.Session.GetString("Login");
+            userString = userString != null ? userString : "";
             return View();
         }
 
         [Route("AddConcerteRollBack")]
         public IActionResult AddConcerteRollBack()
         {
+            string userString = HttpContext.Session.GetString("Login");
+            userString = userString != null ? userString : "";
             return View();
         }
 
         [Route("AddConcerteDelayed")]
         public IActionResult AddConcerteDelayed()
         {
+            string userString = HttpContext.Session.GetString("Login");
+            userString = userString != null ? userString : "";
             return View();
         }
 
@@ -1236,6 +1260,8 @@ namespace AggregationService.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> AddConcerteValid([Bind("BrandName, ShowName, TicketsNumber, Price, Date, CityName, ArenaName, ArtistName")] ConcerteInfoFull concerteInfoFull)
         {
+            string userString = HttpContext.Session.GetString("Login");
+            userString = userString != null ? userString : "";
             //Проверяем, валиден ли арена и артист (запрашиваем соответствующие сущности и проверяем)
             //Если валидно - СЕРИАЛИЗУЕМ concerteInfoFull и посылаем на ConcerteService
             Arena arena;
@@ -1471,6 +1497,8 @@ namespace AggregationService.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> AddConcerteToAll([Bind("BrandName, ShowName, TicketsNumber, Price, Date, CityName, CityPopulation, ArenaName, ArenaCapacity, ArtistName, LastFmRating")] ConcerteInfoFull concerteInfoFull)
         {
+            string userString = HttpContext.Session.GetString("Login");
+            userString = userString != null ? userString : "";
             //Пихаем все везде
             Arena arena;
             Artist artist;
@@ -1716,6 +1744,8 @@ namespace AggregationService.Controllers
         public async Task<IActionResult> AddConcerteDelayed([Bind("BrandName, ShowName, TicketsNumber, Price, Date, CityName, CityPopulation, ArenaName, ArenaCapacity, ArtistName, LastFmRating")] ConcerteInfoFull concerteInfoFull)
         //public async Task<IActionResult> AddConcerteDelayed([FromBody] ConcerteInfoFull concerteInfoFull)
         {
+            string userString = HttpContext.Session.GetString("Login");
+            userString = userString != null ? userString : "";
             //Пихаем все везде
             Arena arena;
             Artist artist;
@@ -1998,6 +2028,8 @@ namespace AggregationService.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> AddConcerteRollBack([Bind("BrandName, ShowName, TicketsNumber, Price, Date, CityName, CityPopulation, ArenaName, ArenaCapacity, ArtistName, LastFmRating")] ConcerteInfoFull concerteInfoFull)
         {
+            string userString = HttpContext.Session.GetString("Login");
+            userString = userString != null ? userString : "";
             //Пихаем все везде
             Arena arena;
             Artist artist;

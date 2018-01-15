@@ -16,3 +16,5 @@ C:\Users\Natasha\Desktop\LR2\LR2_NEW\RabbitModels\obj\Debug\netcoreapp2.0\Rabbit
 C:\Users\Natasha\Desktop\LR2\LR2_NEW\RabbitModels\obj\Debug\netcoreapp2.0\RabbitModels.dll
 C:\Users\Natasha\Desktop\LR2\LR2_NEW\RabbitModels\obj\Debug\netcoreapp2.0\RabbitModels.pdb
 C:\Users\Natasha\Desktop\LR2\LR2_NEW\RabbitModels\obj\Debug\netcoreapp2.0\RabbitModels.csprojResolveAssemblyReference.cache
+C:\Users\Natasha\Desktop\LR2\LR2_NEW\RabbitModels\bin\Debug\netcoreapp2.0\System.Data.SqlClient.dll
+C:\Users\Natasha\Desktop\LR2\LR2_NEW\RabbitModels\bin\Debug\netcoreapp2.0\System.Data.SqlClient.xml

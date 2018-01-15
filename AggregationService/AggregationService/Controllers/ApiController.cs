@@ -19,6 +19,8 @@ using RabbitModels;
 using EasyNetQ;
 using Microsoft.AspNetCore.Authorization;
 
+using static RabbitModels.StatisticSender;
+
 namespace AggregationService.Controllers
 {
     [Produces("application/json")]
@@ -33,6 +35,9 @@ namespace AggregationService.Controllers
         [Route("test")]
         public int test()
         {
+            string user = HttpContext.Session.GetString("Login");
+            user = user != null ? user : "";
+            SendStatistic("Api", DateTime.Now, "Test", Request.HttpContext.Connection.RemoteIpAddress.ToString(), true, user);
             return 1;
         }
 
@@ -64,6 +69,9 @@ namespace AggregationService.Controllers
                 else
                 {
                     responseMessage = Encoding.UTF8.GetBytes(response.ReasonPhrase);
+                    string user2 = HttpContext.Session.GetString("Login");
+                    user2 = user2 != null ? user2 : "";
+                    SendStatistic("Api", DateTime.Now, "Index", Request.HttpContext.Connection.RemoteIpAddress.ToString(), false, user2);
                     return BadRequest("Concerte Service unavailable");
                 }
                 await LogQuery(request, responseString, responseMessage);
@@ -92,6 +100,9 @@ namespace AggregationService.Controllers
                 else
                 {
                     responseMessage = Encoding.UTF8.GetBytes(response.ReasonPhrase);
+                    string user3 = HttpContext.Session.GetString("Login");
+                    user3 = user3 != null ? user3 : "";
+                    SendStatistic("Api", DateTime.Now, "Index", Request.HttpContext.Connection.RemoteIpAddress.ToString(), false, user3);
                     return BadRequest("Arena Service unavailable");
                 }
                 await LogQuery(request, responseString, responseMessage);
@@ -122,6 +133,9 @@ namespace AggregationService.Controllers
                 else
                 {
                     responseMessage2 = Encoding.UTF8.GetBytes(response2.ReasonPhrase);
+                    string user4 = HttpContext.Session.GetString("Login");
+                    user4 = user4 != null ? user4 : "";
+                    SendStatistic("Api", DateTime.Now, "Index", Request.HttpContext.Connection.RemoteIpAddress.ToString(), false, user4);
                     return BadRequest("Artist Service unavailable");
                 }
                 await LogQuery(request2, responseString2, responseMessage2);
@@ -137,6 +151,9 @@ namespace AggregationService.Controllers
                 FinalResult.Add(concerteInfoFull);
             }
             ConcerteList resultQuery = new ConcerteList() { concertesInfoFull = FinalResult, countConcertes = count };
+            string user1 = HttpContext.Session.GetString("Login");
+            user1 = user1 != null ? user1 : "";
+            SendStatistic("Api", DateTime.Now, "Index", Request.HttpContext.Connection.RemoteIpAddress.ToString(), true, user1);
             return Ok(resultQuery);
         }
 
@@ -161,12 +178,18 @@ namespace AggregationService.Controllers
                 {
                     responseMessage = await response.Content.ReadAsByteArrayAsync();
                     await LogQuery(request, responseString, responseMessage);
+                    string user1 = HttpContext.Session.GetString("Login");
+                    user1 = user1 != null ? user1 : "";
+                    SendStatistic("Api", DateTime.Now, "Delete", Request.HttpContext.Connection.RemoteIpAddress.ToString(), true, user1);
                     return Ok();
                 }
                 else
                 {
                     responseMessage = Encoding.UTF8.GetBytes(response.ReasonPhrase);
                     await LogQuery(request, responseString, responseMessage);
+                    string user1 = HttpContext.Session.GetString("Login");
+                    user1 = user1 != null ? user1 : "";
+                    SendStatistic("Api", DateTime.Now, "Delete", Request.HttpContext.Connection.RemoteIpAddress.ToString(), false, user1);
                     return BadRequest("Concerte service unavailable");
                 }
             }
@@ -208,6 +231,9 @@ namespace AggregationService.Controllers
                     ResponseMessage message = new ResponseMessage();
                     message.description = description;
                     message.message = response;
+                    string user1 = HttpContext.Session.GetString("Login");
+                    user1 = user1 != null ? user1 : "";
+                    SendStatistic("Api", DateTime.Now, "Edite", Request.HttpContext.Connection.RemoteIpAddress.ToString(), false, user1);
                     return BadRequest("Arena Service unavailable");
                     //
                     //НЕ НАШЛИ АРЕНУ С ТАКИМ НАЗВАНИЕМ
@@ -229,6 +255,9 @@ namespace AggregationService.Controllers
                         ResponseMessage message = new ResponseMessage();
                         message.description = "Arena capacity lower than tickets number!";
                         message.message = response;
+                        string user1 = HttpContext.Session.GetString("Login");
+                        user1 = user1 != null ? user1 : "";
+                        SendStatistic("Api", DateTime.Now, "Edite", Request.HttpContext.Connection.RemoteIpAddress.ToString(), false, user1);
                         return BadRequest("Capacity lower than tickets number");
                     }
                     if (arena.City.CityName != concerteInfoFull.CityName)
@@ -236,6 +265,9 @@ namespace AggregationService.Controllers
                         ResponseMessage message = new ResponseMessage();
                         message.description = "This Arena is not in this city!";
                         message.message = response;
+                        string user1 = HttpContext.Session.GetString("Login");
+                        user1 = user1 != null ? user1 : "";
+                        SendStatistic("Api", DateTime.Now, "Edite", Request.HttpContext.Connection.RemoteIpAddress.ToString(), false, user1);
                         return BadRequest("This City does not have this Arena");
                     }
                 }
@@ -247,6 +279,9 @@ namespace AggregationService.Controllers
                     ResponseMessage message = new ResponseMessage();
                     message.description = description;
                     message.message = response;
+                    string user1 = HttpContext.Session.GetString("Login");
+                    user1 = user1 != null ? user1 : "";
+                    SendStatistic("Api", DateTime.Now, "Edite", Request.HttpContext.Connection.RemoteIpAddress.ToString(), false, user1);
                     return NoContent();
                     //
                     //НЕ НАШЛИ АРЕНУ С ТАКИМ НАЗВАНИЕМ
@@ -275,6 +310,9 @@ namespace AggregationService.Controllers
                     ResponseMessage message = new ResponseMessage();
                     message.description = description;
                     message.message = response;
+                    string user1 = HttpContext.Session.GetString("Login");
+                    user1 = user1 != null ? user1 : "";
+                    SendStatistic("Api", DateTime.Now, "Edite", Request.HttpContext.Connection.RemoteIpAddress.ToString(), false, user1);
                     return BadRequest("Artist Service unavailable");
                     //
                     //НЕ НАШЛИ ARTIST С ТАКИМ NAME
@@ -300,6 +338,9 @@ namespace AggregationService.Controllers
                     ResponseMessage message = new ResponseMessage();
                     message.description = description;
                     message.message = response;
+                    string user1 = HttpContext.Session.GetString("Login");
+                    user1 = user1 != null ? user1 : "";
+                    SendStatistic("Api", DateTime.Now, "Edite", Request.HttpContext.Connection.RemoteIpAddress.ToString(), false, user1);
                     return NoContent();
                     //
                     //НЕ НАШЛИ АРЕНУ С ТАКИМ НАЗВАНИЕМ
@@ -332,6 +373,9 @@ namespace AggregationService.Controllers
                     ResponseMessage message = new ResponseMessage();
                     message.description = description;
                     message.message = response;
+                    string user1 = HttpContext.Session.GetString("Login");
+                    user1 = user1 != null ? user1 : "";
+                    SendStatistic("Api", DateTime.Now, "Edite", Request.HttpContext.Connection.RemoteIpAddress.ToString(), false, user1);
                     return BadRequest("Concerte Service unavailable");
                     //
                     //НЕ НАШЛИ Seller С ТАКИМ NAME
@@ -357,6 +401,9 @@ namespace AggregationService.Controllers
                     ResponseMessage message = new ResponseMessage();
                     message.description = description;
                     message.message = response;
+                    string user1 = HttpContext.Session.GetString("Login");
+                    user1 = user1 != null ? user1 : "";
+                    SendStatistic("Api", DateTime.Now, "Edite", Request.HttpContext.Connection.RemoteIpAddress.ToString(), false, user1);
                     return NoContent();
                     //
                     //НЕ НАШЛИ Seller С ТАКИМ НАЗВАНИЕМ
@@ -388,6 +435,9 @@ namespace AggregationService.Controllers
                     ResponseMessage message = new ResponseMessage();
                     message.description = description;
                     message.message = response;
+                    string user1 = HttpContext.Session.GetString("Login");
+                    user1 = user1 != null ? user1 : "";
+                    SendStatistic("Api", DateTime.Now, "Edite", Request.HttpContext.Connection.RemoteIpAddress.ToString(), false, user1);
                     return BadRequest("Concerte Service unavailable");
                 }
                 request = "SERVICE: ConcerteService \r\nPUT: " + URLConcerteService + "/" + requestString + "\r\n" + client.DefaultRequestHeaders.ToString();
@@ -398,6 +448,9 @@ namespace AggregationService.Controllers
                     await LogQuery(request, requestMessage, responseString, responseMessage);
                     var Json = await response.Content.ReadAsStringAsync();
                     var concerte = JsonConvert.DeserializeObject<ConcerteInfoFullWithId>(Json);
+                    string user1 = HttpContext.Session.GetString("Login");
+                    user1 = user1 != null ? user1 : "";
+                    SendStatistic("Api", DateTime.Now, "Edite", Request.HttpContext.Connection.RemoteIpAddress.ToString(), true, user1);
                     return Ok(concerte);
                 }
                 else
@@ -408,11 +461,17 @@ namespace AggregationService.Controllers
                     ResponseMessage message = new ResponseMessage();
                     message.description = description;
                     message.message = response;
+                    string user1 = HttpContext.Session.GetString("Login");
+                    user1 = user1 != null ? user1 : "";
+                    SendStatistic("Api", DateTime.Now, "Edite", Request.HttpContext.Connection.RemoteIpAddress.ToString(), false, user1);
                     return NoContent();
                 }
             }
             else
             {
+                string user1 = HttpContext.Session.GetString("Login");
+                user1 = user1 != null ? user1 : "";
+                SendStatistic("Api", DateTime.Now, "Edite", Request.HttpContext.Connection.RemoteIpAddress.ToString(), false, user1);
                 return BadRequest("Model is invalid!");
             }
         }
@@ -442,6 +501,9 @@ namespace AggregationService.Controllers
                     ResponseMessage message = new ResponseMessage();
                     message.description = description;
                     message.message = response;
+                    string user1 = HttpContext.Session.GetString("Login");
+                    user1 = user1 != null ? user1 : "";
+                    SendStatistic("Api", DateTime.Now, "EditeAll", Request.HttpContext.Connection.RemoteIpAddress.ToString(), false, user1);
                     return BadRequest(description);
                 }
                 var request = "SERVICE: ConcerteService \r\nPUT: " + URLConcerteService + "/" + requestString + "\r\n" + client.DefaultRequestHeaders.ToString();
@@ -459,6 +521,9 @@ namespace AggregationService.Controllers
                     ResponseMessage message = new ResponseMessage();
                     message.description = description;
                     message.message = response;
+                    string user1 = HttpContext.Session.GetString("Login");
+                    user1 = user1 != null ? user1 : "";
+                    SendStatistic("Api", DateTime.Now, "EditeAll", Request.HttpContext.Connection.RemoteIpAddress.ToString(), false, user1);
                     return BadRequest(description);
                 }
 
@@ -482,6 +547,9 @@ namespace AggregationService.Controllers
                     ResponseMessage message = new ResponseMessage();
                     message.description = description;
                     message.message = response;
+                    string user1 = HttpContext.Session.GetString("Login");
+                    user1 = user1 != null ? user1 : "";
+                    SendStatistic("Api", DateTime.Now, "EditeAll", Request.HttpContext.Connection.RemoteIpAddress.ToString(), false, user1);
                     return BadRequest(description);
                 }
                 request = "SERVICE: ArtistService \r\nPUT: " + URLArtistService + "/" + requestString + "\r\n" + client.DefaultRequestHeaders.ToString();
@@ -499,6 +567,9 @@ namespace AggregationService.Controllers
                     ResponseMessage message = new ResponseMessage();
                     message.description = description;
                     message.message = response;
+                    string user1 = HttpContext.Session.GetString("Login");
+                    user1 = user1 != null ? user1 : "";
+                    SendStatistic("Api", DateTime.Now, "EditeAll", Request.HttpContext.Connection.RemoteIpAddress.ToString(), false, user1);
                     return BadRequest(description);
                 }
 
@@ -522,6 +593,9 @@ namespace AggregationService.Controllers
                     ResponseMessage message = new ResponseMessage();
                     message.description = description;
                     message.message = response;
+                    string user1 = HttpContext.Session.GetString("Login");
+                    user1 = user1 != null ? user1 : "";
+                    SendStatistic("Api", DateTime.Now, "EditeAll", Request.HttpContext.Connection.RemoteIpAddress.ToString(), false, user1);
                     return BadRequest(description);
                 }
                 request = "SERVICE: ArenaService \r\nPUT: " + URLArenaService + "/" + requestString + "\r\n" + client.DefaultRequestHeaders.ToString();
@@ -539,6 +613,9 @@ namespace AggregationService.Controllers
                     ResponseMessage message = new ResponseMessage();
                     message.description = description;
                     message.message = response;
+                    string user1 = HttpContext.Session.GetString("Login");
+                    user1 = user1 != null ? user1 : "";
+                    SendStatistic("Api", DateTime.Now, "EditeAll", Request.HttpContext.Connection.RemoteIpAddress.ToString(), false, user1);
                     return BadRequest(description);
                 }
 
@@ -563,6 +640,9 @@ namespace AggregationService.Controllers
                     ResponseMessage message = new ResponseMessage();
                     message.description = description;
                     message.message = response;
+                    string user1 = HttpContext.Session.GetString("Login");
+                    user1 = user1 != null ? user1 : "";
+                    SendStatistic("Api", DateTime.Now, "EditeAll", Request.HttpContext.Connection.RemoteIpAddress.ToString(), false, user1);
                     return BadRequest(description);
                 }
                 request = "SERVICE: ArenaService \r\nPUT: " + URLArenaService + "/" + requestString + "\r\n" + client.DefaultRequestHeaders.ToString();
@@ -580,6 +660,9 @@ namespace AggregationService.Controllers
                     ResponseMessage message = new ResponseMessage();
                     message.description = description;
                     message.message = response;
+                    string user1 = HttpContext.Session.GetString("Login");
+                    user1 = user1 != null ? user1 : "";
+                    SendStatistic("Api", DateTime.Now, "EditeAll", Request.HttpContext.Connection.RemoteIpAddress.ToString(), false, user1);
                     return BadRequest(description);
                 }
 
@@ -609,6 +692,9 @@ namespace AggregationService.Controllers
                     ResponseMessage message = new ResponseMessage();
                     message.description = description;
                     message.message = response;
+                    string user1 = HttpContext.Session.GetString("Login");
+                    user1 = user1 != null ? user1 : "";
+                    SendStatistic("Api", DateTime.Now, "EditeAll", Request.HttpContext.Connection.RemoteIpAddress.ToString(), false, user1);
                     return BadRequest(description);
                 }
                 request = "SERVICE: ConcerteService \r\nPUT: " + URLConcerteService + "/" + requestString + "\r\n" + client.DefaultRequestHeaders.ToString();
@@ -619,6 +705,9 @@ namespace AggregationService.Controllers
                     await LogQuery(request, requestMessage, responseString, responseMessage);
                     var Json = await response.Content.ReadAsStringAsync();
                     concerteInfoFullWithId = JsonConvert.DeserializeObject<ConcerteInfoFullWithId>(Json);
+                    string user1 = HttpContext.Session.GetString("Login");
+                    user1 = user1 != null ? user1 : "";
+                    SendStatistic("Api", DateTime.Now, "EditeAll", Request.HttpContext.Connection.RemoteIpAddress.ToString(), true, user1);
                     return Ok(concerteInfoFullWithId);
                 }
                 else
@@ -629,11 +718,17 @@ namespace AggregationService.Controllers
                     ResponseMessage message = new ResponseMessage();
                     message.description = description;
                     message.message = response;
+                    string user1 = HttpContext.Session.GetString("Login");
+                    user1 = user1 != null ? user1 : "";
+                    SendStatistic("Api", DateTime.Now, "EditeAll", Request.HttpContext.Connection.RemoteIpAddress.ToString(), false, user1);
                     return BadRequest(description);
                 }
             }
             else
             {
+                string user1 = HttpContext.Session.GetString("Login");
+                user1 = user1 != null ? user1 : "";
+                SendStatistic("Api", DateTime.Now, "EditeAll", Request.HttpContext.Connection.RemoteIpAddress.ToString(), false, user1);
                 return BadRequest();
             }
         }
@@ -673,6 +768,9 @@ namespace AggregationService.Controllers
                 ResponseMessage message = new ResponseMessage();
                 message.description = description;
                 message.message = response;
+                string user1 = HttpContext.Session.GetString("Login");
+                user1 = user1 != null ? user1 : "";
+                SendStatistic("Api", DateTime.Now, "Add Valid Concerte", Request.HttpContext.Connection.RemoteIpAddress.ToString(), false, user1);
                 return BadRequest(description);
                 //
                 //НЕ НАШЛИ АРЕНУ С ТАКИМ НАЗВАНИЕМ
@@ -694,6 +792,9 @@ namespace AggregationService.Controllers
                     ResponseMessage message = new ResponseMessage();
                     message.description = "Arena capacity lower than tickets number!";
                     message.message = response;
+                    string user1 = HttpContext.Session.GetString("Login");
+                    user1 = user1 != null ? user1 : "";
+                    SendStatistic("Api", DateTime.Now, "Add Valid Concerte", Request.HttpContext.Connection.RemoteIpAddress.ToString(), false, user1);
                     return BadRequest(message.description);
                 }
                 if (arena.City.CityName != concerteInfoFull.CityName)
@@ -701,6 +802,9 @@ namespace AggregationService.Controllers
                     ResponseMessage message = new ResponseMessage();
                     message.description = "This Arena is not in this city!";
                     message.message = response;
+                    string user1 = HttpContext.Session.GetString("Login");
+                    user1 = user1 != null ? user1 : "";
+                    SendStatistic("Api", DateTime.Now, "Add Valid Concerte", Request.HttpContext.Connection.RemoteIpAddress.ToString(), false, user1);
                     return BadRequest(message.description);
                 }
             }
@@ -712,6 +816,9 @@ namespace AggregationService.Controllers
                 ResponseMessage message = new ResponseMessage();
                 message.description = description;
                 message.message = response;
+                string user1 = HttpContext.Session.GetString("Login");
+                user1 = user1 != null ? user1 : "";
+                SendStatistic("Api", DateTime.Now, "Add Valid Concerte", Request.HttpContext.Connection.RemoteIpAddress.ToString(), false, user1);
                 return BadRequest(description);
                 //
                 //НЕ НАШЛИ АРЕНУ С ТАКИМ НАЗВАНИЕМ
@@ -740,6 +847,9 @@ namespace AggregationService.Controllers
                 ResponseMessage message = new ResponseMessage();
                 message.description = description;
                 message.message = response;
+                string user1 = HttpContext.Session.GetString("Login");
+                user1 = user1 != null ? user1 : "";
+                SendStatistic("Api", DateTime.Now, "Add Valid Concerte", Request.HttpContext.Connection.RemoteIpAddress.ToString(), false, user1);
                 return BadRequest(description);
                 //
                 //НЕ НАШЛИ ARTIST С ТАКИМ NAME
@@ -765,6 +875,9 @@ namespace AggregationService.Controllers
                 ResponseMessage message = new ResponseMessage();
                 message.description = description;
                 message.message = response;
+                string user1 = HttpContext.Session.GetString("Login");
+                user1 = user1 != null ? user1 : "";
+                SendStatistic("Api", DateTime.Now, "Add Valid Concerte", Request.HttpContext.Connection.RemoteIpAddress.ToString(), false, user1);
                 return BadRequest(description);
                 //
                 //НЕ НАШЛИ АРЕНУ С ТАКИМ НАЗВАНИЕМ
@@ -797,6 +910,9 @@ namespace AggregationService.Controllers
                 ResponseMessage message = new ResponseMessage();
                 message.description = description;
                 message.message = response;
+                string user1 = HttpContext.Session.GetString("Login");
+                user1 = user1 != null ? user1 : "";
+                SendStatistic("Api", DateTime.Now, "Add Valid Concerte", Request.HttpContext.Connection.RemoteIpAddress.ToString(), false, user1);
                 return BadRequest(description);
                 //
                 //НЕ НАШЛИ Seller С ТАКИМ NAME
@@ -822,6 +938,9 @@ namespace AggregationService.Controllers
                 ResponseMessage message = new ResponseMessage();
                 message.description = description;
                 message.message = response;
+                string user1 = HttpContext.Session.GetString("Login");
+                user1 = user1 != null ? user1 : "";
+                SendStatistic("Api", DateTime.Now, "Add Valid Concerte", Request.HttpContext.Connection.RemoteIpAddress.ToString(), false, user1);
                 return BadRequest(description);
                 //
                 //НЕ НАШЛИ Seller С ТАКИМ НАЗВАНИЕМ
@@ -852,6 +971,9 @@ namespace AggregationService.Controllers
                 ResponseMessage message = new ResponseMessage();
                 message.description = description;
                 message.message = response;
+                string user1 = HttpContext.Session.GetString("Login");
+                user1 = user1 != null ? user1 : "";
+                SendStatistic("Api", DateTime.Now, "Add Valid Concerte", Request.HttpContext.Connection.RemoteIpAddress.ToString(), false, user1);
                 return BadRequest(description);
             }
             request = "SERVICE: ConcerteService \r\nPOST: " + URLConcerteService + "/" + requestString + "\r\n" + client.DefaultRequestHeaders.ToString();
@@ -862,6 +984,9 @@ namespace AggregationService.Controllers
                 await LogQuery(request, requestMessage, responseString, responseMessage);
                 var Json = await response.Content.ReadAsStringAsync();
                 var concerte = JsonConvert.DeserializeObject<ConcerteInfoFullWithId>(Json);
+                string user1 = HttpContext.Session.GetString("Login");
+                user1 = user1 != null ? user1 : "";
+                SendStatistic("Api", DateTime.Now, "Add Valid Concerte", Request.HttpContext.Connection.RemoteIpAddress.ToString(), true, user1);
                 return Ok(concerte);
             }
             else
@@ -872,6 +997,9 @@ namespace AggregationService.Controllers
                 ResponseMessage message = new ResponseMessage();
                 message.description = description;
                 message.message = response;
+                string user1 = HttpContext.Session.GetString("Login");
+                user1 = user1 != null ? user1 : "";
+                SendStatistic("Api", DateTime.Now, "Add Valid Concerte", Request.HttpContext.Connection.RemoteIpAddress.ToString(), false, user1);
                 return BadRequest(description);
             }
         }
@@ -910,6 +1038,9 @@ namespace AggregationService.Controllers
                 ResponseMessage message = new ResponseMessage();
                 message.description = description;
                 message.message = response;
+                string user5 = HttpContext.Session.GetString("Login");
+                user5 = user5 != null ? user5 : "";
+                SendStatistic("Api", DateTime.Now, "Add Concerte to All", Request.HttpContext.Connection.RemoteIpAddress.ToString(), false, user5);
                 return BadRequest(description);
             }
             request = "SERVICE: ArenaService \r\nPOST: " + URLArenaService + "/" + requestString + "\r\n" + client.DefaultRequestHeaders.ToString();
@@ -929,6 +1060,9 @@ namespace AggregationService.Controllers
                 ResponseMessage message = new ResponseMessage();
                 message.description = description;
                 message.message = response;
+                string user6 = HttpContext.Session.GetString("Login");
+                user6 = user6 != null ? user6 : "";
+                SendStatistic("Api", DateTime.Now, "Add Concerte to All", Request.HttpContext.Connection.RemoteIpAddress.ToString(), false, user6);
                 return BadRequest(description);
             }
 
@@ -956,6 +1090,9 @@ namespace AggregationService.Controllers
                 ResponseMessage message = new ResponseMessage();
                 message.description = description;
                 message.message = response;
+                string user7 = HttpContext.Session.GetString("Login");
+                user7 = user7 != null ? user7 : "";
+                SendStatistic("Api", DateTime.Now, "Add Concerte to All", Request.HttpContext.Connection.RemoteIpAddress.ToString(), false, user7);
                 return BadRequest(description);
             }
             request = "SERVICE: ArenaService \r\nPOST: " + URLArenaService + "/" + requestString + "\r\n" + client.DefaultRequestHeaders.ToString();
@@ -975,6 +1112,9 @@ namespace AggregationService.Controllers
                 ResponseMessage message = new ResponseMessage();
                 message.description = description;
                 message.message = response;
+                string user8 = HttpContext.Session.GetString("Login");
+                user8 = user8 != null ? user8 : "";
+                SendStatistic("Api", DateTime.Now, "Add Concerte to All", Request.HttpContext.Connection.RemoteIpAddress.ToString(), false, user8);
                 return BadRequest(description);
             }
 
@@ -1001,6 +1141,9 @@ namespace AggregationService.Controllers
                 ResponseMessage message = new ResponseMessage();
                 message.description = description;
                 message.message = response;
+                string user9 = HttpContext.Session.GetString("Login");
+                user9 = user9 != null ? user9 : "";
+                SendStatistic("Api", DateTime.Now, "Add Concerte to All", Request.HttpContext.Connection.RemoteIpAddress.ToString(), false, user9);
                 return BadRequest(description);
             }
             request = "SERVICE: ArtistService \r\nPOST: " + URLArtistService + "/" + requestString + "\r\n" + client.DefaultRequestHeaders.ToString();
@@ -1020,6 +1163,9 @@ namespace AggregationService.Controllers
                 ResponseMessage message = new ResponseMessage();
                 message.description = description;
                 message.message = response;
+                string user10 = HttpContext.Session.GetString("Login");
+                user10 = user10 != null ? user10 : "";
+                SendStatistic("Api", DateTime.Now, "Add Concerte to All", Request.HttpContext.Connection.RemoteIpAddress.ToString(), false, user10);
                 return BadRequest(description);
             }
 
@@ -1045,6 +1191,9 @@ namespace AggregationService.Controllers
                 ResponseMessage message = new ResponseMessage();
                 message.description = description;
                 message.message = response;
+                string user11 = HttpContext.Session.GetString("Login");
+                user11 = user11 != null ? user11 : "";
+                SendStatistic("Api", DateTime.Now, "Add Concerte to All", Request.HttpContext.Connection.RemoteIpAddress.ToString(), false, user11);
                 return BadRequest(description);
             }
             request = "SERVICE: ConcerteService \r\nPOST: " + URLConcerteService + "/" + requestString + "\r\n" + client.DefaultRequestHeaders.ToString();
@@ -1064,6 +1213,9 @@ namespace AggregationService.Controllers
                 ResponseMessage message = new ResponseMessage();
                 message.description = description;
                 message.message = response;
+                string user12 = HttpContext.Session.GetString("Login");
+                user12 = user12 != null ? user12 : "";
+                SendStatistic("Api", DateTime.Now, "Add Concerte to All", Request.HttpContext.Connection.RemoteIpAddress.ToString(), false, user12);
                 return BadRequest(description);
             }
 
@@ -1096,6 +1248,9 @@ namespace AggregationService.Controllers
                 ResponseMessage message = new ResponseMessage();
                 message.description = description;
                 message.message = response;
+                string user13 = HttpContext.Session.GetString("Login");
+                user13 = user13 != null ? user13 : "";
+                SendStatistic("Api", DateTime.Now, "Add Concerte to All", Request.HttpContext.Connection.RemoteIpAddress.ToString(), false, user13);
                 return BadRequest(description);
             }
             request = "SERVICE: ConcerteService \r\nPOST: " + URLConcerteService + "/" + requestString + "\r\n" + client.DefaultRequestHeaders.ToString();
@@ -1115,8 +1270,14 @@ namespace AggregationService.Controllers
                 ResponseMessage message = new ResponseMessage();
                 message.description = description;
                 message.message = response;
+                string user14 = HttpContext.Session.GetString("Login");
+                user14 = user14 != null ? user14 : "";
+                SendStatistic("Api", DateTime.Now, "Add Concerte to All", Request.HttpContext.Connection.RemoteIpAddress.ToString(), false, user14);
                 return BadRequest(description);
             }
+            string user1 = HttpContext.Session.GetString("Login");
+            user1 = user1 != null ? user1 : "";
+            SendStatistic("Api", DateTime.Now, "Add Concerte to All", Request.HttpContext.Connection.RemoteIpAddress.ToString(), true, user1);
             return Ok(concerteInfoFull);
         }
 
@@ -1170,6 +1331,9 @@ namespace AggregationService.Controllers
                     ResponseMessage message = new ResponseMessage();
                     message.description = description;
                     message.message = response;
+                    string user15 = HttpContext.Session.GetString("Login");
+                    user15 = user15 != null ? user15 : "";
+                    SendStatistic("Api", DateTime.Now, "Add Concerte Delayed", Request.HttpContext.Connection.RemoteIpAddress.ToString(), false, user15);
                     return BadRequest(description);
                 }
                 request = "SERVICE: ArenaService \r\nPOST: " + URLArenaService + "/" + requestString + "\r\n" + client.DefaultRequestHeaders.ToString();
@@ -1189,6 +1353,9 @@ namespace AggregationService.Controllers
                     ResponseMessage message = new ResponseMessage();
                     message.description = description;
                     message.message = response;
+                    string user16 = HttpContext.Session.GetString("Login");
+                    user16 = user16 != null ? user16 : "";
+                    SendStatistic("Api", DateTime.Now, "Add Concerte Delayed", Request.HttpContext.Connection.RemoteIpAddress.ToString(), false, user16);
                     return BadRequest(description);
                 }
 
@@ -1216,6 +1383,9 @@ namespace AggregationService.Controllers
                     ResponseMessage message = new ResponseMessage();
                     message.description = description;
                     message.message = response;
+                    string user17 = HttpContext.Session.GetString("Login");
+                    user17 = user17 != null ? user17 : "";
+                    SendStatistic("Api", DateTime.Now, "Add Concerte Delayed", Request.HttpContext.Connection.RemoteIpAddress.ToString(), false, user17);
                     return BadRequest(description);
                 }
                 request = "SERVICE: ArenaService \r\nPOST: " + URLArenaService + "/" + requestString + "\r\n" + client.DefaultRequestHeaders.ToString();
@@ -1235,6 +1405,9 @@ namespace AggregationService.Controllers
                     ResponseMessage message = new ResponseMessage();
                     message.description = description;
                     message.message = response;
+                    string user18 = HttpContext.Session.GetString("Login");
+                    user18 = user18 != null ? user18 : "";
+                    SendStatistic("Api", DateTime.Now, "Add Concerte Delayed", Request.HttpContext.Connection.RemoteIpAddress.ToString(), false, user18);
                     return BadRequest(description);
                 }
             }
@@ -1272,6 +1445,10 @@ namespace AggregationService.Controllers
                     ResponseMessage message = new ResponseMessage();
                     message.description = description;
                     message.message = response;
+                    string user19 = HttpContext.Session.GetString("Login");
+                    user19 = user19 != null ? user19 : "";
+                    SendStatistic("Api", DateTime.Now, "Add Concerte Delayed", Request.HttpContext.Connection.RemoteIpAddress.ToString(), false, user19);
+                    return BadRequest(description);
                     //return View("Error", message);
                 }
                 request = "SERVICE: ArtistService \r\nPOST: " + URLArtistService + "/" + requestString + "\r\n" + client.DefaultRequestHeaders.ToString();
@@ -1291,6 +1468,9 @@ namespace AggregationService.Controllers
                     ResponseMessage message = new ResponseMessage();
                     message.description = description;
                     message.message = response;
+                    string user20 = HttpContext.Session.GetString("Login");
+                    user20 = user20 != null ? user20 : "";
+                    SendStatistic("Api", DateTime.Now, "Add Concerte Delayed", Request.HttpContext.Connection.RemoteIpAddress.ToString(), false, user20);
                     return View("Error", message);
                 }
             }
@@ -1327,6 +1507,9 @@ namespace AggregationService.Controllers
                     ResponseMessage message = new ResponseMessage();
                     message.description = description;
                     message.message = response;
+                    string user21 = HttpContext.Session.GetString("Login");
+                    user21 = user21 != null ? user21 : "";
+                    SendStatistic("Api", DateTime.Now, "Add Concerte Delayed", Request.HttpContext.Connection.RemoteIpAddress.ToString(), false, user21);
                     return View("Error", message);
                 }
                 request = "SERVICE: ConcerteService \r\nPOST: " + URLConcerteService + "/" + requestString + "\r\n" + client.DefaultRequestHeaders.ToString();
@@ -1346,6 +1529,9 @@ namespace AggregationService.Controllers
                     ResponseMessage message = new ResponseMessage();
                     message.description = description;
                     message.message = response;
+                    string user22 = HttpContext.Session.GetString("Login");
+                    user22 = user22 != null ? user22 : "";
+                    SendStatistic("Api", DateTime.Now, "Add Concerte Delayed", Request.HttpContext.Connection.RemoteIpAddress.ToString(), false, user22);
                     return View("Error", message);
                 }
 
@@ -1378,6 +1564,9 @@ namespace AggregationService.Controllers
                     ResponseMessage message = new ResponseMessage();
                     message.description = description;
                     message.message = response;
+                    string user23 = HttpContext.Session.GetString("Login");
+                    user23 = user23 != null ? user23 : "";
+                    SendStatistic("Api", DateTime.Now, "Add Concerte Delayed", Request.HttpContext.Connection.RemoteIpAddress.ToString(), false, user23);
                     return View("Error", message);
                 }
                 request = "SERVICE: ConcerteService \r\nPOST: " + URLConcerteService + "/" + requestString + "\r\n" + client.DefaultRequestHeaders.ToString();
@@ -1397,6 +1586,9 @@ namespace AggregationService.Controllers
                     ResponseMessage message = new ResponseMessage();
                     message.description = description;
                     message.message = response;
+                    string user2 = HttpContext.Session.GetString("Login");
+                    user2 = user2 != null ? user2 : "";
+                    SendStatistic("Api", DateTime.Now, "Add Concerte Delayed", Request.HttpContext.Connection.RemoteIpAddress.ToString(), false, user2);
                     return View("Error", message);
                 }
             }
@@ -1409,6 +1601,9 @@ namespace AggregationService.Controllers
                 MethodResult += "Concerte Service does not respond. We will save all later\r\n";
             }
             //return RedirectToAction(nameof(Index), new { id = 1 };
+            string user1 = HttpContext.Session.GetString("Login");
+            user1 = user1 != null ? user1 : "";
+            SendStatistic("Api", DateTime.Now, "Add Concerte Delayed", Request.HttpContext.Connection.RemoteIpAddress.ToString(), true, user1);
             return Ok(MethodResult);
         }
     }

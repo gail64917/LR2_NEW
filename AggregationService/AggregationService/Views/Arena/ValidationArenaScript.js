@@ -24,7 +24,7 @@
 
     function getAllowedWords() {
         words = document.getElementById('list').getElementsByTagName('li');
-    return words;
+        return words;
     }
 
     function isAllowed(word, arr) {

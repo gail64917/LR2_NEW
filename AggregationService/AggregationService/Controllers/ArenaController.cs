@@ -20,19 +20,25 @@ using System.Data.Entity;
 using AggregationService.Models.ModelsForView;
 using System.Threading;
 using static AggregationService.Logger.Logger;
+using Microsoft.AspNetCore.Http;
+
+using static RabbitModels.StatisticSender;
 
 namespace AggregationService.Controllers
 {
     [Route("Arena")]
     public class ArenaController : Controller
     {
-        private const string URLArenaService = "http://localhost:58349";
+        private const string URLArenaService = "https://localhost:44325";
 
 
         //[HttpGet("Index/{id?}")]
         [HttpGet("{id?}")]
         public async Task<IActionResult> Index([FromRoute] int id = 1)
         {
+            string userString = HttpContext.Session.GetString("Login");
+            userString = userString != null ? userString : "";
+
             List<Arena> result = new List<Arena>();
             int count = 0;
 
@@ -61,6 +67,7 @@ namespace AggregationService.Controllers
                 else
                 {
                     responseMessage = Encoding.UTF8.GetBytes(response.ReasonPhrase);
+                    SendStatistic("Arena", DateTime.Now, "Index", Request.HttpContext.Connection.RemoteIpAddress.ToString(), false, userString);
                     return Error();
                 }
 
@@ -88,26 +95,24 @@ namespace AggregationService.Controllers
                 else
                 {
                     responseMessage = Encoding.UTF8.GetBytes(responseStringsCount.ReasonPhrase);
+                    SendStatistic("Arena", DateTime.Now, "Index", Request.HttpContext.Connection.RemoteIpAddress.ToString(), false, userString);
                     return Error();
                 }
                 ArenaList resultQuery = new ArenaList() { arenas = result, countArenas = count };
 
                 await LogQuery(request, responseString, responseMessage);
-
+                SendStatistic("Arena", DateTime.Now, "Index", Request.HttpContext.Connection.RemoteIpAddress.ToString(), true, userString);
                 return View(resultQuery);
             }
         }
-
-        //[HttpGet("{page?}")]
-        //public IActionResult IndexHead([FromRoute] int page = 1)
-        //{
-        //    return RedirectToAction(nameof(Index), new { id = page });
-        //}
 
 
         [Route("AddArena")]
         public async Task<IActionResult> AddArena()
         {
+            string userString = HttpContext.Session.GetString("Login");
+            userString = userString != null ? userString : "";
+
             ArenaFake arenaFake = new ArenaFake();
 
             List<City> result = new List<City>();
@@ -133,10 +138,12 @@ namespace AggregationService.Controllers
                 else
                 {
                     responseMessage = Encoding.UTF8.GetBytes(response.ReasonPhrase);
+                    SendStatistic("Arena", DateTime.Now, "Add Arena Start", Request.HttpContext.Connection.RemoteIpAddress.ToString(), false, userString);
                     return Error();
                 }
                 await LogQuery(request, responseString, responseMessage);
                 //Передаем список доступных городов с ID (для дальнейшей сверки)
+                SendStatistic("Arena", DateTime.Now, "Add Arena Start", Request.HttpContext.Connection.RemoteIpAddress.ToString(), true, userString);
                 return View(arenaFake);
             }
         }
@@ -147,6 +154,9 @@ namespace AggregationService.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> AddArena([Bind("Login,Password")] Arena arena)
         {
+            string userString = HttpContext.Session.GetString("Login");
+            userString = userString != null ? userString : "";
+
             //СЕРИАЛИЗУЕМ arena и посылаем на ArenaService
             var values = new JObject();
             values.Add("ArenaName", arena.ArenaName);
@@ -174,6 +184,7 @@ namespace AggregationService.Controllers
                 ResponseMessage message = new ResponseMessage();
                 message.description = description;
                 message.message = response;
+                SendStatistic("Arena", DateTime.Now, "Add Arena Ends", Request.HttpContext.Connection.RemoteIpAddress.ToString(), false, userString);
                 return View("Error", message);
             }
 
@@ -184,6 +195,7 @@ namespace AggregationService.Controllers
             {
                 responseMessage = await response.Content.ReadAsByteArrayAsync();
                 await LogQuery(request, requestMessage, responseString, responseMessage);
+                SendStatistic("Arena", DateTime.Now, "Add Arena Ends", Request.HttpContext.Connection.RemoteIpAddress.ToString(), true, userString);
                 return RedirectToAction(nameof(Index));
             }
             else
@@ -194,6 +206,7 @@ namespace AggregationService.Controllers
                 ResponseMessage message = new ResponseMessage();
                 message.description = description;
                 message.message = response;
+                SendStatistic("Arena", DateTime.Now, "Add Arena Ends", Request.HttpContext.Connection.RemoteIpAddress.ToString(), false, userString);
                 return View("Error", message);
             } 
         }
@@ -202,6 +215,9 @@ namespace AggregationService.Controllers
         [HttpGet("Delete/{id?}")]
         public async Task<IActionResult> Delete(int id)
         {
+            string userString = HttpContext.Session.GetString("Login");
+            userString = userString != null ? userString : "";
+
             using (var client = new HttpClient())
             {
                 client.BaseAddress = new Uri(URLArenaService);
@@ -225,12 +241,14 @@ namespace AggregationService.Controllers
                 {
                     responseMessage = await response.Content.ReadAsByteArrayAsync();
                     await LogQuery(request, responseString, responseMessage);
+                    SendStatistic("Arena", DateTime.Now, "Delete", Request.HttpContext.Connection.RemoteIpAddress.ToString(), true, userString);
                     return RedirectToAction(nameof(Index), new { id = 1 });
                 }
                 else
                 {
                     responseMessage = Encoding.UTF8.GetBytes(response.ReasonPhrase);
                     await LogQuery(request, responseString, responseMessage);
+                    SendStatistic("Arena", DateTime.Now, "Delete", Request.HttpContext.Connection.RemoteIpAddress.ToString(), false, userString);
                     return View("Error");
                 }
             }
@@ -240,8 +258,12 @@ namespace AggregationService.Controllers
         [HttpGet("Edite/{id?}")]
         public async Task<IActionResult> Edite(int? id)
         {
+            string userString = HttpContext.Session.GetString("Login");
+            userString = userString != null ? userString : "";
+
             if (id == null)
             {
+                SendStatistic("Arena", DateTime.Now, "Edite Starts", Request.HttpContext.Connection.RemoteIpAddress.ToString(), false, userString);
                 return NotFound();
             }
 
@@ -271,6 +293,7 @@ namespace AggregationService.Controllers
                 else
                 {
                     responseMessage = Encoding.UTF8.GetBytes(response.ReasonPhrase);
+                    SendStatistic("Arena", DateTime.Now, "Edite Starts", Request.HttpContext.Connection.RemoteIpAddress.ToString(), false, userString);
                     return Error();
                 }
                 await LogQuery(request, responseString, responseMessage);
@@ -298,6 +321,7 @@ namespace AggregationService.Controllers
                     if (arena == null)
                     {
                         await LogQuery(request, responseString, responseMessage);
+                        SendStatistic("Arena", DateTime.Now, "Edite Starts", Request.HttpContext.Connection.RemoteIpAddress.ToString(), false, userString);
                         return NotFound();
                     }
                     await LogQuery(request, responseString, responseMessage);
@@ -308,13 +332,14 @@ namespace AggregationService.Controllers
                     arenaFake.City = arena.City;
                     arenaFake.CityID = arena.CityID;
                     arenaFake.ID = arena.ID;
-
+                    SendStatistic("Arena", DateTime.Now, "Edite Starts", Request.HttpContext.Connection.RemoteIpAddress.ToString(), true, userString);
                     return View(arenaFake);
                 }
                 else
                 {
                     responseMessage = Encoding.UTF8.GetBytes(response.ReasonPhrase);
                     await LogQuery(request, responseString, responseMessage);
+                    SendStatistic("Arena", DateTime.Now, "Edite Starts", Request.HttpContext.Connection.RemoteIpAddress.ToString(), false, userString);
                     return Error();
                 }
             }
@@ -326,6 +351,9 @@ namespace AggregationService.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edite([Bind("ID,ArenaName,Capacity,CityID")] Arena arena)
         {
+            string userString = HttpContext.Session.GetString("Login");
+            userString = userString != null ? userString : "";
+
             if (ModelState.IsValid)
             {
                 //СЕРИАЛИЗУЕМ arena и посылаем на ArenaService
@@ -359,6 +387,7 @@ namespace AggregationService.Controllers
                     ResponseMessage message = new ResponseMessage();
                     message.description = description;
                     message.message = response;
+                    SendStatistic("Arena", DateTime.Now, "Edite Ends", Request.HttpContext.Connection.RemoteIpAddress.ToString(), false, userString);
                     return View("Error", message);
                 }
 
@@ -366,17 +395,20 @@ namespace AggregationService.Controllers
                 {
                     responseMessage = await response.Content.ReadAsByteArrayAsync();
                     await LogQuery(request, requestMessage, responseString, responseMessage);
+                    SendStatistic("Arena", DateTime.Now, "Edite Ends", Request.HttpContext.Connection.RemoteIpAddress.ToString(), true, userString);
                     return RedirectToAction(nameof(Index), new { id = 1 });
                 }
                 else
                 {
                     responseMessage = Encoding.UTF8.GetBytes(response.ReasonPhrase);
                     await LogQuery(request, requestMessage, responseString, responseMessage);
+                    SendStatistic("Arena", DateTime.Now, "Edite Ends", Request.HttpContext.Connection.RemoteIpAddress.ToString(), false, userString);
                     return View(response);
                 }
             }
             else
             {
+                SendStatistic("Arena", DateTime.Now, "Edite Ends", Request.HttpContext.Connection.RemoteIpAddress.ToString(), false, userString);
                 return View();
             }
         }
@@ -385,6 +417,9 @@ namespace AggregationService.Controllers
         [Route("Error")]
         public IActionResult Error()
         {
+            string userString = HttpContext.Session.GetString("Login");
+            userString = userString != null ? userString : "";
+            SendStatistic("Arena", DateTime.Now, "Error", Request.HttpContext.Connection.RemoteIpAddress.ToString(), false, userString);
             return View("Error");
         }
     }

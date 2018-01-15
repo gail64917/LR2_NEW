@@ -14,10 +14,12 @@ namespace StatisticService.Data
         }
 
         public DbSet<RabbitStatistic> Statistic { get; set; }
+        public DbSet<RabbitStatisticQueue> StatisticFromQueue { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<RabbitStatistic>().ToTable("Statistic");
+            modelBuilder.Entity<RabbitStatisticQueue>().ToTable("StatisticFromQueue");
         }
     }
 }

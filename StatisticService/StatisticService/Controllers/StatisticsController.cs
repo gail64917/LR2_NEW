@@ -21,30 +21,48 @@ namespace StatisticService.Controllers
     {
         private readonly StatContext _context;
 
+        [Route("GetMessages")]
+        public void GetMessages()
+        {
+            var Bus = RabbitHutch.CreateBus("host=localhost");
+            ConcurrentStack<RabbitStatisticQueue> statisticCollection = new ConcurrentStack<RabbitStatisticQueue>();
+
+            Bus.Receive<RabbitStatistic>("statistic", msg =>
+            {
+                RabbitStatisticQueue stat = new RabbitStatisticQueue() { ID = msg.ID, Client = msg.Client, Result = msg.Result, Action = msg.Action, PageName = msg.PageName, TimeStamp = msg.TimeStamp, User = msg.User };
+                statisticCollection.Push(stat);
+
+            });
+            Thread.Sleep(5000);
+
+            foreach (RabbitStatisticQueue a in statisticCollection)
+            {
+                _context.StatisticFromQueue.Add(a);
+                RabbitStatisticQueue rbt = new RabbitStatisticQueue() { PageName = a.PageName, TimeStamp = a.TimeStamp, Action = a.Action, Client = a.Client, Result = a.Result, User = a.User, ID = a.ID };
+                var bus = RabbitHutch.CreateBus("host=localhost");
+                var message = rbt;
+                bus.Send("statisticRecieve", rbt);
+            }
+            _context.SaveChanges();
+        }
+
         public StatisticsController(StatContext context)
         {
             _context = context;
         }
 
         // GET: api/Statistics
+        [Route("FromQueue")]
+        [HttpGet]
+        public IEnumerable<RabbitStatisticQueue> GetStatisticFromQueue()
+        {
+            return _context.StatisticFromQueue;
+        }
+
+        // GET: api/Statistics
         [HttpGet]
         public IEnumerable<RabbitStatistic> GetStatistic()
         {
-            var Bus = RabbitHutch.CreateBus("host=localhost");
-            ConcurrentStack<RabbitStatistic> statisticCollection = new ConcurrentStack<RabbitStatistic>();
-
-            Bus.Receive<RabbitStatistic>("statistic", msg =>
-            {
-                RabbitStatistic stat = new RabbitStatistic() { Client = msg.Client, Result = msg.Result, Action = msg.Action, PageName = msg.PageName, TimeStamp = msg.TimeStamp };
-                statisticCollection.Push(stat);
-            });
-            Thread.Sleep(5000);
-
-            foreach (RabbitStatistic a in statisticCollection)
-            {
-                _context.Statistic.Add(a);
-            }
-            _context.SaveChanges();
             return _context.Statistic;
         }
 
@@ -71,20 +89,28 @@ namespace StatisticService.Controllers
         {
             //_context.Statistic.Add(rs);
             //_context.SaveChanges();
-            string connectionString = "Server=(localdb)\\mssqllocaldb;Database=Statistic52;Trusted_Connection=True;MultipleActiveResultSets=true";
-            string query = "INSERT INTO dbo.Statistic (Action, Client, PageName, Result, TimeStamp) " +
-                   "VALUES (@Action, @Client, @PageName, @Result, @TimeStamp) ";
+            string connectionString = "Server=(localdb)\\mssqllocaldb;Database=Statistic57;Trusted_Connection=True;MultipleActiveResultSets=true";
+            string query = string.Format(("INSERT INTO Statistic (Action, Client, PageName, Result, TimeStamp, [User]) " +
+                   "VALUES (@Action, @Client, @PageName, @Result, @TimeStamp, @User)"));
 
             // create connection and command
             using (SqlConnection cn = new SqlConnection(connectionString))
             using (SqlCommand cmd = new SqlCommand(query, cn))
             {
                 // define parameters and their values
-                cmd.Parameters.Add("@Action", SqlDbType.NVarChar, 50).Value = rs.Action;
-                cmd.Parameters.Add("@Client", SqlDbType.NVarChar, 50).Value = rs.Client;
-                cmd.Parameters.Add("@PageName", SqlDbType.NVarChar, 50).Value = rs.PageName;
-                cmd.Parameters.Add("@Result", SqlDbType.Bit).Value = rs.Result;
-                cmd.Parameters.Add("@PageName", SqlDbType.DateTime2, 7).Value = rs.TimeStamp;
+                //cmd.Parameters.AddWithValue("Action", rs.Action);
+                //cmd.Parameters.AddWithValue("Client", rs.Client);
+                //cmd.Parameters.AddWithValue("PageName", rs.PageName);
+                //cmd.Parameters.AddWithValue("Result", rs.Result);
+                //cmd.Parameters.AddWithValue("TimeStamp", rs.TimeStamp);
+
+                cmd.Parameters.Add("Action", SqlDbType.NVarChar).Value = rs.Action;
+                cmd.Parameters.Add("Client", SqlDbType.NVarChar).Value = rs.Client;
+                cmd.Parameters.Add("PageName", SqlDbType.NVarChar).Value = rs.PageName;
+                cmd.Parameters.Add("Result", SqlDbType.Bit).Value = rs.Result;
+                cmd.Parameters.Add("TimeStamp", SqlDbType.DateTime2).Value = rs.TimeStamp;
+                if (rs.User != null)
+                    cmd.Parameters.Add("User", SqlDbType.NVarChar).Value = rs.User;
 
                 // open connection, execute INSERT, close connection
                 cn.Open();

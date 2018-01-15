@@ -28,6 +28,8 @@ namespace AggregationService.Controllers
         [HttpGet("{id?}")]
         public async Task<IActionResult> Index([FromRoute] int id = 1)
         {
+            string userString = HttpContext.Session.GetString("Login");
+            userString = userString != null ? userString : "";
             List<Artist> result = new List<Artist>();
             int count = 0;
 
@@ -112,6 +114,8 @@ namespace AggregationService.Controllers
         [Route("AddArtist")]
         public IActionResult AddArtist()
         {
+            string userString = HttpContext.Session.GetString("Login");
+            userString = userString != null ? userString : "";
             return View();
         }
 
@@ -121,6 +125,8 @@ namespace AggregationService.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> AddArtist([Bind("ArtistName,LastFmRating")] Artist artist)
         {
+            string userString = HttpContext.Session.GetString("Login");
+            userString = userString != null ? userString : "";
             //СЕРИАЛИЗУЕМ artist и посылаем на ArtistService
             var values = new JObject();
             values.Add("ArtistName", artist.ArtistName);
@@ -186,6 +192,8 @@ namespace AggregationService.Controllers
         [Route("Error")]
         public IActionResult Error()
         {
+            string userString = HttpContext.Session.GetString("Login");
+            userString = userString != null ? userString : "";
             return View("Error");
         }
 
@@ -194,6 +202,8 @@ namespace AggregationService.Controllers
         //[HttpDelete("{id?}")]
         public async Task<IActionResult> Delete(int id)
         {
+            string userString = HttpContext.Session.GetString("Login");
+            userString = userString != null ? userString : "";
             using (var client = new HttpClient())
             {
                 client.BaseAddress = new Uri(URLArtistService);
@@ -243,6 +253,8 @@ namespace AggregationService.Controllers
         [HttpGet("Edite/{id?}")]
         public async Task<IActionResult> Edite(int? id)
         {
+            string userString = HttpContext.Session.GetString("Login");
+            userString = userString != null ? userString : "";
             if (id == null)
             {
                 return NotFound();
@@ -302,6 +314,8 @@ namespace AggregationService.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edite([Bind("ID,ArtistName,LastFmRating")] Artist artist)
         {
+            string userString = HttpContext.Session.GetString("Login");
+            userString = userString != null ? userString : "";
             if (ModelState.IsValid)
             {
                 //СЕРИАЛИЗУЕМ artist и посылаем на ArtistService
