@@ -40,7 +40,7 @@ namespace AggregationService.Schedule
             });
             Thread.Sleep(15000);
 
-            string connectionString = "Server=(localdb)\\mssqllocaldb;Database=StatisticEvents52;Trusted_Connection=True;MultipleActiveResultSets=true";
+            string connectionString = "Server=(localdb)\\mssqllocaldb;Database=StatisticEvents53;Trusted_Connection=True;MultipleActiveResultSets=true";
 
             //удаляем все сообщения, полученные из Раббита, из БД
             foreach (RabbitStatisticQueue a in statisticCollection)

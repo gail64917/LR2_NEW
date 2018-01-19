@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.0",
-    "signature": "73dafae117ebde88c776965a79cfa071b7e45d0d"
+    "signature": "bf241ca1c9a1744c4e1615c0e3ea7df2cf95fba1"
   },
   "compilationOptions": {
     "defines": [
@@ -74,6 +74,14 @@
         },
         "compile": {
           "lib/netstandard1.5/EasyNetQ.dll": {}
+        }
+      },
+      "FluentScheduler/5.3.0": {
+        "runtime": {
+          "lib/netstandard1.4/FluentScheduler.dll": {}
+        },
+        "compile": {
+          "lib/netstandard1.4/FluentScheduler.dll": {}
         }
       },
       "Libuv/1.10.0": {
@@ -4122,6 +4130,7 @@
       "RabbitModels/1.0.0": {
         "dependencies": {
           "EasyNetQ": "2.2.0",
+          "FluentScheduler": "5.3.0",
           "Microsoft.AspNetCore.HttpOverrides": "2.0.1"
         },
         "runtime": {
@@ -4321,6 +4330,13 @@
       "sha512": "sha512-3rQHnJsbKjxPz+9VL5cu1kyaLY3RZHmA8m4FcFD2cqcqjwjG80vnKD7bOBULFnarXoIITSCupsFIv6pp9AzXFA==",
       "path": "easynetq/2.2.0",
       "hashPath": "easynetq.2.2.0.nupkg.sha512"
+    },
+    "FluentScheduler/5.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-XBLwqw3FFdkG6qIrxg7M9mIsigZje+qKTinWZWfyr47IN6O/0z6fFUoQCVEBvY0lk1puf4hU0VnVhN/kPNZL+A==",
+      "path": "fluentscheduler/5.3.0",
+      "hashPath": "fluentscheduler.5.3.0.nupkg.sha512"
     },
     "Libuv/1.10.0": {
       "type": "package",

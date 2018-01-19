@@ -13,9 +13,11 @@ using EasyNetQ;
 using RabbitModels;
 using System.Collections.Concurrent;
 using System.Threading;
+using Microsoft.AspNetCore.Authorization;
 
 namespace ConcerteService.Controllers
 {
+    [Authorize]
     [Produces("application/json")]
     [Route("api/Artists")]
     public class ArtistsController : Controller

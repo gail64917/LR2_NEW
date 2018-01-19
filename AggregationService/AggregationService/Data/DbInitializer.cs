@@ -1,4 +1,5 @@
-﻿using RabbitModels;
+﻿using AggregationService.Models.AuthorisationService;
+using RabbitModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,6 +12,17 @@ namespace AggregationService.Data
         public static void Initialize(StatisticContext context)
         {
             context.Database.EnsureCreated();
+
+            if (!context.UserData.Any())
+            {
+                //for (int i = 0; i<1004; i++)
+                //{
+                //    UserData ud = new UserData() { Login = "fake" };
+
+                //    context.UserData.Add(ud);
+                //}
+                //context.SaveChanges();
+            }
 
             if (context.StatisticEvents.Any())
             {

@@ -31,7 +31,7 @@ namespace RabbitModels
             RabbitStatisticQueue rbtQueue = new RabbitStatisticQueue() { PageName = serviceName, TimeStamp = dt, Action = action, Client = client, Result = result, User = user };
 
             //пишем в бд событие
-            string connection = "Server=(localdb)\\mssqllocaldb;Database=StatisticEvents52;Trusted_Connection=True;MultipleActiveResultSets=true";
+            string connection = "Server=(localdb)\\mssqllocaldb;Database=StatisticEvents53;Trusted_Connection=True;MultipleActiveResultSets=true";
             EventDbSender(rbtQueue, connection);
 
             //находим его ID

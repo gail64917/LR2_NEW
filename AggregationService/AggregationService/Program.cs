@@ -10,6 +10,7 @@ using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.DependencyInjection;
 using AggregationService.Data;
 
+
 namespace AggregationService
 {
     public class Program

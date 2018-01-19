@@ -14,6 +14,7 @@ using static AggregationService.Logger.Logger;
 using AggregationService.Models.ModelsForView;
 using Newtonsoft.Json.Linq;
 using Microsoft.AspNetCore.Authorization;
+using AggregationService.Provider.JWT;
 
 namespace AggregationService.Controllers
 {
@@ -43,8 +44,17 @@ namespace AggregationService.Controllers
 
             using (var client = new HttpClient())
             {
+                var token = new JwtTokenBuilder()
+                                .AddSecurityKey(JwtSecurityKey.Create("Test-secret-key-1234"))
+                                .AddSubject("admin")
+                                .AddIssuer("Test.Security.Bearer")
+                                .AddAudience("Test.Security.Bearer")
+                                .AddClaim("admin", "1")
+                                .AddExpiry(200)
+                                .Build();
                 client.BaseAddress = new Uri(URLArtistService);
                 client.DefaultRequestHeaders.Accept.Clear();
+                client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token.Value);
                 client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
 
                 /**/
@@ -78,6 +88,7 @@ namespace AggregationService.Controllers
                 // ПОЛУЧАЕМ КОЛ-ВО СУЩНОСТЕЙ В БД МИКРОСЕРВИСА, ЧТОБЫ УЗНАТЬ, СКОЛЬКО СТРАНИЦ РИСОВАТЬ
                 //
                 client.DefaultRequestHeaders.Accept.Clear();
+                client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token.Value);
                 client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
 
                 string requestStringCount = "api/artists/count";
@@ -142,7 +153,17 @@ namespace AggregationService.Controllers
             byte[] responseMessage;
 
             HttpClient client = new HttpClient();
+            var token = new JwtTokenBuilder()
+                                .AddSecurityKey(JwtSecurityKey.Create("Test-secret-key-1234"))
+                                .AddSubject("admin")
+                                .AddIssuer("Test.Security.Bearer")
+                                .AddAudience("Test.Security.Bearer")
+                                .AddClaim("admin", "1")
+                                .AddExpiry(200)
+                                .Build();
             client.BaseAddress = new Uri(URLArtistService);
+            client.DefaultRequestHeaders.Accept.Clear();
+            client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token.Value);
             client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
 
             HttpContent content = new StringContent(values.ToString(), Encoding.UTF8, "application/json");
@@ -207,7 +228,17 @@ namespace AggregationService.Controllers
             using (var client = new HttpClient())
             {
                 client.BaseAddress = new Uri(URLArtistService);
+                var token = new JwtTokenBuilder()
+                                .AddSecurityKey(JwtSecurityKey.Create("Test-secret-key-1234"))
+                                .AddSubject("admin")
+                                .AddIssuer("Test.Security.Bearer")
+                                .AddAudience("Test.Security.Bearer")
+                                .AddClaim("admin", "1")
+                                .AddExpiry(200)
+                                .Build();
+                client.BaseAddress = new Uri(URLArtistService);
                 client.DefaultRequestHeaders.Accept.Clear();
+                client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token.Value);
                 client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
 
                 /**/
@@ -267,8 +298,17 @@ namespace AggregationService.Controllers
             Artist artist;
             using (var client = new HttpClient())
             {
-                client.BaseAddress = new Uri(URLArtistService);
+                var token = new JwtTokenBuilder()
+                                .AddSecurityKey(JwtSecurityKey.Create("Test-secret-key-1234"))
+                                .AddSubject("admin")
+                                .AddIssuer("Test.Security.Bearer")
+                                .AddAudience("Test.Security.Bearer")
+                                .AddClaim("admin", "1")
+                                .AddExpiry(200)
+                                .Build();
                 client.DefaultRequestHeaders.Accept.Clear();
+                client.BaseAddress = new Uri(URLArtistService);
+                client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token.Value);
                 client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
 
                 string requestString = "api/Artists/" + id;
@@ -309,76 +349,177 @@ namespace AggregationService.Controllers
         }
 
 
-        [Route("Edite/{id}")]
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edite([Bind("ID,ArtistName,LastFmRating")] Artist artist)
-        {
-            string userString = HttpContext.Session.GetString("Login");
-            userString = userString != null ? userString : "";
-            if (ModelState.IsValid)
-            {
-                //СЕРИАЛИЗУЕМ artist и посылаем на ArtistService
-                var values = new JObject();
-                values.Add("ID", artist.ID);
-                values.Add("ArtistName", artist.ArtistName);
-                values.Add("LastFmRating", artist.LastFmRating);
+        //[Route("Edite/{id}")]
+        //[HttpPost]
+        //[ValidateAntiForgeryToken]
+        //public async Task<IActionResult> Edite([Bind("ID,ArtistName,LastFmRating")] Artist artist)
+        //{
+        //    string userString = HttpContext.Session.GetString("Login");
+        //    userString = userString != null ? userString : "";
+        //    if (ModelState.IsValid)
+        //    {
+        //        /**/
+        //        var corrId = string.Format("{0}{1}", DateTime.Now.Ticks, Thread.CurrentThread.ManagedThreadId);
+        //        /**/
+        //        string request;
+        //        /**/
+        //        string requestMessage = values.ToString();
+        //        /**/
+        //        byte[] responseMessage;
 
-                /**/
-                var corrId = string.Format("{0}{1}", DateTime.Now.Ticks, Thread.CurrentThread.ManagedThreadId);
-                /**/
-                string request;
-                /**/
-                string requestMessage = values.ToString();
-                /**/
-                byte[] responseMessage;
+        //        string token = HttpContext.Session.GetString("tokenValue");
+        //        bool haveToken = true;
+        //        using (HttpClient NewClient = new HttpClient())
+        //        {
+        //            NewClient.DefaultRequestHeaders.Accept.Clear();
+        //            NewClient.BaseAddress = new Uri(URLArtistService);
+        //            NewClient.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
 
-                HttpClient client = new HttpClient();
-                client.BaseAddress = new Uri(URLArtistService);
-                client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+        //            /**/
+        //            string requestStr = "api/artists";
+        //            HttpResponseMessage responseNew = await NewClient.GetAsync(requestStr);
 
-                HttpContent content = new StringContent(values.ToString(), Encoding.UTF8, "application/json");
+        //            token = HttpContext.Session.GetString("tokenValue");
 
-                /**/
-                string requestString = "api/artists/" + artist.ID;
+        //            /**/
+        //            request = "SERVICE: ArtistService \r\nGET: " + URLArtistService + "/" + requestStr + "\r\n" + NewClient.DefaultRequestHeaders.ToString();
+        //            /**/
+        //            string responseStr = responseNew.Headers.ToString() + "\nStatus: " + responseNew.StatusCode.ToString();
+        //            string resultNew;
+        //            if((int)responseNew.StatusCode == 403)
+        //            {
+        //                haveToken = false;
+        //            }
+        //            if (responseNew.IsSuccessStatusCode)
+        //            {
+        //                /**/
+        //                responseMessage = await responseNew.Content.ReadAsByteArrayAsync();
+        //                var tokenJson = await responseNew.Content.ReadAsStringAsync();
+        //                resultNew = JsonConvert.DeserializeObject<string>(tokenJson);
+        //                token = resultNew;
+        //                HttpContext.Session.SetString("tokenValue", token);
+        //            }
+        //            else
+        //            {
+        //                /**/
+        //                responseMessage = Encoding.UTF8.GetBytes(responseNew.ReasonPhrase);
+        //            }
 
-                var response = await client.PutAsJsonAsync(requestString, values);
+        //            /**/
+        //            await LogQuery(request, responseStr, responseMessage);
+        //        }
 
-                /**/
-                request = "SERVICE: ArtistService \r\nPUT: " + URLArtistService + "/" + requestString + "\r\n" + client.DefaultRequestHeaders.ToString();
-                /**/
-                string responseString = response.Headers.ToString() + "\nStatus: " + response.StatusCode.ToString();
 
-                if ((int)response.StatusCode == 500)
-                {
-                    string description = "There is no artist with ID (" + artist.ID + ")";
-                    ResponseMessage message = new ResponseMessage();
-                    message.description = description;
-                    message.message = response;
-                    return View("Error", message);
-                }
 
-                if (response.IsSuccessStatusCode)
-                {
-                    /**/
-                    responseMessage = await response.Content.ReadAsByteArrayAsync();
-                    /**/
-                    await LogQuery(request, requestMessage, responseString, responseMessage);
-                    return RedirectToAction(nameof(Index), new { id = 1 });
-                }
-                else
-                {
-                    /**/
-                    responseMessage = Encoding.UTF8.GetBytes(response.ReasonPhrase);
-                    /**/
-                    await LogQuery(request, requestMessage, responseString, responseMessage);
-                    return View(response);
-                }
-            }
-            else
-            {
-                return View();
-            }
-        }
+        //        //
+        //        //запрос токена
+        //        //
+        //        if (haveToken == false)
+        //        {
+        //            using (HttpClient NewClient = new HttpClient())
+        //            {
+        //                NewClient.DefaultRequestHeaders.Accept.Clear();
+        //                NewClient.BaseAddress = new Uri(URLArtistService);
+        //                NewClient.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+
+        //                /**/
+        //                string requestStr = "api/token/GetToken";
+        //                HttpResponseMessage responseNew = await NewClient.GetAsync(requestStr);
+
+        //                token = HttpContext.Session.GetString("tokenValue");
+
+        //                /**/
+        //                request = "SERVICE: ArtistService \r\nGET: " + URLArtistService + "/" + requestStr + "\r\n" + NewClient.DefaultRequestHeaders.ToString();
+        //                /**/
+        //                string responseStr = responseNew.Headers.ToString() + "\nStatus: " + responseNew.StatusCode.ToString();
+        //                string resultNew;
+        //                if (responseNew.IsSuccessStatusCode)
+        //                {
+        //                    /**/
+        //                    responseMessage = await responseNew.Content.ReadAsByteArrayAsync();
+        //                    var tokenJson = await responseNew.Content.ReadAsStringAsync();
+        //                    resultNew = JsonConvert.DeserializeObject<string>(tokenJson);
+        //                    token = resultNew;
+        //                    HttpContext.Session.SetString("tokenValue", token);
+        //                }
+        //                else
+        //                {
+        //                    /**/
+        //                    responseMessage = Encoding.UTF8.GetBytes(responseNew.ReasonPhrase);
+        //                    return Error();
+        //                }
+
+        //                /**/
+        //                await LogQuery(request, responseStr, responseMessage);
+        //            }
+        //        }
+
+        //        //
+        //        //запрос с токеном
+        //        //
+        //        HttpClient client = new HttpClient();
+        //        //var token = new JwtTokenBuilder()
+        //        //                .AddSecurityKey(JwtSecurityKey.Create("Test-secret-key-1234"))
+        //        //                .AddSubject("admin")
+        //        //                .AddIssuer("Test.Security.Bearer")
+        //        //                .AddAudience("Test.Security.Bearer")
+        //        //                .AddClaim("admin", "1")
+        //        //                .AddExpiry(200)
+        //        //                .Build();
+                
+
+        //        //ЗАПРОС К СЕРВИСУ АРТИСТОВ И ПОЛУЧЕНИЕ ТОКЕНА
+
+        //        client.DefaultRequestHeaders.Accept.Clear();
+        //        client.BaseAddress = new Uri(URLArtistService);
+        //        client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
+        //        client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+        //        var values = new JObject();
+        //        values.Add("ID", artist.ID);
+        //        values.Add("ArtistName", artist.ArtistName);
+        //        values.Add("LastFmRating", artist.LastFmRating);
+        //        HttpContent content = new StringContent(values.ToString(), Encoding.UTF8, "application/json");
+
+        //        /**/
+        //        string requestString = "api/artists/" + artist.ID;
+
+        //        var response = await client.PutAsJsonAsync(requestString, values);
+
+        //        /**/
+        //        request = "SERVICE: ArtistService \r\nPUT: " + URLArtistService + "/" + requestString + "\r\n" + client.DefaultRequestHeaders.ToString();
+        //        /**/
+        //        string responseString = response.Headers.ToString() + "\nStatus: " + response.StatusCode.ToString();
+
+        //        if ((int)response.StatusCode == 500)
+        //        {
+        //            string description = "There is no artist with ID (" + artist.ID + ")";
+        //            ResponseMessage message = new ResponseMessage();
+        //            message.description = description;
+        //            message.message = response;
+        //            return View("Error", message);
+        //        }
+
+        //        if (response.IsSuccessStatusCode)
+        //        {
+        //            /**/
+        //            responseMessage = await response.Content.ReadAsByteArrayAsync();
+        //            /**/
+        //            await LogQuery(request, requestMessage, responseString, responseMessage);
+        //            return RedirectToAction(nameof(Index), new { id = 1 });
+        //        }
+        //        else
+        //        {
+        //            /**/
+        //            responseMessage = Encoding.UTF8.GetBytes(response.ReasonPhrase);
+        //            /**/
+        //            await LogQuery(request, requestMessage, responseString, responseMessage);
+        //            return View(response);
+        //        }
+        //    }
+        //    else
+        //    {
+        //        return View();
+        //    }
+        //}
     }
 }
