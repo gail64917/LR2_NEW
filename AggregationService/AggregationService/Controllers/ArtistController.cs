@@ -363,7 +363,7 @@ namespace AggregationService.Controllers
         //        /**/
         //        string request;
         //        /**/
-        //        string requestMessage = values.ToString();
+        //        //string requestMessage = values.ToString();
         //        /**/
         //        byte[] responseMessage;
 
@@ -386,7 +386,7 @@ namespace AggregationService.Controllers
         //            /**/
         //            string responseStr = responseNew.Headers.ToString() + "\nStatus: " + responseNew.StatusCode.ToString();
         //            string resultNew;
-        //            if((int)responseNew.StatusCode == 403)
+        //            if ((int)responseNew.StatusCode == 403)
         //            {
         //                haveToken = false;
         //            }
@@ -466,7 +466,7 @@ namespace AggregationService.Controllers
         //        //                .AddClaim("admin", "1")
         //        //                .AddExpiry(200)
         //        //                .Build();
-                
+
 
         //        //ЗАПРОС К СЕРВИСУ АРТИСТОВ И ПОЛУЧЕНИЕ ТОКЕНА
 
